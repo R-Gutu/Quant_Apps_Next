@@ -1,24 +1,20 @@
-//@ts-ignore
 'use client'
-import Footer from "../components/Footer";
-import Noutbook from "../assets/images/noutbook.png";
-import Vector from "../assets/icons/vector.svg";
-import Apple from "../assets/icons/apple.svg";
-import Android from "../assets/icons/android.svg";
-import CrossPlatform from "../assets/icons/cross-platform.svg";
-import Settings from "../assets/icons/settings.svg";
-import Pen from "../assets/icons/pen.svg";
-import Security from "../assets/icons/sequrity.svg";
-import Puzzle from "../assets/icons/pazle.svg";
-import Star from "../assets/icons/Star.svg";
-import Moon from "../assets/icons/moon.svg";
-import Banner from "../assets/icons/banner.svg";
-import { openLetsTalkModal } from "../utils/modal";
-import "../style/main.css";
-
+import Footer from '@/src/components/Footer'
+import Noutbook from '@/src/assets/images/noutbook.png'
+import Vector from "@/src/assets/icons/vector.svg";
+import Apple from "@/src/assets/icons/apple.svg";
+import Android from "@/src/assets/icons/android.svg";
+import CrossPlatform from "@/src/assets/icons/cross-platform.svg";
+import Settings from "@/src/assets/icons/settings.svg";
+import Pen from "@/src/assets/icons/pen.svg";
+import Security from "@/src/assets/icons/sequrity.svg";
+import Puzzle from "@/src/assets/icons/pazle.svg";
+import Star from "@/src/assets/icons/Star.svg";
+import Moon from "@/src/assets/icons/moon.svg";
+import Banner from "@/src/assets/icons/banner.svg";
+import Image from 'next/image'
 const Services = () => {
-
-  const onClickToggle = (e) => {
+  const onClickToggle = (e:any) => {
     e.currentTarget.closest(".faq__accordion-item").classList.toggle("active");
   };
 
@@ -32,7 +28,12 @@ const Services = () => {
           </div>
           <div className="offer__content">
             <div className="offer__img">
-              <img src={Noutbook} alt="" className="offer__img-main" />
+            <Image 
+                src={Noutbook} 
+                alt="Notebook illustration"
+                className="offer__img-main"
+                priority
+              />
               <span className="offer__img-bg"></span>
               <span className="offer__img-bg-2"></span>
             </div>
@@ -43,7 +44,7 @@ const Services = () => {
               <div className="offer__items">
                 <div className="offer__item">
                   <div className="offer__item-img">
-                    <img src={Vector} alt="" />
+                    <Image src={Vector} alt="" />
                   </div>
                   <div className="offer__item-text">
                     <h3>Tailored Mobile App Design</h3>
@@ -55,7 +56,7 @@ const Services = () => {
                 </div>
                 <div className="offer__item">
                   <div className="offer__item-img">
-                    <img src={Apple} alt="" />
+                    <Image src={Apple} alt="" />
                   </div>
                   <div className="offer__item-text">
                     <h3>iOS App Development</h3>
@@ -67,7 +68,7 @@ const Services = () => {
                 </div>
                 <div className="offer__item">
                   <div className="offer__item-img">
-                    <img src={Android} alt="" />
+                    <Image src={Android} alt="" />
                   </div>
                   <div className="offer__item-text">
                     <h3>Android App Development</h3>
@@ -76,7 +77,7 @@ const Services = () => {
                 </div>
                 <div className="offer__item">
                   <div className="offer__item-img">
-                    <img src={CrossPlatform} alt="" />
+                    <Image src={CrossPlatform} alt="" />
                   </div>
                   <div className="offer__item-text">
                     <h3>Cross Platform -React Native</h3>
@@ -88,7 +89,7 @@ const Services = () => {
                 </div>
                 <div className="offer__item">
                   <div className="offer__item-img">
-                    <img src={Settings} alt="" />
+                    <Image src={Settings} alt="" />
                   </div>
                   <div className="offer__item-text">
                     <h3>Ongoing Support & Maintenance</h3>
@@ -114,7 +115,7 @@ const Services = () => {
             <div className="why-ios__items">
               <div className="why-ios__item">
                 <div className="why-ios__item-img">
-                  <img src={Pen} alt="" />
+                  <Image src={Pen} alt="" />
                 </div>
                 <div className="why-ios__item-text">
                   <h4>Optimal Performance</h4>
@@ -128,7 +129,7 @@ const Services = () => {
               </div>
               <div className="why-ios__item">
                 <div className="why-ios__item-img">
-                  <img src={Security} alt="" />
+                  <Image src={Security} alt="" />
                 </div>
                 <div className="why-ios__item-text">
                   <h4>Higher Security</h4>
@@ -142,7 +143,7 @@ const Services = () => {
               </div>
               <div className="why-ios__item">
                 <div className="why-ios__item-img">
-                  <img src={Vector} alt="" />
+                  <Image src={Vector} alt="" />
                 </div>
                 <div className="why-ios__item-text">
                   <h4>Consistent UI and UX</h4>
@@ -157,7 +158,7 @@ const Services = () => {
               </div>
               <div className="why-ios__item">
                 <div className="why-ios__item-img">
-                  <img src={Puzzle} alt="" />
+                  <Image src={Puzzle} alt="" />
                 </div>
                 <div className="why-ios__item-text">
                   <h4>Deep Platform Integration</h4>
@@ -174,11 +175,11 @@ const Services = () => {
         </div>
         <span className="why-ios__bg-img why-ios__blur-1"></span>
         <span className="why-ios__bg-img why-ios__blur-2"></span>
-        <img src={Star} alt="" className="why-ios__star-1 why-ios__bg-img" />
-        <img src={Star} alt="" className="why-ios__star-2 why-ios__bg-img" />
-        <img src={Star} alt="" className="why-ios__star-3 why-ios__bg-img" />
-        <img src={Moon} alt="" className="why-ios__moon why-ios__bg-img" />
-        <img src={Moon} alt="" className="why-ios__moon-2 why-ios__bg-img" />
+        <Image src={Star} alt="" className="why-ios__star-1 why-ios__bg-img" />
+        <Image src={Star} alt="" className="why-ios__star-2 why-ios__bg-img" />
+        <Image src={Star} alt="" className="why-ios__star-3 why-ios__bg-img" />
+        <Image src={Moon} alt="" className="why-ios__moon why-ios__bg-img" />
+        <Image src={Moon} alt="" className="why-ios__moon-2 why-ios__bg-img" />
       </section>
 
       <section className="working-process__section">
@@ -378,13 +379,13 @@ const Services = () => {
               </p>
               <button
                 className="lets-talk next-project__text-btn"
-                onClick={() => openLetsTalkModal()}
+                // onClick={() => openLetsTalkModal()}
               >
                 Let’s Talk
               </button>
             </div>
             <div className="next-project__img">
-              <img src={Banner} alt="" />
+              <Image src={Banner} alt="" />
             </div>
           </div>
         </div>

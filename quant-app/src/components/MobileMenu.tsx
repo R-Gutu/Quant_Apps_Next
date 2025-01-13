@@ -1,62 +1,61 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 
 const MobileMenu = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
+  // useEffect(() => {
+  //   const target = document.getElementById("projects");
+  //   const menuItem = document.querySelectorAll(
+  //     '.menu__item[data-id="projects"]'
+  //   );
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
+    // const observer = new IntersectionObserver((entries) => {
+    //   entries.forEach((entry) => {
+    //     if (entry.isIntersecting) {
+    //       menuItem.forEach((e) => e.classList.add("active"));
+    //     } else {
+    //       menuItem.forEach((e) => e.classList.remove("active"));
+    //     }
+    //   });
+    // });
 
-    if (target) {
-      observer.observe(target);
-    } else {
-      menuItem.forEach((e) => e.classList.remove("active"));
-    }
+  //   if (target) {
+  //     observer.observe(target);
+  //   } else {
+  //     menuItem.forEach((e) => e.classList.remove("active"));
+  //   }
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [location]);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [location]);
 
-  const onClickMobileLink = () => {
-    const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
-  };
+  // const onClickMobileLink = () => {
+  //   const mobileMenu = document.querySelector(".mobile-menu");
+  //   mobileMenu.classList.remove("active");
+  // };
 
-  const onClickClose = () => {
-    const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
-  };
+  // const onClickClose = () => {
+  //   const mobileMenu = document.querySelector(".mobile-menu");
+  //   mobileMenu.classList.remove("active");
+  // };
 
   return (
     <div className="mobile-menu">
-      <span className="close" onClick={() => onClickClose()}></span>
+      <span className="close" 
+      // onClick={() => onClickClose()}
+      ></span>
       <ul className="menu">
         <li
           className={`menu__item mobile-link ${
             location.pathname === "/services" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
+          // onClick={() => onClickMobileLink()}
         >
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/services");
+              // navigate("/services");
             }}
           >
             Services
@@ -65,13 +64,13 @@ const MobileMenu = () => {
         <li
           className="menu__item mobile-link"
           data-id="projects"
-          onClick={() => onClickMobileLink()}
+          // onClick={() => onClickMobileLink()}
         >
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/main", { state: { scrollTo: "projects" } });
+              // navigate("/main", { state: { scrollTo: "projects" } });
             }}
           >
             Projects
@@ -81,13 +80,13 @@ const MobileMenu = () => {
           className={`menu__item mobile-link ${
             location.pathname === "/about-us" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
+          // onClick={() => onClickMobileLink()}
         >
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/about-us");
+              // navigate("/about-us");
             }}
           >
             About us
@@ -97,13 +96,13 @@ const MobileMenu = () => {
           className={`menu__item mobile-link ${
             location.pathname === "/contact-us" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
+          // onClick={() => onClickMobileLink()}
         >
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/contact-us");
+              // navigate("/contact-us");
             }}
           >
             Contact us
@@ -113,13 +112,13 @@ const MobileMenu = () => {
           className={`menu__item mobile-link ${
             location.pathname === "/faqs" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
+          // onClick={() => onClickMobileLink()}
         >
           <a
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/faqs");
+              // navigate("/faqs");
             }}
           >
             FAQs

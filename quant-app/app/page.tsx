@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+// import { useLocation, useNavigate } from "react-router-dom";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -39,7 +39,7 @@ import ReviewAvatar3 from "@/src/assets/images/review-avatar-3.jpg";
 import Fi from "@/src/assets/icons/fi.svg";
 import Banner from "@/src/assets/icons/banner.svg";
 import { scrollToBlock } from "@/src/utils/scroll-links";
-import Footer from "@/src/components/Footer";
+
 import {
   handleClickVideoModal,
   handleCloseModal,
@@ -217,7 +217,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/services");
+              // navigate("/services");
             }}
           >
             <button className="fill-btn">Read more</button>
@@ -638,8 +638,6 @@ const MainPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
 
       <div className="modal" id="video-popup" onClick={handleClickVideoModal}>
         <div className="modal-content">

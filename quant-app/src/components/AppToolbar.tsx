@@ -1,5 +1,6 @@
-import { useLocation, useNavigate } from "react-router-dom";
+"use client"
 import { useEffect } from "react";
+import Image from "next/image";
 
 import TalkPopup from "./TalkPopup";
 import MobileMenu from "./MobileMenu";
@@ -7,37 +8,12 @@ import { openLetsTalkModal } from "../utils/modal";
 import Logo from "../assets/icons/logo.svg";
 import "../style/main.css";
 
-export const AppToolbar = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
+const AppToolbar = () => {
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
-
-    if (target) observer.observe(target);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [location]);
-
-  const onClickBurger = () => {
-    const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.add("active");
-  };
+  // const onClickBurger = () => {
+  //   const mobileMenu = document.querySelector(".mobile-menu");
+  //   mobileMenu.classList.add("active");
+  // };
 
   return (
     <>
@@ -48,11 +24,11 @@ export const AppToolbar = () => {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigate("/main");
+                // navigate("/main");
               }}
               className="logo"
             >
-              <img id="logo" src={Logo} alt="" />
+              <Image id="logo" src={Logo} alt="" />
             </a>
             <nav>
               <ul className="menu">
@@ -65,7 +41,7 @@ export const AppToolbar = () => {
                     href="/services"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/services");
+                      // navigate("/services");
                     }}
                   >
                     Services
@@ -81,7 +57,7 @@ export const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/main", { state: { scrollTo: "projects" } });
+                      // navigate("/main", { state: { scrollTo: "projects" } });
                     }}
                   >
                     Projects
@@ -96,7 +72,7 @@ export const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/about-us");
+                      // navigate("/about-us");
                     }}
                   >
                     About us
@@ -111,7 +87,7 @@ export const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/contact-us");
+                      // navigate("/contact-us");
                     }}
                   >
                     Contact us
@@ -126,7 +102,7 @@ export const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/faqs");
+                      // navigate("/faqs");
                     }}
                   >
                     FAQs
@@ -143,7 +119,9 @@ export const AppToolbar = () => {
                   Let’s Talk
                 </button>
               )}
-              <span className="burger" onClick={() => onClickBurger()}></span>
+              <span className="burger" 
+              // onClick={() => onClickBurger() }
+              ></span>
             </div>
           </div>
         </div>
@@ -154,3 +132,5 @@ export const AppToolbar = () => {
     </>
   );
 };
+
+export default AppToolbar;

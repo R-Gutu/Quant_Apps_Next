@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useState } from "react";
-// import { useLocation, useNavigate } from "react-router-dom";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -8,6 +7,7 @@ import Image from "next/image";
 
 import Monitor from "@/src/assets/images/monitor.png";
 
+//@ts-ignore
 import Intro from "@/src/assets/video/intro.mp4";
 import Noutbook from "@/src/assets/images/noutbook.png";
 import Vector from "@/src/assets/icons/vector.svg";
@@ -391,7 +391,7 @@ const MainPage = () => {
               </div>
             </div>
 
-            <div className="our-work__btn" onClick={() => onClickOutWork()}>
+            <div className="our-work__btn" onClick={() => 'put code here'}>
               <span>Show more projects</span>
             </div>
           </div>

@@ -1,0 +1,20 @@
+{
+  "LetsCraftTogether": "Hai să creăm ceva de neuitat împreună!",
+  "ReadyToKickstartProject": "Ești gata să începi proiectul tău? Completează formularul pentru a stabili o consultație, unde vom discuta mai detaliat despre scopurile și ideile tale. După discuție, vom pregăti un plan individual cu un grafic clar și costuri.",
+  "FirstName": "Nume",
+  "FirstNamePlaceholder": "Cum vă numiți?",
+  "LastName": "Prenume",
+  "LastNamePlaceholder": "Care este prenumele dvs.?",
+  "Email": "Adresa de email",
+  "ProjectDetails": "Detalii despre proiect",
+  "ProjectDetailsPlaceholder": "Cu ce vă putem ajuta?",
+  "SelectTheServices": "Alegeți serviciile pentru proiectul dvs.:",
+  "Budget": "Buget",
+  "UnsureOnBudget": "Alegeți intervalul de buget dorit. Noi vă vom propune cea mai bună soluție pentru nevoile dvs.",
+  "Attachments": "Fișiere atașate",
+  "DragFiles": "Atașați fișierele aici pentru",
+  "Browse": "încărcare",
+  "Submit": "Trimiteți",
+  "IosApp": "Aplicație iOS",
+  "WebDevelopment": "Creare website"
+}

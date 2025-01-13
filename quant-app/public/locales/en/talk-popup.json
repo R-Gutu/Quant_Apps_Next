@@ -1,0 +1,20 @@
+{
+  "LetsCraftTogether": "Let's craft something unforgettable together!",
+  "ReadyToKickstartProject": "Ready to kickstart your project? Complete the form to schedule a discovery call, where we'll dive into your goals and ideas. After the call, we'll deliver a custom plan with a clear timeline and pricing.",
+  "FirstName": "First name",
+  "FirstNamePlaceholder": "What’s your first name?",
+  "LastName": "Last name",
+  "LastNamePlaceholder": "What’s your last name?",
+  "Email": "E-mail",
+  "ProjectDetails": "Project details",
+  "ProjectDetailsPlaceholder": "What can we help you with?",
+  "SelectTheServices": "Select the services you need for your project:",
+  "Budget": "Budget",
+  "UnsureOnBudget": "Unsure on budget? Select a range, and we’ll tailor the best solution for you!",
+  "Attachments": "Attachments",
+  "DragFiles": "Drag your file(s) or",
+  "Browse": "browse",
+  "Submit": "Submit",
+  "IosApp": "iOS App",
+  "WebDevelopment": "Web development"
+}

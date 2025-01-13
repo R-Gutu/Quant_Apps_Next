@@ -4,7 +4,7 @@ import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
-import "./mainpage.css"
+// import "./mainpage.css"
 
 import Monitor from "@/src/assets/images/monitor.png";
 

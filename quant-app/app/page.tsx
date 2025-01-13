@@ -38,7 +38,6 @@ import ReviewAvatar2 from "@/src/assets/images/review-avatar-2.jpg";
 import ReviewAvatar3 from "@/src/assets/images/review-avatar-3.jpg";
 import Fi from "@/src/assets/icons/fi.svg";
 import Banner from "@/src/assets/icons/banner.svg";
-import { scrollToBlock } from "@/src/utils/scroll-links";
 
 import {
   handleClickVideoModal,

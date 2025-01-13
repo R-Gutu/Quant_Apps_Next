@@ -1,5 +1,4 @@
 'use client'
-import Footer from '@/src/components/Footer'
 import Noutbook from '@/src/assets/images/noutbook.png'
 import Vector from "@/src/assets/icons/vector.svg";
 import Apple from "@/src/assets/icons/apple.svg";
@@ -13,6 +12,7 @@ import Star from "@/src/assets/icons/Star.svg";
 import Moon from "@/src/assets/icons/moon.svg";
 import Banner from "@/src/assets/icons/banner.svg";
 import Image from 'next/image'
+
 const Services = () => {
   const onClickToggle = (e:any) => {
     e.currentTarget.closest(".faq__accordion-item").classList.toggle("active");
@@ -390,8 +390,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

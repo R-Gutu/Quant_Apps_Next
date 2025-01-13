@@ -1,4 +1,7 @@
+"use client"
+
 import { useState } from "react";
+import Image from "next/image";
 
 import { handleCloseModal } from "../utils/modal";
 import {
@@ -49,34 +52,34 @@ const TalkPopup = () => {
 
   const [invalidForm, setInvalidForm] = useState(true);
 
-  const onFirstNameChanged = (value) => {
+  const onFirstNameChanged = (value : any) => {
     setFirstName(value);
     validateForm(value, lastName, email, iosCheckbox, webCheckbox);
   };
 
-  const onLastNameChanged = (value) => {
+  const onLastNameChanged = (value : any) => {
     setLastName(value);
     validateForm(firstName, value, email, iosCheckbox, webCheckbox);
   };
 
-  const onEmailChanged = (value) => {
+  const onEmailChanged = (value : any) => {
     setEmail(value);
     validateForm(firstName, lastName, value, iosCheckbox, webCheckbox);
   };
 
-  const onIosCheckboxChanged = (value) => {
+  const onIosCheckboxChanged = (value : any) => {
     setIosCheckbox(value);
     validateForm(firstName, lastName, email, value, webCheckbox);
     onIosWebCheckboxChanged(value, webCheckbox);
   };
 
-  const onWebCheckboxChanged = (value) => {
+  const onWebCheckboxChanged = (value : any) => {
     setWebCheckbox(value);
     validateForm(firstName, lastName, email, iosCheckbox, value);
     onIosWebCheckboxChanged(iosCheckbox, value);
   };
 
-  const onIosWebCheckboxChanged = (iosCheckbox, webCheckbox) => {
+  const onIosWebCheckboxChanged = (iosCheckbox : any, webCheckbox : any) => {
     if (iosCheckbox && webCheckbox) {
       setBudgetId(0);
     } else if (iosCheckbox && !webCheckbox) {
@@ -89,11 +92,11 @@ const TalkPopup = () => {
   };
 
   const validateForm = (
-    firstName,
-    lastName,
-    email,
-    iosCheckbox,
-    webCheckbox
+    firstName : any,
+    lastName : any,
+    email : any,
+    iosCheckbox : any,
+    webCheckbox : any
   ) => {
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
@@ -105,16 +108,16 @@ const TalkPopup = () => {
     );
   };
 
-  const onDropZoneDragOver = (e) => {
+  const onDropZoneDragOver = (e : any) => {
     e.preventDefault();
     e.currentTarget.classList.add("dragover");
   };
 
-  const onDropZoneDragLeave = (e) => {
+  const onDropZoneDragLeave = (e : any) => {
     e.currentTarget.classList.remove("dragover");
   };
 
-  const onDropZoneDrop = (e) => {
+  const onDropZoneDrop = (e : any) => {
     e.preventDefault();
     e.currentTarget.classList.remove("dragover");
 
@@ -122,7 +125,7 @@ const TalkPopup = () => {
     handleFiles(files);
   };
 
-  const onFileInputChange = (e) => {
+  const onFileInputChange = (e : any) => {
     const files = e.currentTarget.files;
     handleFiles(files);
   };
@@ -137,10 +140,10 @@ const TalkPopup = () => {
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
-            <img src={LogoBlack} alt="" className="talk-popup__logo" />
+            <Image src={LogoBlack} alt="" className="talk-popup__logo" />
             <div className="talk-popup__left-content">
               <h1>Let’s craft something unforgettable together!</h1>
-              <img src={ModalImage} alt="" />
+              <Image src={ModalImage} alt="" />
               <p>
                 Ready to kickstart your project? Complete the form to schedule a
                 discovery call, where we’ll dive into your goals and ideas.
@@ -148,7 +151,7 @@ const TalkPopup = () => {
                 timeline and pricing.
               </p>
             </div>
-            <img src={ModalBg} alt="" className="talk-popup__left-img" />
+            <Image src={ModalBg} alt="" className="talk-popup__left-img" />
           </div>
           <div className="talk-popup__right">
             <form className="talk-popup__form">
@@ -159,7 +162,7 @@ const TalkPopup = () => {
                     type="text"
                     placeholder="What’s your first name?"
                     value={firstName}
-                    onInput={(event) => onFirstNameChanged(event.target.value)}
+                    onInput={(event : any) => onFirstNameChanged(event.target.value)}
                   />
                 </div>
                 <div className="talk-popup__from-row">
@@ -168,7 +171,7 @@ const TalkPopup = () => {
                     type="text"
                     placeholder="What’s your last name?"
                     value={lastName}
-                    onInput={(event) => onLastNameChanged(event.target.value)}
+                    onInput={(event  : any) => onLastNameChanged(event.target.value)}
                   />
                 </div>
               </div>
@@ -178,7 +181,7 @@ const TalkPopup = () => {
                   type="email"
                   placeholder="brianclark@gmail.com"
                   value={email}
-                  onInput={(event) => onEmailChanged(event.target.value)}
+                  onInput={(event  : any) => onEmailChanged(event.target.value)}
                 />
               </div>
               <div className="talk-popup__from-row">
@@ -298,7 +301,7 @@ const TalkPopup = () => {
                   onDrop={onDropZoneDrop}
                 >
                   <div className="talk-popup__add-attachment-info">
-                    <img src={Staple} alt="" />
+                    <Image src={Staple} alt="" />
                     <p>
                       Drag your file(s) or <span>browse</span>
                     </p>

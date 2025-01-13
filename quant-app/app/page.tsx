@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 import { Swiper } from "swiper/react";
 import { SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";

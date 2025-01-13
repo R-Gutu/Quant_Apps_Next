@@ -115,16 +115,6 @@ ul {
     list-style: none;
 }
 
-.d-block {
-    display: block !important;
-}
-
-.d-flex {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-}
-
 button {
     outline: none;
     cursor: pointer;

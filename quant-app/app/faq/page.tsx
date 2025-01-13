@@ -1,5 +1,4 @@
 'use client'
-import Footer from '@/src/components/Footer'
 
 const Faqs = () => {
 
@@ -175,8 +174,6 @@ const Faqs = () => {
         <span className="contact-us-img"></span>
         <span className="contact-us-img-2"></span>
       </section>
-
-      <Footer />
     </>
   );
 };

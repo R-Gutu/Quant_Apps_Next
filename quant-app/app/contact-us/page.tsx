@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Mail from '@/src/assets/icons/mail.svg'
 import Location from "@/src/assets/icons/Location.svg";
-import Footer from '@/src/components/Footer'
 import ModalBg from "@/src/assets/images/modal-bg.png";
 import Image from "next/image";
 // import {
@@ -114,8 +113,6 @@ const ContactUs = () => {
 
       <span className="contact-us-img"></span>
       <span className="contact-us-img-2"></span>
-
-      <Footer />
     </>
   );
 };

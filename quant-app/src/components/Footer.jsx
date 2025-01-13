@@ -1,4 +1,4 @@
-// import { useNavigate, useLocation } from "react-router-dom";
+import Image from 'next/image'
 import Logo from "../assets/icons/logo.svg";
 import FooterFacebook from "../assets/icons/footer-facebook.svg";
 import FooterInstagram from "../assets/icons/footer-instagram.svg";
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer">
             <div className="footer__logo">
-              <img src={Logo} alt="" />
+              <Image src={Logo} alt="" />
             </div>
           <div className="footer__links">
             <div className="footer__column">
@@ -122,14 +122,14 @@ const Footer = () => {
                 target="_blank"
                 className="footer__column-link"
               >
-                <img src={FooterFacebook} alt="" />
+                <Image src={FooterFacebook} alt="" />
               </a>
               <a
                 href="https://www.instagram.com/quantapps_/"
                 target="_blank"
                 className="footer__column-link"
               >
-                <img src={FooterInstagram} alt="" />
+                <Image src={FooterInstagram} alt="" />
               </a>
             </div>
           </div>

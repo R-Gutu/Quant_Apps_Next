@@ -217,7 +217,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/services");
+              // navigate("/services");
             }}
           >
             <button className="fill-btn">Read more</button>
@@ -391,7 +391,7 @@ const MainPage = () => {
               </div>
             </div>
 
-            <div className="our-work__btn" onClick={() => onClickOutWork()}>
+            <div className="our-work__btn" onClick={() => 'put code here'}>
               <span>Show more projects</span>
             </div>
           </div>

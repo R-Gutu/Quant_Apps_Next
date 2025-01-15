@@ -7,15 +7,15 @@ import { usePathname, useRouter } from "next/navigation";
 import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
 import AppLink from '@/src/components/AppLink'
 
-import Logo from "../assets/icons/logo.svg";
-import FooterFacebook from "../assets/icons/footer-facebook.svg";
-import FooterInstagram from "../assets/icons/footer-instagram.svg";
-import LinkedIn from "../assets/icons/linked-in.svg";
-import LinkedInRounded from "../assets/icons/linked-in-rounded.svg";
-import TikTok from "../assets/icons/tik-tok.svg";
-import Telegram from "../assets/icons/telegram.svg";
-import TelegramOld from "../assets/icons/telegram-old.svg";
-import WhatsApp from "../assets/icons/whats-app.svg";
+import Logo from "@/src/assets/icons/logo.svg";
+import FooterFacebook from "@/src/assets/icons/footer-facebook.svg";
+import FooterInstagram from "@/src/assets/icons/footer-instagram.svg";
+import LinkedIn from "@/src/assets/icons/linked-in.svg";
+import LinkedInRounded from "@/src/assets/icons/linked-in-rounded.svg";
+import TikTok from "@/src/assets/icons/tik-tok.svg";
+import Telegram from "@/src/assets/icons/Telegram.svg";
+import TelegramOld from "@/src/assets/icons/telegram-old.svg";
+import WhatsApp from "@/src/assets/icons/whats-app.svg";
 
 const Footer = () => {
   const { t: tToolbar } = useTranslation("app-toolbar");

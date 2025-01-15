@@ -7,12 +7,12 @@ import { usePathname, useRouter } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
-import FooterFacebook from "../assets/icons/footer-facebook.svg";
-import FooterInstagram from "../assets/icons/footer-instagram.svg";
-import TikTok from "../assets/icons/tik-tok.svg";
-import Telegram from "../assets/icons/telegram.svg";
-import WhatsApp from "../assets/icons/whats-app.svg";
-import LinkedIn from "../assets/icons/linked-in.svg";
+import FooterFacebook from "@/src/assets/icons/footer-facebook.svg";
+import FooterInstagram from "@/src/assets/icons/footer-instagram.svg";
+import TikTok from "@/src/assets/icons/tik-tok.svg";
+import Telegram from "@/src/assets/icons/Telegram.svg";
+import WhatsApp from "@/src/assets/icons/whats-app.svg";
+import LinkedIn from "@/src/assets/icons/linked-in.svg";
 
 const MobileMenu = () => {
   const { t } = useTranslation("app-toolbar");

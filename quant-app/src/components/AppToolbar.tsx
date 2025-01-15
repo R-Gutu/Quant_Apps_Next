@@ -1,12 +1,11 @@
 "use client"
 
 import { usePathname, useRouter } from "next/navigation";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
 
-import LanguageSwitcher from "./LanguageSwitcher";
 import TalkPopup from "./TalkPopup/TalkPopup";
 import MobileMenu from "./MobileMenu";
 import { openLetsTalkModal } from "../utils/modal";
@@ -14,9 +13,10 @@ import { openLetsTalkModal } from "../utils/modal";
 import Logo from "../assets/icons/logo.svg";
 
 import "../style/main.css";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const AppToolbar = () => {
-  const { t } = useTranslation("app-toolbar");
+  const t = useTranslations("app-toolbar");
   // const router = useRouter();
   const pathname = usePathname();
   

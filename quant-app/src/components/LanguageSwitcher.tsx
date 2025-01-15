@@ -1,5 +1,7 @@
 import { useState } from "react";
-import i18next from "i18next";
+import { useLocale } from "next-intl";
+import { useRouter, usePathname, useParams } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 import {
   Box,
@@ -14,10 +16,13 @@ import {
 import { visuallyHidden } from "@mui/utils";
 import PropTypes from "prop-types";
 
-const LanguageSwitcher = (props : any) => {
+const LanguageSwitcher = (props: { mobile?: boolean }) => {
   const { mobile } = props;
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = useLocale();
 
-  const [activeLng, setActiveLng] = useState(i18next.options.lng ?? "en");
+  const [activeLng, setActiveLng] = useState(currentLocale);
   const [open, setOpen] = useState(false);
 
   const handleClose = () => {
@@ -28,10 +33,9 @@ const LanguageSwitcher = (props : any) => {
     setOpen(true);
   };
 
-  const handleChangeLanguage = (value : any) => {
-    i18next.changeLanguage(value);
-
-    localStorage.setItem("lng", value);
+  const handleChangeLanguage = (value: string) => {
+    const newPathname = pathname.replace(`/${currentLocale}`, `/${value}`);
+    router.push(newPathname);
     setActiveLng(value);
   };
 
@@ -48,7 +52,7 @@ const LanguageSwitcher = (props : any) => {
     >
       {mobile ? (
         <Grid2 container direction="column">
-          {Array.isArray(i18next.options?.preload) && i18next.options.preload.map((language) => (
+          {routing.locales.map((language) => (
             <Button
               key={language}
               value={language}
@@ -73,6 +77,7 @@ const LanguageSwitcher = (props : any) => {
           <Select
             variant="standard"
             disableUnderline
+            IconComponent={() => null}
             slotProps={{
               input: { sx: { margin: 0, padding: 0 } },
               root: { sx: { margin: 0, padding: 0 } },
@@ -80,9 +85,8 @@ const LanguageSwitcher = (props : any) => {
             open={open}
             onClose={handleClose}
             onOpen={handleOpen}
-            value={i18next.language}
+            value={currentLocale}
             onChange={(e) => handleChangeLanguage(e.target.value)}
-            // IconComponent={() => {}}
             autoWidth
             MenuProps={{
               disableScrollLock: true,
@@ -104,7 +108,7 @@ const LanguageSwitcher = (props : any) => {
               </Typography>
             )}
           >
-            {Array.isArray(i18next.options?.preload) && i18next.options.preload.map((language) => (
+            {routing.locales.map((language) => (
               <MenuItem
                 key={language}
                 value={language}

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Grid2, Link } from "@mui/material";
+import Image from "next/image";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -15,44 +16,44 @@ import LinkedIn from "../assets/icons/linked-in.svg";
 const MobileMenu = () => {
   const { t } = useTranslation("app-toolbar");
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
+  // useEffect(() => {
+  //   const target = document.getElementById("projects");
+  //   const menuItem = document.querySelectorAll(
+  //     '.menu__item[data-id="projects"]'
+  //   );
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         menuItem.forEach((e) => e.classList.add("active"));
+  //       } else {
+  //         menuItem.forEach((e) => e.classList.remove("active"));
+  //       }
+  //     });
+  //   });
 
-    if (target) {
-      observer.observe(target);
-    } else {
-      menuItem.forEach((e) => e.classList.remove("active"));
-    }
+  //   if (target) {
+  //     observer.observe(target);
+  //   } else {
+  //     menuItem.forEach((e) => e.classList.remove("active"));
+  //   }
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [location]);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [location]);
 
   const onClickMobileLink = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
+    mobileMenu?.classList.remove("active");
   };
 
   const onClickClose = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
+    mobileMenu?.classList.remove("active");
   };
 
   return (
@@ -69,7 +70,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/services");
+              // navigate("/services");
             }}
           >
             {t("Services")}
@@ -100,7 +101,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/", { state: { scrollTo: "projects" } });
+              // navigate("/", { state: { scrollTo: "projects" } });
             }}
           >
             {t("Projects")}
@@ -116,7 +117,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/about-us");
+              // navigate("/about-us");
             }}
           >
             {t("AboutUs")}
@@ -132,7 +133,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/contact-us");
+              // navigate("/contact-us");
             }}
           >
             {t("ContactUs")}
@@ -148,7 +149,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/faqs");
+              // navigate("/faqs");
             }}
           >
             FAQs
@@ -164,11 +165,11 @@ const MobileMenu = () => {
         mt="50px"
       >
         <Link href="https://www.facebook.com/profile.php?id=61571073299478">
-          <img style={{ width: "30px" }} src={FooterFacebook} alt="Facebook" />
+          <Image style={{ width: "30px" }} src={FooterFacebook} alt="Facebook" />
         </Link>
 
         <Link href="https://www.instagram.com/quantapps_/">
-          <img
+          <Image
             style={{ width: "30px" }}
             src={FooterInstagram}
             alt="Instagram"
@@ -176,19 +177,19 @@ const MobileMenu = () => {
         </Link>
 
         <Link href="https://www.linkedin.com/company/quant-apps">
-          <img style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
+          <Image style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
         </Link>
 
         <Link href="https://www.tiktok.com/@quantapps">
-          <img style={{ width: "30px" }} src={TikTok} alt="TikTok" />
+          <Image style={{ width: "30px" }} src={TikTok} alt="TikTok" />
         </Link>
 
         <Link href="https://t.me/quantapps">
-          <img style={{ width: "30px" }} src={Telegram} alt="Telegram" />
+          <Image style={{ width: "30px" }} src={Telegram} alt="Telegram" />
         </Link>
 
         <Link href="https://wa.me/37369882331">
-          <img style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
+          <Image style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
         </Link>
       </Grid2>
 

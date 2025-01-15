@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 import { Box, useMediaQuery } from "@mui/material";
 
@@ -18,35 +19,35 @@ const AppToolbar = () => {
 
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
+  // useEffect(() => {
+  //   const target = document.getElementById("projects");
+  //   const menuItem = document.querySelectorAll(
+  //     '.menu__item[data-id="projects"]'
+  //   );
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         menuItem.forEach((e) => e.classList.add("active"));
+  //       } else {
+  //         menuItem.forEach((e) => e.classList.remove("active"));
+  //       }
+  //     });
+  //   });
 
-    if (target) observer.observe(target);
+  //   if (target) observer.observe(target);
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [location]);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [location]);
 
   const onClickBurger = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.add("active");
+    mobileMenu?.classList.add("active");
   };
 
   return (
@@ -58,11 +59,11 @@ const AppToolbar = () => {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigate("/");
+                // navigate("/");
               }}
               className="logo"
             >
-              <img id="logo" src={Logo} alt="" />
+              <Image id="logo" src={Logo} alt="" />
             </a>
             <nav>
               <ul className="menu">
@@ -75,7 +76,7 @@ const AppToolbar = () => {
                     href="/services"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/services");
+                      // navigate("/services");
                     }}
                   >
                     {t("Services")}
@@ -106,7 +107,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/", { state: { scrollTo: "projects" } });
+                      // navigate("/", { state: { scrollTo: "projects" } });
                     }}
                   >
                     {t("Projects")}
@@ -121,7 +122,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/about-us");
+                      // navigate("/about-us");
                     }}
                   >
                     {t("AboutUs")}
@@ -136,7 +137,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/contact-us");
+                      // navigate("/contact-us");
                     }}
                   >
                     {t("ContactUs")}
@@ -151,7 +152,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/faqs");
+                      // navigate("/faqs");
                     }}
                   >
                     FAQs

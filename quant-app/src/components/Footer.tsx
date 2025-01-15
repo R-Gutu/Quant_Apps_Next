@@ -1,11 +1,11 @@
-import { useNavigate, useLocation } from "react-router-dom";
+"use client"
+
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
-import { Box, Grid2, Link, Typography, useMediaQuery } from "@mui/material";
-
-import { useScrollLink } from "../hooks/useScrollLink";
-import AppLink from "./AppLink";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
+import AppLink from '@/src/components/AppLink'
 
 import Logo from "../assets/icons/logo.svg";
 import FooterFacebook from "../assets/icons/footer-facebook.svg";
@@ -20,12 +20,34 @@ import WhatsApp from "../assets/icons/whats-app.svg";
 const Footer = () => {
   const { t: tToolbar } = useTranslation("app-toolbar");
   const { t: tFooter } = useTranslation("footer");
-
-  // const location = useLocation();
-  // const navigate = useNavigate();
-  const { navigateWithScroll } = useScrollLink();
-
+  const pathname = usePathname();
+  const router = useRouter();
   const matches = useMediaQuery("(max-width:768px)");
+
+  const handleScrollToElement = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleNavigation = (path: string, scrollTo?: string) => {
+    if (path === pathname && scrollTo) {
+      handleScrollToElement(scrollTo);
+    } else {
+      router.push(path);
+      if (scrollTo) {
+        setTimeout(() => handleScrollToElement(scrollTo), 100);
+      }
+    }
+  };
+
+  const socialLinks = [
+    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: FooterFacebook, alt: "Facebook" },
+    { href: "https://www.instagram.com/quantapps_/", icon: FooterInstagram, alt: "Instagram" },
+    { href: "https://www.linkedin.com/company/quant-apps", icon: LinkedIn, alt: "LinkedIn" },
+    { href: "https://www.tiktok.com/@quantapps", icon: TikTok, alt: "TikTok" },
+    { href: "https://t.me/quantapps", icon: Telegram, alt: "Telegram" },
+    { href: "https://wa.me/37369882331", icon: WhatsApp, alt: "WhatsApp" }
+  ];
 
   return (
     <footer>
@@ -69,128 +91,89 @@ const Footer = () => {
               mb="50px"
               mr="65px"
             >
-              <Link href="https://www.facebook.com/profile.php?id=61571073299478">
-                <Image
-                  style={{ width: "30px" }}
-                  src={FooterFacebook}
-                  alt="Facebook"
-                />
-              </Link>
-
-              <Link href="https://www.instagram.com/quantapps_/">
-                <Image
-                  style={{ width: "30px" }}
-                  src={FooterInstagram}
-                  alt="Instagram"
-                />
-              </Link>
-
-              <Link href="https://www.linkedin.com/company/quant-apps">
-                <Image style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
-              </Link>
-
-              <Link href="https://www.tiktok.com/@quantapps">
-                <Image style={{ width: "30px" }} src={TikTok} alt="TikTok" />
-              </Link>
-
-              <Link href="https://t.me/quantapps">
-                <Image style={{ width: "30px" }} src={Telegram} alt="Telegram" />
-              </Link>
-
-              <Link href="https://wa.me/37369882331">
-                <Image style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
-              </Link>
+              {socialLinks.map((link) => (
+                <Link 
+                  key={link.alt}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    width={30}
+                    height={30}
+                    src={link.icon}
+                    alt={link.alt}
+                  />
+                </Link>
+              ))}
             </Grid2>
           )}
+
           <div className="footer">
-            {location.pathname === "/" ? (
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // navigate("/");
-                }}
-                className="footer__logo"
-              >
-                <Image src={Logo} alt="" />
-              </a>
+            {pathname === "/" ? (
+              <Link href="/" className="footer__logo">
+                <Image src={Logo} alt="Logo" width={150} height={40} />
+              </Link>
             ) : (
               <div className="footer__logo">
-                <Image src={Logo} alt="" />
+                <Image src={Logo} alt="Logo" width={150} height={40} />
               </div>
             )}
 
             <div className="footer__links">
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("FindUsAt")}</p>
-
-                <Grid2 container>
-                  <Link
-                    underline="none"
-                    href="https://www.instagram.com/quantapps_/"
-                  >
-                    Instagram
-                    <Image
-                      style={{ width: "14px", marginLeft: "13px" }}
-                      src={LinkedInRounded}
-                      alt="LinkedInRounded"
-                    />
-                  </Link>
-                </Grid2>
-
-                <Grid2 container direction="row">
-                  <Link
-                    underline="none"
-                    href="https://www.facebook.com/profile.php?id=61563468213074"
-                  >
-                    Facebook
-                    <Image
-                      style={{ width: "14px", marginLeft: "13px" }}
-                      src={LinkedInRounded}
-                      alt="LinkedInRounded"
-                    />
-                  </Link>
-                </Grid2>
-
-                <Grid2 container direction="row">
-                  <Link
-                    underline="none"
-                    href="https://www.linkedin.com/company/quant-apps"
-                  >
-                    Linkedin
-                    <Image
-                      style={{ width: "14px", marginLeft: "13px" }}
-                      src={LinkedInRounded}
-                      alt="LinkedInRounded"
-                    />
-                  </Link>
-                </Grid2>
+                {["Instagram", "Facebook", "Linkedin"].map((platform) => (
+                  <Grid2 key={platform} container>
+                    <Link
+                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" : 
+                        platform === "Linkedin" ? "company/quant-apps" : 
+                        "quantapps_"}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <Typography 
+                        sx={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          color: 'white',
+                          opacity: 0.75,
+                          '&:hover': { opacity: 1 }
+                        }}
+                      >
+                        {platform}
+                        <Image
+                          width={14}
+                          height={14}
+                          src={LinkedInRounded}
+                          alt="External Link"
+                          style={{ marginLeft: "13px" }}
+                        />
+                      </Typography>
+                    </Link>
+                  </Grid2>
+                ))}
               </div>
 
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("Company")}</p>
-
-                {/* <AppLink to="/about-us">{tToolbar("AboutUs")}</AppLink> */}
-
+                <AppLink href="/about-us">{tToolbar("AboutUs")}</AppLink>
                 <p
                   data-id="projects"
                   className="footer__column-link"
-                  onClick={(e) => navigateWithScroll(e, "/", "projects")}
+                  onClick={() => handleNavigation("/", "projects")}
+                  style={{ cursor: 'pointer' }}
                 >
                   {tToolbar("Projects")}
                 </p>
-
-                {/* <AppLink to="/services">{tToolbar("Services")}</AppLink> */}
-
-                {/* <AppLink to="/gaming">{tToolbar("IGaming")}</AppLink> */}
+                <AppLink href="/services">{tToolbar("Services")}</AppLink>
               </div>
 
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("LearnMore")}</p>
-
-                {/* <AppLink to="/contact-us">{tToolbar("ContactUs")}</AppLink> */}
-
-                {/* <AppLink to="/contact-us">FAQs</AppLink> */}
+                <AppLink href="/contact-us">{tToolbar("ContactUs")}</AppLink>
+                <AppLink href="/contact-us">FAQs</AppLink>
               </div>
 
               <div className="footer__column">
@@ -206,14 +189,11 @@ const Footer = () => {
                 >
                   {tFooter("Legal")}
                 </Typography>
-
-                {/* <AppLink to={"/terms-of-use"}>{tFooter("TermsOfUse")}</AppLink> */}
-
-                {/* <AppLink to={"/privacy-policy"}> */}
-                  {/* {tFooter("PrivacyPolicy")}
-                </AppLink> */}
+                <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
+                <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
               </div>
             </div>
+
             <div className="mobile-footer-bottom">
               <div className="footer__column">
                 <Typography
@@ -228,51 +208,28 @@ const Footer = () => {
                 >
                   Legal
                 </Typography>
-
-                {/* <AppLink to={"/terms-of-use"}>{tFooter("TermsOfUse")}</AppLink> */}
-
-                {/* <AppLink to={"/privacy-policy"}>
-                  {tFooter("PrivacyPolicy")}
-                </AppLink> */}
+                <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
+                <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
               </div>
 
               <div className="mobile-footer-socials">
-                <Link href="https://www.facebook.com/profile.php?id=61571073299478">
-                  <Image
-                    style={{ width: "41px" }}
-                    src={FooterFacebook}
-                    alt="Facebook"
-                  />
+                <Link href="https://www.facebook.com/profile.php?id=61571073299478" target="_blank" rel="noopener noreferrer">
+                  <Image width={41} height={41} src={FooterFacebook} alt="Facebook" />
                 </Link>
-
-                <Link href="https://www.instagram.com/quantapps_/">
-                  <Image
-                    style={{ width: "41px" }}
-                    src={FooterInstagram}
-                    alt="Instagram"
-                  />
+                <Link href="https://www.instagram.com/quantapps_/" target="_blank" rel="noopener noreferrer">
+                  <Image width={41} height={41} src={FooterInstagram} alt="Instagram" />
                 </Link>
-
-                <Link href="https://t.me/quantapps">
-                  <Image
-                    style={{ width: "41px" }}
-                    src={TelegramOld}
-                    alt="TelegramOld"
-                  />
+                <Link href="https://t.me/quantapps" target="_blank" rel="noopener noreferrer">
+                  <Image width={41} height={41} src={TelegramOld} alt="Telegram" />
                 </Link>
-
-                <Link href="https://www.linkedin.com/company/quant-apps">
-                  <Image
-                    style={{ width: "41px" }}
-                    src={LinkedInRounded}
-                    alt="LinkedInRounded"
-                  />
+                <Link href="https://www.linkedin.com/company/quant-apps" target="_blank" rel="noopener noreferrer">
+                  <Image width={41} height={41} src={LinkedInRounded} alt="LinkedIn" />
                 </Link>
               </div>
             </div>
 
             <div className="footer__copyright">
-              {`© 2024 Quant-Apps. ${tFooter("AllRightsReserved")}`}
+              {`© ${new Date().getFullYear()} Quant-Apps. ${tFooter("AllRightsReserved")}`}
             </div>
           </div>
         </Box>

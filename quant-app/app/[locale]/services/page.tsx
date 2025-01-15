@@ -1,7 +1,5 @@
 'use client'
-import { useEffect } from "react";
-// import { useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import Image from 'next/image'
 
 import Vector from "@/src/assets/icons/vector.svg";
@@ -10,23 +8,11 @@ import Security from "@/src/assets/icons/sequrity.svg";
 import Puzzle from "@/src/assets/icons/pazle.svg";
 import Star from "@/src/assets/icons/Star.svg";
 import Moon from "@/src/assets/icons/moon.svg";
-import { scrollToBlock } from "@/src/utils/scrollLinks";
 import NextProject from "@/src/old-pages/sections/NextProject";
 import WhatWeOffer from "@/src/old-pages/sections/WhatWeOffer";
 
 const Services = () => {
-  const { t } = useTranslation("services");
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   const scrollTo = location.state?.scrollTo;
-
-  //   if (scrollTo) {
-  //     scrollToBlock(scrollTo);
-  //   } else {
-  //     window.scrollTo(0, 0);
-  //   }
-  // }, [location]);
+  const t = useTranslations("services");
 
   const onClickToggle = (e: any) => {
     e.currentTarget.closest(".faq__accordion-item").classList.toggle("active");

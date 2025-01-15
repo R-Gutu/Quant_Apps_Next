@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useMediaQuery } from "@mui/material";
-import "../../style/main.css";
 
 const FaqAccordionItem = (props) => {
   const [active, setActive] = useState(false);

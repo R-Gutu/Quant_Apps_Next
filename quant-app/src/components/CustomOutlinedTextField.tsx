@@ -3,7 +3,7 @@ import React from "react";
 import { TextField } from "@mui/material";
 import PropTypes from "prop-types";
 
-const CustomOutlinedTextField = (props) => {
+const CustomOutlinedTextField = (props : any) => {
   const {
     sx,
     label,

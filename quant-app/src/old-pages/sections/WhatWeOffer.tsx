@@ -1,20 +1,20 @@
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
 
-import Blur from "../../components/Blur";
+import Blur from "@/src/components/Blur";
 
-import CloudStorage from "../../assets/images/cloud-storage.png";
-import ItemsInNetBg from "../../assets/images/items-net-bg.png";
-import Vector from "../../assets/icons/vector.svg";
-import Apple from "../../assets/icons/apple.svg";
-import Android from "../../assets/icons/android.svg";
-import CrossPlatform from "../../assets/icons/cross-platform.svg";
-import Settings from "../../assets/icons/settings.svg";
+import CloudStorage from "@/src/assets/images/cloud-storage.png";
+import ItemsInNetBg from "@/src/assets/images/items-net-bg.png";
+import Vector from "@/src/assets/icons/vector.svg";
+import Apple from "@/src/assets/icons/apple.svg";
+import Android from "@/src/assets/icons/android.svg";
+import CrossPlatform from "@/src/assets/icons/cross-platform.svg";
+import Settings from "@/src/assets/icons/settings.svg";
 
 const WhatWeOffer = () => {
-  const { t } = useTranslation("what-we-offer");
+  const t = useTranslations("what-we-offer");
 
   return (
     <div className="offer" id="services">

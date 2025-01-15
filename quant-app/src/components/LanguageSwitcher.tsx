@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocale } from "next-intl";
-import { useRouter, usePathname, useParams } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 import {

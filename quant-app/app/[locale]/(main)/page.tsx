@@ -1,26 +1,9 @@
-// import { Link } from "@/i18n/routing";
-// import { getTranslations } from "next-intl/server";
-
-// export default async function HomePage() {
-//   const t = await getTranslations("HomePage");
-//   return (
-//     <div>
-//       <h1>{t("title")}</h1>
-//       <Link href='/contact'>{t("contact")}</Link>
-//     </div>
-//   );
-// }
-
-
-
 "use client"
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-import i18next from "i18next";
-import { useTranslations } from "next-intl";
-
+import { useLocale, useTranslations } from "next-intl";
 
 import {
   Box,
@@ -77,39 +60,20 @@ const MainPage = () => {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const currentLocale = useLocale();
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const initialCount = window.innerWidth > 768 ? 6 : 3;
   const [visibleCount, setVisibleCount] = useState(initialCount);
-  const [intro, setIntro] = useState(getIntroByLanguage(i18next.language));
+  const [intro, setIntro] = useState(getIntroByLanguage(currentLocale));
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.scrollTo(0, 0);
     }
-
-
-    const handleLanguageChange = (lng: string) => {
-      const intro = getIntroByLanguage(lng);
-      setIntro(intro);
-
-      if (videoRef.current) {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-        videoRef.current.load();
-      }
-    };
-
-    i18next.on("languageChanged", handleLanguageChange);
-
-    return () => {
-      i18next.off("languageChanged", (lng) =>
-        setIntro(getIntroByLanguage(lng))
-      );
-    };
   }, []);
 
   useEffect(() => {

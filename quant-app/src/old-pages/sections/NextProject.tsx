@@ -1,11 +1,11 @@
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import { Box, Button, Grid2, Typography, useMediaQuery } from "@mui/material";
 import { openLetsTalkModal } from "../../utils/modal";
 import Hand3d from "../../assets/icons/hand3d.svg";
 import Image from "next/image";
 
 const NextProject = () => {
-  const { t } = useTranslation("next-project");
+  const t = useTranslations("next-project");
   const smallScreen = useMediaQuery("(max-width:600px)");
   const mediumScreen = useMediaQuery("(max-width:1024px)");
 

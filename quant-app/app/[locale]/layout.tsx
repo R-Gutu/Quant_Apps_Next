@@ -7,7 +7,6 @@ import "./globals.css";
 import "@/src/style/main.css"
 import Footer from "@/src/components/Footer";
 import AppToolbar from "@/src/components/AppToolbar"
-import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",

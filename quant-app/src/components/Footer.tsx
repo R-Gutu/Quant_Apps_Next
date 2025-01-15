@@ -1,6 +1,6 @@
 "use client"
 
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -18,8 +18,8 @@ import TelegramOld from "@/src/assets/icons/telegram-old.svg";
 import WhatsApp from "@/src/assets/icons/whats-app.svg";
 
 const Footer = () => {
-  const { t: tToolbar } = useTranslation("app-toolbar");
-  const { t: tFooter } = useTranslation("footer");
+  const tToolbar = useTranslations("app-toolbar");
+  const tFooter = useTranslations("footer");
   const pathname = usePathname();
   const router = useRouter();
   const matches = useMediaQuery("(max-width:768px)");

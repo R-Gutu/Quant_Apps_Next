@@ -2,6 +2,7 @@
 // import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Grid2, Link } from "@mui/material";
+import Image from "next/image";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -47,12 +48,12 @@ const MobileMenu = () => {
 
   const onClickMobileLink = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
+    mobileMenu?.classList.remove("active");
   };
 
   const onClickClose = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
-    mobileMenu.classList.remove("active");
+    mobileMenu?.classList.remove("active");
   };
 
   return (
@@ -164,11 +165,11 @@ const MobileMenu = () => {
         mt="50px"
       >
         <Link href="https://www.facebook.com/profile.php?id=61571073299478">
-          <img style={{ width: "30px" }} src={FooterFacebook} alt="Facebook" />
+          <Image style={{ width: "30px" }} src={FooterFacebook} alt="Facebook" />
         </Link>
 
         <Link href="https://www.instagram.com/quantapps_/">
-          <img
+          <Image
             style={{ width: "30px" }}
             src={FooterInstagram}
             alt="Instagram"
@@ -176,19 +177,19 @@ const MobileMenu = () => {
         </Link>
 
         <Link href="https://www.linkedin.com/company/quant-apps">
-          <img style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
+          <Image style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
         </Link>
 
         <Link href="https://www.tiktok.com/@quantapps">
-          <img style={{ width: "30px" }} src={TikTok} alt="TikTok" />
+          <Image style={{ width: "30px" }} src={TikTok} alt="TikTok" />
         </Link>
 
         <Link href="https://t.me/quantapps">
-          <img style={{ width: "30px" }} src={Telegram} alt="Telegram" />
+          <Image style={{ width: "30px" }} src={Telegram} alt="Telegram" />
         </Link>
 
         <Link href="https://wa.me/37369882331">
-          <img style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
+          <Image style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
         </Link>
       </Grid2>
 

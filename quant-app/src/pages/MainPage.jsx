@@ -1,8 +1,5 @@
-"use client"
-
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import Image from "next/image";
 
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
@@ -21,38 +18,38 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import ClientStory from "@/src/pages/ClientStory";
-import NextProject from "@/src/pages/sections/NextProject";
-import WhatWeOffer from "@/src/pages/sections/WhatWeOffer";
+import ClientStory from "./ClientStory";
+import NextProject from "./sections/NextProject";
+import WhatWeOffer from "./sections/WhatWeOffer";
 
-import Arrow from "@/src/assets/icons/arrow.svg";
-import Ipad from "@/src/assets/images/ipad.png";
-import Quantica from "@/src/assets/icons/quantica.svg";
-import QuanticaFill from "@/src/assets/icons/quantica-fill.svg";
-import Phone1 from "@/src/assets/images/phone-1.png";
-import Phone2 from "@/src/assets/images/phone-2.png";
-import Phone3 from "@/src/assets/images/phone-3.png";
-import Phone4 from "@/src/assets/images/phone-4.png";
-import Phone5 from "@/src/assets/images/phone-5.png";
-import Phone6 from "@/src/assets/images/phone-6.png";
-import Phone7 from "@/src/assets/images/phone-7.png";
-import Phone8 from "@/src/assets/images/phone-8.png";
-import Phone9 from "@/src/assets/images/phone-9.png";
-import Fi from "@/src/assets/icons/fi.svg";
-import Roma from "@/src/assets/images/roma.png";
-import LinkedIn from "@/src/assets/images/linkedin.png";
-import Veaceslav from "@/src/assets/images/veaceslav.png";
-import { scrollToBlock } from "@/src/utils/scrollLinks";
+import Arrow from "../assets/icons/arrow.svg";
+import Ipad from "../assets/images/ipad.png";
+import Quantica from "../assets/icons/quantica.svg";
+import QuanticaFill from "../assets/icons/quantica-fill.svg";
+import Phone1 from "../assets/images/phone-1.png";
+import Phone2 from "../assets/images/phone-2.png";
+import Phone3 from "../assets/images/phone-3.png";
+import Phone4 from "../assets/images/phone-4.png";
+import Phone5 from "../assets/images/phone-5.png";
+import Phone6 from "../assets/images/phone-6.png";
+import Phone7 from "../assets/images/phone-7.png";
+import Phone8 from "../assets/images/phone-8.png";
+import Phone9 from "../assets/images/phone-9.png";
+import Fi from "../assets/icons/fi.svg";
+import Roma from "../assets/images/roma.png";
+import LinkedIn from "../assets/images/linkedin.png";
+import Veaceslav from "../assets/images/veaceslav.png";
+import { scrollToBlock } from "../utils/scrollLinks";
 import {
   handleClickVideoModal,
   handleCloseModal,
   openLetsTalkModal,
   openVideoModal,
-} from "@/src/utils/modal";
-import { getIntroByLanguage } from "@/src/utils/languageUtils";
+} from "../utils/modal";
+import { getIntroByLanguage } from "../utils/languageUtils";
 
-import "@/src/style/swiper.css";
-import "@/src/style/main.css";
+import "../style/swiper.css";
+import "../style/main.css";
 
 const MainPage = () => {
   const { t } = useTranslation("main");
@@ -62,8 +59,8 @@ const MainPage = () => {
 
   const initialCount = window.innerWidth > 768 ? 6 : 3;
   const [visibleCount, setVisibleCount] = useState(initialCount);
-  // const navigate = useNavigate();
-  // const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [intro, setIntro] = useState(getIntroByLanguage(i18next.language));
   const videoRef = useRef(null);
 
@@ -94,7 +91,7 @@ const MainPage = () => {
   }, [visibleCount]);
 
   useEffect(() => {
-    // const scrollTo = location.state.scrollTo;
+    const scrollTo = location.state?.scrollTo;
 
     if (scrollTo) {
       scrollToBlock(scrollTo);
@@ -189,7 +186,7 @@ const MainPage = () => {
           </Box>
 
             <div className="banner__video">
-              <Image
+              <img
                 src={Ipad}
                 alt="Ipad"
                 loading="lazy"
@@ -238,7 +235,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              // navigate("/services");
+              navigate("/services");
             }}
           >
             <button className="fill-btn">{t("ReadMore")}</button>
@@ -260,27 +257,27 @@ const MainPage = () => {
           modules={[Autoplay]}
         >
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <img src={Quantica} alt="" />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <img src={QuanticaFill} alt="" />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <img src={Quantica} alt="" />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <img src={QuanticaFill} alt="" />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <img src={Quantica} alt="" />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <img src={QuanticaFill} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -301,7 +298,7 @@ const MainPage = () => {
             <div className="our-work__items">
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone1} alt="" />
+                  <img src={Phone1} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -312,7 +309,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone2} alt="" />
+                  <img src={Phone2} alt="" />
                 </div>
                 <div className="our-work__item-text">
                   <h4>Market Delivery Grocery App</h4>
@@ -322,7 +319,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone3} alt="" />
+                  <img src={Phone3} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -333,7 +330,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone4} alt="" />
+                  <img src={Phone4} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -344,7 +341,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone5} alt="" />
+                  <img src={Phone5} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -355,7 +352,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone6} alt="" />
+                  <img src={Phone6} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -366,7 +363,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone7} alt="" />
+                  <img src={Phone7} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -377,7 +374,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone8} alt="" />
+                  <img src={Phone8} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -388,7 +385,7 @@ const MainPage = () => {
               </div>
               <div className="our-work__item">
                 <div className="our-work__item-img">
-                  <Image src={Phone9} alt="" />
+                  <img src={Phone9} alt="" />
                 </div>
 
                 <div className="our-work__item-text">
@@ -424,7 +421,7 @@ const MainPage = () => {
               >
                 {initialCount !== visibleCount ? t("Collapse") : t("ShowMore")}
 
-                <Image
+                <img
                   src={Arrow}
                   alt="Arrow"
                   style={{
@@ -516,9 +513,9 @@ const MainPage = () => {
                         height: { xs: "112px", md: "151.36px" },
                       }}
                     >
-                      <Image
-                        width={isSmallScreen ? 105 : 142}
-                        height={isSmallScreen ? 112 : 151}
+                      <img
+                        width={isSmallScreen ? "105px" : "142px"}
+                        height={isSmallScreen ? "112px" : "151px"}
                         src={Roma}
                         alt="Roma"
                       />
@@ -560,11 +557,7 @@ const MainPage = () => {
                       alignItems="center"
                       justifyContent="center"
                     >
-                      <Image 
-                        width={50} 
-                        height={50} 
-                        style={{ width: "50%", height: "auto" }}  
-                        src={LinkedIn} alt="linkedin" />
+                      <img width="50%" src={LinkedIn} alt="linkedin" />
                     </Link>
                   </Grid2>
 
@@ -621,9 +614,9 @@ const MainPage = () => {
                         height: { xs: "112px", md: "151.36px" },
                       }}
                     >
-                      <Image
-                        width={isSmallScreen ? 105 : 142}
-                        height={isSmallScreen ? 112 : 151}
+                      <img
+                        width={isSmallScreen ? "105px" : "142px"}
+                        height={isSmallScreen ? "112px" : "151px"}
                         src={Veaceslav}
                         alt="Veaceslav"
                       />
@@ -665,7 +658,7 @@ const MainPage = () => {
                       alignItems="center"
                       justifyContent="center"
                     >
-                      <Image width={50} height={50} style={{ width: "50%", height:"auto"}} src={LinkedIn} alt="linkedin" />
+                      <img width="50%" src={LinkedIn} alt="linkedin" />
                     </Link>
                   </Grid2>
 
@@ -746,7 +739,7 @@ const MainPage = () => {
           >
             <span>{t("AllReviewsOn")}</span>
 
-            <Image src={Fi} alt="" className="fiverr__icon" />
+            <img src={Fi} alt="" className="fiverr__icon" />
           </a>
         </div>
       </section>

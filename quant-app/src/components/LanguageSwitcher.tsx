@@ -14,7 +14,7 @@ import {
 import { visuallyHidden } from "@mui/utils";
 import PropTypes from "prop-types";
 
-const LanguageSwitcher = (props) => {
+const LanguageSwitcher = (props : any) => {
   const { mobile } = props;
 
   const [activeLng, setActiveLng] = useState(i18next.options.lng ?? "en");
@@ -28,7 +28,7 @@ const LanguageSwitcher = (props) => {
     setOpen(true);
   };
 
-  const handleChangeLanguage = (value) => {
+  const handleChangeLanguage = (value : any) => {
     i18next.changeLanguage(value);
 
     localStorage.setItem("lng", value);
@@ -48,7 +48,7 @@ const LanguageSwitcher = (props) => {
     >
       {mobile ? (
         <Grid2 container direction="column">
-          {i18next?.options?.preload?.map((language) => (
+          {Array.isArray(i18next.options?.preload) && i18next.options.preload.map((language) => (
             <Button
               key={language}
               value={language}
@@ -82,7 +82,7 @@ const LanguageSwitcher = (props) => {
             onOpen={handleOpen}
             value={i18next.language}
             onChange={(e) => handleChangeLanguage(e.target.value)}
-            IconComponent={() => {}}
+            // IconComponent={() => {}}
             autoWidth
             MenuProps={{
               disableScrollLock: true,
@@ -104,7 +104,7 @@ const LanguageSwitcher = (props) => {
               </Typography>
             )}
           >
-            {i18next?.options?.preload?.map((language) => (
+            {Array.isArray(i18next.options?.preload) && i18next.options.preload.map((language) => (
               <MenuItem
                 key={language}
                 value={language}

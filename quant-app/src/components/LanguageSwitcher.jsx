@@ -48,7 +48,7 @@ const LanguageSwitcher = (props) => {
     >
       {mobile ? (
         <Grid2 container direction="column">
-          {i18next.options.preload.map((language) => (
+          {i18next?.options?.preload?.map((language) => (
             <Button
               key={language}
               value={language}
@@ -104,7 +104,7 @@ const LanguageSwitcher = (props) => {
               </Typography>
             )}
           >
-            {i18next.options.preload.map((language) => (
+            {i18next?.options?.preload?.map((language) => (
               <MenuItem
                 key={language}
                 value={language}

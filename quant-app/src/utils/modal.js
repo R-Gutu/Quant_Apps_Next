@@ -55,21 +55,21 @@ window.onclick = function (e) {
   }
 };
 
-document.addEventListener("click", (e) => {
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const burger = document.querySelector(".burger");
-  const childrensArray = [].slice.call(mobileMenu?.children);
+// document.addEventListener("click", (e) => {
+//   const mobileMenu = document.querySelector(".mobile-menu");
+//   const burger = document.querySelector(".burger");
+//   const childrensArray = []?.slice?.call(mobileMenu?.children);
 
-  const childrensOfChildrens = childrensArray.flatMap((childrenOuter) =>
-    [].slice.call(childrenOuter.children)
-  );
+//   const childrensOfChildrens = childrensArray.flatMap((childrenOuter) =>
+//     [].slice.call(childrenOuter.children)
+//   );
 
-  if (
-    mobileMenu.classList.contains("active") &&
-    e.target !== burger &&
-    !childrensArray.includes(e.target) &&
-    !childrensOfChildrens.includes(e.target)
-  ) {
-    mobileMenu.classList.remove("active");
-  }
-});
+//   if (
+//     mobileMenu.classList.contains("active") &&
+//     e.target !== burger &&
+//     !childrensArray.includes(e.target) &&
+//     !childrensOfChildrens.includes(e.target)
+//   ) {
+//     mobileMenu.classList.remove("active");
+//   }
+// });

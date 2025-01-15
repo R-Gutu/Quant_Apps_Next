@@ -1664,7 +1664,7 @@ footer {
 }
 
 .whatsApp::after {
-    content: url(../assets/icons/whatsapp.svg);
+    content: url(../assets/icons/whats-app.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 3px;
@@ -1678,7 +1678,7 @@ footer {
 }
 
 .whatsApp::after {
-    content: url(../assets/icons/whatsapp.svg);
+    content: url(../assets/icons/whats-app.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 3px;

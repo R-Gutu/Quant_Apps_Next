@@ -1,9 +1,9 @@
-import { useNavigate, useLocation } from "react-router-dom";
+// import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { Box, Grid2, Link, Typography, useMediaQuery } from "@mui/material";
 
-import { useScrollLink } from "../hooks/useScrollLink";
+// import { useScrollLink } from "../hooks/useScrollLink";
 import AppLink from "./AppLink";
 
 import Logo from "../assets/icons/logo.svg";
@@ -20,9 +20,9 @@ const Footer = () => {
   const { t: tToolbar } = useTranslation("app-toolbar");
   const { t: tFooter } = useTranslation("footer");
 
-  const location = useLocation();
-  const navigate = useNavigate();
-  const { navigateWithScroll } = useScrollLink();
+  // const location = useLocation();
+  // const navigate = useNavigate();
+  // const { navigateWithScroll } = useScrollLink();
 
   const matches = useMediaQuery("(max-width:768px)");
 
@@ -107,7 +107,7 @@ const Footer = () => {
                 href="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  navigate("/");
+                  // navigate("/");
                 }}
                 className="footer__logo"
               >
@@ -174,7 +174,7 @@ const Footer = () => {
                 <p
                   data-id="projects"
                   className="footer__column-link"
-                  onClick={(e) => navigateWithScroll(e, "/", "projects")}
+                  // onClick={(e) => navigateWithScroll(e, "/", "projects")}
                 >
                   {tToolbar("Projects")}
                 </p>

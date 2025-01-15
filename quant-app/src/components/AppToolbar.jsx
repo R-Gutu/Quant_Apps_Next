@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { Box, useMediaQuery } from "@mui/material";
@@ -18,8 +18,8 @@ const AppToolbar = () => {
 
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
   useEffect(() => {
     const target = document.getElementById("projects");
@@ -58,7 +58,7 @@ const AppToolbar = () => {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                navigate("/");
+                // navigate("/");
               }}
               className="logo"
             >
@@ -75,7 +75,7 @@ const AppToolbar = () => {
                     href="/services"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/services");
+                      // navigate("/services");
                     }}
                   >
                     {t("Services")}
@@ -106,7 +106,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/", { state: { scrollTo: "projects" } });
+                      // navigate("/", { state: { scrollTo: "projects" } });
                     }}
                   >
                     {t("Projects")}
@@ -121,7 +121,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/about-us");
+                      // navigate("/about-us");
                     }}
                   >
                     {t("AboutUs")}
@@ -136,7 +136,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/contact-us");
+                      // navigate("/contact-us");
                     }}
                   >
                     {t("ContactUs")}
@@ -151,7 +151,7 @@ const AppToolbar = () => {
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
-                      navigate("/faqs");
+                      // navigate("/faqs");
                     }}
                   >
                     FAQs

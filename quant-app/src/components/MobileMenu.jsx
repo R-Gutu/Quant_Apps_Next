@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+// import { useEffect } from "react";
+// import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Grid2, Link } from "@mui/material";
 
@@ -15,35 +15,35 @@ import LinkedIn from "../assets/icons/linked-in.svg";
 const MobileMenu = () => {
   const { t } = useTranslation("app-toolbar");
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  // const navigate = useNavigate();
+  // const location = useLocation();
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
+  // useEffect(() => {
+  //   const target = document.getElementById("projects");
+  //   const menuItem = document.querySelectorAll(
+  //     '.menu__item[data-id="projects"]'
+  //   );
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         menuItem.forEach((e) => e.classList.add("active"));
+  //       } else {
+  //         menuItem.forEach((e) => e.classList.remove("active"));
+  //       }
+  //     });
+  //   });
 
-    if (target) {
-      observer.observe(target);
-    } else {
-      menuItem.forEach((e) => e.classList.remove("active"));
-    }
+  //   if (target) {
+  //     observer.observe(target);
+  //   } else {
+  //     menuItem.forEach((e) => e.classList.remove("active"));
+  //   }
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [location]);
+  //   return () => {
+  //     observer.disconnect();
+  //   };
+  // }, [location]);
 
   const onClickMobileLink = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -61,7 +61,7 @@ const MobileMenu = () => {
       <ul className="menu">
         <li
           className={`menu__item mobile-link ${
-            location.pathname === "/services" ? "active" : ""
+            'location.pathname' === "/services" ? "active" : ""
           }`}
           onClick={() => onClickMobileLink()}
         >
@@ -69,7 +69,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/services");
+              // navigate("/services");
             }}
           >
             {t("Services")}
@@ -100,7 +100,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/", { state: { scrollTo: "projects" } });
+              // navigate("/", { state: { scrollTo: "projects" } });
             }}
           >
             {t("Projects")}
@@ -108,7 +108,7 @@ const MobileMenu = () => {
         </li>
         <li
           className={`menu__item mobile-link ${
-            location.pathname === "/about-us" ? "active" : ""
+            'location.pathname' === "/about-us" ? "active" : ""
           }`}
           onClick={() => onClickMobileLink()}
         >
@@ -116,7 +116,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/about-us");
+              // navigate("/about-us");
             }}
           >
             {t("AboutUs")}
@@ -124,7 +124,7 @@ const MobileMenu = () => {
         </li>
         <li
           className={`menu__item mobile-link ${
-            location.pathname === "/contact-us" ? "active" : ""
+            'location.pathname' === "/contact-us" ? "active" : ""
           }`}
           onClick={() => onClickMobileLink()}
         >
@@ -132,7 +132,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/contact-us");
+              // navigate("/contact-us");
             }}
           >
             {t("ContactUs")}
@@ -140,7 +140,7 @@ const MobileMenu = () => {
         </li>
         <li
           className={`menu__item mobile-link ${
-            location.pathname === "/faqs" ? "active" : ""
+            'location.pathname' === "/faqs" ? "active" : ""
           }`}
           onClick={() => onClickMobileLink()}
         >
@@ -148,7 +148,7 @@ const MobileMenu = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              navigate("/faqs");
+              // navigate("/faqs");
             }}
           >
             FAQs

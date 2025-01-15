@@ -1,8 +1,9 @@
-// import { useEffect } from "react";
-// import { useLocation, useNavigate } from "react-router-dom";
+
 import { useTranslation } from "react-i18next";
-import { Grid2, Link } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -15,36 +16,8 @@ import LinkedIn from "../assets/icons/linked-in.svg";
 
 const MobileMenu = () => {
   const { t } = useTranslation("app-toolbar");
-
-  // const navigate = useNavigate();
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   const target = document.getElementById("projects");
-  //   const menuItem = document.querySelectorAll(
-  //     '.menu__item[data-id="projects"]'
-  //   );
-
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         menuItem.forEach((e) => e.classList.add("active"));
-  //       } else {
-  //         menuItem.forEach((e) => e.classList.remove("active"));
-  //       }
-  //     });
-  //   });
-
-  //   if (target) {
-  //     observer.observe(target);
-  //   } else {
-  //     menuItem.forEach((e) => e.classList.remove("active"));
-  //   }
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, [location]);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const onClickMobileLink = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -56,104 +29,90 @@ const MobileMenu = () => {
     mobileMenu?.classList.remove("active");
   };
 
+  const handleNavigation = (path: string, scrollTo?: string) => {
+    onClickMobileLink();
+    if (scrollTo) {
+      router.push(path);
+      setTimeout(() => {
+        const element = document.getElementById(scrollTo);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      router.push(path);
+    }
+  };
+
   return (
     <div className="mobile-menu">
-      <span className="close" onClick={() => onClickClose()}></span>
+      <span className="close" onClick={onClickClose}></span>
       <ul className="menu">
         <li
           className={`menu__item mobile-link ${
-            'location.pathname' === "/services" ? "active" : ""
+            pathname === "/services" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              // navigate("/services");
-            }}
+          <Link
+            href="/services"
+            className="text-left w-full"
+            onClick={() => handleNavigation("/services")}
           >
             {t("Services")}
-          </a>
+          </Link>
         </li>
-        {/* <li
-          className={`menu__item mobile-link ${
-            location.pathname === "/gaming" ? "active" : ""
-          }`}
-          onClick={() => onClickMobileLink()}
-        >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate("/gaming");
-            }}
-          >
-            {t("IGaming")}
-          </a>
-        </li> */}
+
         <li
           className="menu__item mobile-link"
           data-id="projects"
-          onClick={() => onClickMobileLink()}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              // navigate("/", { state: { scrollTo: "projects" } });
-            }}
+          <Link
+            href="/"
+            className="text-left w-full"
+            onClick={() => handleNavigation("/", "projects")}
           >
             {t("Projects")}
-          </a>
+          </Link>
         </li>
+
         <li
           className={`menu__item mobile-link ${
-            'location.pathname' === "/about-us" ? "active" : ""
+            pathname === "/about-us" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              // navigate("/about-us");
-            }}
+          <Link
+            href="/about-us"
+            className="text-left w-full"
+            onClick={() => handleNavigation("/about-us")}
           >
             {t("AboutUs")}
-          </a>
+          </Link>
         </li>
+
         <li
           className={`menu__item mobile-link ${
-            'location.pathname' === "/contact-us" ? "active" : ""
+            pathname === "/contact-us" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              // navigate("/contact-us");
-            }}
+          <Link
+            href="/contact-us"
+            className="text-left w-full"
+            onClick={() => handleNavigation("/contact-us")}
           >
             {t("ContactUs")}
-          </a>
+          </Link>
         </li>
+
         <li
           className={`menu__item mobile-link ${
-            'location.pathname' === "/faqs" ? "active" : ""
+            pathname === "/faqs" ? "active" : ""
           }`}
-          onClick={() => onClickMobileLink()}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              // navigate("/faqs");
-            }}
+          <Link
+            href="/faqs"
+            className="text-left w-full"
+            onClick={() => handleNavigation("/faqs")}
           >
             FAQs
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -164,32 +123,57 @@ const MobileMenu = () => {
         gap="20px"
         mt="50px"
       >
-        <Link href="https://www.facebook.com/profile.php?id=61571073299478">
-          <Image style={{ width: "30px" }} src={FooterFacebook} alt="Facebook" />
+        <Link 
+          href="https://www.facebook.com/profile.php?id=61571073299478"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image width={30} height={30} src={FooterFacebook} alt="Facebook" />
         </Link>
 
-        <Link href="https://www.instagram.com/quantapps_/">
+        <Link 
+          href="https://www.instagram.com/quantapps_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image
-            style={{ width: "30px" }}
+            width={30}
+            height={30}
             src={FooterInstagram}
             alt="Instagram"
           />
         </Link>
 
-        <Link href="https://www.linkedin.com/company/quant-apps">
-          <Image style={{ width: "30px" }} src={LinkedIn} alt="LinkedIn" />
+        <Link 
+          href="https://www.linkedin.com/company/quant-apps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image width={30} height={30} src={LinkedIn} alt="LinkedIn" />
         </Link>
 
-        <Link href="https://www.tiktok.com/@quantapps">
-          <Image style={{ width: "30px" }} src={TikTok} alt="TikTok" />
+        <Link 
+          href="https://www.tiktok.com/@quantapps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image width={30} height={30} src={TikTok} alt="TikTok" />
         </Link>
 
-        <Link href="https://t.me/quantapps">
-          <Image style={{ width: "30px" }} src={Telegram} alt="Telegram" />
+        <Link 
+          href="https://t.me/quantapps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image width={30} height={30} src={Telegram} alt="Telegram" />
         </Link>
 
-        <Link href="https://wa.me/37369882331">
-          <Image style={{ width: "30px" }} src={WhatsApp} alt="WhatsApp" />
+        <Link 
+          href="https://wa.me/37369882331"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image width={30} height={30} src={WhatsApp} alt="WhatsApp" />
         </Link>
       </Grid2>
 

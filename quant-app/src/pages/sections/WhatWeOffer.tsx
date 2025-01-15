@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { Box, Grid2, Typography } from "@mui/material";
+import Image from "next/image";
 
 import Blur from "../../components/Blur";
 
@@ -71,7 +72,7 @@ const WhatWeOffer = () => {
             },
           })}
         >
-          <img
+          <Image
             src={CloudStorage}
             alt="CloudStorage"
             style={{
@@ -82,7 +83,7 @@ const WhatWeOffer = () => {
             }}
           />
 
-          <img
+          <Image
             src={ItemsInNetBg}
             alt=""
             style={{
@@ -165,7 +166,7 @@ const WhatWeOffer = () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <img src={Vector} alt="Vector" />
+              <Image src={Vector} alt="Vector" />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -196,7 +197,7 @@ const WhatWeOffer = () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <img src={Apple} alt="Apple" />
+              <Image src={Apple} alt="Apple" />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -225,7 +226,7 @@ const WhatWeOffer = () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <img src={Android} alt="Android" />
+              <Image src={Android} alt="Android" />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -255,7 +256,7 @@ const WhatWeOffer = () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <img src={CrossPlatform} alt="CrossPlatform" />
+              <Image src={CrossPlatform} alt="CrossPlatform" />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -289,7 +290,7 @@ const WhatWeOffer = () => {
                 padding: "4px",
               }}
             >
-              <img src={Settings} alt="Settings" />
+              <Image src={Settings} alt="Settings" />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>

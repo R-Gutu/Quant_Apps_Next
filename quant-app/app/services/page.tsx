@@ -11,8 +11,8 @@ import Puzzle from "@/src/assets/icons/pazle.svg";
 import Star from "@/src/assets/icons/Star.svg";
 import Moon from "@/src/assets/icons/moon.svg";
 import { scrollToBlock } from "@/src/utils/scrollLinks";
-import NextProject from "@/src/sections/NextProject";
-import WhatWeOffer from "@/src/sections/WhatWeOffer";
+import NextProject from "@/src/pages/sections/NextProject";
+import WhatWeOffer from "@/src/pages/sections/WhatWeOffer";
 
 const Services = () => {
   const { t } = useTranslation("services");

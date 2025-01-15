@@ -1,8 +1,8 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
+import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-
+import Link from "next/link";
 import { Box, useMediaQuery } from "@mui/material";
 
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -16,38 +16,23 @@ import "../style/main.css";
 
 const AppToolbar = () => {
   const { t } = useTranslation("app-toolbar");
-
+  // const router = useRouter();
+  const pathname = usePathname();
+  
   const isSmallScreen = useMediaQuery("(max-width:768px)");
-
-  // const navigate = useNavigate();
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   const target = document.getElementById("projects");
-  //   const menuItem = document.querySelectorAll(
-  //     '.menu__item[data-id="projects"]'
-  //   );
-
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         menuItem.forEach((e) => e.classList.add("active"));
-  //       } else {
-  //         menuItem.forEach((e) => e.classList.remove("active"));
-  //       }
-  //     });
-  //   });
-
-  //   if (target) observer.observe(target);
-
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, [location]);
 
   const onClickBurger = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
     mobileMenu?.classList.add("active");
+  };
+
+  const handleNavigation = (scrollTo?: string) => {
+    if (scrollTo) {
+      setTimeout(() => {
+        const element = document.getElementById(scrollTo);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
   };
 
   return (
@@ -55,113 +40,50 @@ const AppToolbar = () => {
       <header>
         <div className="container">
           <div className="header">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                // navigate("/");
-              }}
-              className="logo"
-            >
-              <Image id="logo" src={Logo} alt="" />
-            </a>
+            <Link href="/" className="logo">
+              <Image id="logo" src={Logo} alt="Logo" />
+            </Link>
+            
             <nav>
               <ul className="menu">
-                <li
-                  className={`menu__item ${
-                    location.pathname === "/services" ? "active" : ""
-                  }`}
-                >
-                  <a
-                    href="/services"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/services");
-                    }}
-                  >
+                <li className={`menu__item ${pathname === "/services" ? "active" : ""}`}>
+                  <Link href="/services">
                     {t("Services")}
-                  </a>
+                  </Link>
                 </li>
-                {/* <li
-                  className={`menu__item ${
-                    location.pathname === "/gaming" ? "active" : ""
-                  }`}
-                >
-                  <a
-                    href="/gaming"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigate("/gaming");
-                    }}
-                  >
-                    {t("IGaming")}
-                  </a>
-                </li> */}
-                <li
-                  className={`menu__item ${
-                    location.pathname === "/" ? "active" : ""
-                  }`}
-                  data-id="projects"
-                >
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/", { state: { scrollTo: "projects" } });
-                    }}
+                
+                <li className={`menu__item ${pathname === "/" ? "active" : ""}`} data-id="projects">
+                  <Link 
+                  href="/"
+                    onClick={() => handleNavigation("projects")}
+                    className="text-left"
                   >
                     {t("Projects")}
-                  </a>
+                  </Link>
                 </li>
-                <li
-                  className={`menu__item ${
-                    location.pathname === "/about-us" ? "active" : ""
-                  }`}
-                >
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/about-us");
-                    }}
-                  >
+                
+                <li className={`menu__item ${pathname === "/about-us" ? "active" : ""}`}>
+                  <Link href="/about-us">
                     {t("AboutUs")}
-                  </a>
+                  </Link>
                 </li>
-                <li
-                  className={`menu__item ${
-                    location.pathname === "/contact-us" ? "active" : ""
-                  }`}
-                >
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/contact-us");
-                    }}
-                  >
+                
+                <li className={`menu__item ${pathname === "/contact-us" ? "active" : ""}`}>
+                  <Link href="/contact-us">
                     {t("ContactUs")}
-                  </a>
+                  </Link>
                 </li>
-                <li
-                  className={`menu__item ${
-                    location.pathname === "/faqs" ? "active" : ""
-                  }`}
-                >
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/faqs");
-                    }}
-                  >
+                
+                <li className={`menu__item ${pathname === "/faqs" ? "active" : ""}`}>
+                  <Link href="/faqs">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
+            
             <div className="nav-right">
-              {location.pathname !== "/contact-us" && (
+              {pathname !== "/contact-us" && (
                 <button
                   className="lets-talk"
                   onClick={() => openLetsTalkModal()}
@@ -169,7 +91,7 @@ const AppToolbar = () => {
                   {t("LetsTalk")}
                 </button>
               )}
-              <span className="burger" onClick={() => onClickBurger()}></span>
+              <span className="burger" onClick={onClickBurger}></span>
             </div>
 
             {!isSmallScreen && <LanguageSwitcher />}

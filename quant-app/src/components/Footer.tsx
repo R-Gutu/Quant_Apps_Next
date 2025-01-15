@@ -1,25 +1,25 @@
 "use client"
 
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname, useRouter } from "next/navigation";
 import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
 import AppLink from '@/src/components/AppLink'
 
-import Logo from "../assets/icons/logo.svg";
-import FooterFacebook from "../assets/icons/footer-facebook.svg";
-import FooterInstagram from "../assets/icons/footer-instagram.svg";
-import LinkedIn from "../assets/icons/linked-in.svg";
-import LinkedInRounded from "../assets/icons/linked-in-rounded.svg";
-import TikTok from "../assets/icons/tik-tok.svg";
-import Telegram from "../assets/icons/telegram.svg";
-import TelegramOld from "../assets/icons/telegram-old.svg";
-import WhatsApp from "../assets/icons/whats-app.svg";
+import Logo from "@/src/assets/icons/logo.svg";
+import FooterFacebook from "@/src/assets/icons/footer-facebook.svg";
+import FooterInstagram from "@/src/assets/icons/footer-instagram.svg";
+import LinkedIn from "@/src/assets/icons/linked-in.svg";
+import LinkedInRounded from "@/src/assets/icons/linked-in-rounded.svg";
+import TikTok from "@/src/assets/icons/tik-tok.svg";
+import Telegram from "@/src/assets/icons/Telegram.svg";
+import TelegramOld from "@/src/assets/icons/telegram-old.svg";
+import WhatsApp from "@/src/assets/icons/whats-app.svg";
 
 const Footer = () => {
-  const { t: tToolbar } = useTranslation("app-toolbar");
-  const { t: tFooter } = useTranslation("footer");
+  const tToolbar = useTranslations("app-toolbar");
+  const tFooter = useTranslations("footer");
   const pathname = usePathname();
   const router = useRouter();
   const matches = useMediaQuery("(max-width:768px)");
@@ -92,7 +92,7 @@ const Footer = () => {
               mr="65px"
             >
               {socialLinks.map((link) => (
-                <Link 
+                <Link
                   key={link.alt}
                   href={link.href}
                   target="_blank"
@@ -110,23 +110,23 @@ const Footer = () => {
           )}
 
           <div className="footer">
-          <Link href="/" className="footer__logo">
-            <Image src={Logo} alt="Logo" width={150} height={40} />
-          </Link>
+            <Link href="/" className="footer__logo">
+              <Image src={Logo} alt="Logo" width={150} height={40} />
+            </Link>
             <div className="footer__links">
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("FindUsAt")}</p>
                 {["Instagram", "Facebook", "Linkedin"].map((platform) => (
                   <Grid2 key={platform} container>
                     <Link
-                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" : 
-                        platform === "Linkedin" ? "company/quant-apps" : 
-                        "quantapps_"}`}
+                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" :
+                        platform === "Linkedin" ? "company/quant-apps" :
+                          "quantapps_"}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
-                      <Typography 
+                      <Typography
                         sx={{
                           display: 'flex',
                           alignItems: 'center',

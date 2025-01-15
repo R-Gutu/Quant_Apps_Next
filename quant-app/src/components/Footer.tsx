@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname, useRouter } from "next/navigation";
 import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
 import AppLink from '@/src/components/AppLink'
@@ -92,7 +92,7 @@ const Footer = () => {
               mr="65px"
             >
               {socialLinks.map((link) => (
-                <Link 
+                <Link
                   key={link.alt}
                   href={link.href}
                   target="_blank"
@@ -110,23 +110,23 @@ const Footer = () => {
           )}
 
           <div className="footer">
-          <Link href="/" className="footer__logo">
-            <Image src={Logo} alt="Logo" width={150} height={40} />
-          </Link>
+            <Link href="/" className="footer__logo">
+              <Image src={Logo} alt="Logo" width={150} height={40} />
+            </Link>
             <div className="footer__links">
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("FindUsAt")}</p>
                 {["Instagram", "Facebook", "Linkedin"].map((platform) => (
                   <Grid2 key={platform} container>
                     <Link
-                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" : 
-                        platform === "Linkedin" ? "company/quant-apps" : 
-                        "quantapps_"}`}
+                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" :
+                        platform === "Linkedin" ? "company/quant-apps" :
+                          "quantapps_"}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
-                      <Typography 
+                      <Typography
                         sx={{
                           display: 'flex',
                           alignItems: 'center',

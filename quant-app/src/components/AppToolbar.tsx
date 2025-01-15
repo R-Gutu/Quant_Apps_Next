@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
 
 import TalkPopup from "./TalkPopup/TalkPopup";
 import MobileMenu from "./MobileMenu";
@@ -17,10 +18,22 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
-  // const router = useRouter();
-  const pathname = usePathname();
+  const router = useRouter();
+  const pathname = '/'+usePathname().split('/')[2];
+  console.log(pathname)
   
   const isSmallScreen = useMediaQuery("(max-width:768px)");
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const element = document.getElementById(window.location.hash.slice(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [pathname]);
 
   const onClickBurger = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -29,10 +42,12 @@ const AppToolbar = () => {
 
   const handleNavigation = (scrollTo?: string) => {
     if (scrollTo) {
-      setTimeout(() => {
-        const element = document.getElementById(scrollTo);
-        element?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      if (pathname === '/') {
+        setTimeout(() => {
+          const element = document.getElementById(scrollTo);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
     }
   };
 
@@ -55,7 +70,8 @@ const AppToolbar = () => {
                 
                 <li className={`menu__item ${pathname === "/" ? "active" : ""}`} data-id="projects">
                   <Link 
-                  href="/"
+                    href="/#projects"
+                    scroll={false}
                     onClick={() => handleNavigation("projects")}
                     className="text-left"
                   >

@@ -1,7 +1,6 @@
 "use client"
 
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
@@ -9,11 +8,7 @@ import NextProject from "@/src/old-pages/sections/NextProject";
 import Blur from "@/src/components/Blur";
 
 const PrivacyPolicy = () => {
-  const { t } = useTranslation("privacy-policy");
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const t = useTranslations("privacy-policy");
 
   return (
     <Grid2

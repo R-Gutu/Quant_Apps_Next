@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 import Image from "next/image";
 
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+
 
 import {
   Box,
@@ -53,26 +53,32 @@ import { getIntroByLanguage } from "@/src/utils/languageUtils";
 
 import "@/src/style/swiper.css";
 import "@/src/style/main.css";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
+
 
 const MainPage = () => {
   const { t } = useTranslation("main");
+
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const initialCount = window.innerWidth > 768 ? 6 : 3;
   const [visibleCount, setVisibleCount] = useState(initialCount);
-  // const navigate = useNavigate();
-  // const location = useLocation();
   const [intro, setIntro] = useState(getIntroByLanguage(i18next.language));
   const videoRef = useRef(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
 
-    i18next.on("languageChanged", (lng) => {
+
+    const handleLanguageChange = (lng: string) => {
       const intro = getIntroByLanguage(lng);
-
       setIntro(intro);
 
       if (videoRef.current) {
@@ -80,7 +86,9 @@ const MainPage = () => {
         videoRef.current.currentTime = 0;
         videoRef.current.load();
       }
-    });
+    };
+
+    i18next.on("languageChanged", handleLanguageChange);
 
     return () => {
       i18next.off("languageChanged", (lng) =>
@@ -90,16 +98,31 @@ const MainPage = () => {
   }, []);
 
   useEffect(() => {
-    updateItemsVisibility();
+    if (typeof window !== 'undefined') {
+      updateItemsVisibility();
+    }
   }, [visibleCount]);
 
   useEffect(() => {
-    // const scrollTo = location.state.scrollTo;
+    const scrollTo = searchParams?.get('scrollTo');
 
     if (scrollTo) {
-      scrollToBlock(scrollTo);
+      const scrollToBlock = (elementId: string) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          if ('scrollBehavior' in document.documentElement.style) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else {
+            element.scrollIntoView();
+          }
+        }
+      };
+
+      setTimeout(() => {
+        scrollToBlock(scrollTo);
+      }, 100);
     }
-  }, [location]);
+  }, [pathname, searchParams]);
 
   const updateItemsVisibility = () => {
     const items = document.querySelectorAll(".our-work__item");
@@ -238,7 +261,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              // navigate("/services");
+              router.push("/services");
             }}
           >
             <button className="fill-btn">{t("ReadMore")}</button>

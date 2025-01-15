@@ -2,8 +2,8 @@
 
 const Faqs = () => {
 
-  //@ts-ignore
-  const onClickToggle = (e) => {
+
+  const onClickToggle = (e : any) => {
     e.currentTarget.closest(".faq__accordion-item").classList.toggle("active");
   };
 

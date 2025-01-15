@@ -1601,9 +1601,9 @@ footer {
     color: white;
     position: absolute;
     right: 0;
-    font-size: 12px;
-    bottom: 4px;
-    left: 67px;
+    font-size: 8px;
+    top: 15px;
+    left: 46px;
 }
 
 .footer__links {
@@ -3250,6 +3250,7 @@ button.disabled:hover {
     .footer__logo::after {
         font-size: 8px;
         left: 45px;
+        top: 15px;
     }
 }
 

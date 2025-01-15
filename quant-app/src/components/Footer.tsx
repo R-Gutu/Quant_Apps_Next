@@ -110,16 +110,9 @@ const Footer = () => {
           )}
 
           <div className="footer">
-            {pathname === "/" ? (
-              <Link href="/" className="footer__logo">
-                <Image src={Logo} alt="Logo" width={150} height={40} />
-              </Link>
-            ) : (
-              <div className="footer__logo">
-                <Image src={Logo} alt="Logo" width={150} height={40} />
-              </div>
-            )}
-
+          <Link href="/" className="footer__logo">
+            <Image src={Logo} alt="Logo" width={150} height={40} />
+          </Link>
             <div className="footer__links">
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("FindUsAt")}</p>
@@ -173,7 +166,7 @@ const Footer = () => {
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("LearnMore")}</p>
                 <AppLink href="/contact-us">{tToolbar("ContactUs")}</AppLink>
-                <AppLink href="/contact-us">FAQs</AppLink>
+                <AppLink href="/faqs">{tToolbar("FAQs")}</AppLink>
               </div>
 
               <div className="footer__column">

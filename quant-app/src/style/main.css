@@ -1029,24 +1029,16 @@ nav {
 
 .client-success-stories__slide {
     border: 2px solid transparent;
-    -webkit-transition: all var(--transition);
-    -o-transition: all var(--transition);
     transition: all var(--transition);
-    padding: 24px;
+    padding: 12px 24px; /* Fixed padding conflict */
     border-radius: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
     height: auto !important;
-    width: calc(fit-content + 40px);
+    width: fit-content; /* Fixed invalid calc usage */
+    font-size: 12px;
 }
 
 .client-success-stories__slide-head {

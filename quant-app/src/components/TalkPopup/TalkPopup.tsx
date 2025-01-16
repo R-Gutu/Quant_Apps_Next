@@ -1,5 +1,14 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// import { useLocation } from "react-router-dom";
+
+// import { useTranslation } from "react-i18next";
+
+import { Checkbox, FormControlLabel, Typography } from "@mui/material";
+import Textarea from "@mui/joy/Textarea";
+
+import Image from "next/image";
+import { handleCloseModal } from "../../utils/modal";
 import {
   handleFiles,
   validateEmail,
@@ -10,11 +19,12 @@ import Staple from "../../assets/icons/staple.svg";
 import LogoBlack from "../../assets/icons/logo-black.svg";
 import ModalBg from "../../assets/images/modal-bg.png";
 import ModalImage from "../../assets/images/modal-img.png";
+import GamingImage from "../../assets/images/phones-with-phones.png";
+import TalkPopupInput from "./TalkPopupInput";
 import emailjs from '@emailjs/browser';
-import { Modal } from '@mui/material';
-import Image from 'next/image'
 
-const TalkPopup = ({ open, setOpen, handleClose }) => {
+
+const TalkPopup = ({ open, onClose}) => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -31,7 +41,9 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
     "$5.000-$10.000",
   ];
 
-  // const [modalOpen, setModalOpen] = useState(open);
+  // useEffect(() => {
+  //     setBudgetCheckboxes(budget2Prices)
+  // })
 
   const [budgetId, setBudgetId] = useState(3);
 
@@ -198,17 +210,12 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
   };
 
   return (
-    <Modal
-      open={open}
-      onClose={handleClose}
-      aria-labelledby="modal-modal-title"
-      aria-describedby="modal-modal-description"
-    >
+    <div className={`modal ${open ? 'd-block' : ''}`} id="talk-popup">
       <div className="modal-content talk-popup">
         <span
           className="close-modal"
           id="closeModal"
-          onClick={() => setOpen(false)}
+          onClick={handleCloseModal}
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
@@ -439,7 +446,7 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
           </div>
         </div>
       </div>
-    </Modal>
+    </div>
   );
 };
 

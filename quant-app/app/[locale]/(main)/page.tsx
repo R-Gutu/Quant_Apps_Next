@@ -49,7 +49,7 @@ import { scrollToBlock } from "@/src/utils/scrollLinks";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 
 import "@/src/style/swiper.css";
-import "@/src/style/main.css";
+// import "@/src/style/main.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
@@ -173,12 +173,12 @@ const MainPage = () => {
               <Typography
                 sx={(theme) => ({
                   fontFamily: "Poppins",
-                  fontSize: "20px",
+                  fontSize: "24px",
                   lineHeight: "35px",
                   color: "#EBEBEB",
                   textAlign: "justify",
                   [theme.breakpoints.down("md")]: {
-                    fontSize: "40px",
+                    fontSize: "24px",
                     lineHeight: "30px",
                     textAlign: "center", // по центру для мобильных
                   },
@@ -258,7 +258,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              router.push("/services");
+              router.push("/en/services");
             }}
           >
             <button className="fill-btn">{t("ReadMore")}</button>

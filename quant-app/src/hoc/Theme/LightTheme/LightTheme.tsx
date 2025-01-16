@@ -1,9 +1,10 @@
+"use client"
 import { ThemeProvider, StyledEngineProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { theme } from "./theme";
 import PropTypes from "prop-types";
 
-const LightTheme = (props) => {
+const LightTheme = (props : any) => {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>

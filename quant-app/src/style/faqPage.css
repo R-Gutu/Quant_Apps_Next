@@ -1,0 +1,130 @@
+.faq-section {
+    background-color: #6A65FF14;
+    padding: 34px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.faq__title {
+    font-family: "ClashDisplay";
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 84px;
+    color: white;
+}
+
+.faq__accordion {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.faq__accordion-right,
+.faq__accordion-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq__accordion-item {
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0.5px 2px 0px #19213D1A;
+    box-shadow: 0px 0.5px 2px 0px #19213D1A;
+    border: 1px solid #E1E4ED;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.faq__accordion-header {
+    padding: 25px 30px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.faq__accordion-header h2 {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+}
+
+.faq__accordion-close {
+    content: url(../assets/icons/Plus.svg);
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform var(--transition);
+    transition: -webkit-transform var(--transition);
+    -o-transition: transform var(--transition);
+    transition: transform var(--transition);
+    transition: transform var(--transition), -webkit-transform var(--transition);
+}
+
+.faq__accordion-item.active .faq__accordion-close {
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
+    content: url(../assets/icons/Plus-white.svg);
+}
+
+.faq__accordion-item .faq__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.faq__accordion-item.active .faq__accordion-content {
+    max-height: 10rem;
+}
+
+.faq__accordion-item.active {
+    background-color: #6A65FFCC !important;
+    border: 1px solid #6A65FFCC;
+}
+
+.faq__accordion-item .faq__accordion-content p {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    padding: 0 30px 30px 30px;
+}

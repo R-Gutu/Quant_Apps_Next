@@ -1,0 +1,471 @@
+.talk-popup {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    max-width: 874px;
+    height: 94vh;
+}
+
+.talk-popup__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.talk-popup__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.talk-popup__left-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 18px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "ClashDisplay";
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.talk-popup__logo {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 237px;
+}
+
+.talk-popup__left-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: black;
+    text-align: center;
+}
+
+.talk-popup__left-content p {
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    color: #6D758F;
+}
+
+.talk-popup__left-content img {
+    max-width: 100%;
+}
+
+.talk-popup__left-img {
+    position: absolute;
+    left: -27px;
+    bottom: -24px;
+    z-index: -1;
+}
+
+.talk-popup__right {
+    padding: 60px 24px;
+    height: 94vh;
+    overflow-y: auto;
+}
+
+.talk-popup__content::-webkit-scrollbar,
+.talk-popup__right::-webkit-scrollbar {
+    width: 6px;
+}
+
+.talk-popup__right::-webkit-scrollbar-thumb,
+.talk-popup__content::-webkit-scrollbar-thumb {
+    background: #6A65FF;
+}
+
+.talk-popup__content::-webkit-scrollbar-track,
+.talk-popup__right::-webkit-scrollbar-track {
+    margin: 20px 0;
+}
+
+.talk-popup__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.talk-popup__first-last-name {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 34px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+}
+
+.talk-popup__from-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.talk-popup__from-row label {
+    font-family: "ClashDisplay";
+    font-size: 14.55px;
+    font-weight: 600;
+    line-height: 20.78px;
+    color: #6D758F;
+}
+
+.talk-popup__from-row input,
+.talk-popup__from-row textarea {
+    outline: none;
+    border: 1px solid #F1F3F7;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+    box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+.talk-popup__from-row input::-webkit-input-placeholder,
+.talk-popup__from-row textarea::-webkit-input-placeholder {
+    font-family: "Inter";
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    padding: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.talk-popup__from-row input::-moz-placeholder,
+.talk-popup__from-row textarea::-moz-placeholder {
+    font-family: "Inter";
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    padding: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.talk-popup__from-row input:-ms-input-placeholder,
+.talk-popup__from-row textarea:-ms-input-placeholder {
+    font-family: "Inter";
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    padding: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.talk-popup__from-row input::-moz-placeholder,
+.talk-popup__from-row textarea::-moz-placeholder {
+    font-family: "Inter";
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    padding: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.talk-popup__from-row input,
+.talk-popup__from-row textarea,
+.talk-popup__from-row input::placeholder,
+.talk-popup__from-row textarea::placeholder {
+    font-family: "Inter";
+    font-size: 14.55px;
+    font-weight: 400;
+    line-height: 20.78px;
+    padding: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.talk-popup__from-row textarea {
+    padding-top: 0;
+}
+
+.talk-popup__from-row input,
+.talk-popup__from-row textarea {
+    color: #6D758F;
+}
+
+.talk-popup__from-row input::-webkit-input-placeholder,
+.talk-popup__from-row textarea::-webkit-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::-moz-placeholder,
+.talk-popup__from-row textarea::-moz-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input:-ms-input-placeholder,
+.talk-popup__from-row textarea:-ms-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::-ms-input-placeholder,
+.talk-popup__from-row textarea::-ms-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::-webkit-input-placeholder,
+.talk-popup__from-row textarea::-webkit-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::-moz-placeholder,
+.talk-popup__from-row textarea::-moz-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input:-ms-input-placeholder,
+.talk-popup__from-row textarea:-ms-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::-ms-input-placeholder,
+.talk-popup__from-row textarea::-ms-input-placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__from-row input::placeholder,
+.talk-popup__from-row textarea::placeholder {
+    color: #C1C1C1;
+}
+
+.talk-popup__submit {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 4px;
+}
+
+button.disabled {
+    opacity: 0.7;
+    cursor: auto;
+}
+
+button.disabled:hover {
+    background-color: var(--purple);
+}
+
+.talk-popup__select-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.talk-popup__select-services>p {
+    font-family: "ClashDisplay";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #6D758F;
+}
+
+.talk-popup__service-checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.talk-popup__service-checkbox>span {
+    font-family: "ClashDisplay";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: #6D758F;
+}
+
+.talk-popup__budget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.talk-popup__budget>p {
+    font-family: "ClashDisplay";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #C1C1C1;
+}
+
+.talk-popup__budget>p>span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #6D758F;
+}
+
+.talk-popup__budget-checkboxes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.talk-popup__budget-checkboxes-item {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #F1F3F7;
+    -webkit-box-shadow: 0px 0.76px 3.06px 0px rgba(25, 33, 61, 0.08);
+    box-shadow: 0px 0.76px 3.06px 0px rgba(25, 33, 61, 0.08);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.talk-popup__budget-checkboxes-item>span {
+    font-family: "ClashDisplay";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.28px;
+    color: #C1C1C1;
+}
+
+.talk-popup__attachments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.talk-popup__attachments>span {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #6D758F;
+}
+
+.talk-popup__add-attachments {
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #FAFAFF;
+    border-radius: 4px;
+    border: 1px dashed #C5C5C5;
+    position: relative;
+}
+
+.talk-popup__add-attachment-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.talk-popup__attachments-files {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.talk-popup__add-attachment-info p {
+    font-family: "ClashDisplay";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 9.71px;
+    color: #C1C1C1;
+}
+
+.talk-popup__add-attachment-info p>span {
+    font-weight: 600;
+    color: #515DEF;
+}
+
+.talk-popup__add-attachments.dragover {
+    border-color: #515DEF;
+    background-color: #E5E7FF;
+}
+
+#fileList {
+    margin-top: 10px;
+    font-family: "Inter";
+    font-size: 14px;
+    color: #6D758F;
+}
+
+#fileList div {
+    margin-bottom: 5px;
+}
+
+#fileList .error {
+    color: #FF5A5A;
+}

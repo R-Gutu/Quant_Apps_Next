@@ -149,7 +149,7 @@ const AppToolbar = () => {
       />
       <MobileMenu />
 
-      <Box sx={{ marginBottom: "110px" }} />
+      <Box sx={{ marginBottom: "120px" }} />
     </>
   );
 };

@@ -1,0 +1,64 @@
+.next-project-section {
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.next-project-section img {
+    position: absolute;
+    right: 0;
+    bottom: -30%;
+}
+
+.next-project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 78px 91px;
+    background-color: #515DEF;
+    border-radius: 24px;
+}
+
+.next-project__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+.next-project__text-title {
+    font-family: "ClashDisplay";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.next-project__text-description {
+    font-family: "Red Hat Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.75;
+}
+
+.next-project__text-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    -webkit-transition: all var(--transition);
+    -o-transition: all var(--transition);
+    transition: all var(--transition);
+}
+
+.next-project__text-btn:hover {
+    background-color: #CECECE;
+}

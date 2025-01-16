@@ -41,17 +41,19 @@ import Roma from "@/src/assets/images/Roma.png";
 import LinkedIn from "@/src/assets/images/linkedin.png";
 import Veaceslav from "@/src/assets/images/Veaceslav.png";
 import { scrollToBlock } from "@/src/utils/scrollLinks";
+
+import { getIntroByLanguage } from "@/src/utils/languageUtils";
 // import {
 // handleClickVideoModal,
 // handleCloseModal,
 // openVideoModal,
 // } from "@/src/utils/modal";
-import { getIntroByLanguage } from "@/src/utils/languageUtils";
+
 
 import "@/src/style/swiper.css";
-// import "@/src/style/main.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import TalkModal from "@/src/components/TalkPopup/TalkPopup";
+import VideoModal from "@/src/components/VideoModal";
 
 
 const MainPage = () => {
@@ -60,15 +62,17 @@ const MainPage = () => {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const currentLocale = useLocale();
 
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const [visibleCount, setVisibleCount] = useState(0);
   const [initialCount, setInitialCount] = useState(0);  // State to store initialCount
+  const currentLocale = useLocale();
   const [intro, setIntro] = useState(getIntroByLanguage(currentLocale));
-  const videoRef = useRef(null);
+
+
+
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -128,14 +132,12 @@ const MainPage = () => {
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseTalkModal = () => setIsModalOpen(false);
 
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseTalkModal = () => {
-    setIsModalOpen(false);
-  };
+  const [isVidModalOpen, setIsVidModalOpen] = useState(false);
+  const handleOpenVidModal = () => setIsVidModalOpen(true);
+  const handleCloseVidModal = () => setIsVidModalOpen(false);
 
   return (
     <>
@@ -143,6 +145,13 @@ const MainPage = () => {
         open={isModalOpen}
         setOpen={setIsModalOpen}
         handleClose={handleCloseTalkModal}
+      />
+      <VideoModal
+        open={isVidModalOpen}
+        setOpen={setIsVidModalOpen}
+        handleClose={handleCloseVidModal}
+        noSupportMessage={t("BrowserDoesNotSupportVideo")}
+        src={intro}
       />
       <div className="container">
         <div className="banner">
@@ -216,13 +225,13 @@ const MainPage = () => {
                 className="banner__video-img"
               />
 
-              <div className="banner__video-play" onClick={() => "openVideoModal"}>
+              <div className="banner__video-play" onClick={() => handleOpenVidModal()}>
                 <span />
 
                 <p>{t("WatchVideo")}</p>
               </div>
 
-              <a href={intro} className="banner__video-play__mobile">
+              <a  className="banner__video-play__mobile">
                 <span></span>
 
                 <p>{t("WatchVideo")}</p>
@@ -773,23 +782,7 @@ const MainPage = () => {
 
       <NextProject />
 
-      {/* <div className="modal" id="video-popup" onClick={handleClickVideoModal}>
-        <div className="modal-content">
-          <span className="close-modal" onClick={handleCloseModal} />
-
-          <video
-            id="localVideo"
-            ref={videoRef}
-            width="100%"
-            controls
-            key={intro}
-          >
-            <source src={intro} type="video/mp4" />
-
-            {t("BrowserDoesNotSupportVideo")}
-          </video>
-        </div>
-      </div> */}
+      
     </>
   );
 };

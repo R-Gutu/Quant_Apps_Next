@@ -31,8 +31,6 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
     "$5.000-$10.000",
   ];
 
-  // const [modalOpen, setModalOpen] = useState(open);
-
   const [budgetId, setBudgetId] = useState(3);
 
   const [firstName, setFirstName] = useState("");

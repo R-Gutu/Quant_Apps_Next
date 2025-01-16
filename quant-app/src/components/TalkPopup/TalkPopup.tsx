@@ -1,12 +1,13 @@
 'use client'
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import { Checkbox, FormControlLabel, Typography } from "@mui/material";
 import Textarea from "@mui/joy/Textarea";
 
+import Image from "next/image";
 import { handleCloseModal } from "../../utils/modal";
 import {
   handleFiles,
@@ -23,7 +24,7 @@ import TalkPopupInput from "./TalkPopupInput";
 import emailjs from '@emailjs/browser';
 
 
-const TalkPopup = ({ open, onClose }) => {
+const TalkPopup = ({ open, onClose}) => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -218,10 +219,10 @@ const TalkPopup = ({ open, onClose }) => {
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
-            <img src={LogoBlack} alt="" className="talk-popup__logo" />
+            <Image src={LogoBlack} alt="" className="talk-popup__logo" />
             <div className="talk-popup__left-content">
               <h1>Let’s craft something unforgettable together!</h1>
-              <img src={ModalImage} alt="" />
+              <Image src={ModalImage} alt="" />
               <p>
                 Ready to kickstart your project? Complete the form to schedule a
                 discovery call, where we’ll dive into your goals and ideas.
@@ -229,7 +230,7 @@ const TalkPopup = ({ open, onClose }) => {
                 timeline and pricing.
               </p>
             </div>
-            <img src={ModalBg} alt="" className="talk-popup__left-img" />
+            <Image src={ModalBg} alt="" className="talk-popup__left-img" />
           </div>
           <div className="talk-popup__right">
             <form className="talk-popup__form" onSubmit={handleSubmit}>
@@ -419,7 +420,7 @@ const TalkPopup = ({ open, onClose }) => {
                   onDrop={onDropZoneDrop}
                 >
                   <div className="talk-popup__add-attachment-info">
-                    <img src={Staple} alt="" />
+                    <Image src={Staple} alt="" />
                     <p>
                       Drag your file(s) or <span>browse</span>
                     </p>

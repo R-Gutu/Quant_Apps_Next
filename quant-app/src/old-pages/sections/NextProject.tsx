@@ -9,8 +9,9 @@ import TalkModal from "@/src/components/TalkPopup/TalkPopup"; // Import the Talk
 const NextProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const t = useTranslations("next-project");
-  const smallScreen = useMediaQuery("(max-width:600px)");
-  const mediumScreen = useMediaQuery("(max-width:1024px)");
+  const smallScreen = useMediaQuery("(max-width:900px)");
+  const mediumScreen = useMediaQuery("(max-width:1324px)");
+  // const bigScreen = useMediaQuery("(max-width:1424px)");
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -137,13 +138,18 @@ const NextProject = () => {
             right: "0%",
             width: "600px",
             height: "auto",
+            ...(mediumScreen && {
+              width: "500px",
+              top: "0%",
+              right: "0%",
+            }),
             ...(smallScreen && {
               top: "0px",
               right: "20%",
               transform: "translateX(50%)",
-              width: "300px",
-              height: "300px",
+              width: "330px",
             }),
+
           }}
         >
           <Image

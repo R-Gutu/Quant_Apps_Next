@@ -133,9 +133,9 @@ const MainPage = () => {
               <Typography
                sx={(theme) => ({
                 fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                fontSize: "55px",
+                fontSize: "45px",
                 fontWeight: "600",
-                lineHeight: "74px",
+                lineHeight: "70px",
                 color: "white",
                 textAlign: "left", // по умолчанию слева (для десктопа)
                 [theme.breakpoints.down("md")]: {
@@ -155,12 +155,12 @@ const MainPage = () => {
               <Typography
                  sx={(theme) => ({
                   fontFamily: "Poppins",
-                  fontSize: "20px",
+                  fontSize: "24px",
                   lineHeight: "35px",
                   color: "#EBEBEB",
                   textAlign: "justify",
                   [theme.breakpoints.down("md")]: {
-                    fontSize: "40px",
+                    fontSize: "24px",
                     lineHeight: "30px",
                     textAlign: "center", // по центру для мобильных
                   },
@@ -240,7 +240,7 @@ const MainPage = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              router.push("/services");
+              router.push("/en/services");
             }}
           >
             <button className="fill-btn">{t("ReadMore")}</button>

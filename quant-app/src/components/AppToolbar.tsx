@@ -140,7 +140,7 @@ const AppToolbar = () => {
       <TalkPopup />
       <MobileMenu />
 
-      <Box sx={{ marginBottom: "110px" }} />
+      <Box sx={{ marginBottom: "120px" }} />
     </>
   );
 };

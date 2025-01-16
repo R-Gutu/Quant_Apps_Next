@@ -623,12 +623,12 @@ const MainPage = () => {
                         height: { xs: "112px", md: "151.36px" },
                       }}
                     >
-                      {/* <Image
+                      <Image
                         width={isSmallScreen ? 105 : 142}
                         height={isSmallScreen ? 112 : 151}
                         src={Veaceslav}
                         alt="Veaceslav"
-                      /> */}
+                      />
 
                       <Grid2 container direction="column">
                         <Typography

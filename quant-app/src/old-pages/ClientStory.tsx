@@ -40,14 +40,17 @@ const ClientStory = (props : any) => {
       <Grid2
         container
         alignItems="center"
+        // textAlign="center"
         position="relative"
-        width={{ xs: "270px", md: "414px" }}
-        height={{ xs: "326px", md: "220px" }}
-        marginInline={{ xs: "30px", md: "43px" }}
+        width={{ xs: "330px", md: "500px" }}
+        height={{ xs: "360px", md: "270px" }}
+        marginInline={{ xs: "0px", md: "0px" }}
+        paddingBottom="50px"
+        paddingX="30px"
       >
         <Image
           style={{
-            width: isSmallScreen ? "330px" : "500px",
+            width: isSmallScreen ? "330px" : "520px",
             height: isSmallScreen ? "326px" : "220px",
             position: "absolute",
             zIndex: "-1",
@@ -65,6 +68,7 @@ const ClientStory = (props : any) => {
             sx={{
               fontSize: "26.41px",
               lineHeight: "39.62px",
+              // paddingX: "20px"
             }}
           >
             {text}
@@ -75,7 +79,7 @@ const ClientStory = (props : any) => {
       <Grid2 container>
         <Grid2
           sx={{
-            mt: "20px",
+            mt: "-15px",
             ml: "60px",
           }}
         >

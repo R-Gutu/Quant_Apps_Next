@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import TalkPopup from "./TalkPopup/TalkPopup";
 import MobileMenu from "./MobileMenu";
@@ -19,12 +19,13 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
   const router = useRouter();
-  const pathname = '/'+usePathname().split('/')[2];
-  console.log(pathname)
+  const currentPathname = usePathname();
+  const [pathname, setPathname] = useState('/');
   
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   useEffect(() => {
+    // Handle hash scrolling
     if (window.location.hash) {
       const element = document.getElementById(window.location.hash.slice(1));
       if (element) {
@@ -33,23 +34,45 @@ const AppToolbar = () => {
         }, 100);
       }
     }
-  }, [pathname]);
+
+    // Handle pathname setting
+    console.log(currentPathname);
+    if (currentPathname === '/en') {
+      setPathname('/projects');
+    } else {
+      const pathSegments = currentPathname.split('/');
+      setPathname('/' + (pathSegments[2] || ''));
+    }
+    console.log(pathname);
+  }, [currentPathname]);
 
   const onClickBurger = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
     mobileMenu?.classList.add("active");
   };
 
-  const handleNavigation = (scrollTo?: string) => {
-    if (scrollTo) {
-      if (pathname === '/') {
-        setTimeout(() => {
-          const element = document.getElementById(scrollTo);
-          element?.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
-    }
-  };
+  useEffect(() => {
+    const target = document.getElementById("projects");
+    const menuItem = document.querySelectorAll(
+      '.menu__item[data-id="projects"]'
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          menuItem.forEach((e) => e.classList.add("active"));
+        } else {
+          menuItem.forEach((e) => e.classList.remove("active"));
+        }
+      });
+    });
+
+    if (target) observer.observe(target);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
@@ -68,11 +91,9 @@ const AppToolbar = () => {
                   </Link>
                 </li>
                 
-                <li className={`menu__item ${pathname === "/" ? "active" : ""}`} data-id="projects">
+                <li className={`menu__item ${pathname === "/projects" ? "active" : ""}`} data-id="projects">
                   <Link 
                     href="/#projects"
-                    scroll={false}
-                    onClick={() => handleNavigation("projects")}
                     className="text-left"
                   >
                     {t("Projects")}

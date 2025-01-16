@@ -43,13 +43,6 @@ import Veaceslav from "@/src/assets/images/Veaceslav.png";
 import { scrollToBlock } from "@/src/utils/scrollLinks";
 
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
-// import {
-// handleClickVideoModal,
-// handleCloseModal,
-// openVideoModal,
-// } from "@/src/utils/modal";
-
-
 import "@/src/style/swiper.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import TalkModal from "@/src/components/TalkPopup/TalkPopup";

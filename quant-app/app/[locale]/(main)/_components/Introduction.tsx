@@ -2,14 +2,13 @@ import { useState } from "react";
 import { Typography, Box } from "@mui/material"
 import Image from 'next/image'
 import Ipad from "@/src/assets/images/ipad.png";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 import VideoModal from "@/src/components/VideoModal";
 
-export default function Introduction({ handleOpenModal } : any) {
-    const t = useTranslations("main");
+export default function Introduction({ handleOpenModal, t } : any) {
     const currentLocale = useLocale();
-    const [intro, setIntro] = useState(getIntroByLanguage(currentLocale));
+    const intro = getIntroByLanguage(currentLocale);
 
     const [isVidModalOpen, setIsVidModalOpen] = useState(false);
     const handleOpenVidModal = () => setIsVidModalOpen(true);

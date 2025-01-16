@@ -15,6 +15,7 @@ import Settings from "@/src/assets/icons/settings.svg";
 
 const WhatWeOffer = () => {
   const t = useTranslations("what-we-offer");
+  
   return (
     <div className="offer" id="services">
       <Grid2>

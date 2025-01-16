@@ -18,6 +18,7 @@ const VideoModal = ({ open, setOpen, handleClose, src, noSupportMessage } : any)
             width="100%"
             controls
             key={src}
+            autoPlay
           >
             <source src={src} type="video/mp4" />
 

@@ -1,13 +1,15 @@
+'use client'
 import { useState } from "react";
 import { Typography, Box } from "@mui/material"
 import Image from 'next/image'
 import Ipad from "@/src/assets/images/ipad.png";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 import VideoModal from "@/src/components/VideoModal";
 import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
-export default function Introduction({ t }: any) {
+export default function Introduction() {
+    const t = useTranslations('main');
     const currentLocale = useLocale();
     const intro = getIntroByLanguage(currentLocale);
 

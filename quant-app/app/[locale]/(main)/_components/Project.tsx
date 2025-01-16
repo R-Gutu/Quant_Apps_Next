@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 
 export default function Project({ src, title, description } : any) {

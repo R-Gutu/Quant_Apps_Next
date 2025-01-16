@@ -1,10 +1,13 @@
+'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
 import ClientStory from "@/src/old-pages/ClientStory";
 import { Link } from "@mui/material";
 import Image from 'next/image';
 import Fi from "@/src/assets/icons/fi.svg";
+import { useTranslations } from "next-intl";
 
-export default function Vouches({ t }: any) {
+export default function Vouches() {
+    const t = useTranslations('main');
     return (
         <section className="client-success-stories-section">
             <div className="client-success-stories">

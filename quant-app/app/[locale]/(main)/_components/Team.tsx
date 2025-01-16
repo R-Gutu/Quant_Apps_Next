@@ -1,11 +1,14 @@
+'use client'
 import { Grid2, Typography, Card, Box, useMediaQuery, useTheme, Link } from "@mui/material"
 import Image from 'next/image';
 import Roma from "@/src/assets/images/Roma.png";
 import LinkedIn from "@/src/assets/images/linkedin.png";
 import Veaceslav from "@/src/assets/images/Veaceslav.png";
+import { useTranslations } from "next-intl";
 
 
-export default function Team({ t }: any) {
+export default function Team() {
+    const t = useTranslations('main');
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
     return (

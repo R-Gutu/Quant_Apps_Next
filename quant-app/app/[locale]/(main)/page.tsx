@@ -1,7 +1,5 @@
-"use client"
-
 import { Link } from '@/i18n/routing'
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Box } from "@mui/material";
 import NextProject from "@/src/components/NextProject";
 import WhatWeOffer from "@/src/components/WhatWeOffer";
@@ -13,14 +11,13 @@ import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
 
-const MainPage = () => {
-  const t = useTranslations("main");
-
+const MainPage = async () => {
+  const t = await getTranslations("main");
 
   return (
     <>
       <div className="container">
-        <Introduction t={t} />
+        <Introduction />
         <WhatWeOffer />
         <Box sx={{ mt: "50px", display: "flex", justifyContent: "center" }}>
           <Link href="/services">
@@ -31,11 +28,11 @@ const MainPage = () => {
       <QuanticaSlider />
       <section className="owr-work-section" id="projects">
         <div className="container">
-          <Projects t={t} />
-          <Team t={t} />
+          <Projects />
+          <Team />
         </div>
       </section>
-      <Vouches t={t} />
+      <Vouches />
       <NextProject />
     </>
   );

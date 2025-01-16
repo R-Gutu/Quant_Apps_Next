@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import Image from 'next/image';
 import { Button, Typography } from "@mui/material";
@@ -13,6 +14,7 @@ import Phone6 from "@/src/assets/images/phone-6.png";
 import Phone7 from "@/src/assets/images/phone-7.png";
 import Phone8 from "@/src/assets/images/phone-8.png";
 import Phone9 from "@/src/assets/images/phone-9.png";
+import { useTranslations } from "next-intl";
 
 interface ProjectData {
     src: any;
@@ -20,11 +22,8 @@ interface ProjectData {
     description: string;
 }
 
-interface ProjectsProps {
-    t: (key: string) => string;
-}
-
-export default function Projects({ t }: ProjectsProps) {
+export default function Projects() {
+    const t = useTranslations('main');
     const allProjects: ProjectData[] = [
         {
             src: Phone1,
@@ -87,7 +86,7 @@ export default function Projects({ t }: ProjectsProps) {
             return () => window.removeEventListener('resize', handleResize);
         }
     }, [showAll]);
-    
+
     if (!slicedProjects.length) {
         return null;
     }

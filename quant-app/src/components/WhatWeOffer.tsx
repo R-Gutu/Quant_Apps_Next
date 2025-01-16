@@ -15,62 +15,60 @@ import Settings from "@/src/assets/icons/settings.svg";
 
 const WhatWeOffer = () => {
   const t = useTranslations("what-we-offer");
-
   return (
     <div className="offer" id="services">
       <Grid2>
         <Typography
-          sx={(theme) => ({
+          sx={{
             fontSize: "64px",
-            fontFamily: `"ClashDisplay", "Inter", sans-serif`,
+            fontFamily: "ClashDisplay, Inter, sans-serif",
             fontWeight: "600",
-            [theme.breakpoints.down("md")]: {
+            "@media (max-width:960px)": {
               fontSize: "40px",
               lineHeight: "50px",
               textAlign: "center", // по центру для мобильных
             },
-            [theme.breakpoints.down("sm")]: {
+            "@media (max-width:600px)": {
               mt: "-55px",
               fontSize: "30px",
               lineHeight: "40px",
             },
-          })}
+          }}
           variant="h1"
         >
           {t("WhatWeOffer")}
         </Typography>
 
         <Typography
-          sx={(theme) => ({
+          sx={{
             fontSize: "16px",
             fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-            opacity: "0.75",
-            textAlign: "center",
-            [theme.breakpoints.down("md")]: {
-              textAlign: "center", // по центру для мобильных
+            opacity: 0.75,
+            textAlign: {
+              xs: "center", // Center-aligned for all screens
             },
-            [theme.breakpoints.down("sm")]: {
-              textAlign: "center", 
-            },
-          })}
+          }}
         >
           {t("CustomMobileApps")}
         </Typography>
       </Grid2>
 
+
       <Grid2 container justifyContent="end" width="100%" alignItems="center">
         <Box
-            sx={(theme) => ({
+          sx={{
             position: "absolute",
-            left: { xl: "5%", lg: "8%", xs: "-10%" },
-            width: { xs: "218px", sm: "350px", md: "474px" },
-            [theme.breakpoints.down("md")]: {
-              
+            left: {
+              xs: "-10%", // Extra-small screens
+              lg: "8%", // Large screens
+              xl: "5%", // Extra-large screens
             },
-            [theme.breakpoints.down("sm")]: {
-              
+            width: {
+              xs: "218px", // Extra-small screens
+              sm: "350px", // Small screens
+              md: "474px", // Medium screens
             },
-          })}
+          }}
         >
           <Image
             src={CloudStorage}
@@ -122,7 +120,7 @@ const WhatWeOffer = () => {
           direction="column"
           gap="12px"
           size={{ xs: 6, lg: 7 }}
-          sx={(theme) => ({
+          sx={{
             zIndex: 2,
             justifyContent: "space-between",
             //  ml: "200px",
@@ -132,26 +130,30 @@ const WhatWeOffer = () => {
               height: { xs: "22px", md: "auto" },
             },
             "& h3": {
-              fontFamily: `"ClashDisplay", "Inter", sans-serif`,
+              fontFamily: "ClashDisplay, Inter, sans-serif",
               fontSize: { xs: "9px", md: "20px" },
               fontWeight: "500",
               lineHeight: { xs: "12px", md: "25px" },
             },
             "& p": {
-              fontFamily: `"Poppins", "Inter", sans-serif`,
+              fontFamily: "Poppins, Inter, sans-serif",
               fontSize: { xs: "7.37px", md: "16px" },
               lineHeight: { xs: "12px", md: "25px" },
               opacity: "0.75",
               textAlign: "justify",
               maxWidth: "397px",
             },
-          })}
+          }}
         >
-          <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={(theme) => ({
-              ml: { md: "120px", xs:  "0px" },
-            })}
+
+          <Grid2
+            container
+            gap={{ xs: "12px", md: "24px" }}
+            sx={{
+              ml: { md: "120px", xs: "0px" },
+            }}
           >
+
             <Grid2
               container
               sx={{
@@ -179,9 +181,9 @@ const WhatWeOffer = () => {
           </Grid2>
 
           <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={(theme) => ({
-              ml: { md: "120px", xs:  "0px" },
-            })}
+            sx={{
+              ml: { md: "120px", xs: "0px" },
+            }}
           >
             <Grid2
               container
@@ -208,9 +210,9 @@ const WhatWeOffer = () => {
           </Grid2>
 
           <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={(theme) => ({
-              ml: { md: "120px", xs:  "0px" },
-            })}
+            sx={{
+              ml: { md: "120px", xs: "0px" },
+            }}
           >
             <Grid2
               container
@@ -237,10 +239,10 @@ const WhatWeOffer = () => {
           </Grid2>
 
           <Grid2 container gap={{ xs: "12px", md: "24px" }}
-             sx={(theme) => ({
-              ml: { md: "120px", xs:  "0px" },
-              mt: { md: "20px", xs:  "10px" },
-            })}
+            sx={{
+              ml: { md: "120px", xs: "0px" },
+              mt: { md: "20px", xs: "10px" },
+            }}
           >
             <Grid2
               container
@@ -271,10 +273,10 @@ const WhatWeOffer = () => {
           </Grid2>
 
           <Grid2 container gap={{ xs: "12px", md: "24px" }}
-          sx={(theme) => ({
-            ml: { md: "120px", xs:  "0px" },
-            mt: { md: "20px", xs:  "0px" },
-          })}
+            sx={{
+              ml: { md: "120px", xs: "0px" },
+              mt: { md: "20px", xs: "0px" },
+            }}
           >
             <Grid2
               container

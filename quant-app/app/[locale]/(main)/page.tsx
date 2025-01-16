@@ -20,8 +20,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 import ClientStory from "@/src/old-pages/ClientStory";
-import NextProject from "@/src/old-pages/sections/NextProject";
-import WhatWeOffer from "@/src/old-pages/sections/WhatWeOffer";
+import NextProject from "@/src/components/NextProject";
+import WhatWeOffer from "@/src/components/WhatWeOffer";
 
 import Arrow from "@/src/assets/icons/arrow.svg";
 import Ipad from "@/src/assets/images/ipad.png";
@@ -41,17 +41,17 @@ import Roma from "@/src/assets/images/Roma.png";
 import LinkedIn from "@/src/assets/images/linkedin.png";
 import Veaceslav from "@/src/assets/images/Veaceslav.png";
 import { scrollToBlock } from "@/src/utils/scrollLinks";
-import {
-  handleClickVideoModal,
-  handleCloseModal,
-  openLetsTalkModal,
-  openVideoModal,
-} from "@/src/utils/modal";
+// import {
+// handleClickVideoModal,
+// handleCloseModal,
+// openVideoModal,
+// } from "@/src/utils/modal";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 
 import "@/src/style/swiper.css";
 import "@/src/style/main.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
+import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
 
 const MainPage = () => {
@@ -65,13 +65,16 @@ const MainPage = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
-  const initialCount = window.innerWidth > 768 ? 6 : 3;
-  const [visibleCount, setVisibleCount] = useState(initialCount);
+  const [visibleCount, setVisibleCount] = useState(0);
+  const [initialCount, setInitialCount] = useState(0);  // State to store initialCount
   const [intro, setIntro] = useState(getIntroByLanguage(currentLocale));
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      const count = window.innerWidth > 768 ? 6 : 3;
+      setInitialCount(count);
+      setVisibleCount(count);
       window.scrollTo(0, 0);
     }
   }, []);
@@ -116,44 +119,59 @@ const MainPage = () => {
   };
 
   const onClickShowMoreProjects = () => {
-    if (initialCount !== visibleCount) {
+    if (visibleCount === initialCount) {
+      setVisibleCount(visibleCount + 3);
+    } else {
       setVisibleCount(initialCount);
       scrollToBlock("our-work");
-    } else {
-      setVisibleCount(visibleCount + 3);
     }
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseTalkModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <>
+      <TalkModal
+        open={isModalOpen}
+        setOpen={setIsModalOpen}
+        handleClose={handleCloseTalkModal}
+      />
       <div className="container">
         <div className="banner">
           <div className="banner__content">
             <div className="banner__text">
               <Typography
-               sx={(theme) => ({
-                fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                fontSize: "55px",
-                fontWeight: "600",
-                lineHeight: "74px",
-                color: "white",
-                textAlign: "left", // по умолчанию слева (для десктопа)
-                [theme.breakpoints.down("md")]: {
-                  fontSize: "40px",
-                  lineHeight: "50px",
-                  textAlign: "center", // по центру для мобильных
-                },
-                [theme.breakpoints.down("sm")]: {
-                  fontSize: "30px",
-                  lineHeight: "40px",
-                },
-              })}
+                sx={(theme) => ({
+                  fontFamily: `"ClashDisplay", "Inter", sans-serif`,
+                  fontSize: "55px",
+                  fontWeight: "600",
+                  lineHeight: "74px",
+                  color: "white",
+                  textAlign: "left", // по умолчанию слева (для десктопа)
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "40px",
+                    lineHeight: "50px",
+                    textAlign: "center", // по центру для мобильных
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "30px",
+                    lineHeight: "40px",
+                  },
+                })}
               >
                 {t("WeBuildAppsThatEmpower")}
               </Typography>
 
               <Typography
-                 sx={(theme) => ({
+                sx={(theme) => ({
                   fontFamily: "Poppins",
                   fontSize: "20px",
                   lineHeight: "35px",
@@ -176,19 +194,19 @@ const MainPage = () => {
             </div>
 
             <Box
-            sx={{
-              mt: "0px",
-              display: { xs: "flex", md: "none" }, // Показать только на md и больше
-              justifyContent: "center",
-            }}
-          >
-            <button
-              className="lets-talk fill-btn banner__text-btn"
-              onClick={() => openLetsTalkModal()}
+              sx={{
+                mt: "0px",
+                display: { xs: "flex", md: "none" }, // Показать только на md и больше
+                justifyContent: "center",
+              }}
             >
-              {t("LetsTalk")}
-            </button>
-          </Box>
+              <button
+                className="lets-talk fill-btn banner__text-btn"
+                onClick={() => handleOpenModal()}
+              >
+                {t("LetsTalk")}
+              </button>
+            </Box>
 
             <div className="banner__video">
               <Image
@@ -198,7 +216,7 @@ const MainPage = () => {
                 className="banner__video-img"
               />
 
-              <div className="banner__video-play" onClick={openVideoModal}>
+              <div className="banner__video-play" onClick={() => "openVideoModal"}>
                 <span />
 
                 <p>{t("WatchVideo")}</p>
@@ -221,7 +239,7 @@ const MainPage = () => {
           >
             <button
               className="lets-talk fill-btn banner__text-btn"
-              onClick={() => openLetsTalkModal()}
+              onClick={() => handleOpenModal()}
             >
               {t("LetsTalk")}
             </button>
@@ -454,7 +472,7 @@ const MainPage = () => {
                   color: "white",
                   fontWeight: "600",
                   fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                  ml: { xs: "79px", sm: "-0px", md: "0px", lg: "0px"},
+                  ml: { xs: "79px", sm: "-0px", md: "0px", lg: "0px" },
                   // mt: {xs: "-60px", sm: "-0px", md: "0px", lg: "0px"}
                 }}
               >
@@ -468,8 +486,8 @@ const MainPage = () => {
                   color: "white",
                   fontWeight: "400",
                   fontFamily: "Poppins",
-                  textAlign:  { xs: "center", sm: "left", md: "left", lg: "left"},
-                  ml: { xs: "27px", sm: "-0px", md: "0px", lg: "0px"},
+                  textAlign: { xs: "center", sm: "left", md: "left", lg: "left" },
+                  ml: { xs: "27px", sm: "-0px", md: "0px", lg: "0px" },
                 }}
               >
                 {t("TeamDescription")}
@@ -562,10 +580,10 @@ const MainPage = () => {
                       alignItems="center"
                       justifyContent="center"
                     >
-                      <Image 
-                        width={50} 
-                        height={50} 
-                        style={{ width: "50%", height: "auto" }}  
+                      <Image
+                        width={50}
+                        height={50}
+                        style={{ width: "50%", height: "auto" }}
                         src={LinkedIn} alt="linkedin" />
                     </Link>
                   </Grid2>
@@ -592,7 +610,7 @@ const MainPage = () => {
               </Card>
 
               <Card
-                 sx={{
+                sx={{
                   borderRadius: "61px",
                   width: { xs: "350px", md: "610px" },
                   height: { xs: "331px", md: "447px" },
@@ -667,7 +685,7 @@ const MainPage = () => {
                       alignItems="center"
                       justifyContent="center"
                     >
-                      <Image width={50} height={50} style={{ width: "50%", height:"auto"}} src={LinkedIn} alt="linkedin" />
+                      <Image width={50} height={50} style={{ width: "50%", height: "auto" }} src={LinkedIn} alt="linkedin" />
                     </Link>
                   </Grid2>
 
@@ -755,7 +773,7 @@ const MainPage = () => {
 
       <NextProject />
 
-      <div className="modal" id="video-popup" onClick={handleClickVideoModal}>
+      {/* <div className="modal" id="video-popup" onClick={handleClickVideoModal}>
         <div className="modal-content">
           <span className="close-modal" onClick={handleCloseModal} />
 
@@ -771,7 +789,7 @@ const MainPage = () => {
             {t("BrowserDoesNotSupportVideo")}
           </video>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

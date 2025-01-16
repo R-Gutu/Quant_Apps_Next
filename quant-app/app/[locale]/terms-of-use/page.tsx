@@ -1,20 +1,12 @@
-"use client"
-
-import { useEffect } from "react";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
-import NextProject from "@/src/old-pages/sections/NextProject";
+import NextProject from "@/src/components/NextProject";
 import Blur from "@/src/components/Blur";
 
-const TermsOfUse = () => {
-  const t = useTranslations("terms-of-use");
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const TermsOfUse = async () => {
+  const t = await getTranslations("terms-of-use");
 
   return (
     <Grid2
@@ -89,7 +81,7 @@ const TermsOfUse = () => {
         <Grid2>
           <Typography>{`2. ${t("ServicesProvided")}`}</Typography>
 
-          <Typography>{t("ServiceProvidedDetails")}</Typography>
+          <Typography>{t("ServicesProvidedDetails")}</Typography>
         </Grid2>
 
         <Box

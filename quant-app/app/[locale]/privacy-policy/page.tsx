@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
-import NextProject from "@/src/old-pages/sections/NextProject";
+import NextProject from "@/src/components/NextProject";
 import Blur from "@/src/components/Blur";
 
 const PrivacyPolicy = async () => {
@@ -245,7 +245,7 @@ const PrivacyPolicy = async () => {
         <Typography sx={{ mt: "20px" }}>{t("ThankYouForTrusting")}</Typography>
       </Grid2>
 
-      {/* <NextProject /> */}
+      <NextProject />
     </Grid2>
   );
 };

@@ -7,9 +7,8 @@ import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 
-import TalkPopup from "./TalkPopup/TalkPopup";
+import TalkModal from "./TalkPopup/TalkPopup";
 import MobileMenu from "./MobileMenu";
-import { openLetsTalkModal } from "../utils/modal";
 
 import Logo from "../assets/icons/logo.svg";
 
@@ -23,6 +22,12 @@ const AppToolbar = () => {
   const [pathname, setPathname] = useState('/');
   
   const isSmallScreen = useMediaQuery("(max-width:768px)");
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     // Handle hash scrolling
@@ -124,7 +129,7 @@ const AppToolbar = () => {
               {pathname !== "/contact-us" && (
                 <button
                   className="lets-talk"
-                  onClick={() => openLetsTalkModal()}
+                  onClick={() => setIsModalOpen(true)}
                 >
                   {t("LetsTalk")}
                 </button>
@@ -137,7 +142,11 @@ const AppToolbar = () => {
         </div>
       </header>
 
-      <TalkPopup />
+      <TalkModal 
+        open={isModalOpen} 
+        setOpen={setIsModalOpen}
+        handleClose={handleCloseModal}
+      />
       <MobileMenu />
 
       <Box sx={{ marginBottom: "110px" }} />

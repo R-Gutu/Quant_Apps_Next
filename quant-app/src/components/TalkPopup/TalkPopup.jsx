@@ -1,13 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-
-import { useTranslation } from "react-i18next";
-
-import { Checkbox, FormControlLabel, Typography } from "@mui/material";
-import Textarea from "@mui/joy/Textarea";
-
-import { handleCloseModal } from "../../utils/modal";
+import { useState } from "react";
 import {
   handleFiles,
   validateEmail,
@@ -18,12 +10,11 @@ import Staple from "../../assets/icons/staple.svg";
 import LogoBlack from "../../assets/icons/logo-black.svg";
 import ModalBg from "../../assets/images/modal-bg.png";
 import ModalImage from "../../assets/images/modal-img.png";
-import GamingImage from "../../assets/images/phones-with-phones.png";
-import TalkPopupInput from "./TalkPopupInput";
 import emailjs from '@emailjs/browser';
+import { Modal } from '@mui/material';
+import Image from 'next/image'
 
-
-const TalkPopup = ({ open, onClose }) => {
+const TalkPopup = ({ open, setOpen, handleClose }) => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -40,9 +31,7 @@ const TalkPopup = ({ open, onClose }) => {
     "$5.000-$10.000",
   ];
 
-  // useEffect(() => {
-  //     setBudgetCheckboxes(budget2Prices)
-  // })
+  // const [modalOpen, setModalOpen] = useState(open);
 
   const [budgetId, setBudgetId] = useState(3);
 
@@ -209,19 +198,24 @@ const TalkPopup = ({ open, onClose }) => {
   };
 
   return (
-    <div className={`modal ${open ? 'd-block' : ''}`} id="talk-popup">
+    <Modal
+      open={open}
+      onClose={handleClose}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
+    >
       <div className="modal-content talk-popup">
         <span
           className="close-modal"
           id="closeModal"
-          onClick={handleCloseModal}
+          onClick={() => setOpen(false)}
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
-            <img src={LogoBlack} alt="" className="talk-popup__logo" />
+            <Image src={LogoBlack} alt="" className="talk-popup__logo" />
             <div className="talk-popup__left-content">
               <h1>Let’s craft something unforgettable together!</h1>
-              <img src={ModalImage} alt="" />
+              <Image src={ModalImage} alt="" />
               <p>
                 Ready to kickstart your project? Complete the form to schedule a
                 discovery call, where we’ll dive into your goals and ideas.
@@ -229,7 +223,7 @@ const TalkPopup = ({ open, onClose }) => {
                 timeline and pricing.
               </p>
             </div>
-            <img src={ModalBg} alt="" className="talk-popup__left-img" />
+            <Image src={ModalBg} alt="" className="talk-popup__left-img" />
           </div>
           <div className="talk-popup__right">
             <form className="talk-popup__form" onSubmit={handleSubmit}>
@@ -419,7 +413,7 @@ const TalkPopup = ({ open, onClose }) => {
                   onDrop={onDropZoneDrop}
                 >
                   <div className="talk-popup__add-attachment-info">
-                    <img src={Staple} alt="" />
+                    <Image src={Staple} alt="" />
                     <p>
                       Drag your file(s) or <span>browse</span>
                     </p>
@@ -445,7 +439,7 @@ const TalkPopup = ({ open, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Modal>
   );
 };
 

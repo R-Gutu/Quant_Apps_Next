@@ -1,16 +1,9 @@
-'use client'
-import { useEffect } from "react";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import FaqAccordionItem from "@/src/components/FaqAccordionItem";
 
-const Faqs = () => {
-  const t = useTranslations("faqs");
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const Faqs = async () => {
+  const t = await getTranslations("faqs");
 
   return (
     <section className="faq-section" id="faq">

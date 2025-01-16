@@ -4,8 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { Button, Grid2, Typography, useMediaQuery } from "@mui/material";
 
-
-import NextProject from "@/src/old-pages/sections/NextProject";
+import NextProject from "@/src/components/NextProject";
 import { getRoadMapByLanguage } from "@/src/utils/languageUtils";
 
 import Image from 'next/image'

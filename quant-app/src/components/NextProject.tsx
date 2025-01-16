@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Box, Button, Grid2, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
-import Hand3d from "../../assets/icons/hand3d.svg";
-import TalkModal from "@/src/components/TalkPopup/TalkPopup"; // Import the TalkModal component
+import Hand3d from "@/src/assets/icons/hand3d.svg";
+import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
 const NextProject = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -160,7 +160,8 @@ const NextProject = () => {
       {/* Modal component */}
       <TalkModal 
         open={isModalOpen} 
-        onClose={handleCloseModal}
+        setOpen={setIsModalOpen}
+        handleClose={handleCloseModal}
       />
     </>
   );

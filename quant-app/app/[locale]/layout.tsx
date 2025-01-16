@@ -16,6 +16,7 @@ import "@/src/style/talkPopup.css"
 import "@/src/style/workingProcess.css"
 import "@/src/style/aboutPage.css"
 import "@/src/style/contactUsPage.css"
+import "@/src/style/swiper.css";
 
 import Footer from "@/src/components/Footer";
 import AppToolbar from "@/src/components/AppToolbar"

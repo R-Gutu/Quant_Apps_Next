@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Button, Typography } from "@mui/material";
 import Project from "./Project";
 
-// Import your assets
 import Arrow from "@/src/assets/icons/arrow.svg";
 import Phone1 from "@/src/assets/images/phone-1.png";
 import Phone2 from "@/src/assets/images/phone-2.png";
@@ -26,7 +25,6 @@ interface ProjectsProps {
 }
 
 export default function Projects({ t }: ProjectsProps) {
-    // Define projects with proper typing
     const allProjects: ProjectData[] = [
         {
             src: Phone1,
@@ -78,14 +76,11 @@ export default function Projects({ t }: ProjectsProps) {
     const [slicedProjects, setSlicedProjects] = useState<ProjectData[]>([]);
     const [showAll, setShowAll] = useState(false);
 
-    // Handle initial load and window resize
     useEffect(() => {
         const handleResize = () => {
             const count = window.innerWidth > 768 ? 6 : 3;
             setSlicedProjects(showAll ? allProjects : allProjects.slice(0, count));
         };
-
-        // Handle server-side rendering
         if (typeof window !== 'undefined') {
             handleResize();
             window.addEventListener('resize', handleResize);

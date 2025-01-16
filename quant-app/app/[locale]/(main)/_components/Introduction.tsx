@@ -5,8 +5,9 @@ import Ipad from "@/src/assets/images/ipad.png";
 import { useLocale } from "next-intl";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 import VideoModal from "@/src/components/VideoModal";
+import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
-export default function Introduction({ handleOpenModal, t } : any) {
+export default function Introduction({ t }: any) {
     const currentLocale = useLocale();
     const intro = getIntroByLanguage(currentLocale);
 
@@ -14,8 +15,17 @@ export default function Introduction({ handleOpenModal, t } : any) {
     const handleOpenVidModal = () => setIsVidModalOpen(true);
     const handleCloseVidModal = () => setIsVidModalOpen(false);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseTalkModal = () => setIsModalOpen(false);
+
     return (
         <>
+            <TalkModal
+                open={isModalOpen}
+                setOpen={setIsModalOpen}
+                handleClose={handleCloseTalkModal}
+            />
             <VideoModal
                 open={isVidModalOpen}
                 setOpen={setIsVidModalOpen}

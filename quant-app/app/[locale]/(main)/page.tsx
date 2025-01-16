@@ -50,7 +50,7 @@ import {
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 
 import "@/src/style/swiper.css";
-import "@/src/style/main.css";
+// import "@/src/style/main.css";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 

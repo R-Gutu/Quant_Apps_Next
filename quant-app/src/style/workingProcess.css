@@ -1,0 +1,106 @@
+.working-process {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.working-process__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.working-process__title h1 {
+    font-family: "ClashDisplay";
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 78.72px;
+    color: white;
+}
+
+.working-process__title p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: white;
+    max-width: 328px;
+}
+
+.working-process__accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.working-process-accordion__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.working-process-accordion__header h2 {
+    font-size: 30px !important;
+    font-weight: 600;
+    color: white;
+    font-family: "ClashDisplay";
+}
+
+.working-process-accordion__header>span {
+    font-size: 60px;
+    font-weight: 600;
+    color: #B8B6FF;
+    font-family: "ClashDisplay";
+}
+
+.working-process__accordion .faq__accordion-item .faq__accordion-content {
+    background-color: transparent;
+}
+
+.working-process-accordion__header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.working-process__accordion .faq__accordion-item {
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    background-color: transparent;
+}
+
+.working-process__accordion .faq__accordion-header {
+    background-color: transparent;
+}
+
+.working-process__accordion .faq__accordion-item.active .working-process-accordion__header {
+    border-bottom: 1px solid white;
+}
+
+.working-process__accordion .faq__accordion-close {
+    width: 38px;
+    height: 38px;
+}
+
+.working-process__accordion .faq__accordion-item.active .faq__accordion-close {
+    content: url(../assets/icons/Plus-white.svg);
+}
+
+.working-process__accordion .faq__accordion-item .faq__accordion-content p {
+    font-size: 18px;
+    padding: 0 20px 20px 20px;
+}

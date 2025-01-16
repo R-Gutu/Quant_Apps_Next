@@ -1,14 +1,13 @@
-"use client"
 
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
 import NextProject from "@/src/old-pages/sections/NextProject";
 import Blur from "@/src/components/Blur";
 
-const PrivacyPolicy = () => {
-  const t = useTranslations("privacy-policy");
+const PrivacyPolicy = async () => {
+  const t = await getTranslations("privacy-policy");
 
   return (
     <Grid2
@@ -246,7 +245,7 @@ const PrivacyPolicy = () => {
         <Typography sx={{ mt: "20px" }}>{t("ThankYouForTrusting")}</Typography>
       </Grid2>
 
-      <NextProject />
+      {/* <NextProject /> */}
     </Grid2>
   );
 };

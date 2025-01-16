@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -22,7 +23,7 @@ import TalkPopupInput from "./TalkPopupInput";
 import emailjs from '@emailjs/browser';
 
 
-const TalkPopup = () => {
+const TalkPopup = ({ open, onClose }) => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -208,7 +209,7 @@ const TalkPopup = () => {
   };
 
   return (
-    <div className="modal" id="talk-popup">
+    <div className={`modal ${open ? 'd-block' : ''}`} id="talk-popup">
       <div className="modal-content talk-popup">
         <span
           className="close-modal"

@@ -15,6 +15,7 @@ const Page = () => {
             onClose={() => router.back()}
             id="video-popup"
             className="px-10 py-0"
+            disableScrollLock={ true }
         >
             <div className="modal-content">
                 <span className="close-modal" onClick={() => router.back()} />

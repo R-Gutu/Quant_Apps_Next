@@ -201,6 +201,7 @@ const page = () => {
     <Modal
       open={true}
       onClose={() => router.back()}
+      disableScrollLock={ true }
     >
       <div className="modal-content talk-popup">
         <span

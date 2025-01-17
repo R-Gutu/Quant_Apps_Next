@@ -100,6 +100,7 @@ const AppToolbar = () => {
                   <Link 
                     href="/#projects"
                     className="text-left"
+                    scroll={false}
                   >
                     {t("Projects")}
                   </Link>

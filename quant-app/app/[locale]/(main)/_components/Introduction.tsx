@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Ipad from "@/src/assets/images/ipad.png";
 import { useLocale, useTranslations } from "next-intl";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
-import VideoModal from "@/src/components/VideoModal";
+import VideoModal from "./VideoModal";
 import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
 export default function Introduction() {

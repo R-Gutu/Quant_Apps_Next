@@ -107,6 +107,7 @@
   }
   
   /* Button Styles */
+  .button,
   button {
     outline: 0;
     cursor: pointer;
@@ -123,7 +124,7 @@
     transition: all var(--transition);
   }
   
-  button:hover {
+  .button:hover, button:hover {
     background-color: var(--purple);
   }
   
@@ -642,7 +643,6 @@
   
   /* Modal Styles */
   .modal {
-    display: none;
     position: fixed;
     left: 0;
     top: 0;

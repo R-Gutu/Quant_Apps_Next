@@ -4,17 +4,18 @@ import {
   handleFiles,
   validateEmail,
   validateName,
-} from "../../utils/validateTalkModal";
+} from "@/src/utils/validateTalkModal";
 
-import Staple from "../../assets/icons/staple.svg";
-import LogoBlack from "../../assets/icons/black-logo.svg";
-import ModalBg from "../../assets/images/modal-bg.png";
-import ModalImage from "../../assets/images/modal-img.png";
+import Staple from "@/src/assets/icons/staple.svg";
+import LogoBlack from "@/src/assets/icons/black-logo.svg";
+import ModalBg from "@/src/assets/images/modal-bg.png";
+import ModalImage from "@/src/assets/images/modal-img.png";
 import emailjs from '@emailjs/browser';
 import { Modal } from '@mui/material';
-import Image from 'next/image'
+import Image from 'next/image';
+import { useRouter } from "@/i18n/routing";
 
-const TalkPopup = ({ open, setOpen, handleClose }) => {
+const page = () => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -188,17 +189,18 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
         setBackendCheckbox(false);
         setBudgetCheckboxes([false, false, false]);
         setInvalidForm(true);
-        handleCloseModal();
+        router.back();
       }, (err) => {
         console.log("FAILED...", err);
         alert("Произошла ошибка при отправке. Пожалуйста, попробуйте снова.");
       });
   };
 
+  const router = useRouter();
   return (
     <Modal
-      open={open}
-      onClose={handleClose}
+      open={true}
+      onClose={() => router.back()}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
@@ -206,7 +208,7 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
         <span
           className="close-modal"
           id="closeModal"
-          onClick={() => setOpen(false)}
+          onClick={() => router.back()}
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
@@ -441,4 +443,4 @@ const TalkPopup = ({ open, setOpen, handleClose }) => {
   );
 };
 
-export default TalkPopup;
+export default page;

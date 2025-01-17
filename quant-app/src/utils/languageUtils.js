@@ -5,11 +5,11 @@ import RoadMapRo from "@/src/assets/icons/road-map-ro.svg";
 export function getIntroByLanguage(language) {
   switch (language) {
     case "en":
-      return './intro-en.mp4';
+      return '/intro-en.mp4';
     case "ro":
-      return './intro-ro.mp4';
+      return '/intro-ro.mp4';
     default:
-      return './intro-en.mp4';
+      return '/intro-en.mp4';
   }
 }
 

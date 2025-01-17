@@ -1,8 +1,8 @@
 
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import { Grid2 } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname, useRouter } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -13,11 +13,12 @@ import TikTok from "@/src/assets/icons/tik-tok.svg";
 import Telegram from "@/src/assets/icons/Telegram.svg";
 import WhatsApp from "@/src/assets/icons/whats-app.svg";
 import LinkedIn from "@/src/assets/icons/linked-in.svg";
+import { useEffect, useState } from "react";
 
 const MobileMenu = () => {
-  const { t } = useTranslation("app-toolbar");
-  const router = useRouter();
-  const pathname = usePathname();
+  const  t  = useTranslations("app-toolbar");
+  const currentPathname = usePathname();
+  const [pathname, setPathname] = useState('/');
 
   const onClickMobileLink = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
@@ -29,18 +30,15 @@ const MobileMenu = () => {
     mobileMenu?.classList.remove("active");
   };
 
-  const handleNavigation = (path: string, scrollTo?: string) => {
-    onClickMobileLink();
-    if (scrollTo) {
-      router.push(path);
-      setTimeout(() => {
-        const element = document.getElementById(scrollTo);
-        element?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+  useEffect(() => {
+    if (currentPathname === '/en' || '/ro' || '/ru') {
+      setPathname('/projects');
     } else {
-      router.push(path);
+      const pathSegments = currentPathname.split('/');
+      setPathname('/' + (pathSegments[2] || ''));
     }
-  };
+    onClickMobileLink()
+  }, [currentPathname])
 
   return (
     <div className="mobile-menu">
@@ -54,7 +52,6 @@ const MobileMenu = () => {
           <Link
             href="/services"
             className="text-left w-full"
-            onClick={() => handleNavigation("/services")}
           >
             {t("Services")}
           </Link>
@@ -65,9 +62,9 @@ const MobileMenu = () => {
           data-id="projects"
         >
           <Link
-            href="/"
+            href="/#projects"
             className="text-left w-full"
-            onClick={() => handleNavigation("/", "projects")}
+            scroll={false}
           >
             {t("Projects")}
           </Link>
@@ -81,7 +78,6 @@ const MobileMenu = () => {
           <Link
             href="/about-us"
             className="text-left w-full"
-            onClick={() => handleNavigation("/about-us")}
           >
             {t("AboutUs")}
           </Link>
@@ -95,7 +91,6 @@ const MobileMenu = () => {
           <Link
             href="/contact-us"
             className="text-left w-full"
-            onClick={() => handleNavigation("/contact-us")}
           >
             {t("ContactUs")}
           </Link>
@@ -109,7 +104,6 @@ const MobileMenu = () => {
           <Link
             href="/faqs"
             className="text-left w-full"
-            onClick={() => handleNavigation("/faqs")}
           >
             FAQs
           </Link>

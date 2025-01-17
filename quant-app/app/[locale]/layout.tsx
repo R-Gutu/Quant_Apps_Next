@@ -17,6 +17,9 @@ import "@/src/style/workingProcess.css"
 import "@/src/style/aboutPage.css"
 import "@/src/style/contactUsPage.css"
 import "@/src/style/swiper.css";
+import "@/src/style/header.css";
+import "@/src/style/services.css";
+import "@/src/style/whatWeOfferSection.css";
 
 import Footer from "@/src/components/Footer";
 import AppToolbar from "@/src/components/AppToolbar"

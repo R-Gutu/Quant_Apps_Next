@@ -17,7 +17,6 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
-  const router = useRouter();
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
   
@@ -42,7 +41,7 @@ const AppToolbar = () => {
 
     // Handle pathname setting
     console.log(currentPathname);
-    if (currentPathname === '/en') {
+    if (currentPathname === '/en' || '/ro' || '/ru') {
       setPathname('/projects');
     } else {
       const pathSegments = currentPathname.split('/');

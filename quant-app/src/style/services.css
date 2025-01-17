@@ -1,0 +1,156 @@
+.why-ios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+    padding: 65px 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.why-ios-section {
+    position: relative;
+}
+
+.why-ios__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+    max-width: 630px;
+    font-family: "Inter";
+}
+
+.why-ios__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 140px 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 75px;
+    -webkit-column-gap: 140px;
+    -moz-column-gap: 140px;
+    column-gap: 140px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 99px;
+}
+
+.why-ios__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 32px;
+}
+
+.why-ios__item-img {
+    background-color: var(--purple);
+    width: 71px;
+    height: 75px;
+    min-width: 71px;
+    min-height: 75px;
+    padding: 10px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.why-ios__item-img img {
+    max-width: 100%;
+}
+
+.why-ios__item-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.why-ios__item-text h4 {
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: white;
+}
+
+.why-ios__item-text p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: white;
+    opacity: 0.75;
+    text-align: justify;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+.why-ios__bg-img {
+    position: absolute;
+}
+
+.why-ios__blur-1 {
+    top: 20%;
+    left: -5%;
+    width: 280px;
+    height: 280px;
+    background-color: #1E50FF;
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+.why-ios__blur-2 {
+    right: -20%;
+    bottom: 0;
+    width: 380px;
+    height: 380px;
+    background-color: #9C08FF;
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+.why-ios__star-1 {
+    top: 35%;
+    left: 16%;
+}
+
+.why-ios__star-2 {
+    top: 20%;
+    right: 20%;
+}
+
+.why-ios__star-3 {
+    right: 22%;
+    bottom: 10%;
+}
+
+.why-ios__moon {
+    left: 10%;
+    bottom: 9%;
+}
+
+.why-ios__moon-2 {
+    display: none;
+}

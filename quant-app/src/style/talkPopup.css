@@ -469,3 +469,43 @@ button.disabled:hover {
 #fileList .error {
     color: #FF5A5A;
 }
+
+/*--------------CUSTOM CHECKBOX------------------*/
+
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    width: 25px;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #C1C1C1;
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.75 8.1275L1.62249 5L0.557495 6.0575L4.75 10.25L13.75 1.25L12.6925 0.192505L4.75 8.1275Z" fill="none"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: black;
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.75 8.1275L1.62249 5L0.557495 6.0575L4.75 10.25L13.75 1.25L12.6925 0.192505L4.75 8.1275Z" fill="white"/></svg>');
+    border: none;
+    -webkit-transition: all var(--transition);
+    -o-transition: all var(--transition);
+    transition: all var(--transition);
+}
+
+/*--------------CUSTOM CHECKBOX------------------*/

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
@@ -13,8 +13,8 @@ import Android from "@/src/assets/icons/android.svg";
 import CrossPlatform from "@/src/assets/icons/cross-platform.svg";
 import Settings from "@/src/assets/icons/settings.svg";
 
-const WhatWeOffer = () => {
-  const t = useTranslations("what-we-offer");
+const WhatWeOffer = async () => {
+  const t = await getTranslations("what-we-offer");
   
   return (
     <div className="offer" id="services">
@@ -80,6 +80,7 @@ const WhatWeOffer = () => {
               position: "relative",
               zIndex: 1,
             }}
+            quality={100}
           />
 
           <Image
@@ -93,26 +94,28 @@ const WhatWeOffer = () => {
               left: "40%",
               transform: "translate(-50%, -50%)",
             }}
+            quality={100}
           />
 
           <Blur
-            sx={{
-              opacity: {
-                xs: 0, // скрыть на мобильных
-                sm: 0, // скрыть на планшетах
-                md: 1, // показать на экранах от 900px и больше
-              },
-              visibility: {
-                xs: "hidden", // скрыть на мобильных
-                sm: "hidden", // скрыть на планшетах
-                md: "visible", // показать на экранах от 900px и больше
-              },
-            }}
-            color="rgba(156, 8, 255, 0.8156512605042017)"
+            color="rgba(186, 8, 255, 0.8156512605042017)"
             left="-20%"
+            top="0px"
             width="400px"
             height="400px"
             filter="blur(160px)"
+            sx={{
+              opacity: {
+                xs: 0,
+                sm: 0,
+                md: 1,
+              },
+              visibility: {
+                xs: "hidden",
+                sm: "hidden",
+                md: "visible",
+              },
+            }}
           />
         </Box>
 

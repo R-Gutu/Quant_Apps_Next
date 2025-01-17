@@ -1,13 +1,12 @@
 "use client"
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
+import { Link, useRouter } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 
-import TalkModal from "./TalkPopup/TalkPopup";
 import MobileMenu from "./MobileMenu";
 
 import Logo from "../assets/icons/logo.svg";
@@ -21,12 +20,6 @@ const AppToolbar = () => {
   const [pathname, setPathname] = useState('/');
   
   const isSmallScreen = useMediaQuery("(max-width:768px)");
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
 
   useEffect(() => {
     // Handle hash scrolling
@@ -127,12 +120,12 @@ const AppToolbar = () => {
             
             <div className="nav-right">
               {pathname !== "/contact-us" && (
-                <button
-                  className="lets-talk"
-                  onClick={() => setIsModalOpen(true)}
+                <Link
+                  className="button lets-talk"
+                  href='/talk-modal'
                 >
                   {t("LetsTalk")}
-                </button>
+                </Link>
               )}
               <span className="burger" onClick={onClickBurger}></span>
             </div>
@@ -141,12 +134,6 @@ const AppToolbar = () => {
           </div>
         </div>
       </header>
-
-      <TalkModal 
-        open={isModalOpen} 
-        setOpen={setIsModalOpen}
-        handleClose={handleCloseModal}
-      />
       <MobileMenu />
 
       <Box sx={{ marginBottom: "120px" }} />

@@ -1,25 +1,15 @@
 'use client'
-import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Box, Button, Grid2, Typography, useMediaQuery } from "@mui/material";
+import { Link } from "@/i18n/routing";
+import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import Hand3d from "@/src/assets/icons/hand3d.svg";
-import TalkModal from "@/src/components/TalkPopup/TalkPopup";
 
 const NextProject = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const t = useTranslations("next-project");
   const smallScreen = useMediaQuery("(max-width:900px)");
   const mediumScreen = useMediaQuery("(max-width:1324px)");
   // const bigScreen = useMediaQuery("(max-width:1424px)");
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
 
   return (
     <>
@@ -109,13 +99,9 @@ const NextProject = () => {
               {t("LetsBringIdeasToLife")}
             </Typography>
 
-            <Button
-              sx={{
-                width: "fit-content",
-                backgroundColor: "white",
-                "&:hover": { backgroundColor: "white" },
-              }}
-              onClick={handleOpenModal} // Changed to use the new handler
+            <Link
+              className='w-10 h-10 bg-white hover:bg-white'
+              href='/talk-modal'
             >
               <Typography
                 sx={{
@@ -127,7 +113,7 @@ const NextProject = () => {
               >
                 {t("LetsTalk")}
               </Typography>
-            </Button>
+            </Link>
           </Grid2>
         </Grid2>
 
@@ -162,13 +148,6 @@ const NextProject = () => {
           />
         </Box>
       </Grid2>
-
-      {/* Modal component */}
-      <TalkModal 
-        open={isModalOpen} 
-        setOpen={setIsModalOpen}
-        handleClose={handleCloseModal}
-      />
     </>
   );
 };

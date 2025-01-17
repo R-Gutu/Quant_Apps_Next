@@ -1,40 +1,18 @@
 'use client'
-import { useState } from "react";
 import { Typography, Box } from "@mui/material"
 import Image from 'next/image'
 import Ipad from "@/src/assets/images/ipad.png";
 import { useLocale, useTranslations } from "next-intl";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
-import VideoModal from "@/src/components/VideoModal";
-import TalkModal from "@/src/components/TalkPopup/TalkPopup";
+import { Link } from "@/i18n/routing";
 
 export default function Introduction() {
     const t = useTranslations('main');
     const currentLocale = useLocale();
     const intro = getIntroByLanguage(currentLocale);
 
-    const [isVidModalOpen, setIsVidModalOpen] = useState(false);
-    const handleOpenVidModal = () => setIsVidModalOpen(true);
-    const handleCloseVidModal = () => setIsVidModalOpen(false);
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const handleOpenModal = () => setIsModalOpen(true);
-    const handleCloseTalkModal = () => setIsModalOpen(false);
-
     return (
         <>
-            <TalkModal
-                open={isModalOpen}
-                setOpen={setIsModalOpen}
-                handleClose={handleCloseTalkModal}
-            />
-            <VideoModal
-                open={isVidModalOpen}
-                setOpen={setIsVidModalOpen}
-                handleClose={handleCloseVidModal}
-                noSupportMessage={t("BrowserDoesNotSupportVideo")}
-                src={intro}
-            />
             <div className="banner">
                 <div className="banner__content">
                     <div className="banner__text">
@@ -90,12 +68,12 @@ export default function Introduction() {
                             justifyContent: "center",
                         }}
                     >
-                        <button
-                            className="lets-talk fill-btn banner__text-btn"
-                            onClick={() => handleOpenModal()}
+                        <Link
+                            className="button lets-talk fill-btn banner__text-btn"
+                            href='/talk-modal'
                         >
                             {t("LetsTalk")}
-                        </button>
+                        </Link>
                     </Box>
 
                     <div className="banner__video">
@@ -105,12 +83,10 @@ export default function Introduction() {
                             loading="lazy"
                             className="banner__video-img"
                         />
-
-                        <div className="banner__video-play" onClick={() => handleOpenVidModal()}>
+                        <Link className="banner__video-play" href="/video-modal">
                             <span />
-
                             <p>{t("WatchVideo")}</p>
-                        </div>
+                        </Link>
 
                         <a href={intro} className="banner__video-play__mobile">
                             <span></span>
@@ -127,12 +103,12 @@ export default function Introduction() {
                         justifyContent: "center",
                     }}
                 >
-                    <button
-                        className="lets-talk fill-btn banner__text-btn"
-                        onClick={() => handleOpenModal()}
+                    <Link
+                        className="button lets-talk fill-btn banner__text-btn"
+                        href='/talk-modal'
                     >
                         {t("LetsTalk")}
-                    </button>
+                    </Link>
                 </Box>
 
                 <span className="banner__blur-img banner__blur-1"></span>

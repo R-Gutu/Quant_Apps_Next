@@ -32,8 +32,12 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params,
+  videoModal,
+  talkModal,
 }: Readonly<{
   children: React.ReactNode;
+  videoModal: React.ReactNode;
+  talkModal: React.ReactNode;
   params: { locale: Locale };
 }>) {
   const { locale } = await params;
@@ -52,6 +56,8 @@ export default async function RootLayout({
         {/* <LightTheme> */}
           <AppToolbar />
           {children}
+          {videoModal}
+          {talkModal}
           <Footer />
         {/* </LightTheme> */}
         </NextIntlClientProvider>

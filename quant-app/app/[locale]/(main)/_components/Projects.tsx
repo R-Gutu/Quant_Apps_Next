@@ -145,7 +145,6 @@ export default function Projects() {
                         <Image
                             src={Arrow}
                             alt="Arrow"
-                            style={{ transform: 'rotate(180deg)' }}
                         />
                     )}
                 </Typography>

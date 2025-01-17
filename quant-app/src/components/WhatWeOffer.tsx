@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
@@ -13,8 +13,8 @@ import Android from "@/src/assets/icons/android.svg";
 import CrossPlatform from "@/src/assets/icons/cross-platform.svg";
 import Settings from "@/src/assets/icons/settings.svg";
 
-const WhatWeOffer = () => {
-  const t = useTranslations("what-we-offer");
+const WhatWeOffer = async () => {
+  const t = await getTranslations("what-we-offer");
   
   return (
     <div className="offer" id="services">

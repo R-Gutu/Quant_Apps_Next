@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
-import NextProject from "../components/NextProject";
+import NextProject from "../../app/[locale]/_sections/NextProject";
 import Blur from "../components/Blur";
 
 const TermsOfUse = () => {

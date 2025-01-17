@@ -1,5 +1,5 @@
 
-import NextProject from "@/src/components/NextProject";
+import NextProject from "@/app/[locale]/_sections/NextProject";
 import TimeLine from "./_components/TimeLine";
 import About from "./_components/About";
 

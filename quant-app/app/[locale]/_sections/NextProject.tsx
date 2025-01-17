@@ -98,9 +98,8 @@ const NextProject = () => {
             >
               {t("LetsBringIdeasToLife")}
             </Typography>
-
             <Link
-              className='w-10 h-10 bg-white hover:bg-white'
+              className='w-[100px] flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white '
               href='/talk-modal'
             >
               <Typography

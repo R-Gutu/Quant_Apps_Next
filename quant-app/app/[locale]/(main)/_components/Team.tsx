@@ -1,16 +1,13 @@
-'use client'
-import { Grid2, Typography, Card, Box, useMediaQuery, useTheme, Link } from "@mui/material"
+import { Grid2, Typography, Card, Box, Link } from "@mui/material"
 import Image from 'next/image';
 import Roma from "@/src/assets/images/Roma.png";
 import LinkedIn from "@/src/assets/images/linkedin.png";
 import Veaceslav from "@/src/assets/images/Veaceslav.png";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 
-export default function Team() {
-    const t = useTranslations('main');
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+export default async function Team() {
+    const t = await getTranslations('main');
     return (
         <Grid2 container direction="column">
             <Grid2
@@ -93,8 +90,7 @@ export default function Team() {
                                 }}
                             >
                                 <Image
-                                    width={isSmallScreen ? 105 : 142}
-                                    height={isSmallScreen ? 112 : 151}
+                                    className="w-[105px] h-[112px] mui-md:w-[142px] mui-md:h-[151px]"
                                     src={Roma}
                                     alt="Roma"
                                 />
@@ -198,8 +194,7 @@ export default function Team() {
                                 }}
                             >
                                 <Image
-                                    width={isSmallScreen ? 105 : 142}
-                                    height={isSmallScreen ? 112 : 151}
+                                    className="w-[105px] h-[112px] mui-md:w-[142px] mui-md:h-[151px]"
                                     src={Veaceslav}
                                     alt="Veaceslav"
                                 />

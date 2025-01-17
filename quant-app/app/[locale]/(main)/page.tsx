@@ -1,8 +1,8 @@
 import { Link } from '@/i18n/routing'
 import { getTranslations } from "next-intl/server";
 import { Box } from "@mui/material";
-import NextProject from "@/src/components/NextProject";
-import WhatWeOffer from "@/src/components/WhatWeOffer";
+import NextProject from "@/app/[locale]/_sections/NextProject";
+import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
 
 
 import Introduction from "./_components/Introduction";

@@ -1,14 +1,13 @@
-'use client'
 import { Typography, Box } from "@mui/material"
 import Image from 'next/image'
 import Ipad from "@/src/assets/images/ipad.png";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import { getIntroByLanguage } from "@/src/utils/languageUtils";
 import { Link } from "@/i18n/routing";
 
-export default function Introduction() {
-    const t = useTranslations('main');
-    const currentLocale = useLocale();
+export default async function Introduction() {
+    const t = await getTranslations('main');
+    const currentLocale = await getLocale();
     const intro = getIntroByLanguage(currentLocale);
 
     return (
@@ -17,45 +16,45 @@ export default function Introduction() {
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography
-                            sx={(theme) => ({
+                            sx={{
                                 fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                                 fontSize: "55px",
                                 fontWeight: "600",
                                 lineHeight: "74px",
                                 color: "white",
-                                textAlign: "left", // по умолчанию слева (для десктопа)
-                                [theme.breakpoints.down("md")]: {
+                                textAlign: "left",
+                                "@media (max-width: 900px)": {  // md breakpoint
                                     fontSize: "40px",
                                     lineHeight: "50px",
-                                    textAlign: "center", // по центру для мобильных
+                                    textAlign: "center",
                                 },
-                                [theme.breakpoints.down("sm")]: {
+                                "@media (max-width: 600px)": {  // sm breakpoint
                                     fontSize: "30px",
                                     lineHeight: "40px",
-                                },
-                            })}
+                                }
+                            }}
                         >
                             {t("WeBuildAppsThatEmpower")}
                         </Typography>
 
                         <Typography
-                            sx={(theme) => ({
+                            sx={{
                                 fontFamily: "Poppins",
                                 fontSize: "24px",
                                 lineHeight: "35px",
                                 color: "#EBEBEB",
                                 textAlign: "justify",
-                                [theme.breakpoints.down("md")]: {
+                                "@media (max-width: 900px)": {
                                     fontSize: "24px",
                                     lineHeight: "30px",
-                                    textAlign: "center", // по центру для мобильных
+                                    textAlign: "center",
                                 },
-                                [theme.breakpoints.down("sm")]: {
+                                "@media (max-width: 600px)": {
                                     fontSize: "18px",
                                     lineHeight: "25px",
                                     textAlign: "center",
-                                },
-                            })}
+                                }
+                            }}
                         >
                             {t("WeSpecializeInBuilding")}
                         </Typography>

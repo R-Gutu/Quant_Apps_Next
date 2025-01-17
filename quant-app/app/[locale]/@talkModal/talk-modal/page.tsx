@@ -53,49 +53,49 @@ const page = () => {
   const templateId = "template_e7f0ogb";   // Ваш Template ID
   const publicKey = "S46PU3W0ILp9NXki4";   // Ваш Public Key
 
-  const onFirstNameChanged = (value) => {
+  const onFirstNameChanged = (value : any) => {
     setFirstName(value);
     validateForm(value, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onLastNameChanged = (value) => {
+  const onLastNameChanged = (value : any) => {
     setLastName(value);
     validateForm(firstName, value, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onEmailChanged = (value) => {
+  const onEmailChanged = (value : any) => {
     setEmail(value);
     validateForm(firstName, lastName, value, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onIosCheckboxChanged = (value) => {
+  const onIosCheckboxChanged = (value : any) => {
     setIosCheckbox(value);
     onIosWebCheckboxChanged(value, webCheckbox);
     validateForm(firstName, lastName, email, value, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onWebCheckboxChanged = (value) => {
+  const onWebCheckboxChanged = (value : any) => {
     setWebCheckbox(value);
     onIosWebCheckboxChanged(iosCheckbox, value);
     validateForm(firstName, lastName, email, iosCheckbox, value, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
   
-  const onCrmCheckboxChanged = (value) => {
+  const onCrmCheckboxChanged = (value : any) => {
     setCrmCheckbox(value);
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, value, uiuxCheckbox, backendCheckbox);
   };
 
-  const onUiuxCheckboxChanged = (value) => {
+  const onUiuxCheckboxChanged = (value : any) => {
     setUiuxCheckbox(value);
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, value, backendCheckbox);
   };
 
-  const onBackendCheckboxChanged = (value) => {
+  const onBackendCheckboxChanged = (value : any) => {
     setBackendCheckbox(value);
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, value);
   };
 
-  const onIosWebCheckboxChanged = (iosCheckbox, webCheckbox) => {
+  const onIosWebCheckboxChanged = (iosCheckbox : any, webCheckbox : any) => {
     if (iosCheckbox && webCheckbox) {
       setBudgetId(0);
     } else if (iosCheckbox && !webCheckbox) {
@@ -107,7 +107,7 @@ const page = () => {
     }
   };
 
-  const validateForm = (firstName, lastName, email, ios, web, crm, uiux, backend) => {
+  const validateForm = (firstName : any, lastName : any, email : any, ios : any, web : any, crm : any, uiux : any, backend : any) => {
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
     const isEmailValid = validateEmail(email);
@@ -119,16 +119,16 @@ const page = () => {
     );
   };
 
-  const onDropZoneDragOver = (e) => {
+  const onDropZoneDragOver = (e : any) => {
     e.preventDefault();
     e.currentTarget.classList.add("dragover");
   };
 
-  const onDropZoneDragLeave = (e) => {
+  const onDropZoneDragLeave = (e : any) => {
     e.currentTarget.classList.remove("dragover");
   };
 
-  const onDropZoneDrop = (e) => {
+  const onDropZoneDrop = (e : any) => {
     e.preventDefault();
     e.currentTarget.classList.remove("dragover");
 
@@ -136,12 +136,12 @@ const page = () => {
     handleFiles(files);
   };
 
-  const onFileInputChange = (e) => {
+  const onFileInputChange = (e : any) => {
     const files = e.currentTarget.files;
     handleFiles(files);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e : any) => {
     e.preventDefault();
 
     // Формируем список выбранных услуг
@@ -201,8 +201,6 @@ const page = () => {
     <Modal
       open={true}
       onClose={() => router.back()}
-      aria-labelledby="modal-modal-title"
-      aria-describedby="modal-modal-description"
     >
       <div className="modal-content talk-popup">
         <span

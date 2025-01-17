@@ -3,22 +3,18 @@
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link, useRouter } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 
 import MobileMenu from "./MobileMenu";
-
-import Logo from "../assets/icons/logo.svg";
-
-import "../style/main.css";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
-  
+
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   useEffect(() => {
@@ -77,9 +73,16 @@ const AppToolbar = () => {
         <div className="container">
           <div className="header">
             <Link href="/" className="logo">
-              <Image id="logo" src={Logo} alt="Logo" />
+              <Image
+                id="logo"
+                src='./logo.svg'
+                width={0}
+                height={0}
+                alt="Logo"
+                className="w-auto h-full"
+              />
             </Link>
-            
+
             <nav>
               <ul className="menu">
                 <li className={`menu__item ${pathname === "/services" ? "active" : ""}`}>
@@ -87,9 +90,9 @@ const AppToolbar = () => {
                     {t("Services")}
                   </Link>
                 </li>
-                
+
                 <li className={`menu__item ${pathname === "/projects" ? "active" : ""}`} data-id="projects">
-                  <Link 
+                  <Link
                     href="/#projects"
                     className="text-left"
                     scroll={false}
@@ -97,19 +100,19 @@ const AppToolbar = () => {
                     {t("Projects")}
                   </Link>
                 </li>
-                
+
                 <li className={`menu__item ${pathname === "/about-us" ? "active" : ""}`}>
                   <Link href="/about-us">
                     {t("AboutUs")}
                   </Link>
                 </li>
-                
+
                 <li className={`menu__item ${pathname === "/contact-us" ? "active" : ""}`}>
                   <Link href="/contact-us">
                     {t("ContactUs")}
                   </Link>
                 </li>
-                
+
                 <li className={`menu__item ${pathname === "/faqs" ? "active" : ""}`}>
                   <Link href="/faqs">
                     FAQs
@@ -117,7 +120,7 @@ const AppToolbar = () => {
                 </li>
               </ul>
             </nav>
-            
+
             <div className="nav-right">
               {pathname !== "/contact-us" && (
                 <Link

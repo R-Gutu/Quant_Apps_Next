@@ -7,8 +7,8 @@ import Security from "@/src/assets/icons/sequrity.svg";
 import Puzzle from "@/src/assets/icons/pazle.svg";
 import Star from "@/src/assets/icons/Star.svg";
 import Moon from "@/src/assets/icons/moon.svg";
-import NextProject from "@/src/components/NextProject";
-import WhatWeOffer from "@/src/components/WhatWeOffer";
+import NextProject from "@/app/[locale]/_sections/NextProject";
+import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
 import Accordion from "./Accordion";
 import WhyIOS from "./WhyIOS";
 

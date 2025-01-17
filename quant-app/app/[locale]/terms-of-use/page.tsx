@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Box, Grid2, Typography } from "@mui/material";
 
-import NextProject from "@/src/components/NextProject";
+import NextProject from "@/app/[locale]/_sections/NextProject";
 import Blur from "@/src/components/Blur";
 
 const TermsOfUse = async () => {

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Grid2 } from "@mui/material";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 

@@ -99,7 +99,7 @@ export default function Projects() {
                 </p>
             </div>
 
-            <div className="our-work__items">
+            <div className="our-work__items w-full">
                 {slicedProjects.map((project, index) => (
                     <Project
                         key={`${project.title}-${index}`}

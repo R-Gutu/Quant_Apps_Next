@@ -16,7 +16,8 @@ import Phone8 from "@/src/assets/images/phone-8.png";
 import Phone9 from "@/src/assets/images/phone-9.png";
 import { useTranslations } from "next-intl";
 
-import ProjectType from '@/src/types/ProjectType'
+import ProjectType from '@/src/types/ProjectType';
+import { scrollToId } from "@/lib/utils";
 
 
 export default function Projects() {
@@ -88,6 +89,11 @@ export default function Projects() {
         return null;
     }
 
+    const showClickHandler = () => {
+        setShowAll(prev => !prev);
+        if(showAll) scrollToId('projects');
+    }
+
     return (
         <div className="our-work" id="our-work">
             <div className="our-work__title">
@@ -111,7 +117,7 @@ export default function Projects() {
             </div>
 
             <Button
-                onClick={() => setShowAll(prev => !prev)}
+                onClick={showClickHandler}
                 sx={{
                     mt: "0px",
                     borderRadius: "8px",

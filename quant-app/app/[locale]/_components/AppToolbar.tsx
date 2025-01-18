@@ -134,7 +134,7 @@ const AppToolbar = () => {
               <span className="burger" onClick={onClickBurger}></span>
             </div>
 
-            {!isSmallScreen && <LanguageSwitcher />}
+            {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
           </div>
         </div>
       </header>

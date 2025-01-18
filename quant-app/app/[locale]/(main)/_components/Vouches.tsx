@@ -1,6 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
-import ClientStory from "@/src/old-pages/ClientStory";
+import ClientStory from "./ClientStory"
 import { Link } from "@mui/material";
 import Image from 'next/image';
 import Fi from "@/src/assets/icons/fi.svg";

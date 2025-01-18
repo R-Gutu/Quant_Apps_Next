@@ -8,8 +8,8 @@ import {
 import PropTypes from "prop-types";
 import Image from "next/image";
 
-import CommentBubble from "../assets/images/comment-bubble.png";
-import MobileCommentBubble from "../assets/images/mobile-comment-bubble.png";
+import CommentBubble from "@/src/assets/images/comment-bubble.png";
+import MobileCommentBubble from "@/src/assets/images/mobile-comment-bubble.png";
 
 const ClientStory = (props : any) => {
   const { clientName, clientDescription, text } = props;

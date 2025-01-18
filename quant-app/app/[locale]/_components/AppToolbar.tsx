@@ -5,38 +5,30 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import useOnScreen from "@/lib/useOnScreen";
 
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "@/src/assets/icons/logo.svg"
+import { cn } from "@/lib/utils";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
+  const isSmallScreen = useMediaQuery("(max-width:768px)");
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
-
-  const isSmallScreen = useMediaQuery("(max-width:768px)");
+  let projectsAreVisible = useOnScreen('projects');
 
   useEffect(() => {
     // Handle hash scrolling
     if (window.location.hash) {
       const element = document.getElementById(window.location.hash.slice(1));
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Handle pathname setting
-    console.log(currentPathname);
-    if (currentPathname === '/en') {
-      setPathname('/projects');
-    } else {
-      const pathSegments = currentPathname.split('/');
-      setPathname('/' + (pathSegments[2] || ''));
-    }
+    const pathSegments = currentPathname.split('/');
+    setPathname('/' + (pathSegments[2] || ''));
     console.log(pathname);
   }, [currentPathname]);
 
@@ -45,28 +37,10 @@ const AppToolbar = () => {
     mobileMenu?.classList.add("active");
   };
 
-  useEffect(() => {
-    const target = document.getElementById("projects");
-    const menuItem = document.querySelectorAll(
-      '.menu__item[data-id="projects"]'
-    );
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          menuItem.forEach((e) => e.classList.add("active"));
-        } else {
-          menuItem.forEach((e) => e.classList.remove("active"));
-        }
-      });
-    });
-
-    if (target) observer.observe(target);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+  const projectsClickHandle = () => {
+    const element = document.getElementById('projects');
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <>
@@ -74,25 +48,17 @@ const AppToolbar = () => {
         <div className="container">
           <div className="header">
             <Link href="/" className="logo">
-              <Image
-                id="logo"
-                src={Logo}
-                width={0}
-                height={0}
-                alt="Logo"
-                className="w-auto h-full"
-              />
+              <Image id="logo" src={Logo} alt="Logo" />
             </Link>
-
             <nav>
               <ul className="menu">
-                <li className={`menu__item ${pathname === "/services" ? "active" : ""}`}>
+                <li className={cn('menu__item', { 'active': pathname === '/services' })}>
                   <Link href="/services">
                     {t("Services")}
                   </Link>
                 </li>
 
-                <li className={`menu__item ${pathname === "/projects" ? "active" : ""}`} data-id="projects">
+                <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
                   <Link
                     href="/#projects"
                     className="text-left"
@@ -102,19 +68,19 @@ const AppToolbar = () => {
                   </Link>
                 </li>
 
-                <li className={`menu__item ${pathname === "/about-us" ? "active" : ""}`}>
+                <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
                   <Link href="/about-us">
                     {t("AboutUs")}
                   </Link>
                 </li>
 
-                <li className={`menu__item ${pathname === "/contact-us" ? "active" : ""}`}>
+                <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
                   <Link href="/contact-us">
                     {t("ContactUs")}
                   </Link>
                 </li>
 
-                <li className={`menu__item ${pathname === "/faqs" ? "active" : ""}`}>
+                <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
                   <Link href="/faqs">
                     FAQs
                   </Link>
@@ -139,7 +105,6 @@ const AppToolbar = () => {
         </div>
       </header>
       <MobileMenu />
-
       <Box sx={{ marginBottom: "120px" }} />
     </>
   );

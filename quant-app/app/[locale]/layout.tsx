@@ -87,13 +87,11 @@ export default async function RootLayout({
             gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
           `}
         </Script>
-        {/* <LightTheme> */}
           <AppToolbar />
           {children}
           {videoModal}
           {talkModal}
           <Footer />
-        {/* </LightTheme> */}
         </NextIntlClientProvider>
       </body>
     </html>

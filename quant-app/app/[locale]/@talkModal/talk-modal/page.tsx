@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   handleFiles,
   validateEmail,
@@ -53,69 +53,61 @@ const page = () => {
   const templateId = "template_e7f0ogb";   // Ваш Template ID
   const publicKey = "S46PU3W0ILp9NXki4";   // Ваш Public Key
 
-  const onFirstNameChanged = (value : any) => {
+  const onFirstNameChanged = (value : string) => {
     setFirstName(value);
-    validateForm(value, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onLastNameChanged = (value : any) => {
+  const onLastNameChanged = (value : string) => {
     setLastName(value);
-    validateForm(firstName, value, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onEmailChanged = (value : any) => {
+  const onEmailChanged = (value : string) => {
     setEmail(value);
-    validateForm(firstName, lastName, value, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onIosCheckboxChanged = (value : any) => {
+  const onIosCheckboxChanged = (value : boolean) => {
     setIosCheckbox(value);
     onIosWebCheckboxChanged(value, webCheckbox);
-    validateForm(firstName, lastName, email, value, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
 
-  const onWebCheckboxChanged = (value : any) => {
+  const onWebCheckboxChanged = (value : boolean) => {
     setWebCheckbox(value);
     onIosWebCheckboxChanged(iosCheckbox, value);
-    validateForm(firstName, lastName, email, iosCheckbox, value, crmCheckbox, uiuxCheckbox, backendCheckbox);
   };
   
-  const onCrmCheckboxChanged = (value : any) => {
+  const onCrmCheckboxChanged = (value : boolean) => {
     setCrmCheckbox(value);
-    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, value, uiuxCheckbox, backendCheckbox);
   };
 
-  const onUiuxCheckboxChanged = (value : any) => {
+  const onUiuxCheckboxChanged = (value : boolean) => {
     setUiuxCheckbox(value);
-    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, value, backendCheckbox);
   };
 
-  const onBackendCheckboxChanged = (value : any) => {
+  const onBackendCheckboxChanged = (value : boolean) => {
     setBackendCheckbox(value);
-    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, value);
   };
 
-  const onIosWebCheckboxChanged = (iosCheckbox : any, webCheckbox : any) => {
+  const onIosWebCheckboxChanged = (iosCheckbox : boolean, webCheckbox : boolean) => {
     if (iosCheckbox && webCheckbox) {
       setBudgetId(0);
     } else if (iosCheckbox && !webCheckbox) {
       setBudgetId(1);
     } else if (!iosCheckbox && webCheckbox) {
       setBudgetId(2);
-    } else {
-      setBudgetId(3);
     }
   };
 
-  const validateForm = (firstName : any, lastName : any, email : any, ios : any, web : any, crm : any, uiux : any, backend : any) => {
+  const validateForm = (firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean) => {
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
     const isEmailValid = validateEmail(email);
     // Теперь валидной будет форма, если выбран хотя бы один из пяти чекбоксов
     const isCheckboxValid = ios || web || crm || uiux || backend;
+    const isBudgetSelected = budgetCheckboxes.some(checkbox => checkbox);
 
     setInvalidForm(
-      !isFirstNameValid || !isLastNameValid || !isEmailValid || !isCheckboxValid
+      !isFirstNameValid || !isLastNameValid || !isEmailValid || !isCheckboxValid ||
+      !isBudgetSelected
     );
   };
 
@@ -141,9 +133,18 @@ const page = () => {
     handleFiles(files);
   };
 
+  useEffect(() => {
+    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
+  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox])
+
   const handleSubmit = (e : any) => {
+    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
     e.preventDefault();
 
+    if (!budgetCheckboxes.some(checkbox => checkbox)) {
+      alert("Please select a budget range");
+      return;
+    }
     // Формируем список выбранных услуг
     const chosenServices = [];
     if (iosCheckbox) chosenServices.push("iOS App");
@@ -170,7 +171,9 @@ const page = () => {
       services: chosenServices.join(", "),
       budget: selectedBudget,
       attachments: "" // При необходимости можно добавить логику для приложений
+      
     };
+    console.log(templateParams)
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
@@ -233,7 +236,7 @@ const page = () => {
                     type="text"
                     placeholder="What’s your first name?"
                     value={firstName}
-                    onInput={(event) => onFirstNameChanged(event.target.value)}
+                    onInput={(event : any) => onFirstNameChanged(event.target.value)}
                   />
                 </div>
                 <div className="talk-popup__from-row">
@@ -242,7 +245,7 @@ const page = () => {
                     type="text"
                     placeholder="What’s your last name?"
                     value={lastName}
-                    onInput={(event) => onLastNameChanged(event.target.value)}
+                    onInput={(event : any) => onLastNameChanged(event.target.value)}
                   />
                 </div>
               </div>
@@ -252,14 +255,14 @@ const page = () => {
                   type="email"
                   placeholder="brianclark@gmail.com"
                   value={email}
-                  onInput={(event) => onEmailChanged(event.target.value)}
+                  onInput={(event : any) => onEmailChanged(event.target.value)}
                 />
               </div>
               <div className="talk-popup__from-row">
                 <label>Project details</label>
                 <textarea
                   placeholder="What can we help you with?"
-                  rows="4"
+                  rows={4}
                   value={projectDetails}
                   onChange={(event) => setProjectDetails(event.target.value)}
                   style={{
@@ -430,7 +433,6 @@ const page = () => {
               <button
                 type="submit"
                 className={`fill-btn talk-popup__submit ${invalidForm ? "disabled" : ""}`}
-                disabled={invalidForm}
               >
                 Submit
               </button>

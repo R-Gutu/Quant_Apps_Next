@@ -11,12 +11,16 @@ export default async function Team() {
         <Grid2 container direction="column">
             <Grid2
                 sx={{
-                    ml: { xs: "0px", sm: "20px", md: "20px", lg: "20px" },
+                    ml: { xs: "0px", sm: "40px", md: "40px", lg: "40px" },
+                    mb: { xs: "20px", sm: "20px", md: "20px", lg: "0px" }
+
                 }}
                 container
                 direction="row"
                 alignItems="center"
                 gap="5px"
+                justifyContent="center"
+                textAlign="center"
             >
                 <Typography
                     sx={{
@@ -38,7 +42,7 @@ export default async function Team() {
                         color: "white",
                         fontWeight: "400",
                         fontFamily: "Poppins",
-                        textAlign: { xs: "center", sm: "left", md: "left", lg: "left" },
+                        textAlign: { xs: "center", sm: "center", md: "center", lg: "left" },
                         ml: { xs: "27px", sm: "-0px", md: "0px", lg: "0px" },
                     }}
                 >

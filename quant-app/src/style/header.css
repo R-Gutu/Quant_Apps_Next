@@ -111,27 +111,7 @@ nav {
     display: none !important;
 }
 
-.mobile-footer-bottom {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 20px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
-.mobile-footer-socials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 16px;
-}
 
 .mobile-menu {
     width: 100%;

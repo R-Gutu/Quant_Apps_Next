@@ -6,7 +6,6 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import "./globals.css";
-import "@/src/style/main.css"
 import "@/src/style/mainpage.css"
 import "@/src/style/seoSection.css"
 import "@/src/style/faqPage.css"
@@ -20,6 +19,7 @@ import "@/src/style/swiper.css";
 import "@/src/style/header.css";
 import "@/src/style/services.css";
 import "@/src/style/whatWeOfferSection.css";
+import "@/src/style/main.css"
 
 
 import Footer from "./_components/Footer";

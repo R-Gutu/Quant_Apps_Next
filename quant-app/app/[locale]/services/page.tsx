@@ -9,8 +9,8 @@ import Star from "@/src/assets/icons/Star.svg";
 import Moon from "@/src/assets/icons/moon.svg";
 import NextProject from "@/app/[locale]/_sections/NextProject";
 import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
-import Accordion from "./Accordion";
-import WhyIOS from "./WhyIOS";
+import Accordion from "./_components/Accordion";
+import WhyIOS from "./_components/WhyIOS";
 
 const Services = async () => {
   const t = await getTranslations("services");

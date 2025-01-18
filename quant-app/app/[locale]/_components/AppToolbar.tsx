@@ -11,7 +11,7 @@ import useOnScreen from "@/lib/useOnScreen";
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "@/src/assets/icons/logo.svg"
-import { cn } from "@/lib/utils";
+import { cn, scrollToId } from "@/lib/utils";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
@@ -38,8 +38,7 @@ const AppToolbar = () => {
   };
 
   const projectsClickHandle = () => {
-    const element = document.getElementById('projects');
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
+    scrollToId('projects')
   }
 
   return (

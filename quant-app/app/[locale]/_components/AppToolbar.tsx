@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Logo from "@/src/assets/icons/logo.svg"
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
@@ -75,7 +76,7 @@ const AppToolbar = () => {
             <Link href="/" className="logo">
               <Image
                 id="logo"
-                src='./logo.svg'
+                src={Logo}
                 width={0}
                 height={0}
                 alt="Logo"
@@ -133,7 +134,7 @@ const AppToolbar = () => {
               <span className="burger" onClick={onClickBurger}></span>
             </div>
 
-            {!isSmallScreen && <LanguageSwitcher />}
+            {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
           </div>
         </div>
       </header>

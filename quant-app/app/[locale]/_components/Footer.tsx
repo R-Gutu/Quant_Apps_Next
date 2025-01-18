@@ -15,7 +15,12 @@ import TikTok from "@/src/assets/icons/tik-tok.svg";
 import Telegram from "@/src/assets/icons/Telegram.svg";
 import TelegramOld from "@/src/assets/icons/telegram-old.svg";
 import WhatsApp from "@/src/assets/icons/whats-app.svg";
+<<<<<<< HEAD
 import SocialLinksType from "@/src/types/SocialLinksType";
+=======
+import SocialLinksType from "@/src/types/socialLinksType";
+import Logo from '@/src/assets/icons/logo.svg'
+>>>>>>> 3ed7adae564afb9cb15fad31b6d7dc06c91d8d2d
 
 const Footer = () => {
   const tToolbar = useTranslations("app-toolbar");
@@ -111,7 +116,11 @@ const Footer = () => {
 
           <div className="footer">
             <Link href="/" className="footer__logo">
+<<<<<<< HEAD
               <Image src='./logo.svg' alt="Logo" width={250} height={40} />
+=======
+              <Image src={Logo} alt="Logo" width={150} height={40} />
+>>>>>>> 3ed7adae564afb9cb15fad31b6d7dc06c91d8d2d
             </Link>
             <div className="footer__links">
               <div className="footer__column">

@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 
-import FaqAccordionItem from "@/src/components/FaqAccordionItem";
+import FaqAccordionItem from "./_components/FaqAccordionItem"
 
 const Faqs = async () => {
   const t = await getTranslations("faqs");

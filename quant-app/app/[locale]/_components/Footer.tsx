@@ -15,6 +15,7 @@ import TikTok from "@/src/assets/icons/tik-tok.svg";
 import Telegram from "@/src/assets/icons/Telegram.svg";
 import TelegramOld from "@/src/assets/icons/telegram-old.svg";
 import WhatsApp from "@/src/assets/icons/whats-app.svg";
+import SocialLinksType from "@/src/types/socialLinksType";
 
 const Footer = () => {
   const tToolbar = useTranslations("app-toolbar");
@@ -39,7 +40,7 @@ const Footer = () => {
     }
   };
 
-  const socialLinks = [
+  const socialLinks : SocialLinksType[] = [
     { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: FooterFacebook, alt: "Facebook" },
     { href: "https://www.instagram.com/quantapps_/", icon: FooterInstagram, alt: "Instagram" },
     { href: "https://www.linkedin.com/company/quant-apps", icon: LinkedIn, alt: "LinkedIn" },

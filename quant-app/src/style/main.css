@@ -4,7 +4,10 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+/* .active {
+    color: var(--purple);
 
+} */
 
 .d-block {
     display: block !important;

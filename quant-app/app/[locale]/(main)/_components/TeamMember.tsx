@@ -2,7 +2,9 @@ import Image from 'next/image';
 import { Grid2, Card, Typography, Box, Link } from "@mui/material";
 import LinkedIn from "@/src/assets/images/linkedin.png";
 
-export default async function TeamMember({ name, title, details, src, alt, link } : any) {
+import TeamMemberType from '@/src/types/TeamMemberType';
+
+export default async function TeamMember({ name, title, details, src, alt, link } : TeamMemberType) {
     return (
         <Card
             sx={{

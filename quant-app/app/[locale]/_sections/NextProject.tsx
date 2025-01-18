@@ -1,153 +1,55 @@
-'use client'
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
 import Image from "next/image";
 import Hand3d from "@/src/assets/icons/hand3d.svg";
 
-const NextProject = () => {
-  const t = useTranslations("next-project");
-  const smallScreen = useMediaQuery("(max-width:900px)");
-  const mediumScreen = useMediaQuery("(max-width:1324px)");
-  // const bigScreen = useMediaQuery("(max-width:1424px)");
+const NextProject = async () => {
+  const t = await getTranslations("next-project");
 
   return (
-    <>
-      <Grid2
-        container
-        size={12}
-        sx={{
-          mt: "10px",
-          overflow: "hidden",
-          position: "relative",
-          justifyContent: "center",
-          paddingBlock: "100px 50px",
-          "& h1": {
-            fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-            color: "white",
-            fontWeight: 700,
-            fontSize: "40px",
-            lineHeight: "36px",
-          },
-          "& p": {
-            fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-            fontSize: "18px",
-            lineHeight: "30px",
-          },
-        }}
-      >
-        <Grid2
-          container
-          size={10}
-          sx={{
-            backgroundColor: "#515DEF",
-            borderRadius: "24px",
-            height: "459px",
-            alignItems: "center",
-            justifyContent: "start",
-            pb: "50px",
-            px: "50px",
-            ...(smallScreen && {
-              height: "550px",
-              pb: "30px",
-              px: "20px",
-              textAlign: "center",
-            }),
-          }}
-        >
-          <Grid2
-            container
-            direction="column"
-            size={{ xl: 7, lg: 6, md: 5 }}
-            gap="20px"
-            sx={{
-              ml: "100px",
-              alignItems: "start",
-              ...(smallScreen && {
-                ml: 0,
-                alignItems: "center",
-              }),
-            }}
+    <div className="mt-[10px] overflow-hidden relative flex justify-center py-[100px] px-[50px] font-clash">
+      <div className="w-10/12 bg-[#515DEF] rounded-[24px] h-[459px] flex items-center justify-start px-[50px] pb-[50px]
+        max-lg:h-[550px] max-lg:pb-[30px] max-lg:px-[20px] max-lg:text-center">
+        
+        <div className="ml-[100px] flex flex-col gap-[20px] w-1/2
+          max-[900px]:ml-0 max-[900px]:items-center max-[900px]:ml-[20px]">
+          
+          <h1 className="font-clash text-white font-bold text-[40px] leading-[36px] text-start
+          max-[1000px]:mt-[30px] max-[900px]:text-[32px] max-[900px]:leading-[32px]
+            max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[28px] max-[900px]:text-center"
           >
-            <Typography
-              variant="h1"
-              sx={{
-                textAlign: "start",
-                ...(smallScreen && {
-                  mt: "150px",
-                  fontSize: "28px",
-                  lineHeight: "32px",
-                  textAlign: "center",
-                }),
-              }}
-            >
-              {t("ExcitedToWorkTogether")}
-            </Typography>
+            {t("ExcitedToWorkTogether")}
+          </h1>
 
-            <Typography
-              sx={{
-                color: "white",
-                opacity: "0.75",
-                textAlign: "start",
-                ...(smallScreen && {
-                  fontSize: "14px",
-                  lineHeight: "20px",
-                  textAlign: "center",
-                }),
-              }}
-            >
-              {t("LetsBringIdeasToLife")}
-            </Typography>
-            <Link
-              className='w-[100px] flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white '
-              href='/talk-modal'
-            >
-              <Typography
-                sx={{
-                  color: "black !important",
-                  textTransform: "none",
-                  fontWeight: "600",
-                  fontSize: "18px",
-                }}
-              >
-                {t("LetsTalk")}
-              </Typography>
-            </Link>
-          </Grid2>
-        </Grid2>
+          <p className="font-clash text-white opacity-75 text-[18px] leading-[30px] text-start
+          max-[1000px]:text-[16px] max-[1000px]:leading-[24px]
+            max-[650px]:text-[14px] max-[650px]:leading-[18px] max-[900px]:text-center"
+          >
+            {t("LetsBringIdeasToLife")}
+          </p>
 
-        <Box
-          position="absolute"
-          sx={{
-            top: "0px",
-            right: "0%",
-            width: "600px",
-            height: "auto",
-            ...(mediumScreen && {
-              width: "500px",
-              top: "0%",
-              right: "0%",
-            }),
-            ...(smallScreen && {
-              top: "0px",
-              right: "20%",
-              transform: "translateX(50%)",
-              width: "330px",
-            }),
+          <Link
+            className="w-[100px] flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white"
+            href="/talk-modal"
+          >
+            <span className="text-black w-fit font-semibold text-[18px] no-underline">
+              {t("LetsTalk")}
+            </span>
+          </Link>
+        </div>
 
-          }}
-        >
+        <div className="absolute top-0 right-[0%] w-[600px] h-auto
+          max-[1324px]:w-[500px] max-[1324px]:top-[0%] max-[1324px]:right-[0%]
+          max-[1100px]:w-[400px]
+          max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[900px]:w-[330px]">
           <Image
             src={Hand3d}
             alt="Hand"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
+            className="w-full h-auto"
           />
-        </Box>
-      </Grid2>
-    </>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -31,7 +31,7 @@ const MobileMenu = () => {
   };
 
   useEffect(() => {
-    if (currentPathname === '/en' || '/ro' || '/ru') {
+    if (currentPathname === '/en') {
       setPathname('/projects');
     } else {
       const pathSegments = currentPathname.split('/');
@@ -39,6 +39,8 @@ const MobileMenu = () => {
     }
     onClickMobileLink()
   }, [currentPathname])
+
+
 
   return (
     <div className="mobile-menu">
@@ -58,8 +60,7 @@ const MobileMenu = () => {
         </li>
 
         <li
-          className="menu__item mobile-link"
-          data-id="projects"
+          className={`menu__item mobile-link ${pathname === "/projects" ? "active" : ""}`} data-id="projects"
         >
           <Link
             href="/#projects"

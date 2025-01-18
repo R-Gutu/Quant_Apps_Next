@@ -16,15 +16,12 @@ import Phone8 from "@/src/assets/images/phone-8.png";
 import Phone9 from "@/src/assets/images/phone-9.png";
 import { useTranslations } from "next-intl";
 
-interface ProjectData {
-    src: any;
-    title: string;
-    description: string;
-}
+import ProjectType from '@/src/types/ProjectType'
+
 
 export default function Projects() {
     const t = useTranslations('main');
-    const allProjects: ProjectData[] = [
+    const allProjects: ProjectType[] = [
         {
             src: Phone1,
             title: "Meditation Player App",
@@ -72,7 +69,7 @@ export default function Projects() {
         },
     ];
 
-    const [slicedProjects, setSlicedProjects] = useState<ProjectData[]>([]);
+    const [slicedProjects, setSlicedProjects] = useState<ProjectType[]>([]);
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {

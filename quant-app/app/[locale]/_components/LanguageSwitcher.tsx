@@ -15,9 +15,8 @@ import {
   Typography,
 } from "@mui/material";
 import { visuallyHidden } from "@mui/utils";
-import PropTypes from "prop-types";
 
-const LanguageSwitcher = (props: { mobile?: boolean }) => {
+const LanguageSwitcher = (props: { mobile: boolean }) => {
   const { mobile } = props;
   const router = useRouter();
   const pathname = usePathname();
@@ -132,8 +131,5 @@ const LanguageSwitcher = (props: { mobile?: boolean }) => {
   );
 };
 
-LanguageSwitcher.propTypes = {
-  mobile: PropTypes.bool,
-};
 
 export default LanguageSwitcher;

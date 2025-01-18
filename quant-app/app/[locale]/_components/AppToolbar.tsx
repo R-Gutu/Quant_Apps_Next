@@ -30,7 +30,7 @@ const AppToolbar = () => {
 
     // Handle pathname setting
     console.log(currentPathname);
-    if (currentPathname === '/en' || '/ro' || '/ru') {
+    if (currentPathname === '/en') {
       setPathname('/projects');
     } else {
       const pathSegments = currentPathname.split('/');

@@ -15,7 +15,7 @@ const TimeLine = async () => {
         sx={{
           justifyContent: "center",
           paddingLeft: "30px",
-          mt: "200px",
+          mt: "80px",
         }}
       >
         <Grid2

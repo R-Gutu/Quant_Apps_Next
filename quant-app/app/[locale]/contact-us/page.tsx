@@ -5,7 +5,7 @@ import {
   validatePhone,
 } from "@/lib/utils/validateContactUsForm";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import emailjs from '@emailjs/browser';
 
@@ -24,26 +24,26 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const onNameChanged = (value : any) => {
+  const onNameChanged = (value : string) => {
     setName(value);
     validateForm(value, email, phone);
   };
 
-  const onEmailChanged = (value : any) => {
+  const onEmailChanged = (value : string) => {
     setEmail(value);
     validateForm(name, value, phone);
   };
 
-  const onPhoneChanged = (value : any) => {
+  const onPhoneChanged = (value : string) => {
     setPhone(value);
     validateForm(name, email, value);
   };
 
-  const onDescriptionChanged = (value : any) => {
+  const onDescriptionChanged = (value : string) => {
     setDescription(value);
   };
 
-  const validateForm = (nameValue : any, emailValue : any, phoneValue : any) => {
+  const validateForm = (nameValue : string, emailValue : string, phoneValue : string) => {
     const isNameValid = validateName(nameValue);
     const isEmailValid = validateEmail(emailValue);
     const isPhoneValid = validatePhone(phoneValue);

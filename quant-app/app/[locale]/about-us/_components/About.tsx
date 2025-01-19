@@ -24,7 +24,7 @@ const About = () => {
             direction="row"
             sx={{
               display: "flex",
-              marginTop: "210px",
+              marginTop: "140px",
               position: "relative",
               zIndex: 1,
               justifyContent: "center",
@@ -56,22 +56,28 @@ const About = () => {
                   "& h1": {
                     fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                     color: "white",
-                    fontSize: "64px",
                     fontWeight: "600",
-                  },
-                  "& p": {
-                    fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                    color: "white",
-                    fontSize: "18px",
                   },
                 }}
               >
                 <Grid2 width="fit-content">
-                  <Typography variant="h1">{t("AboutUs")}</Typography>
+                  <Typography sx={{
+                    fontSize: "64px",
+                    "@media (max-width: 900px)": {
+                      fontSize: "46px",
+                    },
+                  }} variant="h1">{t("AboutUs")}</Typography>
                 </Grid2>
 
                 <Grid2 size={6}>
-                  <Typography>
+                  <Typography
+                     sx={{
+                      fontFamily: `"ClashDisplay", "Inter", sans-serif`,
+                      fontSize: "20px",
+                      "@media (max-width: 900px)": {
+                        fontSize: "16px",
+                      },
+                    }} className="text-white">
                     {t("WhereInnovationsMeetsVisionCrafting")}
                   </Typography>
                 </Grid2>
@@ -84,13 +90,22 @@ const About = () => {
                   "& p": {
                     fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                     color: "white",
-                    fontSize: "22px",
                   },
                 }}
               >
-                <Typography>{t("AboutUsTextStaticParagraph")}</Typography>
+                <Typography sx={{
+                  fontSize: "20px",
+                  "@media (max-width: 900px)": {
+                    fontSize: "16px",
+                  },
+                }}>{t("AboutUsTextStaticParagraph")}</Typography>
 
-                <Typography sx={{ display: mediumScreen ? "none" : "block" }}>
+                <Typography sx={{ display: mediumScreen ? "none" : "block", 
+                  fontSize: "20px",
+                  "@media (max-width: 900px)": {
+                    fontSize: "16px",
+                  },
+                 }}>
                   {t("ExpandableAboutUsTextParagraphFirstPart")}
                   <br />
                   {t("ExpandableAboutUsTextParagraphSecondPart")}
@@ -107,7 +122,7 @@ const About = () => {
                 "& p": {
                   fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                   color: "white",
-                  fontSize: "22px",
+                  fontSize: "16px",
                 },
               }}
             >
@@ -137,8 +152,8 @@ const About = () => {
                   sx={{
                     border: "1px solid white",
                     backgroundColor: "transparent",
-                    width: "136px",
-                    height: "40px",
+                    width: "120px",
+                    height: "30px",
                     borderRadius: "8px",
                     "&:hover": { backgroundColor: "transparent" },
                   }}
@@ -148,7 +163,7 @@ const About = () => {
                       textTransform: "none",
                       fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                       color: "white",
-                      fontSize: "16px",
+                      fontSize: "14px",
                     }}
                   >
                     {t("Collapse")}
@@ -160,7 +175,7 @@ const About = () => {
                   sx={{
                     backgroundColor: "#6A65FF",
                     width: "120px",
-                    height: "27px",
+                    height: "30px",
                   }}
                 >
                   <Typography
@@ -168,7 +183,7 @@ const About = () => {
                       textTransform: "none",
                       fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                       color: "white",
-                      fontSize: "10px",
+                      fontSize: "14px",
                       width: "fit-content",
                       borderRadius: "5px",
                     }}

@@ -16,15 +16,15 @@ const AppToolbar = () => {
   const isSmallScreen = useMediaQuery("(max-width:950px)");
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
-  let projectsAreVisible = useOnScreen('projects');
-  console.log(projectsAreVisible)
+  const projectsAreVisible = useOnScreen('projects');
 
   useEffect(() => {
     // Handle hash scrolling
     if (window.location.hash) {
-      const element = document.getElementById(window.location.hash.slice(1));
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
-      console.log("SCROLLING:", window.location.hash.slice(1))
+      setTimeout(() => {
+        const element = document.getElementById(window.location.hash.slice(1));
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
 
     const pathSegments = currentPathname.split('/');

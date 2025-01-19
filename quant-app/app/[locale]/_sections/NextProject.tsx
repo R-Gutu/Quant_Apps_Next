@@ -28,10 +28,10 @@ const NextProject = async () => {
           </p>
 
           <Link
-            className="w-[100px] flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white"
+            className="w-full flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white max-w-[170px]"
             href="/talk-modal"
           >
-            <span className="text-black w-fit font-semibold text-[18px] no-underline">
+            <span className="w-fit text-nowrap text-center text-black font-semibold text-[18px] no-underline">
               {t("LetsTalk")}
             </span>
           </Link>

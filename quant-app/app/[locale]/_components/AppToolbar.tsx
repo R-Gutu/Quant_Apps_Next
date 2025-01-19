@@ -13,7 +13,7 @@ import { cn, scrollToId } from "@/lib/utils/utils";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
-  const isSmallScreen = useMediaQuery("(max-width:768px)");
+  const isSmallScreen = useMediaQuery("(max-width:950px)");
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
   let projectsAreVisible = useOnScreen('projects');

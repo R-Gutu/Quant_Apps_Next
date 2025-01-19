@@ -8,17 +8,14 @@ header {
 }
 
 .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 2fr 0.5fr auto; /* Adjust based on the number of elements */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    /* gap: 50px; */
     padding: 10px 0 14px 0;
 }
+
 
 .logo {
     display: -webkit-box;
@@ -50,6 +47,7 @@ nav {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
     gap: 19px;
 }
 
@@ -156,18 +154,4 @@ nav {
     margin-top: 40px;
 }
 
-@media (max-width: 391px) {
-    .logo {
-        max-width: 140px;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    .burger { 
-        display: inline-block;
-    }
-}
 

@@ -1,3 +1,4 @@
+
 import {
   Grid2,
   Link,
@@ -5,12 +6,11 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import PropTypes from "prop-types";
 import Image from "next/image";
+import ClientStoryType from "@/lib/types/ClientStoryType";
 
-const ClientStory = (props : any) => {
-  const { clientName, clientDescription, text } = props;
 
+const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -98,12 +98,6 @@ const ClientStory = (props : any) => {
       </Grid2>
     </Grid2>
   );
-};
-
-ClientStory.propTypes = {
-  clientName: PropTypes.string.isRequired,
-  clientDescription: PropTypes.string,
-  text: PropTypes.string.isRequired,
 };
 
 export default ClientStory;

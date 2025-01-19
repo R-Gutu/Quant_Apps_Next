@@ -1,5 +1,5 @@
 export default interface SocialLinksType {
     href: string,
-    icon: any,
+    icon: string,
     alt: string
 }

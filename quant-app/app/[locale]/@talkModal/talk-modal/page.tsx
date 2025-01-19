@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import {
   handleFiles,
   validateEmail,
@@ -92,7 +92,7 @@ const Page = () => {
     }
   };
 
-  const validateForm = (firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean) => {
+  const validateForm = useCallback((firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean) => {
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
     const isEmailValid = validateEmail(email);
@@ -104,7 +104,7 @@ const Page = () => {
       !isFirstNameValid || !isLastNameValid || !isEmailValid || !isCheckboxValid ||
       !isBudgetSelected
     );
-  };
+  }, [budgetCheckboxes]);
 
   const onDropZoneDragOver = (e : React.DragEvent) => {
     e.preventDefault();
@@ -130,7 +130,7 @@ const Page = () => {
 
   useEffect(() => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
-  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox])
+  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, validateForm])
 
   const handleSubmit = (e : React.FormEvent) => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);

@@ -71,7 +71,7 @@ export default function Projects() {
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
         }
-    }, [showAll, allProjects]);
+    }, [showAll]);
 
     if (!slicedProjects.length) {
         return null;

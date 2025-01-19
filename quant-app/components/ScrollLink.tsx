@@ -1,19 +1,17 @@
 'use client'
-import { Link } from "@/i18n/routing"
+import AppLink from "./AppLink"
 import { scrollToId } from "@/lib/utils/utils"
-export default function ScrollLink({ id, className, href, style, elementId, children }: any) {
+export default function ScrollLink({ id, href, elementId, children }: any) {
     return (
         <span>
-            <Link
+            <AppLink
                 data-id={id}
-                className={className}
                 href={href}
-                style={style}
                 scroll={false}
                 onClick={()=>scrollToId(elementId)}
             >
                 {children}
-            </Link>
+            </AppLink>
         </span>
 
     )

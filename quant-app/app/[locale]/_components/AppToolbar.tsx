@@ -7,7 +7,6 @@ import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
 import { useEffect, useState } from "react";
 import useOnScreen from "@/lib/utils/useOnScreen";
-
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { cn, scrollToId } from "@/lib/utils/utils";
@@ -18,6 +17,7 @@ const AppToolbar = () => {
   const currentPathname = usePathname();
   const [pathname, setPathname] = useState('/');
   let projectsAreVisible = useOnScreen('projects');
+  console.log(projectsAreVisible)
 
   useEffect(() => {
     // Handle hash scrolling
@@ -36,9 +36,7 @@ const AppToolbar = () => {
     mobileMenu?.classList.add("active");
   };
 
-  const projectsClickHandle = () => {
-    scrollToId('projects')
-  }
+  const projectsClickHandle = () => scrollToId('projects')
 
   return (
     <>

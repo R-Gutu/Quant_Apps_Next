@@ -1,13 +1,11 @@
 "use client"
 
-import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useOnScreen from "@/lib/utils/useOnScreen";
-
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { cn, scrollToId } from "@/lib/utils/utils";
@@ -15,30 +13,25 @@ import { cn, scrollToId } from "@/lib/utils/utils";
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
   const isSmallScreen = useMediaQuery("(max-width:950px)");
-  const currentPathname = usePathname();
-  const [pathname, setPathname] = useState('/');
-  let projectsAreVisible = useOnScreen('projects');
+  const pathname = usePathname();
+  const projectsAreVisible = useOnScreen('projects');
 
   useEffect(() => {
     // Handle hash scrolling
     if (window.location.hash) {
-      const element = document.getElementById(window.location.hash.slice(1));
-      if (element) element.scrollIntoView({ behavior: 'smooth' });
-      console.log("SCROLLING:", window.location.hash.slice(1))
+      setTimeout(() => {
+        const element = document.getElementById(window.location.hash.slice(1));
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
-
-    const pathSegments = currentPathname.split('/');
-    setPathname('/' + (pathSegments[2] || ''));
-  }, [currentPathname]);
+  }, [pathname]);
 
   const onClickBurger = () => {
     const mobileMenu = document.querySelector(".mobile-menu");
     mobileMenu?.classList.add("active");
   };
 
-  const projectsClickHandle = () => {
-    scrollToId('projects')
-  }
+  const projectsClickHandle = () => scrollToId('projects')
 
   return (
     <>

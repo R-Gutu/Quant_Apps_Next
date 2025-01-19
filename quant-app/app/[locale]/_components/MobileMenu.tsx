@@ -1,4 +1,3 @@
-
 import { useTranslations } from "next-intl";
 import { Grid2 } from "@mui/material";
 import Image from "next/image";

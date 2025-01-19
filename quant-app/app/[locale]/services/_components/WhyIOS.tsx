@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function WhyIOS({ src, title, text }: { src: string, title: string, text: string }) {
+export default async function WhyIOS({ src, title, text }: { src: string, title: string, text: string }) {
     return (
         <div className="why-ios__item">
             <div className="why-ios__item-img">

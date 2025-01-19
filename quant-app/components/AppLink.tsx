@@ -4,12 +4,13 @@ import { Typography } from "@mui/material";
 interface AppLinkProps {
   href: string;
   children: React.ReactNode;
+  scroll?: boolean;
   onClick?: (e: React.MouseEvent) => void;
 }
 
-const AppLink = ({ href, children}: AppLinkProps) => {
+const AppLink = ({ href, children, scroll = true, onClick}: AppLinkProps) => {
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref scroll={scroll} onClick={onClick}>
       <Typography
         sx={{
           fontFamily: `"ClashDisplay", "Inter", sans-serif`,

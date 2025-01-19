@@ -1,8 +1,5 @@
-
 import { getTranslations } from "next-intl/server";
-
 import { Box, Grid2, Typography } from "@mui/material";
-
 import NextProject from "@/app/[locale]/_sections/NextProject";
 import Blur from "@/components/Blur";
 

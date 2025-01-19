@@ -24,7 +24,7 @@ import "@/styles/main.css"
 
 import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
-import Script from "next/script";
+// import Script from "next/script";
 
 const defaultMetadata = {
   title: "Quant-Apps",

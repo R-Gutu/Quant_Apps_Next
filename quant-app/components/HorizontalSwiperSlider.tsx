@@ -1,12 +1,13 @@
 import { useCallback, useMemo, useRef } from "react";
-
-import { Grid2, IconButton, Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
+import {Grid2} from "@mui/material";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
-import PropTypes from "prop-types";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Swiper as SwiperInstance } from "swiper/types";
+import { SwiperRef } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
 
 import "swiper/css";
@@ -14,7 +15,17 @@ import "swiper/css/navigation";
 import "../style/main.css";
 import "../style/swiper.css";
 
-const HorizontalSwiperSlider = (props : any) => {
+interface HorizontalSwiperSliderProps {
+  value: number;
+  slidesContent: React.ReactNode[];
+  onChange?: (newIndex: number) => void;
+  slidesPerView?: number;
+  spaceBetweenSlides?: number;
+  label?: string;
+  width?: string;
+}
+
+const HorizontalSwiperSlider: React.FC<HorizontalSwiperSliderProps> = (props) => {
   const {
     value,
     slidesContent,
@@ -25,32 +36,32 @@ const HorizontalSwiperSlider = (props : any) => {
     width,
   } = props;
 
-  const swiperRef = useRef(null);
-  const currentValueRef = useRef(value);
+  const swiperRef = useRef<SwiperRef | null>(null);
+  const currentValueRef = useRef<number>(value);
 
   const uniqueId = useMemo(() => uuidv4(), []);
   const buttonPrevId = `swiper-prev-${uniqueId}`;
   const buttonNextId = `swiper-next-${uniqueId}`;
 
   const handleSlideChange = useCallback(
-    (swiper : any) => {
-      const newValue = slidesContent[swiper.activeIndex];
+    (swiper: SwiperInstance) => {
+      const newValue = swiper.activeIndex;
       if (newValue === currentValueRef.current) return;
 
       currentValueRef.current = newValue;
       swiperRef.current?.swiper.update();
 
-      onChange?.(swiper.activeIndex);
+      onChange?.(newValue);
     },
     [onChange]
   );
 
-  const getSwiperButton = (id, icon) => (
+  const getSwiperButton = (id: string, icon: React.ReactNode) => (
     <IconButton
       id={id}
       sx={(theme) => ({
         color: theme.palette.common.white,
-        background: theme.palette.background.darkButton,
+        background: theme.palette.background.default,
         width: "30px",
         height: "30px",
         borderRadius: "5px",
@@ -141,16 +152,6 @@ const HorizontalSwiperSlider = (props : any) => {
       </Grid2>
     </Grid2>
   );
-};
-
-HorizontalSwiperSlider.propTypes = {
-  value: PropTypes.number,
-  slidesContent: PropTypes.array.isRequired,
-  onChange: PropTypes.func,
-  slidesPerView: PropTypes.number,
-  spaceBetweenSlides: PropTypes.number,
-  label: PropTypes.string,
-  width: PropTypes.string,
 };
 
 export default HorizontalSwiperSlider;

@@ -1,5 +1,5 @@
 export default interface ProjectType {
-    src: any;
+    src: string;
     title: string;
     description: string;
 }

@@ -2,7 +2,7 @@ export default interface TeamMemberType {
     name: string,
     title: string,
     details: string,
-    src: any,
+    src: string,
     alt: string,
     link: string 
 }

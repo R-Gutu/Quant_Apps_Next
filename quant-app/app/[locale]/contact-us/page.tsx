@@ -51,7 +51,7 @@ const Page = () => {
     setInvalidForm(!isNameValid || !isEmailValid || !isPhoneValid);
   };
 
-  const handleSubmit = (event : any) => {
+  const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();
 
     const serviceId = "service_caidqxy";

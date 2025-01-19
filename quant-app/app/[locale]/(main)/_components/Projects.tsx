@@ -10,58 +10,57 @@ import { scrollToId } from "@/lib/utils/utils";
 
 export default function Projects() {
     const t = useTranslations('main');
-    const allProjects: ProjectType[] = [
-        {
-            src: "/images/phone-1.png",
-            title: "Meditation Player App",
-            description: t("MeditationPlayerAppDescription"),
-        },
-        {
-            src: "/images/phone-2.png",
-            title: "Market Delivery Grocery App",
-            description: t("MarketDeliveryGroceryAppDescription"),
-        },
-        {
-            src: "/images/phone-3.png",
-            title: "Home Serveware Shopping App",
-            description: t("HomeServeWareShoppingAppDescription"),
-        },
-        {
-            src: "/images/phone-4.png",
-            title: "Explore the World Travel App",
-            description: t("ExploreWorldTravelAppDescription"),
-        },
-        {
-            src: "/images/phone-5.png",
-            title: "Barkcheck",
-            description: t("BarkCheckDescription"),
-        },
-        {
-            src: "/images/phone-6.png",
-            title: "Tripflick App",
-            description: t("TripFlickAppDescription"),
-        },
-        {
-            src: "/images/phone-7.png",
-            title: "Shape Your Body Fitness App",
-            description: t("ShapeYourBodyFitnessAppDescription"),
-        },
-        {
-            src: "/images/phone-8.png",
-            title: "Hotel Management Dashboard",
-            description: t("HotelManagementDashboardDescription"),
-        },
-        {
-            src: "/images/phone-9.png",
-            title: "Quant-Apps Website",
-            description: t("QuantAppsWebsiteDescription"),
-        },
-    ];
-
     const [slicedProjects, setSlicedProjects] = useState<ProjectType[]>([]);
     const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
+        const allProjects: ProjectType[] = [
+            {
+                src: "/images/phone-1.png",
+                title: "Meditation Player App",
+                description: t("MeditationPlayerAppDescription"),
+            },
+            {
+                src: "/images/phone-2.png",
+                title: "Market Delivery Grocery App",
+                description: t("MarketDeliveryGroceryAppDescription"),
+            },
+            {
+                src: "/images/phone-3.png",
+                title: "Home Serveware Shopping App",
+                description: t("HomeServeWareShoppingAppDescription"),
+            },
+            {
+                src: "/images/phone-4.png",
+                title: "Explore the World Travel App",
+                description: t("ExploreWorldTravelAppDescription"),
+            },
+            {
+                src: "/images/phone-5.png",
+                title: "Barkcheck",
+                description: t("BarkCheckDescription"),
+            },
+            {
+                src: "/images/phone-6.png",
+                title: "Tripflick App",
+                description: t("TripFlickAppDescription"),
+            },
+            {
+                src: "/images/phone-7.png",
+                title: "Shape Your Body Fitness App",
+                description: t("ShapeYourBodyFitnessAppDescription"),
+            },
+            {
+                src: "/images/phone-8.png",
+                title: "Hotel Management Dashboard",
+                description: t("HotelManagementDashboardDescription"),
+            },
+            {
+                src: "/images/phone-9.png",
+                title: "Quant-Apps Website",
+                description: t("QuantAppsWebsiteDescription"),
+            },
+        ];
         const handleResize = () => {
             const count = window.innerWidth > 768 ? 6 : 3;
             setSlicedProjects(showAll ? allProjects : allProjects.slice(0, count));
@@ -71,7 +70,7 @@ export default function Projects() {
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
         }
-    }, [showAll]);
+    }, [showAll, t]);
 
     if (!slicedProjects.length) {
         return null;
@@ -79,7 +78,7 @@ export default function Projects() {
 
     const showClickHandler = () => {
         setShowAll(prev => !prev);
-        if(showAll) scrollToId('projects');
+        if (showAll) scrollToId('projects');
     }
 
     return (

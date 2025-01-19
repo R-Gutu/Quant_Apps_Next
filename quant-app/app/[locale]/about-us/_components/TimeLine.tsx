@@ -1,24 +1,16 @@
-'use client'
-
 import { Grid2, Typography } from "@mui/material"
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image"
 import { getRoadMapByLanguage } from "@/lib/utils/languageUtils";
-import { useState } from "react";
 
-const TimeLine = () => {
-
-    const t = useTranslations("about-us");
-
-    const currentLocale = useLocale();
-
-    const [roadMap, setRoadMap] = useState(
-        getRoadMapByLanguage(currentLocale)
-      );
+const TimeLine = async () => {
+  const t = await getTranslations("about-us");
+  const currentLocale = await getLocale();
+  const roadMap = getRoadMapByLanguage(currentLocale);
 
   return (
     <div>
-        <Grid2
+      <Grid2
         container
         sx={{
           justifyContent: "center",

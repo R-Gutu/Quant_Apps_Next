@@ -89,6 +89,7 @@ const Footer = () => {
                   <Image
                     width={30}
                     height={30}
+                    className="h-[30px] w-[30px]"
                     src={link.icon}
                     alt={link.alt}
                   />

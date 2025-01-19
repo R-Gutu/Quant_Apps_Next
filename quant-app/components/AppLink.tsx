@@ -7,12 +7,10 @@ interface AppLinkProps {
   onClick?: (e: React.MouseEvent) => void;
 }
 
-const AppLink = ({ href, children, onClick }: AppLinkProps) => {
+const AppLink = ({ href, children}: AppLinkProps) => {
   return (
-    <Link href={href} passHref legacyBehavior>
+    <Link href={href} passHref>
       <Typography
-        component="a"
-        onClick={onClick}
         sx={{
           fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           fontSize: "14px",

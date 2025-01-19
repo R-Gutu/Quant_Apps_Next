@@ -28,7 +28,6 @@ const AppToolbar = () => {
 
     const pathSegments = currentPathname.split('/');
     setPathname('/' + (pathSegments[2] || ''));
-    console.log(pathname);
   }, [currentPathname]);
 
   const onClickBurger = () => {

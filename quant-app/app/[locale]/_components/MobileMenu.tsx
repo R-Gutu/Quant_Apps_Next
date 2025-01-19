@@ -137,7 +137,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src="/icons/linked-in.svg" alt="LinkedIn" />
+          <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/linked-in.svg" alt="LinkedIn" />
         </Link>
 
         <Link 
@@ -145,7 +145,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src="/icons/tik-tok.svg" alt="TikTok" />
+          <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/tik-tok.svg" alt="TikTok" />
         </Link>
 
         <Link 
@@ -153,7 +153,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src="/icons/Telegram.svg" alt="Telegram" />
+          <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/Telegram.svg" alt="Telegram" />
         </Link>
 
         <Link 

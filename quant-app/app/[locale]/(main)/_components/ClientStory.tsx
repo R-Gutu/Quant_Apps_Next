@@ -46,9 +46,8 @@ const ClientStory = (props : any) => {
         paddingX="30px"
       >
         <Image
-        width={0}
+        width={520}
         height={0}
-        unoptimized={true}
           style={{
             width: isSmallScreen ? "330px" : "520px",
             height: isSmallScreen ? "326px" : "220px",

@@ -78,6 +78,7 @@ export default async function Introduction() {
                         <Image
                             src="/images/ipad.png"
                             fill
+                            sizes=""
                             alt="Ipad"
                             loading="lazy"
                             className="banner__video-img"

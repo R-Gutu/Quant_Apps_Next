@@ -38,7 +38,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                     >
                         <Image
                             width={142}
-                            height={0}
+                            height={151}
                             className="w-[105px] h-[112px] mui-md:w-[142px] mui-md:h-[151px]"
                             src={src}
                             alt={alt}

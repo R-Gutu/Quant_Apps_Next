@@ -75,7 +75,7 @@ export default async function RootLayout({
         className={`antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Script
+          {/* <Script
             strategy="afterInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
           />
@@ -86,7 +86,7 @@ export default async function RootLayout({
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
           `}
-          </Script>
+          </Script> */}
           <AppToolbar />
           {children}
           {videoModal}

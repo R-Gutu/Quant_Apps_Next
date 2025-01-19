@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 interface AppLinkProps {
   href: string;
   children: React.ReactNode;
-  scroll: boolean;
+  scroll?: boolean;
   onClick?: (e: React.MouseEvent) => void;
 }
 

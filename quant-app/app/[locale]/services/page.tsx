@@ -1,14 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Image from 'next/image'
-
-import Vector from "@/src/assets/icons/vector.svg";
-import Pen from "@/src/assets/icons/pen.svg";
-import Security from "@/src/assets/icons/sequrity.svg";
-import Puzzle from "@/src/assets/icons/pazle.svg";
-import Star from "@/src/assets/icons/Star.svg";
-import Moon from "@/src/assets/icons/moon.svg";
-import NextProject from "@/app/[locale]/_sections/NextProject";
-import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
+import NextProject from "../_sections/NextProject";
+import WhatWeOffer from "../_sections/WhatWeOffer";
 import Accordion from "./_components/Accordion";
 import WhyIOS from "./_components/WhyIOS";
 
@@ -29,10 +22,10 @@ const Services = async () => {
             </h1>
 
             <div className="why-ios__items">
-              <WhyIOS src={Pen} title={t("OptimalPerformance")} text={t("OptimalPerformanceDetails")} />
-              <WhyIOS src={Security} title={t("HigherSecurity")} text={t("HigherSecurityDetails")} />
-              <WhyIOS src={Vector} title={t("ConsistentUiUx")} text={t("ConsistentUiUxDetails")} />
-              <WhyIOS src={Puzzle} title={t("DeepPlatformIntegration")} text={t("DeepPlatformIntegrationDetails")} />
+              <WhyIOS src="/icons/pen.svg" title={t("OptimalPerformance")} text={t("OptimalPerformanceDetails")} />
+              <WhyIOS src="/icons/security.svg" title={t("HigherSecurity")} text={t("HigherSecurityDetails")} />
+              <WhyIOS src="/icons/vector.svg" title={t("ConsistentUiUx")} text={t("ConsistentUiUxDetails")} />
+              <WhyIOS src="/icons/puzzle.svg" title={t("DeepPlatformIntegration")} text={t("DeepPlatformIntegrationDetails")} />
             </div>
           </div>
         </div>
@@ -40,11 +33,11 @@ const Services = async () => {
         <span className="why-ios__bg-img why-ios__blur-1"></span>
         <span className="why-ios__bg-img why-ios__blur-2"></span>
         
-        <Image src={Star} alt="" className="why-ios__star-1 why-ios__bg-img" />
-        <Image src={Star} alt="" className="why-ios__star-2 why-ios__bg-img" />
-        <Image src={Star} alt="" className="why-ios__star-3 why-ios__bg-img" />
-        <Image src={Moon} alt="" className="why-ios__moon why-ios__bg-img" />
-        <Image src={Moon} alt="" className="why-ios__moon-2 why-ios__bg-img" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-1 why-ios__bg-img" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-2 why-ios__bg-img" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-3 why-ios__bg-img" />
+        <Image src="/icons/moon.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__moon why-ios__bg-img" />
+        <Image src="/icons/moon.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__moon-2 why-ios__bg-img" />
       </section>
 
       <section className="working-process__section">

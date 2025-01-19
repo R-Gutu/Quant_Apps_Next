@@ -1,17 +1,7 @@
 import { getTranslations } from "next-intl/server";
-
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-
-import Blur from "@/src/components/Blur";
-
-import CloudStorage from "@/src/assets/images/cloud-storage.png";
-import ItemsInNetBg from "@/src/assets/images/items-net-bg.png";
-import Vector from "@/src/assets/icons/vector.svg";
-import Apple from "@/src/assets/icons/apple.svg";
-import Android from "@/src/assets/icons/android.svg";
-import CrossPlatform from "@/src/assets/icons/cross-platform.svg";
-import Settings from "@/src/assets/icons/settings.svg";
+import Blur from "@/components/Blur";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
@@ -72,29 +62,35 @@ const WhatWeOffer = async () => {
           }}
         >
           <Image
-            src={CloudStorage}
+            src="/images/cloud-storage.png"
+            width={0}
+            height={0}
             alt="CloudStorage"
             style={{
+              width: "auto",
               maxWidth: "100%",
               height: "auto",
               position: "relative",
               zIndex: 1,
             }}
-            quality={100}
+            unoptimized={true}
           />
 
           <Image
-            src={ItemsInNetBg}
+            src="/images/items-net-bg.png"
             alt=""
+            unoptimized={true}
+            width={0}
+            height={0}
             style={{
+              width: "auto",
               maxWidth: "150%",
               height: "auto",
               position: "absolute",
               top: "60%",
               left: "40%",
-              transform: "translate(-50%, -50%)",
+              transform: "translate(-45%, -50%)",
             }}
-            quality={100}
           />
 
           <Blur
@@ -127,8 +123,6 @@ const WhatWeOffer = async () => {
           sx={{
             zIndex: 2,
             justifyContent: "space-between",
-            //  ml: "200px",
-            // ml: { sm: "250px", md: "250px", lg: "250px", s: "200px" },
             "& img": {
               maxWidth: { xs: "22px", md: "100%" },
               height: { xs: "22px", md: "auto" },
@@ -172,7 +166,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src={Vector} alt="Vector" />
+              <Image src="/icons/vector.svg" alt="Vector" width={0} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -203,7 +197,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src={Apple} alt="Apple" />
+              <Image src="/icons/apple.svg" alt="Apple" width={0} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -232,7 +226,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src={Android} alt="Android" />
+              <Image src="/icons/android.svg" alt="Android" width={0} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -262,7 +256,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src={CrossPlatform} alt="CrossPlatform" />
+              <Image src="/icons/cross-platform.svg" alt="CrossPlatform" width={0} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -296,7 +290,7 @@ const WhatWeOffer = async () => {
                 padding: "4px",
               }}
             >
-              <Image src={Settings} alt="Settings" />
+              <Image src="/icons/settings.svg" alt="Settings" width={0} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>

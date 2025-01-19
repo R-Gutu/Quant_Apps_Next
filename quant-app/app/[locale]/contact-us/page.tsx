@@ -1,11 +1,9 @@
 'use client'
-import Mail from "@/src/assets/icons/mail.svg";
-import Location from "@/src/assets/icons/Location.svg";
 import {
   validateEmail,
   validateName,
   validatePhone,
-} from "@/src/utils/validateContactUsForm";
+} from "@/lib/utils/validateContactUsForm";
 
 import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
@@ -97,11 +95,11 @@ const ContactUs = () => {
               <div className="contact-us__content-info">
                 <h4>{t("ContactInfo")}</h4>
                 <div className="contact-us__info-item">
-                  <Image src={Mail} alt="" />
+                  <Image src="/icons/mail.svg" alt="" width={0} height={0} className="w-auto h-auto"/>
                   <span>support@quant-apps.com</span>
                 </div>
                 <div className="contact-us__info-item">
-                  <Image src={Location} alt="" />
+                  <Image src="/icons/Location.svg" alt="" width={0} height={0} className="w-auto h-auto"/>
                   <span>{t("RepublicMoldova")}</span>
                 </div>
               </div>

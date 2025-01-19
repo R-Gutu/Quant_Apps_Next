@@ -41,7 +41,7 @@
 }
 
 .mobile-about-text.active .mobile-about-text__btn span::after {
-    content: url(../assets/icons/about-arrow-colapse.svg);
+    content: url(/icons/about-arrow-colapse.svg);
     position: absolute;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -51,7 +51,7 @@
 }
 
 .mobile-about-text.active .mobile-about-text__btn:hover {
-    content: url(../assets/icons/about-arrow-colapse-white.svg);
+    content: url(/icons/about-arrow-colapse-white.svg);
     background-color: transparent;
     border: 1px solid white;
 }

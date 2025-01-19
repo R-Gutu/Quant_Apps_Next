@@ -88,28 +88,28 @@ footer {
 }
 
 .instagram::after {
-    content: url(../assets/icons/instagram.svg);
+    content: url(/icons/instagram.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 3px;
 }
 
 .whatsApp::after {
-    content: url(../assets/icons/whats-app.svg);
+    content: url(/icons/whats-app.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 3px;
 }
 
 .facebook::after {
-    content: url(../assets/icons/facebook.svg);
+    content: url(/icons/facebook.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 2px;
 }
 
 .whatsApp::after {
-    content: url(../assets/icons/whats-app.svg);
+    content: url(/icons/whats-app.svg);
     position: absolute;
     left: calc(100% + 4px);
     top: 3px;

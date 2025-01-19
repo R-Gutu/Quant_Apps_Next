@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from "@/i18n/routing";
 import { Modal } from "@mui/material";
-import { getIntroByLanguage } from "@/src/utils/languageUtils";
+import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { useLocale, useTranslations } from "next-intl";
 
 const Page = () => {

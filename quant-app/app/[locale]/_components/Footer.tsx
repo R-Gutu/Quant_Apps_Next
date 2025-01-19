@@ -5,18 +5,9 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { usePathname, useRouter } from "next/navigation";
 import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
-import AppLink from '@/src/components/AppLink'
-
-import FooterFacebook from "@/src/assets/icons/footer-facebook.svg";
-import FooterInstagram from "@/src/assets/icons/footer-instagram.svg";
-import LinkedIn from "@/src/assets/icons/linked-in.svg";
-import LinkedInRounded from "@/src/assets/icons/linked-in-rounded.svg";
-import TikTok from "@/src/assets/icons/tik-tok.svg";
-import Telegram from "@/src/assets/icons/Telegram.svg";
-import TelegramOld from "@/src/assets/icons/telegram-old.svg";
-import WhatsApp from "@/src/assets/icons/whats-app.svg";
-import SocialLinksType from "@/src/types/SocialLinksType";
-import Logo from '@/src/assets/icons/logo.svg'
+import AppLink from '@/components/AppLink'
+import { scrollToId } from "@/lib/utils/utils";
+import SocialLinksType from "@/lib/types/SocialLinksType";
 
 
 const Footer = () => {
@@ -26,29 +17,24 @@ const Footer = () => {
   const router = useRouter();
   const matches = useMediaQuery("(max-width:768px)");
 
-  const handleScrollToElement = (elementId: string) => {
-    const element = document.getElementById(elementId);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const handleNavigation = (path: string, scrollTo?: string) => {
     if (path === pathname && scrollTo) {
-      handleScrollToElement(scrollTo);
+      scrollToId(scrollTo);
     } else {
       router.push(path);
       if (scrollTo) {
-        setTimeout(() => handleScrollToElement(scrollTo), 100);
+        scrollToId(scrollTo);
       }
     }
   };
 
   const socialLinks : SocialLinksType[] = [
-    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: FooterFacebook, alt: "Facebook" },
-    { href: "https://www.instagram.com/quantapps_/", icon: FooterInstagram, alt: "Instagram" },
-    { href: "https://www.linkedin.com/company/quant-apps", icon: LinkedIn, alt: "LinkedIn" },
-    { href: "https://www.tiktok.com/@quantapps", icon: TikTok, alt: "TikTok" },
-    { href: "https://t.me/quantapps", icon: Telegram, alt: "Telegram" },
-    { href: "https://wa.me/37369882331", icon: WhatsApp, alt: "WhatsApp" }
+    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/icons/footer-facebook.svg", alt: "Facebook" },
+    { href: "https://www.instagram.com/quantapps_/", icon: "/icons/footer-instagram.svg", alt: "Instagram" },
+    { href: "https://www.linkedin.com/company/quant-apps", icon: "/icons/linked-in.svg", alt: "LinkedIn" },
+    { href: "https://www.tiktok.com/@quantapps", icon: "/icons/tik-tok.svg", alt: "TikTok" },
+    { href: "https://t.me/quantapps", icon: "/icons/Telegram.svg", alt: "Telegram" },
+    { href: "https://wa.me/37369882331", icon: "/icons/whats-app.svg", alt: "WhatsApp" }
   ];
 
   return (
@@ -113,7 +99,7 @@ const Footer = () => {
 
           <div className="footer">
             <Link href="/" className="footer__logo">
-              <Image src={Logo} alt="Logo" width={250} height={40} />
+              <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
             </Link>
             <div className="footer__links">
               <div className="footer__column">
@@ -141,7 +127,7 @@ const Footer = () => {
                         <Image
                           width={14}
                           height={14}
-                          src={LinkedInRounded}
+                          src="/icons/linked-in-rounded.svg"
                           alt="External Link"
                           style={{ marginLeft: "13px" }}
                         />
@@ -209,16 +195,16 @@ const Footer = () => {
 
               <div className="mobile-footer-socials">
                 <Link href="https://www.facebook.com/profile.php?id=61571073299478" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src={FooterFacebook} alt="Facebook" />
+                  <Image width={41} height={41} src="/icons/footer-facebook.svg" alt="Facebook" />
                 </Link>
                 <Link href="https://www.instagram.com/quantapps_/" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src={FooterInstagram} alt="Instagram" />
+                  <Image width={41} height={41} src="/icons/footer-instagram.svg" alt="Instagram" />
                 </Link>
                 <Link href="https://t.me/quantapps" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src={TelegramOld} alt="Telegram" />
+                  <Image width={41} height={41} src="/icons/telegram-old.svg" alt="Telegram" />
                 </Link>
                 <Link href="https://www.linkedin.com/company/quant-apps" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src={LinkedInRounded} alt="LinkedIn" />
+                  <Image width={41} height={41} src="/icons/linked-in-rounded.svg" alt="LinkedIn" />
                 </Link>
               </div>
             </div>

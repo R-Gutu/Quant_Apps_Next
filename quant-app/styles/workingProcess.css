@@ -97,7 +97,7 @@
 }
 
 .working-process__accordion .faq__accordion-item.active .faq__accordion-close {
-    content: url(../assets/icons/Plus-white.svg);
+    content: url(/icons/Plus-white.svg);
 }
 
 .working-process__accordion .faq__accordion-item .faq__accordion-content p {

@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ClientStory from "./ClientStory"
 import { Link } from "@mui/material";
 import Image from 'next/image';
-import Fi from "@/src/assets/icons/fi.svg";
 import { useTranslations } from "next-intl";
 
 export default function Vouches() {
@@ -61,7 +60,7 @@ export default function Vouches() {
                 >
                     <span>{t("AllReviewsOn")}</span>
 
-                    <Image src={Fi} alt="" className="fiverr__icon" />
+                    <Image src="/icons/fi.svg" alt="" width={0} height={0} className="w-auto h-auto fiverr__icon" />
                 </Link>
             </div>
         </section>

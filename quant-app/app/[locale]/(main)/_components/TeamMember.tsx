@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import { Grid2, Card, Typography, Box, Link } from "@mui/material";
-import LinkedIn from "@/src/assets/images/linkedin.png";
+import TeamMemberType from '@/lib/types/TeamMemberType';
 
-import TeamMemberType from '@/src/types/TeamMemberType';
-
-export default async function TeamMember({ name, title, details, src, alt, link } : TeamMemberType) {
+export default async function TeamMember({ name, title, details, src, alt, link }: TeamMemberType) {
     return (
         <Card
             sx={{
@@ -39,11 +37,12 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                         }}
                     >
                         <Image
+                            width={142}
+                            height={0}
                             className="w-[105px] h-[112px] mui-md:w-[142px] mui-md:h-[151px]"
                             src={src}
                             alt={alt}
                         />
-
                         <Grid2 container direction="column">
                             <Typography
                                 sx={{
@@ -85,7 +84,8 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             width={50}
                             height={50}
                             style={{ width: "50%", height: "auto" }}
-                            src={LinkedIn} alt="linkedin" />
+                            src="/images/linkedin.png" alt="linkedin"
+                        />
                     </Link>
                 </Grid2>
 

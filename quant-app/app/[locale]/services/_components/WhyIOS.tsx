@@ -1,10 +1,10 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
-export default function WhyIOS({ src, title, text }: { src: StaticImageData, title: string, text: string }) {
+export default function WhyIOS({ src, title, text }: { src: string, title: string, text: string }) {
     return (
         <div className="why-ios__item">
             <div className="why-ios__item-img">
-                <Image src={src} alt="" />
+                <Image src={src} alt="" width={0} height={0} className='w-auto h-auto' />
             </div>
             <div className="why-ios__item-text">
                 <h4>{title}</h4>

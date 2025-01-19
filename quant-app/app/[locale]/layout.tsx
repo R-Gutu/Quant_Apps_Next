@@ -6,20 +6,20 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import "./globals.css";
-import "@/src/style/mainpage.css"
-import "@/src/style/seoSection.css"
-import "@/src/style/faqPage.css"
-import "@/src/style/nextProjectSection.css"
-import "@/src/style/footer.css"
-import "@/src/style/talkPopup.css"
-import "@/src/style/workingProcess.css"
-import "@/src/style/aboutPage.css"
-import "@/src/style/contactUsPage.css"
-import "@/src/style/swiper.css";
-import "@/src/style/header.css";
-import "@/src/style/services.css";
-import "@/src/style/whatWeOfferSection.css";
-import "@/src/style/main.css"
+import "@/styles/mainpage.css"
+import "@/styles/seoSection.css"
+import "@/styles/faqPage.css"
+import "@/styles/nextProjectSection.css"
+import "@/styles/footer.css"
+import "@/styles/talkPopup.css"
+import "@/styles/workingProcess.css"
+import "@/styles/aboutPage.css"
+import "@/styles/contactUsPage.css"
+import "@/styles/swiper.css";
+import "@/styles/header.css";
+import "@/styles/services.css";
+import "@/styles/whatWeOfferSection.css";
+import "@/styles/main.css"
 
 
 import Footer from "./_components/Footer";

@@ -8,9 +8,6 @@ import {
 import PropTypes from "prop-types";
 import Image from "next/image";
 
-import CommentBubble from "@/src/assets/images/comment-bubble.png";
-import MobileCommentBubble from "@/src/assets/images/mobile-comment-bubble.png";
-
 const ClientStory = (props : any) => {
   const { clientName, clientDescription, text } = props;
 
@@ -49,6 +46,9 @@ const ClientStory = (props : any) => {
         paddingX="30px"
       >
         <Image
+        width={0}
+        height={0}
+        unoptimized={true}
           style={{
             width: isSmallScreen ? "330px" : "520px",
             height: isSmallScreen ? "326px" : "220px",
@@ -58,7 +58,7 @@ const ClientStory = (props : any) => {
             left: "50%",
             transform: `translateX(-50%)`,
           }}
-          src={isSmallScreen ? MobileCommentBubble : CommentBubble}
+          src={isSmallScreen ? "/images/mobile-comment-bubble.png" : "/images/comment-bubble.png"}
           alt="bubble"
         />
 

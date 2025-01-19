@@ -5,13 +5,12 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Box, useMediaQuery } from "@mui/material";
-import { useEffect, useState, useRef } from "react";
-import useOnScreen from "@/lib/useOnScreen";
+import { useEffect, useState } from "react";
+import useOnScreen from "@/lib/utils/useOnScreen";
 
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
-import Logo from "@/src/assets/icons/logo.svg"
-import { cn, scrollToId } from "@/lib/utils";
+import { cn, scrollToId } from "@/lib/utils/utils";
 
 const AppToolbar = () => {
   const t = useTranslations("app-toolbar");
@@ -47,7 +46,7 @@ const AppToolbar = () => {
         <div className="container">
           <div className="header">
             <Link href="/" className="logo">
-              <Image id="logo" src={Logo} alt="Logo" />
+              <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto" alt="Logo" />
             </Link>
             <nav>
               <ul className="menu">

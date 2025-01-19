@@ -102,7 +102,7 @@ nav {
 }
 
 .burger {
-    content: url(../assets/icons/burger.svg);
+    content: url(/icons/burger.svg);
     display: none;
 }
 
@@ -135,7 +135,7 @@ nav {
 }
 
 .mobile-menu .close {
-    content: url(../assets/icons/cross.svg);
+    content: url(/icons/cross.svg);
     position: absolute;
     right: 20px;
     top: 20px;

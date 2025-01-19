@@ -79,7 +79,7 @@
 }
 
 .faq__accordion-close {
-    content: url(../assets/icons/Plus.svg);
+    content: url(/icons/Plus.svg);
     position: absolute;
     right: 25px;
     top: 50%;
@@ -97,7 +97,7 @@
     -webkit-transform: translateY(-50%) rotate(-45deg);
     -ms-transform: translateY(-50%) rotate(-45deg);
     transform: translateY(-50%) rotate(-45deg);
-    content: url(../assets/icons/Plus-white.svg);
+    content: url(/icons/Plus-white.svg);
 }
 
 .faq__accordion-item .faq__accordion-content {

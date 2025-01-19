@@ -3,8 +3,7 @@
 import { Grid2, Typography } from "@mui/material"
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image"
-
-import { getRoadMapByLanguage } from "@/src/utils/languageUtils";
+import { getRoadMapByLanguage } from "@/lib/utils/languageUtils";
 import { useState } from "react";
 
 const TimeLine = () => {
@@ -65,7 +64,7 @@ const TimeLine = () => {
           />
         </Grid2>
 
-        <Image width={0} style={{ width: '100%' }} src={roadMap} alt="RoadMap" key={roadMap} />
+        <Image width={0} height={0} className="w-full h-auto" src={roadMap} alt="RoadMap" key={roadMap} />
 
         <Grid2
           container

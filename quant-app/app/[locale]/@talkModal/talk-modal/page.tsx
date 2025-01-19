@@ -4,12 +4,7 @@ import {
   handleFiles,
   validateEmail,
   validateName,
-} from "@/src/utils/validateTalkModal";
-
-import Staple from "@/src/assets/icons/staple.svg";
-import LogoBlack from "@/src/assets/icons/black-logo.svg";
-import ModalBg from "@/src/assets/images/modal-bg.png";
-import ModalImage from "@/src/assets/images/modal-img.png";
+} from "@/lib/utils/validateTalkModal";
 import emailjs from '@emailjs/browser';
 import { Modal } from '@mui/material';
 import Image from 'next/image';
@@ -214,10 +209,10 @@ const page = () => {
         ></span>
         <div className="talk-popup__content">
           <div className="talk-popup__left">
-            <Image src={LogoBlack} alt="" className="talk-popup__logo" />
+            <Image src="/icons/black-logo.svg" alt="" width={0} height={0} className="w-auto h-auto talk-popup__logo" />
             <div className="talk-popup__left-content">
               <h1>Let’s craft something unforgettable together!</h1>
-              <Image src={ModalImage} alt="" />
+              <Image src="/images/modal-img.png" width={0} height={0} className="w-auto h-auto" alt="" unoptimized={true} />
               <p>
                 Ready to kickstart your project? Complete the form to schedule a
                 discovery call, where we’ll dive into your goals and ideas.
@@ -225,7 +220,7 @@ const page = () => {
                 timeline and pricing.
               </p>
             </div>
-            <Image src={ModalBg} alt="" className="talk-popup__left-img" />
+            <Image src="/images/modal-bg.png" alt="" width={0} height={0} className="w-auto h-auto talk-popup__left-img" unoptimized={true} />
           </div>
           <div className="talk-popup__right">
             <form className="talk-popup__form" onSubmit={handleSubmit}>
@@ -415,7 +410,7 @@ const page = () => {
                   onDrop={onDropZoneDrop}
                 >
                   <div className="talk-popup__add-attachment-info">
-                    <Image src={Staple} alt="" />
+                    <Image src="/icons/staple.svg" width={0} height={0} className="h-auto w-auto" alt="" />
                     <p>
                       Drag your file(s) or <span>browse</span>
                     </p>

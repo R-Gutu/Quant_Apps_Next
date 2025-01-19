@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Box, Grid2, Typography } from "@mui/material";
 
 import NextProject from "@/app/[locale]/_sections/NextProject";
-import Blur from "@/src/components/Blur";
+import Blur from "@/components/Blur";
 
 const PrivacyPolicy = async () => {
   const t = await getTranslations("privacy-policy");

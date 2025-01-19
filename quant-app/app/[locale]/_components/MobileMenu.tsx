@@ -6,13 +6,6 @@ import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 
 import LanguageSwitcher from "./LanguageSwitcher";
-
-import FooterFacebook from "@/src/assets/icons/footer-facebook.svg";
-import FooterInstagram from "@/src/assets/icons/footer-instagram.svg";
-import TikTok from "@/src/assets/icons/tik-tok.svg";
-import Telegram from "@/src/assets/icons/Telegram.svg";
-import WhatsApp from "@/src/assets/icons/whats-app.svg";
-import LinkedIn from "@/src/assets/icons/linked-in.svg";
 import { useEffect, useState } from "react";
 
 const MobileMenu = () => {
@@ -123,7 +116,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src={FooterFacebook} alt="Facebook" />
+          <Image width={30} height={30} src="/icons/footer-facebook.svg" alt="Facebook" />
         </Link>
 
         <Link 
@@ -134,7 +127,7 @@ const MobileMenu = () => {
           <Image
             width={30}
             height={30}
-            src={FooterInstagram}
+            src="/icons/footer-instagram.svg"
             alt="Instagram"
           />
         </Link>
@@ -144,7 +137,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src={LinkedIn} alt="LinkedIn" />
+          <Image width={30} height={30} src="/icons/linked-in.svg" alt="LinkedIn" />
         </Link>
 
         <Link 
@@ -152,7 +145,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src={TikTok} alt="TikTok" />
+          <Image width={30} height={30} src="/icons/tik-tok.svg" alt="TikTok" />
         </Link>
 
         <Link 
@@ -160,7 +153,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src={Telegram} alt="Telegram" />
+          <Image width={30} height={30} src="/icons/Telegram.svg" alt="Telegram" />
         </Link>
 
         <Link 
@@ -168,7 +161,7 @@ const MobileMenu = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image width={30} height={30} src={WhatsApp} alt="WhatsApp" />
+          <Image width={30} height={30} src="/icons/whats-app.svg" alt="WhatsApp" />
         </Link>
       </Grid2>
 

@@ -1,6 +1,4 @@
 import { Grid2, Typography } from "@mui/material"
-import Roma from "@/src/assets/images/Roma.png";
-import Veaceslav from "@/src/assets/images/Veaceslav.png";
 import { getTranslations } from "next-intl/server";
 import TeamMember from "./TeamMember";
 
@@ -62,7 +60,7 @@ export default async function Team() {
             >
                 <TeamMember
                     name="Roman Gutu"
-                    src={Roma}
+                    src="/images/Roma.png"
                     alt="Roma"
                     title={t("CeoAndFounder")}
                     link="https://www.linkedin.com/in/roman-gutu-920693229/"
@@ -70,7 +68,7 @@ export default async function Team() {
                 />
                 <TeamMember
                     name="Veaceslav Soltan"
-                    src={Veaceslav}
+                    src="/images/Veaceslav.png"
                     alt="Veaceslav"
                     title={t("CoFounder")}
                     link="https://www.linkedin.com/in/veaceslav-soltan-290072261/"

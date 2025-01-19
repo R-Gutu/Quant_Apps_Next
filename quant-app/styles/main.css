@@ -617,7 +617,7 @@
     }
 
     .mobile-about-text.active .mobile-about-text__btn:hover {
-        content: url(../assets/icons/about-arrow-colapse.svg);
+        content: url(/icons/about-arrow-colapse.svg);
         background-color: white;
         border: 1px solid white;
     }

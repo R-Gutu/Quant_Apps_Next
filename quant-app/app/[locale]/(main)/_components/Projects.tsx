@@ -3,68 +3,56 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 import { Button, Typography } from "@mui/material";
 import Project from "./Project";
-
-import Arrow from "@/src/assets/icons/arrow.svg";
-import Phone1 from "@/src/assets/images/phone-1.png";
-import Phone2 from "@/src/assets/images/phone-2.png";
-import Phone3 from "@/src/assets/images/phone-3.png";
-import Phone4 from "@/src/assets/images/phone-4.png";
-import Phone5 from "@/src/assets/images/phone-5.png";
-import Phone6 from "@/src/assets/images/phone-6.png";
-import Phone7 from "@/src/assets/images/phone-7.png";
-import Phone8 from "@/src/assets/images/phone-8.png";
-import Phone9 from "@/src/assets/images/phone-9.png";
 import { useTranslations } from "next-intl";
-
-import ProjectType from '@/src/types/ProjectType';
-import { scrollToId } from "@/lib/utils";
+import ProjectType from '@/lib/types/ProjectType';
+import { scrollToId } from "@/lib/utils/utils";
 
 
 export default function Projects() {
     const t = useTranslations('main');
     const allProjects: ProjectType[] = [
         {
-            src: Phone1,
+            src: "/images/phone-1.png",
             title: "Meditation Player App",
             description: t("MeditationPlayerAppDescription"),
         },
         {
-            src: Phone2,
+            src: "/images/phone-2.png",
             title: "Market Delivery Grocery App",
             description: t("MarketDeliveryGroceryAppDescription"),
         },
         {
-            src: Phone3,
+            src: "/images/phone-3.png",
             title: "Home Serveware Shopping App",
             description: t("HomeServeWareShoppingAppDescription"),
         },
         {
-            src: Phone4,
+            src: "/images/phone-4.png",
             title: "Explore the World Travel App",
             description: t("ExploreWorldTravelAppDescription"),
         },
         {
-            src: Phone5,
+            src: "/images/phone-5.png",
             title: "Barkcheck",
             description: t("BarkCheckDescription"),
         },
         {
-            src: Phone6,
+            src: "/images/phone-6.png",
             title: "Tripflick App",
             description: t("TripFlickAppDescription"),
         },
         {
-            src: Phone7,
+            src: "/images/phone-7.png",
             title: "Shape Your Body Fitness App",
             description: t("ShapeYourBodyFitnessAppDescription"),
         },
         {
-            src: Phone8,
+            src: "/images/phone-8.png",
             title: "Hotel Management Dashboard",
             description: t("HotelManagementDashboardDescription"),
         },
         {
-            src: Phone9,
+            src: "/images/phone-9.png",
             title: "Quant-Apps Website",
             description: t("QuantAppsWebsiteDescription"),
         },
@@ -146,8 +134,11 @@ export default function Projects() {
                     {showAll ? t("Collapse") : t("ShowMore")}
                     {showAll && (
                         <Image
-                            src={Arrow}
+                            src="/icons/arrow.svg"
                             alt="Arrow"
+                            width={0}
+                            height={0}
+                            className="w-auto h-auto"
                         />
                     )}
                 </Typography>

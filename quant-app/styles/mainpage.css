@@ -1,77 +1,77 @@
 /* Font Faces */
 @font-face {
     font-family: 'ClashDisplay';
-    src: url(../assets/fonts/ClashDisplay-Bold.ttf);
+    src: url(/fonts/ClashDisplay-Bold.ttf);
     font-style: normal;
     font-weight: 700;
   }
   
   @font-face {
     font-family: 'ClashDisplay';
-    src: url(../assets/fonts/ClashDisplay-Semibold.ttf);
+    src: url(/fonts/ClashDisplay-Semibold.ttf);
     font-style: normal;
     font-weight: 600;
   }
   
   @font-face {
     font-family: 'ClashDisplay';
-    src: url(../assets/fonts/ClashDisplay-Medium.ttf);
+    src: url(/fonts/ClashDisplay-Medium.ttf);
     font-style: normal;
     font-weight: 500;
   }
   
   @font-face {
     font-family: 'ClashDisplay';
-    src: url(../assets/fonts/ClashDisplay-Regular.ttf);
+    src: url(/fonts/ClashDisplay-Regular.ttf);
     font-style: normal;
     font-weight: 400;
   }
   
   @font-face {
     font-family: 'ClashDisplay';
-    src: url(../assets/fonts/ClashDisplay-Light.ttf);
+    src: url(/fonts/ClashDisplay-Light.ttf);
     font-style: normal;
     font-weight: 300;
   }
   
   @font-face {
     font-family: 'Poppins';
-    src: url(../assets/fonts/Poppins-Regular.ttf);
+    src: url(/fonts/Poppins-Regular.ttf);
     font-style: normal;
     font-weight: 400;
   }
   
   @font-face {
     font-family: 'Inter';
-    src: url(../assets/fonts/Inter_28pt-Bold.ttf);
+    src: url(/fonts/Inter_28pt-Bold.ttf);
     font-style: normal;
     font-weight: 700;
   }
   
   @font-face {
     font-family: 'Inter';
-    src: url(../assets/fonts/Inter_28pt-SemiBold.ttf);
+    src: url(/fonts/Inter_28pt-SemiBold.ttf);
     font-style: normal;
     font-weight: 600;
   }
   
   @font-face {
     font-family: 'Inter';
-    src: url(../assets/fonts/Inter_28pt-Regular.ttf);
+    src: url(/fonts/Inter_28pt-Regular.ttf);
     font-style: normal;
     font-weight: 400;
   }
   
   @font-face {
     font-family: 'IBM Plex Sans';
-    src: url(../assets/fonts/IBMPlexSans-Medium.ttf);
+    src: url(/fonts/IBMPlexSans-Medium.ttf);
     font-style: normal;
     font-weight: 500;
   }
   
   @font-face {
     font-family: 'Red Hat Display';
-    src: url(../assets/fonts/RedHatDisplay-Regular.ttf);
+    src: url(/fonts/RedHatDisplay-Regular.ttf);
     font-style: normal;
     font-weight: 400;
   }
@@ -272,7 +272,7 @@
   
   .banner__video-play span::after,
   .banner__video-play__mobile span::after {
-    content: url(../assets/icons/button-play.svg);
+    content: url(/icons/button-play.svg);
     position: absolute;
     top: calc(50% + 2px);
     left: 50%;
@@ -495,7 +495,7 @@
 }
 
 .our-work__btn.active:hover span::after {
-    content: url(../assets/icons/arrow-white.svg);
+    content: url(/icons/arrow-white.svg);
 }
   
   /* Client Success Stories */
@@ -626,7 +626,7 @@
 }
 
 .fiverr__icon:hover {
-    cursor: url(../assets/icons/cursor.svg), pointer;
+    cursor: url(/icons/cursor.svg), pointer;
 }
 
 .client-success-stories__blur {
@@ -679,7 +679,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    content: url(../assets/icons/cross.svg);
+    content: url(/icons/cross.svg);
     cursor: pointer;
     -webkit-transition: -webkit-transform 0.7s ease;
     transition: -webkit-transform 0.7s ease;

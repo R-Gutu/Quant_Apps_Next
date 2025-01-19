@@ -2,21 +2,21 @@ const MAX_FILES = 10;
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50 MB
 const ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'pdf', 'doc', 'docx'];
 
-export const validateName = (name) => {
+export const validateName = (name : string) => {
     const nameRegex = /^[a-zA-Z]{2,}$/;
     return nameRegex.test(name);
 };
 
-export const validateEmail = (email) => {
+export const validateEmail = (email : string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 };
 
-export const handleFiles = (files) => {
+export const handleFiles = (files : any) => {
     const fileList = document.getElementById("fileList");
-
+    if(!fileList) return;
     fileList.innerHTML = "";
-    const validFiles = [];
+    const validFiles : any[] = [];
     let totalFiles = files.length;
 
     if (totalFiles > MAX_FILES) {
@@ -24,7 +24,7 @@ export const handleFiles = (files) => {
         return;
     }
 
-    Array.from(files).forEach((file) => {
+    Array.from(files).forEach((file : any) => {
         const fileExtension = file.name.split('.').pop().toLowerCase();
         if (!ALLOWED_EXTENSIONS.includes(fileExtension)) {
             fileList.innerHTML += `<div class="error">${file.name} has an unsupported file type.</div>`;

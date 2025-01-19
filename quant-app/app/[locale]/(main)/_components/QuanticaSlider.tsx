@@ -2,9 +2,6 @@
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import Quantica from "@/src/assets/icons/Quantica.svg";
-import QuanticaFill from "@/src/assets/icons/Quantica-fill.svg";
-
 
 export default function QuanticaSlider() {
     return(
@@ -22,27 +19,27 @@ export default function QuanticaSlider() {
           modules={[Autoplay]}
         >
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={Quantica} alt="" />
+            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src={QuanticaFill} alt="" />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
           </SwiperSlide>
         </Swiper>
       </div>

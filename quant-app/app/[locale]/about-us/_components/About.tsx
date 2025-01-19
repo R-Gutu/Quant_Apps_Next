@@ -3,22 +3,21 @@
 import { Button, Grid2, Typography, useMediaQuery } from "@mui/material"
 import { useTranslations } from "next-intl";
 import Image from "next/image"
-import AppPhone from "@/src/assets/images/app-phone.png";
 import { useState } from "react";
 
 
 const About = () => {
-    const t = useTranslations("about-us");
-    const mediumScreen = useMediaQuery("(max-width:900px)");
-    const [expandAboutUsText, setExpandAboutUsText] = useState(false);
-  
-  
-    const toggleExpand = () => {
-      setExpandAboutUsText(!expandAboutUsText);
-    };
+  const t = useTranslations("about-us");
+  const mediumScreen = useMediaQuery("(max-width:900px)");
+  const [expandAboutUsText, setExpandAboutUsText] = useState(false);
+
+
+  const toggleExpand = () => {
+    setExpandAboutUsText(!expandAboutUsText);
+  };
   return (
     <div>
-        <div className="about container">
+      <div className="about container">
         <div className="about-info">
           <Grid2
             container
@@ -32,13 +31,11 @@ const About = () => {
             }}
           >
             <Grid2 container size={3} alignContent="start" height="fit-content">
-              <Image
-                style={{
-                  maxWidth: "400px",
-                  width: "140%",
-                  objectFit: "contain",
-                }}
-                src={AppPhone}
+            <Image
+                width={400}
+                height={0}
+                className=" max-w-[400px] w-[140%] object-contain"
+                src="/images/app-phone.png"
                 alt="Iphone"
               />
             </Grid2>

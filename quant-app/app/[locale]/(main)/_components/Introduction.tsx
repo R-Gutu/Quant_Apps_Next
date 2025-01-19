@@ -1,8 +1,7 @@
 import { Typography, Box } from "@mui/material"
 import Image from 'next/image'
-import Ipad from "@/src/assets/images/ipad.png";
 import { getTranslations, getLocale } from "next-intl/server";
-import { getIntroByLanguage } from "@/src/utils/languageUtils";
+import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
 
 export default async function Introduction() {
@@ -77,7 +76,8 @@ export default async function Introduction() {
 
                     <div className="banner__video">
                         <Image
-                            src={Ipad}
+                            src="/images/ipad.png"
+                            fill
                             alt="Ipad"
                             loading="lazy"
                             className="banner__video-img"

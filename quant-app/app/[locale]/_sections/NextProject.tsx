@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import Hand3d from "@/src/assets/icons/hand3d.svg";
 
 const NextProject = async () => {
   const t = await getTranslations("next-project");
@@ -10,10 +9,10 @@ const NextProject = async () => {
     <div className="mt-[10px] overflow-hidden relative flex justify-center py-[100px] px-[50px] font-clash">
       <div className="w-10/12 bg-[#515DEF] rounded-[24px] h-[459px] flex items-center justify-start px-[50px] pb-[50px]
         max-lg:h-[550px] max-lg:pb-[30px] max-lg:px-[20px] max-lg:text-center">
-        
+
         <div className="ml-[100px] flex flex-col gap-[20px] w-1/2
-          max-[900px]:ml-0 max-[900px]:items-center max-[900px]:ml-[20px]">
-          
+          max-[900px]:items-center max-[900px]:ml-[20px]">
+
           <h1 className="font-clash text-white font-bold text-[40px] leading-[36px] text-start
           max-[1000px]:mt-[30px] max-[900px]:text-[32px] max-[900px]:leading-[32px]
             max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[28px] max-[900px]:text-center"
@@ -43,7 +42,9 @@ const NextProject = async () => {
           max-[1100px]:w-[400px]
           max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[900px]:w-[330px]">
           <Image
-            src={Hand3d}
+            width={0}
+            height={0}
+            src="/icons/hand3d.svg"
             alt="Hand"
             className="w-full h-auto"
           />

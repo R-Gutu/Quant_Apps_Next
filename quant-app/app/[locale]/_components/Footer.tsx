@@ -1,34 +1,16 @@
-"use client"
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { usePathname, useRouter } from "next/navigation";
-import { Box, Grid2, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid2, Typography } from "@mui/material";
 import AppLink from '@/components/AppLink'
-import { scrollToId } from "@/lib/utils/utils";
 import SocialLinksType from "@/lib/types/SocialLinksType";
+import ScrollLink from "@/components/ScrollLink";
 
+const Footer = async () => {
+  const tToolbar = await getTranslations("app-toolbar");
+  const tFooter = await getTranslations("footer");
 
-const Footer = () => {
-  const tToolbar = useTranslations("app-toolbar");
-  const tFooter = useTranslations("footer");
-  const pathname = usePathname();
-  const router = useRouter();
-  const matches = useMediaQuery("(max-width:768px)");
-
-  const handleNavigation = (path: string, scrollTo?: string) => {
-    if (path === pathname && scrollTo) {
-      scrollToId(scrollTo);
-    } else {
-      router.push(path);
-      if (scrollTo) {
-        scrollToId(scrollTo);
-      }
-    }
-  };
-
-  const socialLinks : SocialLinksType[] = [
+  const socialLinks: SocialLinksType[] = [
     { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/icons/footer-facebook.svg", alt: "Facebook" },
     { href: "https://www.instagram.com/quantapps_/", icon: "/icons/footer-instagram.svg", alt: "Instagram" },
     { href: "https://www.linkedin.com/company/quant-apps", icon: "/icons/linked-in.svg", alt: "LinkedIn" },
@@ -70,34 +52,32 @@ const Footer = () => {
             },
           }}
         >
-          {!matches && (
-            <Grid2
-              container
-              direction="row"
-              justifyContent="end"
-              gap="20px"
-              mb="50px"
-              mr="65px"
-            >
-              {socialLinks.map((link) => (
-                <Link
-                  key={link.alt}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    width={30}
-                    height={30}
-                    className="h-[30px] w-[30px]"
-                    src={link.icon}
-                    alt={link.alt}
-                  />
-                </Link>
-              ))}
-            </Grid2>
-          )}
-
+          <Grid2
+            className="hidden max-w-[768px]:block"
+            container
+            direction="row"
+            justifyContent="end"
+            gap="20px"
+            mb="50px"
+            mr="65px"
+          >
+            {socialLinks.map((link) => (
+              <Link
+                key={link.alt}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  width={30}
+                  height={30}
+                  className="h-[30px] w-[30px]"
+                  src={link.icon}
+                  alt={link.alt}
+                />
+              </Link>
+            ))}
+          </Grid2>
           <div className="footer">
             <Link href="/" className="footer__logo">
               <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
@@ -141,14 +121,24 @@ const Footer = () => {
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("Company")}</p>
                 <AppLink href="/about-us">{tToolbar("AboutUs")}</AppLink>
-                <p
-                  data-id="projects"
+
+                <ScrollLink
+                  id="projects"
+                  elementId="projects"
                   className="footer__column-link"
-                  onClick={() => handleNavigation("/", "projects")}
+                  href="/#projects"
                   style={{ cursor: 'pointer' }}
                 >
                   {tToolbar("Projects")}
-                </p>
+                </ScrollLink>
+                {/* <Link
+                  data-id="projects"
+                  className="footer__column-link"
+                  href="/#projects"
+                  style={{ cursor: 'pointer' }}
+                >
+                  {tToolbar("Projects")}
+                </Link> */}
                 <AppLink href="/services">{tToolbar("Services")}</AppLink>
               </div>
 

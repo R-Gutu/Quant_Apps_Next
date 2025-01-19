@@ -24,6 +24,7 @@ const AppToolbar = () => {
     if (window.location.hash) {
       const element = document.getElementById(window.location.hash.slice(1));
       if (element) element.scrollIntoView({ behavior: 'smooth' });
+      console.log("SCROLLING:", window.location.hash.slice(1))
     }
 
     const pathSegments = currentPathname.split('/');

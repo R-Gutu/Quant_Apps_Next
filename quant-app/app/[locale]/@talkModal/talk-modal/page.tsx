@@ -10,7 +10,7 @@ import { Modal } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from "@/i18n/routing";
 
-const page = () => {
+const Page = () => {
   const budget1Prices = [
     "$5.000-$10.000",
     "$3.000-$5.000",
@@ -439,4 +439,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

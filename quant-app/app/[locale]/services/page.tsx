@@ -5,7 +5,7 @@ import WhatWeOffer from "../_sections/WhatWeOffer";
 import Accordion from "./_components/Accordion";
 import WhyIOS from "./_components/WhyIOS";
 
-const Services = async () => {
+const Page = async () => {
   const t = await getTranslations("services");
 
   return (
@@ -69,4 +69,4 @@ const Services = async () => {
   );
 };
 
-export default Services;
+export default Page;

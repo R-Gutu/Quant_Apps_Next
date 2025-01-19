@@ -11,7 +11,7 @@ import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
 
-const MainPage = async () => {
+const Page = async () => {
   const t = await getTranslations("main");
 
   return (
@@ -38,4 +38,4 @@ const MainPage = async () => {
   );
 };
 
-export default MainPage;
+export default Page;

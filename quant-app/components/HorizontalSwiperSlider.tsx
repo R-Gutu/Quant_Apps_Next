@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import "../style/main.css";
 import "../style/swiper.css";
 
-const HorizontalSwiperSlider = (props) => {
+const HorizontalSwiperSlider = (props : any) => {
   const {
     value,
     slidesContent,
@@ -33,7 +33,7 @@ const HorizontalSwiperSlider = (props) => {
   const buttonNextId = `swiper-next-${uniqueId}`;
 
   const handleSlideChange = useCallback(
-    (swiper) => {
+    (swiper : any) => {
       const newValue = slidesContent[swiper.activeIndex];
       if (newValue === currentValueRef.current) return;
 

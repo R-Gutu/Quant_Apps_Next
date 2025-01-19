@@ -5,7 +5,7 @@ import { Box, Grid2, Typography } from "@mui/material";
 import NextProject from "@/app/[locale]/_sections/NextProject";
 import Blur from "@/components/Blur";
 
-const TermsOfUse = async () => {
+const Page = async () => {
   const t = await getTranslations("terms-of-use");
 
   return (
@@ -207,4 +207,4 @@ const TermsOfUse = async () => {
   );
 };
 
-export default TermsOfUse;
+export default Page;

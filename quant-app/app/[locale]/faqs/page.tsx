@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import FaqAccordionItem from "./_components/FaqAccordionItem"
 
-const Faqs = async () => {
+const Page = async () => {
   const t = await getTranslations("faqs");
 
   return (
@@ -64,4 +64,4 @@ const Faqs = async () => {
   );
 };
 
-export default Faqs;
+export default Page;

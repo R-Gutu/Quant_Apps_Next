@@ -11,7 +11,7 @@ import emailjs from '@emailjs/browser';
 
 import Image from 'next/image';
 
-const ContactUs = () => {
+const Page = () => {
   const t = useTranslations("contact-us");
 
   const [name, setName] = useState("");
@@ -160,4 +160,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Page;

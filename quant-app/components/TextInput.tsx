@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import CustomOutlinedTextField from "./CustomOutlinedTextField";
 
-const TextInput = (props) => {
+const TextInput = (props : any) => {
   const {
     label,
     placeholder,

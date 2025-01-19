@@ -12,7 +12,8 @@ export const validateEmail = (email : string): boolean => {
     return emailRegex.test(email);
 };
 
-export const handleFiles = (files : FileList): void => {
+export const handleFiles = (files : FileList | null): void => {
+    if(!files) return;
     const fileList = document.getElementById("fileList");
     if(!fileList) return;
     fileList.innerHTML = "";

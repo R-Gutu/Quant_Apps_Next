@@ -106,16 +106,16 @@ const Page = () => {
     );
   };
 
-  const onDropZoneDragOver = (e : any) => {
+  const onDropZoneDragOver = (e : React.DragEvent) => {
     e.preventDefault();
     e.currentTarget.classList.add("dragover");
   };
 
-  const onDropZoneDragLeave = (e : any) => {
+  const onDropZoneDragLeave = (e : React.DragEvent) => {
     e.currentTarget.classList.remove("dragover");
   };
 
-  const onDropZoneDrop = (e : any) => {
+  const onDropZoneDrop = (e : React.DragEvent) => {
     e.preventDefault();
     e.currentTarget.classList.remove("dragover");
 
@@ -123,8 +123,8 @@ const Page = () => {
     handleFiles(files);
   };
 
-  const onFileInputChange = (e : any) => {
-    const files = e.currentTarget.files;
+  const onFileInputChange = (e : React.ChangeEvent) => {
+    const files = (e.currentTarget as HTMLInputElement).files;
     handleFiles(files);
   };
 
@@ -132,7 +132,7 @@ const Page = () => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
   }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox])
 
-  const handleSubmit = (e : any) => {
+  const handleSubmit = (e : React.FormEvent) => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
     e.preventDefault();
 
@@ -231,7 +231,7 @@ const Page = () => {
                     type="text"
                     placeholder="What’s your first name?"
                     value={firstName}
-                    onInput={(event : any) => onFirstNameChanged(event.target.value)}
+                    onInput={(event : React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
                   />
                 </div>
                 <div className="talk-popup__from-row">
@@ -240,7 +240,7 @@ const Page = () => {
                     type="text"
                     placeholder="What’s your last name?"
                     value={lastName}
-                    onInput={(event : any) => onLastNameChanged(event.target.value)}
+                    onInput={(event : React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
                   />
                 </div>
               </div>
@@ -250,7 +250,7 @@ const Page = () => {
                   type="email"
                   placeholder="brianclark@gmail.com"
                   value={email}
-                  onInput={(event : any) => onEmailChanged(event.target.value)}
+                  onInput={(event : React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
                 />
               </div>
               <div className="talk-popup__from-row">

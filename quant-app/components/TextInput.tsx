@@ -3,7 +3,17 @@ import PropTypes from "prop-types";
 
 import CustomOutlinedTextField from "./CustomOutlinedTextField";
 
-const TextInput = (props : any) => {
+interface TextInputProps {
+  label: React.ReactNode;
+  placeholder: string;
+  placeholderSx?: object;
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  inputSx?: object | object[]; // Correctly typed input styles
+  frameColor?: string;
+}
+
+const TextInput = (props : TextInputProps) => {
   const {
     label,
     placeholder,
@@ -19,7 +29,7 @@ const TextInput = (props : any) => {
       padding: 0,
       "&::placeholder": placeholderSx,
     },
-    ...(Array.isArray(props.inputSx) ? inputSx : [inputSx]),
+    ...(Array.isArray(inputSx) ? inputSx : inputSx ? [inputSx] : []),
   ];
 
   return (

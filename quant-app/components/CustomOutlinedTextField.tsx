@@ -1,9 +1,26 @@
-import React from "react";
+import React, { FocusEventHandler, ChangeEventHandler } from "react";
+import { SxProps } from "@mui/system";
+import { TextField, TextFieldProps } from "@mui/material";
 
-import { TextField } from "@mui/material";
-import PropTypes from "prop-types";
+interface CustomOutlinedTextFieldProps {
+  sx?: SxProps;
+  label?: React.ReactNode;
+  slotProps?: TextFieldProps["slotProps"];
+  type?: string;
+  value?: string;
+  onFocus?: FocusEventHandler<HTMLInputElement>;
+  onBlur?: FocusEventHandler<HTMLInputElement>;
+  frameOnHoverSx?: SxProps;
+  frameOnFocusSx?: SxProps;
+  labelOnFocusedSx?: SxProps;
+  frameSx?: SxProps;
+  placeholder: string;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
+  inputSx?: SxProps;
+  inputAdornmentPositionEndSx?: SxProps;
+}
 
-const CustomOutlinedTextField = (props : any) => {
+const CustomOutlinedTextField: React.FC<CustomOutlinedTextFieldProps> = (props) => {
   const {
     sx,
     label,
@@ -19,7 +36,7 @@ const CustomOutlinedTextField = (props : any) => {
     placeholder,
     onChange,
     inputSx,
-    inputAdornmentPositionEndSx
+    inputAdornmentPositionEndSx,
   } = props;
 
   return (
@@ -49,24 +66,6 @@ const CustomOutlinedTextField = (props : any) => {
       onChange={onChange}
     />
   );
-};
-
-CustomOutlinedTextField.propTypes = {
-  sx: PropTypes.any,
-  label: PropTypes.node,
-  slotProps: PropTypes.any,
-  type: PropTypes.string,
-  value: PropTypes.string,
-  onFocus: PropTypes.func,
-  onBlur: PropTypes.func,
-  frameOnHoverSx: PropTypes.any,
-  frameOnFocusSx: PropTypes.any,
-  labelOnFocusedSx: PropTypes.any,
-  frameSx: PropTypes.any,
-  placeholder: PropTypes.node.isRequired,
-  onChange: PropTypes.func,
-  inputSx: PropTypes.any,
-  inputAdornmentPositionEndSx: PropTypes.any
 };
 
 export default CustomOutlinedTextField;

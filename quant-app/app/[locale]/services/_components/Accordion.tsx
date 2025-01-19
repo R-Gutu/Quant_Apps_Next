@@ -1,7 +1,8 @@
 'use client'
 
-const onClickToggle = (e: any) => {
-    e.currentTarget.closest(".faq__accordion-item").classList.toggle("active");
+const onClickToggle = (e: React.MouseEvent<HTMLElement>) => {
+    if (!e.currentTarget) return;
+    e.currentTarget.closest(".faq__accordion-item")?.classList.toggle("active");
 };
 
 export default function Accordion({ num, title, text }: { num: number, title: string, text: string }) {

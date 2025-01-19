@@ -18,7 +18,7 @@ export const handleFiles = (files : FileList | null): void => {
     if(!fileList) return;
     fileList.innerHTML = "";
     const validFiles : File[] = [];
-    let totalFiles = files.length;
+    const totalFiles = files.length;
 
     if (totalFiles > MAX_FILES) {
         fileList.innerHTML = `<div class="error">You can upload a maximum of ${MAX_FILES} files.</div>`;

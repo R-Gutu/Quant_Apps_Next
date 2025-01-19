@@ -125,9 +125,9 @@ const Footer = async () => {
                 <ScrollLink
                   id="projects"
                   elementId="projects"
-                  className="footer__column-link"
+                  // className="footer__column-link"
                   href="/#projects"
-                  style={{ cursor: 'pointer' }}
+                  // style={{ cursor: 'pointer' }}
                 >
                   {tToolbar("Projects")}
                 </ScrollLink>

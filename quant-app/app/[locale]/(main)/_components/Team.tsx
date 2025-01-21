@@ -8,11 +8,6 @@ export default async function Team() {
     return (
         <Grid2 container direction="column">
             <Grid2
-                sx={{
-                    ml: { xs: "0px", sm: "40px", md: "40px", lg: "40px" },
-                    mb: { xs: "20px", sm: "20px", md: "20px", lg: "0px" }
-
-                }}
                 container
                 direction="row"
                 alignItems="center"
@@ -26,8 +21,6 @@ export default async function Team() {
                         color: "white",
                         fontWeight: "600",
                         fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                        ml: { xs: "79px", sm: "-0px", md: "0px", lg: "0px" },
-                        // mt: {xs: "-60px", sm: "-0px", md: "0px", lg: "0px"}
                     }}
                 >
                     {t("Team")}
@@ -41,7 +34,6 @@ export default async function Team() {
                         fontWeight: "400",
                         fontFamily: "Poppins",
                         textAlign: { xs: "center", sm: "center", md: "center", lg: "left" },
-                        ml: { xs: "27px", sm: "-0px", md: "0px", lg: "0px" },
                     }}
                 >
                     {t("TeamDescription")}
@@ -53,10 +45,8 @@ export default async function Team() {
                 direction="row"
                 gap="50px"
                 justifyContent="center"
-                sx={{
-                    ml: { xs: "-5px", sm: "20px", md: "20px", lg: "20px" },
-                    mt: { xs: "20px", sm: "0px", md: "0px", lg: "0px" },
-                }}
+                alignItems="center"
+                mt="20px"
             >
                 <TeamMember
                     name="Roman Gutu"

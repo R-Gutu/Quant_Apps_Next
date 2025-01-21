@@ -95,23 +95,11 @@ const WhatWeOffer = async () => {
 
           <Blur
             color="rgba(186, 8, 255, 0.8156512605042017)"
-            left="-20%"
-            top="0px"
-            width="400px"
-            height="400px"
-            filter="blur(160px)"
-            sx={{
-              opacity: {
-                xs: 0,
-                sm: 0,
-                md: 1,
-              },
-              visibility: {
-                xs: "hidden",
-                sm: "hidden",
-                md: "visible",
-              },
-            }}
+            left="-30%"
+            top="-15%"
+            width="600px"
+            height="600px"
+            filter="blur(140px)"
           />
         </Box>
 

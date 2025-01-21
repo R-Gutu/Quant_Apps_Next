@@ -6,6 +6,7 @@ import Project from "./Project";
 import { useTranslations } from "next-intl";
 import ProjectType from '@/lib/types/ProjectType';
 import { scrollToId } from "@/lib/utils/utils";
+import Blur from "@/components/Blur";
 
 
 export default function Projects() {
@@ -142,6 +143,26 @@ export default function Projects() {
                     )}
                 </Typography>
             </Button>
+            <Blur
+            color="#9C08FF99"
+            right="0%"
+            bottom="25%"
+            width="600px"
+            height="600px"
+            filter="blur(140px)"
+          />
+            <Blur
+            color="#1E50FF4D"
+            left="-10%"
+            top="20%"
+            width="800px"
+            height="800px"
+            filter="blur(100px)"
+          />
+            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[440px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[540px] left-[500px] why-ios__bg-img max-[900px]:hidden opacity-50" />
+            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[600px] right-[350px] why-ios__bg-img max-[900px]:hidden" />
+            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[1360px] right-[350px] why-ios__bg-img max-[900px]:hidden opacity-55" />
         </div>
     );
 }

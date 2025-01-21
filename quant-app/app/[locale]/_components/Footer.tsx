@@ -53,7 +53,7 @@ const Footer = async () => {
           }}
         >
           <Grid2
-            className="hidden max-w-[768px]:block"
+            className="max-[768px]:!hidden"
             container
             direction="row"
             justifyContent="end"
@@ -125,20 +125,10 @@ const Footer = async () => {
                 <ScrollLink
                   id="projects"
                   elementId="projects"
-                  // className="footer__column-link"
                   href="/#projects"
-                  // style={{ cursor: 'pointer' }}
                 >
                   {tToolbar("Projects")}
                 </ScrollLink>
-                {/* <Link
-                  data-id="projects"
-                  className="footer__column-link"
-                  href="/#projects"
-                  style={{ cursor: 'pointer' }}
-                >
-                  {tToolbar("Projects")}
-                </Link> */}
                 <AppLink href="/services">{tToolbar("Services")}</AppLink>
               </div>
 

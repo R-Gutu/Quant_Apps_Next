@@ -1,29 +1,18 @@
 
 type BlurProps = {
   color: 'blue' | 'purple' | string;
-  height: string;
-  width: string;
+  height?: string;
+  width?: string;
   top?: string;
   bottom?: string;
   left?: string;
   right?: string;
   filter: string;
-  sx?: {
-    opacity?: {
-      xs?: number;
-      sm?: number;
-      md?: number;
-    };
-    visibility?: {
-      xs?: string;
-      sm?: string;
-      md?: string;
-    };
-  };
+  className?: string
 };
 
 
-const Blur = ({ color, height, width, top, bottom, left, right, filter } : BlurProps ) => {
+const Blur = ({ color, height, width, top, bottom, left, right, filter, className } : BlurProps ) => {
   const getColor = () => {
     switch (color) {
       case "purple":
@@ -44,14 +33,16 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter } : BlurP
         bottom: bottom,
         left: left,
         right: right,
-        opacity: "0.5",
+        // opacity: "0.5",
         width: width,
         height: height,
         background: getColor(),
         zIndex: -10,
         filter: filter,
         WebkitFilter: filter,
+        borderRadius: "50%"
       }}
+      className={className}
     />
   );
 };

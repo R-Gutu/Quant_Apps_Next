@@ -96,11 +96,6 @@
     background-color: var(--bg-color);
   }
   
-  body,
-  html {
-    overflow-x: hidden;
-  }
-  
   a {
     text-decoration: none;
     color: initial;

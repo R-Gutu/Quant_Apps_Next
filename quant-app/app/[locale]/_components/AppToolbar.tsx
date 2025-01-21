@@ -36,7 +36,7 @@ const AppToolbar = () => {
   return (
     <>
       <header>
-        <div className="container">
+        <div>
           <div className="header">
             <Link href="/" className="logo">
               <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto" alt="Logo" />

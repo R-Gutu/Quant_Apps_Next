@@ -70,9 +70,9 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale} className="overflow-x-hidden">
+    <html lang={locale} className="overflow-auto">
       <body
-        className="antialiased overflow-x-hidden"
+        className="antialiased overflow-hidden relative"
       >
         <NextIntlClientProvider messages={messages}>
           {/* <Script

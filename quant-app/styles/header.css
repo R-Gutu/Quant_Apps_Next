@@ -9,7 +9,7 @@ header {
 
 .header {
     display: grid;
-    grid-template-columns: auto 2fr 0.5fr auto; /* Adjust based on the number of elements */
+    grid-template-columns: 1fr 2fr 0.5fr 0.8fr; /* Adjust based on the number of elements */
     align-items: center; /* Center align items vertically */
     justify-content: space-between; /* Space out items horizontally */
     /* gap: 50px; */
@@ -27,7 +27,6 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    max-width: 237px;
     cursor: pointer;
     position: relative;
 }

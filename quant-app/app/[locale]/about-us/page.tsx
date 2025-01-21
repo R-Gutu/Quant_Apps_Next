@@ -5,11 +5,11 @@ import About from "./_components/About";
 
 const Page = async () => {
   return (
-    <>
+    <div className="flex flex-col">
       <About/>
       <TimeLine/>
       <NextProject />
-    </>
+    </div>
   );
 };
 

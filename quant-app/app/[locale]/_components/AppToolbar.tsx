@@ -41,10 +41,10 @@ const AppToolbar = () => {
             <Link href="/" className="logo">
               <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto" alt="Logo" />
             </Link>
-            <nav>
+            <nav >
               <ul className="menu">
                 <li className={cn('menu__item', { 'active': pathname === '/services' })}>
-                  <Link href="/services">
+                  <Link href="/services" className="text-nowrap">
                     {t("Services")}
                   </Link>
                 </li>
@@ -52,7 +52,7 @@ const AppToolbar = () => {
                 <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
                   <Link
                     href="/#projects"
-                    className="text-left"
+                    className="text-left text-nowrap"
                     scroll={false}
                   >
                     {t("Projects")}
@@ -60,19 +60,19 @@ const AppToolbar = () => {
                 </li>
 
                 <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
-                  <Link href="/about-us">
+                  <Link href="/about-us" className="text-nowrap">
                     {t("AboutUs")}
                   </Link>
                 </li>
 
                 <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
-                  <Link href="/contact-us">
+                  <Link href="/contact-us" className="text-nowrap">
                     {t("ContactUs")}
                   </Link>
                 </li>
 
                 <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
-                  <Link href="/faqs">
+                  <Link href="/faqs" className="text-nowrap">
                     FAQs
                   </Link>
                 </li>
@@ -82,16 +82,19 @@ const AppToolbar = () => {
             <div className="nav-right">
               {pathname !== "/contact-us" && (
                 <Link
-                  className="button lets-talk"
+                  className="button lets-talk text-nowrap"
                   href='/talk-modal'
                 >
                   {t("LetsTalk")}
                 </Link>
               )}
-              <span className="burger" onClick={onClickBurger}></span>
             </div>
 
-            {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
+            <div className="flex justify-center">
+              <span className="burger" onClick={onClickBurger}></span>
+              {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
+            </div>
+
           </div>
         </div>
       </header>

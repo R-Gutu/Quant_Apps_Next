@@ -113,7 +113,7 @@ const Page = () => {
 
   useEffect(() => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
-  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, validateForm])
+  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget, validateForm])
 
   const handleSubmit = (e: React.FormEvent) => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
@@ -234,9 +234,7 @@ const Page = () => {
                   rows={4}
                   value={projectDetails}
                   onChange={(event) => setProjectDetails(event.target.value)}
-                  style={{
-                    resize: "none",
-                  }}
+                  className="resize-none !p-[18px] !leading-normal placeholder:!p-0"
                 ></textarea>
               </div>
               <p className="font-clash text-[14px] font-semibold text-[#6D758F]">Select the services you need for your project:</p>

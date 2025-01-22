@@ -91,26 +91,18 @@ const Footer = async () => {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex flex-row decoration-none justify-between w-1/2 min-w-[100px]"
+                      className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline"
                     >
-                      <Typography
-                        sx={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          color: 'white',
-                          opacity: 0.75,
-                          '&:hover': { opacity: 1 }
-                        }}
-                      >
+                      <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
                         {alt}
-                      </Typography>
+                      </h1>
                       <Image
-                          width={14}
-                          height={14}
-                          src={icon}
-                          alt="External Link"
-                          style={{ marginLeft: "13px" }}
-                        />
+                        width={14}
+                        height={14}
+                        src={icon}
+                        alt="External Link"
+                        className="ml-[13px]"
+                      />
                     </Link>
                   </Grid2>
                 ))}

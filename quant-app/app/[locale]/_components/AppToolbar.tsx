@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link, usePathname } from "@/i18n/routing";
-import { Box, useMediaQuery } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 import { useEffect } from "react";
 import useOnScreen from "@/lib/utils/useOnScreen";
 import MobileMenu from "./MobileMenu";

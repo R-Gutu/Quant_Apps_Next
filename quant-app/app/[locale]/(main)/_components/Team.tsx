@@ -8,7 +8,7 @@ import Image from "next/image";
 export default async function Team() {
     const t = await getTranslations('main');
     return (
-        <Grid2 container direction="column">
+        <Grid2 container direction="column" className="overflow-hidden">
             <Grid2
                 container
                 direction="row"

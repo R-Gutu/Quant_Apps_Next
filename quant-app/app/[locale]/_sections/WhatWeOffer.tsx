@@ -154,6 +154,7 @@ const WhatWeOffer = async () => {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: { xs: "0px", md: "4px" },
+                position: "relative",
               }}
             >
               <Image src="/icons/vector.svg" alt="Vector" width={0} height={0} className='w-auto h-auto' />
@@ -185,6 +186,7 @@ const WhatWeOffer = async () => {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: { xs: "0px", md: "4px" },
+                position: "relative",
               }}
             >
               <Image src="/icons/apple.svg" alt="Apple" width={0} height={0} className='w-auto h-auto' />
@@ -213,6 +215,7 @@ const WhatWeOffer = async () => {
                 backgroundColor: "#6A65FF",
                 alignItems: "center",
                 justifyContent: "center",
+                position: "relative",
                 padding: { xs: "0px", md: "4px" },
               }}
             >
@@ -243,6 +246,7 @@ const WhatWeOffer = async () => {
                 backgroundColor: "#6A65FF",
                 alignItems: "center",
                 justifyContent: "center",
+                position: "relative",
                 padding: { xs: "0px", md: "4px" },
               }}
             >
@@ -277,6 +281,7 @@ const WhatWeOffer = async () => {
                 backgroundColor: "#6A65FF",
                 alignItems: "center",
                 justifyContent: "center",
+                position: "relative",
                 padding: "4px",
               }}
             >

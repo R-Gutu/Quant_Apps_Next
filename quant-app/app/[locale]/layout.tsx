@@ -72,7 +72,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className="antialiased"
+        className="antialiased relative"
       >
         <NextIntlClientProvider messages={messages}>
           {/* <Script

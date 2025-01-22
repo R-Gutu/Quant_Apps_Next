@@ -96,7 +96,6 @@ export default async function Introduction() {
                         </a>
                     </div>
                 </div>
-
                 <Box
                     sx={{
                         mt: "70px",
@@ -111,10 +110,10 @@ export default async function Introduction() {
                         {t("LetsTalk")}
                     </Link>
                 </Box>
-                <div className="">
+                <div className="overflow-hidden relative">
                     <span className="banner__blur-img banner__blur-1"></span>
                     <span className="banner__blur-img banner__blur-2"></span>
-                    {/* <span className="banner__blur-img banner__blur-3"></span> */}
+                    <span className="banner__blur-img banner__blur-3"></span>
                     <span className="banner__blur-img banner__blur-4"></span>
                 </div>
                 <Blur

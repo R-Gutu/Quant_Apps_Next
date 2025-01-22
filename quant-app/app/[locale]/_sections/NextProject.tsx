@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import Blur from "@/components/Blur";
+import { Box } from "@mui/material";
 
 const NextProject = async () => {
   const t = await getTranslations("next-project");
@@ -45,15 +46,15 @@ const NextProject = async () => {
           max-[1324px]:w-[500px] max-[1324px]:top-[20%] max-[1324px]:right-[0%]
           max-[900px]:w-[400px]
           max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[600px]:top-[-2px] max-[600px]:right-[100px]">
-          <Image
-            width={0}
-            height={0}
-            src="/icons/hand3d.svg"
-            alt="Hand"
-            className="w-full h-auto"
-            priority
-            unoptimized={true}
-          />
+          <Box className="relative">
+            <Image
+              width={0}
+              height={0}
+              src="/icons/hand3d.svg"
+              alt="Hand"
+              className="w-full h-auto"
+            />
+          </Box>
         </div>
       </div>
       <Blur
@@ -64,6 +65,7 @@ const NextProject = async () => {
         className=" w-[530px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
       />
       <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
+
     </div>
   );
 };

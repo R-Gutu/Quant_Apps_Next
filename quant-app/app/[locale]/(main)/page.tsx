@@ -17,7 +17,7 @@ const Page = async () => {
   return (
     <>
       <div className="container">
-        <Introduction />
+        <Introduction /> 
         <WhatWeOffer />
         <Box sx={{ mt: "50px", display: "flex", justifyContent: "center" }}>
           <Link href="/services">

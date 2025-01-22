@@ -46,7 +46,7 @@ const NextProject = async () => {
           max-[1324px]:w-[500px] max-[1324px]:top-[20%] max-[1324px]:right-[0%]
           max-[900px]:w-[400px]
           max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[600px]:top-[-2px] max-[600px]:right-[100px]">
-          <Box className="relative">
+          <Box sx={{ position: "relative" }}>
             <Image
               width={0}
               height={0}

@@ -48,6 +48,7 @@ const WhatWeOffer = async () => {
       <Grid2 container justifyContent="end" width="100%" alignItems="center">
         <Box
           sx={{
+            // overflow: "hidden",
             position: "absolute",
             left: {
               xs: "-10%", // Extra-small screens
@@ -94,14 +95,14 @@ const WhatWeOffer = async () => {
               }}
             />
 
-            <Blur
+            {/* <Blur
               color="rgba(186, 8, 255, 0.8156512605042017)"
               left="-30%"
               top="-15%"
               width="600px"
               height="600px"
               filter="blur(140px)"
-            />
+            /> */}
           </Box>
         </Box>
 

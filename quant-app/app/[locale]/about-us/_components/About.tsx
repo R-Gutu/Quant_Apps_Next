@@ -30,10 +30,7 @@ const About = () => {
       <Image
         width={0}
         height={0}
-        className="
-        w-[55%] float-left mr-[-23%] mb-[-13%] translate-y-[-7%] translate-x-[-8%] 
-        max-[550px]:w-[65%] max-[550px]:mr-[-28%] max-[550px]:mb-[-17%]
-        "
+        className=" w-[30%] float-left translate-x-[-8%] max-[700px]:w-[35%] max-[550px]:w-[40%]"
         src="/images/app-phone.png"
         alt="Iphone"
         unoptimized={true}

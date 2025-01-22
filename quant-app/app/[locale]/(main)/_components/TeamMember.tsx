@@ -5,11 +5,12 @@ import TeamMemberType from '@/lib/types/TeamMemberType';
 export default async function TeamMember({ name, title, details, src, alt, link }: TeamMemberType) {
     return (
         <Card
+            className='!pt-[50px] max-[900px]:!pt-[20px]'
             sx={{
                 borderRadius: "61px",
                 width: { xs: "350px", md: "610px" },
                 height: { xs: "331px", md: "447px" },
-                alignContent: "center",
+                alignContent: "start",
             }}
         >
             <Grid2
@@ -19,6 +20,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
             >
                 <Grid2
                     container
+
                     direction="row"
                     sx={{
                         width: { xs: "317px", md: "516px" },

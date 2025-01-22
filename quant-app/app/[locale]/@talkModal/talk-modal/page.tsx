@@ -4,6 +4,7 @@ import {
   handleFiles,
   validateEmail,
   validateName,
+  validateBudget
 } from "@/lib/utils/validateTalkModal";
 import emailjs from '@emailjs/browser';
 import { Modal } from '@mui/material';
@@ -11,23 +12,7 @@ import Image from 'next/image';
 import { useRouter } from "@/i18n/routing";
 
 const Page = () => {
-  const budget1Prices = [
-    "$5.000-$10.000",
-    "$3.000-$5.000",
-    "$1.000-$3.000",
-  ];
-  const budget2Prices = [
-    "$10.000-$15.000",
-    "$5.000-$10.000",
-    "$3.000-$5.000",
-  ];
-  const budget3Prices = [
-    "$15.000-$25.000",
-    "$10.000-$15.000",
-    "$5.000-$10.000",
-  ];
-
-  const [budgetId, setBudgetId] = useState(3);
+  const [budget, setBudget] = useState("");
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -39,6 +24,7 @@ const Page = () => {
   const [crmCheckbox, setCrmCheckbox] = useState(false);
   const [uiuxCheckbox, setUiuxCheckbox] = useState(false);
   const [backendCheckbox, setBackendCheckbox] = useState(false);
+  const [androidAppCheckbox, setAndroidAppCheckbox] = useState(false);
 
   const [budgetCheckboxes, setBudgetCheckboxes] = useState([false, false, false]);
 
@@ -48,74 +34,67 @@ const Page = () => {
   const templateId = "template_e7f0ogb";   // Ваш Template ID
   const publicKey = "S46PU3W0ILp9NXki4";   // Ваш Public Key
 
-  const onFirstNameChanged = (value : string) => {
+  const onFirstNameChanged = (value: string) => {
     setFirstName(value);
   };
 
-  const onLastNameChanged = (value : string) => {
+  const onLastNameChanged = (value: string) => {
     setLastName(value);
   };
 
-  const onEmailChanged = (value : string) => {
+  const onEmailChanged = (value: string) => {
     setEmail(value);
   };
 
-  const onIosCheckboxChanged = (value : boolean) => {
+  const onIosCheckboxChanged = (value: boolean) => {
     setIosCheckbox(value);
-    onIosWebCheckboxChanged(value, webCheckbox);
   };
 
-  const onWebCheckboxChanged = (value : boolean) => {
+  const onWebCheckboxChanged = (value: boolean) => {
     setWebCheckbox(value);
-    onIosWebCheckboxChanged(iosCheckbox, value);
   };
-  
-  const onCrmCheckboxChanged = (value : boolean) => {
+
+  const onCrmCheckboxChanged = (value: boolean) => {
     setCrmCheckbox(value);
   };
 
-  const onUiuxCheckboxChanged = (value : boolean) => {
+  const onUiuxCheckboxChanged = (value: boolean) => {
     setUiuxCheckbox(value);
   };
 
-  const onBackendCheckboxChanged = (value : boolean) => {
+  const onBackendCheckboxChanged = (value: boolean) => {
     setBackendCheckbox(value);
   };
 
-  const onIosWebCheckboxChanged = (iosCheckbox : boolean, webCheckbox : boolean) => {
-    if (iosCheckbox && webCheckbox) {
-      setBudgetId(0);
-    } else if (iosCheckbox && !webCheckbox) {
-      setBudgetId(1);
-    } else if (!iosCheckbox && webCheckbox) {
-      setBudgetId(2);
-    }
+  const onAndroidAppChanged = (value: boolean) => {
+    setAndroidAppCheckbox(value);
   };
 
-  const validateForm = useCallback((firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean) => {
+  const validateForm = useCallback((firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean, android: boolean, budget: string) => {
     const isFirstNameValid = validateName(firstName);
     const isLastNameValid = validateName(lastName);
     const isEmailValid = validateEmail(email);
+    const isValidBudget = validateBudget(budget, 0, 25000);
     // Теперь валидной будет форма, если выбран хотя бы один из пяти чекбоксов
-    const isCheckboxValid = ios || web || crm || uiux || backend;
+    const isCheckboxValid = ios || web || crm || uiux || backend || android;
     const isBudgetSelected = budgetCheckboxes.some(checkbox => checkbox);
 
     setInvalidForm(
       !isFirstNameValid || !isLastNameValid || !isEmailValid || !isCheckboxValid ||
-      !isBudgetSelected
+      !isBudgetSelected || !isValidBudget
     );
   }, [budgetCheckboxes]);
 
-  const onDropZoneDragOver = (e : React.DragEvent) => {
+  const onDropZoneDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     e.currentTarget.classList.add("dragover");
   };
 
-  const onDropZoneDragLeave = (e : React.DragEvent) => {
+  const onDropZoneDragLeave = (e: React.DragEvent) => {
     e.currentTarget.classList.remove("dragover");
   };
 
-  const onDropZoneDrop = (e : React.DragEvent) => {
+  const onDropZoneDrop = (e: React.DragEvent) => {
     e.preventDefault();
     e.currentTarget.classList.remove("dragover");
 
@@ -123,17 +102,21 @@ const Page = () => {
     handleFiles(files);
   };
 
-  const onFileInputChange = (e : React.ChangeEvent) => {
+  const onFileInputChange = (e: React.ChangeEvent) => {
     const files = (e.currentTarget as HTMLInputElement).files;
     handleFiles(files);
   };
 
+  const onBudgetChanged = (value: string) => {
+    setBudget(value);
+  }
+
   useEffect(() => {
-    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
+    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
   }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, validateForm])
 
-  const handleSubmit = (e : React.FormEvent) => {
-    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox);
+  const handleSubmit = (e: React.FormEvent) => {
+    validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
     e.preventDefault();
 
     if (!budgetCheckboxes.some(checkbox => checkbox)) {
@@ -147,16 +130,7 @@ const Page = () => {
     if (crmCheckbox) chosenServices.push("Business CRM");
     if (uiuxCheckbox) chosenServices.push("Design UI/UX");
     if (backendCheckbox) chosenServices.push("Servers/Backend");
-
-    // Определяем выбранный бюджет
-    let selectedBudget = "";
-    if (budgetCheckboxes[0]) {
-      selectedBudget = budget1Prices[budgetId];
-    } else if (budgetCheckboxes[1]) {
-      selectedBudget = budget2Prices[budgetId];
-    } else if (budgetCheckboxes[2]) {
-      selectedBudget = budget3Prices[budgetId];
-    }
+    if (androidAppCheckbox) chosenServices.push("Android App");
 
     const templateParams = {
       first_name: firstName,
@@ -164,9 +138,8 @@ const Page = () => {
       email: email,
       project_details: projectDetails,
       services: chosenServices.join(", "),
-      budget: selectedBudget,
+      budget: budget,
       attachments: "" // При необходимости можно добавить логику для приложений
-      
     };
     console.log(templateParams)
 
@@ -185,6 +158,7 @@ const Page = () => {
         setCrmCheckbox(false);
         setUiuxCheckbox(false);
         setBackendCheckbox(false);
+        setAndroidAppCheckbox(false);
         setBudgetCheckboxes([false, false, false]);
         setInvalidForm(true);
         router.back();
@@ -199,7 +173,7 @@ const Page = () => {
     <Modal
       open={true}
       onClose={() => router.back()}
-      disableScrollLock={ true }
+      disableScrollLock={true}
     >
       <div className="modal-content talk-popup">
         <span
@@ -231,7 +205,7 @@ const Page = () => {
                     type="text"
                     placeholder="What’s your first name?"
                     value={firstName}
-                    onInput={(event : React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
+                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
                   />
                 </div>
                 <div className="talk-popup__from-row">
@@ -240,7 +214,7 @@ const Page = () => {
                     type="text"
                     placeholder="What’s your last name?"
                     value={lastName}
-                    onInput={(event : React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
+                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
                   />
                 </div>
               </div>
@@ -250,7 +224,7 @@ const Page = () => {
                   type="email"
                   placeholder="brianclark@gmail.com"
                   value={email}
-                  onInput={(event : React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
+                  onInput={(event: React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
                 />
               </div>
               <div className="talk-popup__from-row">
@@ -261,13 +235,12 @@ const Page = () => {
                   value={projectDetails}
                   onChange={(event) => setProjectDetails(event.target.value)}
                   style={{
-                    resize: "none", 
+                    resize: "none",
                   }}
                 ></textarea>
               </div>
-              <div className="talk-popup__select-services">
-                <p>Select the services you need for your project:</p>
-                
+              <p className="font-clash text-[14px] font-semibold text-[#6D758F]">Select the services you need for your project:</p>
+              <div className="grid grid-cols-3 gap-4">
                 <div className="talk-popup__service-checkbox">
                   <label className="custom-checkbox">
                     <input
@@ -300,6 +273,34 @@ const Page = () => {
                   <label className="custom-checkbox">
                     <input
                       type="checkbox"
+                      checked={backendCheckbox}
+                      onChange={(event) =>
+                        onBackendCheckboxChanged(event.currentTarget.checked)
+                      }
+                    />
+                    <span className="checkmark"></span>
+                  </label>
+                  <span>Servers / Backend</span>
+                </div>
+
+                <div className="talk-popup__service-checkbox">
+                  <label className="custom-checkbox">
+                    <input
+                      type="checkbox"
+                      checked={androidAppCheckbox}
+                      onChange={(event) =>
+                        onAndroidAppChanged(event.currentTarget.checked)
+                      }
+                    />
+                    <span className="checkmark"></span>
+                  </label>
+                  <span>Android App</span>
+                </div>
+
+                <div className="talk-popup__service-checkbox">
+                  <label className="custom-checkbox">
+                    <input
+                      type="checkbox"
                       checked={crmCheckbox}
                       onChange={(event) =>
                         onCrmCheckboxChanged(event.currentTarget.checked)
@@ -324,81 +325,19 @@ const Page = () => {
                   <span>Design UI/UX</span>
                 </div>
 
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={backendCheckbox}
-                      onChange={(event) =>
-                        onBackendCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Servers/Backend</span>
-                </div>
+
               </div>
-              <div className="talk-popup__budget">
+              <div className="talk-popup__budget talk-popup__from-row">
                 <p>
                   <span>Budget </span>   (Unsure on budget? Select a range, and
                   we’ll tailor the best solution for you!)
                 </p>
-                <div className="talk-popup__budget-checkboxes">
-                  <div className="talk-popup__budget-checkboxes-item">
-                    <label className="custom-checkbox">
-                      <input
-                        type="checkbox"
-                        className="talk-popup__budget-checkboxe"
-                        checked={budgetCheckboxes[0]}
-                        onChange={(event) =>
-                          setBudgetCheckboxes([
-                            event.currentTarget.checked,
-                            false,
-                            false,
-                          ])
-                        }
-                      />
-                      <span className="checkmark"></span>
-                    </label>
-                    <span id="budget-1">{budget1Prices[budgetId]}</span>
-                  </div>
-                  <div className="talk-popup__budget-checkboxes-item">
-                    <label className="custom-checkbox">
-                      <input
-                        type="checkbox"
-                        className="talk-popup__budget-checkboxe"
-                        checked={budgetCheckboxes[1]}
-                        onChange={(event) =>
-                          setBudgetCheckboxes([
-                            false,
-                            event.currentTarget.checked,
-                            false,
-                          ])
-                        }
-                      />
-                      <span className="checkmark"></span>
-                    </label>
-                    <span id="budget-2">{budget2Prices[budgetId]}</span>
-                  </div>
-                  <div className="talk-popup__budget-checkboxes-item">
-                    <label className="custom-checkbox">
-                      <input
-                        type="checkbox"
-                        className="talk-popup__budget-checkboxe"
-                        checked={budgetCheckboxes[2]}
-                        onChange={(event) =>
-                          setBudgetCheckboxes([
-                            false,
-                            false,
-                            event.currentTarget.checked,
-                          ])
-                        }
-                      />
-                      <span className="checkmark"></span>
-                    </label>
-                    <span id="budget-3">{budget3Prices[budgetId]}</span>
-                  </div>
-                </div>
+                <input
+                  type="text"
+                  placeholder="$3000-$5000"
+                  value={budget}
+                  onInput={(event: React.ChangeEvent<HTMLInputElement>) => onBudgetChanged(event.target.value)}
+                />
               </div>
               <div className="talk-popup__attachments">
                 <span>Attachments</span>

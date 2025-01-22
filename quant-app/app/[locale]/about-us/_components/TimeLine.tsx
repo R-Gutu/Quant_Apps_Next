@@ -22,7 +22,7 @@ const TimeLine = async () => {
           container
           gap="1.6vw"
           sx={{
-            alignItems: "end",
+            alignItems: "center",
             height: "fit-content",
             "& h1": {
               fontFamily: `"ClashDisplay", "Inter", sans-serif`,
@@ -55,31 +55,7 @@ const TimeLine = async () => {
             }}
           />
         </Grid2>
-
         <Image width={0} height={0} className="w-full h-auto" src={roadMap} alt="RoadMap" key={roadMap} />
-
-        <Grid2
-          container
-          sx={{
-            color: "#C0C4CD",
-            width: "100%",
-            "& p": { fontFamily: `"ClashDisplay", "Inter", sans-serif`, fontSize: "1.5vw" },
-          }}
-          gap="13.12%"
-          direction="row"
-        >
-          <Grid2 width="20%">
-            <Typography>{t("GoodIdeaDetails")}</Typography>
-          </Grid2>
-
-          <Grid2 width="20%">
-            <Typography>{t("IncreaseDetails")}</Typography>
-          </Grid2>
-
-          <Grid2 width="20%">
-            <Typography>{t("InnovationDetails")}</Typography>
-          </Grid2>
-        </Grid2>
       </Grid2>
     </div>
   )

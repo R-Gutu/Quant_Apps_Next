@@ -62,6 +62,7 @@ export default {
 			},
 			fontFamily: {
 				clash: ['"ClashDisplay"', '"Inter"', 'sans-serif'],
+				inter: ['"Inter"', '"ClashDisplay"', 'sans-serif'],
 			},
 		}
 	},

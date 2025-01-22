@@ -27,7 +27,7 @@ const About = () => {
   };
 
   return (
-    <div className="px-[5%]">
+    <div className="px-[5%] pt-[120px]">
       <Image
         width={0}
         height={0}

@@ -6,7 +6,7 @@ const Page = async () => {
   const t = await getTranslations("faqs");
 
   return (
-    <section className="faq-section" id="faq">
+    <section className="faq-section py-[160px]" id="faq">
       <div className="container">
         <div className="faq">
           <h1 className="faq__title">FAQs</h1>
@@ -59,7 +59,7 @@ const Page = async () => {
       </div>
 
       <span className="contact-us-img" />
-      <span className="contact-us-img-2" />
+      <span className="contact-us-img-2 translate-y-[20%]" />
     </section>
   );
 };

@@ -17,7 +17,7 @@ const FaqAccordionItem = (props) => {
         data-toggle="#ques1"
         onClick={() => onClickToggle()}
       >
-        <h2>{props.header}</h2>
+        <h2 className="!font-inter !text-[16px]">{props.header}</h2>
         <span className="faq__accordion-close"></span>
       </div>
       <div

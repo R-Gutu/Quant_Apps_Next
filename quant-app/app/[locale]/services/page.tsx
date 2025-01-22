@@ -11,7 +11,7 @@ const Page = async () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container !pt-[65px]">
         <WhatWeOffer />
       </div>
 

@@ -86,7 +86,7 @@ const Page = () => {
   };
 
   return (
-    <div className="contact-us">
+    <div className="contact-us pt-[120px]">
       <div className="container">
         <div className="contact-us__wrapper">
           <div className="contact-us__content">

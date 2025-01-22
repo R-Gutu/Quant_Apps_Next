@@ -31,7 +31,7 @@ const About = () => {
       <Image
         width={0}
         height={0}
-        className=" w-[30%] float-left translate-x-[-8%] max-[700px]:w-[35%] max-[550px]:w-[40%]"
+        className=" w-[20%] max-[1300px]:w-[25%] max-[1100px]:w-[30%] float-left translate-x-[-8%] max-[550px]:w-[40%]"
         src="/images/app-phone.png"
         alt="Iphone"
         unoptimized={true}
@@ -71,7 +71,7 @@ const About = () => {
       <Typography className="!font-clash !text-[24px] !text-justify !text-white
       max-[950px]:!text-[20px]
       max-[550px]:!text-[14px]
-      max-[400px]:!text-[12px]
+      max-[400px]:!text-[11px]
       ">
         {mediumScreen && !expandAboutUsText ? aboutUsPartialText : aboutUsFullText}
       </Typography>

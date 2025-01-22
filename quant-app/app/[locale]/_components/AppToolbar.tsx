@@ -15,7 +15,7 @@ const AppToolbar = () => {
   const isSmallScreen = useMediaQuery("(max-width:950px)");
   const pathname = usePathname();
   const projectsAreVisible = useOnScreen('projects');
-  
+
   useEffect(() => {
     // Handle hash scrolling
     if (window.location.hash) {
@@ -36,12 +36,12 @@ const AppToolbar = () => {
   return (
     <>
       <header>
-        <div>
-          <div className="header">
-            <Link href="/" className="logo">
-              <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto" alt="Logo" />
+          <div className="grid grid-cols-[2fr_5fr_1fr_1fr] px-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
+          {/* grid-cols-[2fr_2fr_2fr_1fr] max-[700px]:grid-cols-[2fr_1fr_1fr_1fr] */}
+            <Link href="/" className="w-full self-center">
+              <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
             </Link>
-            <nav >
+            <nav>
               <ul className="menu">
                 <li className={cn('menu__item', { 'active': pathname === '/services' })}>
                   <Link href="/services" className="text-nowrap">
@@ -79,7 +79,7 @@ const AppToolbar = () => {
               </ul>
             </nav>
 
-            <div className="nav-right">
+            <div className="nav-right justify-center">
               {pathname !== "/contact-us" && (
                 <Link
                   className="button lets-talk text-nowrap"
@@ -88,15 +88,13 @@ const AppToolbar = () => {
                   {t("LetsTalk")}
                 </Link>
               )}
+              
             </div>
-
-            <div className="flex justify-center">
-              <span className="burger" onClick={onClickBurger}></span>
-              {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
-            </div>
-
+            <div className="flex justify-center self-center min-w-[80px]">
+                <span className="burger" onClick={onClickBurger}></span>
+                {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
+              </div>
           </div>
-        </div>
       </header>
       <MobileMenu />
       <Box sx={{ marginBottom: "120px" }} />

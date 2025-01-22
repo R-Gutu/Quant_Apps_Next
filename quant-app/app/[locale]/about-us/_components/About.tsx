@@ -172,7 +172,7 @@ const About = () => {
       <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[1750px] left-[400px] why-ios__bg-img max-[900px]:hidden" />
       <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] right-[230px] why-ios__bg-img max-[900px]:hidden" />
 
-      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1900px] left-[450px] "/>
+      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1900px] left-[450px] max-[1400px]:hidden"/>
     </div>
   )
 }

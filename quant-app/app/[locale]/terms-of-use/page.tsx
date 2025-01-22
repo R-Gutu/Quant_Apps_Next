@@ -4,6 +4,7 @@ import { Box, Grid2, Typography } from "@mui/material";
 
 import NextProject from "@/app/[locale]/_sections/NextProject";
 import Blur from "@/components/Blur";
+import Image from "next/image";
 
 const Page = async () => {
   const t = await getTranslations("terms-of-use");
@@ -54,16 +55,6 @@ const Page = async () => {
             "LastUpdatedOn"
           )} 5/12/2024`}</Typography>
 
-          <Blur filter='blur(10px)' color="blue" width="66.7vw" height="66.7vw" left="0" top="0" />
-
-          <Blur
-            color="purple"
-            width="66.7vw"
-            height="66.7vw"
-            right="0"
-            top="0"
-            filter='blur(10px)'
-          />
         </Grid2>
 
         <Typography sx={{ mb: "20px" }}>{t("WelcomeSpeech")}</Typography>
@@ -111,7 +102,6 @@ const Page = async () => {
             <li>{t("UserConductListThirdChild")}</li>
           </ul>
 
-          <Blur filter='blur(10px)' color="blue" width="66.7vw" height="66.7vw" right="0" top="0" />
         </Grid2>
 
         <Box
@@ -188,19 +178,64 @@ const Page = async () => {
             <br />
             {t("RepublicOfMoldova")}
           </Typography>
-
-          <Blur
-            filter='blur(10px)'
-            color="purple"
-            width="66.7vw"
-            height="66.7vw"
-            right="0"
-            top="0"
-          />
         </Grid2>
 
         <Typography sx={{ mt: "20px" }}>{t("ThankYouForChoosing")}</Typography>
       </Grid2>
+
+      <Blur 
+        color="blue" 
+        width="46.7vw" 
+        height="46.7vw" 
+        left="-10%" 
+        top="0%" 
+        filter="blur(10px)" 
+      />
+
+      <Blur
+        color="blue"
+        width="56.7vw"
+        height="56.7vw"
+        right="-15%"
+        top="0%"
+        filter="blur(10px)"
+        className="absolute"
+      />
+
+      <Blur
+        filter="blur(10px)"
+        color="blue"
+        width="45vw"
+        height="45vw"
+        right="0"
+        top="20%"
+      />
+
+      <Blur 
+        filter="blur(70px)" 
+        color="purple" 
+        width="45vw" 
+        height="45vw" 
+        left="-5%" 
+        top="30%" 
+      />
+
+      <Blur 
+        filter="blur(10px)" 
+        color="purple" 
+        width="40vw" 
+        height="40vw" 
+        right="0" 
+        top="37%" 
+      />
+
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
+            
+      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] "/>
 
       <NextProject />
     </Grid2>

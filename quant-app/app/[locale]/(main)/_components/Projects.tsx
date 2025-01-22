@@ -147,8 +147,8 @@ export default function Projects() {
             color="#9C08FF99"
             right="0%"
             bottom="25%"
-            width="600px"
-            height="600px"
+            width="400px"
+            height="400px"
             filter="blur(140px)"
           />
             <Blur

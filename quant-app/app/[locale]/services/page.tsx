@@ -4,6 +4,7 @@ import NextProject from "../_sections/NextProject";
 import WhatWeOffer from "../_sections/WhatWeOffer";
 import Accordion from "./_components/Accordion";
 import WhyIOS from "./_components/WhyIOS";
+import Blur from "@/components/Blur";
 
 const Page = async () => {
   const t = await getTranslations("services");
@@ -62,6 +63,23 @@ const Page = async () => {
             </div>
           </div>
         </div>
+        <Blur
+            color="#1E50FF"
+            left="0%"
+            bottom="36%"
+            width="300px"
+            height="300px"
+            filter="blur(120px)"
+        />
+          <Blur
+          color="#9C08FF99"
+          right="-2%"
+          bottom="30%"
+          width="300px"
+          height="300px"
+          filter="blur(80px)"
+        />
+                    <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[80px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
       </section>
 
       <NextProject />

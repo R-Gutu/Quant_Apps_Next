@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { getTranslations, getLocale } from "next-intl/server";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
+import Blur from "@/components/Blur";
 
 export default async function Introduction() {
     const t = await getTranslations('main');
@@ -110,11 +111,20 @@ export default async function Introduction() {
                         {t("LetsTalk")}
                     </Link>
                 </Box>
-
-                <span className="banner__blur-img banner__blur-1"></span>
-                <span className="banner__blur-img banner__blur-2"></span>
-                <span className="banner__blur-img banner__blur-3"></span>
-                <span className="banner__blur-img banner__blur-4"></span>
+                <div className="">
+                    <span className="banner__blur-img banner__blur-1"></span>
+                    <span className="banner__blur-img banner__blur-2"></span>
+                    {/* <span className="banner__blur-img banner__blur-3"></span> */}
+                    <span className="banner__blur-img banner__blur-4"></span>
+                </div>
+                <Blur
+                    color="#1E50FF"
+                    right="5%"
+                    top="10%"
+                    width="300px"
+                    height="300px"
+                    filter="blur(200px)"
+                />
             </div>
         </>
     )

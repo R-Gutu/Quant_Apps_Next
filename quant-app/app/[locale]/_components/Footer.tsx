@@ -61,22 +61,6 @@ const Footer = async () => {
             mb="50px"
             mr="65px"
           >
-            {socialLinks.map((link) => (
-              <Link
-                key={link.alt}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  width={30}
-                  height={30}
-                  className="h-[30px] w-[30px]"
-                  src={link.icon}
-                  alt={link.alt}
-                />
-              </Link>
-            ))}
           </Grid2>
           <div className="footer">
             <Link href="/" className="footer__logo self-center">
@@ -165,18 +149,16 @@ const Footer = async () => {
               </div>
 
               <div className="mobile-footer-socials">
-                <Link href="https://www.facebook.com/profile.php?id=61571073299478" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src="/icons/footer-facebook.svg" alt="Facebook" />
-                </Link>
-                <Link href="https://www.instagram.com/quantapps_/" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src="/icons/footer-instagram.svg" alt="Instagram" />
-                </Link>
-                <Link href="https://t.me/quantapps" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src="/icons/telegram-old.svg" alt="Telegram" />
-                </Link>
-                <Link href="https://www.linkedin.com/company/quant-apps" target="_blank" rel="noopener noreferrer">
-                  <Image width={41} height={41} src="/icons/linked-in-rounded.svg" alt="LinkedIn" />
-                </Link>
+                {socialLinks.map(({ href, icon, alt }) => (
+                  <Link
+                    key={alt}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image width={41} height={41} src={icon} alt={alt} />
+                  </Link>
+                ))}
               </div>
             </div>
 

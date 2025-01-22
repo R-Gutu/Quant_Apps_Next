@@ -36,8 +36,7 @@ const AppToolbar = () => {
   return (
     <>
       <header>
-          <div className="grid grid-cols-[2fr_5fr_1fr_1fr] px-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
-          {/* grid-cols-[2fr_2fr_2fr_1fr] max-[700px]:grid-cols-[2fr_1fr_1fr_1fr] */}
+          <div className="grid grid-cols-[2fr_5fr_1fr_1fr] pl-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
             <Link href="/" className="w-full self-center">
               <Image id="logo" src="/icons/logo.svg" width={0} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
             </Link>
@@ -82,15 +81,14 @@ const AppToolbar = () => {
             <div className="nav-right justify-center">
               {pathname !== "/contact-us" && (
                 <Link
-                  className="button lets-talk text-nowrap"
+                  className="button lets-talk text-nowrap !w-auto !px-[20px]"
                   href='/talk-modal'
                 >
                   {t("LetsTalk")}
                 </Link>
               )}
-              
             </div>
-            <div className="flex justify-center self-center min-w-[80px]">
+            <div className="flex justify-center self-center px-[4%] min-w-[40px]">
                 <span className="burger" onClick={onClickBurger}></span>
                 {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
               </div>

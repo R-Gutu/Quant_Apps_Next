@@ -5,7 +5,7 @@ import Blur from "@/components/Blur";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
-  
+
   return (
     <div className="offer" id="services">
       <Grid2>
@@ -61,47 +61,48 @@ const WhatWeOffer = async () => {
             },
           }}
         >
-          <Image
-            src="/images/cloud-storage.png"
-            width={0}
-            height={0}
-            alt="CloudStorage"
-            style={{
-              width: "auto",
-              maxWidth: "100%",
-              height: "auto",
-              position: "relative",
-              zIndex: 1,
-            }}
-            priority 
-            unoptimized={true}
-          />
+          <Box sx={{ position: "relative" }}>
+            <Image
+              src="/images/cloud-storage.png"
+              width={0}
+              height={0}
+              alt="CloudStorage"
+              style={{
+                width: "auto",
+                maxWidth: "100%",
+                height: "auto",
+                position: "relative",
+                zIndex: 1,
+              }}
+              unoptimized={true}
+            />
 
-          <Image
-            src="/images/items-net-bg.png"
-            alt=""
-            unoptimized={true}
-            width={0}
-            height={0}
-            style={{
-              width: "auto",
-              maxWidth: "150%",
-              height: "auto",
-              position: "absolute",
-              top: "60%",
-              left: "40%",
-              transform: "translate(-45%, -50%)",
-            }}
-          />
+            <Image
+              src="/images/items-net-bg.png"
+              alt=""
+              unoptimized={true}
+              width={0}
+              height={0}
+              style={{
+                width: "auto",
+                maxWidth: "150%",
+                height: "auto",
+                position: "absolute",
+                top: "60%",
+                left: "40%",
+                transform: "translate(-45%, -50%)",
+              }}
+            />
 
-          <Blur
-            color="rgba(186, 8, 255, 0.8156512605042017)"
-            left="-30%"
-            top="-15%"
-            width="600px"
-            height="600px"
-            filter="blur(140px)"
-          />
+            <Blur
+              color="rgba(186, 8, 255, 0.8156512605042017)"
+              left="-30%"
+              top="-15%"
+              width="600px"
+              height="600px"
+              filter="blur(140px)"
+            />
+          </Box>
         </Box>
 
         <Grid2

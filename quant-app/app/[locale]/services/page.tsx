@@ -79,7 +79,8 @@ const Page = async () => {
           height="300px"
           filter="blur(80px)"
         />
-                    <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[80px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[1200px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto bottom-[1570px] left-[840px] why-ios__bg-img max-[900px]:hidden opacity-50" />
       </section>
 
       <NextProject />

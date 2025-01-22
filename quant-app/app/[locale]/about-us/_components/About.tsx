@@ -1,5 +1,6 @@
 "use client"
 
+import Blur from "@/components/Blur";
 import { Button, Grid2, Typography, useMediaQuery } from "@mui/material"
 import { useTranslations } from "next-intl";
 import Image from "next/image"
@@ -132,9 +133,44 @@ const About = () => {
 
       </Grid2>
 
-      <span className="about-info-img"></span>
-      <span className="about-info-img-2"></span>
-      <span className="about-info-img-3 -z-10"></span>
+      <span className="about-info-img top-[10%]"></span>
+      <span className="about-info-img-2 right-[10%]"></span>
+      {/* <span className="about-info-img-3 -z-10"></span> */}
+
+      <Blur
+        color='#1E50FF80'
+        right="10%"
+        top="35%"
+        filter="blur(100px)"
+        className=" w-[350px] h-[350px] max-[600px]:hidden"
+      />
+      <Blur
+        color='#1E50FF80'
+        left="0%"
+        top="30%"
+        filter="blur(100px)"
+        className=" w-[400px] h-[400px] max-[600px]:hidden"
+      />
+      <Blur
+        color='#9C08FF'
+        left="0%"
+        top="50%"
+        filter="blur(180px)"
+        className=" w-[400px] h-[400px] max-[600px]:hidden"
+      />
+      <Blur
+        color='#9C08FF'
+        right="0%"
+        top="52%"
+        filter="blur(160px)"
+        className=" w-[350px] h-[350px] max-[600px]:hidden"
+      />
+
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[100px] left-[1080px] why-ios__bg-img max-[900px]:hidden opacity-65" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[590px] left-[430px] why-ios__bg-img max-[900px]:hidden opacity-65" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[1100px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[1750px] left-[400px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] right-[230px] why-ios__bg-img max-[900px]:hidden" />
     </div>
   )
 }

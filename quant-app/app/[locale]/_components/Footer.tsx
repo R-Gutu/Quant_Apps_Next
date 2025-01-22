@@ -79,7 +79,7 @@ const Footer = async () => {
             ))}
           </Grid2>
           <div className="footer">
-            <Link href="/" className="footer__logo">
+            <Link href="/" className="footer__logo self-center">
               <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
             </Link>
             <div className="footer__links">

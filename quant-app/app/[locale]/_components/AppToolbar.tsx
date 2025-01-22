@@ -15,7 +15,7 @@ const AppToolbar = () => {
   const isSmallScreen = useMediaQuery("(max-width:950px)");
   const pathname = usePathname();
   const projectsAreVisible = useOnScreen('projects');
-
+  
   useEffect(() => {
     // Handle hash scrolling
     if (window.location.hash) {

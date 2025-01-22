@@ -51,6 +51,8 @@ const NextProject = async () => {
             src="/icons/hand3d.svg"
             alt="Hand"
             className="w-full h-auto"
+            priority
+            unoptimized={true}
           />
         </div>
       </div>

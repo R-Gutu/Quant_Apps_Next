@@ -73,6 +73,7 @@ const WhatWeOffer = async () => {
               position: "relative",
               zIndex: 1,
             }}
+            priority 
             unoptimized={true}
           />
 

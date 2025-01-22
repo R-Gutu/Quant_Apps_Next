@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-import Blur from "@/components/Blur";
+// import Blur from "@/components/Blur";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");

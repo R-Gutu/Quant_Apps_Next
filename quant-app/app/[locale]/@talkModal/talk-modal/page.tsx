@@ -113,7 +113,7 @@ const Page = () => {
 
   useEffect(() => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
-  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, validateForm])
+  }, [firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget, validateForm])
 
   const handleSubmit = (e: React.FormEvent) => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);

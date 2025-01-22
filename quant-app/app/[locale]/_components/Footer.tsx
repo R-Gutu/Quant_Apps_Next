@@ -85,15 +85,13 @@ const Footer = async () => {
             <div className="footer__links">
               <div className="footer__column">
                 <p className="footer__column-title">{tFooter("FindUsAt")}</p>
-                {["Instagram", "Facebook", "Linkedin"].map((platform) => (
-                  <Grid2 key={platform} container>
+                {socialLinks.map(({ href, icon, alt }) => (
+                  <Grid2 key={alt} container>
                     <Link
-                      href={`https://www.${platform.toLowerCase()}.com/${platform === "Facebook" ? "profile.php?id=61563468213074" :
-                        platform === "Linkedin" ? "company/quant-apps" :
-                          "quantapps_"}`}
+                      href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ textDecoration: 'none' }}
+                      className="flex flex-row decoration-none justify-between w-1/2 min-w-[100px]"
                     >
                       <Typography
                         sx={{
@@ -104,15 +102,15 @@ const Footer = async () => {
                           '&:hover': { opacity: 1 }
                         }}
                       >
-                        {platform}
-                        <Image
+                        {alt}
+                      </Typography>
+                      <Image
                           width={14}
                           height={14}
-                          src="/icons/linked-in-rounded.svg"
+                          src={icon}
                           alt="External Link"
                           style={{ marginLeft: "13px" }}
                         />
-                      </Typography>
                     </Link>
                   </Grid2>
                 ))}

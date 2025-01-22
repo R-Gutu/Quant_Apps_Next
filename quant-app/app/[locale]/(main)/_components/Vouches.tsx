@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 export default function Vouches() {
     const t = useTranslations('main');
     return (
-        <section className="client-success-stories-section">
+        <section className="client-success-stories-section overflow-hidden">
             <div className="client-success-stories">
                 <h1 className="client-success-stories__title">
                     {t("ClientSuccessStories")}

@@ -7,7 +7,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
         <Card
             className='!pt-[50px] max-[900px]:!pt-[20px]'
             sx={{
-                borderRadius: "61px",
+                borderRadius: "45px",
                 width: { xs: "350px", md: "610px" },
                 height: { xs: "331px", md: "447px" },
                 alignContent: "start",
@@ -90,7 +90,6 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                         />
                     </Link>
                 </Grid2>
-
                 <Box
                     sx={{
                         height: "1.35px",

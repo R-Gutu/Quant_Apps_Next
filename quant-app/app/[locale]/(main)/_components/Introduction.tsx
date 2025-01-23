@@ -77,7 +77,7 @@ export default async function Introduction() {
                         </Link>
                     </Box>
 
-                    <div className="banner__video">
+                    {/* <div className="banner__video">
                         <picture>
                             <Image
                                 src="/images/ipad.webp"
@@ -102,7 +102,7 @@ export default async function Introduction() {
                                 <p>{t("WatchVideo")}</p>
                             </a>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
                 <Box
                     sx={{

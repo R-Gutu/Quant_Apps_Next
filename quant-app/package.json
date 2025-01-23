@@ -33,6 +33,7 @@
     "react-hook-form": "^7.53.2",
     "react-i18next": "^15.4.0",
     "react-router-dom": "^7.1.1",
+    "sharp": "^0.33.5",
     "swipe": "^1.7.7",
     "swiper": "^11.2.1",
     "tailwind-merge": "^2.5.4",

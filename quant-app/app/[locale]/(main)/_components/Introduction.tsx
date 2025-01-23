@@ -78,14 +78,16 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                    <picture>
+                        <picture>
                             <Image
                                 src="/images/ipad.png"
                                 width={500}
-                                height={0}
-                                sizes=""
+                                height={500}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 alt="Ipad"
                                 priority
+                                placeholder="blur"
+                                quality={75}
                                 className="w-full h-full object-contain block"
                             />
                         </picture>

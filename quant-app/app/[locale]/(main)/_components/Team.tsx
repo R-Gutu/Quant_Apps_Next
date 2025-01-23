@@ -49,6 +49,7 @@ export default async function Team() {
                 justifyContent="center"
                 alignItems="center"
                 mt="20px"
+                className="w-full"
             >
                 <TeamMember
                     name="Roman Gutu"

@@ -157,24 +157,26 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Blur
-            color="#1E50FF"
-            left="0%"
-            top="0%"
-            width="400px"
-            height="400px"
-            filter="blur(140px)"
-            className="max-[700px]:hidden"
-          />
-      <Blur
-            color="#9C08FFB2"
-            right="0%"
-            bottom="0%"
-            width="400px"
-            height="400px"
-            filter="blur(140px)"
-            className="max-[700px]:hidden"
-          />
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+        <Blur
+              color="#1E50FF"
+              left="0%"
+              top="0%"
+              width="400px"
+              height="400px"
+              filter="blur(140px)"
+              className="max-[700px]:hidden"
+            />
+        <Blur
+              color="#9C08FFB2"
+              right="0%"
+              bottom="0%"
+              width="400px"
+              height="400px"
+              filter="blur(140px)"
+              className="max-[700px]:hidden"
+            />
+      </div>
     </div>
   );
 };

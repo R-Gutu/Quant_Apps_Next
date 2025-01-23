@@ -58,8 +58,10 @@ const Page = async () => {
         </div>
       </div>
 
-      <span className="contact-us-img" />
-      <span className="contact-us-img-2 translate-y-[20%]" />
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+        <span className="contact-us-img" />
+        <span className="contact-us-img-2 translate-y-[20%]" />
+      </div>
     </section>
   );
 };

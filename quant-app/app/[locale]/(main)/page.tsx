@@ -35,7 +35,7 @@ const Page = async () => {
       </section>
       <Vouches />
       <NextProject />
-      <div className="overflow-hidden">
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
       <Blur
               color="rgba(186, 8, 255, 0.8156512605042017)"
               left="0%"

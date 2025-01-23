@@ -1,13 +1,14 @@
 import { Typography, Box } from "@mui/material"
 // import Image from 'next/image'
-import { getTranslations, getLocale } from "next-intl/server";
-import { getIntroByLanguage } from "@/lib/utils/languageUtils";
+import { getTranslations } from "next-intl/server";
+// import { getTranslations, getLocale } from "next-intl/server";
+// import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
 import Blur from "@/components/Blur";
 
 export default async function Introduction() {
     const t = await getTranslations('main');
-    const currentLocale = await getLocale();
+    // const currentLocale = await getLocale();
     // const intro = getIntroByLanguage(currentLocale);
 
     return (

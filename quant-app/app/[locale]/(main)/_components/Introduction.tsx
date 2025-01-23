@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material"
-// import Image from 'next/image'
+import Image from 'next/image'
 import { getTranslations, getLocale } from "next-intl/server";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
@@ -76,14 +76,17 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                        {/* <Image
-                            src="/images/ipad.png"
-                            width={500}
-                            height={0}
-                            sizes=""
-                            alt="Ipad"
-                            className="w-full h-full object-contain block"
-                        /> */}
+                        <picture>
+                            <Image
+                                src="/images/ipad.png"
+                                width={500}
+                                height={0}
+                                sizes=""
+                                alt="Ipad"
+                                priority
+                                className="w-full h-full object-contain block"
+                            />
+                        </picture>
                         <Link className="banner__video-play" href="/video-modal">
                             <span />
                             <p>{t("WatchVideo")}</p>

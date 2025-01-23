@@ -12,7 +12,7 @@ type BlurProps = {
 };
 
 
-const Blur = ({ color, height, width, top, bottom, left, right, filter, className, position } : BlurProps ) => {
+const Blur = ({ color, height, width, top, bottom, left, right, filter, className } : BlurProps ) => {
   const getColor = () => {
     switch (color) {
       case "purple":

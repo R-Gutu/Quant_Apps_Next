@@ -183,59 +183,61 @@ const Page = async () => {
         <Typography sx={{ mt: "20px" }}>{t("ThankYouForChoosing")}</Typography>
       </Grid2>
 
-      <Blur 
-        color="blue" 
-        width="46.7vw" 
-        height="46.7vw" 
-        left="-10%" 
-        top="0%" 
-        filter="blur(10px)" 
-      />
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+        <Blur 
+          color="blue" 
+          width="46.7vw" 
+          height="46.7vw" 
+          left="-10%" 
+          top="0%" 
+          filter="blur(10px)" 
+        />
 
-      <Blur
-        color="blue"
-        width="56.7vw"
-        height="56.7vw"
-        right="-15%"
-        top="0%"
-        filter="blur(10px)"
-        className="absolute"
-      />
+        <Blur
+          color="blue"
+          width="56.7vw"
+          height="56.7vw"
+          right="-15%"
+          top="0%"
+          filter="blur(10px)"
+          className="absolute"
+        />
 
-      <Blur
-        filter="blur(10px)"
-        color="blue"
-        width="45vw"
-        height="45vw"
-        right="0"
-        top="20%"
-      />
+        <Blur
+          filter="blur(10px)"
+          color="blue"
+          width="45vw"
+          height="45vw"
+          right="0"
+          top="20%"
+        />
 
-      <Blur 
-        filter="blur(70px)" 
-        color="purple" 
-        width="45vw" 
-        height="45vw" 
-        left="-5%" 
-        top="30%" 
-      />
+        <Blur 
+          filter="blur(70px)" 
+          color="purple" 
+          width="45vw" 
+          height="45vw" 
+          left="-5%" 
+          top="30%" 
+        />
 
-      <Blur 
-        filter="blur(10px)" 
-        color="purple" 
-        width="40vw" 
-        height="40vw" 
-        right="0" 
-        top="37%" 
-      />
+        <Blur 
+          filter="blur(10px)" 
+          color="purple" 
+          width="40vw" 
+          height="40vw" 
+          right="0" 
+          top="37%" 
+        />
 
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
-            
-      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] max-[900px]:hidden"/>
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
+              
+        <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] max-[900px]:hidden"/>
+      </div>
 
       <NextProject />
     </Grid2>

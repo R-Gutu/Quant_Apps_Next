@@ -58,7 +58,7 @@ const NextProject = async () => {
           </Box>
         </div>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <Blur
           color='#9C08FF'
           right="0%"

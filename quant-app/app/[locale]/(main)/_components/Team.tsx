@@ -67,7 +67,7 @@ export default async function Team() {
                     details={t("CoFounderDetails")}
                 />
             </Grid2>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
                 <Blur 
                         color="#1E50FF"
                         left="0%"

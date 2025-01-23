@@ -110,7 +110,7 @@ export default async function Introduction() {
                         {t("LetsTalk")}
                     </Link>
                 </Box>
-                <div className="overflow-hidden relative">
+                <div className="overflow-hidden">
                     <span className="banner__blur-img banner__blur-1"></span>
                     <span className="banner__blur-img banner__blur-2"></span>
                     <span className="banner__blur-img banner__blur-3"></span>

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-// import Blur from "@/components/Blur";
+import Blur from "@/components/Blur";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
@@ -95,14 +95,6 @@ const WhatWeOffer = async () => {
               }}
             />
 
-            {/* <Blur
-              color="rgba(186, 8, 255, 0.8156512605042017)"
-              left="-30%"
-              top="-15%"
-              width="600px"
-              height="600px"
-              filter="blur(140px)"
-            /> */}
           </Box>
         </Box>
 
@@ -301,6 +293,14 @@ const WhatWeOffer = async () => {
           </Grid2>
         </Grid2>
       </Grid2>
+      <Blur
+        color="rgba(186, 8, 255, 0.8156512605042017)"
+        left="-30%"
+        top="-15%"
+        width="600px"
+        height="600px"
+        filter="blur(140px)"
+      />
     </div>
   );
 };

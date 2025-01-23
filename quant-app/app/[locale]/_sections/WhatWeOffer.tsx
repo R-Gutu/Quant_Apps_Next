@@ -6,7 +6,7 @@ const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
 
   return (
-    <div className="offer overflow-hidden" id="services">
+    <div className="offer" id="services">
       <Grid2>
         <Typography
           sx={{

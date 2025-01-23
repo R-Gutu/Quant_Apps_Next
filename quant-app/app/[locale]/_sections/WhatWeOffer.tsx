@@ -94,6 +94,7 @@ const WhatWeOffer = async () => {
                 transform: "translate(-45%, -50%)",
               }}
             />
+
           </Box>
         </Box>
 
@@ -292,6 +293,7 @@ const WhatWeOffer = async () => {
           </Grid2>
         </Grid2>
       </Grid2>
+
       <div className="overflow-hidden">
       <Blur
               color="rgba(186, 8, 255, 0.8156512605042017)"
@@ -302,6 +304,7 @@ const WhatWeOffer = async () => {
               filter="blur(140px)"
             />
       </div>
+
     </div>
   );
 };

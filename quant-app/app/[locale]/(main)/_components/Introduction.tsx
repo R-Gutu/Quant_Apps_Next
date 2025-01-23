@@ -111,10 +111,7 @@ export default async function Introduction() {
                     </Link>
                 </Box>
                 <div className="overflow-hidden">
-                    {/* <span className="banner__blur-img banner__blur-1"></span>
-                    <span className="banner__blur-img banner__blur-2"></span>
-                    <span className="banner__blur-img banner__blur-3"></span>
-                    <span className="banner__blur-img banner__blur-4"></span> */}
+
                     <Blur
                         color="#1E50FF"
                         left="-5%"

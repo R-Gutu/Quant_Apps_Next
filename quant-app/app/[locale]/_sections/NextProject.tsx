@@ -48,6 +48,7 @@ const NextProject = async () => {
           max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[600px]:top-[-2px] max-[600px]:right-[100px]">
           <Box sx={{ position: "relative" }}>
             <Image
+              priority
               width={0}
               height={0}
               src="/icons/hand3d.svg"

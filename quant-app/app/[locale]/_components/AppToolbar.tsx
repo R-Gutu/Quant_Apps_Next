@@ -42,37 +42,35 @@ const AppToolbar = () => {
           </Link>
           <nav>
             <ul className="menu">
-              <li className={cn('menu__item', { 'active': pathname === '/services' })}>
-                <Link href="/services" className="text-nowrap">
-                  {t("Services")}
-                </Link>
-              </li>
+            <li className={cn('menu__item', { 'active': pathname === '/services' })}>
+              <Link href="/services">
+                <a className="text-nowrap">{t("Services")}</a>
+              </Link>
+            </li>
 
-              <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
-                <Link
-                  href="/#projects"
-                  className="text-left text-nowrap"
-                  scroll={false}
-                >
-                  {t("Projects")}
-                </Link>
-              </li>
+            <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
+              <Link href="/#projects" scroll={false}>
+                <a className="text-left text-nowrap">{t("Projects")}</a>
+              </Link>
+            </li>
 
-              <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
-                <Link href="/about-us" className="text-nowrap">
-                  {t("AboutUs")}
-                </Link>
-              </li>
+            <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
+              <Link href="/about-us">
+                <a className="text-nowrap">{t("AboutUs")}</a>
+              </Link>
+            </li>
 
-              <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
-                <Link href="/contact-us" className="text-nowrap">
-                  {t("ContactUs")}
-                </Link>
-              </li>
+            <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
+              <Link href="/contact-us">
+                <a className="text-nowrap">{t("ContactUs")}</a>
+              </Link>
+            </li>
 
               <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
-                <Link href="/faqs" className="text-nowrap">
-                  FAQs
+                <Link href="/faqs">
+                  <a className="text-nowrap">
+                    FAQs
+                  </a>
                 </Link>
               </li>
             </ul>
@@ -81,10 +79,11 @@ const AppToolbar = () => {
           <div className="nav-right justify-center">
             {pathname !== "/contact-us" && (
               <Link
-                className="button lets-talk text-nowrap !w-auto !px-[20px]"
                 href='/talk-modal'
               >
-                {t("LetsTalk")}
+                <a className="button lets-talk text-nowrap !w-auto !px-[20px]">
+                  {t("LetsTalk")}
+                </a>
               </Link>
             )}
           </div>

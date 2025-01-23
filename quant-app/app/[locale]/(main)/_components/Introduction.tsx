@@ -68,10 +68,11 @@ export default async function Introduction() {
                         }}
                     >
                         <Link
-                            className="button lets-talk fill-btn banner__text-btn"
                             href='/talk-modal'
                         >
-                            {t("LetsTalk")}
+                            <a className="button lets-talk fill-btn banner__text-btn">
+                                {t("LetsTalk")}
+                            </a>
                         </Link>
                     </Box>
 
@@ -87,16 +88,19 @@ export default async function Introduction() {
                                 className="w-full h-full object-contain block"
                             />
                         </picture>
-                        <Link className="banner__video-play" href="/video-modal">
-                            <span />
-                            <p>{t("WatchVideo")}</p>
+                        <Link href="/video-modal">
+                            <a className="banner__video-play">
+                                <span />
+                                <p>{t("WatchVideo")}</p>
+                            </a>
                         </Link>
 
-                        <a href={intro} className="banner__video-play__mobile">
-                            <span></span>
-
-                            <p>{t("WatchVideo")}</p>
-                        </a>
+                        <Link href={intro}>
+                            <a className="banner__video-play__mobile">
+                                <span></span>
+                                <p>{t("WatchVideo")}</p>
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <Box
@@ -107,10 +111,11 @@ export default async function Introduction() {
                     }}
                 >
                     <Link
-                        className="button lets-talk fill-btn banner__text-btn"
                         href='/talk-modal'
                     >
-                        {t("LetsTalk")}
+                        <a className="button lets-talk fill-btn banner__text-btn">
+                            {t("LetsTalk")}
+                        </a>
                     </Link>
                 </Box>
                 <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">

@@ -55,12 +55,13 @@ export default function Vouches() {
 
                 <Link
                     href="https://www.fiverr.com/drimba3"
-                    className="client-success-stories__fiverr"
                     target="_blank"
                 >
-                    <span>{t("AllReviewsOn")}</span>
+                    <a className="client-success-stories__fiverr">
+                        <span>{t("AllReviewsOn")}</span>
 
-                    <Image src="/icons/fi.svg" alt="" width={100} height={0} className="w-auto h-auto fiverr__icon" />
+                        <Image src="/icons/fi.svg" alt="" width={100} height={0} className="w-auto h-auto fiverr__icon" />
+                    </a>
                 </Link>
             </div>
         </section>

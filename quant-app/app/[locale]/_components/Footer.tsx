@@ -63,8 +63,10 @@ const Footer = async () => {
           >
           </Grid2>
           <div className="footer">
-            <Link href="/" className="footer__logo self-center">
-              <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
+            <Link href="/">
+              <a className="footer__logo self-center">
+                <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
+              </a>
             </Link>
             <div className="footer__links">
               <div className="footer__column">
@@ -75,18 +77,19 @@ const Footer = async () => {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline"
                     >
-                      <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
-                        {alt}
-                      </h1>
-                      <Image
-                        width={14}
-                        height={14}
-                        src={icon}
-                        alt="External Link"
-                        className="ml-[13px]"
-                      />
+                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline">
+                        <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
+                          {alt}
+                        </h1>
+                        <Image
+                          width={14}
+                          height={14}
+                          src={icon}
+                          alt="External Link"
+                          className="ml-[13px]"
+                        />
+                      </a>
                     </Link>
                   </Grid2>
                 ))}

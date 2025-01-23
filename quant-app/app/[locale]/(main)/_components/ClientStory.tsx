@@ -1,7 +1,6 @@
 
 import {
   Grid2,
-  Link,
   Typography,
   useMediaQuery,
   useTheme,
@@ -82,7 +81,7 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
             ml: "60px",
           }}
         >
-          <Link>{clientName}</Link>
+          <div>{clientName}</div>
 
           {clientDescription && (
             <Typography

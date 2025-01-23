@@ -80,14 +80,11 @@ export default async function Introduction() {
                     <div className="banner__video">
                         <picture>
                             <Image
-                                src="/images/ipad.png"
+                                src="/images/ipad.webp"
                                 width={500}
                                 height={500}
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 alt="Ipad"
                                 priority
-                                placeholder="blur"
-                                quality={75}
                                 className="w-full h-full object-contain block"
                             />
                         </picture>

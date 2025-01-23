@@ -10,7 +10,7 @@ interface AppLinkProps {
 
 const AppLink = ({ href, children, scroll = true, onClick}: AppLinkProps) => {
   return (
-    <Link href={href} passHref scroll={scroll} onClick={onClick}>
+    <Link href={href} passHref scroll={scroll} onClick={onClick} legacyBehavior>
       <Typography
         sx={{
           fontFamily: `"ClashDisplay", "Inter", sans-serif`,

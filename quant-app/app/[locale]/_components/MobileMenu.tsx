@@ -45,6 +45,7 @@ const MobileMenu = () => {
         >
           <Link
             href="/services"
+            legacyBehavior
           >
             <a className="text-left w-full">
               {t("Services")}
@@ -58,6 +59,7 @@ const MobileMenu = () => {
           <Link
             href="/#projects"
             scroll={false}
+            legacyBehavior
           >
             <a className="text-left w-full">
               {t("Projects")}
@@ -72,6 +74,7 @@ const MobileMenu = () => {
         >
           <Link
             href="/about-us"
+            legacyBehavior
           >
             <a className="text-left w-full">
               {t("AboutUs")}
@@ -86,6 +89,7 @@ const MobileMenu = () => {
         >
           <Link
             href="/contact-us"
+            legacyBehavior
           >
             <a className="text-left w-full">
               {t("ContactUs")}
@@ -100,6 +104,7 @@ const MobileMenu = () => {
         >
           <Link
             href="/faqs"
+            legacyBehavior
           >
             <a className="text-left w-full">
               FAQs
@@ -119,6 +124,7 @@ const MobileMenu = () => {
           href="https://www.facebook.com/profile.php?id=61571073299478"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image width={30} height={30} src="/icons/footer-facebook.svg" alt="Facebook" />
         </Link>
@@ -127,6 +133,7 @@ const MobileMenu = () => {
           href="https://www.instagram.com/quantapps_/"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image
             width={30}
@@ -140,6 +147,7 @@ const MobileMenu = () => {
           href="https://www.linkedin.com/company/quant-apps"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/linked-in.svg" alt="LinkedIn" />
         </Link>
@@ -148,6 +156,7 @@ const MobileMenu = () => {
           href="https://www.tiktok.com/@quantapps"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/tik-tok.svg" alt="TikTok" />
         </Link>
@@ -156,6 +165,7 @@ const MobileMenu = () => {
           href="https://t.me/quantapps"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image width={30} height={30} className="w-[30px] h-[30px]" src="/icons/Telegram.svg" alt="Telegram" />
         </Link>
@@ -164,6 +174,7 @@ const MobileMenu = () => {
           href="https://wa.me/37369882331"
           target="_blank"
           rel="noopener noreferrer"
+          legacyBehavior
         >
           <Image width={30} height={30} src="/icons/whats-app.svg" alt="WhatsApp" />
         </Link>

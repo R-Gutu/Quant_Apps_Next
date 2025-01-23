@@ -63,7 +63,7 @@ const Footer = async () => {
           >
           </Grid2>
           <div className="footer">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a className="footer__logo self-center">
                 <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
               </a>
@@ -77,6 +77,7 @@ const Footer = async () => {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
+                      legacyBehavior
                     >
                       <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline">
                         <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
@@ -158,6 +159,7 @@ const Footer = async () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    legacyBehavior
                   >
                     <Image width={41} height={41} src={icon} alt={alt} />
                   </Link>

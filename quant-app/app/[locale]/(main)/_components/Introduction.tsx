@@ -12,7 +12,7 @@ export default async function Introduction() {
 
     return (
         <>
-            <div className="pt-[150px] max-[950px]:pt-[100px]">
+            <div className="banner">
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography
@@ -68,6 +68,7 @@ export default async function Introduction() {
                         }}
                     >
                         <Link
+                            legacyBehavior
                             href='/talk-modal'
                         >
                             <a className="button lets-talk fill-btn banner__text-btn">
@@ -77,27 +78,25 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                        <picture>
-                            <Image
-                                src="/images/ipad.png"
-                                width={500}
-                                height={0}
-                                sizes=""
-                                alt="Ipad"
-                                priority
-                                className="w-full h-full object-contain block"
-                            />
-                        </picture>
-                        <Link href="/video-modal">
+                        <Image
+                            src="/images/ipad.png"
+                            fill
+                            sizes=""
+                            alt="Ipad"
+                            loading="lazy"
+                            className="banner__video-img"
+                        />
+                        <Link href="/video-modal" legacyBehavior>
                             <a className="banner__video-play">
                                 <span />
                                 <p>{t("WatchVideo")}</p>
                             </a>
                         </Link>
 
-                        <Link href={intro}>
-                            <a className="banner__video-play__mobile">
+                        <Link href={intro} legacyBehavior>
+                        <a className="banner__video-play__mobile">
                                 <span></span>
+
                                 <p>{t("WatchVideo")}</p>
                             </a>
                         </Link>
@@ -111,66 +110,49 @@ export default async function Introduction() {
                     }}
                 >
                     <Link
+                        legacyBehavior
                         href='/talk-modal'
                     >
                         <a className="button lets-talk fill-btn banner__text-btn">
-                            {t("LetsTalk")}
+                        {t("LetsTalk")}
                         </a>
                     </Link>
                 </Box>
-                <Box
-                    sx={{
-                        position: "relative",
-                        width: "100%",
-                        height: "300px", // Ensure consistent height to avoid layout shifts
-                        overflow: "hidden",
-                    }}
-                >
-                    <Box
-                        sx={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            zIndex: -10,
-                        }}
-                    >
-                        <Blur
-                            color="#1E50FF"
-                            left="-5%"
-                            top="0%"
-                            width="300px"
-                            height="300px"
-                            filter="blur(100px)"
-                        />
-                        <Blur
-                            color="#9C08FFE5"
-                            left="25%"
-                            top="0%"
-                            width="300px"
-                            height="300px"
-                            filter="blur(100px)"
-                        />
-                        <Blur
-                            color="#1E50FF"
-                            right="5%"
-                            top="10%"
-                            width="300px"
-                            height="300px"
-                            filter="blur(200px)"
-                        />
-                        <Blur
-                            color="#9C08FFE5"
-                            right="5%"
-                            top="0%"
-                            width="300px"
-                            height="300px"
-                            filter="blur(200px)"
-                        />
-                    </Box>
-                </Box>
+                <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+                    <Blur
+                        color="#1E50FF"
+                        left="-5%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(100px)"
+                    />
+                    <Blur
+                        color="#9C08FFE5"
+                        left="25%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(100px)"
+                    />
+                    <Blur
+                        color="#1E50FF"
+                        right="5%"
+                        top="10%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(200px)"
+                    />
+                    <Blur
+                        color="#9C08FFE5"
+                        right="5%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(200px)"
+                    />
 
+                </div>
             </div>
         </>
     )

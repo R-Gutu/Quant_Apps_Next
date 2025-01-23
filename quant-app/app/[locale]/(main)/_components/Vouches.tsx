@@ -1,7 +1,7 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
 import ClientStory from "./ClientStory"
-import { Link } from "@mui/material";
+import { Link } from "@/i18n/routing";
 import Image from 'next/image';
 import { useTranslations } from "next-intl";
 
@@ -56,6 +56,7 @@ export default function Vouches() {
                 <Link
                     href="https://www.fiverr.com/drimba3"
                     target="_blank"
+                    legacyBehavior
                 >
                     <a className="client-success-stories__fiverr">
                         <span>{t("AllReviewsOn")}</span>

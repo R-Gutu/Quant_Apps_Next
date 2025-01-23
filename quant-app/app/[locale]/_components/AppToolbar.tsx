@@ -37,37 +37,39 @@ const AppToolbar = () => {
     <>
       <header className="fixed top-0 left-0 z-50 bg-[#051139] w-full">
         <div className="grid grid-cols-[2fr_5fr_1fr_1fr] pl-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
-          <Link href="/" className="w-full self-center">
+          <Link href="/" legacyBehavior>
+            <a className="w-full self-center">
             <Image priority id="logo" src="/icons/logo.svg" width={500} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
+            </a>
           </Link>
           <nav>
             <ul className="menu">
             <li className={cn('menu__item', { 'active': pathname === '/services' })}>
-              <Link href="/services">
+              <Link href="/services" legacyBehavior>
                 <a className="text-nowrap">{t("Services")}</a>
               </Link>
             </li>
 
             <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
-              <Link href="/#projects" scroll={false}>
+              <Link href="/#projects" scroll={false} legacyBehavior>
                 <a className="text-left text-nowrap">{t("Projects")}</a>
               </Link>
             </li>
 
             <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
-              <Link href="/about-us">
+              <Link href="/about-us" legacyBehavior>
                 <a className="text-nowrap">{t("AboutUs")}</a>
               </Link>
             </li>
 
             <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
-              <Link href="/contact-us">
+              <Link href="/contact-us" legacyBehavior>
                 <a className="text-nowrap">{t("ContactUs")}</a>
               </Link>
             </li>
 
               <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
-                <Link href="/faqs">
+                <Link href="/faqs" legacyBehavior>
                   <a className="text-nowrap">
                     FAQs
                   </a>
@@ -80,6 +82,7 @@ const AppToolbar = () => {
             {pathname !== "/contact-us" && (
               <Link
                 href='/talk-modal'
+                legacyBehavior
               >
                 <a className="button lets-talk text-nowrap !w-auto !px-[20px]">
                   {t("LetsTalk")}

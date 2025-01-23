@@ -21,7 +21,7 @@ const Page = async () => {
         <Introduction /> 
         <WhatWeOffer />
         <Box sx={{ mt: "50px", display: "flex", justifyContent: "center" }}>
-          <Link href="/services">
+          <Link href="/services" legacyBehavior>
             <button className="fill-btn">{t("ReadMore")}</button>
           </Link>
         </Box>

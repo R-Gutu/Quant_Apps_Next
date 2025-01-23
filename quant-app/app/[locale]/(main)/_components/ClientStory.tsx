@@ -2,6 +2,7 @@
 import {
   Grid2,
   Typography,
+  Link,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -81,7 +82,7 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
             ml: "60px",
           }}
         >
-          <div>{clientName}</div>
+          <Link>{clientName}</Link>
 
           {clientDescription && (
             <Typography

@@ -2,7 +2,6 @@
 import {
   Grid2,
   Typography,
-  Link,
   useMediaQuery,
   useTheme,
 } from "@mui/material";

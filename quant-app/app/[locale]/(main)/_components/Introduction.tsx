@@ -78,14 +78,16 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                        <Image
-                            src="/images/ipad.png"
-                            fill
-                            sizes=""
-                            alt="Ipad"
-                            priority
-                            className="banner__video-img"
-                        />
+                        <picture>
+                            <Image
+                                src="/images/ipad.png"
+                                fill
+                                sizes=""
+                                alt="Ipad"
+                                priority
+                                className="banner__video-img"
+                            />
+                        </picture>
                         <Link href="/video-modal" legacyBehavior>
                             <a className="banner__video-play">
                                 <span />
@@ -94,7 +96,7 @@ export default async function Introduction() {
                         </Link>
 
                         <Link href={intro} legacyBehavior>
-                        <a className="banner__video-play__mobile">
+                            <a className="banner__video-play__mobile">
                                 <span></span>
 
                                 <p>{t("WatchVideo")}</p>
@@ -114,7 +116,7 @@ export default async function Introduction() {
                         href='/talk-modal'
                     >
                         <a className="button lets-talk fill-btn banner__text-btn">
-                        {t("LetsTalk")}
+                            {t("LetsTalk")}
                         </a>
                     </Link>
                 </Box>

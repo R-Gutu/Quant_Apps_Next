@@ -133,6 +133,7 @@ const About = () => {
 
       </Grid2>
 
+      
       <span className="about-info-img top-[10%]"></span>
       <span className="about-info-img-2 right-[10%]"></span>
       {/* <span className="about-info-img-3 -z-10"></span> */}

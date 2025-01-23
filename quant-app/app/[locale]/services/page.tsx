@@ -117,11 +117,10 @@ const Page = async () => {
         <Image src="/icons/Star.svg" width={50} height={50} alt="star" className="w-auto h-auto bottom-[1200px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
         <Image src="/icons/Star.svg" width={50} height={50} alt="star" className="w-[60px] h-auto bottom-[1570px] left-[840px] why-ios__bg-img max-[900px]:hidden opacity-50" />
         
-        {/* <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-1 why-ios__bg-img" />
-        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-2 why-ios__bg-img" />
-        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-3 why-ios__bg-img" /> */}
-        {/* <Image src="/icons/moon.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__moon why-ios__bg-img" /> */}
-        {/* <Image src="/icons/moon.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__moon-2 why-ios__bg-img" /> */}
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto absolute top-[930px] left-[320px]" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto absolute top-[680px] right-[200px]" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto absolute top-[1150px] right-[430px]" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto absolute top-[1430px] left-[250px]" />
       </div>
 
       <NextProject />

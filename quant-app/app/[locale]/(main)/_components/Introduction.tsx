@@ -1,15 +1,15 @@
 import { Typography, Box } from "@mui/material"
-// import Image from 'next/image'
-import { getTranslations } from "next-intl/server";
-// import { getTranslations, getLocale } from "next-intl/server";
-// import { getIntroByLanguage } from "@/lib/utils/languageUtils";
+import Image from 'next/image'
+// import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
+import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
 import Blur from "@/components/Blur";
 
 export default async function Introduction() {
     const t = await getTranslations('main');
-    // const currentLocale = await getLocale();
-    // const intro = getIntroByLanguage(currentLocale);
+    const currentLocale = await getLocale();
+    const intro = getIntroByLanguage(currentLocale);
 
     return (
         <>
@@ -78,7 +78,7 @@ export default async function Introduction() {
                         </Link>
                     </Box>
 
-                    {/* <div className="banner__video">
+                    <div className="banner__video">
                         <picture>
                             <Image
                                 src="/images/ipad.webp"
@@ -103,7 +103,7 @@ export default async function Introduction() {
                                 <p>{t("WatchVideo")}</p>
                             </a>
                         </Link>
-                    </div> */}
+                    </div>
                 </div>
                 <Box
                     sx={{

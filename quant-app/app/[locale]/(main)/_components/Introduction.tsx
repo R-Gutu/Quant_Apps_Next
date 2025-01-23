@@ -12,7 +12,7 @@ export default async function Introduction() {
 
     return (
         <>
-            <div className="banner">
+            <div className="pt-[150px] max-[950px]:pt-[100px]">
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography

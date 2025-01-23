@@ -150,7 +150,7 @@ const WhatWeOffer = async () => {
                 position: "relative",
               }}
             >
-              <Image src="/icons/vector.svg" alt="Vector" width={0} height={0} className='w-auto h-auto' />
+              <Image src="/icons/vector.svg" alt="Vector" width={100} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -182,7 +182,7 @@ const WhatWeOffer = async () => {
                 position: "relative",
               }}
             >
-              <Image src="/icons/apple.svg" alt="Apple" width={0} height={0} className='w-auto h-auto' />
+              <Image src="/icons/apple.svg" alt="Apple" width={100} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -212,7 +212,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src="/icons/android.svg" alt="Android" width={0} height={0} className='w-auto h-auto' />
+              <Image src="/icons/android.svg" alt="Android" width={100} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -243,7 +243,7 @@ const WhatWeOffer = async () => {
                 padding: { xs: "0px", md: "4px" },
               }}
             >
-              <Image src="/icons/cross-platform.svg" alt="CrossPlatform" width={0} height={0} className='w-auto h-auto' />
+              <Image src="/icons/cross-platform.svg" alt="CrossPlatform" width={100} height={0} className='w-auto h-auto' />
             </Grid2>
 
             <Grid2 container direction="column" size={8}>
@@ -278,9 +278,8 @@ const WhatWeOffer = async () => {
                 padding: "4px",
               }}
             >
-              <Image src="/icons/settings.svg" alt="Settings" width={0} height={0} className='w-auto h-auto' />
+              <Image src="/icons/settings.svg" alt="Settings" width={100} height={0} className='w-auto h-auto' />
             </Grid2>
-
             <Grid2 container direction="column" size={8}>
               <Typography variant="h3">
                 {t("OngoingSupportMaintenance")}

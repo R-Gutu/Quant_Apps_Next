@@ -1,4 +1,4 @@
-/* Font Faces
+/* Font Faces */
 @font-face {
   font-family: 'ClashDisplay';
   src: url(/fonts/ClashDisplay-Bold.ttf);
@@ -74,7 +74,7 @@
   src: url(/fonts/RedHatDisplay-Regular.ttf);
   font-style: normal;
   font-weight: 400;
-} */
+}
 
 /* Root Variables */
 :root {

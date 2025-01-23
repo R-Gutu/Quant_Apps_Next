@@ -10,7 +10,7 @@ const Page = async () => {
   const t = await getTranslations("services");
 
   return (
-    <>
+    <div className="overflow-hidden">
       <div className="container !pt-[65px]">
         <WhatWeOffer />
       </div>
@@ -31,14 +31,6 @@ const Page = async () => {
           </div>
         </div>
 
-        <span className="why-ios__bg-img why-ios__blur-1"></span>
-        <span className="why-ios__bg-img why-ios__blur-2"></span>
-        
-        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-1 why-ios__bg-img" />
-        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-2 why-ios__bg-img" />
-        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__star-3 why-ios__bg-img" />
-        <Image src="/icons/moon.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__moon why-ios__bg-img" />
-        <Image src="/icons/moon.svg" width={0} height={0} alt="" className="w-auto h-auto why-ios__moon-2 why-ios__bg-img" />
       </section>
 
       <section className="working-process__section">
@@ -63,6 +55,17 @@ const Page = async () => {
             </div>
           </div>
         </div>
+      </section>
+      <div className="overflow-hidden">
+        <Blur
+              color="rgba(186, 8, 255, 0.8156512605042017)"
+              left="0%"
+              top="7%"
+              width="600px"
+              height="600px"
+              filter="blur(140px)"
+              className="absolute"
+        />
         <Blur
             color="#1E50FF"
             left="0%"
@@ -71,7 +74,7 @@ const Page = async () => {
             height="300px"
             filter="blur(120px)"
         />
-          <Blur
+        <Blur
           color="#9C08FF99"
           right="-2%"
           bottom="30%"
@@ -79,12 +82,50 @@ const Page = async () => {
           height="300px"
           filter="blur(80px)"
         />
-        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[1200px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto bottom-[1570px] left-[840px] why-ios__bg-img max-[900px]:hidden opacity-50" />
-      </section>
+        <Blur
+          color="#1E50FF"
+          left="-2%"
+          top="5%"
+          width="300px"
+          height="300px"
+          filter="blur(180px)"
+        />
+        <Blur
+          color="#9C08FF99"
+          right="6%"
+          top="8%"
+          width="400px"
+          height="400px"
+          filter="blur(140px)"
+        />
+        <Blur
+          color="#1E50FF"
+          right="6%"
+          top="25%"
+          width="400px"
+          height="400px"
+          filter="blur(120px)"
+        />
+        <Blur
+          color="#9C08FF99"
+          left="6%"
+          top="30%"
+          width="400px"
+          height="400px"
+          filter="blur(140px)"
+        />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="star" className="w-auto h-auto bottom-[1200px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="star" className="w-[60px] h-auto bottom-[1570px] left-[840px] why-ios__bg-img max-[900px]:hidden opacity-50" />
+        
+        {/* <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-1 why-ios__bg-img" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-2 why-ios__bg-img" />
+        <Image src="/icons/Star.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__star-3 why-ios__bg-img" /> */}
+        {/* <Image src="/icons/moon.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__moon why-ios__bg-img" /> */}
+        {/* <Image src="/icons/moon.svg" width={50} height={50} alt="" className="w-auto h-auto why-ios__moon-2 why-ios__bg-img" /> */}
+      </div>
 
       <NextProject />
-    </>
+    </div>
   );
 };
 

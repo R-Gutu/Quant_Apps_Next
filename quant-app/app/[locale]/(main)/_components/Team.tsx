@@ -67,16 +67,19 @@ export default async function Team() {
                     details={t("CoFounderDetails")}
                 />
             </Grid2>
-            <Blur
-                    color="#1E50FF"
-                    left="0%"
-                    bottom="6%"
-                    width="300px"
-                    height="300px"
-                    filter="blur(120px)"
-                />
-            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[80px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-            <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[-70px] left-[700px] why-ios__bg-img max-[900px]:hidden" />
+            <div className="overflow-hidden">
+                <Blur 
+                        color="#1E50FF"
+                        left="0%"
+                        bottom="6%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(120px)"
+                    />
+                <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[80px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+                <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto bottom-[-70px] left-[700px] why-ios__bg-img max-[900px]:hidden" />
+            </div>
+            
         </Grid2>
     )
 }

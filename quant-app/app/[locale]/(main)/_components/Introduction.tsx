@@ -110,20 +110,45 @@ export default async function Introduction() {
                         {t("LetsTalk")}
                     </Link>
                 </Box>
-                <div className="overflow-hidden relative">
-                    <span className="banner__blur-img banner__blur-1"></span>
+                <div className="overflow-hidden">
+                    {/* <span className="banner__blur-img banner__blur-1"></span>
                     <span className="banner__blur-img banner__blur-2"></span>
                     <span className="banner__blur-img banner__blur-3"></span>
-                    <span className="banner__blur-img banner__blur-4"></span>
+                    <span className="banner__blur-img banner__blur-4"></span> */}
+                    <Blur
+                        color="#1E50FF"
+                        left="-5%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(100px)"
+                    />
+                    <Blur
+                        color="#9C08FFE5"
+                        left="25%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(100px)"
+                    />
+                    <Blur
+                        color="#1E50FF"
+                        right="5%"
+                        top="10%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(200px)"
+                    />
+                    <Blur
+                        color="#9C08FFE5"
+                        right="5%"
+                        top="0%"
+                        width="300px"
+                        height="300px"
+                        filter="blur(200px)"
+                    />
+
                 </div>
-                <Blur
-                    color="#1E50FF"
-                    right="5%"
-                    top="10%"
-                    width="300px"
-                    height="300px"
-                    filter="blur(200px)"
-                />
             </div>
         </>
     )

@@ -143,7 +143,7 @@ export default function Projects() {
                     )}
                 </Typography>
             </Button>
-            <Box className="relative overflow-hidden">
+            <Box className="overflow-hidden">
                 <Blur
                     color="#9C08FF99"
                     right="0%"

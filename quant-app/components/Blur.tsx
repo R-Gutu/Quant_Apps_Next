@@ -42,7 +42,7 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
         WebkitFilter: filter,
         borderRadius: "50%"
       }}
-      className={className}
+      className={`${className}`}
     />
   );
 };

@@ -4,6 +4,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";
 import Blur from "@/components/Blur";
+import iPadImage from '@/public/images/ipad.png';
 
 export default async function Introduction() {
     const t = await getTranslations('main');
@@ -80,10 +81,8 @@ export default async function Introduction() {
                     <div className="banner__video">
                         <picture>
                             <Image
-                                src="/images/ipad.png"
-                                width={500}
-                                height={0}
-                                sizes=""
+                                src={iPadImage}
+                                placeholder="blur"
                                 alt="Ipad"
                                 priority
                                 className="w-full h-full object-contain block"

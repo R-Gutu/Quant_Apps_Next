@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import Image from 'next/image';
-import { Button, Typography, Box } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import Project from "./Project";
 import { useTranslations } from "next-intl";
 import ProjectType from '@/lib/types/ProjectType';

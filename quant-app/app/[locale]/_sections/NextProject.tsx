@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import Blur from "@/components/Blur";
-import { Box } from "@mui/material";
 
 const NextProject = async () => {
   const t = await getTranslations("next-project");

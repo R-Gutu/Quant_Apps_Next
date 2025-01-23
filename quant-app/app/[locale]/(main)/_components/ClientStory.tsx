@@ -82,7 +82,7 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
             ml: "60px",
           }}
         >
-          <Link>{clientName}</Link>
+          <p className="!font-clash !text-[17px] !text-[#515DEF] !font-medium">{clientName}</p>
 
           {clientDescription && (
             <Typography

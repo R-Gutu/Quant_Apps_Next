@@ -1,5 +1,5 @@
 import { Typography, Box } from "@mui/material"
-import Image from 'next/image'
+// import Image from 'next/image'
 import { getTranslations, getLocale } from "next-intl/server";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { Link } from "@/i18n/routing";

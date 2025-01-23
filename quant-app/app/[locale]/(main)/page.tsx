@@ -10,6 +10,7 @@ import QuanticaSlider from "./_components/QuanticaSlider";
 import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
+import Blur from '@/components/Blur';
 
 const Page = async () => {
   const t = await getTranslations("main");
@@ -34,6 +35,17 @@ const Page = async () => {
       </section>
       <Vouches />
       <NextProject />
+      <div className="overflow-hidden">
+      <Blur
+              color="rgba(186, 8, 255, 0.8156512605042017)"
+              left="0%"
+              top="15%"
+              width="600px"
+              height="600px"
+              filter="blur(140px)"
+              className="absolute"
+            />
+      </div>
     </>
   );
 };

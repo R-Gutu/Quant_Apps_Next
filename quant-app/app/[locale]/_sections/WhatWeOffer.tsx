@@ -1,13 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
-import Blur from "@/components/Blur";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
 
   return (
-    <div className="offer" id="services">
+    <div className="offer overflow-hidden" id="services">
       <Grid2>
         <Typography
           sx={{
@@ -292,17 +291,6 @@ const WhatWeOffer = async () => {
           </Grid2>
         </Grid2>
       </Grid2>
-
-      <div className="overflow-hidden">
-      <Blur
-              color="rgba(186, 8, 255, 0.8156512605042017)"
-              left="0%"
-              top="15%"
-              width="600px"
-              height="600px"
-              filter="blur(140px)"
-            />
-      </div>
 
     </div>
   );

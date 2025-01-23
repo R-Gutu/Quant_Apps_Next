@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/react"
 
 import "./globals.css";
 import "@/styles/mainpage.css"
@@ -92,6 +93,7 @@ export default async function RootLayout({
           {videoModal}
           {talkModal}
           <Footer />
+          <Analytics/>
         </NextIntlClientProvider>
       </body>
     </html>

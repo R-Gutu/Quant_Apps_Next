@@ -26,14 +26,13 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
   };
 
   return (
-    <span
+    <div
       style={{
         position: "absolute",
         top: top,
         bottom: bottom,
         left: left,
         right: right,
-        // opacity: "0.5",
         width: width,
         height: height,
         background: getColor(),

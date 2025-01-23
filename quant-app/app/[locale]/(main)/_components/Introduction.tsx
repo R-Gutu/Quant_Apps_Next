@@ -78,10 +78,11 @@ export default async function Introduction() {
                     <div className="banner__video">
                         <Image
                             src="/images/ipad.png"
-                            fill
+                            width={500}
+                            height={0}
                             sizes=""
                             alt="Ipad"
-                            className="banner__video-img"
+                            className="w-full h-full object-contain block"
                         />
                         <Link className="banner__video-play" href="/video-modal">
                             <span />

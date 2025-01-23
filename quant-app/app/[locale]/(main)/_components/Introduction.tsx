@@ -78,7 +78,7 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                    <picture>
+                        <picture>
                             <Image
                                 src="/images/ipad.png"
                                 width={500}

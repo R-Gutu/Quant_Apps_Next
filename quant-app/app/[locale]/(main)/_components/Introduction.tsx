@@ -78,14 +78,15 @@ export default async function Introduction() {
                     </Box>
 
                     <div className="banner__video">
-                        <picture>
+                    <picture>
                             <Image
                                 src="/images/ipad.png"
-                                fill
+                                width={500}
+                                height={0}
                                 sizes=""
                                 alt="Ipad"
                                 priority
-                                className="banner__video-img"
+                                className="w-full h-full object-contain block"
                             />
                         </picture>
                         <Link href="/video-modal" legacyBehavior>

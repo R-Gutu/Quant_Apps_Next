@@ -81,7 +81,6 @@ export default async function Introduction() {
                             fill
                             sizes=""
                             alt="Ipad"
-                            loading="lazy"
                             className="banner__video-img"
                         />
                         <Link className="banner__video-play" href="/video-modal">

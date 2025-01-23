@@ -143,7 +143,6 @@ export default function Projects() {
                     )}
                 </Typography>
             </Button>
-            <Box className="overflow-hidden">
             <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
                 <Blur
                     color="#9C08FF99"
@@ -166,7 +165,7 @@ export default function Projects() {
                 <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto bottom-[600px] right-[350px] why-ios__bg-img max-[900px]:hidden" />
                 <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto bottom-[1360px] right-[350px] why-ios__bg-img max-[900px]:hidden opacity-55" />
                 <Image src="/icons/ellipse6.svg" width={50} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1570px] left-[200px] -z-10 max-[900px]:hidden" />
-            </Box>
+            </div>
         </div>
     );
 }

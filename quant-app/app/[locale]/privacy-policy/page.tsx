@@ -298,6 +298,7 @@ const Page = async () => {
         <Image src="/icons/ellipse6.svg" width={50} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1600px] left-[600px] max-[900px]:hidden" />
 
         <NextProject />
+      </div>
     </Grid2>
   );
 };

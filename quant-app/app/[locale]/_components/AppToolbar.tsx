@@ -38,7 +38,7 @@ const AppToolbar = () => {
       <header className="fixed top-0 left-0 z-50 bg-[#051139] w-full">
           <div className="grid grid-cols-[2fr_5fr_1fr_1fr] pl-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
             <Link href="/" className="w-full self-center">
-              <Image id="logo" src="/icons/logo.svg" width={500} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
+              <Image priority id="logo" src="/icons/logo.svg" width={500} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
             </Link>
             <nav>
               <ul className="menu">

@@ -19,27 +19,27 @@ export default function QuanticaSlider() {
           modules={[Autoplay]}
         >
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="" width={0} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quantica-fill.svg" alt="" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
         </Swiper>
       </div>

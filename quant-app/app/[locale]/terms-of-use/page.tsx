@@ -229,13 +229,13 @@ const Page = async () => {
         top="37%" 
       />
 
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
             
-      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] max-[900px]:hidden"/>
+      <Image src="/icons/ellipse6.svg" width={50} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] max-[900px]:hidden"/>
 
       <NextProject />
     </Grid2>

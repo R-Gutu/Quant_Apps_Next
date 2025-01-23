@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div className="px-[5%] pt-[120px]">
       <Image
-        width={0}
+        width={1000}
         height={0}
         className=" w-[20%] max-[1300px]:w-[25%] max-[1100px]:w-[30%] float-left translate-x-[-8%] max-[550px]:w-[40%]"
         src="/images/app-phone.png"
@@ -167,13 +167,13 @@ const About = () => {
         className=" w-[350px] h-[350px] max-[600px]:hidden"
       />
 
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[100px] left-[1080px] why-ios__bg-img max-[900px]:hidden opacity-65" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[590px] left-[430px] why-ios__bg-img max-[900px]:hidden opacity-65" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[1100px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-auto h-auto top-[1750px] left-[400px] why-ios__bg-img max-[900px]:hidden" />
-      <Image src="/icons/Star.svg" width={0} height={0} alt="star" className="w-[60px] h-auto top-[1450px] right-[230px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto top-[100px] left-[1080px] why-ios__bg-img max-[900px]:hidden opacity-65" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto top-[590px] left-[430px] why-ios__bg-img max-[900px]:hidden opacity-65" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto top-[1100px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-auto h-auto top-[1750px] left-[400px] why-ios__bg-img max-[900px]:hidden" />
+      <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1450px] right-[230px] why-ios__bg-img max-[900px]:hidden" />
 
-      <Image src="/icons/ellipse6.svg" width={0} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1900px] left-[450px] max-[1400px]:hidden"/>
+      <Image src="/icons/ellipse6.svg" width={50} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1900px] left-[450px] max-[1400px]:hidden"/>
     </div>
   )
 }

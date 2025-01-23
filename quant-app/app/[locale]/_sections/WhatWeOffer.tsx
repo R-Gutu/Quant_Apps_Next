@@ -64,8 +64,9 @@ const WhatWeOffer = async () => {
           <Box sx={{ position: "relative" }}>
             <Image
               src="/images/cloud-storage.png"
-              width={0}
+              width={1000}
               height={0}
+              unoptimized
               alt="CloudStorage"
               style={{
                 width: "auto",
@@ -74,15 +75,14 @@ const WhatWeOffer = async () => {
                 position: "relative",
                 zIndex: 1,
               }}
-              unoptimized={true}
             />
 
             <Image
               src="/images/items-net-bg.png"
               alt=""
-              unoptimized={true}
-              width={0}
+              width={1000}
               height={0}
+              unoptimized
               style={{
                 width: "auto",
                 maxWidth: "150%",

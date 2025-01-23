@@ -46,16 +46,14 @@ const NextProject = async () => {
           max-[1324px]:w-[500px] max-[1324px]:top-[20%] max-[1324px]:right-[0%]
           max-[900px]:w-[400px]
           max-[900px]:top-[30px] max-[900px]:right-[20%] max-[900px]:translate-x-1/2 max-[600px]:top-[-2px] max-[600px]:right-[100px]">
-          <Box sx={{ position: "relative" }}>
-            <Image
-              priority
-              width={0}
-              height={0}
-              src="/icons/hand3d.svg"
-              alt="Hand"
-              className="w-full h-auto"
-            />
-          </Box>
+          <Image
+            priority
+            width={500}
+            height={0}
+            src="/icons/hand3d.svg"
+            alt="Hand"
+            className="w-full h-auto"
+          />
         </div>
       </div>
       <div className="overflow-hidden">
@@ -66,7 +64,7 @@ const NextProject = async () => {
           filter="blur(100px)"
           className=" w-[530px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
-        <Image src="/icons/Star.svg" width={0} height={0} alt="" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={50} height={0} alt="" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
       </div>
 
     </div>

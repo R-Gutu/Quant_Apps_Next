@@ -10,7 +10,7 @@ const Page = async () => {
   const t = await getTranslations("services");
 
   return (
-    <div className="overflow-hidden">
+    <div>
       <div className="container !pt-[65px]">
         <WhatWeOffer />
       </div>
@@ -56,7 +56,7 @@ const Page = async () => {
           </div>
         </div>
       </section>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full">
         <Blur
               color="rgba(186, 8, 255, 0.8156512605042017)"
               left="0%"

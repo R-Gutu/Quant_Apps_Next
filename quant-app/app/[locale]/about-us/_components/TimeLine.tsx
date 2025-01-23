@@ -55,7 +55,7 @@ const TimeLine = async () => {
             }}
           />
         </Grid2>
-        <Image width={0} height={0} className="w-full h-auto" src={roadMap} alt="RoadMap" key={roadMap} />
+        <Image width={2000} height={0} className="w-full h-auto" src={roadMap} alt="RoadMap" key={roadMap} />
       </Grid2>
     </div>
   )

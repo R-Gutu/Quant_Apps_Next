@@ -96,11 +96,11 @@ const Page = () => {
               <div className="contact-us__content-info">
                 <h4>{t("ContactInfo")}</h4>
                 <div className="contact-us__info-item">
-                  <Image src="/icons/mail.svg" alt="" width={0} height={0} className="w-auto h-auto"/>
+                  <Image src="/icons/mail.svg" alt="" width={100} height={0} className="w-auto h-auto"/>
                   <span>support@quant-apps.com</span>
                 </div>
                 <div className="contact-us__info-item">
-                  <Image src="/icons/Location.svg" alt="" width={0} height={0} className="w-auto h-auto"/>
+                  <Image src="/icons/Location.svg" alt="" width={100} height={0} className="w-auto h-auto"/>
                   <span>{t("RepublicMoldova")}</span>
                 </div>
               </div>

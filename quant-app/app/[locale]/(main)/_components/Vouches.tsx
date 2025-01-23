@@ -60,7 +60,7 @@ export default function Vouches() {
                 >
                     <span>{t("AllReviewsOn")}</span>
 
-                    <Image src="/icons/fi.svg" alt="" width={0} height={0} className="w-auto h-auto fiverr__icon" />
+                    <Image src="/icons/fi.svg" alt="" width={100} height={0} className="w-auto h-auto fiverr__icon" />
                 </Link>
             </div>
         </section>

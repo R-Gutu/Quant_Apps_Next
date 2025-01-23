@@ -36,75 +36,74 @@ const AppToolbar = () => {
   return (
     <>
       <header className="fixed top-0 left-0 z-50 bg-[#051139] w-full">
-          <div className="grid grid-cols-[2fr_5fr_1fr_1fr] pl-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
-            <Link href="/">
-              <a className="w-full self-center">
-                <Image id="logo" src="/icons/logo.svg" width={500} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
-              </a>
-            </Link>
-            <nav>
-              <ul className="menu">
-                <li className={cn('menu__item', { 'active': pathname === '/services' })}>
-                  <Link href="/services" >
-                    <a className="text-nowrap">
-                      {t("Services")}
-                    </a>
-                  </Link>
-                </li>
-
-                <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
-                  <Link
-                    href="/#projects"
-                    scroll={false}
-                  >
-                    <a className="text-left text-nowrap">
-                      {t("Projects")}
-                    </a>
-                  </Link>
-                </li>
-
-                <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
-                  <Link href="/about-us">
-                    <a className="text-nowrap">
-                      {t("AboutUs")}
-                    </a>
-                  </Link>
-                </li>
-
-                <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
-                  <Link href="/contact-us">
-                    <a className="text-nowrap">
-                      {t("ContactUs")}
-                    </a>
-                  </Link>
-                </li>
-
-                <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
-                  <Link href="/faqs">
-                    <a className="text-nowrap">
-                      FAQs
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-
-            <div className="nav-right justify-center">
-              {pathname !== "/contact-us" && (
-                <Link
-                  href='/talk-modal'
-                >
-                  <a className="button lets-talk text-nowrap !w-auto !px-[20px]">
-                    {t("LetsTalk")}
-                  </a>
+        <div className="grid grid-cols-[2fr_5fr_1fr_1fr] pl-5 max-[950px]:flex max-[950px]:justify-between min-h-[80px]">
+          <Link href="/" className="w-full self-center">
+            <Image priority id="logo" src="/icons/logo.svg" width={500} height={0} className="h-auto w-auto max-[550px]:w-[80%]" alt="Logo" />
+          </Link>
+          <nav>
+            <ul className="menu">
+              <li className={cn('menu__item', { 'active': pathname === '/services' })}>
+                <Link href="/services" className="text-nowrap">
+                  {t("Services")}
                 </Link>
-              )}
-            </div>
-            <div className="flex justify-center self-center px-[4%] min-w-[40px]">
-                <span className="burger" onClick={onClickBurger}></span>
-                {!isSmallScreen && <LanguageSwitcher mobile={isSmallScreen} />}
-              </div>
+              </li>
+
+              <li className={cn('menu__item', { 'active': pathname === '/' && projectsAreVisible })} data-id="projects" onClick={projectsClickHandle}>
+                <Link
+                  href="/#projects"
+                  className="text-left text-nowrap"
+                  scroll={false}
+                >
+                  {t("Projects")}
+                </Link>
+              </li>
+
+              <li className={cn('menu__item', { 'active': pathname === '/about-us' })}>
+                <Link href="/about-us" className="text-nowrap">
+                  {t("AboutUs")}
+                </Link>
+              </li>
+
+              <li className={cn('menu__item', { 'active': pathname === '/contact-us' })}>
+                <Link href="/contact-us" className="text-nowrap">
+                  {t("ContactUs")}
+                </Link>
+              </li>
+
+              <li className={cn('menu__item', { 'active': pathname === '/faqs' })}>
+                <Link href="/faqs" className="text-nowrap">
+                  FAQs
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <div className="nav-right justify-center">
+            {pathname !== "/contact-us" && (
+              <Link
+                className="button lets-talk text-nowrap !w-auto !px-[20px]"
+                href='/talk-modal'
+              >
+                {t("LetsTalk")}
+              </Link>
+            )}
           </div>
+          <div className="flex justify-center self-center px-[4%] min-w-[55px]">
+
+            {isSmallScreen ?
+              <Image
+                src="/icons/burger.svg"
+                alt="mobile menu"
+                width={100}
+                height={100}
+                className="w-auto h-auto"
+                onClick={onClickBurger}
+              />
+              :
+              <LanguageSwitcher mobile={isSmallScreen} />
+            }
+          </div>
+        </div>
       </header>
       <MobileMenu />
     </>

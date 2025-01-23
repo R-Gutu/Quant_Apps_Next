@@ -118,41 +118,59 @@ export default async function Introduction() {
                         </a>
                     </Link>
                 </Box>
-                <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
-                    <Blur
-                        color="#1E50FF"
-                        left="-5%"
-                        top="0%"
-                        width="300px"
-                        height="300px"
-                        filter="blur(100px)"
-                    />
-                    <Blur
-                        color="#9C08FFE5"
-                        left="25%"
-                        top="0%"
-                        width="300px"
-                        height="300px"
-                        filter="blur(100px)"
-                    />
-                    <Blur
-                        color="#1E50FF"
-                        right="5%"
-                        top="10%"
-                        width="300px"
-                        height="300px"
-                        filter="blur(200px)"
-                    />
-                    <Blur
-                        color="#9C08FFE5"
-                        right="5%"
-                        top="0%"
-                        width="300px"
-                        height="300px"
-                        filter="blur(200px)"
-                    />
+                <Box
+                    sx={{
+                        position: "relative",
+                        width: "100%",
+                        height: "300px", // Ensure consistent height to avoid layout shifts
+                        overflow: "hidden",
+                    }}
+                >
+                    <Box
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            zIndex: -10,
+                        }}
+                    >
+                        <Blur
+                            color="#1E50FF"
+                            left="-5%"
+                            top="0%"
+                            width="300px"
+                            height="300px"
+                            filter="blur(100px)"
+                        />
+                        <Blur
+                            color="#9C08FFE5"
+                            left="25%"
+                            top="0%"
+                            width="300px"
+                            height="300px"
+                            filter="blur(100px)"
+                        />
+                        <Blur
+                            color="#1E50FF"
+                            right="5%"
+                            top="10%"
+                            width="300px"
+                            height="300px"
+                            filter="blur(200px)"
+                        />
+                        <Blur
+                            color="#9C08FFE5"
+                            right="5%"
+                            top="0%"
+                            width="300px"
+                            height="300px"
+                            filter="blur(200px)"
+                        />
+                    </Box>
+                </Box>
 
-                </div>
             </div>
         </>
     )

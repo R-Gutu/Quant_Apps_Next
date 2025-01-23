@@ -598,9 +598,6 @@
 }
 
 @media (max-width: 950px){
-    .burger {
-        display: block;
-    }
 
     .menu {
         display: none;

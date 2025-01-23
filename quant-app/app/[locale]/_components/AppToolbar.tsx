@@ -90,7 +90,7 @@ const AppToolbar = () => {
               </Link>
             )}
           </div>
-          <div className="flex justify-center self-center px-[4%] min-w-[55px]">
+          <div className="flex justify-center self-center px-[15px] w-[70px] overflow-hidden">
 
             {isSmallScreen ?
               <Image
@@ -98,7 +98,7 @@ const AppToolbar = () => {
                 alt="mobile menu"
                 width={100}
                 height={100}
-                className="w-auto h-auto"
+                className="w-full h-full"
                 onClick={onClickBurger}
               />
               :

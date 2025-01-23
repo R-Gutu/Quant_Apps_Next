@@ -151,7 +151,6 @@ export default async function Introduction() {
                         height="300px"
                         filter="blur(200px)"
                     />
-
                 </div>
             </div>
         </>

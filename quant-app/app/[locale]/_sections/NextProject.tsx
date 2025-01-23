@@ -32,12 +32,13 @@ const NextProject = async () => {
           </p>
 
           <Link
-            className="w-fit p-4 flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white max-w-[170px]"
             href="/talk-modal"
           >
-            <span className="w-fit text-nowrap text-center text-black font-semibold text-[18px] no-underline max-[600px]:text-[14px]">
-              {t("LetsTalk")}
-            </span>
+            <a className="w-fit p-4 flex justify-center items-center h-11 rounded-[5px] bg-white hover:bg-white max-w-[170px]">
+              <span className="w-fit text-nowrap text-center text-black font-semibold text-[18px] no-underline max-[600px]:text-[14px]">
+                {t("LetsTalk")}
+              </span>
+            </a>
           </Link>
         </div>
 

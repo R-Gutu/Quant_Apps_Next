@@ -45,9 +45,10 @@ const MobileMenu = () => {
         >
           <Link
             href="/services"
-            className="text-left w-full"
           >
-            {t("Services")}
+            <a className="text-left w-full">
+              {t("Services")}
+            </a>
           </Link>
         </li>
 
@@ -56,10 +57,11 @@ const MobileMenu = () => {
         >
           <Link
             href="/#projects"
-            className="text-left w-full"
             scroll={false}
           >
-            {t("Projects")}
+            <a className="text-left w-full">
+              {t("Projects")}
+            </a>
           </Link>
         </li>
 
@@ -70,9 +72,10 @@ const MobileMenu = () => {
         >
           <Link
             href="/about-us"
-            className="text-left w-full"
           >
-            {t("AboutUs")}
+            <a className="text-left w-full">
+              {t("AboutUs")}
+            </a>
           </Link>
         </li>
 
@@ -83,9 +86,10 @@ const MobileMenu = () => {
         >
           <Link
             href="/contact-us"
-            className="text-left w-full"
           >
-            {t("ContactUs")}
+            <a className="text-left w-full">
+              {t("ContactUs")}
+            </a>
           </Link>
         </li>
 
@@ -96,9 +100,10 @@ const MobileMenu = () => {
         >
           <Link
             href="/faqs"
-            className="text-left w-full"
           >
-            FAQs
+            <a className="text-left w-full">
+              FAQs
+            </a>
           </Link>
         </li>
       </ul>

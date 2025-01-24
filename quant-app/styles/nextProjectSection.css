@@ -37,13 +37,13 @@
 }
 
 .next-project__text-title {
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
     font-size: 40px;
     font-weight: 700;
 }
 
 .next-project__text-description {
-    font-family: "Red Hat Display", serif;
+    font-family: var(--font-poppins), serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;

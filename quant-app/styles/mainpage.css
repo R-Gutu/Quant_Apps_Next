@@ -31,7 +31,7 @@ button {
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 8px;
-  font-family: ClashDisplay;
+  font-family: var(--font-clash-display);
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -127,7 +127,7 @@ button:hover {
 }
 
 .banner__text-title {
-  font-family: ClashDisplay;
+  font-family: var(--font-clash-display);
   font-size: 64px;
   font-weight: 600;
   line-height: 74px;
@@ -200,7 +200,7 @@ button:hover {
 
 .banner__video-play p,
 .banner__video-play__mobile p {
-  font-family: ClashDisplay;
+  font-family: var(--font-clash-display);
   font-size: 24px;
   font-weight: 600;
   line-height: 28px;
@@ -256,7 +256,7 @@ button:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "ClashDisplay";
+  font-family: var(--font-clash-display);
 }
 
 .owr-work-section {
@@ -273,7 +273,7 @@ button:hover {
   gap: 82px;
   padding-top: 25px;
   padding-bottom: 64px;
-  font-family: "ClashDisplay";
+  font-family: var(--font-clash-display);
 }
 
 .our-work__title {
@@ -388,7 +388,7 @@ button:hover {
 
 .our-work__btn span {
   color: white;
-  font-family: "ClashDisplay";
+  font-family: var(--font-clash-display);
   font-size: 24px;
   font-weight: 600;
   line-height: 20px;
@@ -435,7 +435,7 @@ button:hover {
 }
 
 .client-success-stories__title {
-  font-family: "ClashDisplay";
+  font-family: var(--font-clash-display);
   font-size: 48px;
   font-weight: 600;
   line-height: 62.4px;
@@ -498,7 +498,7 @@ button:hover {
 }
 
 .client-success-stories__slide-user-info a {
-  font-family: "IBM Plex Sans", serif;
+  font-family: var(--font-poppins), serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -514,7 +514,7 @@ button:hover {
 
 .client-success-stories__slide-description,
 .client-success-stories__slide-user-info p {
-  font-family: "Inter";
+  font-family: var(--font-inter);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -532,7 +532,7 @@ button:hover {
 }
 
 .client-success-stories__fiverr span {
-  font-family: "ClashDisplay";
+  font-family: var(--font-clash-display);
   font-size: 24px;
   font-weight: 600;
   line-height: 31.2px;

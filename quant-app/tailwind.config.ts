@@ -61,8 +61,8 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				clash: ['"ClashDisplay"', '"Inter"', 'sans-serif'],
-				inter: ['"Inter"', '"ClashDisplay"', 'sans-serif'],
+				clash: ['var(--font-clash-display)', 'var(--font-inter)', 'sans-serif'],
+				inter: ['var(--font-inter)', 'var(--font-clash-display)', 'sans-serif'],
 			},
 		}
 	},

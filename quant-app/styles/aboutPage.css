@@ -72,7 +72,7 @@
     -ms-flex-align: center;
     align-items: center;
     color: white;
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
 }
 
 .about-info__img {
@@ -100,7 +100,7 @@
 
 .about-info__text-mobile {
     color: white;
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
 }
 
 .about-info__text-mobile {

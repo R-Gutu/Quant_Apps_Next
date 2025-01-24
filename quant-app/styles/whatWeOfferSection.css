@@ -97,7 +97,7 @@
 }
 
 .offer__text-title {
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
     font-size: 44px;
     font-weight: 600;
     line-height: 57.2px;
@@ -146,14 +146,14 @@
 }
 
 .offer__item-text h3 {
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
 }
 
 .offer__item-text p {
-    font-family: "Poppins";
+    font-family: var(--font-inter-poppins);
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;

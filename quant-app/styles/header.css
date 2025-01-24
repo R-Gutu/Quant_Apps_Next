@@ -33,7 +33,7 @@ nav {
 
 .menu__item a,
 .menu__item {
-    font-family: "ClashDisplay";
+    font-family: var(--font-clash-display);
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;

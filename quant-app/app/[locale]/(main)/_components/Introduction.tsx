@@ -89,7 +89,7 @@ export default async function Introduction() {
                                 className="w-full h-full object-contain block"
                             />
                         </picture>
-                        <Link href="/video-modal" legacyBehavior>
+                        {/* <Link href="/video-modal" legacyBehavior>
                             <a className="banner__video-play">
                                 <span />
                                 <p>{t("WatchVideo")}</p>
@@ -102,7 +102,7 @@ export default async function Introduction() {
 
                                 <p>{t("WatchVideo")}</p>
                             </a>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <Box

@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Poppins, Inter } from "next/font/google";
 import localFont from 'next/font/local'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
   weight: ['400'],
@@ -43,7 +44,6 @@ import "@/styles/main.css"
 
 import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
-// import Script from "next/script";
 
 const defaultMetadata = {
   title: "Quant-Apps",
@@ -93,18 +93,6 @@ export default async function RootLayout({
         className="antialiased relative"
       >
         <NextIntlClientProvider messages={messages}>
-          {/* <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-          `}
-          </Script> */}
           <AppToolbar />
           {children}
           {videoModal}
@@ -112,6 +100,7 @@ export default async function RootLayout({
           <Footer />
         </NextIntlClientProvider>
       </body>
+      <GoogleAnalytics gaId="G-DK457M1DLQ" />
     </html>
   );
 }

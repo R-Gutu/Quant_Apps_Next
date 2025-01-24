@@ -4,61 +4,15 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Poppins } from "next/font/google";
+import { Poppins, Inter } from "next/font/google";
 import localFont from 'next/font/local'
 
-const poppins = Poppins({ variable: '--font-poppins', weight: ['400'], subsets: ['latin'] });
+const poppins = Poppins({ weight: ['400'], subsets: ['latin'] });
+const inter = Inter({ weight: ['400', '600', '700'], subsets: ['latin'] });
 
 const clashDisplay = localFont({
-  src: [
-    {
-      path: '../../public/fonts/ClashDisplay-Bold.ttf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/ClashDisplay-Semibold.ttf',
-      weight: '600',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/ClashDisplay-Medium.ttf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/ClashDisplay-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/ClashDisplay-Light.ttf',
-      weight: '300',
-      style: 'normal'
-    }
-  ]
+  src: "../../public/fonts/ClashDisplay-Variable.ttf"
 })
-
-
-const inter = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Inter_28pt-Bold.ttf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/Inter_28pt-SemiBold.ttf',
-      weight: '600',
-      style: 'normal'
-    },
-    {
-      path: '../../public/fonts/Inter_28pt-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    }
-  ]
-});
 
 const ibmPlexSans = localFont({
   src: [

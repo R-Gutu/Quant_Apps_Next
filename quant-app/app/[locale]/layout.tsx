@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { Poppins } from "next/font/google";
 import localFont from 'next/font/local'
 
-const poppins = Poppins({ variable: '--font-poppins', weight: ['400'] });
+const poppins = Poppins({ variable: '--font-poppins', weight: ['400'], subsets: ['latin'] });
 
 const clashDisplay = localFont({
   src: [

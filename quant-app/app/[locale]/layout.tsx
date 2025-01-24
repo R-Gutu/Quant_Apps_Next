@@ -4,6 +4,81 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Poppins } from "next/font/google";
+import localFont from 'next/font/local'
+
+const poppins = Poppins({ variable: '--font-poppins', weight: ['400'] } as any);
+
+const clashDisplay = localFont({
+  src: [
+    {
+      path: '../../public/fonts/ClashDisplay-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/ClashDisplay-Semibold.ttf',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/ClashDisplay-Medium.ttf',
+      weight: '500',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/ClashDisplay-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/ClashDisplay-Light.ttf',
+      weight: '300',
+      style: 'normal'
+    }
+  ]
+})
+
+
+const inter = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Inter_28pt-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/Inter_28pt-SemiBold.ttf',
+      weight: '600',
+      style: 'normal'
+    },
+    {
+      path: '../../public/fonts/Inter_28pt-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    }
+  ]
+});
+
+const ibmPlexSans = localFont({
+  src: [
+    {
+      path: '../../public/fonts/IBMPlexSans-Medium.ttf',
+      weight: '500',
+      style: 'normal'
+    }
+  ]
+});
+
+const redHatDisplay = localFont({
+  src: [
+    {
+      path: '../../public/fonts/RedHatDisplay-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    }
+  ]
+});
 
 import "./globals.css";
 import "@/styles/mainpage.css"
@@ -66,11 +141,10 @@ export default async function RootLayout({
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
-  // Providing all messages to the client
-  // side is the easiest way to get started
+
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className={`${poppins.className} ${clashDisplay.className} ${inter.className} ${ibmPlexSans.className} ${redHatDisplay.className}`}>
       <body
         className="antialiased relative"
       >

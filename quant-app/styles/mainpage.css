@@ -1,5 +1,5 @@
 /* Font Faces */
-@font-face {
+/* @font-face {
   font-family: 'ClashDisplay';
   src: url(/fonts/ClashDisplay-Bold.ttf);
   font-style: normal;
@@ -32,16 +32,9 @@
   src: url(/fonts/ClashDisplay-Light.ttf);
   font-style: normal;
   font-weight: 300;
-}
+} */
 
-@font-face {
-  font-family: 'Poppins';
-  src: url(/fonts/Poppins-Regular.ttf);
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: url(/fonts/Inter_28pt-Bold.ttf);
   font-style: normal;
@@ -74,7 +67,7 @@
   src: url(/fonts/RedHatDisplay-Regular.ttf);
   font-style: normal;
   font-weight: 400;
-}
+} */
 
 /* Root Variables */
 :root {
@@ -213,7 +206,7 @@ button:hover {
 }
 
 .banner__text-description {
-  font-family: "Poppins";
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-weight: 400;
   line-height: 35px;
@@ -351,7 +344,7 @@ button:hover {
   gap: 82px;
   padding-top: 25px;
   padding-bottom: 64px;
-  font-family: ClashDisplay;
+  font-family: "ClashDisplay";
 }
 
 .our-work__title {
@@ -513,7 +506,7 @@ button:hover {
 }
 
 .client-success-stories__title {
-  font-family: ClashDisplay;
+  font-family: "ClashDisplay";
   font-size: 48px;
   font-weight: 600;
   line-height: 62.4px;

@@ -4,6 +4,33 @@ import Image from "next/image";
 
 const WhatWeOffer = async () => {
   const t = await getTranslations("what-we-offer");
+  const offers = [
+    {
+      icon: "/icons/vector.svg",
+      title: t("TailoredMobileAppDesign"),
+      description: t("TailoredMobileAppDesignDetails"),
+    },
+    {
+      icon: "/icons/apple.svg",
+      title: t("IosAppDevelopment"),
+      description: t("IosAppDevelopmentDetails"),
+    },
+    {
+      icon: "/icons/android.svg",
+      title: t("AndroidAppDevelopment"),
+      description: t("AndroidAppDevelopmentDetails"),
+    },
+    {
+      icon: "/icons/cross-platform.svg",
+      title: t("CrossPlatformReactNative"),
+      description: t("CrossPlatformReactNativeDetails"),
+    },
+    {
+      icon: "/icons/settings.svg",
+      title: t("OngoingSupportMaintenance"),
+      description: t("OngoingSupportMaintenanceDetails"),
+    },
+  ];
 
   return (
     <div className="offer" id="services">
@@ -101,7 +128,7 @@ const WhatWeOffer = async () => {
           container
           direction="column"
           gap="12px"
-          size={{ xs: 6, lg: 7 }}
+          size={7}
           sx={{
             zIndex: 2,
             justifyContent: "space-between",
@@ -125,170 +152,40 @@ const WhatWeOffer = async () => {
             },
           }}
         >
-
-          <Grid2
-            container
-            gap={{ xs: "12px", md: "24px" }}
-            sx={{
-              ml: { md: "120px", xs: "0px" },
-            }}
-          >
-
+          {offers.map((offer, index) => (
             <Grid2
+              key={index}
               container
+              gap={{ xs: "12px", md: "24px" }}
               sx={{
-                width: { xs: "30px", md: "64px" },
-                height: { xs: "30px", md: "64px" },
-                minWidth: { xs: "30px", md: "64px" },
-                minHeight: { xs: "30px", md: "64px" },
-                borderRadius: "8px",
-                backgroundColor: "#6A65FF",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: { xs: "0px", md: "4px" },
-                position: "relative",
+                ml: { md: "120px", xs: "0px" },
+                alignItems: "stretch",
               }}
             >
-              <Image src="/icons/vector.svg" alt="Vector" width={100} height={0} className='w-auto h-auto' />
+              <Grid2
+                container
+                sx={{
+                  width: { xs: "30px", md: "64px" },
+                  height: { xs: "30px", md: "64px" },
+                  minWidth: { xs: "30px", md: "64px" },
+                  minHeight: { xs: "30px", md: "64px" },
+                  borderRadius: "8px",
+                  backgroundColor: "#6A65FF",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: { xs: "0px", md: "4px" },
+                  position: "relative",
+                }}
+              >
+                <Image src={offer.icon} alt={offer.title} width={100} height={0} className='w-auto h-auto' />
+              </Grid2>
+
+              <Grid2 container direction="column" size={8} sx={{ flexGrow: 1 }}>
+                <Typography variant="h3">{offer.title}</Typography>
+                <Typography>{offer.description}</Typography>
+              </Grid2>
             </Grid2>
-
-            <Grid2 container direction="column" size={8}>
-              <Typography variant="h3">
-                {t("TailoredMobileAppDesign")}
-              </Typography>
-
-              <Typography>{t("TailoredMobileAppDesignDetails")}</Typography>
-            </Grid2>
-          </Grid2>
-
-          <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={{
-              ml: { md: "120px", xs: "0px" },
-            }}
-          >
-            <Grid2
-              container
-              sx={{
-                width: { xs: "30px", md: "64px" },
-                height: { xs: "30px", md: "64px" },
-                minWidth: { xs: "30px", md: "64px" },
-                minHeight: { xs: "30px", md: "64px" },
-                borderRadius: "8px",
-                backgroundColor: "#6A65FF",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: { xs: "0px", md: "4px" },
-                position: "relative",
-              }}
-            >
-              <Image src="/icons/apple.svg" alt="Apple" width={100} height={0} className='w-auto h-auto' />
-            </Grid2>
-
-            <Grid2 container direction="column" size={8}>
-              <Typography variant="h3">{t("IosAppDevelopment")}</Typography>
-
-              <Typography>{t("IosAppDevelopmentDetails")}</Typography>
-            </Grid2>
-          </Grid2>
-
-          <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={{
-              ml: { md: "120px", xs: "0px" },
-            }}
-          >
-            <Grid2
-              container
-              sx={{
-                width: { xs: "30px", md: "64px" },
-                height: { xs: "30px", md: "64px" },
-                minWidth: { xs: "30px", md: "64px" },
-                minHeight: { xs: "30px", md: "64px" },
-                borderRadius: "8px",
-                backgroundColor: "#6A65FF",
-                alignItems: "center",
-                justifyContent: "center",
-                position: "relative",
-                padding: { xs: "0px", md: "4px" },
-              }}
-            >
-              <Image src="/icons/android.svg" alt="Android" width={100} height={0} className='w-auto h-auto' />
-            </Grid2>
-
-            <Grid2 container direction="column" size={8}>
-              <Typography variant="h3">{t("AndroidAppDevelopment")}</Typography>
-
-              <Typography>{t("AndroidAppDevelopmentDetails")}</Typography>
-            </Grid2>
-          </Grid2>
-
-          <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={{
-              ml: { md: "120px", xs: "0px" },
-              mt: { md: "20px", xs: "10px" },
-            }}
-          >
-            <Grid2
-              container
-              sx={{
-                width: { xs: "30px", md: "64px" },
-                height: { xs: "30px", md: "64px" },
-                minWidth: { xs: "30px", md: "64px" },
-                minHeight: { xs: "30px", md: "64px" },
-                borderRadius: "8px",
-                backgroundColor: "#6A65FF",
-                alignItems: "center",
-                justifyContent: "center",
-                position: "relative",
-                padding: { xs: "0px", md: "4px" },
-              }}
-            >
-              <Image src="/icons/cross-platform.svg" alt="CrossPlatform" width={100} height={0} className='w-auto h-auto' />
-            </Grid2>
-
-            <Grid2 container direction="column" size={8}>
-              <Typography variant="h3">
-                {t("CrossPlatformReactNative")}
-              </Typography>
-
-              <Typography sx={{ fontSize: "16px" }}>
-                {t("CrossPlatformReactNativeDetails")}
-              </Typography>
-            </Grid2>
-          </Grid2>
-
-          <Grid2 container gap={{ xs: "12px", md: "24px" }}
-            sx={{
-              ml: { md: "120px", xs: "0px" },
-              mt: { md: "20px", xs: "0px" },
-            }}
-          >
-            <Grid2
-              container
-              sx={{
-                width: { xs: "30px", md: "64px" },
-                height: { xs: "30px", md: "64px" },
-                minWidth: { xs: "30px", md: "64px" },
-                minHeight: { xs: "30px", md: "64px" },
-                borderRadius: "8px",
-                backgroundColor: "#6A65FF",
-                alignItems: "center",
-                justifyContent: "center",
-                position: "relative",
-                padding: "4px",
-              }}
-            >
-              <Image src="/icons/settings.svg" alt="Settings" width={100} height={0} className='w-auto h-auto' />
-            </Grid2>
-            <Grid2 container direction="column" size={8}>
-              <Typography variant="h3">
-                {t("OngoingSupportMaintenance")}
-              </Typography>
-
-              <Typography sx={{ fontSize: "16px" }}>
-                {t("OngoingSupportMaintenanceDetails")}
-              </Typography>
-            </Grid2>
-          </Grid2>
+          ))}
         </Grid2>
       </Grid2>
 

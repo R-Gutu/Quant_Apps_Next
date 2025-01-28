@@ -22,6 +22,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                     container
 
                     direction="row"
+                    wrap='nowrap'
                     sx={{
                         width: { xs: "317px", md: "516px" },
                         height: { xs: "112px", md: "151.36px" },
@@ -33,10 +34,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                         direction="row"
                         alignItems="end"
                         justifyContent="space-between"
-                        sx={{
-                            width: { xs: "277px", md: "372.82px" },
-                            height: { xs: "112px", md: "151.36px" },
-                        }}
+                        wrap='nowrap'
                     >
                         <Image
                             width={142}
@@ -45,10 +43,10 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             src={src}
                             alt={alt}
                         />
-                        <Grid2 container direction="column">
+                        <Grid2 container direction="column" className="ml-[15px]">
                             <Typography
+                            className='!font-clash'
                                 sx={{
-                                    fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                                     fontWeight: "500",
                                     fontSize: { xs: "20px", md: "27px" },
                                     lineHeight: { xs: "24.6px", md: "33.25px" },
@@ -58,8 +56,8 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             </Typography>
 
                             <Typography
+                                className='!font-poppins'
                                 sx={{
-                                    fontFamily: "Poppins",
                                     fontSize: { xs: "18px", md: "24.33px" },
                                     lineHeight: "36.49px",
                                     mb: "10px",
@@ -77,6 +75,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             width: { xs: "34px", md: "46px" },
                             height: { xs: "34px", md: "46px" },
                             borderRadius: "23px",
+                            flexShrink: 0,
                         }}
                         display="flex"
                         alignItems="center"
@@ -100,10 +99,10 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                 />
 
                 <Typography
+                    className='!font-poppins'
                     sx={{
                         fontSize: { xs: "18px", md: "24px" },
                         lineHeight: { xs: "27px", md: "36px" },
-                        fontFamily: "Poppins",
                     }}
                 >
                     {details}

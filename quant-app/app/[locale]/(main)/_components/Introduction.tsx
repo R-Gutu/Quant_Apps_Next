@@ -17,20 +17,29 @@ export default async function Introduction() {
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography
-                        className="!font-clash"
+                            className="!font-clash"
                             sx={{
-                                fontSize: "50px",
+                                fontSize: "55px",
+                                ":lang(ru)": {
+                                    fontSize: "43px",
+                                },
                                 fontWeight: "600",
                                 lineHeight: "74px",
                                 color: "white",
                                 textAlign: "left",
                                 "@media (max-width: 900px)": {  // md breakpoint
                                     fontSize: "40px",
+                                    ":lang(ru)": {
+                                        fontSize: "40px",
+                                    },
                                     lineHeight: "50px",
                                     textAlign: "center",
                                 },
                                 "@media (max-width: 600px)": {  // sm breakpoint
                                     fontSize: "30px",
+                                    ":lang(ru)": {
+                                        fontSize: "25px",
+                                    },
                                     lineHeight: "40px",
                                 }
                             }}

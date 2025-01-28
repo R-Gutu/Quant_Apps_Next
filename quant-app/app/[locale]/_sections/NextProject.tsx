@@ -15,9 +15,9 @@ const NextProject = async () => {
         <div className="flex flex-col gap-[20px] w-3/5
           max-[900px]:items-center max-[600px]:w-[200px]">
 
-          <h1 className="font-clash text-white font-bold text-[40px] leading-[36px] text-start
+          <h1 className="font-clash text-white font-bold text-4xl text-start
           max-[1000px]:mt-[30px] max-[900px]:text-[32px] max-[900px]:leading-[32px]
-            max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[26px] max-[900px]:text-center
+            max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[26px] max-[900px]:text-center]
            "
           >
             {t("ExcitedToWorkTogether")}

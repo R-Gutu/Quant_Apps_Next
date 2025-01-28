@@ -9,13 +9,14 @@ const TimeLine = async () => {
   const roadMap = getRoadMapByLanguage(currentLocale);
 
   return (
-    <div>
+    <div className="w-full">
       <Grid2
         container
+        className="w-full"
         sx={{
           justifyContent: "center",
-          paddingLeft: "30px",
           mt: "80px",
+          width: "100%",
         }}
       >
         <Grid2
@@ -55,7 +56,11 @@ const TimeLine = async () => {
             }}
           />
         </Grid2>
-        <Image width={2000} height={0} className="w-full h-auto" src={roadMap} alt="RoadMap" key={roadMap} />
+        <div className="overflow-hidden w-full">
+          <Image width={2000} height={0} className="w-full h-auto max-[800px]:hidden ml-[1%]" src={roadMap.desktop} alt="RoadMap" key={roadMap.desktop} />
+          <Image width={2000} height={0} className="!w-[180%] max-w-[180%] h-auto min-[800px]:hidden ml-[-80%] mb-[70px]" src={roadMap.mobileRight} alt="RoadMap" key={roadMap.mobileRight} />
+          <Image width={2000} height={0} className="!w-[180%] max-w-[165%] h-auto min-[800px]:hidden ml-[2%]" src={roadMap.mobileLeft} alt="RoadMap" key={roadMap.mobileLeft} />
+        </div>
       </Grid2>
     </div>
   )

@@ -10,12 +10,25 @@ export function getIntroByLanguage(language : string) {
 }
 
 export function getRoadMapByLanguage(language : string) {
+  console.log(language);
   switch (language) {
     case "ru":
-      return "/icons/road-map-ru.svg";
+      return {
+        desktop: "/icons/road-map-ru.svg",
+        mobileLeft: "/icons/road-map-ru-left.svg",
+        mobileRight: "/icons/road-map-ru-right.svg",
+      };
     case "ro":
-      return "/icons/road-map-ro.svg";
+      return {
+        desktop: "/icons/road-map-ro.svg",
+        mobileLeft: "/icons/road-map-ro-left.svg",
+        mobileRight: "/icons/road-map-ro-right.svg",
+      };
     default:
-      return "/icons/road-map-en.svg";
+      return {
+        desktop: "/icons/road-map-en.svg",
+        mobileLeft: "/icons/road-map-en-left.svg",
+        mobileRight: "/icons/road-map-en-right.svg",
+      };
   }
 }

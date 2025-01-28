@@ -12,12 +12,12 @@ export const validateEmail = (email : string): boolean => {
     return emailRegex.test(email);
 };
 
-export const validateBudget = (value : string, min: number, max: number): boolean => {
+export const validateBudget = (value : string, min: number): boolean => {
     const numbers = value.split('-').map(item => item.trim().split('').filter(char => !isNaN(+char)).join(''))
     
     console.log(numbers);
     const num1 = Number(numbers[0]);
-    return !isNaN(num1) && num1 > min && num1 <= max ;
+    return !isNaN(num1) && num1 > min;
 }
 
 export const handleFiles = (files : FileList | null): void => {

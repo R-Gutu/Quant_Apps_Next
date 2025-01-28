@@ -17,9 +17,9 @@ export default async function Introduction() {
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography
+                        className="!font-clash"
                             sx={{
-                                fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                                fontSize: "55px",
+                                fontSize: "50px",
                                 fontWeight: "600",
                                 lineHeight: "74px",
                                 color: "white",
@@ -39,8 +39,9 @@ export default async function Introduction() {
                         </Typography>
 
                         <Typography
+                            className="!font-poppins"
                             sx={{
-                                fontFamily: "Poppins",
+                                // fontFamily: "Poppins",
                                 fontSize: "24px",
                                 lineHeight: "35px",
                                 color: "#EBEBEB",

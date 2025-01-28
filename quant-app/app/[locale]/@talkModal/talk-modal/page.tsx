@@ -26,13 +26,12 @@ const Page = () => {
   const [backendCheckbox, setBackendCheckbox] = useState(false);
   const [androidAppCheckbox, setAndroidAppCheckbox] = useState(false);
 
-  const [budgetCheckboxes, setBudgetCheckboxes] = useState([false, false, false]);
 
   const [invalidForm, setInvalidForm] = useState(true);
 
-  const serviceId = "service_caidqxy";     // Ваш service ID
-  const templateId = "template_e7f0ogb";   // Ваш Template ID
-  const publicKey = "S46PU3W0ILp9NXki4";   // Ваш Public Key
+  const serviceId = "service_y1v3t7u";     // Ваш service ID
+  const templateId = "template_kiufyoh";   // Ваш Template ID
+  const publicKey = "wENYR-vuKMTOamg4i";   // Ваш Public Key
 
   const onFirstNameChanged = (value: string) => {
     setFirstName(value);
@@ -75,15 +74,15 @@ const Page = () => {
     const isLastNameValid = validateName(lastName);
     const isEmailValid = validateEmail(email);
     const isValidBudget = validateBudget(budget, 0, 25000);
-    // Теперь валидной будет форма, если выбран хотя бы один из пяти чекбоксов
+    console.log("isValidBudget:", isValidBudget); // Лог для проверки бюджета
     const isCheckboxValid = ios || web || crm || uiux || backend || android;
-    const isBudgetSelected = budgetCheckboxes.some(checkbox => checkbox);
-
-    setInvalidForm(
-      !isFirstNameValid || !isLastNameValid || !isEmailValid || !isCheckboxValid ||
-      !isBudgetSelected || !isValidBudget
-    );
-  }, [budgetCheckboxes]);
+    const isFormInvalid = 
+      !isFirstNameValid || !isLastNameValid || !isEmailValid || 
+      !isCheckboxValid || !isValidBudget;
+    console.log("isFormInvalid:", isFormInvalid); // Лог для общего статуса формы
+  
+    setInvalidForm(isFormInvalid);
+  }, [firstName, lastName, email, budget]);
 
   const onDropZoneDragOver = (e: React.DragEvent) => {
     e.preventDefault();
@@ -119,10 +118,6 @@ const Page = () => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
     e.preventDefault();
 
-    if (!budgetCheckboxes.some(checkbox => checkbox)) {
-      alert("Please select a budget range");
-      return;
-    }
     // Формируем список выбранных услуг
     const chosenServices = [];
     if (iosCheckbox) chosenServices.push("iOS App");
@@ -159,7 +154,6 @@ const Page = () => {
         setUiuxCheckbox(false);
         setBackendCheckbox(false);
         setAndroidAppCheckbox(false);
-        setBudgetCheckboxes([false, false, false]);
         setInvalidForm(true);
         router.back();
       }, (err) => {
@@ -365,6 +359,7 @@ const Page = () => {
               <button
                 type="submit"
                 className={`fill-btn talk-popup__submit ${invalidForm ? "disabled" : ""}`}
+                disabled={invalidForm}
               >
                 Submit
               </button>

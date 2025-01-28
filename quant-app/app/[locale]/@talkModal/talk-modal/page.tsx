@@ -10,8 +10,10 @@ import emailjs from '@emailjs/browser';
 import { Modal } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const Page = () => {
+  const t = useTranslations("contact-us");
   const [budget, setBudget] = useState("");
 
   const [firstName, setFirstName] = useState("");
@@ -26,6 +28,11 @@ const Page = () => {
   const [backendCheckbox, setBackendCheckbox] = useState(false);
   const [androidAppCheckbox, setAndroidAppCheckbox] = useState(false);
 
+  const [isNameValid, setIsNameValid] = useState<boolean>(false);
+  const [isLastNameValid, setIsLastNameValid] = useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
+  const [isValidBudget, setIsValidBudget] = useState<boolean>(false);
+  const [isCheckboxValid, setIsCheckboxValid] = useState<boolean>(false);
 
   const [invalidForm, setInvalidForm] = useState(true);
 
@@ -70,17 +77,14 @@ const Page = () => {
   };
 
   const validateForm = useCallback((firstName: string, lastName: string, email: string, ios: boolean, web: boolean, crm: boolean, uiux: boolean, backend: boolean, android: boolean, budget: string) => {
-    const isFirstNameValid = validateName(firstName);
-    const isLastNameValid = validateName(lastName);
-    const isEmailValid = validateEmail(email);
-    const isValidBudget = validateBudget(budget, 0, 25000);
-    console.log("isValidBudget:", isValidBudget); // Лог для проверки бюджета
-    const isCheckboxValid = ios || web || crm || uiux || backend || android;
+    setIsNameValid(validateName(firstName))
+    setIsLastNameValid(validateName(lastName));
+    setIsEmailValid(validateEmail(email))
+    setIsValidBudget(validateBudget(budget, 0));
+    setIsCheckboxValid(ios || web || crm || uiux || backend || android);
     const isFormInvalid = 
-      !isFirstNameValid || !isLastNameValid || !isEmailValid || 
+      !isNameValid || !isLastNameValid || !isEmailValid || 
       !isCheckboxValid || !isValidBudget;
-    console.log("isFormInvalid:", isFormInvalid); // Лог для общего статуса формы
-  
     setInvalidForm(isFormInvalid);
   }, [firstName, lastName, email, budget]);
 
@@ -195,31 +199,40 @@ const Page = () => {
               <div className="talk-popup__first-last-name">
                 <div className="talk-popup__from-row">
                   <label>First name</label>
-                  <input
-                    type="text"
-                    placeholder="What’s your first name?"
-                    value={firstName}
-                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
-                  />
+                  <div className="contact-us__phone-div">
+                    <input
+                      type="text"
+                      placeholder="What’s your first name?"
+                      value={firstName}
+                      onInput={(event: React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
+                    />
+                    {!isNameValid && <span>{t("ValidName")}</span>}
+                  </div>
                 </div>
                 <div className="talk-popup__from-row">
                   <label>Last name</label>
+                  <div className="contact-us__phone-div">
                   <input
                     type="text"
                     placeholder="What’s your last name?"
                     value={lastName}
                     onInput={(event: React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
                   />
+                  {!isLastNameValid && <span>{t("ValidName")}</span>}
+                  </div>
                 </div>
               </div>
               <div className="talk-popup__from-row">
                 <label>E-mail</label>
+                <div className="contact-us__phone-div">
                 <input
                   type="email"
                   placeholder="brianclark@gmail.com"
                   value={email}
                   onInput={(event: React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
                 />
+                {!isEmailValid && <span>{t("ValidEmail")}</span>}
+                </div>
               </div>
               <div className="talk-popup__from-row">
                 <label>Project details</label>
@@ -233,6 +246,7 @@ const Page = () => {
               </div>
               <p className="font-clash text-[14px] font-semibold text-[#6D758F]">Select the services you need for your project:</p>
               <div className="grid grid-cols-3 gap-4">
+              <div className="contact-us__phone-div">
                 <div className="talk-popup__service-checkbox">
                   <label className="custom-checkbox">
                     <input
@@ -316,6 +330,8 @@ const Page = () => {
                   </label>
                   <span>Design UI/UX</span>
                 </div>
+                {!isCheckboxValid && <span>Choose one of options</span>}
+                </div>
 
 
               </div>
@@ -324,12 +340,15 @@ const Page = () => {
                   <span>Budget </span>   (Unsure on budget? Select a range, and
                   we’ll tailor the best solution for you!)
                 </p>
+                <div className="contact-us__phone-div">
                 <input
                   type="text"
                   placeholder="$3000-$5000"
                   value={budget}
                   onInput={(event: React.ChangeEvent<HTMLInputElement>) => onBudgetChanged(event.target.value)}
                 />
+                {!isValidBudget && <span>Write your Budget(number)</span>}
+                </div>
               </div>
               <div className="talk-popup__attachments">
                 <span>Attachments</span>

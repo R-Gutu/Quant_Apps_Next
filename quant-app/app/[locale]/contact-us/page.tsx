@@ -19,7 +19,10 @@ const Page = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [description, setDescription] = useState("");
-  const [invalidForm, setInvalidForm] = useState(true);
+  const [invalidForm, setInvalidForm] = useState<boolean>(true);
+  const [isNameValid, setIsNameValid] = useState<boolean>(false);
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(false);
+  const [isPhoneValid, setIsPhoneValid] = useState<boolean>(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,27 +30,27 @@ const Page = () => {
 
   const onNameChanged = (value : string) => {
     setName(value);
-    validateForm(value, email, phone);
   };
 
   const onEmailChanged = (value : string) => {
     setEmail(value);
-    validateForm(name, value, phone);
   };
 
   const onPhoneChanged = (value : string) => {
     setPhone(value);
-    validateForm(name, email, value);
   };
 
   const onDescriptionChanged = (value : string) => {
     setDescription(value);
   };
+  useEffect(() => {
+    validateForm(name, email, phone);
+  }, [name, email, phone])
 
   const validateForm = (nameValue : string, emailValue : string, phoneValue : string) => {
-    const isNameValid = validateName(nameValue);
-    const isEmailValid = validateEmail(emailValue);
-    const isPhoneValid = validatePhone(phoneValue);
+    setIsNameValid(validateName(nameValue));
+    setIsEmailValid(validateEmail(emailValue));
+    setIsPhoneValid(validatePhone(phoneValue));
 
     setInvalidForm(!isNameValid || !isEmailValid || !isPhoneValid);
   };
@@ -55,9 +58,9 @@ const Page = () => {
   const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();
 
-    const serviceId = "service_caidqxy";
-    const templateId = "template_1d23foq";
-    const publicKey = "S46PU3W0ILp9NXki4";
+    const serviceId = "service_y1v3t7u";
+    const templateId = "template_kiufyoh";
+    const publicKey = "wENYR-vuKMTOamg4i";
 
     const templateParams = {
       name: name,
@@ -109,6 +112,7 @@ const Page = () => {
             <div className="contact-us__content-form">
               <p>{t("StartTheConversation")}</p>
               <form onSubmit={handleSubmit} className="contact-us__form">
+              <div className="contact-us__phone-div">
                 <input
                   type="text"
                   required
@@ -117,6 +121,8 @@ const Page = () => {
                   value={name}
                   onChange={(event) => onNameChanged(event.target.value)}
                 />
+                {!isNameValid && <span>{t("ValidName")}</span>}
+                </div>
 
                 <div className="contact-us__phone-div">
                   <input
@@ -126,9 +132,9 @@ const Page = () => {
                     value={phone}
                     onChange={(event) => onPhoneChanged(event.target.value)}
                   />
-                  <span>{t("ValidPhoneNumber")}</span>
+                  {!isPhoneValid && <span>{t("ValidPhoneNumber")}</span>}
                 </div>
-
+                <div className="contact-us__phone-div">
                 <input
                   type="email"
                   name="contact-us-email"
@@ -136,6 +142,8 @@ const Page = () => {
                   value={email}
                   onChange={(event) => onEmailChanged(event.target.value)}
                 />
+                  {!isEmailValid && <span>{t("ValidEmail")}</span>}
+                </div>
                  <input
                     type="text"
                     name="contact-us-description"

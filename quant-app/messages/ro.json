@@ -33,9 +33,13 @@
     "WhatYourName": "Cum vă numiți?",
     "WhatYourPhone": "Numărul dvs. de telefon?",
     "ValidPhoneNumber": "Vă rugăm să introduceți un număr de telefon valid.",
+    "ValidName": "Vă rugăm să introduceți numele dvs.",
+    "ValidEmail": "Vă rugăm să introduceți un e-mail valid.",
     "WhatYourEmail": "Email-ul dvs.?",
     "DescribeYourInterest": "Descrieți proiectul dvs.",
-    "Submit": "Trimiteți"
+    "Submit": "Trimiteți",
+    "MessageSendingError": "Mesajul dvs. nu a fost trimis din cauza unei erori neașteptate.",
+    "MessageSentSuccessfully": "Mesajul dvs. a fost trimis cu succes."
   },
   "faqs": {
     "WhatServiceYouOffer": "Care servicii oferiți?",

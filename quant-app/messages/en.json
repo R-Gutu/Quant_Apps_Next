@@ -33,9 +33,13 @@
     "WhatYourName": "What's your name?",
     "WhatYourPhone": "What's your phone number?",
     "ValidPhoneNumber": "Please enter a valid phone number.",
+    "ValidName": "Please enter your Name.",
+    "ValidEmail": "Please enter a valid email.",
     "WhatYourEmail": "Whats your email?",
     "DescribeYourInterest": "Describe your interest",
-    "Submit": "Submit"
+    "Submit": "Submit",
+    "MessageSendingError": "Your message wasn't send because of unexpected error.",
+    "MessageSentSuccessfully": "Your message was send successfully."
   },
   "faqs": {
     "WhatServiceYouOffer": "What services do you offer?",

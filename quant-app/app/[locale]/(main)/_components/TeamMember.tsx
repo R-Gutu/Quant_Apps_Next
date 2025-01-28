@@ -20,9 +20,8 @@ export default async function TeamMember({ name, title, details, src, alt, link 
             >
                 <Grid2
                     container
-
+                    className="relative"
                     direction="row"
-                    wrap='nowrap'
                     sx={{
                         width: { xs: "317px", md: "516px" },
                         height: { xs: "112px", md: "151.36px" },
@@ -58,8 +57,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             <Typography
                                 className='!font-poppins'
                                 sx={{
-                                    fontSize: { xs: "18px", md: "24.33px" },
-                                    lineHeight: "36.49px",
+                                    fontSize: { xs: "15px", md: "24.33px" },
                                     mb: "10px",
                                 }}
                             >
@@ -70,6 +68,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
 
                     <Link
                         href={link}
+                        className='absolute top-0 right-0'
                         sx={{
                             backgroundColor: "#6A65FF",
                             width: { xs: "34px", md: "46px" },
@@ -99,9 +98,9 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                 />
 
                 <Typography
-                    className='!font-poppins'
+                    className='!font-poppins text-justify'
                     sx={{
-                        fontSize: { xs: "18px", md: "24px" },
+                        fontSize: { xs: "15px", md: "24px" },
                         lineHeight: { xs: "27px", md: "36px" },
                     }}
                 >

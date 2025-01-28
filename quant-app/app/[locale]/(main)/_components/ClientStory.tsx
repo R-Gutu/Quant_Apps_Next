@@ -64,9 +64,8 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
           <Typography
             height="100%"
             sx={{
-              fontSize: "26.41px",
+              fontSize: "25px",
               lineHeight: "39.62px",
-              // paddingX: "20px"
             }}
           >
             {text}

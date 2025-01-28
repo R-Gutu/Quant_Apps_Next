@@ -97,12 +97,7 @@ const About = () => {
             }}
           >
             <Typography
-              sx={{
-                textTransform: "none",
-                fontFamily: `"ClashDisplay", "Inter", sans-serif`,
-                color: "white",
-                fontSize: "14px",
-              }}
+              className="!font-clash !text-white !text-[14px]"
             >
               {t("Collapse")}
             </Typography>
@@ -136,8 +131,7 @@ const About = () => {
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <span className="about-info-img top-[10%]"></span>
         <span className="about-info-img-2 right-[10%]"></span>
-        {/* <span className="about-info-img-3 -z-10"></span> */}
-
+        <span className="about-info-img-3 -z-10"></span>
         <Blur
           color='#1E50FF80'
           right="10%"

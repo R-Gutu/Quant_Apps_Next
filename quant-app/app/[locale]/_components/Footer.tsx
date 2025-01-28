@@ -25,7 +25,6 @@ const Footer = async () => {
         <Box
           sx={{
             "& p": {
-              fontFamily: `"ClashDisplay", "Inter", sans-serif`,
               color: "white",
               opacity: "0.75",
               lineHeight: "34px",
@@ -38,7 +37,6 @@ const Footer = async () => {
               },
             },
             "& a": {
-              fontFamily: `"ClashDisplay", "Inter", sans-serif`,
               color: "white",
               opacity: "0.75",
               lineHeight: "34px",
@@ -64,13 +62,13 @@ const Footer = async () => {
           </Grid2>
           <div className="footer">
             <Link href="/" legacyBehavior>
-              <a className="footer__logo self-center">
+              <a className="footer__logo self-center !font-clash">
                 <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
               </a>
             </Link>
             <div className="footer__links">
               <div className="footer__column">
-                <p className="footer__column-title">{tFooter("FindUsAt")}</p>
+                <p className="footer__column-title !font-clash">{tFooter("FindUsAt")}</p>
                 {socialLinks.map(({ href, icon, alt }) => (
                   <Grid2 key={alt} container>
                     <Link
@@ -79,7 +77,7 @@ const Footer = async () => {
                       rel="noopener noreferrer"
                       legacyBehavior
                     >
-                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline">
+                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline !font-clash">
                         <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
                           {alt}
                         </h1>
@@ -97,7 +95,7 @@ const Footer = async () => {
               </div>
 
               <div className="footer__column">
-                <p className="footer__column-title">{tFooter("Company")}</p>
+                <p className="footer__column-title !font-clash">{tFooter("Company")}</p>
                 <AppLink href="/about-us">{tToolbar("AboutUs")}</AppLink>
 
                 <ScrollLink
@@ -111,15 +109,15 @@ const Footer = async () => {
               </div>
 
               <div className="footer__column">
-                <p className="footer__column-title">{tFooter("LearnMore")}</p>
+                <p className="footer__column-title !font-clash">{tFooter("LearnMore")}</p>
                 <AppLink href="/contact-us">{tToolbar("ContactUs")}</AppLink>
                 <AppLink href="/faqs">{tToolbar("FAQs")}</AppLink>
               </div>
 
               <div className="footer__column">
                 <Typography
+                  className="!font-clash"
                   sx={{
-                    fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                     fontSize: "14px",
                     color: "white",
                     fontWeight: "700",
@@ -137,8 +135,8 @@ const Footer = async () => {
             <div className="mobile-footer-bottom max-[800px]:flex">
               <div className="footer__column">
                 <Typography
+                  className="!font-clash"
                   sx={{
-                    fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                     fontSize: "14px",
                     color: "white",
                     fontWeight: "700",
@@ -149,7 +147,7 @@ const Footer = async () => {
                   Legal
                 </Typography>
                 <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
-                <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
+                <AppLink href="/privacy-policy" className="text-nowrap">{tFooter("PrivacyPolicy")}</AppLink>
               </div>
 
               <div className="mobile-footer-socials">

@@ -18,23 +18,23 @@ export default async function Team() {
                 textAlign="center"
             >
                 <Typography
+                    className="!font-clash"
                     sx={{
                         fontSize: "64px",
                         color: "white",
                         fontWeight: "600",
-                        fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                     }}
                 >
                     {t("Team")}
                 </Typography>
 
                 <Typography
+                    className="!font-poppins"
                     sx={{
                         fontSize: "18px",
                         maxWidth: "80%",
                         color: "white",
                         fontWeight: "400",
-                        fontFamily: "Poppins",
                         textAlign: { xs: "center", sm: "center", md: "center", lg: "left" },
                     }}
                 >

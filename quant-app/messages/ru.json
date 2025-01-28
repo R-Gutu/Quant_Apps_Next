@@ -34,9 +34,13 @@
     "WhatYourName": "Как вас зовут?",
     "WhatYourPhone": "Ваш номер телефона?",
     "ValidPhoneNumber": "Пожалуйста, введите действующий номер телефона.",
+    "ValidName": "Пожалуйста, введите свое Имя.",
+    "ValidEmail": "Пожалуйста, введите действующий почтовый адрес.",
     "WhatYourEmail": "Ваш email?",
     "DescribeYourInterest": "Опишите ваш проект",
-    "Submit": "Отправить"
+    "Submit": "Отправить",
+    "MessageSendingError": "Ваше сообщение не было отправлено из-за непредвиденной ошибки.",
+    "MessageSentSuccessfully": "Ваше сообщение успешно отправлено."
   }
   ,
   "faqs": {

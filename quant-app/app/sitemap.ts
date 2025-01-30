@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://www.quant-apps.com/en',
-      lastModified: new Date(),
+      lastModified,
       priority: 1.0,
       alternates: {
         languages: {

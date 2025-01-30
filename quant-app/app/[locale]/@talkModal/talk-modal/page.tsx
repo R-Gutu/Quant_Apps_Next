@@ -36,7 +36,7 @@ const Page = () => {
 
   const [invalidForm, setInvalidForm] = useState(true);
 
-  const serviceId = "service_y1v3t7u";     // Ваш service ID
+  const serviceId = "service_teo59sv";     // Ваш service ID
   const templateId = "template_kiufyoh";   // Ваш Template ID
   const publicKey = "wENYR-vuKMTOamg4i";   // Ваш Public Key
 

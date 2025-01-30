@@ -58,7 +58,7 @@ const Page = () => {
   const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();
 
-    const serviceId = "service_y1v3t7u";
+    const serviceId = "service_teo59sv";
     const templateId = "template_kiufyoh";
     const publicKey = "wENYR-vuKMTOamg4i";
 

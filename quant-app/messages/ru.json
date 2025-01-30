@@ -245,7 +245,13 @@
     "Browse": "загрузки",
     "Submit": "Отправить",
     "IosApp": "iOS приложения",
-    "WebDevelopment": "Веб-разработка"
+    "WebDevelopment": "Веб-разработка",
+    "WriteBudget": "Укажите свой бюджет (число)",
+    "Servers/Backend": "Серверы / Бэкенд",
+    "AndroidApp": "Android приложения",
+    "BusinessCRM": "Бизнес CRM",
+    "DesignUI/UX": "Дизайн/UI/UX",
+    "ChooseOption": "Выберите опцию"
   }
   ,
   "terms-of-use": {

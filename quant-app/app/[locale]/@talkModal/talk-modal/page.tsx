@@ -13,7 +13,8 @@ import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const Page = () => {
-  const t = useTranslations("contact-us");
+  const t = useTranslations("talk-popup");
+  const tf = useTranslations("contact-us");
   const [budget, setBudget] = useState("");
 
   const [firstName, setFirstName] = useState("");
@@ -39,6 +40,7 @@ const Page = () => {
   const serviceId = "service_teo59sv";     // Ваш service ID
   const templateId = "template_kiufyoh";   // Ваш Template ID
   const publicKey = "wENYR-vuKMTOamg4i";   // Ваш Public Key
+
 
   const onFirstNameChanged = (value: string) => {
     setFirstName(value);
@@ -82,8 +84,8 @@ const Page = () => {
     setIsEmailValid(validateEmail(email))
     setIsValidBudget(validateBudget(budget, 0));
     setIsCheckboxValid(ios || web || crm || uiux || backend || android);
-    const isFormInvalid = 
-      !isNameValid || !isLastNameValid || !isEmailValid || 
+    const isFormInvalid =
+      !isNameValid || !isLastNameValid || !isEmailValid ||
       !isCheckboxValid || !isValidBudget;
     setInvalidForm(isFormInvalid);
   }, [firstName, lastName, email, budget]);
@@ -113,6 +115,39 @@ const Page = () => {
   const onBudgetChanged = (value: string) => {
     setBudget(value);
   }
+
+  const checkBoxes = [
+    {
+      text: t('IosApp'),
+      state: iosCheckbox,
+      onChange: onIosCheckboxChanged,
+    },
+    {
+      text: t('WebDevelopment'),
+      state: webCheckbox,
+      onChange: onWebCheckboxChanged,
+    },
+    {
+      text: t('Servers/Backend'),
+      state: backendCheckbox,
+      onChange: onBackendCheckboxChanged,
+    },
+    {
+      text: t('AndroidApp'),
+      state: androidAppCheckbox,
+      onChange: onAndroidAppChanged,
+    },
+    {
+      text: t('BusinessCRM'),
+      state: crmCheckbox,
+      onChange: onCrmCheckboxChanged,
+    },
+    {
+      text: t('DesignUI/UX'),
+      state: uiuxCheckbox,
+      onChange: onUiuxCheckboxChanged,
+    },
+  ]
 
   useEffect(() => {
     validateForm(firstName, lastName, email, iosCheckbox, webCheckbox, crmCheckbox, uiuxCheckbox, backendCheckbox, androidAppCheckbox, budget);
@@ -179,18 +214,13 @@ const Page = () => {
           id="closeModal"
           onClick={() => router.back()}
         ></span>
-        <div className="talk-popup__content">
-          <div className="talk-popup__left">
+        <div className="talk-popup__content max-[890px]:bg-[#F9F9FF]">
+          <div className="talk-popup__left bg-[#F9F9FF]">
             <Image src="/icons/black-logo.svg" alt="" width={200} height={0} className="w-auto h-auto talk-popup__logo" />
             <div className="talk-popup__left-content">
-              <h1>Let’s craft something unforgettable together!</h1>
+              <h1>{t('LetsCraftTogether')}</h1>
               <Image src="/images/modal-img.png" width={200} height={0} className="w-auto h-auto" alt="" unoptimized={true} />
-              <p>
-                Ready to kickstart your project? Complete the form to schedule a
-                discovery call, where we’ll dive into your goals and ideas.
-                After the call, we’ll deliver a custom plan with a clear
-                timeline and pricing.
-              </p>
+              <p>{t('ReadyToKickstartProject')}</p>
             </div>
             <Image src="/images/modal-bg.png" alt="" width={500} height={0} className="w-auto h-auto talk-popup__left-img" unoptimized={true} />
           </div>
@@ -198,160 +228,91 @@ const Page = () => {
             <form className="talk-popup__form" onSubmit={handleSubmit}>
               <div className="talk-popup__first-last-name">
                 <div className="talk-popup__from-row">
-                  <label>First name</label>
+                  <label>{t('FirstName')}</label>
                   <div className="contact-us__phone-div">
                     <input
                       type="text"
-                      placeholder="What’s your first name?"
+                      placeholder={t('FirstNamePlaceholder')}
                       value={firstName}
                       onInput={(event: React.ChangeEvent<HTMLInputElement>) => onFirstNameChanged(event.target.value)}
                     />
-                    {!isNameValid && <span>{t("ValidName")}</span>}
+                    {isNameValid || <span>{tf("ValidName")}</span>}
                   </div>
                 </div>
                 <div className="talk-popup__from-row">
-                  <label>Last name</label>
+                  <label>{t('LastName')}</label>
                   <div className="contact-us__phone-div">
-                  <input
-                    type="text"
-                    placeholder="What’s your last name?"
-                    value={lastName}
-                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
-                  />
-                  {!isLastNameValid && <span>{t("ValidName")}</span>}
+                    <input
+                      type="text"
+                      placeholder={t('LastNamePlaceholder')}
+                      value={lastName}
+                      onInput={(event: React.ChangeEvent<HTMLInputElement>) => onLastNameChanged(event.target.value)}
+                    />
+                    {isLastNameValid || <span>{tf("ValidName")}</span>}
                   </div>
                 </div>
               </div>
               <div className="talk-popup__from-row">
-                <label>E-mail</label>
+                <label>{t('Email')}</label>
                 <div className="contact-us__phone-div">
-                <input
-                  type="email"
-                  placeholder="brianclark@gmail.com"
-                  value={email}
-                  onInput={(event: React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
-                />
-                {!isEmailValid && <span>{t("ValidEmail")}</span>}
+                  <input
+                    type="email"
+                    placeholder="brianclark@gmail.com"
+                    value={email}
+                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onEmailChanged(event.target.value)}
+                  />
+                  {isEmailValid || <span>{tf("ValidEmail")}</span>}
                 </div>
               </div>
               <div className="talk-popup__from-row">
-                <label>Project details</label>
+                <label>{t('ProjectDetails')}</label>
                 <textarea
-                  placeholder="What can we help you with?"
+                  placeholder={t('ProjectDetailsPlaceholder')}
                   rows={4}
                   value={projectDetails}
                   onChange={(event) => setProjectDetails(event.target.value)}
                   className="resize-none !p-[18px] !leading-normal placeholder:!p-0"
                 ></textarea>
               </div>
-              <p className="font-clash text-[14px] font-semibold text-[#6D758F]">Select the services you need for your project:</p>
-              <div className="grid grid-cols-3 gap-4">
-              <div className="contact-us__phone-div">
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={iosCheckbox}
-                      onChange={(event) =>
-                        onIosCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>iOS App</span>
+              <p className="font-clash text-[14px] font-semibold text-[#6D758F]">{t('SelectTheServices')}</p>
+              <div>
+                <div className="grid grid-cols-3 gap-4
+                  max-[890px]:flex flex-col max-[890px]:gap-1
+                ">
+                  {
+                    checkBoxes.map((checkbox, index) => (
+                      <div className="talk-popup__service-checkbox max-[890px]:px-[8px] max-[890px]:py-[5px] max-[890px]:rounded-[5px] max-[890px]:shadow-sm max-[890px]:bg-white" key={index}>
+                        <label className="custom-checkbox">
+                          <input
+                            type="checkbox"
+                            checked={checkbox.state}
+                            onChange={(event) => checkbox.onChange(event.currentTarget.checked)}
+                          />
+                          <span className="checkmark"></span>
+                        </label>
+                        <span>{checkbox.text}</span>
+                      </div>
+                    ))
+                  }
                 </div>
-
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={webCheckbox}
-                      onChange={(event) =>
-                        onWebCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Web development</span>
-                </div>
-
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={backendCheckbox}
-                      onChange={(event) =>
-                        onBackendCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Servers / Backend</span>
-                </div>
-
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={androidAppCheckbox}
-                      onChange={(event) =>
-                        onAndroidAppChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Android App</span>
-                </div>
-
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={crmCheckbox}
-                      onChange={(event) =>
-                        onCrmCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Business CRM</span>
-                </div>
-
-                <div className="talk-popup__service-checkbox">
-                  <label className="custom-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={uiuxCheckbox}
-                      onChange={(event) =>
-                        onUiuxCheckboxChanged(event.currentTarget.checked)
-                      }
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <span>Design UI/UX</span>
-                </div>
-                {!isCheckboxValid && <span>Choose one of options</span>}
-                </div>
-
-
+                  {isCheckboxValid || <span className="font-inter text-[#c1c1c1] text-[13px] font-normal leading-[15.73px]">{t('ChooseOption')}</span>}
               </div>
               <div className="talk-popup__budget talk-popup__from-row">
                 <p>
-                  <span>Budget </span>   (Unsure on budget? Select a range, and
-                  we’ll tailor the best solution for you!)
+                  <span>{t('Budget')} </span> {t('UnsureOnBudget')}
                 </p>
                 <div className="contact-us__phone-div">
-                <input
-                  type="text"
-                  placeholder="$3000-$5000"
-                  value={budget}
-                  onInput={(event: React.ChangeEvent<HTMLInputElement>) => onBudgetChanged(event.target.value)}
-                />
-                {!isValidBudget && <span>Write your Budget(number)</span>}
+                  <input
+                    type="text"
+                    placeholder="$3000-$5000"
+                    value={budget}
+                    onInput={(event: React.ChangeEvent<HTMLInputElement>) => onBudgetChanged(event.target.value)}
+                  />
+                  {isValidBudget || <span>{t('WriteBudget')}</span>}
                 </div>
               </div>
               <div className="talk-popup__attachments">
-                <span>Attachments</span>
+                <span>{t('Attachments')}</span>
                 <div
                   className="talk-popup__add-attachments"
                   id="dropZone"
@@ -362,7 +323,7 @@ const Page = () => {
                   <div className="talk-popup__add-attachment-info">
                     <Image src="/icons/staple.svg" width={500} height={0} className="h-auto w-auto" alt="" />
                     <p>
-                      Drag your file(s) or <span>browse</span>
+                      {t('DragFiles')} <span>{t('Browse')}</span>
                     </p>
                   </div>
                   <input
@@ -380,7 +341,7 @@ const Page = () => {
                 className={`fill-btn talk-popup__submit ${invalidForm ? "disabled" : ""}`}
                 disabled={invalidForm}
               >
-                Submit
+                {t('Submit')}
               </button>
             </form>
           </div>

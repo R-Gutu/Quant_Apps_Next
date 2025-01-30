@@ -229,13 +229,19 @@
     "ProjectDetailsPlaceholder": "What can we help you with?",
     "SelectTheServices": "Select the services you need for your project:",
     "Budget": "Budget",
-    "UnsureOnBudget": "Unsure on budget? Select a range, and we’ll tailor the best solution for you!",
+    "UnsureOnBudget": "(Unsure on budget? Select a range, and we’ll tailor the best solution for you!)",
     "Attachments": "Attachments",
     "DragFiles": "Drag your file(s) or",
     "Browse": "browse",
     "Submit": "Submit",
     "IosApp": "iOS App",
-    "WebDevelopment": "Web development"
+    "WriteBudget": "Write your Budget (number)",
+    "WebDevelopment": "Web development",
+    "Servers/Backend": "Servers / Backend",
+    "AndroidApp": "Android App",
+    "BusinessCRM": "Business CRM",
+    "DesignUI/UX": "Design UI/UX",
+    "ChooseOption": "Choose an option"
   },
   "terms-of-use": {
     "TermsOfUse": "Terms of Use",

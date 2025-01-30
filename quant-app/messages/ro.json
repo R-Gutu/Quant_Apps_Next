@@ -235,7 +235,13 @@
     "Browse": "încărcare",
     "Submit": "Trimiteți",
     "IosApp": "Aplicație iOS",
-    "WebDevelopment": "Creare website"
+    "WebDevelopment": "Creare website",
+    "WriteBudget": "Introduceți bugetul (numărul)",
+    "Servers/Backend": "Servere / Backend",
+    "AndroidApp": "Aplicație Android",
+    "BusinessCRM": "CRM de business",
+    "DesignUI/UX": "Design UI/UX",
+    "ChooseOption": "Alegeți opțiunea"
   },
   "terms-of-use": {
     "TermsOfUse": "Termeni și condiții",

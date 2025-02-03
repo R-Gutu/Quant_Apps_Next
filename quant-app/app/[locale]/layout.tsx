@@ -45,7 +45,6 @@ import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
 
 
-
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata');
   return {

@@ -38,8 +38,8 @@ const Page = () => {
   const [invalidForm, setInvalidForm] = useState(true);
 
   const serviceId = "service_teo59sv";     // Ваш service ID
-  const templateId = "template_kiufyoh";   // Ваш Template ID
-  const publicKey = "wENYR-vuKMTOamg4i";   // Ваш Public Key
+  const templateId = "template_e7f0ogb";   // Ваш Template ID
+  const publicKey = "S46PU3W0ILp9NXki4";   // Ваш Public Key
 
 
   const onFirstNameChanged = (value: string) => {

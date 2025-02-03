@@ -59,8 +59,8 @@ const Page = () => {
     event.preventDefault();
 
     const serviceId = "service_teo59sv";
-    const templateId = "template_kiufyoh";
-    const publicKey = "wENYR-vuKMTOamg4i";
+    const templateId = "template_1d23foq";
+    const publicKey = "S46PU3W0ILp9NXki4";
 
     const templateParams = {
       name: name,

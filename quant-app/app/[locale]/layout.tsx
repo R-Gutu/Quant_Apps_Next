@@ -59,15 +59,15 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `https://${process.env.NEXT_PUBLIC_SITE_URL}`,
+      url: `https://${'www.quant-apps.com'}`,
       type: "website",
     },
     alternates: {
       languages: {
-        'x-default': `https://${process.env.NEXT_PUBLIC_SITE_URL}`,
-        en: `https://${process.env.NEXT_PUBLIC_SITE_URL}/en`,
-        ru: `https://${process.env.NEXT_PUBLIC_SITE_URL}/ru`,
-        ro: `https://${process.env.NEXT_PUBLIC_SITE_URL}/ro`,
+        'x-default': `https://${'www.quant-apps.com'}`,
+        en: `https://${'www.quant-apps.com'}/en`,
+        ru: `https://${'www.quant-apps.com'}/ru`,
+        ro: `https://${'www.quant-apps.com'}/ro`,
       }
     }
   };

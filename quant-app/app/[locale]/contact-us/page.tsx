@@ -43,9 +43,7 @@ const Page = () => {
   const onDescriptionChanged = (value : string) => {
     setDescription(value);
   };
-  useEffect(() => {
-    validateForm(name, email, phone);
-  }, [name, email, phone])
+ 
 
   const validateForm = (nameValue : string, emailValue : string, phoneValue : string) => {
     setIsNameValid(validateName(nameValue));
@@ -54,6 +52,10 @@ const Page = () => {
 
     setInvalidForm(!isNameValid || !isEmailValid || !isPhoneValid);
   };
+
+  useEffect(() => {
+    validateForm(name, email, phone);
+  }, [name, email, phone])
 
   const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();

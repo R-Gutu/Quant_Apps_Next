@@ -88,7 +88,7 @@ const Page = () => {
       !isNameValid || !isLastNameValid || !isEmailValid ||
       !isCheckboxValid || !isValidBudget;
     setInvalidForm(isFormInvalid);
-  }, [firstName, lastName, email, budget]);
+  }, [isCheckboxValid, isEmailValid, isNameValid, isLastNameValid, isValidBudget]);
 
   const onDropZoneDragOver = (e: React.DragEvent) => {
     e.preventDefault();

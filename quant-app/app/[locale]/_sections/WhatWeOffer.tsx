@@ -57,6 +57,7 @@ const WhatWeOffer = async () => {
         </Typography>
 
         <Typography
+          variant="h2"
           sx={{
             fontSize: "16px",
             fontFamily: `"ClashDisplay", "Inter", sans-serif`,

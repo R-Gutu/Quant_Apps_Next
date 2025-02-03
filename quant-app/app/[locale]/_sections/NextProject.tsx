@@ -23,13 +23,13 @@ const NextProject = async () => {
             {t("ExcitedToWorkTogether")}
           </h1>
 
-          <p className="font-clash text-white opacity-75 text-[16px] leading-[30px] text-start
+          <h2 className="font-clash text-white opacity-75 text-[16px] leading-[30px] text-start
           max-[1000px]:text-[16px] max-[1000px]:leading-[24px]
             max-[650px]:text-[16px] max-[650px]:leading-[20px] max-[900px]:text-center
             max-[500px]:w-[200px]"
           >
             {t("LetsBringIdeasToLife")}
-          </p>
+          </h2>
 
           <Link
             href="/talk-modal"

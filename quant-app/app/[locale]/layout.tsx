@@ -59,15 +59,15 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: t('title'),
       description: t('description'),
-      url: `https://${process.env.SITE_URL}`,
+      url: `https://${process.env.NEXT_PUBLIC_SITE_URL}`,
       type: "website",
     },
     alternates: {
       languages: {
-        'x-default': `https://${process.env.SITE_URL}`,
-        en: `https://${process.env.SITE_URL}/en`,
-        ru: `https://${process.env.SITE_URL}/ru`,
-        ro: `https://${process.env.SITE_URL}/ro`,
+        'x-default': `https://${process.env.NEXT_PUBLIC_SITE_URL}`,
+        en: `https://${process.env.NEXT_PUBLIC_SITE_URL}/en`,
+        ru: `https://${process.env.NEXT_PUBLIC_SITE_URL}/ru`,
+        ro: `https://${process.env.NEXT_PUBLIC_SITE_URL}/ro`,
       }
     }
   };

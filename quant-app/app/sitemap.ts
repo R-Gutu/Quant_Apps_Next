@@ -23,7 +23,7 @@ const PRIORITIES = {
 
 // Helper to generate URL
 const generateUrl = (lang: Language, path: string) => 
-  `https://${process.env.SITE_URL}/${lang}${path ? `/${path}` : ''}`
+  `https://${process.env.NEXT_PUBLIC_SITE_URL}/${lang}${path ? `/${path}` : ''}`
 
 // Helper to generate alternates
 const generateAlternates = (path: string) => ({

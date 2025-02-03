@@ -16,6 +16,7 @@ export default async function Introduction() {
                 <div className="banner__content">
                     <div className="banner__text">
                         <Typography
+                            variant="h1"
                             className="!font-clash"
                             sx={{
                                 fontSize: "55px",
@@ -47,6 +48,7 @@ export default async function Introduction() {
                         </Typography>
 
                         <Typography
+                            variant="h2"
                             className="!font-poppins"
                             sx={{
                                 // fontFamily: "Poppins",

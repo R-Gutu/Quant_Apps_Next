@@ -216,13 +216,13 @@ const Page = () => {
         ></span>
         <div className="talk-popup__content max-[890px]:bg-[#F9F9FF]">
           <div className="talk-popup__left bg-[#F9F9FF]">
-            <Image src="/icons/black-logo.svg" alt="" width={200} height={0} className="w-auto h-auto talk-popup__logo" />
+            <Image src="/icons/black-logo.svg" alt="BlackLogo" width={200} height={0} className="w-auto h-auto talk-popup__logo" />
             <div className="talk-popup__left-content">
               <h1>{t('LetsCraftTogether')}</h1>
-              <Image src="/images/modal-img.png" width={200} height={0} className="w-auto h-auto" alt="" unoptimized={true} />
+              <Image src="/images/modal-img.png" width={200} height={0} className="w-auto h-auto" alt="Modal" unoptimized={true} />
               <p>{t('ReadyToKickstartProject')}</p>
             </div>
-            <Image src="/images/modal-bg.png" alt="" width={500} height={0} className="w-auto h-auto talk-popup__left-img" unoptimized={true} />
+            <Image src="/images/modal-bg.png" alt="Modal" width={500} height={0} className="w-auto h-auto talk-popup__left-img" unoptimized={true} />
           </div>
           <div className="talk-popup__right">
             <form className="talk-popup__form" onSubmit={handleSubmit}>
@@ -321,7 +321,7 @@ const Page = () => {
                   onDrop={onDropZoneDrop}
                 >
                   <div className="talk-popup__add-attachment-info">
-                    <Image src="/icons/staple.svg" width={500} height={0} className="h-auto w-auto" alt="" />
+                    <Image src="/icons/staple.svg" width={500} height={0} className="h-auto w-auto" alt="Staple" />
                     <p>
                       {t('DragFiles')} <span>{t('Browse')}</span>
                     </p>

@@ -23,13 +23,13 @@ const NextProject = async () => {
             {t("ExcitedToWorkTogether")}
           </h1>
 
-          <p className="font-clash text-white opacity-75 text-[16px] leading-[30px] text-start
+          <h2 className="font-clash text-white opacity-75 text-[16px] leading-[30px] text-start
           max-[1000px]:text-[16px] max-[1000px]:leading-[24px]
             max-[650px]:text-[16px] max-[650px]:leading-[20px] max-[900px]:text-center
             max-[500px]:w-[200px]"
           >
             {t("LetsBringIdeasToLife")}
-          </p>
+          </h2>
 
           <Link
             href="/talk-modal"
@@ -65,7 +65,7 @@ const NextProject = async () => {
           filter="blur(100px)"
           className=" w-[530px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={50} height={0} alt="Star" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
       </div>
 
     </div>

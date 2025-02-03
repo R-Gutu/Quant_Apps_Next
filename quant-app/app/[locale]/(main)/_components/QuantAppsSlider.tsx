@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-export default function QuanticaSlider() {
+export default function QuantAppsSlider() {
     return(
         <div className="quantica-slider">
         <Swiper
@@ -19,27 +19,27 @@ export default function QuanticaSlider() {
           modules={[Autoplay]}
         >
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="Quantica" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="Quantica-fill" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="Quantica" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="Quantica-fill" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica.svg" alt="Quantica" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
           <SwiperSlide className="quantica-slider__slide">
-            <Image src="/icons/Quantica-fill.svg" alt="Quantica-fill" width={300} height={0} className='w-auto h-auto' />
+            <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
         </Swiper>
       </div>

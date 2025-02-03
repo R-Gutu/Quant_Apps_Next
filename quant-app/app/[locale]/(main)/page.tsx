@@ -6,7 +6,7 @@ import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
 
 
 import Introduction from "./_components/Introduction";
-import QuanticaSlider from "./_components/QuanticaSlider";
+import QuantAppsSlider from "./_components/QuantAppsSlider";
 import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
@@ -26,7 +26,7 @@ const Page = async () => {
           </Link>
         </Box>
       </div>
-      <QuanticaSlider />
+      <QuantAppsSlider />
       <section className="owr-work-section" id="projects">
         <div className="container">
           <Projects />

@@ -65,7 +65,7 @@ const NextProject = async () => {
           filter="blur(100px)"
           className=" w-[530px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
+        <Image src="/icons/Star.svg" width={50} height={0} alt="Star" className="w-auto h-auto top-[40px] right-[50px] why-ios__bg-img max-[900px]:hidden" />
       </div>
 
     </div>

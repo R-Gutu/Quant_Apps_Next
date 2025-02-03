@@ -106,7 +106,7 @@ const WhatWeOffer = async () => {
 
             <Image
               src="/images/items-net-bg.png"
-              alt=""
+              alt="ItemsBg"
               width={1000}
               height={0}
               unoptimized

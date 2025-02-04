@@ -9,7 +9,6 @@ export default async function Introduction() {
     const t = await getTranslations('main');
     const currentLocale = await getLocale();
     const mobileIntro = getIntroByLanguageMobile(currentLocale);
-
     return (
         <div className="pt-[150px] w-full p-20 max-[950px]:p-5 max-[950px]:pt-[100px]">
             <div className="banner__content">

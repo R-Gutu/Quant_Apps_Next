@@ -11,10 +11,7 @@ const Page = async () => {
 
   return (
     <div>
-      <div className="container !pt-[65px]">
-        <WhatWeOffer />
-      </div>
-
+      <WhatWeOffer className="!pt-[65px]" />
       <section className="why-ios-section" id="why-native-ios">
         <div className="container">
           <div className="why-ios">
@@ -57,15 +54,6 @@ const Page = async () => {
         </div>
       </section>
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
-        {/* <Blur
-              color="rgba(186, 8, 255, 0.8156512605042017)"
-              left="0%"
-              top="7%"
-              width="600px"
-              height="600px"
-              filter="blur(140px)"
-              className="absolute"
-        /> */}
         <Blur
             color="#1E50FF"
             left="0%"

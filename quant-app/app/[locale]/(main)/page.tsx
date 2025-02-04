@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Box } from "@mui/material";
 import NextProject from "@/app/[locale]/_sections/NextProject";
 import WhatWeOffer from "@/app/[locale]/_sections/WhatWeOffer";
+import Blur from '@/components/Blur';
 
 
 import Introduction from "./_components/Introduction";
@@ -34,9 +35,17 @@ const Page = async () => {
         </section>
         <Vouches />
         <NextProject />
-        {/* <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
-      <div className="absolute top-[15%] left-0 w-[600px] h-[600px] rounded-full bg-[rgba(186,8,255,0.8156512605042017)] blur-[140px] z-[-10]"/>
-      </div> */}
+        <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+          <Blur
+            color="#9C08FFB2"
+            left="-20%"
+            top="15%"
+            width="600px"
+            height="600px"
+            filter="blur(150px)"
+            className="absolute"
+          />
+        </div>
       </div>
     </>
   );

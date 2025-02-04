@@ -86,7 +86,7 @@ export default function Projects() {
     return (
         <div className="our-work" id="our-work">
             <div className="our-work__title">
-                <h3 className="text-[60px] text-white font-clash font-[600]">{t("OurProjects")}</h3>
+                <h3 className="text-[64px] max-[700px]:text-[32px] text-white font-clash font-[600]">{t("OurProjects")}</h3>
                 <p>
                     {t("InnovationStartsVision")}
                     <br className="our-work__title__br" />

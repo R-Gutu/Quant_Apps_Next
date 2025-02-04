@@ -10,13 +10,14 @@ import QuantAppsSlider from "./_components/QuantAppsSlider";
 import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
-import Blur from '@/components/Blur';
+// import Blur from '@/components/Blur';
 
 const Page = async () => {
   const t = await getTranslations("main");
 
   return (
     <>
+      <div className="">
       <div className="container">
         <Introduction /> 
         <WhatWeOffer />
@@ -36,15 +37,8 @@ const Page = async () => {
       <Vouches />
       <NextProject />
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
-      <Blur
-              color="rgba(186, 8, 255, 0.8156512605042017)"
-              left="0%"
-              top="15%"
-              width="600px"
-              height="600px"
-              filter="blur(140px)"
-              className="absolute"
-            />
+      <div className="absolute top-[15%] left-0 w-[600px] h-[600px] rounded-full bg-[rgba(186,8,255,0.8156512605042017)] blur-[140px] z-[-10]"/>
+      </div>
       </div>
     </>
   );

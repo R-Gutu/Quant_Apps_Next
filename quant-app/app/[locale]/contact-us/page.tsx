@@ -55,7 +55,7 @@ const Page = () => {
 
   useEffect(() => {
     validateForm(name, email, phone);
-  }, [name, email, phone])
+  }, [name, email, phone, validateForm])
 
   const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();

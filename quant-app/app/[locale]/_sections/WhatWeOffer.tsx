@@ -93,7 +93,7 @@ const WhatWeOffer = async () => {
               src="/images/cloud-storage.png"
               width={1000}
               height={0}
-              unoptimized
+              // unoptimized
               alt="CloudStorage"
               style={{
                 width: "auto",
@@ -109,7 +109,7 @@ const WhatWeOffer = async () => {
               alt="ItemsBg"
               width={1000}
               height={0}
-              unoptimized
+              // unoptimized
               style={{
                 width: "auto",
                 maxWidth: "150%",

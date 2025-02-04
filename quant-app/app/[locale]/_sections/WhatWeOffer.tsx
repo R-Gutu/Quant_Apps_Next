@@ -90,7 +90,8 @@ const WhatWeOffer = async () => {
           }}
         >
           <Box sx={{ position: "relative" }}>
-            <div className="relative top-[0px] left-[0px] w-full h-full -z-10 max-[1000px]:left-[-200px] max-[600px]:left-[-400px]">
+            <div className="relative top-[0px] left-[0px] w-full h-full -z-10">
+              {/* max-[1000px]:left-[-200px] max-[600px]:left-[-400px] */}
               <Blur
                 color="#9C08FFB2"
                 left="0%"
@@ -98,7 +99,7 @@ const WhatWeOffer = async () => {
                 width="600px"
                 height="600px"
                 filter="blur(150px)"
-                className="absolute "
+                className="absolute"
               />
             </div>
             <Image

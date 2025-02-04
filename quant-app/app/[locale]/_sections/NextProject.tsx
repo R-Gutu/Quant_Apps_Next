@@ -60,8 +60,8 @@ const NextProject = async () => {
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <Blur
           color='#9C08FF'
-          right="5%"
-          bottom="-60px"
+          right="0%"
+          bottom="0px"
           filter="blur(100px)"
           className=" w-[530px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />

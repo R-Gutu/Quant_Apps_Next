@@ -34,7 +34,7 @@ const WhatWeOffer = async () => {
   ];
 
   return (
-    <div className="offer" id="services">
+    <div className="offer p-20 max-[950px]:p-5" id="services">
       <Grid2>
         <Typography
           className="!font-inter"

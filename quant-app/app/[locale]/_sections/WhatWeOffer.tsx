@@ -61,7 +61,6 @@ const WhatWeOffer = async () => {
           variant="h2"
           sx={{
             fontSize: "16px",
-            opacity: 0.75,
             textAlign: {
               xs: "center", // Center-aligned for all screens
             },

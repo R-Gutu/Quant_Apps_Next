@@ -75,7 +75,8 @@ export async function generateMetadata(): Promise<Metadata> {
         en: `https://${'www.quant-apps.com'}/en`,
         ru: `https://${'www.quant-apps.com'}/ru`,
         ro: `https://${'www.quant-apps.com'}/ro`,
-      }
+      },
+      canonical: './',
     }
   };
 }

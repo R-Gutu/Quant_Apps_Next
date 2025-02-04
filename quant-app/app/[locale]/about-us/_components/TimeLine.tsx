@@ -58,8 +58,8 @@ const TimeLine = async () => {
         </Grid2>
         <div className="overflow-hidden w-full">
           <Image width={2000} height={0} className="w-full h-auto max-[800px]:hidden ml-[1%]" src={roadMap.desktop} alt="RoadMap" key={roadMap.desktop} />
-          <Image width={2000} height={0} className="!w-[180%] max-w-[180%] h-auto min-[800px]:hidden ml-[-80%] mb-[70px]" src={roadMap.mobileRight} alt="RoadMap" key={roadMap.mobileRight} />
-          <Image width={2000} height={0} className="!w-[180%] max-w-[165%] h-auto min-[800px]:hidden ml-[2%]" src={roadMap.mobileLeft} alt="RoadMap" key={roadMap.mobileLeft} />
+          <Image width={2000} height={0} className="!w-[180%] max-w-[165%] h-auto min-[800px]:hidden ml-[2%] mb-[70px]" src={roadMap.mobileLeft} alt="RoadMap" key={roadMap.mobileLeft} />
+          <Image width={2000} height={0} className="!w-[180%] max-w-[180%] h-auto min-[800px]:hidden ml-[-80%]" src={roadMap.mobileRight} alt="RoadMap" key={roadMap.mobileRight} />
         </div>
       </Grid2>
     </div>

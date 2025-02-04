@@ -10,7 +10,7 @@ import QuantAppsSlider from "./_components/QuantAppsSlider";
 import Projects from "./_components/Projects";
 import Team from "./_components/Team";
 import Vouches from "./_components/Vouches";
-import Blur from '@/components/Blur';
+// import Blur from '@/components/Blur';
 
 const Page = async () => {
   const t = await getTranslations("main");

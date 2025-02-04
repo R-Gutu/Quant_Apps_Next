@@ -18,7 +18,7 @@ export default async function Team() {
                 textAlign="center"
             >
                 <Typography
-                    className="!font-clash"
+                    className="!font-inter"
                     sx={{
                         fontSize: "64px",
                         color: "white",
@@ -29,7 +29,7 @@ export default async function Team() {
                 </Typography>
 
                 <Typography
-                    className="!font-poppins"
+                    className="!font-inter"
                     sx={{
                         fontSize: "18px",
                         maxWidth: "80%",

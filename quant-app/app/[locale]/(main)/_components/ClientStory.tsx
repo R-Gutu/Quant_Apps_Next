@@ -9,7 +9,7 @@ import Image from "next/image";
 import ClientStoryType from "@/lib/types/ClientStoryType";
 
 
-const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) => {
+const ClientStory = ({ clientName, clientDescription, text }: ClientStoryType) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -20,11 +20,9 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
       width="fit-content"
       sx={{
         "& p": {
-          fontFamily: `${isSmallScreen ? "Space Grotesk" : "ClashDisplay"}, "Inter", sans-serif`,
           color: "white",
         },
         "& a": {
-          fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           fontSize: "16.51px",
           fontWeight: "500",
           lineHeight: "20.3px",
@@ -45,8 +43,8 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
         paddingX="30px"
       >
         <Image
-        width={520}
-        height={0}
+          width={520}
+          height={0}
           style={{
             width: isSmallScreen ? "330px" : "520px",
             height: isSmallScreen ? "326px" : "220px",
@@ -62,6 +60,7 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
 
         <Grid2 container minHeight="120px" alignContent="center">
           <Typography
+            className="!font-inter"
             height="100%"
             sx={{
               fontSize: "25px",
@@ -80,10 +79,11 @@ const ClientStory = ({ clientName, clientDescription, text } : ClientStoryType) 
             ml: "60px",
           }}
         >
-          <p className="!font-clash !text-[17px] !text-[#515DEF] !font-medium">{clientName}</p>
+          <p className="!font-inter !text-[17px] !text-[#515DEF] !font-medium">{clientName}</p>
 
           {clientDescription && (
             <Typography
+              className="!font-inter"
               sx={{
                 fontSize: "14.86px",
                 lineHeight: "18.27px",

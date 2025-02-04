@@ -26,24 +26,22 @@ const TimeLine = async () => {
             alignItems: "center",
             height: "fit-content",
             "& h2": {
-              fontFamily: `"ClashDisplay", "Inter", sans-serif`,
               color: "white",
               fontSize: "5.3vw",
               fontWeight: "600",
             },
             "& p": {
-              fontFamily: `"ClashDisplay", "Inter", sans-serif`,
               color: "white",
               fontSize: "1.5vw",
             },
           }}
         >
           <Grid2 width="fit-content">
-            <Typography variant="h2">{t("Timeline")}</Typography>
+            <Typography className="!font-inter" variant="h2">{t("Timeline")}</Typography>
           </Grid2>
 
           <Grid2 size={5}>
-            <Typography>{t("ShapingFutureMilestone")}</Typography>
+            <Typography className="!font-inter">{t("ShapingFutureMilestone")}</Typography>
           </Grid2>
         </Grid2>
 

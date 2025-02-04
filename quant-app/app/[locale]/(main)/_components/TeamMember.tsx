@@ -44,7 +44,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                         />
                         <Grid2 container direction="column" className="ml-[15px]">
                             <Typography
-                            className='!font-clash'
+                            className='!font-inter'
                                 sx={{
                                     fontWeight: "500",
                                     fontSize: { xs: "20px", md: "27px" },
@@ -55,7 +55,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                             </Typography>
 
                             <Typography
-                                className='!font-poppins'
+                                className='!font-inter'
                                 sx={{
                                     fontSize: { xs: "15px", md: "24.33px" },
                                     mb: "10px",
@@ -98,7 +98,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                 />
 
                 <Typography
-                    className='!font-poppins text-justify'
+                    className='!font-inter text-justify'
                     sx={{
                         fontSize: { xs: "15px", md: "24px" },
                         lineHeight: { xs: "27px", md: "36px" },

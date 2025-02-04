@@ -60,6 +60,7 @@ const LanguageSwitcher = (props: { mobile: boolean }) => {
               sx={{ paddingBlock: "5px", paddingInline: "2px" }}
             >
               <Typography
+                className="!font-inter"
                 sx={{
                   textTransform: "uppercase",
                   color: activeLng === language ? "#6A65FF" : "white",
@@ -99,6 +100,7 @@ const LanguageSwitcher = (props: { mobile: boolean }) => {
             }}
             renderValue={(value) => (
               <Typography
+                className="!font-inter"
                 sx={{
                   textTransform: "uppercase",
                   color: "white",
@@ -115,6 +117,7 @@ const LanguageSwitcher = (props: { mobile: boolean }) => {
                 sx={{ paddingBlock: "5px", paddingInline: "2px" }}
               >
                 <Typography
+                  className="!font-inter"
                   sx={{
                     textTransform: "uppercase",
                     color: activeLng === language ? "#6A65FF" : "white",

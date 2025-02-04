@@ -13,10 +13,9 @@ const AppLink = ({ href, children, scroll = true, onClick, className}: AppLinkPr
   return (
     <Link href={href} passHref scroll={scroll} onClick={onClick} legacyBehavior>
       <Typography
-        className={className}
+        className={`${className} !font-inter`}
         sx={{
           textWrap: "nowrap",
-          fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           fontSize: "14px",
           lineHeight: "34px",
           color: "white",

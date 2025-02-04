@@ -274,7 +274,7 @@ const Page = () => {
                   className="resize-none !p-[18px] !leading-normal placeholder:!p-0"
                 ></textarea>
               </div>
-              <p className="font-clash text-[14px] font-semibold text-[#6D758F]">{t('SelectTheServices')}</p>
+              <p className="font-inter text-[14px] font-semibold text-[#6D758F]">{t('SelectTheServices')}</p>
               <div>
                 <div className="grid grid-cols-3 gap-4
                   max-[890px]:flex flex-col max-[890px]:gap-1

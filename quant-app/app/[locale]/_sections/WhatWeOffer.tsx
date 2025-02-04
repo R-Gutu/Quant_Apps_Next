@@ -36,9 +36,9 @@ const WhatWeOffer = async () => {
     <div className="offer" id="services">
       <Grid2>
         <Typography
+          className="!font-inter"
           sx={{
             fontSize: "64px",
-            fontFamily: "ClashDisplay, Inter, sans-serif",
             fontWeight: "600",
             "@media (max-width:960px)": {
               fontSize: "40px",
@@ -56,10 +56,10 @@ const WhatWeOffer = async () => {
         </Typography>
 
         <Typography
+          className="!font-inter"
           variant="h2"
           sx={{
             fontSize: "16px",
-            fontFamily: `"ClashDisplay", "Inter", sans-serif`,
             opacity: 0.75,
             textAlign: {
               xs: "center", // Center-aligned for all screens
@@ -137,13 +137,11 @@ const WhatWeOffer = async () => {
               height: { xs: "22px", md: "auto" },
             },
             "& h3": {
-              fontFamily: "ClashDisplay, Inter, sans-serif",
               fontSize: { xs: "9px", md: "20px" },
               fontWeight: "500",
               lineHeight: { xs: "12px", md: "25px" },
             },
             "& p": {
-              fontFamily: "Poppins, Inter, sans-serif",
               fontSize: { xs: "7.37px", md: "16px" },
               lineHeight: { xs: "12px", md: "25px" },
               opacity: "0.75",
@@ -181,8 +179,8 @@ const WhatWeOffer = async () => {
               </Grid2>
 
               <Grid2 container direction="column" size={8} sx={{ flexGrow: 1 }}>
-                <Typography variant="h3">{offer.title}</Typography>
-                <Typography>{offer.description}</Typography>
+                <Typography className="!font-inter" variant="h3">{offer.title}</Typography>
+                <Typography className="!font-inter">{offer.description}</Typography>
               </Grid2>
             </Grid2>
           ))}

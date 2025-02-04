@@ -11,10 +11,7 @@ const Page = async () => {
 
   return (
     <div>
-      <div className="container !pt-[65px]">
-        <WhatWeOffer />
-      </div>
-
+      <WhatWeOffer className="!pt-[65px]" />
       <section className="why-ios-section" id="why-native-ios">
         <div className="container">
           <div className="why-ios">

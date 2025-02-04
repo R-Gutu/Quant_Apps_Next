@@ -25,7 +25,7 @@ const TimeLine = async () => {
           sx={{
             alignItems: "center",
             height: "fit-content",
-            "& h1": {
+            "& h2": {
               fontFamily: `"ClashDisplay", "Inter", sans-serif`,
               color: "white",
               fontSize: "5.3vw",
@@ -39,7 +39,7 @@ const TimeLine = async () => {
           }}
         >
           <Grid2 width="fit-content">
-            <Typography variant="h1">{t("Timeline")}</Typography>
+            <Typography variant="h2">{t("Timeline")}</Typography>
           </Grid2>
 
           <Grid2 size={5}>

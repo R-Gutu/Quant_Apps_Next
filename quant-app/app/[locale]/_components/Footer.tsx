@@ -144,7 +144,7 @@ const Footer = async () => {
                     lineHeight: "34px",
                   }}
                 >
-                  Legal
+                  {tFooter("Legal")}
                 </Typography>
                 <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
                 <AppLink href="/privacy-policy" className="text-nowrap">{tFooter("PrivacyPolicy")}</AppLink>

@@ -21,7 +21,6 @@ export function getIntroByLanguageMobile(language: string) {
 }
 
 export function getRoadMapByLanguage(language: string) {
-  console.log(language);
   switch (language) {
     case "ru":
       return {

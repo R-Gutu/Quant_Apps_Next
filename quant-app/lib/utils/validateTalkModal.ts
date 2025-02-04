@@ -14,8 +14,6 @@ export const validateEmail = (email : string): boolean => {
 
 export const validateBudget = (value : string, min: number): boolean => {
     const numbers = value.split('-').map(item => item.trim().split('').filter(char => !isNaN(+char)).join(''))
-    
-    console.log(numbers);
     const num1 = Number(numbers[0]);
     return !isNaN(num1) && num1 > min;
 }
@@ -44,6 +42,4 @@ export const handleFiles = (files : FileList | null): void => {
             fileList.innerHTML += `<div>${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)</div>`;
         }
     });
-
-    console.log("Valid files:", validFiles);
 };

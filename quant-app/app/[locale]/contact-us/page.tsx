@@ -76,7 +76,6 @@ const Page = () => {
       .send(serviceId, templateId, templateParams, publicKey)
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
           setName("");
           setEmail("");
           setPhone("");
@@ -84,7 +83,6 @@ const Page = () => {
           alert(t("MessageSentSuccessfully"));
         },
         (err) => {
-          console.log("FAILED...", err);
           alert(t("MessageSendingError"));
         }
       );

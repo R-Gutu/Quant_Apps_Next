@@ -20,20 +20,19 @@ export default async function Introduction() {
                             className="!font-clash"
                             sx={{
                                 fontSize: "55px",
-                                ":lang(ru)": {
-                                    fontSize: "43px",
-                                },
                                 fontWeight: "600",
                                 lineHeight: "74px",
                                 color: "white",
-                                textAlign: "left",
+                                ":lang(ru)": {
+                                    fontSize: "44px",
+                                    lineHeight: "55px",
+                                },
                                 "@media (max-width: 900px)": {  // md breakpoint
                                     fontSize: "40px",
                                     ":lang(ru)": {
                                         fontSize: "40px",
                                     },
                                     lineHeight: "50px",
-                                    textAlign: "center",
                                 },
                                 "@media (max-width: 600px)": {  // sm breakpoint
                                     fontSize: "30px",

@@ -62,7 +62,7 @@
     flex-direction: column;
     color: white;
     max-width: 563px;
-    font-family: var(--font-clash-display);
+     
 }
 
 .seo__title {
@@ -72,7 +72,7 @@
 }
 
 .seo__info {
-    font-family: var(--font-inter-poppins);
+     
     font-size: 24px;
     font-weight: 400;
     line-height: 31.2px;
@@ -99,7 +99,7 @@
 }
 
 .seo-timeline__title {
-    font-family: var(--font-clash-display);
+     
     font-size: 64px;
     font-weight: 600;
     line-height: 124.8px;
@@ -127,7 +127,7 @@
 
 .seo-timeline__item {
     position: relative;
-    font-family: var(--font-clash-display);
+     
     font-size: 32px;
     font-weight: 300;
     line-height: 30px;
@@ -147,7 +147,7 @@
 
 .seo-timeline__item.lunch::after {
     content: 'Quantica Lunch';
-    font-family: var(--font-clash-display);
+     
     font-size: 37.52px;
     font-weight: 600;
     line-height: 37.52px;
@@ -222,7 +222,7 @@
 }
 
 .seo__title-mobile {
-    font-family: var(--font-clash-display);
+     
     font-size: 32px;
     font-weight: 700;
     line-height: 41.6px;

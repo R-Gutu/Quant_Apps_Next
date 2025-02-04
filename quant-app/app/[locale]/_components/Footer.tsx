@@ -62,13 +62,13 @@ const Footer = async () => {
           </Grid2>
           <div className="footer">
             <Link href="/" legacyBehavior>
-              <a className="footer__logo self-center !font-clash">
+              <a className="footer__logo self-center !font-inter">
                 <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
               </a>
             </Link>
             <div className="footer__links">
               <div className="footer__column">
-                <p className="footer__column-title !font-clash">{tFooter("FindUsAt")}</p>
+                <p className="footer__column-title !font-inter">{tFooter("FindUsAt")}</p>
                 {socialLinks.map(({ href, icon, alt }) => (
                   <Grid2 key={alt} container>
                     <Link
@@ -77,7 +77,7 @@ const Footer = async () => {
                       rel="noopener noreferrer"
                       legacyBehavior
                     >
-                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline !font-clash">
+                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline !font-inter">
                         <h4 className="flex items-center text-white opacity-75 hover:opacity-100">
                           {alt}
                         </h4>
@@ -95,7 +95,7 @@ const Footer = async () => {
               </div>
 
               <div className="footer__column">
-                <p className="footer__column-title !font-clash">{tFooter("Company")}</p>
+                <p className="footer__column-title !font-inter">{tFooter("Company")}</p>
                 <AppLink href="/about-us">{tToolbar("AboutUs")}</AppLink>
 
                 <ScrollLink
@@ -109,14 +109,14 @@ const Footer = async () => {
               </div>
 
               <div className="footer__column">
-                <p className="footer__column-title !font-clash">{tFooter("LearnMore")}</p>
+                <p className="footer__column-title !font-inter">{tFooter("LearnMore")}</p>
                 <AppLink href="/contact-us">{tToolbar("ContactUs")}</AppLink>
                 <AppLink href="/faqs">{tToolbar("FAQs")}</AppLink>
               </div>
 
               <div className="footer__column">
                 <Typography
-                  className="!font-clash"
+                  className="!font-inter"
                   sx={{
                     fontSize: "14px",
                     color: "white",
@@ -135,7 +135,7 @@ const Footer = async () => {
             <div className="mobile-footer-bottom max-[800px]:flex">
               <div className="footer__column">
                 <Typography
-                  className="!font-clash"
+                  className="!font-inter"
                   sx={{
                     fontSize: "14px",
                     color: "white",

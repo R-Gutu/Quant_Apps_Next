@@ -45,7 +45,7 @@ const About = () => {
       >
         <Grid2 width="fit-content" className="flex items-center">
           <Typography
-            className="!font-clash !font-semibold !text-white !mb-[-4%] !text-[64px]
+            className="!font-inter !font-semibold !text-white !mb-[-4%] !text-[64px]
             max-[550px]:!text-[35px]
             max-[1080px]:!text-[50px]
             "
@@ -56,7 +56,7 @@ const About = () => {
         </Grid2>
         <Grid2 className="ml-3 max-[950px]:ml-0 flex items-center translate-y-[10%]">
           <Typography
-            className="text-white !font-clash !text-[18px] 
+            className="text-white !font-inter !text-[18px] 
             max-[1080px]:!text-[16px] 
             max-[550px]:!text-[11px] 
             max-[400px]:!text-[10px]
@@ -68,7 +68,7 @@ const About = () => {
           </Typography>
         </Grid2>
       </Grid2>
-      <Typography className="!font-clash !text-[24px] !text-justify !text-white
+      <Typography className="!font-inter !text-[24px] !text-justify !text-white
       max-[950px]:!text-[20px]
       max-[550px]:!text-[14px]
       max-[400px]:!text-[11px]
@@ -97,7 +97,7 @@ const About = () => {
             }}
           >
             <Typography
-              className="!font-clash !text-white !text-[14px]"
+              className="!font-inter !text-white !text-[14px]"
             >
               {t("Collapse")}
             </Typography>
@@ -112,9 +112,9 @@ const About = () => {
             }}
           >
             <Typography
+              className="!font-inter"
               sx={{
                 textTransform: "none",
-                fontFamily: `"ClashDisplay", "Inter", sans-serif`,
                 color: "white",
                 fontSize: "14px",
                 width: "fit-content",
@@ -127,7 +127,7 @@ const About = () => {
         )}
 
       </Grid2>
-        
+
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <span className="about-info-img top-[10%]"></span>
         <span className="about-info-img-2 right-[10%]"></span>

@@ -17,14 +17,14 @@ export default async function Introduction() {
                     <div className="banner__text">
                         <Typography
                             variant="h1"
-                            className="!font-clash"
+                            className="!font-inter"
                             sx={{
                                 fontSize: "55px",
                                 fontWeight: "600",
                                 lineHeight: "74px",
                                 color: "white",
                                 ":lang(ru)": {
-                                    fontSize: "44px",
+                                    fontSize: "48px",
                                     lineHeight: "55px",
                                 },
                                 "@media (max-width: 900px)": {  // md breakpoint
@@ -48,9 +48,8 @@ export default async function Introduction() {
 
                         <Typography
                             variant="h2"
-                            className="!font-poppins"
+                            className="!font-inter"
                             sx={{
-                                // fontFamily: "Poppins",
                                 fontSize: "24px",
                                 lineHeight: "35px",
                                 color: "#EBEBEB",

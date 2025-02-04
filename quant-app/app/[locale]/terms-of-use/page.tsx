@@ -15,7 +15,6 @@ const Page = async () => {
       container
       sx={{
         "& h1": {
-          fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           color: "white",
           fontWeight: "700",
           alignContent: "center",
@@ -23,7 +22,6 @@ const Page = async () => {
           lineHeight: { xs: "39.36px", md: "68.88px" },
         },
         "& h2": {
-          fontFamily: "Lato",
           color: "#CACACA",
           fontWeight: "600",
           alignContent: "center",
@@ -31,7 +29,6 @@ const Page = async () => {
           lineHeight: { xs: "14.4px", md: "30px" },
         },
         "& p": {
-          fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           color: "white",
           alignContent: "center",
           fontWeight: "500",
@@ -39,7 +36,6 @@ const Page = async () => {
           lineHeight: { xs: "14.76px", md: "27px" },
         },
         "& li": {
-          fontFamily: `"ClashDisplay", "Inter", sans-serif`,
           color: "white",
           alignContent: "center",
           fontWeight: "500",
@@ -50,20 +46,20 @@ const Page = async () => {
     >
       <Grid2 container size={10.5} margin="auto" gap="20px" direction="column">
         <Grid2 container justifyItems="center" gap="20px" position="relative">
-          <Typography variant="h1">{t("TermsOfUse")}</Typography>
+          <Typography className="!font-inter" variant="h1">{t("TermsOfUse")}</Typography>
 
-          <Typography variant="h2">{`${t(
+          <Typography className="!font-inter" variant="h2">{`${t(
             "LastUpdatedOn"
           )} 5/12/2024`}</Typography>
 
         </Grid2>
 
-        <Typography sx={{ mb: "20px" }}>{t("WelcomeSpeech")}</Typography>
+        <Typography className="!font-inter" sx={{ mb: "20px" }}>{t("WelcomeSpeech")}</Typography>
 
         <Grid2>
-          <Typography>{`1. ${t("AcceptanceOfTerms")}`}</Typography>
+          <Typography className="!font-inter">{`1. ${t("AcceptanceOfTerms")}`}</Typography>
 
-          <Typography>{t("AcceptanceOfTermsDetails")}</Typography>
+          <Typography className="!font-inter">{t("AcceptanceOfTermsDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -71,9 +67,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`2. ${t("ServicesProvided")}`}</Typography>
+          <Typography className="!font-inter">{`2. ${t("ServicesProvided")}`}</Typography>
 
-          <Typography>{t("ServicesProvidedDetails")}</Typography>
+          <Typography className="!font-inter">{t("ServicesProvidedDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -81,9 +77,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`3. ${t("IntellectualProperty")}`}</Typography>
+          <Typography className="!font-inter">{`3. ${t("IntellectualProperty")}`}</Typography>
 
-          <Typography>{t("IntellectualPropertyDetails")}</Typography>
+          <Typography className="!font-inter">{t("IntellectualPropertyDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -91,9 +87,9 @@ const Page = async () => {
         />
 
         <Grid2 position="relative">
-          <Typography>{`4. ${t("UserConduct")}`}</Typography>
+          <Typography className="!font-inter">{`4. ${t("UserConduct")}`}</Typography>
 
-          <Typography>{t("UserConductListHeader")}</Typography>
+          <Typography className="!font-inter">{t("UserConductListHeader")}</Typography>
 
           <ul style={{ listStyle: "inside", marginLeft: "15px" }}>
             <li>{t("UserConductListFirstChild")}</li>
@@ -110,9 +106,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`5. ${t("DisclaimerOfWarranties")}`}</Typography>
+          <Typography className="!font-inter">{`5. ${t("DisclaimerOfWarranties")}`}</Typography>
 
-          <Typography>{t("DisclaimerOfWarrantiesDetails")}</Typography>
+          <Typography className="!font-inter">{t("DisclaimerOfWarrantiesDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -120,9 +116,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`6. ${t("LimitationOfLiability")}`}</Typography>
+          <Typography className="!font-inter">{`6. ${t("LimitationOfLiability")}`}</Typography>
 
-          <Typography>{t("LimitationOfLiabilityDetails")}</Typography>
+          <Typography className="!font-inter">{t("LimitationOfLiabilityDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -130,9 +126,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`7. ${t("ThirdPartyLinks")}`}</Typography>
+          <Typography className="!font-inter">{`7. ${t("ThirdPartyLinks")}`}</Typography>
 
-          <Typography>{t("ThirdPartyLinksDetails")}</Typography>
+          <Typography className="!font-inter">{t("ThirdPartyLinksDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -140,9 +136,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`8. ${t("Termination")}`}</Typography>
+          <Typography className="!font-inter">{`8. ${t("Termination")}`}</Typography>
 
-          <Typography>{t("TerminationDetails")}</Typography>
+          <Typography className="!font-inter">{t("TerminationDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -150,9 +146,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`9. ${t("GoverningLaw")}`}</Typography>
+          <Typography className="!font-inter">{`9. ${t("GoverningLaw")}`}</Typography>
 
-          <Typography>{t("GoverningLawDetails")}</Typography>
+          <Typography className="!font-inter">{t("GoverningLawDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -160,9 +156,9 @@ const Page = async () => {
         />
 
         <Grid2>
-          <Typography>{`10. ${t("ModificationsToTerms")}`}</Typography>
+          <Typography className="!font-inter">{`10. ${t("ModificationsToTerms")}`}</Typography>
 
-          <Typography>{t("ModificationsToTermsDetails")}</Typography>
+          <Typography className="!font-inter">{t("ModificationsToTermsDetails")}</Typography>
         </Grid2>
 
         <Box
@@ -170,9 +166,9 @@ const Page = async () => {
         />
 
         <Grid2 position="relative">
-          <Typography>{`11. ${t("ContactUs")}`}</Typography>
+          <Typography className="!font-inter">{`11. ${t("ContactUs")}`}</Typography>
 
-          <Typography>
+          <Typography className="!font-inter">
             {t("ForAnyQuestionPleaseContactAt")}
             <br />
             {`${t("Email")}: support@quant-apps.com`}
@@ -181,7 +177,7 @@ const Page = async () => {
           </Typography>
         </Grid2>
 
-        <Typography sx={{ mt: "20px" }}>{t("ThankYouForChoosing")}</Typography>
+        <Typography className="!font-inter" sx={{ mt: "20px" }}>{t("ThankYouForChoosing")}</Typography>
       </Grid2>
 
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">

@@ -132,7 +132,7 @@ const HorizontalSwiperSlider: React.FC<HorizontalSwiperSliderProps> = (props) =>
       wrap="nowrap"
       sx={{ userSelect: "none" }}
     >
-      {label && <Typography>{label}</Typography>}
+      {label && <Typography className="!font-inter">{label}</Typography>}
 
       <Grid2
         container

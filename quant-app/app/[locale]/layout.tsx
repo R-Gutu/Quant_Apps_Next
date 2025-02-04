@@ -1,28 +1,16 @@
+
 import type { Metadata } from 'next'
 import { Locale, routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Poppins, Inter } from "next/font/google";
-import localFont from 'next/font/local'
+import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-const poppins = Poppins({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-poppins'
-});
-
 const inter = Inter({
-  weight: ['400', '600', '700'],
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
   variable: '--font-inter'
 });
-
-const clashDisplay = localFont({
-  src: "../../public/fonts/ClashDisplay-Variable.ttf",
-  variable: '--font-clash-display'
-})
 
 import "./globals.css";
 import "@/styles/mainpage.css"
@@ -154,7 +142,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   return (
-    <html lang={locale} className={`${poppins.variable} ${clashDisplay.variable} ${inter.variable}`}>
+    <html lang={locale} className={`${inter.variable}`}>
       <body
         className="antialiased relative"
       >
@@ -163,11 +151,11 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <NextIntlClientProvider messages={messages}>
-          <AppToolbar />
-          {children}
-          {videoModal}
-          {talkModal}
-          <Footer />
+            <AppToolbar />
+            {children}
+            {videoModal}
+            {talkModal}
+            <Footer />
         </NextIntlClientProvider>
       </body>
       <GoogleAnalytics gaId="G-DK457M1DLQ" />

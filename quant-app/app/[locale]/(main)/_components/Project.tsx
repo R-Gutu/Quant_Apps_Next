@@ -10,7 +10,7 @@ export default function Project({ src, title, description } : ProjectType) {
             </div>
             <div className="our-work__item-text items-center">
                 <h4>{title}</h4>
-                <p className='!font-clash !font-regular !text-[15px]'>{description}</p>
+                <p className='!font-inter !font-regular !text-[15px]'>{description}</p>
             </div>
         </div>
     )

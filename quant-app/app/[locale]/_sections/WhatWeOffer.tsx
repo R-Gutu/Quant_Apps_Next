@@ -100,7 +100,7 @@ const WhatWeOffer = async () => {
                     filter="blur(150px)"
                     className="absolute"
               />
-          </div>    
+            </div>
             <Image
               src="/images/cloud-storage.png"
               width={1000}
@@ -198,7 +198,7 @@ const WhatWeOffer = async () => {
           ))}
         </Grid2>
       </Grid2>
-      
+
     </div>
   );
 };

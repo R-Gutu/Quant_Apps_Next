@@ -37,7 +37,7 @@ const Page = async () => {
         <div className="container">
           <div className="working-process">
             <div className="working-process__title">
-              <h1>{t("OurWorkingProcess")}</h1>
+              <h2 className="text-[32px] font-clash font-[600] text-white">{t("OurWorkingProcess")}</h2>
 
               <p>{t("ComprehensiveGuideBusinessObjectives")}</p>
             </div>

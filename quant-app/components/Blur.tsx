@@ -28,7 +28,6 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
   return (
     <div
       style={{
-        position: "absolute",
         top: top,
         bottom: bottom,
         left: left,
@@ -36,12 +35,10 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
         width: width,
         height: height,
         background: getColor(),
-        zIndex: -10,
         filter: filter,
         WebkitFilter: filter,
-        borderRadius: "50%"
       }}
-      className={`${className}`}
+      className={`${className} absolute rounded-full -z-10`}
     />
   );
 };

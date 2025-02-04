@@ -78,9 +78,9 @@ const Footer = async () => {
                       legacyBehavior
                     >
                       <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline !font-clash">
-                        <h1 className="flex items-center text-white opacity-75 hover:opacity-100">
+                        <h4 className="flex items-center text-white opacity-75 hover:opacity-100">
                           {alt}
-                        </h1>
+                        </h4>
                         <Image
                           width={14}
                           height={14}

@@ -51,7 +51,6 @@ const WhatWeOffer = async () => {
               lineHeight: "40px",
             },
           }}
-          variant="h1"
         >
           {t("WhatWeOffer")}
         </Typography>

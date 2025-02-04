@@ -10,9 +10,9 @@ export default function Vouches() {
     return (
         <section className="client-success-stories-section overflow-hidden">
             <div className="client-success-stories">
-                <h1 className="client-success-stories__title">
+                <h3 className="client-success-stories__title">
                     {t("ClientSuccessStories")}
-                </h1>
+                </h3>
 
                 <div className="client-success-stories__slider">
                     <Swiper

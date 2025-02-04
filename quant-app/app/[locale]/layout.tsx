@@ -61,6 +61,13 @@ export async function generateMetadata(): Promise<Metadata> {
       description: t('description'),
       url: `https://${'www.quant-apps.com'}`,
       type: "website",
+      images: [
+        {
+          url: 'https://www.quant-apps.com/icons/logo.svg',
+          width: 1200,
+          height: 630,
+          alt: 'Quant-Apps Preview Image',
+        }]
     },
     alternates: {
       languages: {

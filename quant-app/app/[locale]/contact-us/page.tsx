@@ -55,7 +55,7 @@ const Page = () => {
 
   useEffect(() => {
     validateForm(name, email, phone);
-  }, [name, email, phone, validateForm])
+  }, [name, email, phone])
 
   const handleSubmit = (event : React.FormEvent) => {
     event.preventDefault();
@@ -75,14 +75,14 @@ const Page = () => {
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then(
-        (response) => {
+        () => {
           setName("");
           setEmail("");
           setPhone("");
           setDescription("");
           alert(t("MessageSentSuccessfully"));
         },
-        (err) => {
+        () => {
           alert(t("MessageSendingError"));
         }
       );

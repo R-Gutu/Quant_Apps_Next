@@ -177,7 +177,7 @@ const Page = () => {
     };
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
+      .then(() => {
         alert("Сообщение успешно отправлено!");
 
         // Сбрасываем поля
@@ -193,7 +193,7 @@ const Page = () => {
         setAndroidAppCheckbox(false);
         setInvalidForm(true);
         router.back();
-      }, (err) => {
+      }, () => {
         alert("Произошла ошибка при отправке. Пожалуйста, попробуйте снова.");
       });
   };

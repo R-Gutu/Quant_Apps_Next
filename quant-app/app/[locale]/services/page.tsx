@@ -57,7 +57,7 @@ const Page = async () => {
         <Blur
               color="rgba(186, 8, 255, 0.8156512605042017)"
               left="0%"
-              top="7%"
+              top="5%"
               width="600px"
               height="600px"
               filter="blur(140px)"

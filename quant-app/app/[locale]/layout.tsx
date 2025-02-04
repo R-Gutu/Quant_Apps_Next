@@ -6,6 +6,7 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { headers } from 'next/headers'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -35,6 +36,9 @@ import AppToolbar from "./_components/AppToolbar"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata');
+  const headersList = await headers()
+  const domain = headersList.get('x-url') || "";
+
   return {
     title: t('title'),
     description: t('description'),
@@ -64,7 +68,7 @@ export async function generateMetadata(): Promise<Metadata> {
         ru: `https://${'www.quant-apps.com'}/ru`,
         ro: `https://${'www.quant-apps.com'}/ro`,
       },
-      canonical: './',
+      canonical: domain,
     }
   };
 }

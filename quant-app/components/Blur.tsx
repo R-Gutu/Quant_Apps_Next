@@ -38,7 +38,7 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
         filter: filter,
         WebkitFilter: filter,
       }}
-      className={`${className} absolute rounded-full -z-10 max-[800px]:w-[100px]  max-[800px]:h-[100px]`}
+      className={`${className} absolute rounded-full z-1 max-[800px]:w-[100px]  max-[800px]:h-[100px]`}
     />
   );
 };

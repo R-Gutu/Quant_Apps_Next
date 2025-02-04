@@ -1,4 +1,3 @@
-import React from 'react';
 
 type BlurProps = {
   color: 'blue' | 'purple' | string;
@@ -12,23 +11,15 @@ type BlurProps = {
   className?: string
 };
 
-const Blur = ({ 
-  color, 
-  height = '600px', 
-  width = '600px', 
-  top, 
-  bottom, 
-  left, 
-  right, 
-  filter, 
-  className 
-}: BlurProps) => {
+
+const Blur = ({ color, height, width, top, bottom, left, right, filter, className } : BlurProps ) => {
   const getColor = () => {
     switch (color) {
       case "purple":
         return "radial-gradient(circle, rgba(156, 8, 255, 0.8156512605042017) -10%, rgba(156, 8, 255, 0) 70%)";
       case "blue":
         return "radial-gradient(circle, rgba(30, 80, 255, 0.7904411764705882) -30%, rgba(30, 80, 255, 0) 70%)";
+
       default:
         return color;
     }
@@ -37,22 +28,17 @@ const Blur = ({
   return (
     <div
       style={{
-        position: 'absolute',
-        top: top || 'auto',
-        bottom: bottom || 'auto',
-        left: left || 'auto',
-        right: right || 'auto',
-        width,
-        height,
+        top: top,
+        bottom: bottom,
+        left: left,
+        right: right,
+        width: width,
+        height: height,
         background: getColor(),
-        filter,
+        filter: filter,
         WebkitFilter: filter,
-        borderRadius: '50%',
-        zIndex: -10,
-        pointerEvents: 'none', // Prevent interaction with the blur element
-        mixBlendMode: 'normal' // Ensure consistent rendering across browsers
       }}
-      className={className}
+      className={`${className} absolute rounded-full -z-10 max-[800px]:w-[100px]  max-[800px]:h-[100px]`}
     />
   );
 };

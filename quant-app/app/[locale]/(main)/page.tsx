@@ -36,9 +36,9 @@ const Page = async () => {
       </section>
       <Vouches />
       <NextProject />
-      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+      {/* <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
       <div className="absolute top-[15%] left-0 w-[600px] h-[600px] rounded-full bg-[rgba(186,8,255,0.8156512605042017)] blur-[140px] z-[-10]"/>
-      </div>
+      </div> */}
       </div>
     </>
   );

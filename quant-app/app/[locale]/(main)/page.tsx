@@ -38,12 +38,12 @@ const Page = async () => {
         <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
           <Blur
             color="#9C08FFB2"
-            left="-20%"
-            top="15%"
+            left="-10%"
+            top="1100px"
             width="600px"
             height="600px"
             filter="blur(150px)"
-            className="absolute"
+            className="absolute max-[900px]:top-[1000px]"
           />
         </div>
       </div>

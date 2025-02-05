@@ -17,7 +17,7 @@ const Page = async () => {
     <>
       <div className="">
         <Introduction />
-        <WhatWeOffer />
+        <WhatWeOffer className='pt-10'/>
         <Box sx={{ mt: "50px", display: "flex", justifyContent: "center" }}>
           <Link href="/services" legacyBehavior>
             <button className="fill-btn z-10">{t("ReadMore")}</button>

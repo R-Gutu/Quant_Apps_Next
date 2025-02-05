@@ -10,34 +10,37 @@ export default async function Introduction() {
     const currentLocale = await getLocale();
     const mobileIntro = getIntroByLanguageMobile(currentLocale);
     return (
-        <div className="pt-[150px] w-full p-20 max-[950px]:p-5 max-[950px]:pt-[100px]">
+        <div className="pt-[200px] w-full p-24 max-[950px]:p-5 max-[950px]:pt-[150px]">
             <div className="banner__content">
                 <div className="banner__text">
                     <Typography
                         variant="h1"
-                        className="!font-inter max-[1100px]:text-center"
+                        className="!font-inter !font-semibold !text-[70px] !text-white
+                        max-[1800px]:!text-[65px]
+                        max-[1650px]:!text-[60px]
+                        max-[1510px]:!text-[50px]
+                        max-[1100px]:!text-center
+                        max-[600px]:!text-[30px]
+                        "
                         sx={{
-                            fontSize: "55px",
-                            fontWeight: "600",
-                            lineHeight: "74px",
-                            color: "white",
                             ":lang(ru)": {
                                 fontSize: "48px",
                                 lineHeight: "55px",
                             },
-                            "@media (max-width: 900px)": {  // md breakpoint
-                                fontSize: "40px",
-                                ":lang(ru)": {
-                                    fontSize: "40px",
-                                },
-                                lineHeight: "50px",
-                            },
-                            "@media (max-width: 600px)": {  // sm breakpoint
-                                fontSize: "30px",
+                            "@media (max-width: 1650px)": {
                                 ":lang(ru)": {
                                     fontSize: "25px",
                                 },
-                                lineHeight: "40px",
+                            },
+                            "@media (max-width: 900px)": {
+                                ":lang(ru)": {
+                                    fontSize: "40px",
+                                },
+                            },
+                            "@media (max-width: 600px)": {
+                                ":lang(ru)": {
+                                    fontSize: "25px",
+                                },
                             }
                         }}
                     >
@@ -46,23 +49,13 @@ export default async function Introduction() {
 
                     <Typography
                         variant="h2"
-                        className="!font-inter"
-                        sx={{
-                            fontSize: "24px",
-                            lineHeight: "35px",
-                            color: "#EBEBEB",
-                            textAlign: "justify",
-                            "@media (max-width: 900px)": {
-                                fontSize: "24px",
-                                lineHeight: "30px",
-                                textAlign: "center",
-                            },
-                            "@media (max-width: 600px)": {
-                                fontSize: "18px",
-                                lineHeight: "25px",
-                                textAlign: "center",
-                            }
-                        }}
+                        className="!font-inter !text-justify !text-[35px] !text-[#EBEBEB] !leading-[30px]
+                        max-[1800px]:!text-[30px]
+                        max-[1570px]:!text-[20px]
+                        max-[1100px]:!text-center
+                        max-[900px]:!text-[24px]
+                        max-[600px]:!text-[18px]
+                        "
                     >
                         {t("WeSpecializeInBuilding")}
                     </Typography>

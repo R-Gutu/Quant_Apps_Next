@@ -88,14 +88,11 @@ const WhatWeOffer = async ({ className }: { className?: string }) => {
           }}
         >
           <Box sx={{ position: "relative" }}>
-            {/* <div className="relative top-[0px] left-[0px] w-full h-full max-[1000px]:left-[-200px] max-[1000px]:top-[-50px] max-[600px]:left-[-400px]">
-
-            </div> */}
             <Image
               src="/images/cloud-storage.png"
               width={1000}
               height={0}
-              // unoptimized
+              unoptimized
               alt="CloudStorage"
               style={{
                 width: "auto",
@@ -111,7 +108,7 @@ const WhatWeOffer = async ({ className }: { className?: string }) => {
               alt="ItemsBg"
               width={1000}
               height={0}
-              // unoptimized
+              unoptimized
               style={{
                 width: "auto",
                 maxWidth: "150%",

@@ -17,7 +17,7 @@ const NextProject = async () => {
 
           <h3 className="font-inter text-white font-bold text-4xl text-start
           max-[1000px]:mt-[30px] max-[900px]:text-[32px] max-[900px]:leading-[32px]
-            max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[26px] max-[900px]:text-center]
+            max-[650px]:mt-[60px] max-[650px]:text-[18px] max-[650px]:leading-[26px] max-[650px]:text-center max-[900px]:text-center]
            "
           >
             {t("ExcitedToWorkTogether")}
@@ -25,7 +25,7 @@ const NextProject = async () => {
 
           <h2 className="font-inter text-white opacity-75 text-[16px] leading-[30px] text-start
           max-[1000px]:text-[16px] max-[1000px]:leading-[24px]
-            max-[650px]:text-[16px] max-[650px]:leading-[20px] max-[900px]:text-center
+            max-[650px]:text-[12px] max-[650px]:leading-[20px] max-[900px]:text-center
             max-[500px]:w-[200px]"
           >
             {t("LetsBringIdeasToLife")}

@@ -17,16 +17,11 @@ export default async function Team() {
                 justifyContent="center"
                 textAlign="center"
             >
-                <Typography
-                    className="!font-inter"
-                    sx={{
-                        fontSize: "64px",
-                        color: "white",
-                        fontWeight: "600",
-                    }}
+                <p
+                    className="!font-inter text-[64px] font-[600] text-white max-[700px]:text-[38px]"
                 >
                     {t("Team")}
-                </Typography>
+                </p>
 
                 <Typography
                     className="!font-inter"

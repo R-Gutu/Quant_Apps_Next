@@ -8,16 +8,16 @@ const NextProject = async () => {
 
   return (
     <div className="mt-[10px] overflow-hidden relative flex items-center justify-center py-[130px] px-[50px] font-inter">
-      <div className="w-5/6 bg-[#515DEF] rounded-[24px] flex items-center justify-start max-[600px]:justify-center py-[80px] px-[100px] max-[1200px]:py-[50px] 
+      <div className="w-full bg-[#515DEF] rounded-[24px] flex items-center justify-start max-[600px]:justify-center py-[80px] px-[100px] max-[1200px]:py-[50px] 
       max-[600px]:py-[30px] max-[600px]:px-[30px]
           max-lg:px-[20px] max-lg:text-center max-[600px]:pt-[210px]">
 
         <div className="flex flex-col gap-[20px] w-3/5
-          max-[900px]:items-center max-[600px]:w-[200px]">
+          max-[900px]:items-center max-[600px]:w-[250px]">
 
           <h3 className="font-inter text-white font-bold text-4xl text-start
           max-[1000px]:mt-[30px] max-[900px]:text-[32px] max-[900px]:leading-[32px]
-            max-[650px]:mt-[60px] max-[650px]:text-[24px] max-[650px]:leading-[26px] max-[900px]:text-center]
+            max-[650px]:mt-[60px] max-[650px]:text-[18px] max-[650px]:leading-[26px] max-[650px]:text-center max-[900px]:text-center]
            "
           >
             {t("ExcitedToWorkTogether")}
@@ -25,7 +25,7 @@ const NextProject = async () => {
 
           <h2 className="font-inter text-white opacity-75 text-[16px] leading-[30px] text-start
           max-[1000px]:text-[16px] max-[1000px]:leading-[24px]
-            max-[650px]:text-[16px] max-[650px]:leading-[20px] max-[900px]:text-center
+            max-[650px]:text-[12px] max-[650px]:leading-[20px] max-[650px]:text-center
             max-[500px]:w-[200px]"
           >
             {t("LetsBringIdeasToLife")}

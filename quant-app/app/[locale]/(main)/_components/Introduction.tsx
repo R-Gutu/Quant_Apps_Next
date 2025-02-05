@@ -33,17 +33,12 @@ export default async function Introduction() {
                             },
                             "@media (max-width: 1650px)": {
                                 ":lang(ru)": {
-                                    fontSize: "50px!important",
+                                    fontSize: "52px!important",
                                 },
                             },
                             "@media (max-width: 1510px)": {
                                 ":lang(ru)": {
                                     fontSize: "40px!important",
-                                },
-                            },
-                            "@media (max-width: 600px)": {
-                                ":lang(ru)": {
-                                    fontSize: "25px",
                                 },
                             }
                         }}

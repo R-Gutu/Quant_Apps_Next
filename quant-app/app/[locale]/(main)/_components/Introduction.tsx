@@ -15,7 +15,7 @@ export default async function Introduction() {
                 <div className="banner__text">
                     <Typography
                         variant="h1"
-                        className="!font-inter !font-semibold !text-[70px] !text-white
+                        className="!font-inter !font-semibold !text-[70px] !text-white 
                         max-[1800px]:!text-[65px]
                         max-[1650px]:!text-[60px]
                         max-[1510px]:!text-[50px]
@@ -24,17 +24,21 @@ export default async function Introduction() {
                         "
                         sx={{
                             ":lang(ru)": {
-                                fontSize: "48px",
-                                lineHeight: "55px",
+                                fontSize: "60px!important",
+                            },
+                            "@media (max-width: 1800px)": {
+                                ":lang(ru)": {
+                                    fontSize: "55px!important",
+                                },
                             },
                             "@media (max-width: 1650px)": {
                                 ":lang(ru)": {
-                                    fontSize: "25px",
+                                    fontSize: "50px!important",
                                 },
                             },
-                            "@media (max-width: 900px)": {
+                            "@media (max-width: 1510px)": {
                                 ":lang(ru)": {
-                                    fontSize: "40px",
+                                    fontSize: "40px!important",
                                 },
                             },
                             "@media (max-width: 600px)": {
@@ -49,7 +53,7 @@ export default async function Introduction() {
 
                     <Typography
                         variant="h2"
-                        className="!font-inter !text-justify !text-[35px] !text-[#EBEBEB] !leading-[30px]
+                        className="!font-inter !text-justify !text-[35px] !text-[#EBEBEB] 
                         max-[1800px]:!text-[30px]
                         max-[1570px]:!text-[20px]
                         max-[1100px]:!text-center

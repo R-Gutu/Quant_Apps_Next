@@ -217,8 +217,8 @@ button:hover {
   display: none;
 }
 
-/* Quantica Slider */
-.quantica-slider {
+/* quant-apps Slider */
+.quant-apps-slider {
   width: 100%;
   overflow: hidden;
   padding: 24px 0;
@@ -227,17 +227,17 @@ button:hover {
   margin-top: 80px;
 }
 
-.quantica-slider .swiper-wrapper {
+.quant-apps-slider .swiper-wrapper {
   transition-timing-function: linear;
 }
 
-.quantica-slider__slide {
+.quant-apps-slider__slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.quantica-slider__slide img {
+.quant-apps-slider__slide img {
   max-width: 100%;
   height: auto;
 }
@@ -738,7 +738,7 @@ button:hover {
     text-align: center;
   }
 
-  .quantica-slider {
+  .quant-apps-slider {
     margin-top: 56px;
   }
 

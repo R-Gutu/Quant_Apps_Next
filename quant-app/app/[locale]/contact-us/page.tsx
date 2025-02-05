@@ -28,36 +28,38 @@ const Page = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const onNameChanged = (value : string) => {
+  const onNameChanged = (value: string) => {
     setName(value);
   };
 
-  const onEmailChanged = (value : string) => {
+  const onEmailChanged = (value: string) => {
     setEmail(value);
   };
 
-  const onPhoneChanged = (value : string) => {
+  const onPhoneChanged = (value: string) => {
     setPhone(value);
   };
 
-  const onDescriptionChanged = (value : string) => {
+  const onDescriptionChanged = (value: string) => {
     setDescription(value);
   };
- 
 
-  const validateForm = (nameValue : string, emailValue : string, phoneValue : string) => {
-    setIsNameValid(validateName(nameValue));
-    setIsEmailValid(validateEmail(emailValue));
-    setIsPhoneValid(validatePhone(phoneValue));
 
-    setInvalidForm(!isNameValid || !isEmailValid || !isPhoneValid);
-  };
+
 
   useEffect(() => {
-    validateForm(name, email, phone);
-  }, [name, email, phone, validateForm])
+    const validateForm = (nameValue: string, emailValue: string, phoneValue: string) => {
+      setIsNameValid(validateName(nameValue));
+      setIsEmailValid(validateEmail(emailValue));
+      setIsPhoneValid(validatePhone(phoneValue));
 
-  const handleSubmit = (event : React.FormEvent) => {
+      setInvalidForm(!isNameValid || !isEmailValid || !isPhoneValid);
+    };
+
+    validateForm(name, email, phone);
+  }, [name, email, phone, isNameValid, isEmailValid, isPhoneValid])
+
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
     const serviceId = "service_teo59sv";
@@ -75,16 +77,14 @@ const Page = () => {
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
           setName("");
           setEmail("");
           setPhone("");
           setDescription("");
           alert(t("MessageSentSuccessfully"));
         },
-        (err) => {
-          console.log("FAILED...", err);
+        () => {
           alert(t("MessageSendingError"));
         }
       );
@@ -101,11 +101,11 @@ const Page = () => {
               <div className="contact-us__content-info">
                 <h4>{t("ContactInfo")}</h4>
                 <div className="contact-us__info-item">
-                  <Image src="/icons/mail.svg" alt="Mail" width={100} height={0} className="w-auto h-auto"/>
+                  <Image src="/icons/mail.svg" alt="Mail" width={100} height={0} className="w-auto h-auto" />
                   <span>support@quant-apps.com</span>
                 </div>
                 <div className="contact-us__info-item">
-                  <Image src="/icons/Location.svg" alt="Location" width={100} height={0} className="w-auto h-auto"/>
+                  <Image src="/icons/Location.svg" alt="Location" width={100} height={0} className="w-auto h-auto" />
                   <span>{t("RepublicMoldova")}</span>
                 </div>
               </div>
@@ -114,16 +114,16 @@ const Page = () => {
             <div className="contact-us__content-form">
               <p>{t("StartTheConversation")}</p>
               <form onSubmit={handleSubmit} className="contact-us__form">
-              <div className="contact-us__phone-div">
-                <input
-                  type="text"
-                  required
-                  name="contact-us-name"
-                  placeholder={`${t("WhatYourName")}*`}
-                  value={name}
-                  onChange={(event) => onNameChanged(event.target.value)}
-                />
-                {!isNameValid && <span>{t("ValidName")}</span>}
+                <div className="contact-us__phone-div">
+                  <input
+                    type="text"
+                    required
+                    name="contact-us-name"
+                    placeholder={`${t("WhatYourName")}*`}
+                    value={name}
+                    onChange={(event) => onNameChanged(event.target.value)}
+                  />
+                  {!isNameValid && <span>{t("ValidName")}</span>}
                 </div>
 
                 <div className="contact-us__phone-div">
@@ -137,22 +137,22 @@ const Page = () => {
                   {!isPhoneValid && <span>{t("ValidPhoneNumber")}</span>}
                 </div>
                 <div className="contact-us__phone-div">
-                <input
-                  type="email"
-                  name="contact-us-email"
-                  placeholder={t("WhatYourEmail")}
-                  value={email}
-                  onChange={(event) => onEmailChanged(event.target.value)}
-                />
+                  <input
+                    type="email"
+                    name="contact-us-email"
+                    placeholder={t("WhatYourEmail")}
+                    value={email}
+                    onChange={(event) => onEmailChanged(event.target.value)}
+                  />
                   {!isEmailValid && <span>{t("ValidEmail")}</span>}
                 </div>
-                 <input
-                    type="text"
-                    name="contact-us-description"
-                    placeholder="Describe your interest"
-                    value={description}
-                    onChange={(event) => onDescriptionChanged(event.target.value)}
-                  />
+                <input
+                  type="text"
+                  name="contact-us-description"
+                  placeholder="Describe your interest"
+                  value={description}
+                  onChange={(event) => onDescriptionChanged(event.target.value)}
+                />
 
                 <button
                   type="submit"
@@ -169,23 +169,23 @@ const Page = () => {
       </div>
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <Blur
-              color="#1E50FF"
-              left="0%"
-              top="0%"
-              width="400px"
-              height="400px"
-              filter="blur(140px)"
-              className="max-[700px]:hidden"
-            />
+          color="#1E50FF"
+          left="0%"
+          top="0%"
+          width="400px"
+          height="400px"
+          filter="blur(140px)"
+          className="max-[700px]:hidden"
+        />
         <Blur
-              color="#9C08FFB2"
-              right="0%"
-              bottom="0%"
-              width="400px"
-              height="400px"
-              filter="blur(140px)"
-              className="max-[700px]:hidden"
-            />
+          color="#9C08FFB2"
+          right="0%"
+          bottom="0%"
+          width="400px"
+          height="400px"
+          filter="blur(140px)"
+          className="max-[700px]:hidden"
+        />
       </div>
     </div>
   );

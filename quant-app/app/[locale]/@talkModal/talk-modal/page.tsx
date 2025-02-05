@@ -175,11 +175,9 @@ const Page = () => {
       budget: budget,
       attachments: "" // При необходимости можно добавить логику для приложений
     };
-    console.log(templateParams)
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+      .then(() => {
         alert("Сообщение успешно отправлено!");
 
         // Сбрасываем поля
@@ -195,8 +193,7 @@ const Page = () => {
         setAndroidAppCheckbox(false);
         setInvalidForm(true);
         router.back();
-      }, (err) => {
-        console.log("FAILED...", err);
+      }, () => {
         alert("Произошла ошибка при отправке. Пожалуйста, попробуйте снова.");
       });
   };

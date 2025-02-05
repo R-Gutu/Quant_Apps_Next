@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 
 export default function QuantAppsSlider() {
     return(
-        <div className="quantica-slider">
+        <div className="quant-apps-slider">
         <Swiper
           centeredSlides={false}
           slidesPerView={2.5}
@@ -18,27 +18,27 @@ export default function QuantAppsSlider() {
           breakpoints={{ 1100: { slidesPerView: 4 } }}
           modules={[Autoplay]}
         >
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant.svg" alt="Quant" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
 
-          <SwiperSlide className="quantica-slider__slide">
+          <SwiperSlide className="quant-apps-slider__slide">
             <Image src="/icons/Quant-fill.svg" alt="Quant-fill" width={300} height={0} className='w-auto h-auto' />
           </SwiperSlide>
         </Swiper>

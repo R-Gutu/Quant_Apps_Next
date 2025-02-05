@@ -11,12 +11,11 @@ interface ScrollLinkProps {
 
 export default function ScrollLink({ id, href, elementId, children }: ScrollLinkProps) {
   return (
-    <span>
+    <span onClick={() => scrollToId(elementId)}>
       <AppLink
         data-id={id}
         href={href}
         scroll={false}
-        onClick={() => scrollToId(elementId)}
       >
         {children}
       </AppLink>

@@ -5,13 +5,12 @@ interface AppLinkProps {
   href: string;
   children: React.ReactNode;
   scroll?: boolean;
-  onClick?: (e: React.MouseEvent) => void;
   className?: string;
 }
 
-const AppLink = ({ href, children, scroll = true, onClick, className}: AppLinkProps) => {
+const AppLink = ({ href, children, scroll = true, className}: AppLinkProps) => {
   return (
-    <Link href={href} passHref scroll={scroll} onClick={onClick} legacyBehavior>
+    <Link href={href} passHref scroll={scroll} legacyBehavior>
       <Typography
         className={`${className} !font-inter`}
         sx={{

@@ -102,7 +102,6 @@ export default async function Introduction() {
                             <p>{t("WatchVideo")}</p>
                         </a>
                     </Link>
-
                     <Link href={mobileIntro} legacyBehavior>
                         <a className="banner__video-play__mobile">
                             <span></span>

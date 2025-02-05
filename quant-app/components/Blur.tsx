@@ -28,6 +28,7 @@ const Blur = ({ color, height, width, top, bottom, left, right, filter, classNam
   return (
     <div
       style={{
+        transform: "translate3d(0, 0, 0)",
         top: top,
         bottom: bottom,
         left: left,

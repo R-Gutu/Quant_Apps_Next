@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Box, Grid2, Typography } from "@mui/material";
 import Image from "next/image";
+import Blur from "@/components/Blur";
 
 const WhatWeOffer = async ({ className }: { className?: string }) => {
   const t = await getTranslations("what-we-offer");
@@ -88,6 +89,18 @@ const WhatWeOffer = async ({ className }: { className?: string }) => {
           }}
         >
           <Box sx={{ position: "relative" }}>
+            <div className="relative top-[0px] left-[0px] w-full h-full max-[1000px]:left-[-200px] max-[1000px]:top-[-150px] max-[600px]:left-[-300px]">
+              <Blur
+                color="#9C08FFB2"
+                left="0%"
+                top="0%"
+                width="600px"
+                height="600px"
+                filter="blur(150px)"
+                className="absolute max-[900px]:top-[1000px]"
+              />
+            </div>
+
             <Image
               src="/images/cloud-storage.png"
               width={1000}

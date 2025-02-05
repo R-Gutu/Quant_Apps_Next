@@ -40,7 +40,12 @@ export default async function Introduction() {
                                 ":lang(ru)": {
                                     fontSize: "40px!important",
                                 },
-                            }
+                            },
+                            "@media (max-width: 600px)": {
+                                ":lang(ru)": {
+                                    fontSize: "30px!important",
+                                },
+                            },
                         }}
                     >
                         {t("WeBuildAppsThatEmpower")}

@@ -21,13 +21,12 @@
     "InnovationDetails": "Создание проектов с передовыми технологиями, формирующих будущее Quant-Apps."
   },
   "app-toolbar": {
-    "Services": "Услуги",
-    "IGaming": "iGaming",
-    "Projects": "Проекты",
-    "AboutUs": "О нас",
-    "ContactUs": "Контакты",
-    "LetsTalk": "Свяжитесь с нами",
-    "FAQs": "FAQs"
+    "services": "Услуги",
+    "projects": "Проекты",
+    "process": "Процесс работы",
+    "about-us": "О нас",
+    "careers": "Карьера",
+    "lets-talk": "Связаться с нами"
   },
   "contact-us": {
     "ReadyToStartYourProject": "Готовы начать ваш проект?",

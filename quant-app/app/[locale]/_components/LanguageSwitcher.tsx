@@ -41,9 +41,10 @@ const LanguageSwitcher = (props: { mobile: boolean }) => {
 
   return (
     <Box
+      className="mr-[33px]"
       sx={{
         "& .MuiInputBase-formControl": {
-          marginTop: "0 !important",
+          marginTop: "4px !important",
         },
         "& .MuiSelect-standard": {
           paddingRight: "0 !important",
@@ -60,7 +61,7 @@ const LanguageSwitcher = (props: { mobile: boolean }) => {
               sx={{ paddingBlock: "5px", paddingInline: "2px" }}
             >
               <Typography
-                className="!font-inter"
+                className="!font-inter !text-[18px]"
                 sx={{
                   textTransform: "uppercase",
                   color: activeLng === language ? "#6A65FF" : "white",

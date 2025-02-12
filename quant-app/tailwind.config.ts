@@ -11,6 +11,10 @@ export default {
 	theme: {
 		screens: {
 			'mui-md': '900px',
+			'big': '1920px',
+			'medium': '1440px',
+			'small': '1100px',
+			'smallest': '500px'
 		},
 		extend: {
 			colors: {

@@ -112,7 +112,6 @@ nav {
 }
 
 .mobile-menu .close {
-    content: url(/icons/cross.svg);
     position: absolute;
     right: 20px;
     top: 20px;

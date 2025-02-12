@@ -21,13 +21,12 @@
     "InnovationDetails": "Built projects with advanced tech, shaping Quant-Apps future"
   },
   "app-toolbar": {
-    "Services": "Services",
-    "IGaming": "iGaming",
-    "Projects": "Projects",
-    "AboutUs": "About us",
-    "ContactUs": "Contact us",
-    "LetsTalk": "Let’s Talk",
-    "FAQs": "FAQs"
+    "services": "Services",
+    "projects": "Projects",
+    "process": "Process",
+    "about-us": "About us",
+    "careers": "Careers",
+    "lets-talk": "Let’s Talk"
   },
   "contact-us": {
     "ReadyToStartYourProject": "Ready to Start Your Project?",

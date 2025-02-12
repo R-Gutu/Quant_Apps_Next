@@ -21,13 +21,12 @@
     "InnovationDetails": "Crearea de proiecte inovative bazate pe tehnologii moderne și dezvoltarea în continuare a soluțiilor inovative."
   },
   "app-toolbar": {
-    "Services": "Servicii",
-    "IGaming": "iGaming",
-    "Projects": "Proiecte",
-    "AboutUs": "Despre noi",
-    "ContactUs": "Contacte",
-    "LetsTalk": "Contactează-ne",
-    "FAQs": "FAQs"
+    "services": "Servicii",
+    "projects": "Proiecte",
+    "process": "Procesul de lucru",
+    "about-us": "Despre noi",
+    "careers": "Carieră",
+    "lets-talk": "Contactează-ne"
   },
   "contact-us": {
     "ReadyToStartYourProject": "Ești gata să începi proiectul tău?",

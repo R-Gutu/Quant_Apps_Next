@@ -20,158 +20,86 @@ const Footer = async () => {
   ];
 
   return (
-    <footer>
-      <div className="container">
-        <Box
-          sx={{
-            "& p": {
-              color: "white",
-              opacity: "0.75",
-              lineHeight: "34px",
-              fontSize: "14px",
-              transition: "all 0.3s ease",
-              "&:hover": {
-                opacity: 1,
-                transform: "translateX(5px)",
-                transition: "all 0.3s ease",
-              },
-            },
-            "& a": {
-              color: "white",
-              opacity: "0.75",
-              lineHeight: "34px",
-              fontSize: "14px",
-              transition: "all 0.3s ease",
-              "&:hover": {
-                opacity: 1,
-                transform: "translateX(5px)",
-                transition: "all 0.3s ease",
-              },
-            },
-          }}
-        >
-          <Grid2
-            className="max-[768px]:!hidden"
-            container
-            direction="row"
-            justifyContent="end"
-            gap="20px"
-            mb="50px"
-            mr="65px"
-          >
-          </Grid2>
-          <div className="footer">
-            <Link href="/" legacyBehavior>
-              <a className="footer__logo self-center !font-inter">
-                <Image src="/icons/logo.svg" alt="Logo" width={250} height={40} />
-              </a>
-            </Link>
-            <div className="footer__links">
-              <div className="footer__column">
-                <p className="footer__column-title !font-inter">{tFooter("FindUsAt")}</p>
-                {socialLinks.map(({ href, icon, alt }) => (
-                  <Grid2 key={alt} container>
-                    <Link
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      legacyBehavior
-                    >
-                      <a className="flex flex-row justify-between w-1/2 min-w-[100px] no-underline !font-inter">
-                        <h4 className="flex items-center text-white opacity-75 hover:opacity-100">
-                          {alt}
-                        </h4>
-                        <Image
-                          width={14}
-                          height={14}
-                          src={icon}
-                          alt="External Link"
-                          className="ml-[13px]"
-                        />
-                      </a>
-                    </Link>
-                  </Grid2>
-                ))}
-              </div>
+    <div className="p-[60px] bg-[#0000001a]">
+      <div className=" w-full font-inter flex flex-col flex-wrap gap-[50px]">
+        <div className="w-full flex items-center max-small:flex-col justify-between ">
+          <Link href="/" legacyBehavior>
+            <a className="self-center min-w-[200px] !font-inter">
+              <Image src="/icons/logo.svg" alt="Logo" width={200} height={60} />
+            </a>
+          </Link>
+          <div className=" flex flex-wrap gap-x-[30px] max-small:my-[30px] min-w-[300px] max-w-[500px] items-center justify-center mx-2">
+          <hr className=" invisible w-full border-[#6A65FF1A] border-[1px] my-5 max-small:visible"/>
+            <AppLink href="/services">Services</AppLink>
+            <ScrollLink id="projects" elementId="projects" href="/#projects">
+              Projects
+            </ScrollLink>
+            <AppLink href="/services">Process</AppLink>
+            <AppLink href="/about-us">About us</AppLink>
+            <AppLink href="/services">Careers</AppLink>
+            <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
+            <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
+          </div>
 
-              <div className="footer__column">
-                <p className="footer__column-title !font-inter">{tFooter("Company")}</p>
-                <AppLink href="/about-us">{tToolbar("AboutUs")}</AppLink>
-
-                <ScrollLink
-                  id="projects"
-                  elementId="projects"
-                  href="/#projects"
+          <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px]">
+          <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">Stay Connected</p>
+          <div className="flex gap-[10px] max-smallest:grid max-smallest:grid-rows-2 max-smallest:grid-cols-3">
+          {socialLinks.map(({ href, icon, alt }) => (
+              <div key={alt} className="flex shadow-[0px_4px_8px_0px_#4A5DE533]
+            items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter">
+                <Link
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  legacyBehavior
                 >
-                  {tToolbar("Projects")}
-                </ScrollLink>
-                <AppLink href="/services">{tToolbar("Services")}</AppLink>
+                  <a>
+                    <Image
+                      width={24}
+                      height={24}
+                      src={icon}
+                      alt="External Link"
+                      className=""
+                    />
+                  </a>
+                </Link>
               </div>
-
-              <div className="footer__column">
-                <p className="footer__column-title !font-inter">{tFooter("LearnMore")}</p>
-                <AppLink href="/contact-us">{tToolbar("ContactUs")}</AppLink>
-                <AppLink href="/faqs">{tToolbar("FAQs")}</AppLink>
-              </div>
-
-              <div className="footer__column">
-                <Typography
-                  className="!font-inter"
-                  sx={{
-                    fontSize: "14px",
-                    color: "white",
-                    fontWeight: "700",
-                    marginBottom: "10px",
-                    lineHeight: "34px",
-                  }}
-                >
-                  {tFooter("Legal")}
-                </Typography>
-                <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
-                <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
-              </div>
+            ))}
             </div>
-
-            <div className="mobile-footer-bottom max-[800px]:flex">
-              <div className="footer__column">
-                <Typography
-                  className="!font-inter"
-                  sx={{
-                    fontSize: "14px",
-                    color: "white",
-                    fontWeight: "700",
-                    marginBottom: "10px",
-                    lineHeight: "34px",
-                  }}
-                >
-                  {tFooter("Legal")}
-                </Typography>
-                <AppLink href="/terms-of-use">{tFooter("TermsOfUse")}</AppLink>
-                <AppLink href="/privacy-policy" className="text-nowrap">{tFooter("PrivacyPolicy")}</AppLink>
-              </div>
-
-              <div className="mobile-footer-socials">
-                {socialLinks.map(({ href, icon, alt }) => (
-                  <Link
-                    key={alt}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    legacyBehavior
-                  >
-                    <Image width={41} height={41} src={icon} alt={alt} />
-                  </Link>
-                ))}
-              </div>
             </div>
-
-            <div className="footer__copyright">
-              {`© ${new Date().getFullYear()} Quant-Apps. ${tFooter("AllRightsReserved")}`}
+        </div>
+        <hr className="border-[#6A65FF1A] border-[1px] max-smallest:hidden"/>
+        
+        <div className="w-full max-mui-md:flex-col flex flex-row max-smallest:flex-col justify-between">
+          <div className="flex flex-wrap text-[#E6E6E6] gap-[30px] text-[16px] items-center justify-center">
+            <div className="max-smallest:w-full">
+              <div className="flex items-center justify-center gap-[10px]">
+                <Image width={24} height={24} src='/icons/email.svg' alt="email"></Image>
+                support@quant-apps.com
+              </div>
+              <hr className="w-full border-[#6A65FF1A] border-[1px]"/>
+            </div>
+            <div className="max-smallest:w-full">
+              <div className="flex items-center justify-center gap-[10px]">
+              <Image width={24} height={24} src='/icons/phone.svg' alt="email"></Image>
+                +373 69 882 331
+              </div>
+              <hr className="border-[#6A65FF1A] border-[1px]"/>
+            </div>
+            <div className="max-smallest:w-full">
+              <div className="flex items-center justify-center gap-[10px]">
+              <Image width={24} height={24} src='/icons/geolocation.svg' alt="email"></Image>
+              Republic of Moldova
+              </div>
+              <hr className="border-[#6A65FF1A] border-[1px]"/>
             </div>
           </div>
-        </Box>
+          <div className="w-fit flex items-center justify-center text-[12px] font-normal leading-[14.52px] text-[#98989A] opacity-75 max-mui-md:w-full max-mui-md:mt-10">
+            {`© ${new Date().getFullYear()} Quant-Apps. ${tFooter("AllRightsReserved")}`}
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -23,13 +23,10 @@ const MobileMenu = ({menuVisible, setMenuVisible}: {menuVisible: boolean, setMen
             <a className={cn('text-nowrap font-normal text-[28px] text-black drop-shadow', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
           </Link>
         )}
-        <div className="ml-9">
-          <LanguageSwitcher mobile />
-        </div>
       </ul>
 
       <div className={cn('my-[50px]', {'hidden': !menuVisible})}>
-        <LanguageSwitcher isMobile />
+        <LanguageSwitcher mobile />
       </div>
     </div>
   );

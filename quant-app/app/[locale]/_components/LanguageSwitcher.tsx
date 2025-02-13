@@ -4,7 +4,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { cn } from "@/lib/utils/utils";
 import useComponentVisible from "@/lib/utils/useComponentVisible";
 
-const LanguageSwitcher = ({ isMobile = false }: { isMobile?: boolean }) => {
+const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
@@ -24,8 +24,8 @@ const LanguageSwitcher = ({ isMobile = false }: { isMobile?: boolean }) => {
 
   return (
     <div className="text-[18px] text-white cursor-pointer relative select-none">
-      <span ref={toggleElement} className={cn('visible p-[1px] text-black small:text-white', { 'invisible pointer-events-none': isMobile && isComponentVisible })}>{currentLocale.toUpperCase()}</span>
-      {isComponentVisible && <ul ref={ref as React.RefObject<HTMLUListElement>} className={cn('absolute bg-black', {'translate-y-[-27px]': isMobile})}>
+      <span ref={toggleElement} className={cn('visible p-[1px] text-black small:text-white', { 'invisible pointer-events-none': mobile && isComponentVisible })}>{currentLocale.toUpperCase()}</span>
+      {isComponentVisible && <ul ref={ref as React.RefObject<HTMLUListElement>} className={cn('absolute bg-black', {'translate-y-[-27px]': mobile})}>
         {locales.map((locale) => (
           <li
             key={locale}

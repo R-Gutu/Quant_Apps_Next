@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Banner from "./_components/banner"
 import Service from "./_components/service"
+import Reason from "./_components/reason"
 
 export default function Page() {
     return (
@@ -71,6 +72,38 @@ export default function Page() {
                 src="/images/why-choose-us-banner.png"
                 header="Why Choose Quant-Apps?"
                 subHeader="Unlock digital excellence with our expert team, crafting high-performance solutions designed for outstanding results and seamless user experiences."
+            />
+            <div className="grid grid-cols-2 w-full">
+                <Reason
+                className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
+                    src="/icons/stars.svg"
+                    title="Expert Software Solutions"
+                    text="Our skilled professionals leverage deep industry expertise to build cutting-edge digital products. Staying ahead with the latest trends and best practices, we deliver innovative, scalable, and secure solutions tailored to your business needs."
+                />
+                <Reason
+                className="border-b-[1px] border-solid border-[#6A65FF1A]"
+                    src="/icons/communication.svg"
+                    title="Client-Focused Digital Strategy"
+                    text="We prioritize your business goals, customizing our web and mobile development services to align with your vision. Through strategic collaboration and deep market insights, we create user-centric solutions that drive engagement and success."
+                />
+            </div>
+            <div className="grid grid-cols-2 w-full">
+                <Reason
+                className="border-r-[1px] border-solid border-[#6A65FF1A]"
+                    src="/icons/stats.svg"
+                    title="Results-Driven Development"
+                    text="Our core mission is to deliver measurable results. By combining technical expertise with creative problem-solving, we develop high-performance apps, websites, and CRM systems that enhance user experiences, boost efficiency, and accelerate business growth."
+                />
+                <Reason
+                    src="/icons/case.svg"
+                    title="Long-Term Digital Partnership"
+                    text="We believe in lasting client relationships, providing continuous support, maintenance, and updates for your digital products. Our commitment ensures seamless functionality, security, and performance, helping your business stay competitive and innovative."
+                />
+            </div>
+            <Banner
+                src="/images/what-clients-say-banner.png"
+                header="What our Clients say About us"
+                subHeader="At Quant-Apps, we deliver top-tier digital solutions that drive success. Hear from our satisfied clients!"
             />
         </div>
     )

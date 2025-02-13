@@ -120,10 +120,9 @@ footer {
     font-size: 12px;
     font-weight: 400;
     line-height: 14.52px;
-    color: white;
+    color: #98989A;
     opacity: 0.75;
     position: absolute;
-    bottom: -130px;
     left: 50%;
     transform: translateX(-50%);
 }

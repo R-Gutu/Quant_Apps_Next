@@ -30,7 +30,7 @@ const MobileMenu = () => {
   return (
     <div className="top-0 left-0 h-auto p-[20px] overflow-hidden bg-white fixed z-[10000] rounded-b-[30px] w-full px-[50px]">
       <div className="flex right-[30px] top-[6px]">
-        <Image src={'/icons/logo-mobile.svg'} width={500} height={300} alt="cross" className="cursor-pointer w-full" />
+        <Image src={'/icons/logo-mobile.svg'} width={500} height={300} alt="logo-mobile" className="cursor-pointer w-full" />
         <Image src={'/icons/cross.svg'} onClick={onClickClose} width={70} height={100} alt="cross" className="cursor-pointer" />
       </div>
       <ul className="flex flex-col w-full items-center gap-[35px] mt-[35px]">
@@ -41,11 +41,10 @@ const MobileMenu = () => {
             </Link>
           </li>
         )}
+        <div className="ml-9">
+          <LanguageSwitcher mobile />
+        </div>
       </ul>
-
-      <Grid2 container sx={{ width: "100%", mt: "20px" }} justifyContent="center">
-        <LanguageSwitcher mobile />
-      </Grid2>
     </div>
   );
 };

@@ -1,139 +1,43 @@
 'use client'
-import { useState } from "react";
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { cn } from "@/lib/utils/utils";
+import useComponentVisible from "@/lib/utils/useComponentVisible";
 
-import {
-  Box,
-  Button,
-  FormControl,
-  Grid2,
-  InputLabel,
-  MenuItem,
-  Select,
-  Typography,
-} from "@mui/material";
-import { visuallyHidden } from "@mui/utils";
-
-const LanguageSwitcher = (props: { mobile: boolean }) => {
-  const { mobile } = props;
+const LanguageSwitcher = ({ isMobile = false }: { isMobile?: boolean }) => {
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
 
-  const [activeLng, setActiveLng] = useState(currentLocale);
-  const [open, setOpen] = useState(false);
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
   const handleChangeLanguage = (value: string) => {
     const newPathname = pathname.replace(`/${currentLocale}`, `/${value}`);
     router.push(newPathname);
-    setActiveLng(value);
   };
 
-  return (
-    <Box
-      className="mr-[33px]"
-      sx={{
-        "& .MuiInputBase-formControl": {
-          marginTop: "4px !important",
-        },
-        "& .MuiSelect-standard": {
-          paddingRight: "0 !important",
-        },
-      }}
-    >
-      {mobile ? (
-        <Grid2 container direction="column">
-          {routing.locales.map((language) => (
-            <Button
-              key={language}
-              value={language}
-              onClick={() => handleChangeLanguage(language)}
-              sx={{ paddingBlock: "5px", paddingInline: "2px" }}
-            >
-              <Typography
-                className="!font-inter !text-[18px]"
-                sx={{
-                  textTransform: "uppercase",
-                  color: activeLng === language ? "#6A65FF" : "white",
-                }}
-              >
-                {language}
-              </Typography>
-            </Button>
-          ))}
-        </Grid2>
-      ) : (
-        <FormControl sx={{ m: 1, textAlign: "center" }}>
-          <InputLabel sx={visuallyHidden}>Language</InputLabel>
+  const locales = ['en', 'ru', 'ro'];
 
-          <Select
-            variant="standard"
-            disableUnderline
-            IconComponent={() => null}
-            slotProps={{
-              input: { sx: { margin: 0, padding: 0 } },
-              root: { sx: { margin: 0, padding: 0 } },
-            }}
-            open={open}
-            onClose={handleClose}
-            onOpen={handleOpen}
-            value={currentLocale}
-            onChange={(e) => handleChangeLanguage(e.target.value)}
-            autoWidth
-            MenuProps={{
-              disableScrollLock: true,
-              PaperProps: {
-                style: {
-                  backgroundColor: "#080404",
-                  zIndex: 9999,
-                },
-              },
-            }}
-            renderValue={(value) => (
-              <Typography
-                className="!font-inter"
-                sx={{
-                  textTransform: "uppercase",
-                  color: "white",
-                }}
-              >
-                {value}
-              </Typography>
-            )}
+  const {
+    ref,
+    toggleElement,
+    isComponentVisible
+  } = useComponentVisible(false);
+
+  return (
+    <div className="text-[18px] text-white cursor-pointer relative select-none">
+      <span ref={toggleElement} className={cn('visible p-[1px] text-black small:text-white', { 'invisible pointer-events-none': isMobile && isComponentVisible })}>{currentLocale.toUpperCase()}</span>
+      {isComponentVisible && <ul ref={ref as React.RefObject<HTMLUListElement>} className={cn('absolute bg-black', {'translate-y-[-27px]': isMobile})}>
+        {locales.map((locale) => (
+          <li
+            key={locale}
+            onClick={() => locale === currentLocale ? '' : handleChangeLanguage(locale)}
+            className={cn('px-[1px]', { 'text-[var(--purple)]': locale === currentLocale })}
           >
-            {routing.locales.map((language) => (
-              <MenuItem
-                key={language}
-                value={language}
-                sx={{ paddingBlock: "5px", paddingInline: "2px" }}
-              >
-                <Typography
-                  className="!font-inter"
-                  sx={{
-                    textTransform: "uppercase",
-                    color: activeLng === language ? "#6A65FF" : "white",
-                  }}
-                >
-                  {language}
-                </Typography>
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      )}
-    </Box>
+            {locale.toUpperCase()}
+          </li>
+        ))}
+      </ul>}
+    </div>
   );
 };
-
 
 export default LanguageSwitcher;

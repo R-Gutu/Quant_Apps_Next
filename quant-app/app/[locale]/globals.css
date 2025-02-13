@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Root Variables */
+:root {
+    --bg-color: #051139;
+    --header-bg-color: #040E2E;
+    --purple: #6A65FF;
+    --purple-dark: #9C99FF;
+    --transition: 0.3s ease;
+}
+
 * {
     box-sizing: border-box;
     font-family: var(--font-inter), 'sans-serif';

@@ -113,7 +113,7 @@ export default function Projects() {
                     minWidth: "220px",
                     minHeight: "48px",
                     width: "fit-content",
-                    backgroundColor: showAll ? "transparent" : "#6A65FF",
+                    backgroundColor: showAll ? "transparent" : "var(--purple)",
                     border: showAll ? "1.5px solid white" : "none",
                     '&:hover': {
                         backgroundColor: showAll ? 'rgba(255, 255, 255, 0.1)' : '#5852ff',

@@ -1,10 +1,16 @@
+"use client"
+import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import PCMenu from "./PCMenu";
 
-const AppToolbar = async () =>
+const AppToolbar = () =>{
+  const [menuVisible, setMenuVisible] = useState(false)
+  return (
     <>
-      <PCMenu />
-      {/* <MobileMenu /> */}
+      <PCMenu setMenuVisible={setMenuVisible}/>
+      <MobileMenu menuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
     </>
+  )
+}
 
 export default AppToolbar;

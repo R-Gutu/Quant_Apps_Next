@@ -100,7 +100,7 @@
 
 .talk-popup__right::-webkit-scrollbar-thumb,
 .talk-popup__content::-webkit-scrollbar-thumb {
-    background: #6A65FF;
+    background: var(--purple);
 }
 
 .talk-popup__content::-webkit-scrollbar-track,

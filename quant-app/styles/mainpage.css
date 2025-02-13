@@ -1,21 +1,8 @@
-/* Root Variables */
-:root {
-  --bg-color: #051139;
-  --purple: #6A65FF;
-  --purple-dark: #9C99FF;
-  --transition: 0.3s ease;
-}
-
 /* Reset Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Base Styles */
-body {
-  background-color: var(--bg-color);
 }
 
 a {
@@ -260,7 +247,7 @@ button:hover {
 }
 
 .owr-work-section {
-  background-color: #6a65FF14;
+  background-color: var(--purple)14;
   position: relative;
   z-index: 1;
 }
@@ -375,7 +362,7 @@ button:hover {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 23px;
-  background-color: #6A65FF;
+  background-color: var(--purple);
   border: 1px solid white;
   border-radius: 8px;
   cursor: pointer;
@@ -421,7 +408,7 @@ button:hover {
 /* Client Success Stories */
 .client-success-stories-section {
   padding: 83px 0 68px 0;
-  background-color: #6a65FF14;
+  background-color: var(--purple)14;
   position: relative;
 }
 

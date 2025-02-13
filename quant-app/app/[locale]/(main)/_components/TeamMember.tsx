@@ -70,7 +70,7 @@ export default async function TeamMember({ name, title, details, src, alt, link 
                         href={link}
                         className='absolute top-0 right-0'
                         sx={{
-                            backgroundColor: "#6A65FF",
+                            backgroundColor: "var(--purple)",
                             width: { xs: "34px", md: "46px" },
                             height: { xs: "34px", md: "46px" },
                             borderRadius: "23px",

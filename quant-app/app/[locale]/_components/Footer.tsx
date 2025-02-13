@@ -28,8 +28,8 @@ const Footer = async () => {
               <Image src="/icons/logo.svg" alt="Logo" width={200} height={60} />
             </a>
           </Link>
-          <div className=" flex flex-wrap gap-x-[30px] max-small:my-[30px] min-w-[300px] max-w-[500px] items-center justify-center mx-2">
-          <hr className=" invisible w-full border-[#6A65FF1A] border-[1px] my-5 max-small:visible"/>
+          <div className=" flex flex-wrap gap-x-[30px] max-small:my-[30px] min-w-[330px] max-w-[500px] items-center justify-center mx-2">
+          <hr className=" hidden w-full border-[#6A65FF1A] border-[1px] my-5 max-small:block"/>
             <AppLink href="/services">Services</AppLink>
             <ScrollLink id="projects" elementId="projects" href="/#projects">
               Projects
@@ -41,12 +41,12 @@ const Footer = async () => {
             <AppLink href="/privacy-policy">{tFooter("PrivacyPolicy")}</AppLink>
           </div>
 
-          <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px]">
+          <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px] min-w-[300px]">
           <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">Stay Connected</p>
-          <div className="flex gap-[10px] max-smallest:grid max-smallest:grid-rows-2 max-smallest:grid-cols-3">
+          <div className="flex gap-[20px] max-smallest:grid max-smallest:grid-rows-2 max-smallest:grid-cols-3">
           {socialLinks.map(({ href, icon, alt }) => (
               <div key={alt} className="flex shadow-[0px_4px_8px_0px_#4A5DE533]
-            items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter">
+            items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter max-mui-md:w-[58px] max-mui-md:h-[58px]">
                 <Link
                   href={href}
                   target="_blank"
@@ -59,7 +59,7 @@ const Footer = async () => {
                       height={24}
                       src={icon}
                       alt="External Link"
-                      className=""
+                      className="max-mui-md:w-[20px]"
                     />
                   </a>
                 </Link>

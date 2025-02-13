@@ -7,60 +7,71 @@ import { useMediaQuery } from "@mui/material";
 import { cn } from "@/lib/utils/utils";
 
 
-const PCMenu = ({ setMenuVisible } : { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
+const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const t = useTranslations("app-toolbar");
     const isSmallScreen = useMediaQuery("(max-width:1100px)");
     const pathname = usePathname();
     const pages = ['services', 'projects', 'process', 'about-us', 'careers']
 
     return (
-        <header className="fixed top-0 left-0 z-50 bg-[var(--header-bg-color)] w-full  flex justify-between items-center
+
+
+        <>
+            <header className="fixed top-0 left-0 z-50 bg-[var(--header-bg-color)] w-full  flex justify-between items-center
                            px-[16px] h-[108px]
                            small:px-[30px]
                            medium:px-[80px] medium:h-[85px]
                            big:px-[162px] big:h-[100px]
         ">
-            <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
-                <a className="w-[118px] h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
-                    <Image priority id="logo" src="/icons/logo.svg" width={178} height={60} alt="Logo" />
-                </a>
-            </Link>
-            <nav>
-                <ul className="max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
-                    {pages.map(e =>
-                        <Link href={`/${e}`} legacyBehavior>
-                            <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
-                        </Link>
-                    )}
-                </ul>
-            </nav>
-            <div className="flex items-center">
-                {isSmallScreen || <span className="mr-[33px]"><LanguageSwitcher/></span>}
-                <div className="nav-right flex justify-center items-center">
-                    {pathname !== "/contact-us" && (
-                        <Link
-                            href='/talk-modal'
-                            legacyBehavior
-                        >
-                            <a className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[24px] py-[8px] text-[16px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
-                                {t("lets-talk")}
-                            </a>
-                        </Link>
-                    )}
+                <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
+                    <a className="w-[118px] h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
+                        <Image priority id="logo" src="/icons/logo.svg" width={178} height={60} alt="Logo" />
+                    </a>
+                </Link>
+                <nav>
+                    <ul className="max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
+                        {pages.map(e =>
+                            <Link href={`/${e}`} legacyBehavior>
+                                <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
+                            </Link>
+                        )}
+                    </ul>
+                </nav>
+                <div className="flex items-center">
+                    {isSmallScreen || <span className="mr-[33px]"><LanguageSwitcher /></span>}
+                    <div className="nav-right flex justify-center items-center">
+                        {pathname !== "/contact-us" && (
+                            <Link
+                                href='/talk-modal'
+                                legacyBehavior
+                            >
+                                <a className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[24px] py-[8px] text-[16px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
+                                    {t("lets-talk")}
+                                </a>
+                            </Link>
+                        )}
+                    </div>
+                    {isSmallScreen &&
+                        <Image
+                            src="/icons/button.svg"
+                            alt="mobile menu"
+                            width={100}
+                            height={100}
+                            className="w-full h-full ml-[33px] cursor-pointer"
+                            onClick={() => setMenuVisible(true)}
+                        />
+                    }
                 </div>
-                {isSmallScreen &&
-                    <Image
-                        src="/icons/button.svg"
-                        alt="mobile menu"
-                        width={100}
-                        height={100}
-                        className="w-full h-full ml-[33px] cursor-pointer"
-                        onClick={() => setMenuVisible(true)}
-                    />
-                }
-            </div>
-
-        </header>
+            </header>
+            
+            {/* this is a fake header, to give the same margin as the original header on the top of the page */}
+            <div className="invisible w-full
+                px-[16px] h-[108px]
+                small:px-[30px]
+                medium:px-[80px] medium:h-[85px]
+                big:px-[162px] big:h-[100px]
+            "></div>
+        </>
     )
 }
 

@@ -7,20 +7,14 @@ import { useMediaQuery } from "@mui/material";
 import { cn } from "@/lib/utils/utils";
 
 
-const PCMenu = () => {
+const PCMenu = ({ setMenuVisible } : { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const t = useTranslations("app-toolbar");
     const isSmallScreen = useMediaQuery("(max-width:1100px)");
     const pathname = usePathname();
-
-    const onClickBurger = () => {
-        const mobileMenu = document.querySelector(".mobile-menu");
-        mobileMenu?.classList.add("active");
-    };
-
     const pages = ['services', 'projects', 'process', 'about-us', 'careers']
 
     return (
-        <header className="fixed top-0 left-0 z-50 bg-[#051139] w-full  flex justify-between items-center
+        <header className="fixed top-0 left-0 z-50 bg-[#040E2E] w-full  flex justify-between items-center
                            px-[16px] h-[108px]
                            small:px-[30px]
                            medium:px-[80px] medium:h-[85px]
@@ -34,17 +28,14 @@ const PCMenu = () => {
             <nav>
                 <ul className="max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
                     {pages.map(e =>
-                        <li className={cn('', { 'active': pathname === `/${e}` })}>
-                            <Link href={`/${e}`} legacyBehavior>
-                                <a className="text-nowrap font-medium text-[18px] text-white">{t(e)}</a>
-                            </Link>
-                        </li>
+                        <Link href={`/${e}`} legacyBehavior>
+                            <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[#6A65FF]': pathname === `/${e}` })}>{t(e)}</a>
+                        </Link>
                     )}
                 </ul>
             </nav>
-
-            <div className="flex">
-                {isSmallScreen || <LanguageSwitcher mobile={isSmallScreen} />}
+            <div className="flex items-center">
+                {isSmallScreen || <span className="mr-[33px]"><LanguageSwitcher/></span>}
                 <div className="nav-right flex justify-center items-center">
                     {pathname !== "/contact-us" && (
                         <Link
@@ -63,8 +54,8 @@ const PCMenu = () => {
                         alt="mobile menu"
                         width={100}
                         height={100}
-                        className="w-full h-full ml-[33px]"
-                        onClick={onClickBurger}
+                        className="w-full h-full ml-[33px] cursor-pointer"
+                        onClick={() => setMenuVisible(true)}
                     />
                 }
             </div>

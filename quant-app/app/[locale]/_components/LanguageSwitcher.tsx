@@ -30,7 +30,7 @@ const LanguageSwitcher = ({ isMobile = false }: { isMobile?: boolean }) => {
           <li
             key={locale}
             onClick={() => locale === currentLocale ? '' : handleChangeLanguage(locale)}
-            className={cn('px-[1px]', { 'text-[#6A65FF]': locale === currentLocale })}
+            className={cn('px-[1px]', { 'text-[var(--purple)]': locale === currentLocale })}
           >
             {locale.toUpperCase()}
           </li>

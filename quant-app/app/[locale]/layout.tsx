@@ -24,7 +24,6 @@ import "@/styles/workingProcess.css"
 import "@/styles/aboutPage.css"
 import "@/styles/contactUsPage.css"
 import "@/styles/swiper.css";
-import "@/styles/header.css";
 import "@/styles/services.css";
 import "@/styles/whatWeOfferSection.css";
 import "@/styles/main.css"
@@ -148,7 +147,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${inter.variable}`}>
       <body
-        className="antialiased relative"
+        className="antialiased relative bg-[var(--bg-color)]"
       >
         <script
           type="application/ld+json"

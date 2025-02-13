@@ -1,5 +1,5 @@
 .faq-section {
-    background-color: #6A65FF14;
+    background-color: var(--purple)14;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -113,8 +113,8 @@
 }
 
 .faq__accordion-item.active {
-    background-color: #6A65FFCC !important;
-    border: 1px solid #6A65FFCC;
+    background-color: var(--purple)CC !important;
+    border: 1px solid var(--purple)CC;
 }
 
 .faq__accordion-item .faq__accordion-content p {

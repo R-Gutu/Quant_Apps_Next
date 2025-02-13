@@ -20,12 +20,12 @@ const MobileMenu = ({menuVisible, setMenuVisible}: {menuVisible: boolean, setMen
       <ul className="flex flex-col w-full items-center gap-[35px] mt-[35px]">
         {pages.map(e =>
           <Link href={`/${e}`} legacyBehavior>
-            <a className={cn('text-nowrap font-normal text-[28px] text-black drop-shadow', { 'text-[#6A65FF]': pathname === `/${e}` })}>{t(e)}</a>
+            <a className={cn('text-nowrap font-normal text-[28px] text-black drop-shadow', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
           </Link>
         )}
       </ul>
 
-      <div className="my-[50px]">
+      <div className={cn('my-[50px]', {'hidden': !menuVisible})}>
         <LanguageSwitcher isMobile />
       </div>
     </div>

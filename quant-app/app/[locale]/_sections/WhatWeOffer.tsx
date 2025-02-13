@@ -180,7 +180,7 @@ const WhatWeOffer = async ({ className }: { className?: string }) => {
                   minWidth: { xs: "30px", md: "64px" },
                   minHeight: { xs: "30px", md: "64px" },
                   borderRadius: "8px",
-                  backgroundColor: "#6A65FF",
+                  backgroundColor: "var(--purple)",
                   alignItems: "center",
                   justifyContent: "center",
                   padding: { xs: "0px", md: "4px" },

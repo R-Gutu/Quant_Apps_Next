@@ -14,7 +14,7 @@ const PCMenu = ({ setMenuVisible } : { setMenuVisible: React.Dispatch<React.SetS
     const pages = ['services', 'projects', 'process', 'about-us', 'careers']
 
     return (
-        <header className="fixed top-0 left-0 z-50 bg-[#040E2E] w-full  flex justify-between items-center
+        <header className="fixed top-0 left-0 z-50 bg-[var(--header-bg-color)] w-full  flex justify-between items-center
                            px-[16px] h-[108px]
                            small:px-[30px]
                            medium:px-[80px] medium:h-[85px]
@@ -29,7 +29,7 @@ const PCMenu = ({ setMenuVisible } : { setMenuVisible: React.Dispatch<React.SetS
                 <ul className="max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
                     {pages.map(e =>
                         <Link href={`/${e}`} legacyBehavior>
-                            <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[#6A65FF]': pathname === `/${e}` })}>{t(e)}</a>
+                            <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
                         </Link>
                     )}
                 </ul>

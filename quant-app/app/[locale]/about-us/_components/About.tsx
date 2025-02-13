@@ -106,7 +106,7 @@ const About = () => {
           <Button
             onClick={() => toggleExpand()}
             sx={{
-              backgroundColor: "#6A65FF",
+              backgroundColor: "var(--purple)",
               width: "120px",
               height: "30px",
             }}

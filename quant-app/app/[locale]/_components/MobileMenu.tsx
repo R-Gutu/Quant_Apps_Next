@@ -19,7 +19,7 @@ const MobileMenu = ({menuVisible, setMenuVisible}: {menuVisible: boolean, setMen
       </div>
       <ul className="flex flex-col w-full items-center gap-[35px] mt-[35px]">
         {pages.map(e =>
-          <Link href={`/${e}`} legacyBehavior>
+          <Link key={e} href={`/${e}`} legacyBehavior>
             <a className={cn('text-nowrap font-normal text-[28px] text-black drop-shadow', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
           </Link>
         )}

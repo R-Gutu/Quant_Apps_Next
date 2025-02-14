@@ -3,6 +3,7 @@ import Banner from "@/components/banner"
 import Service from "./_components/service"
 import Reason from "./_components/reason"
 import Review from "./_components/review"
+import Accordion from "./_components/accordion"
 
 export default function Page() {
     return (
@@ -150,6 +151,67 @@ export default function Page() {
                 src="/images/faqs_banner.png"
                 header="Frequently Asked Questions"
                 subHeader="Still you have any questions? Contact our Team via support@quant-apps.com"
+            />
+            <div className="grid grid-cols-2 mb-[80px]">
+                <div>
+                    <Accordion
+                        className="border-b-[1px] border-r-[1px]"
+                        number="01"
+                        question="What services does Quant-Apps provide?"
+                        answer="Quant-Apps specializes in mobile app development for iOS, Android app development, cross-platform solutions with React Native, CRM systems, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization."
+                    />
+                    <Accordion
+                        className="border-b-[1px] border-r-[1px]"
+                        number="02"
+                        question="Can you build a custom app for my business?"
+                        answer="Yes! We work closely with businesses to create iOS, Android, and cross-platform solutions that align with your brand and unique needs. From startups to large companies, we develop apps that help you stand out."
+                    />
+                    <Accordion
+                        className="border-b-[1px] border-r-[1px]"
+                        number="03"
+                        question="How much does app development cost?"
+                        answer="The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for iOS apps, Android apps, cross-platform solutions, and CRM systems."
+                        />
+                    <Accordion
+                        className="border-b-[1px] border-r-[1px]"
+                        number="04"
+                        question="What sets Quant-Apps?"
+                        answer="At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative solutions. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly apps for iOS, Android, and cross-platform solutions."
+                    />
+                </div>
+                <div>
+                    <Accordion
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
+                        number="05"
+                        question="What platforms do you develop for?"
+                        answer="Quant-Apps specializes in developing mobile applications for iOS, Android app development, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
+                    />
+                    <Accordion
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
+                        number="06"
+                        question="How long does it take to develop an app?"
+                        answer="Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, cross-platform solutions, CRM systems, as well as design and testing."
+                    />
+                    <Accordion
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
+                        number="07"
+                        question="Do you offer support after the app is launched?"
+                        answer="Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your app stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve."
+                    />
+                    <Accordion
+                        className="border-b-[1px] border-l-[0.5px] translate-x-[-1px]"
+                        number="08"
+                        question="How do I get started with Quant-Apps?"
+                        answer="Getting started is simple! Contact us for a free consultation where we’ll discuss your app idea, goals, and requirements. From there, we’ll guide you through the development process and help bring your vision to life."
+                    />
+                </div>
+            </div>
+            <Banner
+                src="/images/what-clients-say-banner.png"
+                header="Excited to work together on your next project?"
+                subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
+                button="Start Project"
+                icon="/icons/start_project_logo.svg"
             />
         </div>
     )

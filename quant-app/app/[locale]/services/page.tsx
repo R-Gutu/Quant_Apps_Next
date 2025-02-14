@@ -1,21 +1,41 @@
+import Banner from "@/components/banner";
 import { getTranslations } from "next-intl/server";
-import Image from 'next/image'
-import NextProject from "../_sections/NextProject";
-import WhatWeOffer from "../_sections/WhatWeOffer";
-import Accordion from "./_components/Accordion";
-import WhyIOS from "./_components/WhyIOS";
-import Blur from "@/components/Blur";
+import Header from "./_components/header";
+import Description from "./_components/description";
+import data from "@/lib/utils/servicesData";
 
 const Page = async () => {
   const t = await getTranslations("services");
 
   return (
-    <div className="px-[161px] mt-[112px] font-inter ">
-      <div className=" flex flex-col gap-4">
-        <h1 className="font-semibold text-[48px] leading-[58.09px] tracking-[0] text-[#FFFFFF]">Design</h1>
-        <p className="text-[#E6E6E6] font-normal text-[18px] leading-[27px] tracking-[-0.006em]">At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs that engage your audience and strengthen your brand. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.</p>
-        <div className="bg-[#4A6ED1] w-fit rounded-[8px] p-[12px_14px] gap-[10px] font-normal text-[22px] leading-[26.63px] tracking-[0] text-[#FFFFFF]">Our design services include:</div>
-      </div>
+    <div className="px-[100px] mt-[62px] font-inter max-mui-md:px-[40px] max-smallest:px-[20px]">
+      <Banner
+            src="/images/what-we-offer-banner.png"
+            header="What We Offer?"
+            subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
+        />
+        {data.map(({header, description}) => (
+          <div key={header.title}>
+            <Header 
+              title={header.title}
+              text={header.text}
+              button={header.button}
+            />
+            {description.map((item: any, index: number) => (
+              <Description 
+                key={index}
+                title={item.title}
+                blocks={item.blocks}
+                className={item.className}
+              />
+            ))}
+          </div>
+        ))}
+      <Banner
+          src="/images/what-we-offer-banner.png"
+          header="What We Offer?"
+          subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
+      />
     </div>
   );
 };

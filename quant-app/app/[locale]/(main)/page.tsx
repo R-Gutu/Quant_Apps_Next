@@ -181,25 +181,25 @@ export default function Page() {
                 </div>
                 <div>
                     <Accordion
-                        className="border-b-[1px]"
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
                         number="05"
                         question="What platforms do you develop for?"
                         answer="Quant-Apps specializes in developing mobile applications for iOS, Android app development, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
                     />
                     <Accordion
-                        className="border-b-[1px]"
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
                         number="06"
                         question="How long does it take to develop an app?"
                         answer="Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, cross-platform solutions, CRM systems, as well as design and testing."
                     />
                     <Accordion
-                        className="border-b-[1px]"
+                        className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
                         number="07"
                         question="Do you offer support after the app is launched?"
                         answer="Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your app stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve."
                     />
                     <Accordion
-                        className="border-b-[1px]"
+                        className="border-b-[1px] border-l-[0.5px] translate-x-[-1px]"
                         number="08"
                         question="How do I get started with Quant-Apps?"
                         answer="Getting started is simple! Contact us for a free consultation where we’ll discuss your app idea, goals, and requirements. From there, we’ll guide you through the development process and help bring your vision to life."

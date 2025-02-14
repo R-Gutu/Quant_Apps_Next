@@ -8,8 +8,6 @@ export default function Accordion({ question, answer, number, className }: { que
         <div className={`px-[50px] py-[34px] border-solid border-[#6A65FF] ${className}`}>
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-[30px]">
-
-                    {/* <div className={cn("flex justify-center items-center text-white text-[30px] w-[80px] h-[80px] rounded-[12px] transition-all duration-1000 border-solid border-[1px] border-[#fff0] bg-[linear-gradient(180deg,_rgba(106,_101,_255,_0.2)_0%,_rgba(36,_36,_36,_0)_100%)]", {"border-[#4c3da4] border-[1px] [box-shadow:0px_4px_8px_0px_#4A5DE580] bg-[linear-gradient(180deg,_#6A65FF_0%,_rgba(36,_36,_36,_0)_100%)]": isOpen})}>{number}</div> */}
                     <div className={cn(
                         "relative flex justify-center items-center text-white text-[30px] w-[80px] h-[80px] rounded-[12px] transition-all duration-300 border-solid border-[1px] border-[#fff0] overflow-hidden",
                         { "border-[#4c3da4] border-[1px] [box-shadow:0px_4px_8px_0px_#4A5DE580]": isOpen }

@@ -152,7 +152,7 @@ export default function Page() {
                 header="Frequently Asked Questions"
                 subHeader="Still you have any questions? Contact our Team via support@quant-apps.com"
             />
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 mb-[80px]">
                 <div>
                     <Accordion
                         className="border-b-[1px] border-r-[1px]"
@@ -206,6 +206,13 @@ export default function Page() {
                     />
                 </div>
             </div>
+            <Banner
+                src="/images/what-clients-say-banner.png"
+                header="Excited to work together on your next project?"
+                subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
+                button="Start Project"
+                icon="/icons/start_project_logo.svg"
+            />
         </div>
     )
 }

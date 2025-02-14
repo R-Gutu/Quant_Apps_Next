@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { cn } from "@/lib/utils/utils";
 import Cross from "./cross";
+
 export default function Accordion({ question, answer, number, className }: { question: string, answer: string, number: string, className?: string }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -12,7 +13,8 @@ export default function Accordion({ question, answer, number, className }: { que
                         "relative flex justify-center items-center text-white text-[30px] w-[80px] h-[80px] rounded-[12px] transition-all duration-300 border-solid border-[1px] border-[#fff0] overflow-hidden",
                         { "border-[#4c3da4] border-[1px] [box-shadow:0px_4px_8px_0px_#4A5DE580]": isOpen }
                     )}>
-                        <span className={cn("absolute inset-0 bg-[linear-gradient(180deg,_rgba(106,_101,_255,_0.2)_0%,_rgba(36,_36,_36,_0)_100%)]", {"bg-[linear-gradient(180deg,_#6A65FF_0%,_rgba(36,_36,_36,_0)_100%)]": isOpen})}></span>
+                        <span className={cn("absolute inset-0 transition-opacity duration-300 bg-[linear-gradient(180deg,_rgba(106,_101,_255,_0.2)_0%,_rgba(36,_36,_36,_0)_100%)] opacity-1", {"opacity-0": isOpen})}></span>
+                        <span className={cn("absolute inset-0 transition-opacity duration-300 bg-[linear-gradient(180deg,_#6A65FF_0%,_rgba(36,_36,_36,_0)_100%)] opacity-0", {"opacity-1": isOpen})}></span>
                         <span className="relative">{number}</span>
                     </div>
 

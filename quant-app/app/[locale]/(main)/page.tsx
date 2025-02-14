@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Banner from "./_components/banner"
+import Banner from "@/components/banner"
 import Service from "./_components/service"
 import Reason from "./_components/reason"
 import Review from "./_components/review"

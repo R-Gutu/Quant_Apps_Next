@@ -29,16 +29,16 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                     </a>
                 </Link>
                 <nav>
-                    <ul className="max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
+                    <ul className="gap-[30px] max-[1100px]:hidden small:flex small:justify-between small:gap-[30px]">
                         {pages.map(e =>
-                            <Link href={`/${e}`} legacyBehavior>
-                                <a className={cn('text-nowrap font-medium text-[18px] text-white', { '!text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
+                            <Link key={e} href={`/${e}`} legacyBehavior>
+                                <a className={cn('text-nowrap font-medium text-[18px] text-white hover:text-[var(--purple)] duration-200 transition-colors', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
                             </Link>
                         )}
                     </ul>
                 </nav>
                 <div className="flex items-center">
-                    {isSmallScreen || <span className="mr-[33px]"><LanguageSwitcher /></span>}
+                    <span className="mr-[33px] hidden small:block"><LanguageSwitcher /></span>
                     <div className="nav-right flex justify-center items-center">
                         {pathname !== "/contact-us" && (
                             <Link
@@ -51,19 +51,19 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                             </Link>
                         )}
                     </div>
-                    {isSmallScreen &&
+                    <div className="w-[46px] h-[46px] ml-[33px] block small:hidden">
                         <Image
                             src="/icons/button.svg"
                             alt="mobile menu"
-                            width={100}
-                            height={100}
-                            className="w-full h-full ml-[33px] cursor-pointer"
+                            width={46}
+                            height={46}
+                            className="w-full h-full cursor-pointer"
                             onClick={() => setMenuVisible(true)}
                         />
-                    }
+                    </div>
                 </div>
             </header>
-            
+
             {/* this is a fake header, to give the same margin as the original header on the top of the page */}
             <div className="invisible w-full
                 px-[16px] h-[108px]

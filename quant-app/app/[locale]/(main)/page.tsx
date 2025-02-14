@@ -2,6 +2,7 @@ import Image from "next/image"
 import Banner from "./_components/banner"
 import Service from "./_components/service"
 import Reason from "./_components/reason"
+import Review from "./_components/review"
 
 export default function Page() {
     return (
@@ -75,13 +76,13 @@ export default function Page() {
             />
             <div className="grid grid-cols-2 w-full">
                 <Reason
-                className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/icons/stars.svg"
                     title="Expert Software Solutions"
                     text="Our skilled professionals leverage deep industry expertise to build cutting-edge digital products. Staying ahead with the latest trends and best practices, we deliver innovative, scalable, and secure solutions tailored to your business needs."
                 />
                 <Reason
-                className="border-b-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-b-[1px] border-solid border-[#6A65FF1A]"
                     src="/icons/communication.svg"
                     title="Client-Focused Digital Strategy"
                     text="We prioritize your business goals, customizing our web and mobile development services to align with your vision. Through strategic collaboration and deep market insights, we create user-centric solutions that drive engagement and success."
@@ -89,7 +90,7 @@ export default function Page() {
             </div>
             <div className="grid grid-cols-2 w-full">
                 <Reason
-                className="border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/icons/stats.svg"
                     title="Results-Driven Development"
                     text="Our core mission is to deliver measurable results. By combining technical expertise with creative problem-solving, we develop high-performance apps, websites, and CRM systems that enhance user experiences, boost efficiency, and accelerate business growth."
@@ -104,6 +105,51 @@ export default function Page() {
                 src="/images/what-clients-say-banner.png"
                 header="What our Clients say About us"
                 subHeader="At Quant-Apps, we deliver top-tier digital solutions that drive success. Hear from our satisfied clients!"
+            />
+            <div className="relative">
+                <div className="grid grid-cols-2 w-full">
+                    <Review
+                        content="Great! So quick and easy to work with. We are super satisfied so far and will continue to work."
+                        name="Sarah Istwany"
+                        src="/icons/rye_school.svg"
+                        description="Representing Rye Country Day School"
+                        className="border-r-[1px] border-solid border-[#6A65FF1A]"
+                    />
+                    <Review
+                        content="It was great working. Definitely will be using  again, already in the process of placing another order!"
+                        name="Barnabas Willis"
+                        src="/icons/fiverr.svg"
+                        description="Client from Fiverr"
+                        imgHeight={38}
+                    />
+                </div>
+                <div className="grid grid-cols-2 w-full">
+                    <Review
+                        content="Very good work looking forward to working together again."
+                        name="Leslie Alexander"
+                        src="/icons/fiverr.svg"
+                        description="Client from Fiverr"
+                        imgHeight={38}
+                        className="border-r-[1px] border-solid border-[#6A65FF1A] [&>div]:mb-[100px]"
+                    />
+                    <Review
+                        content="10 out of 10 will recommend!"
+                        name="Draft Pick Design"
+                        src="/icons/fiverr.svg"
+                        description="Client from Fiverr"
+                        imgHeight={38}
+                        className="[&>div]:mb-[100px]"
+                    />
+                </div>
+                <div className="absolute bottom-[30px] right-[80px] flex text-white items-center gap-2">
+                    <p className="font-semibold text-[24px]">More reviews can be viewed on</p>
+                    <Image src="/icons/fiverr_purple.svg" width={43} height={43} alt="Fiverr logo" />
+                </div>
+            </div>
+            <Banner
+                src="/images/faqs_banner.png"
+                header="Frequently Asked Questions"
+                subHeader="Still you have any questions? Contact our Team via support@quant-apps.com"
             />
         </div>
     )

@@ -3,7 +3,7 @@ import Projects from "../types/Projects";
 const projects : Projects[] = [
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",
@@ -12,7 +12,7 @@ const projects : Projects[] = [
     },
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",
@@ -21,7 +21,7 @@ const projects : Projects[] = [
     },
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",
@@ -30,7 +30,7 @@ const projects : Projects[] = [
     },
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",
@@ -39,7 +39,7 @@ const projects : Projects[] = [
     },
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",
@@ -48,7 +48,7 @@ const projects : Projects[] = [
     },
     {
         title: "Restaurant Website",
-        src: "/images/projects1.png",
+        src: "/images/pictures/projects1.png",
         alt: "project1",
         linkname: "Roka Akor",
         link: "https://rokaakor.com/",

@@ -8,12 +8,12 @@ const Footer = async () => {
   const tFooter = await getTranslations("footer");
 
   const socialLinks: SocialLinksType[] = [
-    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/icons/footer-facebook.svg", alt: "Facebook" },
-    { href: "https://www.instagram.com/quantapps_/", icon: "/icons/footer-instagram.svg", alt: "Instagram" },
-    { href: "https://www.linkedin.com/company/quant-apps", icon: "/icons/linked-in.svg", alt: "LinkedIn" },
-    { href: "https://www.tiktok.com/@quantapps", icon: "/icons/tik-tok.svg", alt: "TikTok" },
-    { href: "https://t.me/quantapps", icon: "/icons/Telegram.svg", alt: "Telegram" },
-    { href: "https://wa.me/37369882331", icon: "/icons/whats-app.svg", alt: "WhatsApp" }
+    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/images/icons/facebook-logo.svg", alt: "Facebook logo" },
+    { href: "https://www.instagram.com/quantapps_/", icon: "/images/icons/instagram-logo.svg", alt: "Instagram logo" },
+    { href: "https://www.linkedin.com/company/quant-apps", icon: "/images/icons/linked-in-logo.svg", alt: "LinkedIn logo" },
+    { href: "https://www.tiktok.com/@quantapps", icon: "/images/icons/tik-tok-logo.svg", alt: "TikTok logo" },
+    { href: "https://t.me/quantapps", icon: "/images/icons/telegram-logo.svg", alt: "Telegram logo" },
+    { href: "https://wa.me/37369882331", icon: "/images/icons/whats-app-logo.svg", alt: "WhatsApp logo" }
   ];
 
   const pages = ['services', 'projects', 'process', 'about-us', 'careers', 'terms-of-use', 'privacy-policy']
@@ -24,7 +24,7 @@ const Footer = async () => {
         <div className="w-full flex items-center max-small:flex-col justify-between ">
           <Link href="/" legacyBehavior>
             <a className="self-center min-w-[200px] !font-inter">
-              <Image src="/icons/logo.svg" alt="Logo" width={200} height={60} />
+              <Image src="/images/icons/logo.svg" alt="Logo" width={200} height={60} />
             </a>
           </Link>
           <div className=" flex flex-wrap gap-x-[30px] max-small:my-[30px] min-w-[330px] max-w-[500px] items-center justify-center mx-2">

@@ -7,15 +7,15 @@ import Accordion from "./_components/accordion"
 
 export default function Page() {
     return (
-        <div className="mt-[80px] px-[16px] small:px-[80px] small:mt-[112px] medium:px-[161px] flex flex-col items-center">
-            <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] medium:text-[68px]">
+        <div className="mt-[80px] px-[16px] medium:px-[161px] min-[1270px]:px-[80px] min-[1900px]:mt-[112px] flex flex-col items-center">
+            <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] min-[1900px]:text-[68px]">
                 Web & Mobile Apps + CRM Solutions to Power Your Business
             </h1>
             <div className="flex items-center justify-center relative mt-[25px] w-full">
-                <Image src="/images/pictures/ipad.webp" width={578} height={443} alt="ipad" className="h-auto w-[85%] min-[700px]:w-[530px]  min-[1400px]:w-[578px]" />
+                <Image src="/images/pictures/ipad.webp" width={578} height={443} alt="ipad" className="h-auto w-[85%] min-[700px]:w-[530px]  min-[1900px]:w-[578px]" />
                 <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt="watch video button" />
             </div>
-            <div className="w-full py-[40px] max-[1000px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[47px] relative">
+            <div className="w-full py-[40px] max-[1900px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[35px] relative">
                 <div className="bg-[#4A6ED1] px-[24px] py-[14px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%]  translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] max-[1000px]:text-[14px] font-medium text-nowrap">
                     Trusted By 20+ Companies
                 </div>
@@ -64,13 +64,13 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            {/* <Banner
-                className="mt-[50px]"
+            <Banner
+                className="mt-[20px] min-[600px]:mt-[50px]"
                 src="/images/banners/our-services-banner.png"
                 header="Our Services"
                 subHeader="Custom mobile apps built to amplify your brand’s impact."
             />
-            <div className="grid grid-cols-3 w-full">
+            <div className="grid grid-cols-3 max-[1150px]:grid-cols-2 max-[800px]:grid-cols-1 w-full">
                 <Service
                     className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/images/icons/brush.svg"
@@ -89,8 +89,6 @@ export default function Page() {
                     title="Website Development"
                     text="We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive web development ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility."
                 />
-            </div>
-            <div className="grid grid-cols-3 w-full">
                 <Service
                     className=" border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/images/icons/stats.svg"
@@ -109,6 +107,9 @@ export default function Page() {
                     text="We provide ongoing support and maintenance to keep your applications, websites, and software running smoothly. Our services include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
                 />
             </div>
+            {/* 
+
+
             <Banner
                 src="/images/banners/why-choose-us-banner.png"
                 header="Why Choose Quant-Apps?"

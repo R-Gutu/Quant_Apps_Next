@@ -68,21 +68,21 @@ const Footer = async () => {
           <div className="flex flex-wrap text-[#E6E6E6] gap-[30px] text-[16px] items-center justify-center">
             <div className="max-smallest:w-full">
               <div className="flex items-center justify-center gap-[10px]">
-                <Image width={24} height={24} src='/icons/email.svg' alt="email"></Image>
+                <Image width={24} height={24} src='/images/icons/email.svg' alt="email"></Image>
                 support@quant-apps.com
               </div>
               <hr className="w-full border-[#6A65FF1A] border-[1px]" />
             </div>
             <div className="max-smallest:w-full">
               <div className="flex items-center justify-center gap-[10px]">
-                <Image width={24} height={24} src='/icons/phone.svg' alt="email"></Image>
+                <Image width={24} height={24} src='/images/icons/phone.svg' alt="email"></Image>
                 +373 69 882 331
               </div>
               <hr className="border-[#6A65FF1A] border-[1px]" />
             </div>
             <div className="max-smallest:w-full">
               <div className="flex items-center justify-center gap-[10px]">
-                <Image width={24} height={24} src='/icons/geolocation.svg' alt="email"></Image>
+                <Image width={24} height={24} src='/images/icons/geolocation.svg' alt="email"></Image>
                 Republic of Moldova
               </div>
               <hr className="border-[#6A65FF1A] border-[1px]" />

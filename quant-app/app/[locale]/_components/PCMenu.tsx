@@ -3,19 +3,15 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Image from "next/image";
 import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { useMediaQuery } from "@mui/material";
 import { cn } from "@/lib/utils/utils";
 
 
 const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const t = useTranslations("app-toolbar");
-    const isSmallScreen = useMediaQuery("(max-width:1100px)");
     const pathname = usePathname();
     const pages = ['services', 'projects', 'process', 'about-us', 'careers']
 
     return (
-
-
         <>
             <header className="fixed top-0 left-0 z-50 bg-[var(--header-bg-color)] w-full  flex justify-between items-center
                            px-[16px] h-[108px]
@@ -25,7 +21,7 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
         ">
                 <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
                     <a className="w-[118px] h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
-                        <Image priority id="logo" src="/icons/logo.svg" width={178} height={60} alt="Logo" />
+                        <Image priority id="logo" src="/images/icons/logo.svg" width={178} height={60} alt="Logo" />
                     </a>
                 </Link>
                 <nav>

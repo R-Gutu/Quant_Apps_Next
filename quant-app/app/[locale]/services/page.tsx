@@ -2,7 +2,7 @@ import Banner from "@/components/banner";
 import { getTranslations } from "next-intl/server";
 import Header from "./_components/header";
 import Description from "./_components/description";
-import data from "@/lib/utils/servicesData";
+import services from "@/lib/utils/servicesData";
 
 const Page = async () => {
   const t = await getTranslations("services");
@@ -14,7 +14,7 @@ const Page = async () => {
             header="What We Offer?"
             subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
         />
-        {data.map(({header, description}) => (
+        {services.map(({header, description}) => (
           <div key={header.title}>
             <Header 
               title={header.title}

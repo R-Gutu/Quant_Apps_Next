@@ -7,25 +7,64 @@ import Accordion from "./_components/accordion"
 
 export default function Page() {
     return (
-        <div className="px-[161px] mt-[112px] flex flex-col items-center">
-            <h1 className="font-semibold text-[68px] text-white text-center">Web & Mobile Apps + CRM Solutions to Power Your Business</h1>
-            <div className="relative mt-[25px]">
-                <Image src="/images/pictures/ipad.webp" width={578} height={443} alt="ipad" />
-                <Image className="absolute top-[35%] left-[25%] w-[50%] h-[30%] duration-200 transition-transform cursor-pointer hover:scale-110 hover:drop-shadow" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt="watch video button" />
+        <div className="mt-[80px] px-[16px] small:px-[80px] small:mt-[112px] medium:px-[161px] flex flex-col items-center">
+            <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] medium:text-[68px]">
+                Web & Mobile Apps + CRM Solutions to Power Your Business
+            </h1>
+            <div className="flex items-center justify-center relative mt-[25px] w-full">
+                <Image src="/images/pictures/ipad.webp" width={578} height={443} alt="ipad" className="h-auto w-[85%] min-[700px]:w-[530px]  min-[1400px]:w-[578px]" />
+                <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt="watch video button" />
             </div>
-            <div className="w-full h-[170px] bg-[#6A65FF1A] rounded-[35px] mt-[47px] relative">
-                <div className="bg-[#4A6ED1] w-[303px] h-[62px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%]  translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] font-medium">
+            <div className="w-full py-[40px] max-[1000px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[47px] relative">
+                <div className="bg-[#4A6ED1] px-[24px] py-[14px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%]  translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] max-[1000px]:text-[14px] font-medium text-nowrap">
                     Trusted By 20+ Companies
                 </div>
-                <div className="w-full h-full flex [&_*]:w-[146px] justify-around items-center">
-                    <Image src="/images/icons/RYECDS.svg" width={300} height={90} alt="RYE Country Day Shool logo" />
-                    <Image src="/images/icons/vistage.svg" width={300} height={90} alt="Vistage logo" />
-                    <Image src="/images/icons/scriptpro.svg" width={300} height={90} alt="ScriptPro logo" />
-                    <Image src="/images/icons/hiiq.svg" width={300} height={90} alt="HI-IQ logo" />
-                    <Image src="/images/icons/fordham.svg" width={300} height={90} alt="Fordham University logo" />
+                <div className="w-full h-full flex justify-items-center justify-around items-center 
+                    max-[1000px]:grid max-[1000px]:grid-cols-2 max-[1000px]:gap-0 max-[700px]:[&_img]:w-[100px] [&>div]:w-full [&>div]:h-full [&>div]:flex [&>div]:justify-center [&>div]:items-center [&>div]:border-[#6A65FF1A] [&>div]:border-solid [&>div]:py-[30px]">
+                    <div className="max-[1000px]:border-r-[1px] max-[1000px]:border-b-[1px] max-[1000px]:!pt-[50px]">
+                        <Image
+                            src="/images/icons/RYECDS.svg"
+                            width={146}
+                            height={146}
+                            alt="RYE Country Day School logo"
+                        />
+                    </div>
+                    <div className="max-[1000px]:border-b-[1px] max-[1000px]:!pt-[50px]">
+                        <Image
+                            src="/images/icons/vistage.svg"
+                            width={146}
+                            height={146}
+                            alt="Vistage logo"
+                        />
+                    </div>
+                    <div className="max-[1000px]:border-r-[1px] max-[1000px]:border-b-[1px]">
+                        <Image
+                            src="/images/icons/scriptpro.svg"
+                            width={146}
+                            height={146}
+                            alt="ScriptPro logo"
+                        />
+                    </div>
+                    <div className="max-[1000px]:border-b-[1px]">
+                        <Image
+                            src="/images/icons/hiiq.svg"
+                            width={146}
+                            height={146}
+                            alt="HI-IQ logo"
+                        />
+                    </div>
+                    <div className="max-[1000px]:col-span-2">
+                        <Image
+                            className=""
+                            src="/images/icons/fordham.svg"
+                            width={146}
+                            height={146}
+                            alt="Fordham University logo"
+                        />
+                    </div>
                 </div>
             </div>
-            <Banner
+            {/* <Banner
                 className="mt-[50px]"
                 src="/images/banners/our-services-banner.png"
                 header="Our Services"
@@ -212,7 +251,7 @@ export default function Page() {
                 subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
                 button="Start Project"
                 icon="/images/icons/start_project_logo.svg"
-            />
+            /> */}
         </div>
     )
 }

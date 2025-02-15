@@ -13,9 +13,9 @@ const MobileMenu = ({menuVisible, setMenuVisible}: {menuVisible: boolean, setMen
 
   return (
     <div className={cn('top-0 left-0 h-auto p-[20px] overflow-hidden bg-white fixed z-[10000] rounded-b-[30px] w-full px-[20%] flex flex-col items-center small:hidden', {'invisible': !menuVisible})}>
-        <Image src={'/icons/logo-mobile.svg'} width={237} height={58} alt="quant apps logo" className="cursor-pointer" />
+        <Image src={'/images/icons/logo-mobile.svg'} width={237} height={58} alt="quant apps logo" className="cursor-pointer" />
       <div className="flex justify-between absolute top-[-5px] right-[5%]">
-        <Image src={'/icons/cross.svg'} onClick={() => setMenuVisible(false)} width={70} height={100} alt="cross" className="cursor-pointer" />
+        <Image src={'/images/icons/cross.svg'} onClick={() => setMenuVisible(false)} width={70} height={100} alt="cross" className="cursor-pointer" />
       </div>
       <ul className="flex flex-col w-full items-center gap-[35px] mt-[35px]">
         {pages.map(e =>

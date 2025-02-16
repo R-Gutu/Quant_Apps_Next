@@ -21,23 +21,23 @@ const Footer = async () => {
   return (
     <div className="p-[60px] bg-[#0000001a]">
       <div className=" w-full font-inter flex flex-col flex-wrap gap-[50px]">
-        <div className="w-full flex items-center max-small:flex-col justify-between ">
+        <div className="w-full flex items-center max-medium:flex-col justify-between ">
           <Link href="/" legacyBehavior>
             <a className="self-center min-w-[200px] !font-inter">
               <Image src="/images/icons/logo.svg" alt="Logo" width={200} height={60} />
             </a>
           </Link>
-          <div className=" flex flex-wrap gap-x-[30px] max-small:my-[30px] min-w-[330px] max-w-[500px] items-center justify-center mx-2">
-            <hr className=" hidden w-full border-[#6A65FF1A] border-[1px] my-5 max-small:block" />
+          <div className=" flex flex-wrap gap-x-[30px] max-medium:my-[30px] min-w-[330px] max-w-[500px] items-center justify-center mx-2">
+            <hr className=" hidden w-full border-[#6A65FF1A] border-[1px] my-5 max-medium:block" />
             {pages.map(e => <Link key={e} href={`/${e}`} legacyBehavior>
-              <a className="text-[#E6E6E6] text-[18px] font-medium text-nowrap transition-transform duration-200 hover:translate-y-[-3px]">{tToolbar(e)}</a>
+              <a className="text-[#E6E6E6] text-[18px] max-smallest:text-[16px] font-medium text-nowrap transition-transform duration-200 hover:translate-y-[-3px]">{tToolbar(e)}</a>
             </Link>
             )}
           </div>
 
           <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px] min-w-[300px]">
             <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">Stay Connected</p>
-            <div className="flex gap-[20px] max-smallest:grid max-smallest:grid-rows-2 max-smallest:grid-cols-3">
+            <div className="flex gap-[20px] max-[600px]:grid max-[600px]:grid-rows-2 max-[600px]:grid-cols-3">
               {socialLinks.map(({ href, icon, alt }) => (
                 <div key={alt} className="flex shadow-[0px_4px_8px_0px_#4A5DE533]
             items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter max-mui-md:w-[58px] max-mui-md:h-[58px]">
@@ -65,7 +65,7 @@ const Footer = async () => {
         <hr className="border-[#6A65FF1A] border-[1px] max-smallest:hidden" />
 
         <div className="w-full max-mui-md:flex-col flex flex-row max-smallest:flex-col justify-between">
-          <div className="flex flex-wrap text-[#E6E6E6] gap-[30px] text-[16px] items-center justify-center">
+          <div className="flex flex-wrap text-[#E6E6E6] gap-[30px] text-[16px] max-smallest:text-[12px] items-center justify-center">
             <div className="max-smallest:w-full">
               <div className="flex items-center justify-center gap-[10px]">
                 <Image width={24} height={24} src='/images/icons/email.svg' alt="email"></Image>

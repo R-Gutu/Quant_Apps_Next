@@ -1,7 +1,7 @@
 import Service from "../types/Service"
 
 
-const data: Service[] = [{
+const services: Service[] = [{
     header: {
       title: "Design",
       text: "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs that engage your audience and strengthen your brand. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.",
@@ -258,4 +258,4 @@ className:"border-[#6A65FF80]"
 },
 ]
 
-export default data;
+export default services;

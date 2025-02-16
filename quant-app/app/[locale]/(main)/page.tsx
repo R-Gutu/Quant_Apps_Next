@@ -70,52 +70,50 @@ export default function Page() {
                 header="Our Services"
                 subHeader="Custom mobile apps built to amplify your brand’s impact."
             />
-            <div className="grid grid-cols-3 max-[1150px]:grid-cols-2 max-[800px]:grid-cols-1 w-full">
+            <div className="grid grid-cols-3 max-[1150px]:grid-cols-2 max-[800px]:grid-cols-1 [&>div]:border-solid [&>div]:border-[#6A65FF1A] max-[800px]:[&>div]:border-0 max-[800px]:[&>div]:border-b-[1px] w-full">
                 <Service
-                    className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-b-[1px] border-r-[1px]"
                     src="/images/icons/brush.svg"
                     title="UI/UX"
                     text="We craft visually stunning, user-friendly interfaces that enhance usability, ensuring seamless navigation and engaging experiences across web and mobile applications, delivering intuitive, high-performance designs that captivate users and drive interaction."
                 />
                 <Service
-                    className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-b-[1px] min-[1150px]:border-r-[1px]"
                     src="/images/icons/puzzle.svg"
                     title="iOS & Android App Development"
                     text="We develop high-performance mobile and web applications optimized for speed, security, and scalability, ensuring seamless functionality, enhanced user experience, and robust performance. Our solutions are designed to handle high traffic, deliver smooth interactions, and provide reliable, secure architecture for businesses aiming for long-term growth and success."
                 />
                 <Service
-                    className="border-b-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-b-[1px] max-[1150px]:border-r-[1px]"
                     src="/images/icons/dev.svg"
                     title="Website Development"
                     text="We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive web development ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility."
                 />
                 <Service
-                    className=" border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="min-[1150px]:border-r-[1px] max-[1150px]:border-b-[1px]"
                     src="/images/icons/stats.svg"
                     title="CRM Solutions"
                     text="We develop custom CRM solutions to streamline business operations, enhance customer relationships, and improve workflow efficiency. Our scalable and secure CRM systems integrate seamlessly with your existing tools, providing automation, data insights, and centralized management to boost productivity, optimize sales processes, and drive business growth."
                 />
                 <Service
-                    className=" border-r-[1px] border-solid border-[#6A65FF1A]"
+                    className="border-r-[1px]"
                     src="/images/icons/platforms.svg"
                     title="Cross-Platform Development"
                     text="We specialize in cross-platform development, creating high-performance mobile apps that run seamlessly on iOS and Android. Using modern frameworks like React Native and Flutter, we deliver cost-effective, scalable, and user-friendly applications with a native-like experience, ensuring broad market reach, faster development, and streamlined maintenance."
                 />
                 <Service
+                    className="max-[800px]:!border-0"
                     src="/images/icons/gear.svg"
                     title="Support & Maintenance"
                     text="We provide ongoing support and maintenance to keep your applications, websites, and software running smoothly. Our services include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
                 />
             </div>
-            {/* 
-
-
             <Banner
                 src="/images/banners/why-choose-us-banner.png"
                 header="Why Choose Quant-Apps?"
                 subHeader="Unlock digital excellence with our expert team, crafting high-performance solutions designed for outstanding results and seamless user experiences."
             />
-            <div className="grid grid-cols-2 w-full">
+            <div className="grid grid-cols-2 max-[900px]:grid-cols-1 w-full [&>div]:border-solid [&>div]:border-[#6A65FF1A] max-[900px]:[&>div]:border-0 max-[900px]:[&>div]:border-b-[1px]">
                 <Reason
                     className="border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/images/icons/stars.svg"
@@ -128,8 +126,6 @@ export default function Page() {
                     title="Client-Focused Digital Strategy"
                     text="We prioritize your business goals, customizing our web and mobile development services to align with your vision. Through strategic collaboration and deep market insights, we create user-centric solutions that drive engagement and success."
                 />
-            </div>
-            <div className="grid grid-cols-2 w-full">
                 <Reason
                     className="border-r-[1px] border-solid border-[#6A65FF1A]"
                     src="/images/icons/stats.svg"
@@ -137,6 +133,7 @@ export default function Page() {
                     text="Our core mission is to deliver measurable results. By combining technical expertise with creative problem-solving, we develop high-performance apps, websites, and CRM systems that enhance user experiences, boost efficiency, and accelerate business growth."
                 />
                 <Reason
+                    className="max-[900px]:!border-0"
                     src="/images/icons/case.svg"
                     title="Long-Term Digital Partnership"
                     text="We believe in lasting client relationships, providing continuous support, maintenance, and updates for your digital products. Our commitment ensures seamless functionality, security, and performance, helping your business stay competitive and innovative."
@@ -148,7 +145,7 @@ export default function Page() {
                 subHeader="At Quant-Apps, we deliver top-tier digital solutions that drive success. Hear from our satisfied clients!"
             />
             <div className="relative">
-                <div className="grid grid-cols-2 w-full">
+                <div className="grid grid-cols-2 max-[1150px]:grid-cols-1 w-full [&>div]:border-solid [&>div]:border-[#6A65FF1A] max-[1150px]:[&>div]:border-0 max-[1150px]:[&>div]:border-b-[1px]">
                     <Review
                         content="Great! So quick and easy to work with. We are super satisfied so far and will continue to work."
                         name="Sarah Istwany"
@@ -163,15 +160,13 @@ export default function Page() {
                         description="Client from Fiverr"
                         imgHeight={38}
                     />
-                </div>
-                <div className="grid grid-cols-2 w-full">
                     <Review
                         content="Very good work looking forward to working together again."
                         name="Leslie Alexander"
                         src="/images/icons/fiverr.svg"
                         description="Client from Fiverr"
                         imgHeight={38}
-                        className="border-r-[1px] border-solid border-[#6A65FF1A] [&>div]:mb-[100px]"
+                        className="border-r-[1px] border-solid border-[#6A65FF1A] min-[1150px]:[&>div]:mb-[100px]"
                     />
                     <Review
                         content="10 out of 10 will recommend!"
@@ -179,21 +174,22 @@ export default function Page() {
                         src="/images/icons/fiverr.svg"
                         description="Client from Fiverr"
                         imgHeight={38}
-                        className="[&>div]:mb-[100px]"
+                        className="min-[1150px]:[&>div]:mb-[100px] max-[800px]:!border-0"
                     />
                 </div>
-                <div className="absolute bottom-[30px] right-[80px] flex text-white items-center gap-2">
+                <div className="absolute max-[1150px]:hidden bottom-[30px] right-[80px] flex text-white items-center gap-2">
                     <p className="font-semibold text-[24px]">More reviews can be viewed on</p>
                     <Image src="/images/icons/fiverr_purple.svg" width={43} height={43} alt="Fiverr logo" />
                 </div>
             </div>
+
             <Banner
                 src="/images/banners/faqs_banner.png"
                 header="Frequently Asked Questions"
                 subHeader="Still you have any questions? Contact our Team via support@quant-apps.com"
             />
-            <div className="grid grid-cols-2 mb-[80px]">
-                <div>
+            <div className="grid grid-cols-2 max-[1100px]:grid-cols-1 mb-[80px]">
+                <div className="max-[1100px]:[&>div]:border-0 max-[1100px]:[&>div]:border-b-[1px]">
                     <Accordion
                         className="border-b-[1px] border-r-[1px]"
                         number="01"
@@ -211,7 +207,7 @@ export default function Page() {
                         number="03"
                         question="How much does app development cost?"
                         answer="The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for iOS apps, Android apps, cross-platform solutions, and CRM systems."
-                        />
+                    />
                     <Accordion
                         className="border-b-[1px] border-r-[1px]"
                         number="04"
@@ -219,7 +215,7 @@ export default function Page() {
                         answer="At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative solutions. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly apps for iOS, Android, and cross-platform solutions."
                     />
                 </div>
-                <div>
+                <div className="max-[1100px]:[&>div]:border-0 max-[1100px]:[&>div]:border-b-[1px]">
                     <Accordion
                         className="border-b-[1px] border-l-[1px] translate-x-[-1px]"
                         number="05"
@@ -239,7 +235,7 @@ export default function Page() {
                         answer="Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your app stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve."
                     />
                     <Accordion
-                        className="border-b-[1px] border-l-[0.5px] translate-x-[-1px]"
+                        className="border-b-[1px] border-l-[0.5px] translate-x-[-1px] max-[1100px]:!border-0"
                         number="08"
                         question="How do I get started with Quant-Apps?"
                         answer="Getting started is simple! Contact us for a free consultation where we’ll discuss your app idea, goals, and requirements. From there, we’ll guide you through the development process and help bring your vision to life."
@@ -252,7 +248,7 @@ export default function Page() {
                 subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
                 button="Start Project"
                 icon="/images/icons/start_project_logo.svg"
-            /> */}
+            />
         </div>
     )
 }

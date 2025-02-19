@@ -15,7 +15,7 @@ const Block = ({title, src, alt, linkname, link, text, className }: {title: stri
                     <div className="w-fit max-w-[400px] max-medium:max-w-[300px] max-[700px]:max-w-[200px] truncate pt-[10px] pr-[14px] pb-[10px] pl-[14px] gap-[10px] rounded-[8px] bg-[#4A6ED1] font-normal text-[20px] max-smallest:text-[14px] max-smallest:max-w-[100px] leading-[30px] tracking-[-0.6%] text-[#FFFFFF]">{link}</div>
                 </div>
                 <div className="flex items-end">
-                    <div className="w-[50] h-[50] rounded-[8px] p-[10px] bg-[#4A6ED1] flex items-center justify-center">
+                    <div className="btn w-[50] h-[50] rounded-[8px] p-[10px] bg-[#4A6ED1] flex items-center justify-center">
                         <Link href={link} legacyBehavior>
                             <a target="_blank">
                                 <Image width={30} height={30} alt="arrow" src="/images/icons/projectsArrow.svg" />

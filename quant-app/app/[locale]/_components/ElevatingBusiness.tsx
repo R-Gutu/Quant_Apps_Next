@@ -17,7 +17,7 @@ const ElevatingBusiness = () => {
           <p className="font-normal text-[18px] max-mui-md:text-[16px] max-[1550px]:max-w-[500px] max-[1400px]:max-w-[300px] max-small:max-w-fit text-center small:truncate text-[#FFFFFF]">Where innovation, technology, and strategy align to drive business success.</p>
         </div>
       </div>
-      <div className=" pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
+      <div className="btn pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
         <p className="font-medium text-[18px] max-mui-md:text-[14px] text-[#FFFFFF]">Start Project</p>
       </div>
     </div>

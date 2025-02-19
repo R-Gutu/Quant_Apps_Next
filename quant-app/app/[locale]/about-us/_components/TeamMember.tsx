@@ -7,8 +7,8 @@ const TeamMember = ({name, position, link, text, src, alt} : {name: string, posi
         <div className="w-full flex justify-evenly items-center">
             <Image src={src} width={50} height={50} alt={alt} className="w-full h-auto max-w-[80px]"/>
             <div className="h-full flex flex-col justify-end ml-3">
-                <h2 className="font-medium text-[20px] leading-[24.2px] tracking-[0%] text-[#000000]">{name}</h2>
-                <p className="font-normal text-[18px] leading-[21.78px] tracking-[0%] text-[#000000]">{position}</p>
+                <h2 className="font-medium text-[20px] max-mui-md:text-[18px] max-smallest:text-[16px] text-[#000000]">{name}</h2>
+                <p className="font-normal text-[18px] max-mui-md:text-[16px] max-smallest:text-[14px] text-[#000000]">{position}</p>
             </div>
             <div className="h-full flex justify-start items-start">
                 <Link href={link}>
@@ -17,7 +17,7 @@ const TeamMember = ({name, position, link, text, src, alt} : {name: string, posi
             </div>
         </div>
         <hr className="border-[1px] border-solid border-[#000000]"/>
-        <div className="font-normal text-[18px] leading-[21.78px] tracking-[0%] text-[#000000]">
+        <div className="font-normal text-[18px] max-mui-md:text-[16px] max-smallest:text-[14px] text-[#000000]">
             <p>{text}</p>
         </div>
     </div>

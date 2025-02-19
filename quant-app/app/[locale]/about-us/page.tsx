@@ -3,6 +3,7 @@ import Image from "next/image";
 import TeamMember from "./_components/TeamMember";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
 import TeamMemberType from "@/lib/types/MemberType";
+import TimelineBlock from "./_components/TimelineBlock";
 
 const Page = async () => {
 
@@ -56,6 +57,40 @@ const Page = async () => {
       text: "A passionate developer with hands-on experience in React and JavaScript. Dedicated to building efficient, responsive, and interactive web interfaces."
     },
   ]
+
+  const timeline = [
+    {
+      id: "01",
+      title: "A GOOD IDEA",
+      text: "From Fiverr freelancer to design expert, mastering vector tracing and beyond"
+    },
+    {
+      id: "02",
+      title: "START MOVING",
+      text: "Added UI/UX and logo design, growing a versatile design portfolio"
+    },
+    {
+      id: "03",
+      title: "INCREASE",
+      text: "Ventured into app development with a grocery app, embracing digital innovation"
+    },
+    {
+      id: "04",
+      title: "TAKE TIME",
+      text: "Mastered app development with innovative projects"
+    },
+    {
+      id: "05",
+      title: "INNOVATION",
+      text: "Built projects with advanced tech, shaping Quant-Apps future"
+    },
+    {
+      id: "06",
+      title: "QUANT-APPS LAUNCH",
+      text: "Founded Quant-Apps, specializing in innovative IT solutions"
+    },
+  ]
+
   return (
     <div className="flex flex-col font-inter px-[100px] max-mui-md:px-[40px] ">
         <Banner
@@ -64,10 +99,10 @@ const Page = async () => {
             header="About us"
             subHeader="Where innovation meets your vision—crafting digital experiences that inspire"
         />
-        <div className="w-full flex gap-[150px] px-[100px] py-[60px] max-medium:flex-col">
-          <div className="flex flex-col gap-[20px] justify-center">
-            <h1 className="font-semibold text-[44px] text-[#FFFFFF]">About Quant-Apps</h1>
-            <div className="font-normal text-[20px] text-[#E6E6E6] opacity-75">
+        <div className="w-full flex gap-[150px] max-medium:gap-[40px] px-[100px] max-mui-md:px-[40] py-[60px] max-medium:flex-col">
+          <div className="flex flex-col gap-[20px] justify-center ">
+            <h1 className="font-semibold text-[44px] max-mui-md:text-[34px] max-smallest:text-[24px] max-smallest:text-center text-[#FFFFFF]">About Quant-Apps</h1>
+            <div className="font-normal text-[20px] max-mui-md:text-[18px] max-smallest:text-[14px] text-[#E6E6E6] opacity-75">
               <p className="indent-6">At Quant-Apps, we transform bold ideas into high-performance apps and websites. Despite being a young company, our team combines years of experience with cutting-edge technology to deliver custom digital solutions that exceed expectations.</p>
               <p className="indent-6">We specialize in mobile app development, web design, and digital transformation, crafting visually stunning, high-functioning platforms that engage users and drive business growth. Our creative thinkers and technical experts work closely with clients, ensuring a collaborative, tailored approach for each project.</p>
               <p className="indent-6">What sets us apart?</p>
@@ -78,13 +113,18 @@ const Page = async () => {
             <Image width={490} height={490} className="w-full h-auto rounded-[16px] border-[3px] border-solid border-[#6A65FF80]" alt="about1" src="/images/pictures/about1.png"/>
         </div>
         <div className="flex flex-col gap-[50px]">
-          <h2 className="font-semibold text-[64px] leading-[83.2px] tracking-[0%] text-[#FFFFFF]">Timeline</h2>
-          <div className="w-full">
-            <Image src="/images/pictures/enTimeline.png" alt="timeline" width={500} height={500} className="object-fill aspect-auto"/>
+          <h2 className="font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[40px] text-[#FFFFFF]">Timeline</h2>
+          <div className="w-full max-mui-md:hidden">
+            <Image src="/images/pictures/enTimeline.png" alt="timeline" width={500} height={500} className="w-full object-fill aspect-auto"/>
+          </div>
+          <div className="mui-md:hidden">
+            {timeline.map((item, index) => (
+              <TimelineBlock key={index} {...item}/>
+            ))}
           </div>
         </div>
-        <div className="flex flex-col gap-[50px] px-[40px] py-[50px]">
-          <h2 className="text-center font-semibold text-[64px] leading-[83.2px] tracking-[0%] text-[#FFFFFF]">Team</h2>
+        <div className="flex flex-col gap-[50px] px-[40px] py-[50px] max-smallest:px-[0px] max-smallest:py-[30px]">
+          <h2 className="text-center font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[36px] text-[#FFFFFF]">Team</h2>
           <div className="w-full grid grid-cols-3 grid-rows-2 gap-[50px] max-medium:grid-cols-2 max-medium:grid-rows-3 max-small:grid-cols-1 max-small:place-items-center">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />

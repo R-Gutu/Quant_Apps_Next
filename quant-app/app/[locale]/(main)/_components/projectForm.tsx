@@ -46,7 +46,7 @@ export default function ProjectForm() {
 
     return (
         <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-[40px] items-center w-full py-[100px] px-[20%]'>
-            <div className='flex w-full gap-[40px]'>
+            <div className='flex max-[1200px]:flex-col w-full gap-[40px]'>
                 <div className='w-full flex flex-col gap-[20px] border-[1px] border-solid border-[#6A65FF] rounded-[8px] py-[24px] px-[40px]'>
                     <label htmlFor="name" className='text-[22px] text-white'>Full Name</label>
                     <input id="name" {...register("name")} type="text" placeholder='Type here' className='appearance-none bg-transparent placeholder:text-[#656567] placeholder:text-[18px] border-b-[1px] border-[#333333] p-[6px] outline-none focus:placeholder:text-opacity-0 text-white' />

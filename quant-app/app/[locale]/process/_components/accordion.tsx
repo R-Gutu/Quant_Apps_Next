@@ -11,7 +11,7 @@ const Accordion = ({id, title, text} : {id: string, title: string, text: string}
     return (
         <div 
             onClick={onClickAccordion} 
-            className={`cursor-pointer px-[60px] py-[40px] max-mui-md:px-[40px] max-mui-md:py-[20px] max-smallest:px-[20px] flex flex-col gap-[30px] max-smallest:gap-[20px] rounded-[12px] transition-colors duration-500 ease-in-out ${
+            className={`cursor-pointer px-[60px] py-[40px] max-mui-md:px-[40px] max-mui-md:py-[20px] max-smallest:px-[20px] flex flex-col gap-[30px] max-smallest:gap-[20px] rounded-[12px] transition-colors duration-200 ease-in-out ${
                 active 
                     ? "bg-[linear-gradient(87.57deg,_#5D5FEF_1.02%,_#0A1A3F_143.1%)] shadow-[0px_5px_15px_0px_#9B6BFFB2] shadow-[inset_0px_4px_8px_0px_#00000040]"
                     : "bg-transparent border-[2px] border-[#E1E4ED]"
@@ -22,8 +22,8 @@ const Accordion = ({id, title, text} : {id: string, title: string, text: string}
                     <div className="font-semibold text-[60px] max-mui-md:text-[50px] max-smallest:text-[40px] leading-[72.61px] tracking-[0%] text-[#B8B6FF]">{id}</div>
                     <h2 className="font-semibold text-[30px] max-mui-md:text-[28px] max-smallest:text-[18px] leading-[36.31px] tracking-[0%] text-[#E5E9F0]">{title}</h2>
                 </div>
-                <div className={`${active ? "" : "hidden"} flex items-center`}>
-                    <Image width={30} height={30} className="max-smallest:w-[20px]" alt="cross" src="/images/icons/faqCross.svg"/>
+                <div className={`transition-transform ${active ? "rotate-45" : ""} flex items-center`}>
+                    <Image width={30} height={30} className="w-[30px] min-w-[30px] max-smallest:w-[20px] max-smallest:min-w-[20px]" alt="cross" src="/images/icons/plus.svg"/>
                 </div>
             </div>
 

@@ -3,12 +3,63 @@ import Image from "next/image";
 import TeamMember from "./_components/TeamMember";
 
 const Page = async () => {
+  const teamMembers = [
+    {
+      name: "Roman Gutu",
+      position: "CEO and Founder",
+      link: "",
+      src: "/images/pictures/roman.png",
+      alt: "roman",
+      text: "CEO with 7+ years in CRM, app, and website development, creating innovative and scalable solutions."
+    },
+    {
+      name: "Veaceslav Soltan",
+      position: "CO-Founder",
+      link: "",
+      src: "/images/pictures/slavic.png",
+      alt: "vyacheslav",
+      text: "Experienced graphic designer with over 7 years in UI/UX and motion design, creating impactful and user-friendly digital experiences."
+    },
+    {
+      name: "Vitalie Cernovschi",
+      position: "Senior Full-Stack Developer",
+      link: "",
+      src: "/images/pictures/vitalie.png",
+      alt: "vitalie",
+      text: "Expert in front-end and back-end technologies, specializing in scalable web solutions and performance optimization."
+    },
+    {
+      name: "Maxim Roenco",
+      position: "Middle Front-End Developer",
+      link: "https://www.linkedin.com/in/roencomax/",
+      src: "/images/pictures/maxim.png",
+      alt: "maxim",
+      text: "Experienced in HTML, CSS, JavaScript, and responsive design. Focused on user-friendly interfaces and web performance."
+    },
+    {
+      name: "Islam Abu Koush",
+      position: "Middle Front-End Developer",
+      link: "https://www.linkedin.com/in/islam-abu-koush-a191a2299/",
+      src: "/images/pictures/islam.png",
+      alt: "islam",
+      text: "Skilled in React, JavaScript, and UI frameworks. Passionate about interactive design and performance optimization."
+    },
+    {
+      name: "Denis Soltan",
+      position: "Junior Front-End Developer",
+      link: "https://www.linkedin.com/in/denis-soltan-52a1a2305/",
+      src: "/images/pictures/denis.png",
+      alt: "denis",
+      text: "A passionate developer with hands-on experience in React and JavaScript. Dedicated to building efficient, responsive, and interactive web interfaces."
+    },
+  ]
   return (
     <div className="flex flex-col font-inter px-[160px]">
         <Banner
-            src="/images/what-we-offer-banner.png"
-            header="What We Offer?"
-            subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
+            className="mt-[20px] min-[600px]:mt-[50px]"
+            src="/images/banners/our-services-banner.png"
+            header="About us"
+            subHeader="Where innovation meets your vision—crafting digital experiences that inspire"
         />
         <div className="flex gap-[150px] px-[140px] py-[60px]">
           <div className="flex flex-col gap-[20px] justify-center">
@@ -34,12 +85,9 @@ const Page = async () => {
         <div className="flex flex-col gap-[50px] px-[140px] py-[50px]">
           <h2 className="font-semibold text-[64px] leading-[83.2px] tracking-[0%] text-[#FFFFFF]">Team</h2>
           <div className="grid grid-cols-3 grid-rows-2 gap-[50px]">
-            <TeamMember/>
-            <TeamMember/>
-            <TeamMember/>
-            <TeamMember/>
-            <TeamMember/>
-            <TeamMember/>
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} />
+          ))}
           </div>
         </div>
         <div className="flex flex-col gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px]">

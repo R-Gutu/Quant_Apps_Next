@@ -1,5 +1,6 @@
 import Banner from "@/components/banner"
 import Accordion from "./_components/accordion"
+import HeadText from "../_components/HeadText"
 
 
 const page = () => {
@@ -53,23 +54,22 @@ const page = () => {
   return (
     <div className="px-[100px] max-mui-md:px-[40px] font-inter">
         <Banner
-            src="/images/what-we-offer-banner.png"
-            header="What We Offer?"
-            subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
+            src="/images/banners/faqs_banner.png"
+            header="Our Working Process "
+            subHeader="A Comprehensive Guide to Reaching Your Business Objectives"
         />
-        <div className="p-10 flex flex-col gap-[16px]">
-            <h1 className="font-semibold text-[48px] max-smallest:text-[26px] max-[400px]:text-[22px] leading-[58.09px] tracking-[0%] text-[#FFFFFF]">At Quant-Apps</h1>
-            <p className="font-normal text-[18px] leading-[27px] max-smallest:text-[14px] tracking-[-0.6%] text-[#E6E6E6] opacity-75">We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success.</p>
-        </div>
+        <HeadText/>
         <div className="flex flex-col gap-[30px] pb-[100px]">
             {process.map((item, index) => (
                 <Accordion key={index} {...item}/>
             ))}
         </div>
         <Banner
-            src="/images/what-we-offer-banner.png"
-            header="What We Offer?"
-            subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
+            src="/images/banners/what-clients-say-banner.png"
+            header="Excited to work together on your next project?"
+            subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
+            button="Start Project"
+            icon="/images/icons/start_project_logo.svg"
         />
     </div>
   )

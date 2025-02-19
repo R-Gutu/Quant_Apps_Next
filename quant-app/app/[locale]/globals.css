@@ -20,3 +20,11 @@
 .drop-shadow {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.279))
 }
+
+.btn {
+    @apply scale-100 cursor-pointer transition-all ease-out duration-300 will-change-transform
+}
+
+.btn:hover {
+    @apply scale-105 brightness-110
+}

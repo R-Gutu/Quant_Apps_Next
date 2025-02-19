@@ -11,7 +11,7 @@ export default function Review({ content, src, name, description, imgHeight=70, 
                         <p className="font-normal text-[18px] max-[1800px]:text-[14px]">{description}</p>
                     </div>
                 </div>
-                <div className="max-[600px]:hidden text-nowrap bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] py-[18px] px-[20px] rounded-[8px] text-[18px] max-[1800px]:text-[14px] font-medium">
+                <div className="btn max-[600px]:hidden text-nowrap bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] py-[18px] px-[20px] rounded-[8px] text-[18px] max-[1800px]:text-[14px] font-medium">
                     Open Website
                 </div>
             </div>

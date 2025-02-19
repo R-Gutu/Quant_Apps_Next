@@ -4,6 +4,7 @@ import Service from "./_components/service"
 import Reason from "./_components/reason"
 import Review from "./_components/review"
 import Accordion from "./_components/accordion"
+import ProjectForm from "./_components/projectForm"
 
 export default function Page() {
     return (
@@ -249,6 +250,7 @@ export default function Page() {
                 button="Start Project"
                 icon="/images/icons/start_project_logo.svg"
             />
+            <ProjectForm />
         </div>
     )
 }

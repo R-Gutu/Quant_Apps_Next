@@ -20,7 +20,7 @@ export default function Accordion({ question, answer, number, className }: { que
 
                     <h2 className={cn("font-medium text-[22px] text-white duration-300 transition-colors max-[600px]:text-[16px]", { "text-[#6DB9FF]": isOpen })}>{question}</h2>
                 </div>
-                <div onClick={() => setIsOpen(p => !p)} className={cn("cursor-pointer p-[7px] w-[34px] h-[34px] duration-300 transition-transform", { "rotate-45": isOpen })}>
+                <div onClick={() => setIsOpen(p => !p)} className={cn("cursor-pointer p-[7px] w-[34px] h-[34px] duration-300 transition-transform will-change-transform", { "rotate-45": isOpen })}>
                     <Cross className={cn("fill-white duration-300 transition-colors", { "fill-[#6DB9FF]": isOpen })} />
                 </div>
             </div>

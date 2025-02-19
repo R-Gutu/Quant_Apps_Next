@@ -9,7 +9,7 @@ import ProjectForm from "./_components/projectForm"
 export default function Page() {
     return (
         <div className="mt-[80px] px-[16px] medium:px-[161px] min-[1270px]:px-[80px] min-[1900px]:mt-[112px] flex flex-col items-center">
-            <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] min-[1900px]:text-[68px]">
+            {/* <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] min-[1900px]:text-[68px]">
                 Web & Mobile Apps + CRM Solutions to Power Your Business
             </h1>
             <div className="flex items-center justify-center relative mt-[25px] w-full">
@@ -249,7 +249,7 @@ export default function Page() {
                 subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
                 button="Start Project"
                 icon="/images/icons/start_project_logo.svg"
-            />
+            /> */}
             <ProjectForm />
         </div>
     )

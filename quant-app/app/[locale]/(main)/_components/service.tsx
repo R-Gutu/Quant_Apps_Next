@@ -11,7 +11,7 @@ export default function Service({ src, title, text, className }: { src: string, 
                 </div>
                 <p className="font-normal text-[16px] mb-[34px] text-[#C0C4CD]">{text}</p>
             </div>
-            <div className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)]">Learn More</div>
+            <div className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] btn">Learn More</div>
         </div>
     )
 }

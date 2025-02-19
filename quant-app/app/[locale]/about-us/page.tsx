@@ -4,6 +4,7 @@ import TeamMember from "./_components/TeamMember";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
 import TeamMemberType from "@/lib/types/MemberType";
 import TimelineBlock from "./_components/TimelineBlock";
+import TimelineType from "@/lib/types/TimelineType";
 
 const Page = async () => {
 
@@ -58,7 +59,8 @@ const Page = async () => {
     },
   ]
 
-  const timeline = [
+
+  const timeline : TimelineType[] = [
     {
       id: "01",
       title: "A GOOD IDEA",

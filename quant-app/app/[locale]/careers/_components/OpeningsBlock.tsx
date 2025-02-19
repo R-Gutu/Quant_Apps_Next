@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const OpeningsBlock = ({title, name, text, src, alt} : {title: string, name: string, text: string, src: string, alt: string}) => {
   return (
@@ -12,7 +13,9 @@ const OpeningsBlock = ({title, name, text, src, alt} : {title: string, name: str
                 <h2 className="text-[24px] text-[#FFFFFF] max-mui-md:text-[22px]">{name}</h2>
                 <p className="text-[18px] text-[#E6E6E6] opacity-75 max-mui-md:text-[16px] max-smallest:text-[14px]">{text}</p>
             </div>
-            <div className="btn py-[18px] px-[16px] text-[18px] max-smallest:text-[16px] max-mui-md:py-[16px] max-smallest:py-[12px] text-[#FFFFFF] rounded-[8px] text-center bg-[linear-gradient(90deg,#8D139B_-111.43%,#841BA1_-78.76%,#6D32B1_-28.79%,#4958CC_34.63%,#2979E4_80.76%)]">Apply Now</div>
+            <Link href="mailto:support@quant-apps.com?subject=Support Request&body=Hello, I need help with..." legacyBehavior>
+            <a className="btn py-[18px] px-[16px] text-[18px] max-smallest:text-[16px] max-mui-md:py-[16px] max-smallest:py-[12px] text-[#FFFFFF] rounded-[8px] text-center bg-[linear-gradient(90deg,#8D139B_-111.43%,#841BA1_-78.76%,#6D32B1_-28.79%,#4958CC_34.63%,#2979E4_80.76%)]">Apply Now</a>
+            </Link>
         </div>
     </div>
   )

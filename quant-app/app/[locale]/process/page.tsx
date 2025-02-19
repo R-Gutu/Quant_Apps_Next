@@ -1,10 +1,11 @@
 import Banner from "@/components/banner"
 import Accordion from "./_components/accordion"
 import HeadText from "../_components/HeadText"
+import ProcessType from "@/lib/types/ProcessType"
 
 
 const page = () => {
-    const process = [
+    const process : ProcessType[] = [
         {
             id: "01",
             title: "Consultation",

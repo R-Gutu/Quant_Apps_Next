@@ -2,9 +2,11 @@ import Banner from "@/components/banner";
 import Image from "next/image";
 import TeamMember from "./_components/TeamMember";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
+import TeamMemberType from "@/lib/types/MemberType";
 
 const Page = async () => {
-  const teamMembers = [
+
+  const teamMembers : TeamMemberType[] = [
     {
       name: "Roman Gutu",
       position: "CEO and Founder",

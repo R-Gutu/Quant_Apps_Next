@@ -4,9 +4,12 @@ import CarrersBlock from "./_components/CareersBlock"
 import HeadText from "../_components/HeadText"
 import OpeningsBlock from "./_components/OpeningsBlock"
 import ElevatingBusiness from "../_components/ElevatingBusiness"
+import OpeningsType from "@/lib/types/OpeningsType"
+import CareersType from "@/lib/types/CareersType"
 
 const page = () => {
-    const careers = [
+
+    const careers : CareersType[] = [
         {
             title: "Work on Cutting-Edge Software Projects: Mobile Apps, CRM, AI & Web Development",
             text: "Be part of a team that creates scalable digital solutions, including custom enterprise software, mobile apps, AI-powered automation, and high-performance web platforms.",
@@ -29,7 +32,7 @@ const page = () => {
         },
     ]
 
-    const openings = [
+    const openings : OpeningsType[] = [
         {
             title: "Design Job Openings",
             name: "UI/UX Designer",

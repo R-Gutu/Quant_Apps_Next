@@ -1,0 +1,28 @@
+import Image from 'next/image'
+
+const ElevatingBusiness = () => {
+  return (
+    <div className="flex flex-col mt-[20px] gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px] max-mui-md:p-[40px] max-smallest:p-[20px]">
+    <div className="flex gap-[40px] max-mui-md:flex-col items-center">
+      <Image src="/images/icons/logo1.svg" width={130} height={150} alt="logo"/>
+      <div className="flex flex-col items-center justify-center max-mui-md:text-center gap-[20px]">
+        <h2 className="font-medium text-[30px] max-mui-md:text-[24px] text-[#98989A]">Quant-Apps: Elevating Businesses with Cutting-Edge Digital Solutions</h2>
+        <p className="font-normal text-[18px] max-mui-md:text-[16px] text-[#98989A]">We specialize in custom software development, mobile apps, and web design, transforming ideas into high-performance digital products. Our expertise in UX/UI, agile development, and CRM solutions ensures seamless, scalable, and results-driven experiences.</p>
+      </div>
+    </div>
+    <div className="flex justify-between items-center max-small:flex-col max-small:max-small:gap-[20px] px-[24px] py-[40px] rounded-[12px] border-[1px] border-solid border-[#6A65FF80] backdrop-filter backdrop-blur-md bg-[#00000033] max-small:bg-[#24242433]">
+      <div className="flex max-small:flex-col  items-center gap-[20px]">
+        <h2 className="font-normal text-[20px] max-mui-md:text-[18px] text-[#98989A]">Welcome to Quant-Apps</h2>
+        <div className="pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[8px] bg-[#4267B2] max-small:bg-[#00000033]">
+          <p className="font-normal text-[18px] max-mui-md:text-[16px] max-[1550px]:max-w-[500px] max-[1400px]:max-w-[300px] max-small:max-w-fit text-center small:truncate text-[#FFFFFF]">Where innovation, technology, and strategy align to drive business success.</p>
+        </div>
+      </div>
+      <div className=" pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
+        <p className="font-medium text-[18px] max-mui-md:text-[14px] text-[#FFFFFF]">Start Project</p>
+      </div>
+    </div>
+  </div>
+  )
+}
+
+export default ElevatingBusiness

@@ -58,7 +58,10 @@ const page = () => {
             header="Our Working Process "
             subHeader="A Comprehensive Guide to Reaching Your Business Objectives"
         />
-        <HeadText/>
+        <HeadText 
+            title="At Quant-Apps"
+            text="We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
+        />
         <div className="flex flex-col gap-[30px] pb-[100px]">
             {process.map((item, index) => (
                 <Accordion key={index} {...item}/>

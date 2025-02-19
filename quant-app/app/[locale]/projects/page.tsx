@@ -68,7 +68,10 @@ const page = () => {
             header="Our projects"
             subHeader="Innovation starts with a vision. Explore the exciting projects we’ve turned into reality!"
         />
-        <HeadText/>
+        <HeadText
+            title="At Quant-Apps"
+            text="We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
+        />
         <div className="grid grid-cols-2 max-small:grid-cols-1">
             {projects.map((item, index) => (
                 <Block key={index} {...item}/>

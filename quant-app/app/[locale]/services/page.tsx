@@ -265,7 +265,7 @@ const Page = async () => {
   ]
 
   return (
-    <div className="px-[100px] mt-[62px] font-inter max-mui-md:px-[40px] max-smallest:px-[20px]">
+    <div className="px-[100px] mt-[62px] font-inter max-mui-md:px-[40px] max-smallest:px-[10px]">
       <Banner
             src="/images/what-we-offer-banner.png"
             header="What We Offer?"
@@ -288,11 +288,13 @@ const Page = async () => {
             ))}
           </div>
         ))}
-      <Banner
-          src="/images/what-we-offer-banner.png"
-          header="What We Offer?"
-          subHeader="Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand’s impact."
-      />
+        <Banner
+            src="/images/banners/what-clients-say-banner.png"
+            header="Excited to work together on your next project?"
+            subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
+            button="Start Project"
+            icon="/images/icons/start_project_logo.svg"
+        />
     </div>
   );
 };

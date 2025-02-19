@@ -2,8 +2,8 @@ import Block from "./block";
 
 export default function Description({ title, blocks, className }: { title: string; blocks: any; className?: string }) {
     return (
-      <div>
-        <h2 className="font-medium text-[28px] leading-[33.89px] tracking-[0] text-[#98989A] ml-10 my-10">{title}</h2>
+      <div className="max-mui-md:text-center">
+        <h2 className="font-medium text-[28px] max-smallest:text-[24px] max-[400px]:text-[22px] max-mui-md:text-[26px] text-[#98989A] ml-10 max-mui-md:ml-0 my-10">{title}</h2>
         
         <div className={`grid grid-cols-2 mui-md:grid-cols-4 ${className}`}>
         <Block

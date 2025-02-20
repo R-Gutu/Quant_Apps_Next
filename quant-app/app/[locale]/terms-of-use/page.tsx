@@ -1,240 +1,79 @@
+import Banner from "@/components/banner";
 import { getTranslations } from "next-intl/server";
-
-import { Box, Grid2, Typography } from "@mui/material";
-
-import NextProject from "@/app/[locale]/_sections/NextProject";
-import Blur from "@/components/Blur";
 import Image from "next/image";
+import ElevatingBusiness from "../_components/ElevatingBusiness";
 
 const Page = async () => {
   const t = await getTranslations("terms-of-use");
 
   return (
-    <Grid2
-      className="pt-[150px] max-[950px]:pt-[100px]"
-      container
-      sx={{
-        "& h1": {
-          color: "white",
-          fontWeight: "700",
-          alignContent: "center",
-          fontSize: { xs: "32px", md: "56px" },
-          lineHeight: { xs: "39.36px", md: "68.88px" },
-        },
-        "& h2": {
-          color: "#CACACA",
-          fontWeight: "600",
-          alignContent: "center",
-          fontSize: { xs: "12px", md: "25px" },
-          lineHeight: { xs: "14.4px", md: "30px" },
-        },
-        "& p": {
-          color: "white",
-          alignContent: "center",
-          fontWeight: "500",
-          fontSize: { xs: "12px", md: "20px" },
-          lineHeight: { xs: "14.76px", md: "27px" },
-        },
-        "& li": {
-          color: "white",
-          alignContent: "center",
-          fontWeight: "500",
-          fontSize: { xs: "12px", md: "20px" },
-          lineHeight: { xs: "14.76px", md: "27px" },
-        },
-      }}
-    >
-      <Grid2 container size={10.5} margin="auto" gap="20px" direction="column">
-        <Grid2 container justifyItems="center" gap="20px" position="relative">
-          <Typography className="!font-inter" variant="h1">{t("TermsOfUse")}</Typography>
-
-          <Typography className="!font-inter" variant="h2">{`${t(
-            "LastUpdatedOn"
-          )} 5/12/2024`}</Typography>
-
-        </Grid2>
-
-        <Typography className="!font-inter" sx={{ mb: "20px" }}>{t("WelcomeSpeech")}</Typography>
-
-        <Grid2>
-          <Typography className="!font-inter">{`1. ${t("AcceptanceOfTerms")}`}</Typography>
-
-          <Typography className="!font-inter">{t("AcceptanceOfTermsDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
+    <div className="px-[100px] max-small:px-[40px] max-smallest:px-[20px] font-inter">
+        <Banner
+            src="/images/banners/faqs_banner.png"
+            header="Terms of Use"
+            subHeader="Last updated on 5/12/2024"
         />
+        <div className="flex max-mui-md:grid gap-[30px] items-center justify-center my-[50px] text-[18px] max-smallest:text-[14px] text-[#E6E6E6] max-small:text-[16px]">
+          <div className="flex gap-[10px] max-mui-md:min-w-[400px] max-smallest:min-w-[0px] p-[20px] rounded-[8px] border-[1px] border-[#6A65FF80] items-center justify-center">
+            <Image src="/images/icons/email.svg" width={30} height={30} alt="email"/>
+            <p>support@quant-apps.com</p>
+          </div>
+          <div className="flex gap-[10px] p-[20px] rounded-[8px] border-[1px] border-[#6A65FF80] items-center justify-center">
+            <Image src="/images/icons/phone.svg" width={30} height={30} alt="phone"/>
+            <p>+373 69 882 331</p>
+          </div>
+          <div className="flex gap-[10px] p-[20px] rounded-[8px] border-[1px] border-[#6A65FF80] items-center justify-center">
+            <Image src="/images/icons/geolocation.svg" width={30} height={30} alt="geolocation"/>
+            <p>Republic of Moldova</p>
+          </div>
+        </div>
+        <div className="text-[20px] max-mui-md:text-[18px] max-smallest:text-[16px] text-[#FFFFFF] flex flex-col gap-[20px]">
+          <p className="indent-6">Welcome to Quant-Apps! Please read these Terms of Use ("Terms") carefully before using our website and services. By accessing or using Quant-Apps ("we," "our," or "us"), you agree to be bound by these Terms. If you do not agree, please do not use our services.</p>
 
-        <Grid2>
-          <Typography className="!font-inter">{`2. ${t("ServicesProvided")}`}</Typography>
+          <p className="indent-6"><strong>1. Acceptance of Terms</strong><br/>
+          By accessing or using our website or services, you confirm that you are at least 18 years old and agree to comply with these Terms. If you are accessing on behalf of a company, you represent and warrant that you have the authority to bind the company to these Terms.</p>
 
-          <Typography className="!font-inter">{t("ServicesProvidedDetails")}</Typography>
-        </Grid2>
+          <p className="indent-6"><strong>2. Services Provided</strong><br/>
+          Quant-Apps offers IT development services, including mobile app development, UI/UX design, and software solutions. Any services provided will be subject to a separate agreement outlining the scope, deliverables, and terms of the engagement.</p>
 
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
+          <p className="indent-6"><strong>3. Intellectual Property</strong><br/>
+          All content, trademarks, logos, and materials provided by Quant-Apps, including but not limited to designs, software, and code, are the property of Quant-Apps unless otherwise stated. You may not use, copy, reproduce, or distribute any materials without explicit written permission.</p>
 
-        <Grid2>
-          <Typography className="!font-inter">{`3. ${t("IntellectualProperty")}`}</Typography>
-
-          <Typography className="!font-inter">{t("IntellectualPropertyDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2 position="relative">
-          <Typography className="!font-inter">{`4. ${t("UserConduct")}`}</Typography>
-
-          <Typography className="!font-inter">{t("UserConductListHeader")}</Typography>
-
-          <ul style={{ listStyle: "inside", marginLeft: "15px" }}>
-            <li>{t("UserConductListFirstChild")}</li>
-
-            <li>{t("UserConductListSecondChild")}</li>
-
-            <li>{t("UserConductListThirdChild")}</li>
+          <p className="indent-6"><strong>4. User Conduct</strong><br/>
+          You agree to use our website and services for lawful purposes only and will not:</p>
+          <ul className="ml-10 list-disc ">
+            <li className="">Engage in any activity that disrupts or damages our website or services.</li>
+            <li className="">Attempt to access unauthorized areas of our website or servers.</li>
+            <li className="">Use our services for illegal, fraudulent, or harmful purposes.</li>
           </ul>
 
-        </Grid2>
+          <p className="indent-6"><strong>5. Disclaimer of Warranties</strong><br/>
+          Quant-Apps provides its services "as is" and "as available." While we strive for excellence, we do not guarantee that our website or services will be uninterrupted, error-free, or meet your expectations. To the fullest extent permitted by law, we disclaim all warranties, express or implied.</p>
 
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
+          <p className="indent-6"><strong>6. Limitation of Liability</strong><br/>
+          Quant-Apps shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our total liability to you shall not exceed the amount paid by you for services provided within the past six months.</p>
 
-        <Grid2>
-          <Typography className="!font-inter">{`5. ${t("DisclaimerOfWarranties")}`}</Typography>
+          <p className="indent-6"><strong>7. Third-Party Links</strong><br/>
+          Our website may include links to third-party websites. Quant-Apps is not responsible for the content, policies, or practices of these external sites.</p>
 
-          <Typography className="!font-inter">{t("DisclaimerOfWarrantiesDetails")}</Typography>
-        </Grid2>
+          <p className="indent-6"><strong>8. Termination</strong><br/>
+          We reserve the right to suspend or terminate your access to our website or services at our discretion, without prior notice, for any reason, including violation of these Terms.</p>
 
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
+          <p className="indent-6"><strong>9. Governing Law</strong><br/>
+          These Terms shall be governed by and construed in accordance with the laws of Moldova, Republic of. Any disputes arising out of or related to these Terms shall be resolved exclusively in the courts of Moldova, Republic of.</p>
 
-        <Grid2>
-          <Typography className="!font-inter">{`6. ${t("LimitationOfLiability")}`}</Typography>
+          <p className="indent-6"><strong>10. Modifications to Terms</strong><br/>
+          Quant-Apps reserves the right to modify these Terms at any time. Updated Terms will be posted on our website, and continued use of our services indicates acceptance of any changes.</p>
 
-          <Typography className="!font-inter">{t("LimitationOfLiabilityDetails")}</Typography>
-        </Grid2>
+          <p className="indent-6"><strong>11. Contact Us</strong><br/>
+          For any questions or concerns about these Terms, please contact us at:<br/>
+          Email: support@quant-apps.com<br/>
+          Moldova, Republic of</p>
 
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2>
-          <Typography className="!font-inter">{`7. ${t("ThirdPartyLinks")}`}</Typography>
-
-          <Typography className="!font-inter">{t("ThirdPartyLinksDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2>
-          <Typography className="!font-inter">{`8. ${t("Termination")}`}</Typography>
-
-          <Typography className="!font-inter">{t("TerminationDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2>
-          <Typography className="!font-inter">{`9. ${t("GoverningLaw")}`}</Typography>
-
-          <Typography className="!font-inter">{t("GoverningLawDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2>
-          <Typography className="!font-inter">{`10. ${t("ModificationsToTerms")}`}</Typography>
-
-          <Typography className="!font-inter">{t("ModificationsToTermsDetails")}</Typography>
-        </Grid2>
-
-        <Box
-          sx={{ backgroundColor: "#555DEB33", height: "12px", width: "100%" }}
-        />
-
-        <Grid2 position="relative">
-          <Typography className="!font-inter">{`11. ${t("ContactUs")}`}</Typography>
-
-          <Typography className="!font-inter">
-            {t("ForAnyQuestionPleaseContactAt")}
-            <br />
-            {`${t("Email")}: support@quant-apps.com`}
-            <br />
-            {t("RepublicOfMoldova")}
-          </Typography>
-        </Grid2>
-
-        <Typography className="!font-inter" sx={{ mt: "20px" }}>{t("ThankYouForChoosing")}</Typography>
-      </Grid2>
-
-      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
-        <Blur
-          color="blue"
-          width="46.7vw"
-          height="46.7vw"
-          left="-10%"
-          top="0%"
-          filter="blur(10px)"
-        />
-
-        <Blur
-          color="blue"
-          width="56.7vw"
-          height="56.7vw"
-          right="-15%"
-          top="0%"
-          filter="blur(10px)"
-          className="absolute"
-        />
-
-        <Blur
-          filter="blur(10px)"
-          color="blue"
-          width="45vw"
-          height="45vw"
-          right="0"
-          top="20%"
-        />
-
-        <Blur
-          filter="blur(70px)"
-          color="purple"
-          width="45vw"
-          height="45vw"
-          left="-5%"
-          top="30%"
-        />
-
-        <Blur
-          filter="blur(10px)"
-          color="purple"
-          width="40vw"
-          height="40vw"
-          right="0"
-          top="37%"
-        />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[150px] left-[30px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[110px] left-[800px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1050px] right-[540px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1250px] left-[430px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/Star.svg" width={50} height={0} alt="star" className="w-[60px] h-auto top-[1450px] left-[480px] why-ios__bg-img max-[900px]:hidden" />
-        <Image src="/icons/ellipse6.svg" width={50} height={0} alt="ellise" className="why-ios__bg-img w-auto h-auto top-[1590px] left-[600px] max-[900px]:hidden" />
-      </div>
-        <NextProject />
-    </Grid2>
+          <p className="indent-6">Thank you for choosing Quant-Apps.</p>
+        </div>
+        <ElevatingBusiness />
+    </div>
   );
 };
 

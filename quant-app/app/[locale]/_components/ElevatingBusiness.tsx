@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const ElevatingBusiness = () => {
   return (
-    <div className="flex flex-col mt-[20px] gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px] max-mui-md:p-[40px] max-smallest:p-[20px]">
+    <div className="flex flex-col my-[30px] gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px] max-mui-md:p-[40px] max-smallest:p-[20px]">
     <div className="flex gap-[40px] max-mui-md:flex-col items-center">
       <Image src="/images/icons/logo1.svg" width={130} height={150} alt="logo"/>
       <div className="flex flex-col items-center justify-center max-mui-md:text-center gap-[20px]">

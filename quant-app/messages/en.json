@@ -193,7 +193,187 @@
     "LetsTalk": "Let's Talk"
   },
   "services": {
-
+    "banner": {
+      "whatWeOffer": {
+        "header": "What We Offer?",
+        "subHeader": "Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand's impact."
+      },
+      "excited": {
+        "header": "Excited to work together on your next project?",
+        "subHeader": "Let's bring your ideas to life with custom development and design solutions tailored to your needs.",
+        "button": "Start Project"
+      }
+    },
+    "Design": {
+      "title": "Design",
+      "text": "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs that engage your audience and strengthen your brand. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.",
+      "button": "Our design services include:"
+    },
+    "UXDesign": {
+      "title": "User Experience (UX) Design",
+      "blocks": {
+        "block1": "Gain insights into user behavior to create intuitive digital experiences",
+        "block2": "Structure seamless navigation for improved accessibility",
+        "block3": "Optimize user interactions through real-world testing",
+        "block4": "Align business goals with customer needs for a frictionless experience"
+      }
+    },
+    "UIDesign": {
+      "title": "User Interface (UI) Design",
+      "blocks": {
+        "block1": "Create user-friendly and engaging app interfaces",
+        "block2": "Unique design elements that enhance brand identity",
+        "block3": "Establish a consistent and appealing design system",
+        "block4": "Ensure seamless performance across all screen sizes"
+      }
+    },
+    "Branding": {
+      "title": "Branding and Identity",
+      "blocks": {
+        "block1": "Logo Design and Visual Identity Development",
+        "block2": "Brand Strategy and Positioning",
+        "block3": "Brand Guidelines and Style Guides",
+        "block4": "Marketing Collateral Design (Brochures, Business Cards, etc.)"
+      }
+    },
+    "Engineering": {
+      "title": "Engineering & Software Development Services",
+      "text": "We specialize in scalable, high-performance digital solutions using the latest technologies and industry best practices to drive innovation and efficiency.",
+      "button": "Our engineering services include:"
+    },
+    "WebDevelopment": {
+      "title": "Web Development",
+      "blocks": {
+        "block1": "High-performance web applications using Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
+        "block2": "Scalable server-side applications using PHP, Python, Ruby, Node.js.",
+        "block3": "Content Management System (CMS) Development (WordPress, Drupal)",
+        "block4": "E-Commerce Platform Development"
+      }
+    },
+    "MobileAppDevelopment": {
+      "title": "Mobile App Development",
+      "blocks": {
+        "block1": "Custom iOS (Swift) and Android (Kotlin, Java) applications",
+        "block2": "Scalable apps using React Native, Flutter for iOS and Android",
+        "block3": "Wireframing, interactive prototypes, and design system implementation",
+        "block4": "Comprehensive QA, automated testing, and cloud-based deployment."
+      }
+    },
+    "CRMDevelopment": {
+      "title": "CRM Development & Enterprise Solutions",
+      "blocks": {
+        "block1": "Tailor-made customer relationship management (CRM) software to enhance sales, customer support, and business workflows.",
+        "block2": "Build scalable CRM web applications with Next.js, React, Angular, and Vue.js for an optimized user experience",
+        "block3": "Seamless integration with Salesforce, HubSpot, Zoho, Microsoft Dynamics, Stripe, Twilio, and AI-powered analytics",
+        "block4": "Upgrade outdated CRM systems with cloud-based solutions, automation, AI-driven insights, and enhanced security"
+      }
+    },
+    "ProjectManagement": {
+      "title": "Project Management for Scalable Digital Solutions",
+      "text": "Our project management services ensure seamless execution of digital projects, from planning to deployment. We follow agile methodologies, use data-driven insights, and leverage industry-standard tools to keep your project on track, within budget, and aligned with your business goals.",
+      "button": "Our project management services include:"
+    },
+    "StrategicPlanning": {
+      "title": "Strategic Project Planning & Resource Management",
+      "blocks": {
+        "block1": "Requirements gathering & business analysis to align with project goals (business strategy, planning)",
+        "block2": "Project roadmap & milestone tracking for structured execution (timeline management, feature prioritization)",
+        "block3": "Resource allocation & workload balancing for optimized team performance (team efficiency, agile workflows)",
+        "block4": "Risk assessment & mitigation planning to ensure long-term stability (issue resolution, scalability planning)"
+      }
+    },
+    "AgileDevelopment": {
+      "title": "Agile Development & Workflow Optimization",
+      "blocks": {
+        "block1": "Iterative updates & feature enhancements based on real-time feedback (continuous development, feature scaling)",
+        "block2": "Ongoing performance monitoring & optimization for speed & reliability (app performance, load balancing)",
+        "block3": "Regular security patches & compliance updates for data protection (cybersecurity, GDPR compliance)",
+        "block4": "Technical support & troubleshooting to ensure system stability (bug fixes, debugging, troubleshooting)"
+      }
+    },
+    "QualityAssurance": {
+      "title": "Quality Assurance & Security Compliance",
+      "blocks": {
+        "block1": "Ongoing system updates & version management to ensure longevity (software updates, versioning)",
+        "block2": "Cloud infrastructure monitoring & server optimization for uptime & speed (server health, cloud scaling)",
+        "block3": "Customer support integration & user assistance to improve experience (helpdesk, chatbot integration)",
+        "block4": "Business scalability consulting to prepare for growth (scalability strategy, expansion planning)"
+      }
+    }
+  },
+  "projects": {
+    "banner": {
+      "image": "/images/banners/what-clients-say-banner.png",
+      "title": "Our projects",
+      "subtitle": "Innovation starts with a vision. Explore the exciting projects we've turned into reality!"
+    },
+    "header": {
+      "title": "At Quant-Apps",
+      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
+    },
+    "items": [
+      {
+        "title": "Restaurant Website",
+        "image": "/images/pictures/projects1.png",
+        "alt": "project1",
+        "linkName": "Roka Akor",
+        "link": "https://rokaakor.com/",
+        "description": "We developed a modern, user-friendly restaurant website for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors.",
+        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+      },
+      {
+        "title": "Logistics Company",
+        "image": "/images/pictures/projects2.png",
+        "alt": "project2",
+        "linkName": "Acm Movers",
+        "link": "https://acmmovers.com/",
+        "description": "We designed and developed a feature-rich logistics website for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices.",
+        "className": ""
+      },
+      {
+        "title": "Lens AI",
+        "image": "/images/pictures/projects3.png",
+        "alt": "project3",
+        "linkName": "Lens AI",
+        "link": "https://apps.apple.com/md/app/lens-ai",
+        "description": "Lens AI is your smart app for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more.",
+        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+      },
+      {
+        "title": "Taste Ai",
+        "image": "/images/pictures/projects4.png",
+        "alt": "project4",
+        "linkName": "Taste Ai",
+        "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
+        "description": "Meet your new kitchen helper, Taste Ai ! This app uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs.",
+        "className": ""
+      },
+      {
+        "title": "Web-site for Dentist",
+        "image": "/images/pictures/projects5.png",
+        "alt": "project5",
+        "linkName": "NY Dental Group",
+        "link": "https://nydentalgroup.com/",
+        "description": "We developed a modern and user-friendly website for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction.",
+        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+      },
+      {
+        "title": "Keyboard AI",
+        "image": "/images/pictures/projects6.png",
+        "alt": "project6",
+        "linkName": "Keyboard AI",
+        "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
+        "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique.",
+        "className": ""
+      }
+    ],
+    "callToAction": {
+      "image": "/images/banners/what-clients-say-banner.png",
+      "title": "Excited to work together on your next project?",
+      "subtitle": "Let's bring your ideas to life with custom development and design solutions tailored to your needs.",
+      "buttonText": "Start Project",
+      "buttonIcon": "/images/icons/start_project_logo.svg"
+    }
   },
   "talk-popup": {
     "LetsCraftTogether": "Let's craft something unforgettable together!",

@@ -5,6 +5,7 @@ import ElevatingBusiness from "../_components/ElevatingBusiness";
 import TeamMemberType from "@/lib/types/MemberType";
 import TimelineBlock from "./_components/TimelineBlock";
 import TimelineType from "@/lib/types/TimelineType";
+import Blur from "@/components/Blur";
 
 const Page = async () => {
 
@@ -134,6 +135,50 @@ const Page = async () => {
           </div>
         </div>
         <ElevatingBusiness />
+        <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="350px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="1000px"
+            filter="blur(250px)"
+            className=" w-[400px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="1500px"
+            filter="blur(250px)"
+            className=" w-[400px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="2000px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#9C08FFCC'
+            right="-250px"
+            top="2500px"
+            filter="blur(200px)"
+            className=" w-[400px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#9C08FFCC'
+            left="-250px"
+            top="3100px"
+            filter="blur(200px)"
+            className=" w-[400px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+        </div>
     </div>
   );
 };

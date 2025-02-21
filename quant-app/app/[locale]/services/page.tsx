@@ -4,6 +4,7 @@ import Header from "./_components/header";
 import Description from "./_components/description";
 // import services from "@/lib/utils/servicesData";
 import Service from "@/lib/types/Service";
+import Blur from "@/components/Blur";
 
 const Page = async () => {
   const t = await getTranslations("services");
@@ -295,6 +296,64 @@ const Page = async () => {
             button="Start Project"
             icon="/images/icons/start_project_logo.svg"
         />
+        <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="350px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="1500px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="2100px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="2700px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="3200px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="3600px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#9C08FF80'
+            left="-250px"
+            top="4300px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#9C08FF80'
+            right="-250px"
+            top="4500px"
+            filter="blur(250px)"
+            className=" w-[400px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+        </div>
     </div>
   );
 };

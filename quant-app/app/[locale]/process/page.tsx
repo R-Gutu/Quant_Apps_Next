@@ -2,6 +2,7 @@ import Banner from "@/components/banner"
 import Accordion from "./_components/accordion"
 import HeadText from "../_components/HeadText"
 import ProcessType from "@/lib/types/ProcessType"
+import Blur from "@/components/Blur"
 
 
 const page = () => {
@@ -75,6 +76,50 @@ const page = () => {
             button="Start Project"
             icon="/images/icons/start_project_logo.svg"
         />
+        <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="350px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="1000px"
+            filter="blur(250px)"
+            className=" w-[400px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="1900px"
+            filter="blur(250px)"
+            className=" w-[400px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#836FFF99'
+            left="-250px"
+            top="2300px"
+            filter="blur(250px)"
+            className=" w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          <Blur
+            color='#9C08FFCC'
+            right="-250px"
+            top="3200px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          />
+          {/* <Blur
+            color='#836FFF99'
+            right="-250px"
+            top="3600px"
+            filter="blur(250px)"
+            className=" w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+          /> */}
+        </div>
     </div>
   )
 }

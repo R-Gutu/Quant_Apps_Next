@@ -1,5 +1,5 @@
 
-export default function Header({title, text, button, className}: {title: string, text: string, button: string, className?: string}) {
+export default function Header({title, text, button}: {title: string, text: string, button: string}) {
   return (
     <div className="flex flex-col gap-10 mt-[90px]">
         <div className="flex flex-col gap-4 pl-10">

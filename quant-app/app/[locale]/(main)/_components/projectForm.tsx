@@ -15,6 +15,15 @@ const schema = yup.object().shape({
     message: yup.string().required("Message is required").min(10, "Must be at least 10 characters"),
 });
 
+type ProjectFormData = {
+    name: string;
+    email: string;
+    services: string[];
+    message: string;
+    budget: number[];
+  };
+  
+
 export default function ProjectForm({ className }: { className?: string }) {
     const [budget, setBudget] = useState<number[]>([1000, 5000]);
 
@@ -25,7 +34,7 @@ export default function ProjectForm({ className }: { className?: string }) {
 
     const formRef = useRef<HTMLFormElement>(null);
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: ProjectFormData) => {
         console.log("Form Data:", { ...data, budget });
         alert("Form submitted successfully!");
         if (formRef.current) {

@@ -1,91 +1,94 @@
 import Banner from "@/components/banner"
 import Block from "./_components/Block"
-// import projects from "@/lib/utils/projectsData"
 import Projects from "@/lib/types/Projects"
 import HeadText from "../_components/HeadText"
+import { getTranslations } from "next-intl/server"
 
-const page = () => {
-    const projects : Projects[] = [
-        {
-            title: "Restaurant Website",
-            src: "/images/pictures/projects1.png",
-            alt: "project1",
-            linkname: "Roka Akor",
-            link: "https://rokaakor.com/",
-            text: "We developed a modern, user-friendly restaurant website for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors.",
-            className: "small:border-r-[1px] small:border-[#6A65FF80]"
-        },
-        {
-            title: "Logistics Company",
-            src: "/images/pictures/projects2.png",
-            alt: "project2",
-            linkname: "Acm Movers",
-            link: "https://acmmovers.com/",
-            text: "We designed and developed a feature-rich logistics website for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices.",
-            className: ""
-        },
-        {
-            title: "Lens AI",
-            src: "/images/pictures/projects3.png",
-            alt: "project3",
-            linkname: "Lens AI",
-            link: "https://apps.apple.com/md/app/lens-ai",
-            text: "Lens AI is your smart app for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more.",
-            className: "small:border-r-[1px] small:border-[#6A65FF80]"
-        },
-        {
-            title: "Taste Ai",
-            src: "/images/pictures/projects4.png",
-            alt: "project4",
-            linkname: "Taste Ai",
-            link: "https://apps.apple.com/md/app/taste-ai/id6566183422",
-            text: "Meet your new kitchen helper, Taste Ai ! This app uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs.",
-            className: ""
-        },
-        {
-            title: "Web-site for Dentist",
-            src: "/images/pictures/projects5.png",
-            alt: "project5",
-            linkname: "NY Dental Group",
-            link: "https://nydentalgroup.com/",
-            text: "We developed a modern and user-friendly website for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction.",
-            className: "small:border-r-[1px] small:border-[#6A65FF80]"
-        },
-        {
-            title: "Keyboard AI",
-            src: "/images/pictures/projects6.png",
-            alt: "project6",
-            linkname: "Keyboard AI",
-            link: "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
-            text: "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique.",
-            className: ""
-        }
-    ]
+const ProjectsPage = async () => {
+  const t = await getTranslations("projects");
+  
+  const projects: Projects[] = [
+    {
+      title: t('items.0.title'),
+      src: t('items.0.image'),
+      alt: t('items.0.alt'),
+      linkname: t('items.0.linkName'),
+      link: t('items.0.link'),
+      text: t('items.0.description'),
+       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+    },
+    {
+      title: t('items.1.title'),
+      src: t('items.1.image'),
+      alt: t('items.1.alt'),
+      linkname: t('items.1.linkName'),
+      link: t('items.1.link'),
+      text: t('items.1.description'),
+      "className": ""
+    },
+    {
+      title: t('items.2.title'),
+      src: t('items.2.image'),
+      alt: t('items.2.alt'),
+      linkname: t('items.2.linkName'),
+      link: t('items.2.link'),
+      text: t('items.2.description'),
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+    },
+    {
+      title: t('items.3.title'),
+      src: t('items.3.image'),
+      alt: t('items.3.alt'),
+      linkname: t('items.3.linkName'),
+      link: t('items.3.link'),
+      text: t('items.3.description'),
+      "className": ""
+    },
+    {
+      title: t('items.4.title'),
+      src: t('items.4.image'),
+      alt: t('items.4.alt'),
+      linkname: t('items.4.linkName'),
+      link: t('items.4.link'),
+      text: t('items.4.description'),
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+    },
+    {
+      title: t('items.5.title'),
+      src: t('items.5.image'),
+      alt: t('items.5.alt'),
+      linkname: t('items.5.linkName'),
+      link: t('items.5.link'),
+      text: t('items.5.description'),
+      "className": ""
+    }
+  ];
+
   return (
     <div className="px-[100px] max-small:px-[40px] max-smallest:px-[20px] font-inter">
-        <Banner
-            src="/images/banners/what-clients-say-banner.png"
-            header="Our projects"
-            subHeader="Innovation starts with a vision. Explore the exciting projects we’ve turned into reality!"
-        />
-        <HeadText
-            title="At Quant-Apps"
-            text="We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
-        />
-        <div className="grid grid-cols-2 max-small:grid-cols-1">
-            {projects.map((item, index) => (
-                <Block key={index} {...item}/>
-            ))}
-        </div>
-        <Banner
-            src="/images/banners/what-clients-say-banner.png"
-            header="Excited to work together on your next project?"
-            subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
-            button="Start Project"
-            icon="/images/icons/start_project_logo.svg"
-        />
+      <Banner
+        src={t('banner.image')}
+        header={t('banner.title')}
+        subHeader={t('banner.subtitle')}
+      />
+      <HeadText
+        title={t('header.title')}
+        text={t('header.text')}
+      />
+      <div className="grid grid-cols-2 max-small:grid-cols-1">
+        {projects.map((item, index) => (
+          <Block key={index} {...item}/>
+        ))}
+      </div>
+      <Banner
+        src={t('callToAction.image')}
+        header={t('callToAction.title')}
+        subHeader={t('callToAction.subtitle')}
+        button={t('callToAction.buttonText')}
+        icon={t('callToAction.buttonIcon')}
+      />
     </div>
   )
 }
 
-export default page
+export default ProjectsPage

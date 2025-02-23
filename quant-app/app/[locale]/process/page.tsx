@@ -1,82 +1,123 @@
 import Banner from "@/components/banner"
 import Accordion from "./_components/accordion"
 import HeadText from "../_components/HeadText"
+import Blur from "@/components/Blur"
+import { getTranslations } from "next-intl/server"
 import ProcessType from "@/lib/types/ProcessType"
 
+const ProcessPage = async () => {
+  const t = await getTranslations("process");
+  
+  const process: ProcessType[] = [
+    {
+      id: t('items.0.id'),
+      title: t('items.0.title'),
+      text: t('items.0.text')
+    },
+    {
+      id: t('items.1.id'),
+      title: t('items.1.title'),
+      text: t('items.1.text')
+    },
+    {
+      id: t('items.2.id'),
+      title: t('items.2.title'),
+      text: t('items.2.text')
+    },
+    {
+      id: t('items.3.id'),
+      title: t('items.3.title'),
+      text: t('items.3.text')
+    },
+    {
+      id: t('items.4.id'),
+      title: t('items.4.title'),
+      text: t('items.4.text')
+    },
+    {
+      id: t('items.5.id'),
+      title: t('items.5.title'),
+      text: t('items.5.text')
+    },
+    {
+      id: t('items.6.id'),
+      title: t('items.6.title'),
+      text: t('items.6.text')
+    },
+    {
+      id: t('items.7.id'),
+      title: t('items.7.title'),
+      text: t('items.7.text')
+    },
+    {
+      id: t('items.8.id'),
+      title: t('items.8.title'),
+      text: t('items.8.text')
+    }
+  ];
 
-const page = () => {
-    const process : ProcessType[] = [
-        {
-            id: "01",
-            title: "Consultation",
-            text: "We begin by deeply understanding your goals and needs. We listen to your ideas, analyze your business processes, and propose a strategy that will deliver maximum results."
-        },
-        {
-            id: "02",
-            title: "Research and Strategy Development",
-            text: "We conduct thorough research, study the market and competitors to develop an effective strategy tailored to your unique requirements and objectives."
-        },
-        {
-            id: "03",
-            title: "Planning and Strategic Management",
-            text: "We plan every step towards success. We create detailed roadmaps and clearly define key milestones to ensure each phase of the project is completed on time and within budget."
-        },
-        {
-            id: "04",
-            title: "Branding and Identity Design",
-            text: "We create a unique visual identity that reflects the essence of your brand. We design logos, color palettes, and other branding elements to make your brand easily recognizable and memorable."
-        },
-        {
-            id: "05",
-            title: "Wireframes and UI/UX Design",
-            text: "We design intuitive and attractive interfaces that provide the best user experience. We create wireframes and prototypes that lay the foundation for your future app or website."
-        },
-        {
-            id: "06",
-            title: "Development and Integration",
-            text: "We develop functional, high-performance solutions that seamlessly integrate with your systems, ensuring smooth operation of apps and services."
-        },
-        {
-            id: "07",
-            title: "Testing and Quality Assurance",
-            text: "Every app and solution undergoes strict testing stages. We check all functional and technical aspects to ensure flawless performance across all devices and platforms."
-        },
-        {
-            id: "08",
-            title: "Launch and Deployment",
-            text: "We carefully prepare your app for launch to ensure smooth operation. After testing, we deploy the app on the selected platforms and ensure a seamless start."
-        },
-        {
-            id: "09",
-            title: "Maintenance and Optimization",
-            text: "After the launch, we continue to support and optimize the app, improving its performance, fixing bugs, and adding new features to meet user needs."
-        }
-    ]
   return (
     <div className="px-[100px] max-mui-md:px-[40px] font-inter">
-        <Banner
-            src="/images/banners/faqs_banner.png"
-            header="Our Working Process "
-            subHeader="A Comprehensive Guide to Reaching Your Business Objectives"
+      <Banner
+        src={t('banner.image')}
+        header={t('banner.title')}
+        subHeader={t('banner.subtitle')}
+      />
+      <HeadText
+        title={t('header.title')}
+        text={t('header.text')}
+      />
+      <div className="flex flex-col gap-[30px] pb-[100px]">
+        {process.map((item, index) => (
+          <Accordion key={index} {...item} />
+        ))}
+      </div>
+      <Banner
+        src={t('callToAction.image')}
+        header={t('callToAction.title')}
+        subHeader={t('callToAction.subtitle')}
+        button={t('callToAction.buttonText')}
+        icon={t('callToAction.buttonIcon')}
+      />
+      <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+        <Blur
+          color="#836FFF99"
+          left="-250px"
+          top="350px"
+          filter="blur(250px)"
+          className="w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
-        <HeadText 
-            title="At Quant-Apps"
-            text="We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
+        <Blur
+          color="#836FFF99"
+          right="-250px"
+          top="1000px"
+          filter="blur(250px)"
+          className="w-[400px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
-        <div className="flex flex-col gap-[30px] pb-[100px]">
-            {process.map((item, index) => (
-                <Accordion key={index} {...item}/>
-            ))}
-        </div>
-        <Banner
-            src="/images/banners/what-clients-say-banner.png"
-            header="Excited to work together on your next project?"
-            subHeader="Let’s bring your ideas to life with custom development and design solutions tailored to your needs."
-            button="Start Project"
-            icon="/images/icons/start_project_logo.svg"
+        <Blur
+          color="#836FFF99"
+          right="-250px"
+          top="1900px"
+          filter="blur(250px)"
+          className="w-[400px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
+        <Blur
+          color="#836FFF99"
+          left="-250px"
+          top="2300px"
+          filter="blur(250px)"
+          className="w-[600px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+        />
+        <Blur
+          color="#9C08FFCC"
+          right="-250px"
+          top="3200px"
+          filter="blur(250px)"
+          className="w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+        />
+      </div>
     </div>
   )
 }
 
-export default page
+export default ProcessPage

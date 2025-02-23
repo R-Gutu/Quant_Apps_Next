@@ -15,7 +15,7 @@ const ProjectsPage = async () => {
       linkname: t('items.0.linkName'),
       link: t('items.0.link'),
       text: t('items.0.description'),
-      className: t('items.0.className')
+       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.1.title'),
@@ -24,7 +24,7 @@ const ProjectsPage = async () => {
       linkname: t('items.1.linkName'),
       link: t('items.1.link'),
       text: t('items.1.description'),
-      className: t('items.1.className')
+      "className": ""
     },
     {
       title: t('items.2.title'),
@@ -33,7 +33,7 @@ const ProjectsPage = async () => {
       linkname: t('items.2.linkName'),
       link: t('items.2.link'),
       text: t('items.2.description'),
-      className: t('items.2.className')
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.3.title'),
@@ -42,7 +42,7 @@ const ProjectsPage = async () => {
       linkname: t('items.3.linkName'),
       link: t('items.3.link'),
       text: t('items.3.description'),
-      className: t('items.3.className')
+      "className": ""
     },
     {
       title: t('items.4.title'),
@@ -51,7 +51,7 @@ const ProjectsPage = async () => {
       linkname: t('items.4.linkName'),
       link: t('items.4.link'),
       text: t('items.4.description'),
-      className: t('items.4.className')
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.5.title'),
@@ -60,7 +60,7 @@ const ProjectsPage = async () => {
       linkname: t('items.5.linkName'),
       link: t('items.5.link'),
       text: t('items.5.description'),
-      className: t('items.5.className')
+      "className": ""
     }
   ];
 

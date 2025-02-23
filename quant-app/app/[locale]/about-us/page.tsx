@@ -117,8 +117,8 @@ const Page = async () => {
           </div>
         </div>
         <Image
-          width={490}
-          height={490}
+          width={1490}
+          height={1490}
           className="w-full h-auto rounded-[16px] border-[3px] border-solid border-[#6A65FF80]"
           alt={t('about.image.alt')}
           src={t('about.image.src')}
@@ -132,8 +132,8 @@ const Page = async () => {
           <Image
             src={t('timeline.image.src')}
             alt={t('timeline.image.alt')}
-            width={500}
-            height={500}
+            width={1500}
+            height={1500}
             className="w-full object-fill aspect-auto"
           />
         </div>

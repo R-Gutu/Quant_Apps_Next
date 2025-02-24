@@ -43,11 +43,10 @@ const Footer = async () => {
             items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter max-mui-md:w-[58px] max-mui-md:h-[58px]">
                   <Link
                     href={href}
-                    target="_blank"
                     rel="noopener noreferrer"
                     legacyBehavior
                   >
-                    <a>
+                    <a target="_blank">
                       <Image
                         width={24}
                         height={24}

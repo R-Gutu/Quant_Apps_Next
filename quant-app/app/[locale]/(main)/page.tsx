@@ -6,20 +6,20 @@ import Review from "./_components/review"
 import Accordion from "./_components/accordion"
 import ProjectForm from "./_components/projectForm"
 import Blur from "@/components/Blur"
-import Link from "next/link"
+import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server"
 
 export default async function Page() {
     const t = await getTranslations("home");
 
-    interface DataType{
+    interface DataType {
         icon: string,
         title: string,
         text: string,
         className?: string
     }
 
-    const services : DataType[] = [
+    const services: DataType[] = [
         {
             icon: "/images/icons/brush.svg",
             title: t('services.uiux.title'),
@@ -54,12 +54,12 @@ export default async function Page() {
             icon: "/images/icons/gear.svg",
             title: t('services.support.title'),
             text: t('services.support.text'),
-             className: "max-[800px]:!border-0"
+            className: "max-[800px]:!border-0"
         }
     ];
 
 
-    const reasons : DataType[] = [
+    const reasons: DataType[] = [
         {
             icon: "/images/icons/stars.svg",
             title: t('reasons.expert.title'),
@@ -87,7 +87,7 @@ export default async function Page() {
     ];
 
 
-    interface ReviewsType{
+    interface ReviewsType {
         content: string,
         name: string,
         src: string,
@@ -97,7 +97,7 @@ export default async function Page() {
         className?: string
     }
 
-    const reviews : ReviewsType[] = [
+    const reviews: ReviewsType[] = [
         {
             content: t('reviews.sarah.content'),
             name: t('reviews.sarah.name'),
@@ -112,7 +112,7 @@ export default async function Page() {
             src: "/images/icons/fiverr.svg",
             description: t('reviews.barnabas.description'),
             imgHeight: 38,
-            link: "https://www.ryecountryday.org/"
+            link: "https://www.fiverr.com/drimba3?public_mode=true"
         },
         {
             content: t('reviews.leslie.content'),
@@ -120,7 +120,7 @@ export default async function Page() {
             src: "/images/icons/fiverr.svg",
             description: t('reviews.leslie.description'),
             imgHeight: 38,
-            link: "https://www.ryecountryday.org/",
+            link: "https://www.fiverr.com/drimba3?public_mode=true",
             className: "border-r-[1px] border-solid border-[#6A65FF1A] min-[1150px]:[&>div]:mb-[100px]"
         },
         {
@@ -129,19 +129,19 @@ export default async function Page() {
             src: "/images/icons/fiverr.svg",
             description: t('reviews.draft.description'),
             imgHeight: 38,
-            link: "https://www.ryecountryday.org/",
+            link: "https://www.fiverr.com/drimba3?public_mode=true",
             className: "min-[1150px]:[&>div]:mb-[100px] max-[800px]:!border-0"
         }
     ];
 
-    interface FaqsType{
+    interface FaqsType {
         number: string,
         question: string,
         answer: string,
         className?: string
     }
 
-    const faqs1 : FaqsType[] = [
+    const faqs1: FaqsType[] = [
         {
             number: "01",
             question: t('faqs.services.question'),
@@ -168,7 +168,7 @@ export default async function Page() {
         }
     ];
 
-    const faqs2 : FaqsType[] = [
+    const faqs2: FaqsType[] = [
         {
             number: "05",
             question: t('faqs.platforms.question'),
@@ -202,7 +202,9 @@ export default async function Page() {
             </h1>
             <div className="flex items-center justify-center relative mt-[25px] w-full">
                 <Image src="/images/pictures/ipad.webp" width={578} height={443} alt={t('hero.ipadAlt')} className="h-auto w-[85%] min-[700px]:w-[530px] min-[1900px]:w-[578px]" />
-                <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt={t('hero.watchAlt')} />
+                <Link href="/video-modal">
+                    <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt={t('hero.watchAlt')} />
+                </Link>
                 <Blur
                     color='#4A5DE5'
                     left="200px"

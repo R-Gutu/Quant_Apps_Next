@@ -80,7 +80,7 @@ const ProcessPage = async () => {
         button={t('callToAction.buttonText')}
         icon={t('callToAction.buttonIcon')}
       />
-      <ProjectForm />
+      <ProjectForm className="py-[100px] px-[20%] max-[1100px]:px-[40px]" />
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <Blur
           color="#836FFF99"

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { getTranslations } from "next-intl/server"
+import { Link } from '@/i18n/routing';
 
 const ElevatingBusiness = async () => {
   const t = await getTranslations("elevatingBusiness");
@@ -7,10 +8,10 @@ const ElevatingBusiness = async () => {
   return (
     <div className="flex flex-col my-[30px] gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px] max-mui-md:p-[40px] max-smallest:p-[20px]">
       <div className="flex gap-[40px] max-mui-md:flex-col items-center">
-        <Image 
-          src={t('logo.src')} 
-          width={130} 
-          height={150} 
+        <Image
+          src={t('logo.src')}
+          width={130}
+          height={150}
           alt={t('logo.alt')}
         />
         <div className="flex flex-col items-center justify-center max-mui-md:text-center gap-[20px]">
@@ -33,11 +34,13 @@ const ElevatingBusiness = async () => {
             </p>
           </div>
         </div>
-        <div className="btn pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
-          <p className="font-medium text-[18px] max-mui-md:text-[14px] text-[#FFFFFF]">
-            {t('cta.buttonText')}
-          </p>
-        </div>
+        <Link href="/talk-modal">
+          <div className="btn pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
+            <p className="font-medium text-[18px] max-mui-md:text-[14px] text-[#FFFFFF]">
+              {t('cta.buttonText')}
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   )

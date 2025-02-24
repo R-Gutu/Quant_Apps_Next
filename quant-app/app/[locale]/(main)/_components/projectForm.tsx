@@ -34,17 +34,15 @@ const onDropZoneDrop = (e: React.DragEvent) => {
     handleFiles(files);
 };
 
-export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
 type ProjectFormData = {
+    services?: (string | undefined)[] | undefined;
     name: string;
     email: string;
-    services: string[];
     message: string;
-    budget: number[];
-  };
-  
+    budget: (number | undefined)[];
+}
 
-export default function ProjectForm({ className }: { className?: string }) {
+export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
     const [budget, setBudget] = useState<number[]>([1000, 5000]);
 
     const { register, handleSubmit, control, formState: { errors }, setValue, watch } = useForm({

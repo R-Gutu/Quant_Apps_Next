@@ -21,7 +21,7 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
         ">
                 <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
                     <a className="w-[118px] h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
-                        <Image priority id="logo" src="/images/icons/logo.svg" width={178} height={60} alt="Logo" />
+                        <Image id="logo" src="/images/icons/logo.svg" width={178} height={60} alt="Logo" />
                     </a>
                 </Link>
                 <nav>

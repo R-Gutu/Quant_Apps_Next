@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { Slider } from '@mui/material';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { handleFiles } from "@/lib/utils/validateTalkModal";
 
 const schema = yup.object().shape({
     name: yup.string().required("Full Name is required").min(3, "Must be at least 3 characters"),
@@ -16,23 +15,6 @@ const schema = yup.object().shape({
     message: yup.string().required("Message is required").min(10, "Must be at least 10 characters"),
     budget: yup.array().of(yup.number()).required("Budget is required"),
 });
-
-const onDropZoneDragOver = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.currentTarget.classList.add("border-[#515DEF] ", "bg-[#E5E7FF]");
-};
-
-const onDropZoneDragLeave = (e: React.DragEvent) => {
-    e.currentTarget.classList.remove("border-[#515DEF] ", "bg-[#E5E7FF]");
-};
-
-const onDropZoneDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.currentTarget.classList.remove("border-[#515DEF] ", "bg-[#E5E7FF]");
-
-    const files = e.dataTransfer.files;
-    handleFiles(files);
-};
 
 type ProjectFormData = {
     services?: (string | undefined)[] | undefined;
@@ -157,31 +139,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 <label htmlFor="message" className='text-[22px] max-[600px]:text-[16px'>Your Message</label>
                 <input type="text" id="message" {...register("message")} placeholder='Type here' className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0 resize-none`} />
                 {errors.message && <span className="text-red-500 text-sm">{errors.message.message}</span>}
-            </div>
-            <div className="flex flex-col gap-[7px]">
-                <span>Attachments</span>
-                <div
-                    className="w-full h-[60px] flex items-center justify-center bg-[#FAFAFF] rounded-[4px] border-[1px] border-dashed border-[#C5C5C5] relative"
-                    id="dropZone"
-                    onDragOver={onDropZoneDragOver}
-                    onDragLeave={onDropZoneDragLeave}
-                    onDrop={onDropZoneDrop}
-                >
-                    <div className="flex flex-col items-center gap-[6px] cursor-pointer w-full">
-                        <Image src="/icons/staple.svg" width={500} height={0} className="h-auto w-auto" alt="Staple" />
-                        <p className="text-[12px] font-normal text-[#C1C1C1]">
-                            Dragfiles <span className="text-[14px] font-semibold text-[#515DEF]">browse</span>
-                        </p>
-                    </div>
-                    <input
-                        type="file"
-                        className="absolute w-full h-full bg-transparent opacity-0 cursor-pointer"
-                        id="fileInput"
-                        multiple
-                        onChange={e => handleFiles((e.currentTarget as HTMLInputElement).files)}
-                    />
-                </div>
-                <div id="fileList" className="mt-[10px] text-[14px] text-[#6D758F] [&>div]:mb-[5px]"></div>
             </div>
             <button type="submit" className='appearance-none outline-none border-none px-[44px] py-[18px] flex items-center justify-center text-[18px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] cursor-pointer btn'>
                 Submit

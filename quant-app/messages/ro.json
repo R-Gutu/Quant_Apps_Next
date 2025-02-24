@@ -576,5 +576,158 @@
       }
     },
     "outro": "Vă mulțumim că ați ales Quant-Apps."
+  },
+  "home": {
+    "hero": {
+      "title": "Aplicații web și mobile + soluții CRM pentru dezvoltarea afacerii tale",
+      "ipadAlt": "ipad",
+      "watchAlt": "watch video button"
+    },
+    "trusted": {
+      "title": "De încredere pentru peste 20 de companii",
+      "companies": {
+        "rye": "RYE Country Day School logo",
+        "vistage": "Vistage logo",
+        "scriptpro": "ScriptPro logo",
+        "hiiq": "HI-IQ logo",
+        "fordham": "Fordham University logo"
+      }
+    },
+    "sections": {
+      "services": {
+        "title": "Serviciile Noastre",
+        "subtitle": "Serviciile Noastre"
+      },
+      "reasons": {
+        "title": "De ce să alegi Quant-Apps?",
+        "subtitle": "Descoperă inovația digitală cu echipa noastră de experți. Creăm soluții IT de înaltă performanță, care oferă rezultate maxime, securitate ridicată și o experiență intuitivă pentru utilizatori."
+      },
+      "reviews": {
+        "title": "Ce spun clienții noștri",
+        "subtitle": "La Quant-Apps, dezvoltăm soluții digitale de înaltă calitate care ajută afacerile să crească și să obțină succes. Descoperă părerile clienților noștri mulțumiți!"
+      },
+      "faqs": {
+        "title": "Întrebări frecvente",
+        "subtitle": "Ai întrebări? Contactează echipa noastră la support@quant-apps.com"
+      },
+      "cta": {
+        "title": "Ești gata de un nou proiect?",
+        "subtitle": "Hai să creăm împreună soluții digitale unice, personalizate prin dezvoltare și design, adaptate nevoilor afacerii tale.",
+        "button": "Începe proiectul"
+      }
+    },
+    "services": {
+      "uiux": {
+        "title": "UI/UX Design",
+        "text": "Creăm interfețe vizual atractive și ușor de utilizat, oferind o experiență intuitivă și o navigare fluidă. UI/UX design-ul nostru îmbină estetica modernă cu funcționalitatea practică, maximizând interacțiunea utilizatorilor și eficiența produsului digital."
+      },
+      "mobile": {
+        "title": "Dezvoltare de aplicații mobile pentru iOS/Android",
+        "text": "Construim aplicații mobile de înaltă performanță, optimizate pentru viteză, securitate și scalabilitate. Interfața intuitivă și performanța fiabilă creează o experiență fluidă pentru utilizatori, sprijinind creșterea afacerii tale."
+      },
+      "web": {
+        "title": "Dezvoltare de site-uri web",
+        "text": "Realizăm site-uri rapide, optimizate SEO, adaptate tuturor dispozitivelor. Dezvoltarea web responsive asigură o experiență de utilizare fluidă, optimizând rata de conversie și prezența online."
+      },
+      "crm": {
+        "title": "Soluții CRM",
+        "text": "Implementăm CRM-uri personalizate, optimizând procesele de afaceri, relațiile cu clienții și fluxul de lucru. Soluțiile noastre sunt automatizate, sigure și scalabile, pentru maximizarea vânzărilor și eficienței."
+      },
+      "crossPlatform": {
+        "title": "Dezvoltare Cross-Platform",
+        "text": "Creăm aplicații mobile performante pentru iOS și Android, utilizând tehnologii precum React Native și Flutter. Soluțiile noastre sunt cost-eficiente, scalabile și intuitive, oferind o experiență optimizată utilizatorilor."
+      },
+      "support": {
+        "title": "Suport și Mentenanță",
+        "text": "Oferim monitorizare și mentenanță continuă, incluzând actualizări de securitate, optimizări de performanță și depanare. Ne asigurăm că aplicațiile tale rămân sigure, actualizate și eficiente."
+      }
+    },
+    "reasons": {
+      "expert": {
+        "title": "Soluții IT de top",
+        "text": "Echipa noastră utilizează expertiză avansată și tehnologie de ultimă generație pentru a crea produse digitale moderne. Urmând tendințele actuale și cele mai bune practici, dezvoltăm soluții IT inovatoare, scalabile și sigure, adaptate nevoilor afacerii tale."
+      },
+      "client": {
+        "title": "Strategie digitală orientată spre client",
+        "text": "Luăm în considerare obiectivele de afaceri ale clienților, adaptând dezvoltarea web și mobilă la strategiile acestora. Printr-o analiză de piață detaliată și o abordare interactivă, creăm soluții IT care îmbunătățesc experiența utilizatorilor, cresc implicarea și maximizează profitabilitatea."
+      },
+      "results": {
+        "title": "Dezvoltare axată pe rezultate",
+        "text": "Scopul nostru este livrarea unor rezultate măsurabile. Combinăm expertiza tehnică cu soluții creative, dezvoltând aplicații mobile, platforme web și sisteme CRM care îmbunătățesc experiența utilizatorilor, eficiența și creșterea afacerii tale."
+      },
+      "partnership": {
+        "title": "Parteneriat digital pe termen lung",
+        "text": "Construim relații durabile cu clienții noștri, oferind mentenanță, suport continuu și actualizări constante ale soluțiilor IT. Abordarea noastră garantează securitate, fiabilitate și funcționalitate optimă, ajutând afacerea ta să rămână competitivă și inovatoare."
+      }
+    },
+    "reviews": {
+      "sarah": {
+        "content": "Great! So quick and easy to work with. We are super satisfied so far and will continue to work.",
+        "name": "Sarah Istwany",
+        "description": "Representing Rye Country Day School",
+        "link": "https://www.ryecountryday.org/"
+      },
+      "barnabas": {
+        "content": "It was great working. Definitely will be using again, already in the process of placing another order!",
+        "name": "Barnabas Willis",
+        "description": "Client from Fiverr",
+        "link": "https://www.ryecountryday.org/"
+      },
+      "leslie": {
+        "content": "Very good work looking forward to working together again.",
+        "name": "Leslie Alexander",
+        "description": "Client from Fiverr",
+        "link": "https://www.ryecountryday.org/"
+      },
+      "draft": {
+        "content": "10 out of 10 will recommend!",
+        "name": "Draft Pick Design",
+        "description": "Client from Fiverr",
+        "link": "https://www.ryecountryday.org/"
+      },
+      "more": {
+        "text": "Mai multe recenzii pot fi vizualizate pe",
+        "fiverr": {
+          "link": "https://www.fiverr.com/drimba3?public_mode=true",
+          "alt": "Fiverr logo"
+        }
+      }
+    },
+    "faqs": {
+      "services": {
+        "question": "Ce servicii oferă Quant-Apps?",
+        "answer": "Quant-Apps se specializează în dezvoltarea aplicațiilor mobile pentru iOS, dezvoltarea aplicațiilor pentru Android, precum și în dezvoltarea aplicațiilor cross-platform – React Native, CRM-sisteme, UI/UX design și crearea de logo-uri. De asemenea, oferim soluții pentru integrarea completă a aplicațiilor și optimizarea acestora."
+      },
+      "custom": {
+        "question": "Puteți dezvolta o aplicație personalizată pentru afacerea mea?",
+        "answer": "Da! Colaborăm strâns cu companiile pentru a crea aplicații personalizate pentru iOS/Android, care se potrivesc cu brandul și cu nevoile specifice ale fiecărei afaceri. De la startup-uri mici până la companii mari, dezvoltăm aplicații care te vor ajuta să te diferențiezi pe piața digitală."
+      },
+      "cost": {
+        "question": "Cât costă dezvoltarea unei aplicații mobile?",
+        "answer": "Costurile variază în funcție de complexitatea aplicației și de cerințele acesteia. Oferim o estimare personalizată a costurilor, adaptată la bugetul tău și la cerințele aplicației tale."
+      },
+      "unique": {
+        "question": "Ce diferențiază Quant-Apps de alte companii?",
+        "answer": "Quant-Apps combină expertiza tehnică cu o viziune inovatoare. Fondatorul nostru are o carieră dedicată dezvoltării aplicațiilor pentru iOS și Android, iar echipa noastră este specializată în crearea de aplicații inovative care respectă cele mai noi standarde tehnologice."
+      },
+      "platforms": {
+        "question": "Pentru ce platforme dezvoltați aplicații?",
+        "answer": "Quant-Apps dezvoltă aplicații pentru iOS, Android, CRM și oferă soluții cross-platform, cu un accent pe performanță excelentă, securitate și integrare cu ecosistemul Apple și Android."
+      },
+      "timeline": {
+        "question": "Cât durează dezvoltarea unei aplicații?",
+        "answer": "Timpul de dezvoltare depinde de complexitatea și funcționalitățile aplicației, dar în general variază între 1 și 3 luni. Ne concentrăm pe livrarea unor soluții rapide și eficiente."
+      },
+      "support": {
+        "question": "Oferiți suport după lansarea aplicației?",
+        "answer": "Da, oferim servicii de suport și întreținere pentru aplicațiile dezvoltate, inclusiv actualizări și îmbunătățiri continue, pentru a garanta funcționarea optimă a aplicației."
+      },
+      "start": {
+        "question": "Cum pot începe colaborarea cu Quant-Apps?",
+        "answer": "Începem printr-o discuție gratuită despre ideile tale pentru aplicație. După ce discutăm detaliile și cerințele, vom crea un plan personalizat pentru implementarea ideilor tale în realitate."
+      }
+    },
+    "serviceButton" : "Află mai multe",
+    "reviewButton" : "Deschide site-ul"
   }
 }

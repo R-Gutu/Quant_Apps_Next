@@ -49,7 +49,7 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                     </div>
                     <div className="w-[46px] h-[46px] ml-[33px] block small:hidden">
                         <Image
-                            src="/images/elements/button.svg"
+                            src="/images/elements/Button.svg"
                             alt="mobile menu"
                             width={46}
                             height={46}

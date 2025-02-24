@@ -8,9 +8,10 @@ type Language = typeof LANGUAGES[number]
 const ROUTES = {
   home: '',
   services: 'services',
+  projects: 'projects',
+  process: 'process',
   about: 'about-us',
-  contact: 'contact-us',
-  faqs: 'faqs',
+  careers: 'careers',
 } as const
 type Route = keyof typeof ROUTES
 
@@ -44,9 +45,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }> = [
     { route: 'home', priority: PRIORITIES.HIGH },
     { route: 'services', priority: PRIORITIES.HIGH },
+    { route: 'projects', priority: PRIORITIES.MEDIUM },
+    { route: 'careers', priority: PRIORITIES.MEDIUM },
     { route: 'about', priority: PRIORITIES.MEDIUM },
-    { route: 'contact', priority: PRIORITIES.MEDIUM },
-    { route: 'faqs', priority: PRIORITIES.LOW },
+    { route: 'process', priority: PRIORITIES.LOW },
   ]
 
   return pages.map(({ route, priority }) => ({

@@ -6,6 +6,7 @@ import Review from "./_components/review"
 import Accordion from "./_components/accordion"
 import ProjectForm from "./_components/projectForm"
 import Blur from "@/components/Blur"
+import Link from "next/link"
 
 export default function Page() {
     return (
@@ -168,6 +169,7 @@ export default function Page() {
                         src="/images/icons/rye_school.svg"
                         description="Representing Rye Country Day School"
                         className="border-r-[1px] border-solid border-[#6A65FF1A]"
+                        link="https://www.ryecountryday.org/"
                     />
                     <Review
                         content="It was great working. Definitely will be using  again, already in the process of placing another order!"
@@ -175,6 +177,7 @@ export default function Page() {
                         src="/images/icons/fiverr.svg"
                         description="Client from Fiverr"
                         imgHeight={38}
+                        link="https://www.ryecountryday.org/"
                     />
                     <Review
                         content="Very good work looking forward to working together again."
@@ -183,6 +186,7 @@ export default function Page() {
                         description="Client from Fiverr"
                         imgHeight={38}
                         className="border-r-[1px] border-solid border-[#6A65FF1A] min-[1150px]:[&>div]:mb-[100px]"
+                        link="https://www.ryecountryday.org/"
                     />
                     <Review
                         content="10 out of 10 will recommend!"
@@ -191,11 +195,16 @@ export default function Page() {
                         description="Client from Fiverr"
                         imgHeight={38}
                         className="min-[1150px]:[&>div]:mb-[100px] max-[800px]:!border-0"
+                        link="https://www.ryecountryday.org/"
                     />
                 </div>
                 <div className="absolute max-[1150px]:hidden bottom-[30px] right-[80px] flex text-white items-center gap-2">
                     <p className="font-semibold text-[24px]">More reviews can be viewed on</p>
-                    <Image src="/images/icons/fiverr_purple.svg" width={43} height={43} alt="Fiverr logo" />
+                    <Link href="https://www.fiverr.com/drimba3?public_mode=true" legacyBehavior>
+                        <a target="_blank">
+                            <Image src="/images/icons/fiverr_purple.svg" className="btn" width={43} height={43} alt="Fiverr logo" />
+                        </a>
+                    </Link>
                 </div>
             </div>
 

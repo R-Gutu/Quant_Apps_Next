@@ -1,5 +1,6 @@
+import { Link } from "@/i18n/routing"
 import Image from "next/image"
-export default function Review({ content, src, name, description, imgHeight=70, className }: { content: string, src: string, name: string, description: string, imgHeight?: number, className?: string }) {
+export default function Review({ content, src, name, description, imgHeight=70, className, link }: { content: string, src: string, name: string, description: string, imgHeight?: number, className?: string, link: string }) {
     return (
         <div className={`px-[80px] max-[1500px]:px-[40px] max-[600px]:px-[20px] min-[1150px]:pt-[100px] max-[1150px]:py-[50px] flex flex-col justify-between ${className}`}>
             <p className="font-medium italic text-[25px] text-[#6DB9FF] max-[1800px]:text-[20px] max-[600px]:text-[18px] max-[600px]:mb-[24px]">{content}</p>
@@ -11,9 +12,11 @@ export default function Review({ content, src, name, description, imgHeight=70, 
                         <p className="font-normal text-[18px] max-[1800px]:text-[14px]">{description}</p>
                     </div>
                 </div>
-                <div className="btn max-[600px]:hidden text-nowrap bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] py-[18px] px-[20px] rounded-[8px] text-[18px] max-[1800px]:text-[14px] font-medium">
-                    Open Website
-                </div>
+                <Link href={link} legacyBehavior>
+                    <a className="btn max-[600px]:hidden text-nowrap text-white bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] py-[18px] px-[20px] rounded-[8px] text-[18px] max-[1800px]:text-[14px] font-medium" target="_blank">
+                        Open Website
+                    </a>
+                </Link>
             </div>
         </div>
     )

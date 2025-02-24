@@ -35,6 +35,16 @@ const onDropZoneDrop = (e: React.DragEvent) => {
 };
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
+type ProjectFormData = {
+    name: string;
+    email: string;
+    services: string[];
+    message: string;
+    budget: number[];
+  };
+  
+
+export default function ProjectForm({ className }: { className?: string }) {
     const [budget, setBudget] = useState<number[]>([1000, 5000]);
 
     const { register, handleSubmit, control, formState: { errors }, setValue, watch } = useForm({
@@ -44,7 +54,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
 
     const formRef = useRef<HTMLFormElement>(null);
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: ProjectFormData) => {
         console.log("Form Data:", { ...data, budget });
         alert("Form submitted successfully!");
         if (formRef.current) {

@@ -1,5 +1,4 @@
 import Banner from "@/components/banner"
-import Header from "../services/_components/header"
 import CarrersBlock from "./_components/CareersBlock"
 import HeadText from "../_components/HeadText"
 import OpeningsBlock from "./_components/OpeningsBlock"

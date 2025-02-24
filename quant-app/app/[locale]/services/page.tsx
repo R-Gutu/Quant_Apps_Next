@@ -2,9 +2,9 @@ import Banner from "@/components/banner";
 import { getTranslations } from "next-intl/server";
 import Header from "./_components/header";
 import Description from "./_components/description";
-// import services from "@/lib/utils/servicesData";
 import Service from "@/lib/types/Service";
 import Blur from "@/components/Blur";
+import DescriptionType from "@/lib/types/Description";
 
 const Page = async () => {
   const t = await getTranslations("services");
@@ -280,7 +280,7 @@ const Page = async () => {
               text={header.text}
               button={header.button}
             />
-            {description.map((item: any, index: number) => (
+            {description.map((item: DescriptionType, index: number) => (
               <Description 
                 key={index}
                 title={item.title}

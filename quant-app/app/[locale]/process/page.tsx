@@ -4,6 +4,7 @@ import HeadText from "../_components/HeadText"
 import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
 import ProcessType from "@/lib/types/ProcessType"
+import ProjectForm from "../(main)/_components/projectForm"
 
 const ProcessPage = async () => {
   const t = await getTranslations("process");
@@ -79,6 +80,7 @@ const ProcessPage = async () => {
         button={t('callToAction.buttonText')}
         icon={t('callToAction.buttonIcon')}
       />
+      <ProjectForm />
       <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
         <Blur
           color="#836FFF99"
@@ -114,6 +116,13 @@ const ProcessPage = async () => {
           top="3200px"
           filter="blur(250px)"
           className="w-[500px] h-[600px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+        />
+        <Blur
+          color="#9C08FFCC"
+          left="-250px"
+          top="3800px"
+          filter="blur(250px)"
+          className="w-[500px] h-[400px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
         />
       </div>
     </div>

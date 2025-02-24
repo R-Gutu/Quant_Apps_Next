@@ -725,5 +725,57 @@
     },
     "serviceButton" : "Learn More",
     "reviewButton" : "Open Website"
+  },
+"contactForm": {
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "servicesHeading": "Select the services you need for your project:",
+      "servicesMobile": "Why are you contacting us?",
+      "budget": "Your Budget",
+      "budgetDescription": "Slide to indicate your budget range",
+      "message": "Your Message",
+      "attachments": "Attachments",
+      "selectedFiles": "Selected files:"
+    },
+    "services": [
+      { "id": "web-dev", "label": "Web development" },
+      { "id": "crm-dev", "label": "CRM development" },
+      { "id": "app-dev", "label": "Mobile App development" },
+      { "id": "server", "label": "Servers/Backend" },
+      { "id": "ui-ux", "label": "Design UI/UX" },
+      { "id": "others", "label": "Others" }
+    ],
+    "placeholders": {
+      "input": "Type here"
+    },
+    "buttons": {
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "validation": {
+      "name": {
+        "required": "Full Name is required",
+        "minLength": "Must be at least 3 characters"
+      },
+      "email": {
+        "required": "Email is required",
+        "invalid": "Invalid email format"
+      },
+      "services": {
+        "minSelect": "Select at least one service"
+      },
+      "message": {
+        "required": "Message is required",
+        "minLength": "Must be at least 10 characters"
+      },
+      "budget": {
+        "required": "Budget is required"
+      }
+    },
+    "notifications": {
+      "success": "Form submitted successfully!",
+      "error": "Failed to submit form. Please try again."
+    }
   }
 }

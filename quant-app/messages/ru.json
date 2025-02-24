@@ -729,5 +729,58 @@
     },
     "serviceButton" : "Подробнее",
     "reviewButton" : "Открыть сайт"
+  },
+"contactForm": {
+    "fields": {
+      "fullName": "Полное имя",
+      "email": "Электронная почта",
+      "servicesHeading": "Выберите услуги, которые вам нужны для проекта:",
+      "servicesMobile": "Почему вы обращаетесь к нам?",
+      "budget": "Ваш бюджет",
+      "budgetDescription": "Переместите ползунок, чтобы указать диапазон бюджета",
+      "message": "Ваше сообщение",
+      "attachments": "Вложения",
+      "selectedFiles": "Выбранные файлы:"
+    },
+    "services": [
+      { "id": "web-dev", "label": "Веб-разработка" },
+      { "id": "crm-dev", "label": "Разработка CRM" },
+      { "id": "app-dev", "label": "Разработка мобильных приложений" },
+      { "id": "server", "label": "Серверы/Backend" },
+      { "id": "ui-ux", "label": "Дизайн UI/UX" },
+      { "id": "others", "label": "Другое" }
+    ],
+    "placeholders": {
+      "input": "Введите здесь"
+    },
+    "buttons": {
+      "submit": "Отправить",
+      "submitting": "Отправка..."
+    },
+    "validation": {
+      "name": {
+        "required": "Полное имя обязательно",
+        "minLength": "Должно содержать минимум 3 символа"
+      },
+      "email": {
+        "required": "Электронная почта обязательна",
+        "invalid": "Неверный формат электронной почты"
+      },
+      "services": {
+        "minSelect": "Выберите хотя бы одну услугу"
+      },
+      "message": {
+        "required": "Сообщение обязательно",
+        "minLength": "Должно содержать минимум 10 символов"
+      },
+      "budget": {
+        "required": "Бюджет обязателен"
+      }
+    },
+    "notifications": {
+      "success": "Форма успешно отправлена!",
+      "error": "Не удалось отправить форму. Пожалуйста, попробуйте еще раз."
+    }
   }
+
 }

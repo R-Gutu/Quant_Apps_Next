@@ -729,5 +729,57 @@
     },
     "serviceButton" : "Află mai multe",
     "reviewButton" : "Deschide site-ul"
+  },
+"contactForm": {
+    "fields": {
+      "fullName": "Nume complet",
+      "email": "Email",
+      "servicesHeading": "Selectați serviciile de care aveți nevoie pentru proiectul dvs.:",
+      "servicesMobile": "De ce ne contactați?",
+      "budget": "Bugetul dvs.",
+      "budgetDescription": "Glisați pentru a indica intervalul de buget",
+      "message": "Mesajul dvs.",
+      "attachments": "Atașamente",
+      "selectedFiles": "Fișiere selectate:"
+    },
+    "services": [
+      { "id": "web-dev", "label": "Dezvoltare web" },
+      { "id": "crm-dev", "label": "Dezvoltare CRM" },
+      { "id": "app-dev", "label": "Dezvoltare aplicații mobile" },
+      { "id": "server", "label": "Servere/Backend" },
+      { "id": "ui-ux", "label": "Design UI/UX" },
+      { "id": "others", "label": "Altele" }
+    ],
+    "placeholders": {
+      "input": "Scrieți aici"
+    },
+    "buttons": {
+      "submit": "Trimite",
+      "submitting": "Se trimite..."
+    },
+    "validation": {
+      "name": {
+        "required": "Numele complet este obligatoriu",
+        "minLength": "Trebuie să aibă cel puțin 3 caractere"
+      },
+      "email": {
+        "required": "Emailul este obligatoriu",
+        "invalid": "Format email invalid"
+      },
+      "services": {
+        "minSelect": "Selectați cel puțin un serviciu"
+      },
+      "message": {
+        "required": "Mesajul este obligatoriu",
+        "minLength": "Trebuie să conțină cel puțin 10 caractere"
+      },
+      "budget": {
+        "required": "Bugetul este obligatoriu"
+      }
+    },
+    "notifications": {
+      "success": "Formular trimis cu succes!",
+      "error": "Trimiterea formularului a eșuat. Vă rugăm să încercați din nou."
+    }
   }
 }

@@ -342,6 +342,78 @@ export default async function Page() {
                 icon="/images/icons/start_project_logo.svg"
             />
             <ProjectForm className="py-[100px] px-[20%] max-[1100px]:px-[40px]" />
+            <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10">
+                <Blur
+                    color="#836FFF99"
+                    left="-250px"
+                    top="1150px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    right="-250px"
+                    top="1800px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    left="-250px"
+                    top="2700px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    right="-250px"
+                    top="2900px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    left="-250px"
+                    top="4100px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    right="-250px"
+                    top="4400px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    left="-250px"
+                    top="5000px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#836FFF99"
+                    right="-250px"
+                    top="5300px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#9C08FFCC"
+                    right="-250px"
+                    top="6400px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+                <Blur
+                    color="#9C08FFCC"
+                    left="-250px"
+                    top="7000px"
+                    filter="blur(250px)"
+                    className="w-[500px] h-[500px] max-[600px]:hidden max-[900px]:w-[300px] max-[900px]:h-[300px]"
+                />
+            </div>
         </div>
     )
 }

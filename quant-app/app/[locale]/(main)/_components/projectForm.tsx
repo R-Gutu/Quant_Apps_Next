@@ -8,24 +8,27 @@ import { Slider } from '@mui/material';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Dropzone from "./dropzone";
-
-const schema = yup.object().shape({
-    name: yup.string().required("Full Name is required").min(3, "Must be at least 3 characters"),
-    email: yup.string().email("Invalid email format").required("Email is required"),
-    services: yup.array().of(yup.string()).min(1, "Select at least one service"),
-    message: yup.string().required("Message is required").min(10, "Must be at least 10 characters"),
-    budget: yup.array().of(yup.number()).required("Budget is required"),
-});
-
-type ProjectFormData = {
-    services?: (string | undefined)[] | undefined;
-    name: string;
-    email: string;
-    message: string;
-    budget: (number | undefined)[];
-}
+import { useTranslations } from 'next-intl';
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
+    const t = useTranslations('contactForm');
+
+    type ProjectFormData = {
+        services?: (string | undefined)[] | undefined;
+        name: string;
+        email: string;
+        message: string;
+        budget: (number | undefined)[];
+    }
+    
+    const schema = yup.object().shape({
+        name: yup.string().required(t('validation.name.required')).min(3, t('validation.name.minLength')),
+        email: yup.string().email(t('validation.email.invalid')).required(t('validation.email.required')),
+        services: yup.array().of(yup.string()).min(1, t('validation.services.minSelect')),
+        message: yup.string().required(t('validation.message.required')).min(10, t('validation.message.minLength')),
+        budget: yup.array().of(yup.number()).required(t('validation.budget.required')),
+    });
+    
     const [budget, setBudget] = useState<number[]>([1000, 5000]);
     const [attachments, setAttachments] = useState<File[]>([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +79,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             );
 
             if (response.status === 200) {
-                alert('Form submitted successfully!');
+                alert(t('notifications.success'));
                 // Reset form
                 if (formRef.current) {
                     formRef.current.reset();
@@ -88,7 +91,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             }
         } catch (error) {
             console.error('Failed to submit form:', error);
-            alert('Failed to submit form. Please try again.');
+            alert(t('notifications.error'));
         } finally {
             setIsSubmitting(false);
         }
@@ -110,25 +113,35 @@ export default function ProjectForm({ className, isPopup = false }: { className?
         setAttachments(acceptedFiles);
     };
 
+    // Get services from translations
+    const services = [
+        { id: "web-dev", label: t('services.0.label') },
+        { id: "crm-dev", label: t('services.1.label') },
+        { id: "app-dev", label: t('services.2.label') },
+        { id: "server", label: t('services.3.label') },
+        { id: "ui-ux", label: t('services.4.label') },
+        { id: "others", label: t('services.5.label') }
+    ];
+
     return (
         <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className={`flex flex-col gap-[40px] items-center w-full text-[${isPopup ? stylesPopup.text : styles.text}] ${className}`}>
             <div className='flex max-[1200px]:flex-col w-full gap-[40px]'>
                 <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                    <label htmlFor="name" className='text-[22px] max-[600px]:text-[16px]'>Full Name</label>
-                    <input id="name" {...register("name")} type="text" placeholder='Type here' className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0`} />
+                    <label htmlFor="name" className='text-[22px] max-[600px]:text-[16px]'>{t('fields.fullName')}</label>
+                    <input id="name" {...register("name")} type="text" placeholder={t('placeholders.input')} className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0`} />
                     {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
                 </div>
                 <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                    <label htmlFor="email" className='text-[22px] max-[600px]:text-[16px]'>Email</label>
-                    <input id="email" {...register("email")} type="email" placeholder='Type here' className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0`} />
+                    <label htmlFor="email" className='text-[22px] max-[600px]:text-[16px]'>{t('fields.email')}</label>
+                    <input id="email" {...register("email")} type="email" placeholder={t('placeholders.input')} className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0`} />
                     {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
                 </div>
             </div>
             <div className={`w-full flex flex-col gap-[40px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                <h2 className='text-[22px] max-[750px]:hidden'>Select the services you need for your project:</h2>
-                <h2 className='hidden text-[22px] max-[600px]:text-[16px] max-[750px]:block'>Why are you contacting us?</h2>
+                <h2 className='text-[22px] max-[750px]:hidden'>{t('fields.servicesHeading')}</h2>
+                <h2 className='hidden text-[22px] max-[600px]:text-[16px] max-[750px]:block'>{t('fields.servicesMobile')}</h2>
                 <div className='grid grid-cols-2 max-[750px]:grid-cols-1 gap-[24px]'>
-                    {[{ id: "web-dev", label: "Web development" }, { id: "crm-dev", label: "CRM development" }, { id: "app-dev", label: "Mobile App development" }, { id: "server", label: "Servers/Backend" }, { id: "ui-ux", label: "Design UI/UX" }, { id: "others", label: "Others" }].map(({ id, label }) => (
+                    {services.map(({ id, label }) => (
                         <div key={id} className='flex gap-[10px] items-center'>
                             <div className='relative'>
                                 <input
@@ -154,8 +167,8 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 {errors.services && <span className="text-red-500 text-sm">{errors.services.message}</span>}
             </div>
             <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                <label className='text-[22px] max-[600px]:text-[16px]'>Your Budget</label>
-                <p className={`font-normal text-[18px] mb-[30px] text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}]`}>Slide to indicate your budget range</p>
+                <label className='text-[22px] max-[600px]:text-[16px]'>{t('fields.budget')}</label>
+                <p className={`font-normal text-[18px] mb-[30px] text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}]`}>{t('fields.budgetDescription')}</p>
                 <Controller
                     name="budget"
                     control={control}
@@ -174,17 +187,17 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 />
             </div>
             <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                <label htmlFor="message" className='text-[22px] max-[600px]:text-[16px]'>Your Message</label>
-                <input type="text" id="message" {...register("message")} placeholder='Type here' className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0 resize-none`} />
+                <label htmlFor="message" className='text-[22px] max-[600px]:text-[16px]'>{t('fields.message')}</label>
+                <input type="text" id="message" {...register("message")} placeholder={t('placeholders.input')} className={`appearance-none bg-transparent placeholder:text-[${isPopup ? stylesPopup.placeholder : styles.placeholder}] placeholder:text-[18px] max-[600px]:placeholder:text-[16px] border-b-[1px] border-[#333333] p-[6px] pl-0 outline-none focus:placeholder:opacity-0 resize-none`} />
                 {errors.message && <span className="text-red-500 text-sm">{errors.message.message}</span>}
             </div>
             {isPopup && (
                 <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
-                    <label className='text-[22px] max-[600px]:text-[16px]'>Attachments</label>
+                    <label className='text-[22px] max-[600px]:text-[16px]'>{t('fields.attachments')}</label>
                     <Dropzone onDrop={handleDrop} />
                     {attachments.length > 0 && (
                         <div className="mt-2">
-                            <p className="text-sm font-medium">Selected files:</p>
+                            <p className="text-sm font-medium">{t('fields.selectedFiles')}</p>
                             <ul className="list-disc pl-5">
                                 {attachments.map((file, index) => (
                                     <li key={index} className="text-sm">{file.name}</li>
@@ -199,7 +212,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 disabled={isSubmitting}
                 className='appearance-none outline-none border-none rounded-[8px] px-[44px] py-[18px] flex items-center justify-center text-[18px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] cursor-pointer btn disabled:opacity-50'
             >
-                {isSubmitting ? 'Submitting...' : 'Submit'}
+                {isSubmitting ? t('buttons.submitting') : t('buttons.submit')}
             </button>
         </form>
     );

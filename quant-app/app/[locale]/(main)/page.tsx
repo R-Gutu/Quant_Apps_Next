@@ -5,6 +5,7 @@ import Reason from "./_components/reason"
 import Review from "./_components/review"
 import Accordion from "./_components/accordion"
 import ProjectForm from "./_components/projectForm"
+import Blur from "@/components/Blur"
 
 export default function Page() {
     return (
@@ -15,6 +16,20 @@ export default function Page() {
             <div className="flex items-center justify-center relative mt-[25px] w-full">
                 <Image src="/images/pictures/ipad.webp" width={578} height={443} alt="ipad" className="h-auto w-[85%] min-[700px]:w-[530px]  min-[1900px]:w-[578px]" />
                 <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt="watch video button" />
+                <Blur
+                    color='#4A5DE5'
+                    left="200px"
+                    top="100px"
+                    filter="blur(120px)"
+                    className=" w-[229px] h-[229px] -z-10"
+                />
+                <Blur
+                    color='#4A5DE5'
+                    right="250px"
+                    top="100px"
+                    filter="blur(120px)"
+                    className=" w-[229px] h-[229px] -z-10"
+                />
             </div>
             <div className="w-full py-[40px] max-[1900px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[35px] relative">
                 <div className="bg-[#4A6ED1] px-[24px] py-[14px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%]  translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] max-[1000px]:text-[14px] font-medium text-nowrap">
@@ -250,7 +265,7 @@ export default function Page() {
                 button="Start Project"
                 icon="/images/icons/start_project_logo.svg"
             />
-            <ProjectForm />
+            <ProjectForm className="py-[100px] px-[20%] max-[1100px]:px-[40px]" />
         </div>
     )
 }

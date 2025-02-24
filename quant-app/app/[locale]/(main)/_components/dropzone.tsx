@@ -1,5 +1,5 @@
 import { useState, useCallback, DragEvent, ChangeEvent } from 'react';
-import { Upload, X, File, CheckCircle } from 'lucide-react';
+import { X, File, CheckCircle } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import Image from 'next/image';
 
@@ -32,19 +32,19 @@ const Dropzone = ({ onDrop }: { onDrop: (files: File[]) => void }): JSX.Element 
   const MAX_FILES = 10;
   const MAX_SIZE = 50 * 1024 * 1024; // 50MB in bytes
 
-  const validateFile = (file: File): string | null => {
-    if (!ALLOWED_TYPES.includes(file.type as AllowedFileTypes)) {
-      return 'File type not supported. Please upload PNG, JPG, PDF, DOC, or DOCX files only.';
-    }
-    if (file.size > MAX_SIZE) {
-      return 'File is too large. Maximum size is 50MB.';
-    }
-    return null;
-  };
-
   const handleFiles = useCallback((newFiles: FileList | null) => {
-    if (!newFiles) return;
 
+    const validateFile = (file: File): string | null => {
+      if (!ALLOWED_TYPES.includes(file.type as AllowedFileTypes)) {
+        return 'File type not supported. Please upload PNG, JPG, PDF, DOC, or DOCX files only.';
+      }
+      if (file.size > MAX_SIZE) {
+        return 'File is too large. Maximum size is 50MB.';
+      }
+      return null;
+    };
+
+    if (!newFiles) return;
     const fileList = Array.from(newFiles);
     setError(null);
 
@@ -69,7 +69,7 @@ const Dropzone = ({ onDrop }: { onDrop: (files: File[]) => void }): JSX.Element 
     setFiles(prev => [...prev, ...validFiles]);
     onDrop(validFiles); // Pass valid files to parent component
     console.log('Files uploaded:', validFiles);
-  }, [files, onDrop]);
+  }, [files, onDrop, MAX_SIZE, MAX_FILES]);
 
   const handleDrop = useCallback((e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();

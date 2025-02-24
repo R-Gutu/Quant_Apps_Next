@@ -14,19 +14,6 @@ const inter = Inter({
 });
 
 import "./globals.css";
-import "@/styles/mainpage.css"
-import "@/styles/seoSection.css"
-import "@/styles/faqPage.css"
-import "@/styles/nextProjectSection.css"
-import "@/styles/footer.css"
-import "@/styles/talkPopup.css"
-import "@/styles/workingProcess.css"
-import "@/styles/aboutPage.css"
-import "@/styles/contactUsPage.css"
-import "@/styles/swiper.css";
-import "@/styles/services.css";
-import "@/styles/whatWeOfferSection.css";
-import "@/styles/main.css"
 
 
 import Footer from "./_components/Footer";

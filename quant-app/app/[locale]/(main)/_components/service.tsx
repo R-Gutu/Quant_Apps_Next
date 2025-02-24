@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { Link } from "@/i18n/routing"
-export default function Service({ src, title, text, className }: { src: string, title: string, text: string, className?: string }) {
+import { getTranslations } from "next-intl/server";
+export default async function Service({ src, title, text, className }: { src: string, title: string, text: string, className?: string }) {
+    const t = await getTranslations("home");
     return (
         <div className={`flex flex-col justify-between text-white p-[50px] max-[600px]:p-[20px]  ${className}`}>
             <div>
@@ -13,7 +15,7 @@ export default function Service({ src, title, text, className }: { src: string, 
                 <p className="font-normal text-[16px] mb-[34px] text-[#C0C4CD]">{text}</p>
             </div>
             <Link href="/services" legacyBehavior>
-                <a className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium  text-white flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] btn">Learn More</a>
+                <a className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium  text-white flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] btn">{t("serviceButton")}</a>
             </Link>
         </div>
     )

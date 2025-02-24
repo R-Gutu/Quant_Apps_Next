@@ -24,7 +24,7 @@ const Footer = async () => {
         <div className="w-full flex items-center max-medium:flex-col justify-between ">
           <Link href="/" legacyBehavior>
             <a className="self-center min-w-[200px] !font-inter">
-              <Image src="/images/icons/logo.svg" alt="Logo" width={200} height={60} />
+              <Image src="/images/icons/Logo.svg" alt="Logo" width={200} height={60} />
             </a>
           </Link>
           <div className=" flex flex-wrap gap-x-[30px] max-medium:my-[30px] min-w-[330px] max-w-[500px] items-center justify-center mx-2">

@@ -12,6 +12,14 @@ import { useTranslations } from 'next-intl';
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
     const t = useTranslations('contactForm');
+
+    type ProjectFormData = {
+        services?: (string | undefined)[] | undefined;
+        name: string;
+        email: string;
+        message: string;
+        budget: (number | undefined)[];
+    }
     
     const schema = yup.object().shape({
         name: yup.string().required(t('validation.name.required')).min(3, t('validation.name.minLength')),
@@ -32,7 +40,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
 
     const formRef = useRef<HTMLFormElement>(null);
 
-    const onSubmit = async (data: any) => {
+    const onSubmit = async (data: ProjectFormData) => {
         try {
             setIsSubmitting(true);
 

@@ -96,14 +96,14 @@ const Page = async () => {
   ];
 
   return (
-    <div className="flex flex-col font-inter px-[100px] max-mui-md:px-[40px]">
+    <div className="flex flex-col font-inter px-[100px] max-mui-md:px-[40px] max-smallest:px-[10px]">
       <Banner
         className="mt-[20px] min-[600px]:mt-[50px]"
         src={t('banner.src')}
         header={t('banner.header')}
         subHeader={t('banner.subHeader')}
       />
-      <div className="w-full flex gap-[150px] max-medium:gap-[40px] px-[100px] max-mui-md:px-[40] py-[60px] max-medium:flex-col">
+      <div className="w-full flex gap-[150px] max-medium:gap-[40px] px-[100px] max-mui-md:px-[40px] max-smallest:px-[0px] py-[60px] max-medium:flex-col">
         <div className="flex flex-col gap-[20px] justify-center">
           <h1 className="font-semibold text-[44px] max-mui-md:text-[34px] max-smallest:text-[24px] max-smallest:text-center text-[#FFFFFF]">
             {t('about.title')}

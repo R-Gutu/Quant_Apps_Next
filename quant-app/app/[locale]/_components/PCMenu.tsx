@@ -20,7 +20,7 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                            big:px-[162px] big:h-[100px]
         ">
                 <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
-                    <a className="w-[118px] h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
+                    <a className="w-[118px] mr-4 h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
                         <Image id="logo" src="/images/icons/Logo.svg" width={178} height={60} alt="Logo" />
                     </a>
                 </Link>
@@ -41,7 +41,7 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                                 href='/talk-modal'
                                 legacyBehavior
                             >
-                                <a className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[24px] py-[8px] text-[16px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
+                                <a className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[20px] py-[8px] text-[14px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
                                     {t("lets-talk")}
                                 </a>
                             </Link>

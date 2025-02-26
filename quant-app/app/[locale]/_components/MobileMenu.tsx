@@ -20,7 +20,7 @@ const MobileMenu = ({menuVisible, setMenuVisible}: {menuVisible: boolean, setMen
       <ul className="flex flex-col w-full items-center gap-[35px] mt-[35px]">
         {pages.map(e =>
           <Link key={e} href={`/${e}`} legacyBehavior>
-            <a className={cn('text-nowrap font-normal text-[28px] text-black drop-shadow', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
+            <a onClick={() => setMenuVisible(false)} className={cn('text-nowrap font-normal text-[28px] max-mui-md:text-[22px] max-smallest:text-[18px] text-black drop-shadow', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
           </Link>
         )}
       </ul>

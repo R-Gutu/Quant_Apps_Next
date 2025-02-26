@@ -1,4 +1,7 @@
 {
+  "video": {
+    "notSupported": "Browserul dvs. nu suportă videoclipuri."
+  },
   "metadata": {
     "title": "Quant Apps",
     "description": "Quant-Apps oferă aplicații mobile, sisteme CRM și soluții UI/UX pentru creșterea afacerii. Aplicații performante și scalabile, adaptate nevoilor tale.",

@@ -1,4 +1,7 @@
 {
+  "video": {
+    "notSupported": "Your browser does not support videos."
+  },
   "metadata": {
     "title": "Quant Apps",
     "description": "Quant-Apps delivers mobile apps, CRM systems, and UI/UX solutions for business growth. High-performance and scalable applications tailored to your needs.",

@@ -212,7 +212,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             <button
                 type="submit"
                 disabled={isSubmitting}
-                className='appearance-none outline-none border-none rounded-[8px] px-[44px] py-[18px] flex items-center justify-center text-[18px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] cursor-pointer btn disabled:opacity-50'
+                className='appearance-none outline-none border-none rounded-[8px] px-[44px] py-[18px] flex items-center justify-center text-[18px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] cursor-pointer btn disabled:opacity-50 text-white'
             >
                 {isSubmitting ? t('buttons.submitting') : t('buttons.submit')}
             </button>

@@ -67,6 +67,7 @@ const ProjectsPage = async () => {
   return (
     <div className="px-[100px] max-small:px-[40px] max-smallest:px-[20px] font-inter">
       <Banner
+        className="mt-[20px] min-[600px]:mt-[60px]"
         src={t('banner.image')}
         header={t('banner.title')}
         subHeader={t('banner.subtitle')}

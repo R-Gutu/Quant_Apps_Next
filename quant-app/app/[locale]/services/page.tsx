@@ -267,8 +267,9 @@ const Page = async () => {
   ]
 
   return (
-    <div className="px-[100px] mt-[62px] font-inter max-mui-md:px-[40px] max-smallest:px-[10px]">
+    <div className="px-[100px]font-inter max-mui-md:px-[40px] max-smallest:px-[10px]">
       <Banner
+        className="mt-[20px] min-[600px]:mt-[60px]"
         src="/images/banners/what-we-offer-banner.png"
         header={t('banner.whatWeOffer.header')}
         subHeader={t('banner.whatWeOffer.subHeader')}

@@ -98,7 +98,7 @@ const Page = async () => {
   return (
     <div className="flex flex-col font-inter px-[100px] max-mui-md:px-[40px] max-smallest:px-[10px]">
       <Banner
-        className="mt-[20px] min-[600px]:mt-[50px]"
+        className="mt-[20px] min-[600px]:mt-[60px]"
         src={t('banner.src')}
         header={t('banner.header')}
         subHeader={t('banner.subHeader')}
@@ -116,13 +116,15 @@ const Page = async () => {
             <p className="indent-6">{t('about.paragraph5')}</p>
           </div>
         </div>
-        <Image
-          width={1490}
-          height={1490}
-          className="w-full h-auto rounded-[16px] border-[3px] border-solid border-[#6A65FF80]"
-          alt={t('about.image.alt')}
-          src={t('about.image.src')}
-        />
+        <div className="flex items-center justify-center">
+          <Image
+            width={1490}
+            height={1490}
+            className="w-full mui-md:min-w-[500px] max-h-[600px] max-w-[600px] h-auto rounded-[16px] border-[3px] border-solid border-[#6A65FF80]"
+            alt={t('about.image.alt')}
+            src={t('about.image.src')}
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-[50px]">
         <h2 className="font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[40px] text-[#FFFFFF]">

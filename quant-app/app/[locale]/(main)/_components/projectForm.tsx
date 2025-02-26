@@ -72,7 +72,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 'service_teo59sv',
                 'template_e7f0ogb',
                 templateParams,
-                'S46PU3W0ILp9NXki4-Jx'
+                'S46PU3W0ILp9NXki4'
             );
     
             console.log(response);

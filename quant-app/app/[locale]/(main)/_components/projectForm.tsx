@@ -14,81 +14,79 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     const t = useTranslations('contactForm');
 
     type ProjectFormData = {
-        services?: (string | undefined)[] | undefined;
+        services?: (string | undefined)[];
         name: string;
         email: string;
         message: string;
-        budget: (number | undefined)[];
-    }
+        budget: (number | null | undefined)[];
+    };
     
+
     const schema = yup.object().shape({
         name: yup.string().required(t('validation.name.required')).min(3, t('validation.name.minLength')),
         email: yup.string().email(t('validation.email.invalid')).required(t('validation.email.required')),
         services: yup.array().of(yup.string()).min(1, t('validation.services.minSelect')),
         message: yup.string().required(t('validation.message.required')).min(10, t('validation.message.minLength')),
-        budget: yup.array().of(yup.number()).required(t('validation.budget.required')),
+        budget: yup.array().of(yup.number().nullable()).required().min(2, t('validation.budget.required')),
+
     });
-    
+
     const [budget, setBudget] = useState<number[]>([1000, 5000]);
     const [attachments, setAttachments] = useState<File[]>([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const { register, handleSubmit, control, formState: { errors }, setValue, watch } = useForm({
+    const { register, handleSubmit, control, formState: { errors }, setValue, watch } = useForm<ProjectFormData>({
         resolver: yupResolver(schema),
-        defaultValues: { services: [] },
+        defaultValues: { services: [], budget: [1000, 5000] }, // Ensure budget is initialized properly
     });
-
+    
     const formRef = useRef<HTMLFormElement>(null);
 
     const onSubmit = async (data: ProjectFormData) => {
+        console.log("REACHED");
         try {
             setIsSubmitting(true);
-
-            // First, upload files if there are any
+    
+            // Convert files to base64 format
             const uploadedFiles = await Promise.all(
                 attachments.map(async (file) => {
-                    // Convert file to base64
-                    const base64 = await new Promise<string>((resolve, reject) => {
+                    return new Promise<string>((resolve, reject) => {
                         const reader = new FileReader();
                         reader.readAsDataURL(file);
                         reader.onload = () => resolve(reader.result as string);
                         reader.onerror = (error) => reject(error);
                     });
-
-                    return {
-                        name: file.name,
-                        data: base64,
-                    };
                 })
             );
-
+    
             // Prepare the template parameters
             const templateParams = {
                 ...data,
                 budget: budget.join(' - '), // Convert budget array to string
                 services: data.services?.join(', '), // Convert services array to string
-                attachments: uploadedFiles, // Add the attachments
+                attachments: uploadedFiles, // Add base64-encoded files
             };
-
+    
             // Send email with attachments
             const response = await emailjs.send(
-                'service_ygz6zab',
-                'template_hgfas0q',
+                'service_teo59sv',
+                'template_e7f0ogb',
                 templateParams,
-                'NxaXNUOZOCYcvu-Jx'
+                'S46PU3W0ILp9NXki4-Jx'
             );
-
+    
+            console.log(response);
+    
             if (response.status === 200) {
                 alert(t('notifications.success'));
-                // Reset form
                 if (formRef.current) {
                     formRef.current.reset();
                 }
-                setAttachments([]); // Clear attachments
-                setBudget([1000, 5000]); // Reset budget
-                // Reset services
+                setAttachments([]);
+                setBudget([1000, 5000]);
                 setValue("services", []);
             }
+    
         } catch (error) {
             console.error('Failed to submit form:', error);
             alert(t('notifications.error'));
@@ -96,6 +94,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             setIsSubmitting(false);
         }
     };
+    
 
     const styles = {
         border: '#6A65FF',
@@ -113,7 +112,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
         setAttachments(acceptedFiles);
     };
 
-    // Get services from translations
     const services = [
         { id: "web-dev", label: t('services.0.label') },
         { id: "crm-dev", label: t('services.1.label') },
@@ -176,7 +174,11 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                         <Slider
                             {...field}
                             value={budget}
-                            onChange={(e, v) => setBudget(v as number[])}
+                            onChange={(e, v) => {
+                                setBudget(v as number[]);
+                                // Update the form field value as well
+                                field.onChange(v);
+                            }}
                             valueLabelDisplay="on"
                             max={15000}
                             step={100}
@@ -207,8 +209,8 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                     )}
                 </div>
             )}
-            <button 
-                type="submit" 
+            <button
+                type="submit"
                 disabled={isSubmitting}
                 className='appearance-none outline-none border-none rounded-[8px] px-[44px] py-[18px] flex items-center justify-center text-[18px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] cursor-pointer btn disabled:opacity-50'
             >

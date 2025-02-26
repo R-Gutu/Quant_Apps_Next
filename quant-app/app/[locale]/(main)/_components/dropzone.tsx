@@ -116,6 +116,7 @@ const Dropzone = ({ onDrop }: { onDrop: (files: File[]) => void }): JSX.Element 
           type="file"
           multiple
           className="hidden"
+          name="attachments"
           onChange={(e: ChangeEvent<HTMLInputElement>) => handleFiles(e.target.files)}
           accept=".png,.jpg,.jpeg,.pdf,.doc,.docx"
         />

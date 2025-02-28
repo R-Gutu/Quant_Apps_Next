@@ -33,7 +33,7 @@ const Page = () => {
             height={106}
             className='cursor-pointer'
             alt='close'
-            onClick={() => router.back()}
+            onClick={handleOnClose}
           />
         </div>
         <ProjectForm className='overflow-auto custom-scrollbar max-h-[60vh] px-[10%] max-[1100px]:px-[40px] max-[500px]:px-[20px]' isPopup />

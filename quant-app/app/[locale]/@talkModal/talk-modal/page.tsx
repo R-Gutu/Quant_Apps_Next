@@ -1,6 +1,6 @@
 'use client'
 import { Modal } from '@mui/material';
-import { useRouter, usePathname } from "@/i18n/routing";
+import { useRouter } from "@/i18n/routing";
 import Image from 'next/image';
 import ProjectForm from '../../(main)/_components/projectForm';
 import { useEffect } from 'react';

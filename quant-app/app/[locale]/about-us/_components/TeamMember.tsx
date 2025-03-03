@@ -11,8 +11,10 @@ const TeamMember = ({name, position, link, text, src, alt} : {name: string, posi
                 <p className="font-normal text-[18px] max-mui-md:text-[16px] max-smallest:text-[14px] text-[#000000]">{position}</p>
             </div>
             <div className="h-full flex justify-start items-start">
-                <Link href={link}>
-                    <Image src="/images/icons/linkedin.svg" width={30} height={30} className="min-w-[30px]" alt="linkedin"/>
+                <Link href={link} legacyBehavior>
+                    <a target="_blank">
+                        <Image src="/images/icons/linkedin.svg" width={30} height={30} className="min-w-[30px]" alt="linkedin"/>
+                    </a>
                 </Link>
             </div>
         </div>

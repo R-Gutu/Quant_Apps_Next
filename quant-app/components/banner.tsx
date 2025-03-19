@@ -4,7 +4,7 @@ export default function Banner({ header, subHeader, src, className, button, icon
     return (
         <div className={`relative overflow-hidden w-full px-[16px] min-[600px]:px-[100px] min-[1000px]:px-[250px] py-[50px] min-[600px]:py-[120px] medium:px-[300px] rounded-[35px] bg-[#141a76] text-white flex flex-col items-center justify-center ${className}`}>
             <Image
-                className="z-0 absolute w-full h-full object-fill object-left mix-blend-overlay"
+                className="z-0 absolute w-full h-full object-cover object-left mix-blend-overlay"
                 sizes="100vw"
                 width={1500}
                 height={0}

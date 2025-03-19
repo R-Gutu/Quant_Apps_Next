@@ -27,9 +27,11 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                 <nav>
                     <ul className="gap-[30px] max-small:hidden small:flex small:justify-between small:gap-[30px]">
                         {pages.map(e =>
-                            <Link key={e} href={`/${e}`} legacyBehavior>
-                                <a className={cn('text-nowrap font-medium text-[18px] text-white hover:text-[var(--purple)] duration-200 transition-colors', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
-                            </Link>
+                            <li key={e}>
+                                <Link href={`/${e}`} legacyBehavior>
+                                    <a className={cn('text-nowrap font-medium text-[18px] text-white hover:text-[var(--purple)] duration-200 transition-colors', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
+                                </Link>
+                            </li>
                         )}
                     </ul>
                 </nav>

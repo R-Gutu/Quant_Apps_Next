@@ -14,8 +14,8 @@ export default async function Service({ src, title, text, className, ariaLabel }
                 </div>
                 <p className="font-normal text-[16px] mb-[34px] text-[#C0C4CD]">{text}</p>
             </div>
-            <Link href="/services" legacyBehavior aria-label={ariaLabel || ""}>
-                <a className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium  text-white flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] btn" aria-label={ariaLabel || ""}>{t("serviceButton")}</a>
+            <Link href="/services" legacyBehavior aria-label={ariaLabel || ""} title={ariaLabel || ""}>
+                <a className="max-[600px]:text-[14px] w-full h-[60px] text-[18px] font-medium  text-white flex justify-center items-center rounded-[8px] bg-[linear-gradient(89.13deg,_#836FFF_0.18%,_#4A5DE5_99.86%)] btn" aria-label={ariaLabel || ""} title={ariaLabel || ""}>{t("serviceButton")}</a>
             </Link>
         </div>
     )

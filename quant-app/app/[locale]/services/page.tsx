@@ -273,6 +273,7 @@ const Page = async () => {
         src="/images/banners/what-we-offer-banner.png"
         header={t('banner.whatWeOffer.header')}
         subHeader={t('banner.whatWeOffer.subHeader')}
+        priority
       />
         {services.map(({header, description}) => (
           <div key={header.title}>

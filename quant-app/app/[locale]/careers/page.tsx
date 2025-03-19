@@ -61,6 +61,7 @@ const Page = async () => {
     return (
         <div className="px-[100px] font-inter max-mui-md:px-[60px] max-smallest:px-[20px]">
             <Banner
+                priority
                 className="mt-[20px] min-[600px]:mt-[60px]"
                 src="/images/banners/faqs_banner.png"
                 header={t('banner.header')}

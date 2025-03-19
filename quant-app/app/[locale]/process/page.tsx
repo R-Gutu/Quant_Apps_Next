@@ -61,6 +61,7 @@ const ProcessPage = async () => {
     <div className="px-[100px] max-mui-md:px-[40px] font-inter">
       <Banner
         className="mt-[20px] min-[600px]:mt-[60px]"
+        priority
         src={t('banner.image')}
         header={t('banner.title')}
         subHeader={t('banner.subtitle')}

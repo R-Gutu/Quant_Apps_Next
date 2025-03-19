@@ -71,6 +71,7 @@ const ProjectsPage = async () => {
         src={t('banner.image')}
         header={t('banner.title')}
         subHeader={t('banner.subtitle')}
+        priority
       />
       <HeadText
         title={t('header.title')}

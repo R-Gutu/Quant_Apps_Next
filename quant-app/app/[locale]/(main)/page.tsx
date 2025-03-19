@@ -16,6 +16,7 @@ export default async function Page() {
         icon: string,
         title: string,
         text: string,
+        ariaLabel?: string,
         className?: string
     }
 
@@ -24,35 +25,41 @@ export default async function Page() {
             icon: "/images/icons/brush.svg",
             title: t('services.uiux.title'),
             text: t('services.uiux.text'),
+            ariaLabel: "Learn more about our UI/UX design services for intuitive and engaging user experiences.",
             className: "border-b-[1px] border-r-[1px]"
         },
         {
             icon: "/images/icons/puzzle.svg",
             title: t('services.mobile.title'),
+            ariaLabel: "Learn more about our iOS and Android app development for high-performance, scalable mobile solutions.",
             text: t('services.mobile.text'),
             className: "border-b-[1px] min-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/dev.svg",
             title: t('services.web.title'),
+            ariaLabel:  "Learn more about our website development services for fast, secure, and SEO-optimized websites.",
             text: t('services.web.text'),
             className: "border-b-[1px] max-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/stats.svg",
             title: t('services.crm.title'),
+            ariaLabel: "Learn more about our custom CRM solutions for improving workflow efficiency and customer relationships.",
             text: t('services.crm.text'),
             className: "min-[1150px]:border-r-[1px] max-[1150px]:border-b-[1px]"
         },
         {
             icon: "/images/icons/platforms.svg",
             title: t('services.crossPlatform.title'),
+            ariaLabel: "Learn more about our cross-platform development services for scalable mobile apps on iOS and Android.",
             text: t('services.crossPlatform.text'),
             className: "border-r-[1px]"
         },
         {
             icon: "/images/icons/gear.svg",
             title: t('services.support.title'),
+            ariaLabel: "Learn more about our support and maintenance services to keep your applications secure and up-to-date.",
             text: t('services.support.text'),
             className: "max-[800px]:!border-0"
         }
@@ -253,6 +260,7 @@ export default async function Page() {
                     <Service
                         key={index}
                         className={item?.className}
+                        ariaLabel={item?.ariaLabel}
                         src={item.icon}
                         title={item.title}
                         text={item.text}

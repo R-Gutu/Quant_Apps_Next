@@ -173,6 +173,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                     render={({ field }) => (
                         <Slider
                             {...field}
+                            aria-label="Budget slider"
                             value={budget}
                             onChange={(e, v) => {
                                 setBudget(v as number[]);

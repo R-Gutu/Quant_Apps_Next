@@ -18,7 +18,6 @@ const Page = () => {
       }, [])
     
       function handleOnClose() {
-        console.log('handleOnClose');
         document.querySelector('body')?.classList.remove('overflow-hidden');
         router.back();
       }

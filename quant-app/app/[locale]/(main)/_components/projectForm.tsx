@@ -43,7 +43,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     const formRef = useRef<HTMLFormElement>(null);
 
     const onSubmit = async (data: ProjectFormData) => {
-        console.log("REACHED");
         try {
             setIsSubmitting(true);
     
@@ -74,8 +73,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                 templateParams,
                 'S46PU3W0ILp9NXki4'
             );
-    
-            console.log(response);
     
             if (response.status === 200) {
                 alert(t('notifications.success'));

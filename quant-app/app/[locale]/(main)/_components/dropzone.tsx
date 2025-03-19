@@ -68,7 +68,6 @@ const Dropzone = ({ onDrop }: { onDrop: (files: File[]) => void }): JSX.Element 
     // Add valid files to state
     setFiles(prev => [...prev, ...validFiles]);
     onDrop(validFiles); // Pass valid files to parent component
-    console.log('Files uploaded:', validFiles);
   }, [files, onDrop, MAX_SIZE, MAX_FILES]);
 
   const handleDrop = useCallback((e: DragEvent<HTMLDivElement>) => {

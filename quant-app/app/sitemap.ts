@@ -12,6 +12,10 @@ const ROUTES = {
   process: 'process',
   about: 'about-us',
   careers: 'careers',
+  talkModal: 'talk-modal',
+  videoModal: 'video-modal',
+  termsOfUse: 'terms-of-use',
+  privacyPolicy: 'privacy-policy'
 } as const
 type Route = keyof typeof ROUTES
 
@@ -49,6 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: 'careers', priority: PRIORITIES.MEDIUM },
     { route: 'about', priority: PRIORITIES.MEDIUM },
     { route: 'process', priority: PRIORITIES.LOW },
+    { route: 'talkModal', priority: PRIORITIES.LOW },
+    { route: 'videoModal', priority: PRIORITIES.LOW },
+    { route: 'termsOfUse', priority: PRIORITIES.LOW },
+    { route: 'privacyPolicy', priority: PRIORITIES.LOW },
   ]
 
   return pages.map(({ route, priority }) => ({

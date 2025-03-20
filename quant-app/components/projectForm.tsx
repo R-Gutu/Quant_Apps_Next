@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Slider } from '@mui/material';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Dropzone from "./dropzone";
+import Dropzone from "../app/[locale]/(main)/_components/dropzone";
 import { useTranslations } from 'next-intl';
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {

@@ -4,7 +4,7 @@ import HeadText from "../_components/HeadText"
 import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
 import ProcessType from "@/lib/types/ProcessType"
-import ProjectForm from "../(main)/_components/projectForm"
+import ProjectForm from "../../../components/projectForm"
 
 const ProcessPage = async () => {
   const t = await getTranslations("process");

@@ -26,6 +26,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const domain = headersList.get('x-url') || "";
 
   return {
+    robots: {
+      index: true,
+      googleBot: {
+        index: true,
+      }
+    },
     title: t('title'),
     description: t('description'),
     icons: {

@@ -1,15 +1,16 @@
 import Image from "next/image"
 import { Link } from "@/i18n/routing"
-export default function Banner({ header, subHeader, src, className, button, icon }: { header: string, subHeader: string, src: string, className?: string, button?: string, icon?: string }) {
+export default function Banner({ header, subHeader, src, className, button, icon, priority = false }: { header: string, subHeader: string, src: string, className?: string, button?: string, icon?: string, priority?: boolean }) {
     return (
         <div className={`relative overflow-hidden w-full px-[16px] min-[600px]:px-[100px] min-[1000px]:px-[250px] py-[50px] min-[600px]:py-[120px] medium:px-[300px] rounded-[35px] bg-[#141a76] text-white flex flex-col items-center justify-center ${className}`}>
             <Image
-                className="z-0 absolute w-full h-full object-fill object-left mix-blend-overlay"
+                className="z-0 absolute w-full h-full object-cover object-left mix-blend-overlay"
                 sizes="100vw"
                 width={1500}
                 height={0}
                 src={src}
                 alt="banner background"
+                priority={priority}
             />
             {icon && <Image className="mb-[50px]" src={icon ?? ''} alt="icon" width={80} height={80} />}
             <h2 className="font-semibold text-[28px] min-[600px]:text-[38px] medium:text-[48px] z-10 text-center min-[600px]:mb-[14px]">{header}</h2>

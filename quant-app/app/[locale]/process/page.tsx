@@ -4,7 +4,6 @@ import HeadText from "../_components/HeadText"
 import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
 import ProcessType from "@/lib/types/ProcessType"
-import ProjectForm from "../(main)/_components/projectForm"
 import type { Metadata } from 'next'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -15,6 +14,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t("description"),
   };
 }
+
+import ProjectForm from "@/components/projectForm"
 
 const ProcessPage = async () => {
   const t = await getTranslations("process");
@@ -71,6 +72,7 @@ const ProcessPage = async () => {
     <div className="px-[100px] max-mui-md:px-[40px] font-inter">
       <Banner
         className="mt-[20px] min-[600px]:mt-[60px]"
+        priority
         src={t('banner.image')}
         header={t('banner.title')}
         subHeader={t('banner.subtitle')}

@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Slider } from '@mui/material';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Dropzone from "./dropzone";
+import Dropzone from "../app/[locale]/(main)/_components/dropzone";
 import { useTranslations } from 'next-intl';
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
@@ -43,7 +43,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     const formRef = useRef<HTMLFormElement>(null);
 
     const onSubmit = async (data: ProjectFormData) => {
-        console.log("REACHED");
         try {
             setIsSubmitting(true);
     
@@ -69,13 +68,11 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     
             // Send email with attachments
             const response = await emailjs.send(
-                'service_teo59sv',
+                'service_panvzzr',
                 'template_e7f0ogb',
                 templateParams,
                 'S46PU3W0ILp9NXki4'
             );
-    
-            console.log(response);
     
             if (response.status === 200) {
                 alert(t('notifications.success'));
@@ -173,6 +170,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                     render={({ field }) => (
                         <Slider
                             {...field}
+                            aria-label="Budget slider"
                             value={budget}
                             onChange={(e, v) => {
                                 setBudget(v as number[]);

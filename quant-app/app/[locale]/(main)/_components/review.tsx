@@ -11,7 +11,7 @@ export default async function Review({ content, src, name, description, imgHeigh
                 <div className="flex gap-[18px] items-center">
                     <Image src={src} alt={name} width={70} height={imgHeight} className={`w-auto h-[${imgHeight}px]`} />
                     <div>
-                        <h4 className="font-medium text-[20px] max-[1800px]:text-[16px] max-[600px]:">{name}</h4>
+                        <h2 className="font-medium text-[20px] max-[1800px]:text-[16px] max-[600px]:">{name}</h2>
                         <p className="font-normal text-[18px] max-[1800px]:text-[14px]">{description}</p>
                     </div>
                 </div>

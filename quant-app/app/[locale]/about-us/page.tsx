@@ -111,6 +111,7 @@ const Page = async () => {
     <div className="flex flex-col font-inter px-[100px] max-mui-md:px-[40px] max-smallest:px-[10px]">
       <Banner
         className="mt-[20px] min-[600px]:mt-[60px]"
+        priority
         src={t('banner.src')}
         header={t('banner.header')}
         subHeader={t('banner.subHeader')}

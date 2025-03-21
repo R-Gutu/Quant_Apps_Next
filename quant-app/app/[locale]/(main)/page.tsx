@@ -4,7 +4,7 @@ import Service from "./_components/service"
 import Reason from "./_components/reason"
 import Review from "./_components/review"
 import Accordion from "./_components/accordion"
-import ProjectForm from "./_components/projectForm"
+import ProjectForm from "@/components/projectForm"
 import Blur from "@/components/Blur"
 import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server"
@@ -19,6 +19,9 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+import VideoComponent from "./_components/VideoComponent"
+
+
 export default async function Page() {
     const t = await getTranslations("home");
 
@@ -26,6 +29,7 @@ export default async function Page() {
         icon: string,
         title: string,
         text: string,
+        ariaLabel?: string,
         className?: string
     }
 
@@ -34,35 +38,41 @@ export default async function Page() {
             icon: "/images/icons/brush.svg",
             title: t('services.uiux.title'),
             text: t('services.uiux.text'),
+            ariaLabel: "Learn more about our UI/UX design services for intuitive and engaging user experiences.",
             className: "border-b-[1px] border-r-[1px]"
         },
         {
             icon: "/images/icons/puzzle.svg",
             title: t('services.mobile.title'),
+            ariaLabel: "Learn more about our iOS and Android app development for high-performance, scalable mobile solutions.",
             text: t('services.mobile.text'),
             className: "border-b-[1px] min-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/dev.svg",
             title: t('services.web.title'),
+            ariaLabel: "Learn more about our website development services for fast, secure, and SEO-optimized websites.",
             text: t('services.web.text'),
             className: "border-b-[1px] max-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/stats.svg",
             title: t('services.crm.title'),
+            ariaLabel: "Learn more about our custom CRM solutions for improving workflow efficiency and customer relationships.",
             text: t('services.crm.text'),
             className: "min-[1150px]:border-r-[1px] max-[1150px]:border-b-[1px]"
         },
         {
             icon: "/images/icons/platforms.svg",
             title: t('services.crossPlatform.title'),
+            ariaLabel: "Learn more about our cross-platform development services for scalable mobile apps on iOS and Android.",
             text: t('services.crossPlatform.text'),
             className: "border-r-[1px]"
         },
         {
             icon: "/images/icons/gear.svg",
             title: t('services.support.title'),
+            ariaLabel: "Learn more about our support and maintenance services to keep your applications secure and up-to-date.",
             text: t('services.support.text'),
             className: "max-[800px]:!border-0"
         }
@@ -210,26 +220,7 @@ export default async function Page() {
             <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] min-[1900px]:text-[68px]">
                 {t('hero.title')}
             </h1>
-            <div className="flex items-center justify-center relative mt-[25px] w-full">
-                <Image src="/images/pictures/ipad.webp" width={578} height={443} alt={t('hero.ipadAlt')} className="h-auto w-[85%] min-[700px]:w-[530px] min-[1900px]:w-[578px]" />
-                <Link href="/video-modal">
-                    <Image className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[30%] duration-200 transition-all cursor-pointer hover:scale-110 hover:drop-shadow-2xl" unoptimized src="/images/elements/watch.svg" width={261} height={120} alt={t('hero.watchAlt')} />
-                </Link>
-                <Blur
-                    color='#4A5DE5'
-                    left="200px"
-                    top="100px"
-                    filter="blur(120px)"
-                    className="w-[229px] h-[229px] -z-10"
-                />
-                <Blur
-                    color='#4A5DE5'
-                    right="250px"
-                    top="100px"
-                    filter="blur(120px)"
-                    className="w-[229px] h-[229px] -z-10"
-                />
-            </div>
+            <VideoComponent ipadAlt={t('hero.ipadAlt')} watchAlt={t('hero.watchAlt')} />
             <div className="w-full py-[40px] max-[1900px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[35px] relative">
                 <div className="bg-[#4A6ED1] px-[24px] py-[14px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] max-[1000px]:text-[14px] font-medium text-nowrap">
                     {t('trusted.title')}
@@ -263,6 +254,7 @@ export default async function Page() {
                     <Service
                         key={index}
                         className={item?.className}
+                        ariaLabel={item?.ariaLabel}
                         src={item.icon}
                         title={item.title}
                         text={item.text}

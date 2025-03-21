@@ -68,7 +68,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     
             // Send email with attachments
             const response = await emailjs.send(
-                'service_teo59sv',
+                'service_panvzzr',
                 'template_e7f0ogb',
                 templateParams,
                 'S46PU3W0ILp9NXki4'

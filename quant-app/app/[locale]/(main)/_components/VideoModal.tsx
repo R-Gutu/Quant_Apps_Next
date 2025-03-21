@@ -1,14 +1,12 @@
 "use client";
 
-import { useRouter } from "@/i18n/routing";
 import { Modal } from "@mui/material";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useEffect } from "react";
 
-const ModalComponent = () => {
-    const router = useRouter();
+const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const currentLocale = useLocale();  // ✅ Now inside a Client Component
     const intro = getIntroByLanguage(currentLocale);
     const t = useTranslations("video");
@@ -19,7 +17,8 @@ const ModalComponent = () => {
     }, []);
 
     function handleOnClose() {
-        router.back();
+        setIsOpen(false)
+        document.querySelector("body")?.classList.remove("overflow-hidden");
     }
 
     return (
@@ -46,4 +45,4 @@ const ModalComponent = () => {
     );
 };
 
-export default ModalComponent;
+export default VideoModal;

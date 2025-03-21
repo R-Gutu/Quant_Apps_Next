@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils/utils";
 
 
-const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
+const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>>, setTalkModalOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const t = useTranslations("app-toolbar");
     const pathname = usePathname();
     const pages = ['services', 'projects', 'process', 'about-us', 'careers']
@@ -38,16 +38,9 @@ const PCMenu = ({ setMenuVisible }: { setMenuVisible: React.Dispatch<React.SetSt
                 <div className="flex items-center">
                     <span className="mr-[33px] hidden small:block"><LanguageSwitcher /></span>
                     <div className="nav-right flex justify-center items-center">
-                        {pathname !== "/contact-us" && (
-                            <Link
-                                href='/talk-modal'
-                                legacyBehavior
-                            >
-                                <a className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[20px] py-[8px] text-[14px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
-                                    {t("lets-talk")}
-                                </a>
-                            </Link>
-                        )}
+                        <button onClick={() => setTalkModalOpen(true)} className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[20px] py-[8px] text-[14px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">
+                            {t("lets-talk")}
+                        </button>
                     </div>
                     <div className="w-[46px] h-[46px] ml-[33px] block small:hidden">
                         <Image

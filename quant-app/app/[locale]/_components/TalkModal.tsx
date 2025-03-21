@@ -1,13 +1,10 @@
 "use client";
 
 import { Modal } from "@mui/material";
-import { useRouter } from "@/i18n/routing";
 import Image from "next/image";
 import ProjectForm from "@/components/projectForm";
 import { useEffect } from "react";
-
-const ModalComponent = () => {
-    const router = useRouter();
+const TalkModal = ({ setIsOpen }: { isOpen: boolean, setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
 
     useEffect(() => {
         document.querySelector("body")?.classList.add("overflow-hidden");
@@ -15,7 +12,8 @@ const ModalComponent = () => {
     }, []);
 
     function handleOnClose() {
-        router.back();
+        setIsOpen(false)
+        document.querySelector("body")?.classList.remove("overflow-hidden");
     }
 
     return (
@@ -27,12 +25,12 @@ const ModalComponent = () => {
         >
             <div className="bg-white w-[70%] max-[700px]:w-[95%] h-[90%] rounded-[35px] py-[25px] overflow-hidden shadow-lg">
                 <div className="flex justify-between mb-[25px] px-[10%] max-[1100px]:px-[40px] max-[500px]:px-[20px]">
-                    <Image 
-                        src="/images/icons/logo-mobile.svg" 
-                        width={237} 
-                        height={58} 
-                        alt="logo" 
-                        className="max-[500px]:w-[150px]" 
+                    <Image
+                        src="/images/icons/logo-mobile.svg"
+                        width={237}
+                        height={58}
+                        alt="logo"
+                        className="max-[500px]:w-[150px]"
                     />
                     <Image
                         src="/images/icons/cross.svg"
@@ -49,4 +47,4 @@ const ModalComponent = () => {
     );
 };
 
-export default ModalComponent;
+export default TalkModal;

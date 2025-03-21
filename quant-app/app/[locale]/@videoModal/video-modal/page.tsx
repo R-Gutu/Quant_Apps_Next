@@ -1,5 +1,5 @@
-import ModalComponent from "./ModalComponent";
+import VideoModal from "../../(main)/_components/VideoModal";
 
 export default function Page() {
-    return <ModalComponent />;
+    return <VideoModal />;
 }

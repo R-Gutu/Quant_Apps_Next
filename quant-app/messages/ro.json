@@ -27,6 +27,8 @@
     "AllRightsReserved": "Toate drepturile rezervate."
   },
   "services": {
+    "title": "Dezvoltare Mobilă & Web | Soluții CRM – Quant-Apps",
+    "description": "Ai nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps creează soluții scalabile pentru iOS, web și CRM.",
     "banner": {
       "whatWeOffer": {
         "header": "Ce Oferim?",
@@ -136,6 +138,8 @@
     }
   },
   "projects": {
+    "title": "Proiectele Noastre | Soluții Mobile & Web Inovatoare - Quantica",
+    "description": "Descoperă portofoliul Quantica cu aplicații mobile, soluții CRM și platforme web care contribuie la succesul afacerilor.",    
     "banner": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Proiectele noastre",
@@ -210,6 +214,8 @@
     }
   },
   "process": {
+    "title": "Procesul Nostru | Dezvoltare Agile & Strategie UI/UX - Quantica",
+    "description": "Află cum Quantica transformă ideile în aplicații mobile și web scalabile printr-o abordare structurată și agilă.",    
     "banner": {
       "image": "/images/banners/faqs_banner.png",
       "title": "Procesul nostru de lucru",
@@ -275,6 +281,8 @@
     }
   },
   "about": {
+      "title": "Despre Quant-Apps - Dezvoltare iOS, Web, CRM",
+      "description": "Quant-Apps se dedică transformării ideilor inovatoare în soluții digitale performante. Expertiza noastră acoperă aplicații mobile și web, sisteme CRM, infrastructură cloud și automatizare bazată pe inteligență artificială. Ne angajăm să oferim rezultate excepționale prin colaborare, tehnologie de vârf și pasiune pentru excelență. Alătură-te nouă pentru a lucra la proiecte de impact care conduc transformarea digitală și succesul în afaceri.",    
     "banner": {
       "src": "/images/banners/our-services-banner.png",
       "header": "Despre Noi",
@@ -403,6 +411,8 @@
     }
   },
   "careers": {
+    "title": "Cariere la Quantica | Alătură-te Echipei Noastre Tech",
+    "description": "Cauți o carieră captivantă în dezvoltarea mobilă și web? Alătură-te Quantica și lucrează la soluții digitale inovatoare.",
     "banner": {
       "header": "Alăturați-vă echipei Quant-Apps",
       "subHeader": "Descoperiți-vă potențialul și deveniți parte dintr-o companie IT inovatoare, specializată în dezvoltarea de aplicații mobile, platforme web, sisteme CRM, soluții bazate pe inteligență artificială și infrastructură cloud."
@@ -453,6 +463,8 @@
     ]
   },
   "privacy-policy": {
+    "title": "Politica de Confidențialitate | Protecția Datelor & Securitate - Quantica",
+    "description": "Citește politica de confidențialitate Quantica pentru a afla cum colectăm, utilizăm și protejăm datele tale personale.",
     "banner": {
       "header": "Politica de Confidențialitate",
       "subHeader": "Ultima actualizare: 5 decembrie 2024"
@@ -517,6 +529,8 @@
     "outro": "Vă mulțumim că ați ales Quant-Apps."
   },
   "terms-of-use": {
+    "title": "Termeni de Utilizare | Informații Legale & Drepturile Utilizatorilor - Quantica",
+    "description": "Consultă termenii de utilizare ai Quantica pentru a înțelege drepturile și responsabilitățile tale în utilizarea serviciilor noastre digitale.",
     "banner": {
       "header": "Politica de Confidențialitate",
       "subHeader": "Ultima actualizare: 5 decembrie 2024"
@@ -581,6 +595,8 @@
     "outro": "Vă mulțumim că ați ales Quant-Apps."
   },
   "home": {
+    "title": "Aplicații iOS & Web Personalizate | Design UI/UX - Quant-Apps",
+    "description": "Quant-Apps oferă aplicații mobile, soluții CRM și design UI/UX pentru a crește eficiența afacerii tale.",
     "hero": {
       "title": "Aplicații web și mobile + soluții CRM pentru dezvoltarea afacerii tale",
       "ipadAlt": "ipad",

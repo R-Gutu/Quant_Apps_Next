@@ -5,6 +5,16 @@ import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
 import ProcessType from "@/lib/types/ProcessType"
 import ProjectForm from "../(main)/_components/projectForm"
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("process");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const ProcessPage = async () => {
   const t = await getTranslations("process");

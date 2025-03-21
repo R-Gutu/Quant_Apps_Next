@@ -2,6 +2,16 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
 import Banner from "@/components/banner";
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("privacy-policy");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const Page = async () => {
   const t = await getTranslations("privacy-policy");

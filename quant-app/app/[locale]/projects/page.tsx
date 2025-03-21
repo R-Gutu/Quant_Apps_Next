@@ -3,6 +3,16 @@ import Block from "./_components/Block"
 import Projects from "@/lib/types/Projects"
 import HeadText from "../_components/HeadText"
 import { getTranslations } from "next-intl/server"
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("projects");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const ProjectsPage = async () => {
   const t = await getTranslations("projects");

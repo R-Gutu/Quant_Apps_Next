@@ -8,6 +8,16 @@ import ProjectForm from "./_components/projectForm"
 import Blur from "@/components/Blur"
 import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server"
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("home");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function Page() {
     const t = await getTranslations("home");

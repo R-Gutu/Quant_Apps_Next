@@ -5,6 +5,16 @@ import Description from "./_components/description";
 import Service from "@/lib/types/Service";
 import Blur from "@/components/Blur";
 import DescriptionType from "@/lib/types/Description";
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("services");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const Page = async () => {
   const t = await getTranslations("services");

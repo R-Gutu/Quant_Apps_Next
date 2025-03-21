@@ -7,6 +7,16 @@ import OpeningsType from "@/lib/types/OpeningsType"
 import CareersType from "@/lib/types/CareersType"
 import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("careers");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 const Page = async () => {
     const t = await getTranslations("careers");

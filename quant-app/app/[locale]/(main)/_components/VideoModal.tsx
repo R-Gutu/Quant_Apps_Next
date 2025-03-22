@@ -4,28 +4,21 @@ import { Modal } from "@mui/material";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import { useEffect } from "react";
 
 const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const currentLocale = useLocale();  // ✅ Now inside a Client Component
     const intro = getIntroByLanguage(currentLocale);
     const t = useTranslations("video");
 
-    useEffect(() => {
-        document.querySelector("body")?.classList.add("overflow-hidden");
-        return () => document.querySelector("body")?.classList.remove("overflow-hidden");
-    }, []);
-
     function handleOnClose() {
-        setIsOpen(false)
-        document.querySelector("body")?.classList.remove("overflow-hidden");
+        setIsOpen(false);
     }
 
     return (
         <Modal
             open={true}
             onClose={handleOnClose}
-            className="px-[10%] max-[1000px]:px-[20px] max-[700px]:px-[0px] flex justify-center items-center"
+            className="px-[10%] max-[1000px]:px-[20px] max-[700px]:px-[0px] flex justify-center items-center no-doc-scroll"
         >
             <div className="bg-white p-[40px] max-[700px]:p-[20px] max-[700px]:pt-[40px] rounded-[15px] relative">
                 <Image

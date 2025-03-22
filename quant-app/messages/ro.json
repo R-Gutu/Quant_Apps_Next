@@ -800,5 +800,9 @@
       "success": "Formular trimis cu succes!",
       "error": "Trimiterea formularului a eșuat. Vă rugăm să încercați din nou."
     }
+  },
+  "formAlert": {
+    "success": "Am primit mesajul tău! Echipa noastră îți va răspunde în cel mai scurt timp.",
+    "error": "Eroare la trimiterea formularului. Va rugам sa incercati din nou."
   }
 }

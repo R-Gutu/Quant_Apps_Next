@@ -122,9 +122,7 @@ const jsonLd = {
 
 export default async function RootLayout({
   children,
-  params,
-  videoModal,
-  talkModal,
+  params
 }: Readonly<{
   children: React.ReactNode;
   videoModal: React.ReactNode;
@@ -149,8 +147,6 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
             <AppToolbar />
             {children}
-            {videoModal}
-            {talkModal}
             <Footer />
         </NextIntlClientProvider>
       </body>

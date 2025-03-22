@@ -1,10 +1,12 @@
+'use client'
 import Image from 'next/image'
-import { getTranslations } from "next-intl/server"
-import { Link } from '@/i18n/routing';
+import { useTranslations } from "next-intl"
+import TalkModal from '@/components/TalkModal';
+import { useState } from 'react';
 
-const ElevatingBusiness = async () => {
-  const t = await getTranslations("elevatingBusiness");
-
+const ElevatingBusiness =  () => {
+  const t = useTranslations("elevatingBusiness");
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-col my-[30px] gap-[50px] border-[1px] border-solid border-[#6A65FF80] rounded-[35px] p-[60px] max-mui-md:p-[40px] max-smallest:p-[20px]">
       <div className="flex gap-[40px] max-mui-md:flex-col items-center">
@@ -34,14 +36,13 @@ const ElevatingBusiness = async () => {
             </p>
           </div>
         </div>
-        <Link href="/talk-modal">
-          <div className="btn pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
+          <button onClick={() => setOpen(true)} className="btn pt-[18px] pr-[34px] pb-[18px] pl-[34px] rounded-[8px] bg-[#4A6ED1]">
             <p className="font-medium text-[18px] max-mui-md:text-[14px] text-[#FFFFFF]">
               {t('cta.buttonText')}
             </p>
-          </div>
-        </Link>
+          </button>
       </div>
+      {open && <TalkModal setIsOpen={setOpen} isOpen={open} />}
     </div>
   )
 }

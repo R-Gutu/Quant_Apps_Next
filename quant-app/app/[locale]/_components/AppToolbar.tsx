@@ -2,7 +2,7 @@
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import PCMenu from "./PCMenu";
-import TalkModal from "./TalkModal";
+import TalkModal from "@/components/TalkModal";
 
 const AppToolbar = () =>{
   const [menuVisible, setMenuVisible] = useState(false)

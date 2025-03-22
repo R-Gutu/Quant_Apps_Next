@@ -77,7 +77,7 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             );
 
             if (response.status === 200) {
-                alert(t('notifications.success'));
+                setAlertIsOpen(true);
                 if (formRef.current) {
                     formRef.current.reset();
                 }
@@ -123,7 +123,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
     return (
         <>
             <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className={`flex flex-col gap-[40px] items-center w-full text-[${isPopup ? stylesPopup.text : styles.text}] ${className}`}>
-                <button onClick={() => setAlertIsOpen(true)}>TESTING</button>
                 <div className='flex max-[1200px]:flex-col w-full gap-[40px]'>
                     <div className={`w-full flex flex-col gap-[20px] border-[1px] border-solid border-[${isPopup ? stylesPopup.border : styles.border}] rounded-[8px] py-[24px] px-[40px] max-[600px]:px-[24px] max-[600px]:py-[18px] ${isPopup ? '[box-shadow:0px_4px_4px_0px_#00000040]' : ''}`}>
                         <label htmlFor="name" className='text-[22px] max-[600px]:text-[16px]'>{t('fields.fullName')}</label>

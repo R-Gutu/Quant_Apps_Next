@@ -3,6 +3,7 @@ import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import PCMenu from "./PCMenu";
 import TalkModal from "./TalkModal";
+import { AnimatePresence } from "motion/react";
 
 const AppToolbar = () =>{
   const [menuVisible, setMenuVisible] = useState(false)
@@ -11,7 +12,9 @@ const AppToolbar = () =>{
     <>
       <PCMenu setMenuVisible={setMenuVisible} setTalkModalOpen={setTalkModalOpen}/>
       <MobileMenu menuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
-     {talkModalOpen && <TalkModal isOpen= {talkModalOpen} setIsOpen={setTalkModalOpen}/>}
+      <AnimatePresence>
+        {talkModalOpen && <TalkModal isOpen= {talkModalOpen} setIsOpen={setTalkModalOpen}/>}
+     </AnimatePresence>
     </>
   )
 }

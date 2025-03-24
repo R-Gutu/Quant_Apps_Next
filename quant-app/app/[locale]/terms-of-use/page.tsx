@@ -35,6 +35,7 @@ const Page = async () => {
 
   return (
     <div className="px-[100px] max-small:px-[40px] max-smallest:px-[20px] font-inter">
+      <h1 className="sr-only">{t("title")}</h1>
       <Banner
         priority
         src="/images/banners/faqs_banner.png"
@@ -75,7 +76,6 @@ const Page = async () => {
             <li>{t('sections.conduct.list.1')}</li>
             <li>{t('sections.conduct.list.2')}</li>
             <li>{t('sections.conduct.list.3')}</li>
-            <li>{t('sections.conduct.list.4')}</li>
         </ul>
 
         <p className="indent-6">

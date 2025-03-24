@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const Page = async () => {
   const t = await getTranslations("privacy-policy");
-
+  <h1 className="sr-only">{t("title")}</h1>
   const contactInfo = [
     {
       icon: "/images/icons/email.svg",
@@ -76,7 +76,6 @@ const Page = async () => {
             <li>{t('sections.conduct.list.1')}</li>
             <li>{t('sections.conduct.list.2')}</li>
             <li>{t('sections.conduct.list.3')}</li>
-            <li>{t('sections.conduct.list.4')}</li>
         </ul>
 
         <p className="indent-6">

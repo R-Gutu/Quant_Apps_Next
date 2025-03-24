@@ -27,11 +27,38 @@ export const viewport: Viewport = {
 }
 
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: {
+  params: { slug?: string[], locale?: string },
+  searchParams: { [key: string]: string | string[] | undefined }
+}): Promise<Metadata> {
   const t = await getTranslations('metadata');
-  const headersList = await headers()
-  const domain = headersList.get('x-url') || "";
-
+  const headersList = await headers();
+  const fullUrl = headersList.get('x-url') || "";
+  
+  // Extract domain and path
+  const url = new URL(fullUrl);
+  const path = url.pathname;
+  
+  // Build page-specific title and description
+  // You can use params.slug to determine which page you're on
+  let pageTitle = t('title');
+  let pageDescription = t('description');
+  
+  // Example of how to customize metadata for specific pages
+  if (params.slug) {
+    // For pages like /blog/[slug]
+    if (params.slug[0] === 'blog' && params.slug.length > 1) {
+      // You could fetch blog post data here
+      pageTitle = `${params.slug[1]} | ${t('title')}`;
+      pageDescription = `Read about ${params.slug[1]} | ${t('description')}`;
+    }
+    // Add more conditions for other page types
+  }
+  
+  // Build URLs for all languages
+  const baseDomain = 'www.quant-apps.com';
+  const pathWithoutLocale = path.replace(/^\/(en|ru|ro)/, '');
+  
   return {
     robots: {
       index: true,
@@ -39,17 +66,17 @@ export async function generateMetadata(): Promise<Metadata> {
         index: true,
       }
     },
-    title: t('title'),
-    description: t('description'),
+    title: pageTitle,
+    description: pageDescription,
     icons: {
       icon: '/favicon.svg'
     },
     authors: [{ name: "Quant Apps" }],
     keywords: t('keywords'),
     openGraph: {
-      title: t('title'),
-      description: t('description'),
-      url: `https://${'www.quant-apps.com'}`,
+      title: pageTitle,
+      description: pageDescription,
+      url: fullUrl,
       type: "website",
       images: [
         {
@@ -61,12 +88,12 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     alternates: {
       languages: {
-        'x-default': `https://${'www.quant-apps.com'}`,
-        en: `https://${'www.quant-apps.com'}/en`,
-        ru: `https://${'www.quant-apps.com'}/ru`,
-        ro: `https://${'www.quant-apps.com'}/ro`,
+        'x-default': `https://${baseDomain}${pathWithoutLocale}`,
+        en: `https://${baseDomain}/en${pathWithoutLocale}`,
+        ru: `https://${baseDomain}/ru${pathWithoutLocale}`,
+        ro: `https://${baseDomain}/ro${pathWithoutLocale}`,
       },
-      canonical: domain,
+      canonical: fullUrl,
     }
   };
 }

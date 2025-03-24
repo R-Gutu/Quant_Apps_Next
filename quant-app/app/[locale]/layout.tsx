@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { headers } from 'next/headers'
+import { Viewport } from 'next';
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -18,6 +19,11 @@ import "./globals.css";
 
 import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+}
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -37,7 +43,6 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: {
       icon: '/favicon.svg'
     },
-    viewport: "width=device-width, initial-scale=1.0",
     authors: [{ name: "Quant Apps" }],
     keywords: t('keywords'),
     openGraph: {

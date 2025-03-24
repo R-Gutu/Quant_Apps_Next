@@ -27,33 +27,13 @@ export const viewport: Viewport = {
 }
 
 
-export async function generateMetadata({ params, searchParams }: {
-  params: { slug?: string[], locale?: string },
-  searchParams: { [key: string]: string | string[] | undefined }
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata');
   const headersList = await headers();
   const fullUrl = headersList.get('x-url') || "";
   
-  // Extract domain and path
   const url = new URL(fullUrl);
   const path = url.pathname;
-  
-  // Build page-specific title and description
-  // You can use params.slug to determine which page you're on
-  let pageTitle = t('title');
-  let pageDescription = t('description');
-  
-  // Example of how to customize metadata for specific pages
-  if (params.slug) {
-    // For pages like /blog/[slug]
-    if (params.slug[0] === 'blog' && params.slug.length > 1) {
-      // You could fetch blog post data here
-      pageTitle = `${params.slug[1]} | ${t('title')}`;
-      pageDescription = `Read about ${params.slug[1]} | ${t('description')}`;
-    }
-    // Add more conditions for other page types
-  }
   
   // Build URLs for all languages
   const baseDomain = 'www.quant-apps.com';
@@ -66,16 +46,16 @@ export async function generateMetadata({ params, searchParams }: {
         index: true,
       }
     },
-    title: pageTitle,
-    description: pageDescription,
+    title: t('title'),
+    description: t('description'),
     icons: {
       icon: '/favicon.svg'
     },
     authors: [{ name: "Quant Apps" }],
     keywords: t('keywords'),
     openGraph: {
-      title: pageTitle,
-      description: pageDescription,
+      title: t('title'),
+      description: t('description'),
       url: fullUrl,
       type: "website",
       images: [

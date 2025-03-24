@@ -68,7 +68,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     alternates: {
       languages: {
-        'x-default': `https://${baseDomain}${pathWithoutLocale}`,
+        'x-default': `https://${baseDomain}/en${pathWithoutLocale}`,
         en: `https://${baseDomain}/en${pathWithoutLocale}`,
         ru: `https://${baseDomain}/ru${pathWithoutLocale}`,
         ro: `https://${baseDomain}/ro${pathWithoutLocale}`,

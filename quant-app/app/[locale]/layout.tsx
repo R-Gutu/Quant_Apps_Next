@@ -19,6 +19,7 @@ import "./globals.css";
 
 import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
+import Providers from '@/app/[locale]/Providers';
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -149,11 +150,13 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <NextIntlClientProvider messages={messages}>
-            <AppToolbar />
-            {children}
-            <Footer />
-        </NextIntlClientProvider>
+        <Providers>
+          <NextIntlClientProvider messages={messages}>
+              <AppToolbar />
+              {children}
+              <Footer />
+          </NextIntlClientProvider>
+        </Providers>
       </body>
       <GoogleAnalytics gaId="G-DK457M1DLQ" />
     </html>

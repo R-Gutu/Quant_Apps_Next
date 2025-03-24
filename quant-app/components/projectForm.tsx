@@ -10,6 +10,7 @@ import emailjs from '@emailjs/browser';
 import Dropzone from "../app/[locale]/(main)/_components/dropzone";
 import { useTranslations } from 'next-intl';
 import FormAlert from "./FormAlert";
+import { AnimatePresence } from "motion/react";
 
 export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
     const t = useTranslations('contactForm');
@@ -218,7 +219,9 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                     {isSubmitting ? t('buttons.submitting') : t('buttons.submit')}
                 </button>
             </form>
-            {alertIsOpen && <FormAlert setIsOpen={setAlertIsOpen} />}
+            <AnimatePresence>
+                {alertIsOpen && <FormAlert setIsOpen={setAlertIsOpen} />}
+            </AnimatePresence>
         </>
     );
 }

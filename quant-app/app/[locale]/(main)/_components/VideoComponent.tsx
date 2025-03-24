@@ -3,6 +3,7 @@ import Image from "next/image";
 import Blur from "@/components/Blur";
 import { useState } from "react";
 import VideoModal from "./VideoModal";
+import { AnimatePresence } from "motion/react";
 export default function VideoComponent({ ipadAlt, watchAlt } : { ipadAlt: string, watchAlt: string }) {
     const [videoOpen, setVideoOpen] = useState(false);
     return (
@@ -25,7 +26,9 @@ export default function VideoComponent({ ipadAlt, watchAlt } : { ipadAlt: string
                     className="w-[229px] h-[229px] -z-10"
                 />
             </div>
-            {videoOpen && <VideoModal setIsOpen={setVideoOpen}/>}
+            <AnimatePresence>
+                {videoOpen && <VideoModal setIsOpen={setVideoOpen}/>}
+            </AnimatePresence>
         </>
     )
 }

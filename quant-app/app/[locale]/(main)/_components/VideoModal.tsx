@@ -4,6 +4,7 @@ import { Modal } from "@mui/material";
 import { getIntroByLanguage } from "@/lib/utils/languageUtils";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import * as m from 'motion/react-m';
 
 const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const currentLocale = useLocale();  // ✅ Now inside a Client Component
@@ -20,7 +21,12 @@ const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAct
             onClose={handleOnClose}
             className="px-[10%] max-[1000px]:px-[20px] max-[700px]:px-[0px] flex justify-center items-center no-doc-scroll"
         >
-            <div className="bg-white p-[40px] max-[700px]:p-[20px] max-[700px]:pt-[40px] rounded-[15px] relative">
+            <m.div
+            initial={{ opacity: 0, y: -400 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -400 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="bg-white p-[40px] max-[700px]:p-[20px] max-[700px]:pt-[40px] rounded-[15px] relative">
                 <Image
                     src="/images/icons/cross.svg"
                     alt="close cross"
@@ -33,7 +39,7 @@ const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAct
                     <source src={intro} type="video/mp4" />
                     {t("notSupported")}
                 </video>
-            </div>
+            </m.div>
         </Modal>
     );
 };

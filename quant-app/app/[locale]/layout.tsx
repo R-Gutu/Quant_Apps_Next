@@ -1,8 +1,7 @@
 
 import type { Metadata } from 'next'
 import { Locale, routing } from "@/i18n/routing";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -137,7 +136,6 @@ export default async function RootLayout({
     notFound();
   }
 
-  const messages = await getMessages();
   return (
     <html lang={locale} className={`${inter.variable}`}>
       <body
@@ -148,13 +146,11 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Providers>
-          <NextIntlClientProvider messages={messages}>
-              <AppToolbar />
-              {children}
-              {videoModal}
-              {talkModal}
-              <Footer />
-          </NextIntlClientProvider>
+          <AppToolbar />
+          {children}
+          {videoModal}
+          {talkModal}
+          <Footer />
         </Providers>
       </body>
       <GoogleAnalytics gaId="G-DK457M1DLQ" />

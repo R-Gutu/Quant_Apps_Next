@@ -1,5 +1,4 @@
 import { clsx, type ClassValue } from "clsx"
-import { RichTranslationValues } from "next-intl"
 import { ReactNode } from "react"
 import { twMerge } from "tailwind-merge"
 

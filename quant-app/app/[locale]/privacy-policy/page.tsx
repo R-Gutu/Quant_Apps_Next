@@ -72,11 +72,6 @@ const Page = async () => {
           <strong>{t('sections.conduct.title')}</strong><br/>
           {t('sections.conduct.content')}
         </p>
-        <ul className="list-disc ml-10">
-            <li>{t('sections.conduct.list.1')}</li>
-            <li>{t('sections.conduct.list.2')}</li>
-            <li>{t('sections.conduct.list.3')}</li>
-        </ul>
 
         <p className="indent-6">
           <strong>{t('sections.disclaimer.title')}</strong><br/>
@@ -101,11 +96,6 @@ const Page = async () => {
         <p className="indent-6">
           <strong>{t('sections.governing.title')}</strong><br/>
           {t('sections.governing.content')}
-        </p>
-
-        <p className="indent-6">
-          <strong>{t('sections.modifications.title')}</strong><br/>
-          {t('sections.modifications.content')}
         </p>
 
         <p className="indent-6">

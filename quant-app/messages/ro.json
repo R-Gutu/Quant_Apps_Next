@@ -474,59 +474,50 @@
       "phone": "+373 69 882 331",
       "location": "Republica Moldova"
     },
-    "intro": "Bine ați venit la Quant-Apps! Vă rugăm să citiți cu atenție acești Termeni de Utilizare („Termeni”) înainte de a utiliza site-ul și serviciile noastre. Prin accesarea sau utilizarea Quant-Apps („noi,” „al nostru” sau „nouă”), sunteți de acord să respectați acești Termeni. Dacă nu sunteți de acord, vă rugăm să nu utilizați serviciile noastre.",
-    "sections": {
-      "acceptance": {
-        "title": "1. Acceptarea Termenilor",
-        "content": "Prin accesarea sau utilizarea site-ului sau serviciilor noastre, confirmați că aveți cel puțin 18 ani și sunteți de acord să respectați acești Termeni. Dacă acționați în numele unei companii, declarați și garantați că aveți autoritatea de a obliga compania să respecte acești Termeni."
-      },
-      "services": {
-        "title": "2. Servicii Furnizate",
-        "content": "Quant-Apps oferă servicii de dezvoltare IT, inclusiv dezvoltare de aplicații mobile, design UI/UX și soluții software. Orice servicii furnizate vor fi supuse unui acord separat care va detalia domeniul de aplicare, livrabilele și termenii angajamentului."
-      },
-      "intellectual": {
-        "title": "3. Proprietate Intelectuală",
-        "content": "Tot conținutul, mărcile comerciale, logo-urile și materialele furnizate de Quant-Apps, inclusiv, dar fără a se limita la, designuri, software și cod, sunt proprietatea Quant-Apps, cu excepția cazului în care se specifică altfel. Nu aveți permisiunea să utilizați, copiați, reproduceți sau distribuiți materialele fără acord scris explicit."
-      },
-      "conduct": {
-        "title": "4. Conduita Utilizatorului",
-        "content": "Sunteți de acord să utilizați site-ul și serviciile noastre doar în scopuri legale și să nu:",
-        "list": {
-          "1": "Participați la orice activitate care perturbă sau deteriorează site-ul sau serviciile noastre.",
-          "2": "Încercați să accesați zone neautorizate ale site-ului sau serverelor noastre.",
-          "3": "Utilizați serviciile noastre pentru scopuri ilegale, frauduloase sau dăunătoare."
-        }
-      },
-      "disclaimer": {
-        "title": "5. Declarație de Garanție",
-        "content": "Quant-Apps oferă serviciile sale „așa cum sunt” și „în funcție de disponibilitate.” Deși ne străduim să oferim excelență, nu garantăm că site-ul sau serviciile noastre vor fi neîntrerupte, fără erori sau că vor îndeplini așteptările dumneavoastră. În cea mai mare măsură permisă de lege, declinăm orice garanție, expresă sau implicită."
-      },
-      "liability": {
-        "title": "6. Limitarea Răspunderii",
-        "content": "Quant-Apps nu va fi răspunzător pentru niciun fel de daune indirecte, incidentale sau consecvente care rezultă din utilizarea site-ului sau serviciilor noastre. Răspunderea noastră totală față de dumneavoastră nu va depăși suma plătită pentru serviciile furnizate în ultimele șase luni."
-      },
-      "thirdParty": {
-        "title": "7. Link-uri către Terți",
-        "content": "Site-ul nostru poate include linkuri către site-uri terțe. Quant-Apps nu este responsabil pentru conținutul, politicile sau practicile acestor site-uri externe."
-      },
-      "termination": {
-        "title": "8. Reziliere",
-        "content": "Ne rezervăm dreptul de a suspenda sau anula accesul dumneavoastră la site-ul nostru sau la serviciile noastre, la discreția noastră, fără notificare prealabilă, pentru orice motiv, inclusiv încălcarea acestor Termeni."
-      },
-      "governing": {
-        "title": "9. Legea Aplicabilă",
-        "content": "Acești Termeni sunt guvernați și interpretați în conformitate cu legile Republicii Moldova. Orice dispute care rezultă din acești Termeni vor fi soluționate exclusiv în instanțele din Republica Moldova."
-      },
-      "modifications": {
-        "title": "10. Modificări ale Termenilor",
-        "content": "Quant-Apps își rezervă dreptul de a modifica acești Termeni în orice moment. Termenii actualizați vor fi publicați pe site-ul nostru, iar utilizarea continuă a serviciilor noastre indică acceptarea acestor modificări."
-      },
-      "contact": {
-        "title": "11. Contactați-ne",
-        "content": "Pentru orice întrebări sau preocupări legate de acești Termeni, vă rugăm să ne contactați la:\nEmail: support@quant-apps.com\nRepublica Moldova"
-      }
+  "intro": "Quant-Apps (\"noi\", \"al nostru\" sau \"nouă\") suntem angajați să vă protejăm confidențialitatea. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, dezvăluim și protejăm informațiile dumneavoastră atunci când vizitați site-ul nostru web sau utilizați serviciile noastre. Prin accesarea site-ului nostru web sau a serviciilor, sunteți de acord cu termenii acestei Politici de Confidențialitate. Dacă nu sunteți de acord, vă rugăm să nu utilizați serviciile noastre.",
+  "sections": {
+    "acceptance": {
+      "title": "1. Informațiile pe care le Colectăm",
+      "content": "Colectăm informații personale și nepersonale pentru a furniza și îmbunătăți serviciile noastre. Informații Personale. Acestea includ orice informații pe care le furnizați voluntar, precum: Nume, Adresă de email, Număr de telefon, Informații de facturare, Orice alte informații trimise prin formularele noastre de contact sau canalele de comunicare, Informații Nepersonale. Acestea includ informații colectate automat, precum: Adresă IP, Tip browser, Sistem de operare, Pagini vizualizate și timp petrecut pe site-ul nostru, Informații despre dispozitiv"
     },
-    "outro": "Vă mulțumim că ați ales Quant-Apps."
+    "services": {
+      "title": "2. Cum Utilizăm Informațiile Dumneavoastră",
+      "content": "Utilizăm informațiile colectate în următoarele scopuri: \n1) Furnizarea și gestionarea serviciilor noastre \n2) Comunicarea cu dumneavoastră referitor la întrebări sau proiecte \n3) Procesarea plăților și gestionarea facturării \n4) Îmbunătățirea și personalizarea experienței dumneavoastră \n5) Analiza utilizării site-ului web și optimizarea performanței \n6) Respectarea obligațiilor legale"
+    },
+    "intellectual": {
+      "title": "3. Cum Distribuim Informațiile Dumneavoastră",
+      "content": "Nu vindem sau închidem informațiile dumneavoastră personale către terți. Cu toate acestea, putem distribui informațiile în următoarele circumstanțe: \nFurnizori de Servicii: Către terți de încredere care ne asistă în furnizarea serviciilor, precum procesatori de plăți sau furnizori de găzduire. \nConformitate Legală: Atunci când este cerut de lege sau pentru a ne proteja drepturile și interesele. \nTransferuri de Afaceri: În cazul unei fuziuni, achiziții sau vânzări a tuturor sau unei părți din activele noastre."
+    },
+    "conduct": {
+      "title": "4. Cookie-uri și Tehnologii de Urmărire",
+      "content": "Utilizăm cookie-uri și tehnologii de urmărire similare pentru a vă îmbunătăți experiența. Cookie-urile sunt fișiere mici stocate pe dispozitivul dumneavoastră care ne ajută să vă recunoaștem și să îmbunătățim funcționalitatea site-ului web. Puteți controla cookie-urile prin setările browserului, dar dezactivarea lor poate limita anumite caracteristici ale site-ului nostru web."
+    },
+    "disclaimer": {
+      "title": "5. Securitatea Datelor",
+      "content": "Implementăm măsuri tehnice și organizatorice adecvate pentru a vă proteja informațiile de accesul neautorizat, dezvăluire sau distrugere. Cu toate acestea, nicio transmisie de date pe internet nu este complet sigură, și nu putem garanta o securitate absolută."
+    },
+    "liability": {
+      "title": "6. Drepturile Dumneavoastră",
+      "content": "În funcție de jurisdicția dumneavoastră, puteți avea următoarele drepturi privind informațiile personale: \nAccesarea informațiilor personale și solicitarea unei copii, \nCorectarea sau actualizarea informațiilor incorecte, \nSolicitarea ștergerii informațiilor, \nObiecția la prelucrare sau restricționarea prelucrării informațiilor, \nRetragerea consimțământului acolo unde prelucrarea se bazează pe consimțământul dumneavoastră, \nPentru a vă exercita aceste drepturi, \ncontactați-ne la support@quant-apps.com."
+    },
+    "thirdParty": {
+      "title": "7. Linkuri către Terți",
+      "content": "Site-ul nostru web poate conține linkuri către site-uri web ale terților. Nu suntem responsabili pentru practicile de confidențialitate sau conținutul acestor site-uri externe."
+    },
+    "termination": {
+      "title": "8. Confidențialitatea Copiilor",
+      "content": "Serviciile noastre nu sunt direcționate către persoane sub vârsta de 18 ani. Nu colectăm în mod conștient informații personale de la copii. Dacă credeți că am colectat fără să vrem informații de la un copil, vă rugăm să ne contactați pentru a le șterge."
+    },
+    "governing": {
+      "title": "9. Modificări la Această Politică de Confidențialitate",
+      "content": "Putem actualiza această Politică de Confidențialitate din când în când. Orice modificări vor fi postate pe această pagină cu o dată de intrare în vigoare actualizată. Continuarea utilizării serviciilor noastre după efectuarea modificărilor indică acceptarea politicii actualizate."
+    },
+    "contact": {
+      "title": "10. Contactați-ne",
+      "content": "Pentru orice întrebări sau preocupări legate de această Politică de Confidențialitate, vă rugăm să ne contactați la:\nEmail: support@quant-apps.com\nMoldova, Republica Moldova"
+    }
+  },
+  "outro": "Vă mulțumim pentru încrederea acordată Quant-Apps."
   },
   "terms-of-use": {
     "title": "Termeni de Utilizare | Informații Legale & Drepturile Utilizatorilor - Quantica",

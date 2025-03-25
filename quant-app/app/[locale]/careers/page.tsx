@@ -8,6 +8,7 @@ import CareersType from "@/lib/types/CareersType"
 import Blur from "@/components/Blur"
 import { getTranslations } from "next-intl/server"
 import type { Metadata } from 'next'
+import { strong } from "@/lib/utils/utils"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("careers");
@@ -39,7 +40,7 @@ const Page = async () => {
         },
         {
             title: t('careerBlocks.3.title'),
-            text: t('careerBlocks.3.text'),
+            text: t.rich('careerBlocks.3.text', strong),
             className: ""
         },
     ]
@@ -87,7 +88,7 @@ const Page = async () => {
                     </p>
                     <div className="mt-5 bg-[#4A6ED1] w-fit rounded-[8px] p-[12px_14px] gap-[10px] font-normal text-[18px] max-smallest:text-[14px] max-mui-md:text-[16px] text-[#FFFFFF]">
                         {t('welcome.tagline')}
-                    </div>
+                    </div>ca
                 </div>
             </div>
             <div className="w-full grid grid-cols-2 grid-rows-2 mt-[50px] max-mui-md:grid-cols-1">

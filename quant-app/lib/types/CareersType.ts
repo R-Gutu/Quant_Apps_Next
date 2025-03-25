@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 interface CareersType {
     title: string,
-    text: string,
+    text: string | ReactNode,
     className?: string
 }
 

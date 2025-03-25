@@ -8,6 +8,7 @@ import TimelineType from "@/lib/types/TimelineType";
 import Blur from "@/components/Blur";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from 'next'
+import { strong } from "@/lib/utils/utils";
 
 
 
@@ -123,7 +124,7 @@ const Page = async () => {
           </h1>
           <div className="font-normal text-[20px] max-mui-md:text-[18px] max-smallest:text-[14px] text-[#E6E6E6] opacity-75">
             <p className="indent-6">{t('about.paragraph1')}</p>
-            <p className="indent-6">{t('about.paragraph2')}</p>
+            <p className="indent-6">{t.rich('about.paragraph2', strong)}</p>
             <p className="indent-6">{t('about.paragraph3')}</p>
             <p className="indent-6">{t('about.paragraph4')}</p>
             <p className="indent-6">{t('about.paragraph5')}</p>

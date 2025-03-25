@@ -285,7 +285,7 @@
     "about": {
       "title": "About Quant-Apps",
       "paragraph1": "At Quant-Apps, we transform bold ideas into high-performance apps and websites. Despite being a young company, our team combines years of experience with cutting-edge technology to deliver custom digital solutions that exceed expectations.",
-      "paragraph2": "We specialize in mobile app development, web design, and digital transformation, crafting visually stunning, high-functioning platforms that engage users and drive business growth. Our creative thinkers and technical experts work closely with clients, ensuring a collaborative, tailored approach for each project.",
+      "paragraph2": "We specialize in <strong>mobile app development</strong>, web design, and digital transformation, crafting visually stunning, high-functioning platforms that engage users and drive business growth. Our creative thinkers and technical experts work closely with clients, ensuring a collaborative, tailored approach for each project.",
       "paragraph3": "What sets us apart?",
       "paragraph4": "Seamless communication, deep client engagement, and a commitment to long-term success. We don't just build apps—we create lasting digital experiences that help businesses thrive.",
       "paragraph5": "Let's bring your vision to life with custom software solutions that elevate your brand and set you apart in the digital world.",
@@ -431,7 +431,7 @@
       },
       {
         "title": "Challenging Software Development Projects – AI, Cloud, CRM",
-        "text": "Solve complex challenges in enterprise software, AI-powered solutions, high-performance cloud infrastructure, mobile app development, and automation that drive business success."
+        "text": "Solve complex challenges in enterprise software, AI-powered solutions, high-performance cloud infrastructure, <strong>mobile app development</strong>, and automation that drive business success."
       }
     ],
     "currentOpenings": {
@@ -476,7 +476,7 @@
       },
       "services": {
         "title": "2. Services Provided",
-        "content": "Quant-Apps offers IT development services, including mobile app development, UI/UX design, and software solutions. Any services provided will be subject to a separate agreement outlining the scope, deliverables, and terms of the engagement."
+        "content": "Quant-Apps offers IT development services, including <strong>mobile app development</strong>, UI/UX design, and software solutions. Any services provided will be subject to a separate agreement outlining the scope, deliverables, and terms of the engagement."
       },
       "intellectual": {
         "title": "3. Intellectual Property",
@@ -485,12 +485,11 @@
       "conduct": {
         "title": "4. User Conduct",
         "content": "You agree to use our website and services for lawful purposes only and will not:",
-        "list": 
-          {
-            "1": "Engage in any activity that disrupts or damages our website or services.",
-            "2": "Attempt to access unauthorized areas of our website or servers.",
-            "3": "Use our services for illegal, fraudulent, or harmful purposes."
-          }
+        "list": {
+          "1": "Engage in any activity that disrupts or damages our website or services.",
+          "2": "Attempt to access unauthorized areas of our website or servers.",
+          "3": "Use our services for illegal, fraudulent, or harmful purposes."
+        }
       },
       "disclaimer": {
         "title": "5. Disclaimer of Warranties",
@@ -543,7 +542,7 @@
       },
       "services": {
         "title": "2. Services Provided",
-        "content": "Quant-Apps offers IT development services, including mobile app development, UI/UX design, and software solutions. Any services provided will be subject to a separate agreement outlining the scope, deliverables, and terms of the engagement."
+        "content": "Quant-Apps offers IT development services, including <strong>mobile app development</strong>, UI/UX design, and software solutions. Any services provided will be subject to a separate agreement outlining the scope, deliverables, and terms of the engagement."
       },
       "intellectual": {
         "title": "3. Intellectual Property",
@@ -552,12 +551,11 @@
       "conduct": {
         "title": "4. User Conduct",
         "content": "You agree to use our website and services for lawful purposes only and will not:",
-        "list": 
-          {
-            "1": "Engage in any activity that disrupts or damages our website or services.",
-            "2": "Attempt to access unauthorized areas of our website or servers.",
-            "3": "Use our services for illegal, fraudulent, or harmful purposes."
-          }
+        "list": {
+          "1": "Engage in any activity that disrupts or damages our website or services.",
+          "2": "Attempt to access unauthorized areas of our website or servers.",
+          "3": "Use our services for illegal, fraudulent, or harmful purposes."
+        }
       },
       "disclaimer": {
         "title": "5. Disclaimer of Warranties",
@@ -711,7 +709,7 @@
     "faqs": {
       "services": {
         "question": "What services does Quant-Apps provide?",
-        "answer": "Quant-Apps specializes in mobile app development for iOS, Android app development, cross-platform solutions with React Native, CRM systems, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization."
+        "answer": "Quant-Apps specializes in <strong>mobile app development</strong> for iOS, <strong>Android app development</strong>, cross-platform solutions with React Native, CRM systems, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization."
       },
       "custom": {
         "question": "Can you build a custom app for my business?",
@@ -727,7 +725,7 @@
       },
       "platforms": {
         "question": "What platforms do you develop for?",
-        "answer": "Quant-Apps specializes in developing mobile applications for iOS, Android app development, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
+        "answer": "Quant-Apps specializes in developing mobile applications for iOS, <strong>Android app development</strong>, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
       },
       "timeline": {
         "question": "How long does it take to develop an app?",
@@ -742,10 +740,10 @@
         "answer": "Getting started is simple! Contact us for a free consultation where we'll discuss your app idea, goals, and requirements. From there, we'll guide you through the development process and help bring your vision to life."
       }
     },
-    "serviceButton" : "Learn More",
-    "reviewButton" : "Open Website"
+    "serviceButton": "Learn More",
+    "reviewButton": "Open Website"
   },
-"contactForm": {
+  "contactForm": {
     "fields": {
       "fullName": "Full Name",
       "email": "Email",
@@ -758,12 +756,30 @@
       "selectedFiles": "Selected files:"
     },
     "services": [
-      { "id": "web-dev", "label": "Web development" },
-      { "id": "crm-dev", "label": "CRM development" },
-      { "id": "app-dev", "label": "Mobile App development" },
-      { "id": "server", "label": "Servers/Backend" },
-      { "id": "ui-ux", "label": "Design UI/UX" },
-      { "id": "others", "label": "Others" }
+      {
+        "id": "web-dev",
+        "label": "Web development"
+      },
+      {
+        "id": "crm-dev",
+        "label": "CRM development"
+      },
+      {
+        "id": "app-dev",
+        "label": "Mobile App development"
+      },
+      {
+        "id": "server",
+        "label": "Servers/Backend"
+      },
+      {
+        "id": "ui-ux",
+        "label": "Design UI/UX"
+      },
+      {
+        "id": "others",
+        "label": "Others"
+      }
     ],
     "placeholders": {
       "input": "Type here"

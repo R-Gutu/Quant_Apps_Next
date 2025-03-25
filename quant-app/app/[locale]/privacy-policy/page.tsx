@@ -3,6 +3,7 @@ import Image from "next/image";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
 import Banner from "@/components/banner";
 import type { Metadata } from 'next'
+import { strong } from "@/lib/utils/utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("privacy-policy");
@@ -60,7 +61,7 @@ const Page = async () => {
 
         <p className="indent-6">
           <strong>{t('sections.services.title')}</strong><br/>
-          {t('sections.services.content')}
+          {t.rich('sections.services.content', strong)}
         </p>
 
         <p className="indent-6">

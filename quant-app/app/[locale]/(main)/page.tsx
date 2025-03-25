@@ -20,6 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 import VideoComponent from "./_components/VideoComponent"
+import { strong } from "@/lib/utils/utils"
+import { ReactNode } from "react"
 
 
 export default async function Page() {
@@ -157,7 +159,7 @@ export default async function Page() {
     interface FaqsType {
         number: string,
         question: string,
-        answer: string,
+        answer: string | ReactNode,
         className?: string
     }
 
@@ -165,7 +167,7 @@ export default async function Page() {
         {
             number: "01",
             question: t('faqs.services.question'),
-            answer: t('faqs.services.answer'),
+            answer: t.rich('faqs.services.answer', strong),
             className: "border-b-[1px] border-r-[1px]"
         },
         {
@@ -192,7 +194,7 @@ export default async function Page() {
         {
             number: "05",
             question: t('faqs.platforms.question'),
-            answer: t('faqs.platforms.answer'),
+            answer: t.rich('faqs.platforms.answer', strong),
             className: "border-b-[1px] border-l-[1px] translate-x-[-1px]"
         },
         {

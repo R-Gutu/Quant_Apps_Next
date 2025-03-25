@@ -291,7 +291,7 @@
     "about": {
       "title": "Despre Quant-Apps",
       "paragraph1": "La Quant-Apps, transformăm idei îndrăznețe în aplicații mobile și web puternice, utilizând tehnologii avansate și expertiză profundă. Deși suntem o companie tânără, echipa noastră are ani de experiență în dezvoltarea de soluții digitale personalizate care depășesc așteptările clienților.",
-      "paragraph2": "Ne specializăm în dezvoltarea de aplicații mobile, design web și transformare digitală, creând platforme tehnologice scalabile care cresc implicarea utilizatorilor și stimulează dezvoltarea afacerilor.",
+      "paragraph2": "Ne specializăm în <strong>dezvoltarea de aplicații mobile</strong>, design web și transformare digitală, creând platforme tehnologice scalabile care cresc implicarea utilizatorilor și stimulează dezvoltarea afacerilor.",
       "paragraph3": "Echipa noastră de specialiști tehnici și creativi colaborează strâns cu clienții, oferind o abordare personalizată fiecărui proiect.",
       "paragraph4": "Seamless communication, deep client engagement, and a commitment to long-term success. We don't just build apps—we create lasting digital experiences that help businesses thrive.",
       "paragraph5": "Oferim o comunicare transparentă și ne concentrăm pe succesul pe termen lung, dezvoltând soluții IT care automatizează procesele și sprijină creșterea afacerilor. Haideți să aducem la viață viziunea voastră prin produse digitale inovatoare care evidențiază și consolidează brandul pe piață.",
@@ -437,7 +437,7 @@
       },
       {
         "title": "Proiecte complexe în dezvoltarea software – AI, cloud, CRM",
-        "text": "Abordați provocări complexe în software enterprise, soluții bazate pe inteligență artificială, infrastructură cloud de înaltă performanță, dezvoltare de aplicații mobile și automatizare care stimulează succesul afacerilor."
+        "text": "Abordați provocări complexe în software enterprise, soluții bazate pe inteligență artificială, infrastructură cloud de înaltă performanță, <strong>dezvoltare de aplicații mobile</strong> și automatizare care stimulează succesul afacerilor."
       }
     ],
     "currentOpenings": {
@@ -482,7 +482,7 @@
       },
       "services": {
         "title": "2. Servicii Furnizate",
-        "content": "Quant-Apps oferă servicii de dezvoltare IT, inclusiv dezvoltare de aplicații mobile, design UI/UX și soluții software. Orice servicii furnizate vor fi supuse unui acord separat care va detalia domeniul de aplicare, livrabilele și termenii angajamentului."
+        "content": "Quant-Apps oferă servicii de dezvoltare IT, inclusiv <strong>dezvoltare de aplicații mobile</strong>, design UI/UX și soluții software. Orice servicii furnizate vor fi supuse unui acord separat care va detalia domeniul de aplicare, livrabilele și termenii angajamentului."
       },
       "intellectual": {
         "title": "3. Proprietate Intelectuală",
@@ -548,7 +548,7 @@
       },
       "services": {
         "title": "2. Servicii Furnizate",
-        "content": "Quant-Apps oferă servicii de dezvoltare IT, inclusiv dezvoltare de aplicații mobile, design UI/UX și soluții software. Orice servicii furnizate vor fi supuse unui acord separat care va detalia domeniul de aplicare, livrabilele și termenii angajamentului."
+        "content": "Quant-Apps oferă servicii de dezvoltare IT, inclusiv <strong>dezvoltare de aplicații mobile</strong>, design UI/UX și soluții software. Orice servicii furnizate vor fi supuse unui acord separat care va detalia domeniul de aplicare, livrabilele și termenii angajamentului."
       },
       "intellectual": {
         "title": "3. Proprietate Intelectuală",
@@ -715,7 +715,7 @@
     "faqs": {
       "services": {
         "question": "Ce servicii oferă Quant-Apps?",
-        "answer": "Quant-Apps se specializează în dezvoltarea aplicațiilor mobile pentru iOS, dezvoltarea aplicațiilor pentru Android, precum și în dezvoltarea aplicațiilor cross-platform – React Native, CRM-sisteme, UI/UX design și crearea de logo-uri. De asemenea, oferim soluții pentru integrarea completă a aplicațiilor și optimizarea acestora."
+        "answer": "Quant-Apps se specializează în <strong>dezvoltarea aplicațiilor mobile</strong> pentru iOS, <strong>dezvoltarea aplicațiilor pentru Android</strong>, precum și în dezvoltarea aplicațiilor cross-platform – React Native, CRM-sisteme, UI/UX design și crearea de logo-uri. De asemenea, oferim soluții pentru integrarea completă a aplicațiilor și optimizarea acestora."
       },
       "custom": {
         "question": "Puteți dezvolta o aplicație personalizată pentru afacerea mea?",
@@ -731,7 +731,7 @@
       },
       "platforms": {
         "question": "Pentru ce platforme dezvoltați aplicații?",
-        "answer": "Quant-Apps dezvoltă aplicații pentru iOS, Android, CRM și oferă soluții cross-platform, cu un accent pe performanță excelentă, securitate și integrare cu ecosistemul Apple și Android."
+        "answer": "Quant-Apps <strong>dezvoltă aplicații</strong> pentru iOS, Android, CRM și oferă soluții cross-platform, cu un accent pe performanță excelentă, securitate și integrare cu ecosistemul Apple și Android."
       },
       "timeline": {
         "question": "Cât durează dezvoltarea unei aplicații?",

@@ -1,9 +1,9 @@
 'use client'
-import { useState } from "react"
+import { ReactNode, useState } from "react"
 import { cn } from "@/lib/utils/utils";
 import Cross from "./cross";
 
-export default function Accordion({ question, answer, number, className }: { question: string, answer: string, number: string, className?: string }) {
+export default function Accordion({ question, answer, number, className }: { question: string, answer: string | ReactNode, number: string, className?: string }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className={`px-[50px] max-[1500px]:px-[20px] py-[50px] max-[600px]:py-[34px] border-solid border-[#6A65FF] ${className}`}>

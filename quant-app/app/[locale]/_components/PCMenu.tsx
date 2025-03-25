@@ -21,7 +21,7 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
         ">
                 <Link href="/" legacyBehavior className="w-[178px] h-[60px]">
                     <a className="w-[118px] mr-4 h-[40px] smallest:w-[178px] smallest:h-[60px] self-center flex justify-center items-center">
-                        <Image id="logo" src="/images/icons/Logo.svg" width={178} height={60} alt="Logo" />
+                        <Image priority id="logo" src="/images/icons/Logo.svg" width={178} height={60} alt="Logo" />
                     </a>
                 </Link>
                 <nav>
@@ -29,7 +29,7 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
                         {pages.map(e =>
                             <li key={e}>
                                 <Link href={`/${e}`} legacyBehavior>
-                                    <a className={cn('text-nowrap font-medium text-[18px] text-white hover:text-[var(--purple)] duration-200 transition-colors', { 'text-[var(--purple)]': pathname === `/${e}` })}>{t(e)}</a>
+                                    <a className={cn('text-nowrap font-medium text-[18px] text-white hover:text-[var(--purple)] duration-200 transition-colors', { 'text-[var(--purple)]': pathname === `/${e}` })} dangerouslySetInnerHTML={{__html: t.raw(e)}}/>
                                 </Link>
                             </li>
                         )}
@@ -44,6 +44,7 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
                     </div>
                     <div className="w-[46px] h-[46px] ml-[33px] block small:hidden">
                         <Image
+                            priority
                             src="/images/elements/Button.svg"
                             alt="mobile menu"
                             width={46}

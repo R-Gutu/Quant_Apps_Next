@@ -17,16 +17,23 @@ const VideoModal = ({ setIsOpen }: { setIsOpen: React.Dispatch<React.SetStateAct
 
     return (
         <Modal
+            slotProps={{
+                backdrop: {
+                    sx: {
+                        backdropFilter: "blur(10px)",
+                    }
+                }
+            }}
             open={true}
             onClose={handleOnClose}
             className="px-[10%] max-[1000px]:px-[20px] max-[700px]:px-[0px] flex justify-center items-center no-doc-scroll"
         >
             <m.div
-            initial={{ opacity: 0, y: -400 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -400 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="bg-white p-[40px] max-[700px]:p-[20px] max-[700px]:pt-[40px] rounded-[15px] relative">
+                initial={{ opacity: 0, y: -400 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -400 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="bg-white p-[40px] max-[700px]:p-[20px] max-[700px]:pt-[40px] rounded-[15px] relative">
                 <Image
                     src="/images/icons/cross.svg"
                     alt="close cross"

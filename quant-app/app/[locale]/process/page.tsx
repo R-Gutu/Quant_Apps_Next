@@ -16,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 import ProjectForm from "@/components/projectForm"
+import { strong } from "@/lib/utils/utils"
 
 const ProcessPage = async () => {
   const t = await getTranslations("process");
@@ -24,47 +25,47 @@ const ProcessPage = async () => {
     {
       id: t('items.0.id'),
       title: t('items.0.title'),
-      text: t('items.0.text')
+      text: t.rich('items.0.text', strong)
     },
     {
       id: t('items.1.id'),
       title: t('items.1.title'),
-      text: t('items.1.text')
+      text: t.rich('items.1.text', strong)
     },
     {
       id: t('items.2.id'),
       title: t('items.2.title'),
-      text: t('items.2.text')
+      text: t.rich('items.2.text', strong)
     },
     {
       id: t('items.3.id'),
       title: t('items.3.title'),
-      text: t('items.3.text')
+      text: t.rich('items.3.text',  strong)
     },
     {
       id: t('items.4.id'),
       title: t('items.4.title'),
-      text: t('items.4.text')
+      text: t.rich('items.4.text', strong)
     },
     {
       id: t('items.5.id'),
       title: t('items.5.title'),
-      text: t('items.5.text')
+      text: t.rich('items.5.text', strong)
     },
     {
       id: t('items.6.id'),
       title: t('items.6.title'),
-      text: t('items.6.text')
+      text: t.rich('items.6.text', strong)
     },
     {
       id: t('items.7.id'),
       title: t('items.7.title'),
-      text: t('items.7.text')
+      text: t.rich('items.7.text', strong)
     },
     {
       id: t('items.8.id'),
       title: t('items.8.title'),
-      text: t('items.8.text')
+      text: t.rich('items.8.text', strong)
     }
   ];
 
@@ -79,7 +80,7 @@ const ProcessPage = async () => {
       />
       <HeadText
         title={t('header.title')}
-        text={t('header.text')}
+        text={t.rich('header.text', strong)}
       />
       <div className="flex flex-col gap-[30px] pb-[100px]">
         {process.map((item, index) => (
@@ -89,7 +90,7 @@ const ProcessPage = async () => {
       <Banner
         src={t('callToAction.image')}
         header={t('callToAction.title')}
-        subHeader={t('callToAction.subtitle')}
+        subHeader={t.rich('callToAction.subtitle', strong)}
         button={t('callToAction.buttonText')}
         icon={t('callToAction.buttonIcon')}
       />

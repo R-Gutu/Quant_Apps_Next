@@ -208,94 +208,94 @@
     }
   },
   "process": {
-    "title": "Procesul Nostru | Dezvoltare Agile & Strategie UI/UX - Quant apps",
-    "description": "Află cum Quant apps transformă ideile în aplicații mobile și web scalabile printr-o abordare structurată și agilă.",    
+    "title": "Procesul Nostru | Dezvoltare Agile & Strategie UI/UX - Quantica",
+    "description": "Descoperiți cum Quantica transformă ideile în aplicații mobile și web scalabile cu o abordare structurată și agilă.",
     "banner": {
       "image": "/images/banners/faqs_banner.png",
-      "title": "Procesul nostru de lucru",
-      "subtitle": "Un ghid complet pentru atingerea obiectivelor tale de business."
+      "title": "Procesul Nostru de Lucru",
+      "subtitle": "Un Ghid Comprehensiv pentru Atingerea Obiectivelor de Afaceri"
     },
     "header": {
       "title": "La Quant-Apps",
-      "text": "Suntem mândri de colaborarea cu o gamă largă de clienți, dezvoltând soluții digitale inovatoare care contribuie la creșterea și succesul afacerilor."
+      "text": "Suntem mândri să colaborăm cu o gamă diversă de clienți, creând soluții digitale inovatoare care stimulează <strong>creșterea afacerii</strong> și succesul."
     },
     "items": [
       {
         "id": "01",
         "title": "Consultație",
-        "text": "Ne concentrăm pe înțelegerea profundă a obiectivelor și nevoilor tale. Ascultăm ideile tale, analizăm procesul de afaceri și propunem o strategie care să ajute la obținerea rezultatelor maxime."
+        "text": "Începem prin înțelegerea profundă a obiectivelor și nevoilor dvs. Ascultăm ideile dvs., analizăm procesele de afaceri și propunem o strategie care va oferi rezultate maxime pentru cerințele dvs. de <strong>dezvoltare de aplicații mobile</strong>."
       },
       {
         "id": "02",
-        "title": "Cercetare și dezvoltarea strategiei",
-        "text": "Efectuăm cercetări amănunțite, analizăm piața și concurența, pentru a dezvolta o strategie eficientă, adaptată cerințelor și obiectivelor unice ale afacerii tale."
+        "title": "Cercetare și Dezvoltare de Strategie",
+        "text": "Efectuăm cercetări amănunțite, studiem piața și concurenții pentru a dezvolta o strategie eficientă adaptată cerințelor și obiectivelor dvs. unice de <strong>dezvoltare de site-uri web corporative</strong>."
       },
       {
         "id": "03",
-        "title": "Planificare și strategie",
-        "text": "Planificăm fiecare pas pe drumul către succes. Creăm hărți detaliate și definim etapele cheie, pentru a ne asigura că fiecare fază a proiectului este finalizată la timp și în limita bugetului."
+        "title": "Planificare și Management Strategic",
+        "text": "Planificăm fiecare pas către succes. Creăm foi de parcurs detaliate și definim clar etapele cheie pentru a ne asigura că fiecare fază a proiectului de <strong>dezvoltare de aplicații iOS</strong> este finalizată la timp și în limitele bugetului."
       },
       {
         "id": "04",
-        "title": "Branding și dezvoltarea identității",
-        "text": "Creăm un stil vizual unic care reflectă esența brandului tău. Dezvoltăm logo-uri, palete de culori și alte elemente de branding pentru ca brandul tău să fie ușor de recunoscut și memorabil."
+        "title": "Branding și Design de Identitate",
+        "text": "Creăm o identitate vizuală unică care reflectă esența brandului dvs. Proiectăm logo-uri, palete de culori și alte elemente de branding pentru a face brandul dvs. de <strong>dezvoltare de aplicații Android</strong> ușor de recunoscut și memorabil."
       },
       {
         "id": "05",
-        "title": "Crearea wireframe-urilor și designului UI/UX",
-        "text": "Dezvoltăm soluții funcționale și performante care se integrează perfect cu sistemele tale și asigură funcționarea fără întreruperi a aplicațiilor și serviciilor."
+        "title": "Wireframes și Design UI/UX",
+        "text": "Proiectăm interfețe intuitive și atrăgătoare care oferă cea mai bună experiență utilizatorului. Creăm wireframe-uri și prototipuri care pun baza pentru viitoarele dvs. <strong>servicii de dezvoltare de aplicații web</strong> sau site web."
       },
       {
         "id": "06",
-        "title": "Dezvoltare și integrare",
-        "text": "Dezvoltăm soluții funcționale și performante care se integrează perfect cu sistemele tale și asigură funcționarea fără întreruperi a aplicațiilor și serviciilor."
+        "title": "Dezvoltare și Integrare",
+        "text": "Dezvoltăm soluții funcționale, de înaltă performanță care se integrează perfect cu sistemele dvs., asigurând funcționarea optimă a <strong>dezvoltării de aplicații cross-platform</strong> și serviciilor."
       },
       {
         "id": "07",
-        "title": " Testare și asigurarea calității",
-        "text": "Fiecare aplicație și soluție trece prin etape riguroase de testare. Verificăm toate aspectele funcționale și tehnice pentru a garanta funcționarea impecabilă pe toate dispozitivele și platformele."
+        "title": "Testare și Asigurarea Calității",
+        "text": "Fiecare aplicație și soluție trece prin etape stricte de testare. Verificăm toate aspectele funcționale și tehnice pentru a asigura performanța impecabilă a proiectelor dvs. de <strong>companie de dezvoltare de aplicații Flutter</strong> pe toate dispozitivele și platformele."
       },
       {
         "id": "08",
-        "title": "Lansare și implementare",
-        "text": "Pregătim cu atenție aplicația pentru lansare, astfel încât să funcționeze fără erori. După testare, implementăm aplicația pe platformele selectate și asigurăm un start fără probleme."
+        "title": "Lansare și Implementare",
+        "text": "Pregătim cu atenție aplicația dvs. pentru lansare pentru a asigura o funcționare fără probleme. După testare, implementăm soluția de <strong>dezvoltare CRM</strong> pe platformele selectate și asigurăm un start fără probleme."
       },
       {
         "id": "09",
-        "title": "Suport și optimizare",
-        "text": "După lansare, continuăm să oferim suport și optimizare, îmbunătățind performanța aplicației, remediind erorile și adăugând funcționalități noi pentru satisfacerea maximă a nevoilor utilizatorilor."
+        "title": "Întreținere și Optimizare",
+        "text": "După lansare, continuăm să susținem și să optimizăm aplicația, îmbunătățind performanța, corectând erorile și adăugând funcții noi pentru a satisface nevoile utilizatorilor pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong> și alte soluții."
       }
     ],
     "callToAction": {
       "image": "/images/banners/what-clients-say-banner.png",
-      "title": "Ești gata de un nou proiect?",
-      "subtitle": "Hai să creăm împreună soluții digitale unice, personalizate prin dezvoltare și design, adaptate nevoilor afacerii tale.",
-      "buttonText": "Începe proiectul",
+      "title": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
+      "subtitle": "Să dăm viață ideilor dvs. cu soluții de <strong>dezvoltare frontend și backend</strong> și <strong>dezvoltare personalizată de aplicații Android</strong> adaptate nevoilor dvs.",
+      "buttonText": "Începeți Proiectul",
       "buttonIcon": "/images/icons/start_project_logo.svg"
     }
   },
   "about": {
-      "title": "Despre Quant-Apps - Dezvoltare iOS, Web, CRM",
-      "description": "Quant-Apps se dedică transformării ideilor inovatoare în soluții digitale performante. Expertiza noastră acoperă aplicații mobile și web, sisteme CRM, infrastructură cloud și automatizare bazată pe inteligență artificială. Ne angajăm să oferim rezultate excepționale prin colaborare, tehnologie de vârf și pasiune pentru excelență. Alătură-te nouă pentru a lucra la proiecte de impact care conduc transformarea digitală și succesul în afaceri.",    
+    "title": "Despre Quant-Apps - Dezvoltare iOS, Web, CRM",
+    "description": "Quant-Apps se dedică transformării ideilor inovatoare în soluții digitale de înaltă performanță. Expertiza noastră cuprinde aplicații mobile și web, sisteme CRM, infrastructură cloud și automatizare bazată pe AI. Ne angajăm să livrăm rezultate excepționale prin colaborare, tehnologie de ultimă generație și pasiune pentru excelență. Alăturați-vă nouă pentru a lucra la proiecte de impact care stimulează transformarea digitală și succesul în afaceri.",
     "banner": {
       "src": "/images/banners/our-services-banner.png",
-      "header": "Despre Noi",
-      "subHeader": "Acolo unde inovația întâlnește viziunea ta – creăm soluții digitale care inspiră."
+      "header": "Despre noi",
+      "subHeader": "Unde inovația întâlnește viziunea ta—creând experiențe digitale care inspiră"
     },
     "about": {
       "title": "Despre Quant-Apps",
-      "paragraph1": "La Quant-Apps, transformăm idei îndrăznețe în aplicații mobile și web puternice, utilizând tehnologii avansate și expertiză profundă. Deși suntem o companie tânără, echipa noastră are ani de experiență în dezvoltarea de soluții digitale personalizate care depășesc așteptările clienților.",
-      "paragraph2": "Ne specializăm în <strong>dezvoltarea de aplicații mobile</strong>, design web și transformare digitală, creând platforme tehnologice scalabile care cresc implicarea utilizatorilor și stimulează dezvoltarea afacerilor.",
-      "paragraph3": "Echipa noastră de specialiști tehnici și creativi colaborează strâns cu clienții, oferind o abordare personalizată fiecărui proiect.",
-      "paragraph4": "Seamless communication, deep client engagement, and a commitment to long-term success. We don't just build apps—we create lasting digital experiences that help businesses thrive.",
-      "paragraph5": "Oferim o comunicare transparentă și ne concentrăm pe succesul pe termen lung, dezvoltând soluții IT care automatizează procesele și sprijină creșterea afacerilor. Haideți să aducem la viață viziunea voastră prin produse digitale inovatoare care evidențiază și consolidează brandul pe piață.",
+      "paragraph1": "La Quant-Apps, transformăm idei îndrăznețe în aplicații și site-uri web de înaltă performanță. În ciuda faptului că suntem o companie tânără, echipa noastră combină ani de experiență cu tehnologie de ultimă generație pentru a livra soluții de <strong>dezvoltare personalizată de aplicații Android</strong> care depășesc așteptările.",
+      "paragraph2": "Ne specializăm în <strong>dezvoltarea de aplicații mobile</strong>, design web și transformare digitală, creând platforme vizual impresionante, de înaltă funcționalitate care angajează utilizatorii și stimulează creșterea afacerii. Gânditorii noștri creativi și experții tehnici lucrează îndeaproape cu clienții, asigurând o abordare colaborativă și personalizată pentru fiecare proiect.",
+      "paragraph3": "Ce ne face diferiți?",
+      "paragraph4": "Comunicare fără întreruperi, angajament profund cu clienții și dedicare pentru succesul pe termen lung. Nu doar <strong>construim aplicații mobile native</strong>—creăm experiențe digitale durabile care ajută afacerile să prospere.",
+      "paragraph5": "Să dăm viață viziunii tale cu <strong>soluții software personalizate</strong> care îți elevează brandul și te diferențiază în lumea digitală.",
       "image": {
         "src": "/images/pictures/about1.png",
         "alt": "about1"
       }
     },
     "timeline": {
-      "title": "Cronologia",
+      "title": "Cronologie",
       "image": {
         "src": "/images/pictures/roTimeline.png",
         "alt": "timeline"
@@ -303,54 +303,54 @@
       "items": [
         {
           "id": "01",
-          "title": "Idee bună",
-          "text": "De la freelancer la Fiverr până la expert în design UI/UX și extinderea portofoliului de soluții de design inovative."
+          "title": "O IDEE BUNĂ",
+          "text": "De la freelancer pe Fiverr la expert în design, stăpânind trasarea vectorială și nu numai pentru <strong>dezvoltarea de site-uri web corporative</strong>"
         },
         {
           "id": "02",
-          "title": "Începutul mișcării",
-          "text": "Adăugarea de design UI/UX și dezvoltarea portofoliului de soluții universale de design și aplicații."
+          "title": "ÎNCEPE SĂ TE MIȘTI",
+          "text": "Am adăugat UI/UX și design de logo, dezvoltând un portofoliu de design versatil pentru <strong>dezvoltarea de aplicații iOS</strong>"
         },
         {
           "id": "03",
-          "title": "Creștere",
-          "text": "Imersie în dezvoltarea aplicațiilor și CRM pentru livrarea de produse, implementând cele mai noi inovații digitale."
+          "title": "CREȘTERE",
+          "text": "Ne-am aventurat în <strong>dezvoltarea de aplicații Android</strong> cu o aplicație pentru cumpărături, îmbrățișând inovația digitală"
         },
         {
           "id": "04",
-          "title": "Pauză strategică",
-          "text": "Adunarea de specialiști în soluții inovative pentru proiecte de succes."
+          "title": "IAU TIMP",
+          "text": "Am stăpânit <strong>serviciile de dezvoltare de aplicații web</strong> cu proiecte inovatoare"
         },
         {
           "id": "05",
-          "title": "Inovație",
-          "text": "Crearea de proiecte inovative bazate pe tehnologii moderne și dezvoltarea în continuare a soluțiilor inovative."
+          "title": "INOVAȚIE",
+          "text": "Am construit proiecte cu tehnologie avansată, modelând viitorul Quant-Apps cu <strong>dezvoltarea de aplicații cross-platform</strong>"
         },
         {
           "id": "06",
-          "title": "QUANT-APPS LAUNCH",
-          "text": "Fondarea Quant-Apps, specializată în dezvoltarea de soluții IT inovative."
+          "title": "LANSAREA QUANT-APPS",
+          "text": "Am fondat Quant-Apps, specializându-ne în soluții inovatoare ale <strong>companiei de dezvoltare de aplicații Flutter</strong>"
         }
       ]
     },
     "team": {
-      "title": "Echipa Noastră",
+      "title": "Echipă",
       "members": [
         {
           "name": "Roman Gutu",
-          "position": "CEO and Founder",
+          "position": "CEO și Fondator",
           "link": "",
           "src": "/images/pictures/roman.png",
           "alt": "roman",
-          "text": "Director general cu peste 5 ani de experiență în dezvoltarea de CRM, aplicații și site-uri web."
+          "text": "CEO cu 7+ ani în <strong>dezvoltare CRM</strong>, aplicații și dezvoltare de site-uri web, creând soluții inovatoare și scalabile."
         },
         {
           "name": "Veaceslav Soltan",
-          "position": "CO-Founder",
+          "position": "CO-Fondator",
           "link": "",
           "src": "/images/pictures/slavic.png",
           "alt": "vyacheslav",
-          "text": "Designer grafic experimentat, cu peste 7 ani de experiență în UI/UX și motion design."
+          "text": "Designer grafic experimentat cu peste 7 ani în UI/UX și design de mișcare, creând <strong>servicii de dezvoltare de site-uri de comerț electronic</strong> impactante și ușor de utilizat."
         },
         {
           "name": "Vitalie Cernovschi",
@@ -358,7 +358,7 @@
           "link": "",
           "src": "/images/pictures/vitalie.png",
           "alt": "vitalie",
-          "text": "Expert în dezvoltarea front-end și back-end, specializat în soluții web scalabile."
+          "text": "Expert în <strong>dezvoltare frontend și backend</strong>, specializat în soluții web scalabile și optimizare a performanței."
         },
         {
           "name": "Maxim Roenco",
@@ -366,7 +366,7 @@
           "link": "https://www.linkedin.com/in/roencomax/",
           "src": "/images/pictures/maxim.png",
           "alt": "maxim",
-          "text": "Experiență în HTML, CSS, JavaScript și design adaptiv. Specializat în interfețe intuitive și optimizarea performanței aplicațiilor web."
+          "text": "Experimentat în HTML, CSS, JavaScript și design responsiv. Concentrat pe interfețe prietenoase cu utilizatorul și <strong>servicii de dezvoltare de aplicații web</strong>."
         },
         {
           "name": "Islam Abu Koush",
@@ -374,7 +374,7 @@
           "link": "https://www.linkedin.com/in/islam-abu-koush-a191a2299/",
           "src": "/images/pictures/islam.png",
           "alt": "islam",
-          "text": "Stăpânește React, JavaScript și framework-uri UI. Pasionat de design interactiv și optimizarea performanței."
+          "text": "Abil în React, JavaScript și framework-uri UI. Pasionat de design interactiv și optimizare <strong>de dezvoltare SaaS</strong>."
         },
         {
           "name": "Denis Soltan",
@@ -382,7 +382,7 @@
           "link": "https://www.linkedin.com/in/denis-soltan-52a1a2305/",
           "src": "/images/pictures/denis.png",
           "alt": "denis",
-          "text": "Dezvoltator tânăr și ambițios, cu experiență în React și JavaScript. Specializat în crearea de interfețe moderne, adaptabile și interactive."
+          "text": "Un dezvoltator pasionat cu experiență practică în React și JavaScript. Dedicat construirii de <strong>servicii de dezvoltare de aplicații web</strong> eficiente, responsive și interactive."
         }
       ]
     }
@@ -393,66 +393,66 @@
       "alt": "logo"
     },
     "header": {
-      "title": "Quant-Apps: Dezvoltăm afaceri prin soluții digitale avansate",
-      "description": "Ne specializăm în dezvoltarea de software personalizat, aplicații mobile și web design, transformând ideile în produse digitale performante. Expertiza noastră în UX/UI, dezvoltare Agile și soluții CRM asigură o experiență utilizator perfectă, scalabilă și eficientă."
+      "title": "Quant-Apps: Ridicarea Afacerilor cu Soluții Digitale de Ultimă Generație",
+      "description": "Ne specializăm în <strong>dezvoltare personalizată de aplicații Android</strong>, aplicații mobile și design web, transformând ideile în produse digitale de înaltă performanță. Expertiza noastră în UX/UI, dezvoltare agilă și <strong>dezvoltare CRM</strong> asigură experiențe fără probleme, scalabile și orientate spre rezultate."
     },
     "welcome": {
       "title": "Bine ați venit la Quant-Apps",
-      "tagline": "Unde inovația, tehnologia și strategia se reunesc pentru a crește afacerea dumneavoastră."
+      "tagline": "Unde inovația, tehnologia și strategia se aliniază pentru a stimula succesul afacerii cu <strong>dezvoltarea de aplicații mobile</strong>."
     },
     "cta": {
-      "buttonText": " Începe proiectul"
+      "buttonText": "Începeți Proiectul"
     }
   },
   "careers": {
-    "title": "Cariere la Quant apps | Alătură-te Echipei Noastre Tech",
-    "description": "Cauți o carieră captivantă în dezvoltarea mobilă și web? Alătură-te Quant apps și lucrează la soluții digitale inovatoare.",
+    "title": "Cariere la Quant apps | Alătură-te Echipei Noastre Tehnice",
+    "description": "Cauți o carieră entuziasmantă în dezvoltarea de aplicații mobile și web? Alătură-te Quant apps și lucrează la soluții digitale de ultimă generație.",
     "banner": {
-      "header": "Alăturați-vă echipei Quant-Apps",
-      "subHeader": "Descoperiți-vă potențialul și deveniți parte dintr-o companie IT inovatoare, specializată în dezvoltarea de aplicații mobile, platforme web, sisteme CRM, soluții bazate pe inteligență artificială și infrastructură cloud."
+      "header": "Procesul Nostru de Lucru",
+      "subHeader": "Un Ghid Comprehensiv pentru Atingerea Obiectivelor de Afaceri"
     },
     "welcome": {
-      "title": "Bine ați venit la Quant-Apps – unde inovația conduce la succes!",
-      "description": "La Quant-Apps, credem că succesul se bazează pe expertiză, colaborare și pasiune pentru tehnologie de vârf. Fiind o companie lider în dezvoltarea de software, creăm aplicații mobile și web, sisteme CRM și soluții de automatizare bazate pe AI.",
-      "tagline": "De ce merită să lucrați la Quant-Apps?"
+      "title": "Bine ai venit la Quant-Apps, unde inovația conduce succesul!",
+      "description": "La Quant-Apps, credem că succesul se bazează pe expertiză, colaborare și pasiune pentru tehnologia de ultimă generație. Ca o companie de top în dezvoltarea software, ne concentrăm pe <strong>dezvoltarea de aplicații mobile</strong>, <strong>servicii de dezvoltare de aplicații web</strong>, <strong>dezvoltare CRM</strong>, infrastructură cloud și automatizare bazată pe AI. Dacă dorești să lucrezi la proiecte cu impact care modelează viitorul transformării digitale, te invităm să explorezi oportunitățile de carieră cu noi.",
+      "tagline": "De ce să lucrezi la Quant-Apps?"
     },
     "careerBlocks": [
       {
-        "title": "Lucrați la proiecte IT de vârf: aplicații mobile, CRM, AI și dezvoltare web",
-        "text": "Fiți parte dintr-o echipă care creează soluții digitale scalabile, inclusiv software enterprise, aplicații mobile, automatizare bazată pe AI și platforme web performante."
+        "title": "Lucrează la Proiecte Software de Ultimă Generație: Aplicații Mobile, CRM, AI și Dezvoltare Web",
+        "text": "Fii parte dintr-o echipă care creează soluții digitale scalabile, inclusiv software personalizat pentru companii, <strong>dezvoltare de aplicații iOS</strong>, automatizare bazată pe AI și <strong>dezvoltare de site-uri web corporative</strong> de înaltă performanță."
       },
       {
-        "title": "Mediu tehnologic colaborativ – experți în AI, cloud și dezvoltare software",
-        "text": "Alăturați-vă unei culturi a inovației, unde inginerii AI, dezvoltatorii de soluții cloud și experții IT colaborează pentru a construi viitorul transformării digitale și al soluțiilor enterprise."
+        "title": "Mediu Tehnologic Colaborativ – Experți în AI, Cloud și Dezvoltare Software",
+        "text": "Alătură-te unei culturi a inovației, unde inginerii AI, dezvoltatorii cloud și experții în <strong>dezvoltare frontend și backend</strong> colaborează pentru a construi viitorul transformării digitale și soluțiilor pentru companii."
       },
       {
-        "title": "Învățare continuă: rămâneți în fruntea tehnologiilor web, mobile, AI și cloud",
-        "text": "Dezvoltați-vă cariera prin acces la programe de training, mentorat și conferințe de top din domeniul dezvoltării web, cloud computing, securității cibernetice, AI și automatizării."
+        "title": "Învățare Continuă: Rămâi în Fruntea Tehnologiilor Web, Mobile, AI și Cloud",
+        "text": "Avansează-ți cariera cu acces la programe de formare, mentorat și conferințe tehnologice de top din industrie în <strong>dezvoltarea de aplicații Android</strong>, cloud computing, securitate cibernetică, AI și <strong>dezvoltare SaaS</strong>."
       },
       {
-        "title": "Proiecte complexe în dezvoltarea software – AI, cloud, CRM",
-        "text": "Abordați provocări complexe în software enterprise, soluții bazate pe inteligență artificială, infrastructură cloud de înaltă performanță, <strong>dezvoltare de aplicații mobile</strong> și automatizare care stimulează succesul afacerilor."
+        "title": "Proiecte Provocatoare de Dezvoltare Software – AI, Cloud, CRM",
+        "text": "Rezolvă provocări complexe în software pentru companii, soluții bazate pe AI, infrastructură cloud de înaltă performanță, <strong>dezvoltare de aplicații mobile</strong> și automatizare care conduc succesul în afaceri."
       }
     ],
     "currentOpenings": {
-      "title": "Posturi vacante actuale",
-      "description": "Suntem mereu în căutare de specialiști talentați, pasionați de crearea unor produse digitale unice."
+      "title": "Poziții Deschise Curente",
+      "description": "Suntem mereu în căutare de persoane talentate care sunt pasionate de crearea unor experiențe digitale excepționale."
     },
     "openings": [
       {
-        "title": "Posturi vacante în domeniul designului",
-        "name": "UI/UX Designer",
-        "text": "Alăturați-vă echipei noastre ca UI/UX Designer și transformați-vă creativitatea în realitate prin dezvoltarea unor interfețe digitale vizual atractive și intuitive. Veți colabora cu echipe interfuncționale pentru a îmbunătăți experiența utilizatorului (UX), lucrând la wireframing, tipografie și teoria culorilor. Munca dvs. va fi esențială în crearea de soluții digitale intuitive care oferă o experiență memorabilă pe termen lung."
+        "title": "Posturi Deschise în Design",
+        "name": "Designer UI/UX",
+        "text": "Alătură-te echipei noastre ca Designer UI/UX și dă viață creativității prin proiectarea de interfețe digitale captivante și ușor de utilizat. Colaborează cu echipe cross-funcționale pentru a îmbunătăți experiența utilizatorului (UX), designul layout-ului, tipografia și teoria culorilor. Joacă un rol cheie în modelarea soluțiilor intuitive <strong>de dezvoltare a aplicațiilor mobile native</strong> care lasă o impresie durabilă."
       },
       {
-        "title": "Posturi vacante în domeniul dezvoltării",
-        "name": "Front - End Developer",
-        "text": "Căutăm un Front-End Developer care să transforme conceptele UI/UX în interfețe web interactive și adaptabile. Lucrând cu HTML, CSS și JavaScript, veți dezvolta aplicații web performante și vizual atractive. Colaborarea strânsă cu designerii și backend developerii va asigura o integrare fluidă, scalabilitate și o experiență optimizată pentru utilizatori."
+        "title": "Posturi Deschise în Dezvoltare",
+        "name": "Dezvoltator Front-End",
+        "text": "Căutăm un Dezvoltator Front-End pentru a transforma wireframe-urile UI/UX în interfețe web responsive și interactive. Lucrează cu HTML, CSS și JavaScript pentru a dezvolta site-uri web de înaltă performanță, vizual atractive. Colaborează cu designeri și dezvoltatori backend pentru a asigura funcționalitate fără probleme, scalabilitate și experiență optimă a utilizatorului pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>."
       },
       {
-        "title": "Posturi vacante în domeniul managementului de proiect",
-        "name": "Project Manager",
-        "text": "Căutăm un Project Manager care să coordoneze planificarea, organizarea și execuția proiectelor din domeniul dezvoltării software, web și aplicațiilor mobile. Responsabilitățile includ: Gestionarea echipelor multidisciplinare. Monitorizarea termenelor și optimizarea proceselor. Asigurarea unei comunicări eficiente între dezvoltatori, designeri și stakeholderi. Managementul riscurilor și livrarea la timp a produsului conform obiectivelor de afaceri"
+        "title": "Posturi Deschise în Management",
+        "name": "Manager de Proiect",
+        "text": "Căutăm un Manager de Proiect pentru a supraveghea planificarea, execuția și livrarea proiectelor de dezvoltare software, web și <strong>dezvoltare de aplicații cross-platform</strong>. Coordonează echipe cross-funcționale, gestionează calendare și asigură colaborarea fără probleme între dezvoltatori, designeri și stakeholderi. Conduce proiectele spre succes prin optimizarea fluxurilor de lucru, atenuarea riscurilor și asigurarea livrării la timp a soluțiilor <strong>companiei de dezvoltare de aplicații Flutter</strong>, în conformitate cu obiectivele de afaceri."
       }
     ]
   },

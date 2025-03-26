@@ -2,7 +2,7 @@
 import Image from "next/image"
 import { ReactNode, useState } from "react"
 import * as m from "motion/react-m"
-import { accordionItemAnimation } from "@/lib/animations/accordionAnim";
+import { accordionItemAnimation } from "@/lib/animations/accordionAnimation";
 
 const Accordion = ({id, title, text} : {id: string, title: string, text: string | ReactNode}) => {
     const [active, setActive] = useState<boolean>(false);

@@ -82,7 +82,8 @@ const ProcessPage = async () => {
         title={t('header.title')}
         text={t.rich('header.text', strong)}
       />
-      <div className="flex flex-col gap-[30px] pb-[100px]">
+      <div  
+        className="flex flex-col gap-[30px] pb-[100px]">
         {process.map((item, index) => (
           <Accordion key={index} {...item} />
         ))}

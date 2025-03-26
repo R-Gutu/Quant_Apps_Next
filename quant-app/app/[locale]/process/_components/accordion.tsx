@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image"
 import { ReactNode, useState } from "react"
+import * as m from "motion/react-m"
+import { accordionItemAnimation } from "@/lib/animations/accordionAnim";
 
 const Accordion = ({id, title, text} : {id: string, title: string, text: string | ReactNode}) => {
     const [active, setActive] = useState<boolean>(false);
@@ -9,7 +11,11 @@ const Accordion = ({id, title, text} : {id: string, title: string, text: string 
     };
 
     return (
-        <div 
+        <m.div
+            variants={accordionItemAnimation}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }} 
             onClick={onClickAccordion} 
             className={`cursor-pointer px-[60px] py-[40px] max-mui-md:px-[40px] max-mui-md:py-[20px] max-smallest:px-[20px] flex flex-col gap-[30px] max-smallest:gap-[20px] rounded-[12px] transition-colors duration-200 ease-in-out ${
                 active 
@@ -34,7 +40,7 @@ const Accordion = ({id, title, text} : {id: string, title: string, text: string 
                     {text}
                 </p>
             </div>
-        </div>
+        </m.div>
     );
 };
 

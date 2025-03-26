@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image"
-import { useState } from "react"
+import { ReactNode, useState } from "react"
 
-const Accordion = ({id, title, text} : {id: string, title: string, text: string}) => {
+const Accordion = ({id, title, text} : {id: string, title: string, text: string | ReactNode}) => {
     const [active, setActive] = useState<boolean>(false);
     const onClickAccordion = () => {
         setActive(prev => !prev);

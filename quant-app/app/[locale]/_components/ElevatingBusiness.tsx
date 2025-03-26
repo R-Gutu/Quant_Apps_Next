@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useTranslations } from "next-intl"
 import TalkModal from '@/components/TalkModal';
 import { useState } from 'react';
+import { strong } from '@/lib/utils/utils';
 
 const ElevatingBusiness =  () => {
   const t = useTranslations("elevatingBusiness");
@@ -21,7 +22,7 @@ const ElevatingBusiness =  () => {
             {t('header.title')}
           </h2>
           <p className="font-normal text-[18px] max-mui-md:text-[16px] text-[#98989A]">
-            {t('header.description')}
+            {t.rich('header.description', strong)}
           </p>
         </div>
       </div>
@@ -32,7 +33,7 @@ const ElevatingBusiness =  () => {
           </h2>
           <div className="pt-[14px] pr-[20px] pb-[14px] pl-[20px] rounded-[8px] bg-[#4267B2] max-small:bg-[#00000033]">
             <p className="font-normal text-[18px] max-mui-md:text-[16px] max-[1550px]:max-w-[500px] max-[1400px]:max-w-[300px] max-small:max-w-fit text-center small:truncate text-[#FFFFFF]">
-              {t('welcome.tagline')}
+              {t.rich('welcome.tagline', strong)}
             </p>
           </div>
         </div>

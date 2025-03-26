@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { ReactNode } from "react";
 
-const OpeningsBlock = ({title, name, text, src, alt} : {title: string, name: string, text: string, src: string, alt: string}) => {
+const OpeningsBlock = ({title, name, text, src, alt} : {title: string, name: string, text: string | ReactNode, src: string, alt: string}) => {
   const subject = encodeURIComponent("Support Request");
   const body = encodeURIComponent("Hello, I need help with...");
   const mailtoLink = `mailto:support@quant-apps.com?subject=${subject}&body=${body}`;

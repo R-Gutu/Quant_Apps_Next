@@ -25,17 +25,17 @@ const Page = async () => {
     const careers : CareersType[] = [
         {
             title: t('careerBlocks.0.title'),
-            text: t('careerBlocks.0.text'),
+            text: t.rich('careerBlocks.0.text', strong),
             className: "mui-md:border-r-[1px] mui-md:border-[#6A65FF80]"
         },
         {
             title: t('careerBlocks.1.title'),
-            text: t('careerBlocks.1.text'),
+            text: t.rich('careerBlocks.1.text', strong),
             className: ""
         },
         {
             title: t('careerBlocks.2.title'),
-            text: t('careerBlocks.2.text'),
+            text: t.rich('careerBlocks.2.text', strong),
             className: "mui-md:border-r-[1px] mui-md:border-[#6A65FF80]"
         },
         {
@@ -49,21 +49,21 @@ const Page = async () => {
         {
             title: t('openings.0.title'),
             name: t('openings.0.name'),
-            text: t('openings.0.text'),
+            text: t.rich('openings.0.text', strong),
             src: "/images/icons/career1.svg",
             alt: "career"
         },
         {
             title: t('openings.1.title'),
             name: t('openings.1.name'),
-            text: t('openings.1.text'),
+            text: t.rich('openings.1.text', strong),
             src: "/images/icons/career2.svg",
             alt: "career"
         },
         {
             title: t('openings.2.title'),
             name: t('openings.2.name'),
-            text: t('openings.2.text'),
+            text: t.rich('openings.2.text', strong),
             src: "/images/icons/career3.svg",
             alt: "career"
         },
@@ -84,7 +84,7 @@ const Page = async () => {
                         {t('welcome.title')}
                     </h1>
                     <p className="font-normal text-[18px] max-smallest:text-[14px] text-[#E6E6E6] max-mui-md:text-[16px] opacity-75">
-                        {t('welcome.description')}
+                        {t.rich('welcome.description', strong)}
                     </p>
                     <div className="mt-5 bg-[#4A6ED1] w-fit rounded-[8px] p-[12px_14px] gap-[10px] font-normal text-[18px] max-smallest:text-[14px] max-mui-md:text-[16px] text-[#FFFFFF]">
                         {t('welcome.tagline')}

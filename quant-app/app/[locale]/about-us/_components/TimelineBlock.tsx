@@ -1,4 +1,6 @@
-const TimelineBlock = ({id, title, text} : {id: string, title: string, text: string}) => {
+import { ReactNode } from "react"
+
+const TimelineBlock = ({id, title, text} : {id: string, title: string, text: string | ReactNode}) => {
   return (
     <div className="p-[30px] max-smallest:p-[20px] flex flex-col gap-[20px] border-t-[1px] border-[#6A65FF80]">
       <div className="w-full flex gap-[30px] items-center">

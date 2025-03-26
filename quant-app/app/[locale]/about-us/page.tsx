@@ -31,7 +31,7 @@ const Page = async () => {
       link: "https://www.linkedin.com/in/roman-gutu-920693229/",
       src: t('team.members.0.src'),
       alt: t('team.members.0.alt'),
-      text: t('team.members.0.text')
+      text: t.rich('team.members.0.text', strong)
     },
     {
       name: t('team.members.1.name'),
@@ -39,7 +39,7 @@ const Page = async () => {
       link: "https://www.linkedin.com/in/veaceslav-soltan-290072261/",
       src: t('team.members.1.src'),
       alt: t('team.members.1.alt'),
-      text: t('team.members.1.text')
+      text: t.rich('team.members.1.text', strong)
     },
     {
       name: t('team.members.2.name'),
@@ -47,7 +47,7 @@ const Page = async () => {
       link: t('team.members.2.link'),
       src: t('team.members.2.src'),
       alt: t('team.members.2.alt'),
-      text: t('team.members.2.text')
+      text: t.rich('team.members.2.text', strong)
     },
     {
       name: t('team.members.3.name'),
@@ -55,7 +55,7 @@ const Page = async () => {
       link: t('team.members.3.link'),
       src: t('team.members.3.src'),
       alt: t('team.members.3.alt'),
-      text: t('team.members.3.text')
+      text: t.rich('team.members.3.text', strong)
     },
     {
       name: t('team.members.4.name'),
@@ -63,7 +63,7 @@ const Page = async () => {
       link: t('team.members.4.link'),
       src: t('team.members.4.src'),
       alt: t('team.members.4.alt'),
-      text: t('team.members.4.text')
+      text: t.rich('team.members.4.text', strong)
     },
     {
       name: t('team.members.5.name'),
@@ -71,7 +71,7 @@ const Page = async () => {
       link: t('team.members.5.link'),
       src: t('team.members.5.src'),
       alt: t('team.members.5.alt'),
-      text: t('team.members.5.text')
+      text: t.rich('team.members.5.text', strong)
     }
   ];
 
@@ -79,32 +79,32 @@ const Page = async () => {
     {
       id: t('timeline.items.0.id'),
       title: t('timeline.items.0.title'),
-      text: t('timeline.items.0.text')
+      text: t.rich('timeline.items.0.text', strong)
     },
     {
       id: t('timeline.items.1.id'),
       title: t('timeline.items.1.title'),
-      text: t('timeline.items.1.text')
+      text: t.rich('timeline.items.1.text', strong)
     },
     {
       id: t('timeline.items.2.id'),
       title: t('timeline.items.2.title'),
-      text: t('timeline.items.2.text')
+      text: t.rich('timeline.items.2.text', strong)
     },
     {
       id: t('timeline.items.3.id'),
       title: t('timeline.items.3.title'),
-      text: t('timeline.items.3.text')
+      text: t.rich('timeline.items.3.text', strong)
     },
     {
       id: t('timeline.items.4.id'),
       title: t('timeline.items.4.title'),
-      text: t('timeline.items.4.text')
+      text: t.rich('timeline.items.4.text', strong)
     },
     {
       id: t('timeline.items.5.id'),
       title: t('timeline.items.5.title'),
-      text: t('timeline.items.5.text')
+      text: t.rich('timeline.items.5.text', strong)
     }
   ];
 
@@ -123,11 +123,11 @@ const Page = async () => {
             {t('about.title')}
           </h1>
           <div className="font-normal text-[20px] max-mui-md:text-[18px] max-smallest:text-[14px] text-[#E6E6E6] opacity-75">
-            <p className="indent-6">{t('about.paragraph1')}</p>
+            <p className="indent-6">{t.rich('about.paragraph1', strong)}</p>
             <p className="indent-6">{t.rich('about.paragraph2', strong)}</p>
-            <p className="indent-6">{t('about.paragraph3')}</p>
-            <p className="indent-6">{t('about.paragraph4')}</p>
-            <p className="indent-6">{t('about.paragraph5')}</p>
+            <p className="indent-6">{t.rich('about.paragraph3', strong)}</p>
+            <p className="indent-6">{t.rich('about.paragraph4', strong)}</p>
+            <p className="indent-6">{t.rich('about.paragraph5', strong)}</p>
           </div>
         </div>
         <div className="flex items-center justify-center">
@@ -163,7 +163,7 @@ const Page = async () => {
         <h2 className="text-center font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[36px] text-[#FFFFFF]">
           {t('team.title')}
         </h2>
-        <div className="w-full grid grid-cols-3 grid-rows-2 gap-[50px] max-medium:grid-cols-2 max-medium:grid-rows-3 max-small:grid-cols-1 max-small:place-items-center">
+        <div className="w-full grid grid-cols-3 grid-rows-2 place-items-center gap-[50px] max-medium:grid-cols-2 max-medium:grid-rows-3 max-small:grid-cols-1 max-small:place-items-center">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}

@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
-import TalkModal from "@/components/TalkModal"
+import dynamic from 'next/dynamic'
+const TalkModal = dynamic(() => import("@/components/TalkModal"))
 import { ReactNode, useState } from "react"
 export default function Banner({ header, subHeader, src, className, button, icon, priority = false }: { header: string, subHeader: string | ReactNode, src: string, className?: string, button?: string, icon?: string, priority?: boolean }) {
     const [open, setOpen] = useState(false)

@@ -2,8 +2,10 @@
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import PCMenu from "./PCMenu";
-import TalkModal from "@/components/TalkModal";
 import { AnimatePresence } from "motion/react";
+import dynamic from 'next/dynamic'
+ 
+const TalkModal = dynamic(() => import("@/components/TalkModal"))
 
 const AppToolbar = () =>{
   const [menuVisible, setMenuVisible] = useState(false)

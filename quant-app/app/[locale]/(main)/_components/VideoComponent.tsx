@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Blur from "@/components/Blur";
 import { useState } from "react";
-import VideoModal from "./VideoModal";
 import { AnimatePresence } from "motion/react";
+import dynamic from 'next/dynamic'
+const VideoModal = dynamic(() => import("./VideoModal"))
+
 export default function VideoComponent({ ipadAlt, watchAlt } : { ipadAlt: string, watchAlt: string }) {
     const [videoOpen, setVideoOpen] = useState(false);
     return (

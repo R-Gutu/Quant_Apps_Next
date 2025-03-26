@@ -163,9 +163,13 @@ const Page = async () => {
         <h2 className="text-center font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[36px] text-[#FFFFFF]">
           {t('team.title')}
         </h2>
-        <div className="w-full grid grid-cols-3 grid-rows-2 place-items-center gap-[50px] max-medium:grid-cols-2 max-medium:grid-rows-3 max-small:grid-cols-1 max-small:place-items-center">
+        <div className="w-full h-full grid grid-cols-3 grid-rows-2 gap-[50px] 
+    max-medium:grid-cols-2 max-medium:grid-rows-3 
+    max-small:grid-cols-1">
           {teamMembers.map((member, index) => (
-            <TeamMember key={index} {...member} />
+            <div key={index} className="flex justify-center items-center">
+              <TeamMember {...member} />
+            </div>
           ))}
         </div>
       </div>

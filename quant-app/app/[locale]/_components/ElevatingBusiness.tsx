@@ -1,9 +1,10 @@
 'use client'
 import Image from 'next/image'
 import { useTranslations } from "next-intl"
-import TalkModal from '@/components/TalkModal';
 import { useState } from 'react';
 import { strong } from '@/lib/utils/utils';
+import dynamic from 'next/dynamic'
+const TalkModal = dynamic(() => import("@/components/TalkModal"))
 
 const ElevatingBusiness =  () => {
   const t = useTranslations("elevatingBusiness");

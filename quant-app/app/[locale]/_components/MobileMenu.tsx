@@ -13,7 +13,7 @@ const MobileMenu = ({ menuVisible, setMenuVisible }: { menuVisible: boolean, set
 
   return (
     <div className={cn('top-0 left-0 h-auto p-[20px] overflow-hidden bg-white fixed z-[10000] rounded-b-[30px] w-full px-[20%] flex flex-col items-center small:hidden', { 'invisible': !menuVisible })}>
-      <Image priority src={'/images/icons/logo-mobile.svg'} width={237} height={58} alt="quant apps logo" className="cursor-pointer" />
+      <Image priority src={'/images/icons/logo-mobile.svg'} width={237} height={58} alt="Quant apps logo" className="cursor-pointer" />
       <div className="flex justify-between absolute top-[-5px] right-[5%]">
         <Image priority src={'/images/icons/cross.svg'} onClick={() => setMenuVisible(false)} width={70} height={100} alt="cross" className="cursor-pointer" />
       </div>

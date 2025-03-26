@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image"
 import TalkModal from "@/components/TalkModal"
-import { useState } from "react"
-export default function Banner({ header, subHeader, src, className, button, icon, priority = false }: { header: string, subHeader: string, src: string, className?: string, button?: string, icon?: string, priority?: boolean }) {
+import { ReactNode, useState } from "react"
+export default function Banner({ header, subHeader, src, className, button, icon, priority = false }: { header: string, subHeader: string | ReactNode, src: string, className?: string, button?: string, icon?: string, priority?: boolean }) {
     const [open, setOpen] = useState(false)
     return (
         <div className={`relative overflow-hidden w-full px-[16px] min-[600px]:px-[100px] min-[1000px]:px-[250px] py-[50px] min-[600px]:py-[120px] medium:px-[300px] rounded-[35px] bg-[#141a76] text-white flex flex-col items-center justify-center ${className}`}>

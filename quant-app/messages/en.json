@@ -28,118 +28,118 @@
   },
   "services": {
     "title": "Mobile & Web Development | CRM Solutions – Quant-Apps",
-    "description": "Need expert mobile app development? Quant-Apps builds scalable iOS, web, and CRM solutions.",
+    "description": "Need expert mobile app development? Quant-Apps builds scalable, iOS app development, web app development services, and CRM development solutions.",
     "banner": {
       "whatWeOffer": {
         "header": "What We Offer?",
-        "subHeader": "Custom mobile apps, CRM solutions, server infrastructure, and websites designed to enhance your brand's impact."
+        "subHeader": "Custom <strong>mobile app development</strong>, <strong>CRM solutions</strong>, server infrastructure, and <strong>corporate website development</strong> designed to enhance your brand's impact."
       },
       "excited": {
         "header": "Excited to work together on your next project?",
-        "subHeader": "Let's bring your ideas to life with custom development and design solutions tailored to your needs.",
+        "subHeader": "Let's bring your ideas to life with <strong>custom android app development</strong> and <strong>cross platform app development</strong> solutions tailored to your needs.",
         "button": "Start Project"
       }
     },
     "Design": {
       "title": "Design",
-      "text": "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs that engage your audience and strengthen your brand. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.",
+      "text": "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs for <strong>build native mobile app</strong> and <strong>saas development</strong>. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.",
       "button": "Our design services include:"
     },
     "UXDesign": {
       "title": "User Experience (UX) Design",
       "blocks": {
-        "block1": "Gain insights into user behavior to create intuitive digital experiences",
-        "block2": "Structure seamless navigation for improved accessibility",
-        "block3": "Optimize user interactions through real-world testing",
-        "block4": "Align business goals with customer needs for a frictionless experience"
+        "block1": "Gain insights into user behavior to create intuitive <strong>web app development services</strong>",
+        "block2": "Structure seamless navigation for improved <strong>mobile app development</strong> accessibility",
+        "block3": "Optimize user interactions through real-world testing for <strong>flutter app development company</strong> standards",
+        "block4": "Align business goals with customer needs for a frictionless <strong>frontend and backend development</strong> experience"
       }
     },
     "UIDesign": {
       "title": "User Interface (UI) Design",
       "blocks": {
-        "block1": "Create user-friendly and engaging app interfaces",
-        "block2": "Unique design elements that enhance brand identity",
-        "block3": "Establish a consistent and appealing design system",
-        "block4": "Ensure seamless performance across all screen sizes"
+        "block1": "Create user-friendly and engaging <strong>android app development</strong> interfaces",
+        "block2": "Unique design elements that enhance <strong>corporate website development</strong> brand identity",
+        "block3": "Establish a consistent and appealing design system for <strong>iOS app development</strong>",
+        "block4": "Ensure seamless performance across all screen sizes in <strong>cross platform app development</strong>"
       }
     },
     "Branding": {
       "title": "Branding and Identity",
       "blocks": {
-        "block1": "Logo Design and Visual Identity Development",
-        "block2": "Brand Strategy and Positioning",
-        "block3": "Brand Guidelines and Style Guides",
-        "block4": "Marketing Collateral Design (Brochures, Business Cards, etc.)"
+        "block1": "Logo Design and Visual Identity Development for <strong>ecommerce website development services</strong>",
+        "block2": "Brand Strategy and Positioning in <strong>mobile app development</strong>",
+        "block3": "Brand Guidelines and Style Guides for <strong>web app development services</strong>",
+        "block4": "Marketing Collateral Design for <strong>CRM development</strong>"
       }
     },
     "Engineering": {
       "title": "Engineering & Software Development Services",
-      "text": "We specialize in scalable, high-performance digital solutions using the latest technologies and industry best practices to drive innovation and efficiency.",
+      "text": "We specialize in scalable, high-performance digital solutions using <strong>frontend and backend development</strong> with the latest technologies. Our expertise spans <strong>android app development</strong>, <strong>flutter app development company</strong> approach, and <strong>saas development</strong>.",
       "button": "Our engineering services include:"
     },
     "WebDevelopment": {
       "title": "Web Development",
       "blocks": {
-        "block1": "High-performance web applications using Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
-        "block2": "Scalable server-side applications using PHP, Python, Ruby, Node.js.",
-        "block3": "Content Management System (CMS) Development (WordPress, Drupal)",
-        "block4": "E-Commerce Platform Development"
+        "block1": "High-performance <strong>web app development services</strong> using Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
+        "block2": "Scalable <strong>corporate website development</strong> using PHP, Python, Ruby, Node.js",
+        "block3": "Content Management System (CMS) Development for <strong>ecommerce website development services</strong>",
+        "block4": "E-Commerce Platform Development with <strong>frontend and backend development</strong>"
       }
     },
     "MobileAppDevelopment": {
       "title": "Mobile App Development",
       "blocks": {
-        "block1": "Custom iOS (Swift) and Android (Kotlin, Java) applications",
-        "block2": "Scalable apps using React Native, Flutter for iOS and Android",
-        "block3": "Wireframing, interactive prototypes, and design system implementation",
-        "block4": "Comprehensive QA, automated testing, and cloud-based deployment."
+        "block1": "Custom <strong>iOS app development</strong> and <strong>android app development</strong> applications",
+        "block2": "Scalable <strong>cross platform app development</strong> using React Native, Flutter",
+        "block3": "Wireframing and interactive prototypes for <strong>build native mobile app</strong> solutions",
+        "block4": "Comprehensive QA for <strong>mobile app development</strong> with cloud-based deployment"
       }
     },
     "CRMDevelopment": {
       "title": "CRM Development & Enterprise Solutions",
       "blocks": {
-        "block1": "Tailor-made customer relationship management (CRM) software to enhance sales, customer support, and business workflows.",
-        "block2": "Build scalable CRM web applications with Next.js, React, Angular, and Vue.js for an optimized user experience",
-        "block3": "Seamless integration with Salesforce, HubSpot, Zoho, Microsoft Dynamics, Stripe, Twilio, and AI-powered analytics",
-        "block4": "Upgrade outdated CRM systems with cloud-based solutions, automation, AI-driven insights, and enhanced security"
+        "block1": "Tailor-made <strong>CRM development</strong> software to enhance sales and business workflows",
+        "block2": "Build scalable CRM web applications with optimized <strong>web app development services</strong>",
+        "block3": "Seamless integration supporting <strong>saas development</strong> with AI-powered analytics",
+        "block4": "Upgrade CRM systems with <strong>frontend and backend development</strong> solutions"
       }
     },
     "ProjectManagement": {
-      "title": "Project Management for Scalable Digital Solutions",
-      "text": "Our project management services ensure seamless execution of digital projects, from planning to deployment. We follow agile methodologies, use data-driven insights, and leverage industry-standard tools to keep your project on track, within budget, and aligned with your business goals.",
+      "title": "Project Management for Mobile & Web Development",
+      "text": "Our project management services ensure seamless execution of <strong>digital solutions</strong>, from planning to deployment. We follow agile methodologies for <strong>cross platform app development</strong>.",
       "button": "Our project management services include:"
     },
     "StrategicPlanning": {
       "title": "Strategic Project Planning & Resource Management",
       "blocks": {
-        "block1": "Requirements gathering & business analysis to align with project goals (business strategy, planning)",
-        "block2": "Project roadmap & milestone tracking for structured execution (timeline management, feature prioritization)",
-        "block3": "Resource allocation & workload balancing for optimized team performance (team efficiency, agile workflows)",
-        "block4": "Risk assessment & mitigation planning to ensure long-term stability (issue resolution, scalability planning)"
+        "block1": "Requirements gathering for <strong>mobile app development</strong> project goals",
+        "block2": "Project roadmap tracking for <strong>web app development services</strong>",
+        "block3": "Resource allocation for <strong>CRM development</strong> team performance",
+        "block4": "Risk assessment for <strong>corporate website development</strong> stability"
       }
     },
     "AgileDevelopment": {
       "title": "Agile Development & Workflow Optimization",
       "blocks": {
-        "block1": "Iterative updates & feature enhancements based on real-time feedback (continuous development, feature scaling)",
-        "block2": "Ongoing performance monitoring & optimization for speed & reliability (app performance, load balancing)",
-        "block3": "Regular security patches & compliance updates for data protection (cybersecurity, GDPR compliance)",
-        "block4": "Technical support & troubleshooting to ensure system stability (bug fixes, debugging, troubleshooting)"
+        "block1": "Iterative updates for <strong>cross platform app development</strong>",
+        "block2": "Performance monitoring for <strong>mobile app development</strong>",
+        "block3": "Security patches for <strong>web app development services</strong>",
+        "block4": "Technical support for <strong>iOS and android app development</strong>"
       }
     },
     "QualityAssurance": {
       "title": "Quality Assurance & Security Compliance",
       "blocks": {
-        "block1": "Ongoing system updates & version management to ensure longevity (software updates, versioning)",
-        "block2": "Cloud infrastructure monitoring & server optimization for uptime & speed (server health, cloud scaling)",
-        "block3": "Customer support integration & user assistance to improve experience (helpdesk, chatbot integration)",
-        "block4": "Business scalability consulting to prepare for growth (scalability strategy, expansion planning)"
+        "block1": "System updates for <strong>saas development</strong>",
+        "block2": "Cloud infrastructure monitoring for <strong>CRM development</strong>",
+        "block3": "Customer support integration for <strong>ecommerce website development services</strong>",
+        "block4": "Scalability consulting for <strong>build native mobile app</strong> growth"
       }
     }
   },
   "projects": {
     "title": "Our Projects | Innovative Mobile & Web Solutions - Quantica",
-    "description": "Explore Quantica's portfolio of mobile apps, CRM solutions, and web platforms that drive business success.",
+    "description": "Explore Quantica's portfolio of mobile app development, CRM solutions, and web platforms that drive business success.",
     "banner": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Our projects",
@@ -147,7 +147,7 @@
     },
     "header": {
       "title": "At Quant-Apps",
-      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive business growth and success."
+      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative <strong>digital solutions</strong> that drive business growth and success."
     },
     "items": [
       {
@@ -156,7 +156,7 @@
         "alt": "project1",
         "linkName": "Roka Akor",
         "link": "https://rokaakor.com/",
-        "description": "We developed a modern, user-friendly restaurant website for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors."
+        "description": "We developed a modern, user-friendly <strong>corporate website development</strong> for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors."
       },
       {
         "title": "Logistics Company",
@@ -164,7 +164,7 @@
         "alt": "project2",
         "linkName": "Acm Movers",
         "link": "https://acmmovers.com/",
-        "description": "We designed and developed a feature-rich logistics website for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices."
+        "description": "We designed and developed a feature-rich <strong>ecommerce website development services</strong> for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices."
       },
       {
         "title": "Lens AI",
@@ -172,7 +172,7 @@
         "alt": "project3",
         "linkName": "Lens AI",
         "link": "https://apps.apple.com/md/app/lens-ai",
-        "description": "Lens AI is your smart app for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more."
+        "description": "Lens AI is your smart <strong>iOS app development</strong> for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more."
       },
       {
         "title": "Taste Ai",
@@ -180,7 +180,7 @@
         "alt": "project4",
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
-        "description": "Meet your new kitchen helper, Taste Ai ! This app uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs."
+        "description": "Meet your new kitchen helper, Taste Ai! This <strong>cross platform app development</strong> uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs."
       },
       {
         "title": "Web-site for Dentist",
@@ -188,7 +188,7 @@
         "alt": "project5",
         "linkName": "NY Dental Group",
         "link": "https://nydentalgroup.com/",
-        "description": "We developed a modern and user-friendly website for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction."
+        "description": "We developed a modern and user-friendly website with <strong>web app development services</strong> for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction."
       },
       {
         "title": "Keyboard AI",
@@ -196,13 +196,13 @@
         "alt": "project6",
         "linkName": "Keyboard AI",
         "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
-        "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique."
+        "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate <strong>build native mobile app</strong> AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique."
       }
     ],
     "callToAction": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Excited to work together on your next project?",
-      "subtitle": "Let's bring your ideas to life with custom development and design solutions tailored to your needs.",
+      "subtitle": "Let's bring your ideas to life with <strong>custom android app development</strong> and <strong>flutter app development company</strong> solutions tailored to your needs.",
       "buttonText": "Start Project",
       "buttonIcon": "/images/icons/start_project_logo.svg"
     }
@@ -623,29 +623,29 @@
     "services": {
       "uiux": {
         "title": "UI/UX",
-        "text": "We craft visually stunning, user-friendly interfaces that enhance usability, ensuring seamless navigation and engaging experiences across web and mobile applications, delivering intuitive, high-performance designs that captivate users and drive interaction."
+        "text": "We craft visually stunning, user-friendly interfaces that enhance usability, ensuring seamless navigation and engaging experiences across <strong>web app development services</strong> and <strong>mobile app development</strong>, delivering intuitive, high-performance designs that captivate users and drive interaction."
       },
       "mobile": {
         "title": "iOS & Android App Development",
-        "text": "We develop high-performance mobile and web applications optimized for speed, security, and scalability, ensuring seamless functionality, enhanced user experience, and robust performance. Our solutions are designed to handle high traffic, deliver smooth interactions, and provide reliable, secure architecture for businesses aiming for long-term growth and success."
+        "text": "We develop high-performance <strong>iOS app development</strong> and <strong>android app development</strong> solutions optimized for speed, security, and scalability, ensuring seamless functionality, enhanced user experience, and robust performance. Our solutions are designed to handle high traffic, deliver smooth interactions, and provide reliable, secure architecture for businesses aiming for long-term growth and success."
       },
       "web": {
         "title": "Website Development",
-        "text": "We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive web development ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility."
+        "text": "We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive <strong>corporate website development</strong> ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility."
       },
       "crm": {
         "title": "CRM Solutions",
-        "text": "We develop custom CRM solutions to streamline business operations, enhance customer relationships, and improve workflow efficiency. Our scalable and secure CRM systems integrate seamlessly with your existing tools, providing automation, data insights, and centralized management to boost productivity, optimize sales processes, and drive business growth."
+        "text": "We develop custom <strong>CRM development</strong> solutions to streamline business operations, enhance customer relationships, and improve workflow efficiency. Our scalable and secure CRM systems integrate seamlessly with your existing tools, providing automation, data insights, and centralized management to boost productivity, optimize sales processes, and drive business growth."
       },
       "crossPlatform": {
         "title": "Cross-Platform Development",
-        "text": "We specialize in cross-platform development, creating high-performance mobile apps that run seamlessly on iOS and Android. Using modern frameworks like React Native and Flutter, we deliver cost-effective, scalable, and user-friendly applications with a native-like experience, ensuring broad market reach, faster development, and streamlined maintenance."
+        "text": "We specialize in <strong>cross platform app development</strong>, creating high-performance mobile apps that run seamlessly on <strong>iOS app development</strong> and <strong>android app development</strong>. Using modern frameworks like React Native and Flutter, we deliver cost-effective, scalable, and user-friendly applications with a native-like experience, ensuring broad market reach, faster development, and streamlined maintenance."
       },
       "support": {
         "title": "Support & Maintenance",
-        "text": "We provide ongoing support and maintenance to keep your applications, websites, and software running smoothly. Our services include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
+        "text": "We provide ongoing support and maintenance to keep your <strong>frontend and backend development</strong>, applications, and websites running smoothly. Our services include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
       }
-    },
+    },    
     "reasons": {
       "expert": {
         "title": "Expert Software Solutions",
@@ -700,37 +700,37 @@
     "faqs": {
       "services": {
         "question": "What services does Quant-Apps provide?",
-        "answer": "Quant-Apps specializes in <strong>mobile app development</strong> for iOS, <strong>Android app development</strong>, cross-platform solutions with React Native, CRM systems, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization."
+        "answer": "Quant-Apps specializes in <strong>mobile app development</strong> for iOS, <strong>Android app development</strong>, cross-platform solutions with React Native, CRM systems, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization. Our expertise covers <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "custom": {
         "question": "Can you build a custom app for my business?",
-        "answer": "Yes! We work closely with businesses to create iOS, Android, and cross-platform solutions that align with your brand and unique needs. From startups to large companies, we develop apps that help you stand out."
+        "answer": "Yes! We work closely with businesses to create iOS, Android, and cross-platform solutions that align with your brand and unique needs. From startups to large companies, we develop apps that help you stand out. Our development process leverages <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "cost": {
         "question": "How much does app development cost?",
-        "answer": "The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for iOS apps, Android apps, cross-platform solutions, and CRM systems."
+        "answer": "The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for iOS apps, Android apps, cross-platform solutions, and CRM systems. Our pricing model reflects the value of <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "unique": {
         "question": "What sets Quant-Apps?",
-        "answer": "At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative solutions. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly apps for iOS, Android, and cross-platform solutions."
+        "answer": "At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative solutions. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly apps for iOS, Android, and cross-platform solutions. This creative and technical blend extends to our full suite of services, including <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "platforms": {
         "question": "What platforms do you develop for?",
-        "answer": "Quant-Apps specializes in developing mobile applications for iOS, <strong>Android app development</strong>, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
+        "answer": "Quant-Apps specializes in developing mobile applications for iOS, <strong>Android app development</strong>, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored solutions, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides cross-platform solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems. Our portfolio also includes <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "timeline": {
         "question": "How long does it take to develop an app?",
-        "answer": "Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, cross-platform solutions, CRM systems, as well as design and testing."
+        "answer": "Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, cross-platform solutions, CRM systems, as well as design and testing. This timeline is influenced by factors such as <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong> requirements."
       },
       "support": {
         "question": "Do you offer support after the app is launched?",
-        "answer": "Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your app stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve."
+        "answer": "Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your app stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve. Our comprehensive support covers all aspects of <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       },
       "start": {
         "question": "How do I get started with Quant-Apps?",
-        "answer": "Getting started is simple! Contact us for a free consultation where we'll discuss your app idea, goals, and requirements. From there, we'll guide you through the development process and help bring your vision to life."
+        "answer": "Getting started is simple! Contact us for a free consultation where we'll discuss your app idea, goals, and requirements. From there, we'll guide you through the development process and help bring your vision to life. Begin your journey with our expertise in <strong>mobile app development</strong>, <strong>corporate website development</strong>, <strong>ios app development</strong>, <strong>android app development</strong>, <strong>web app development services</strong>, <strong>cross platform app development</strong>, <strong>flutter app development company</strong>, <strong>crm development</strong>, <strong>ecommerce website development services</strong>, <strong>frontend and backend development</strong>, <strong>custom android app development</strong>, <strong>saas development</strong>, and <strong>build native mobile app</strong>."
       }
-    },
+    },    
     "serviceButton": "Learn More",
     "reviewButton": "Open Website"
   },

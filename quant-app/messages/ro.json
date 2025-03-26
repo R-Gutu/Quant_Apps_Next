@@ -27,146 +27,144 @@
     "AllRightsReserved": "Toate drepturile rezervate."
   },
   "services": {
-    "title": "Dezvoltare Mobilă & Web | Soluții CRM – Quant-Apps",
-    "description": "Ai nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps creează soluții scalabile pentru iOS, web și CRM.",
+    "title": "Dezvoltare Mobilă și Web | Soluții CRM – Quant-Apps",
+    "description": "Aveți nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps construiește soluții scalabile de dezvoltare aplicații iOS, servicii de dezvoltare aplicații web și soluții de dezvoltare CRM.",
     "banner": {
       "whatWeOffer": {
-        "header": "Ce Oferim?",
-        "subHeader": "Dezvoltare personalizată de aplicații mobile, sisteme CRM, infrastructură server și site-uri web care îți consolidează brandul și îți cresc eficiența afacerii."
+        "header": "Ce oferim?",
+        "subHeader": "Dezvoltare personalizată de <strong>aplicații mobile</strong>, <strong>soluții CRM</strong>, infrastructură de server, și <strong>dezvoltare de site-uri web corporative</strong> concepute pentru a îmbunătăți impactul mărcii dvs."
       },
       "excited": {
-        "header": "Ești gata de un nou proiect?",
-        "subHeader": "Hai să creăm împreună soluții digitale unice, personalizate prin dezvoltare și design, adaptate nevoilor afacerii tale.",
-        "button": "Începe proiectul"
+        "header": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
+        "subHeader": "Să dăm viață ideilor dvs. cu soluții personalizate de <strong>dezvoltare de aplicații pentru Android</strong> și <strong>dezvoltare de aplicații cross-platform</strong> adaptate nevoilor dvs.",
+        "button": "Începeți Proiectul"
       }
     },
     "Design": {
       "title": "Design",
-      "text": "La Quant-Apps, echipa noastră de designeri creează interfețe vizuale atractive și ușor de utilizat, care captivează publicul și întăresc identitatea brandului tău. Credem că un design excepțional nu înseamnă doar estetică, ci și o experiență intuitivă care îmbunătățește interacțiunea utilizatorilor.",
+      "text": "La Quant-Apps, echipa noastră de design este dedicată creării de design-uri vizual captivante, concentrate pe utilizator pentru <strong>dezvoltarea de aplicații mobile native</strong> și <strong>dezvoltarea SaaS</strong>. Credem că designul excepțional depășește estetica—este vorba despre livrarea unor experiențe de utilizator intuitive și fără probleme.",
       "button": "Serviciile noastre de design includ:"
     },
     "UXDesign": {
-      "title": "UX Design – Experiența Utilizatorului",
+      "title": "Design de Experiență a Utilizatorului (UX)",
       "blocks": {
-        "block1": "Analiză comportamentală a utilizatorilor pentru crearea unor produse digitale intuitive.",
-        "block2": "Dezvoltarea unei navigații fluide pentru îmbunătățirea accesibilității.",
-        "block3": "Optimizarea interacțiunilor utilizatorilor prin testare în condiții reale.",
-        "block4": "Alinierea obiectivelor de afaceri cu nevoile utilizatorilor pentru o experiență fără bariere."
+        "block1": "Obțineți informații despre comportamentul utilizatorilor pentru a crea <strong>servicii de dezvoltare de aplicații web</strong> intuitive",
+        "block2": "Structurați navigarea fără probleme pentru a îmbunătăți accesibilitatea <strong>dezvoltării de aplicații mobile</strong>",
+        "block3": "Optimizați interacțiunile utilizatorilor prin testare în lumea reală pentru standardele <strong>companiei de dezvoltare de aplicații Flutter</strong>",
+        "block4": "Aliniați obiectivele de afaceri cu nevoile clienților pentru o experiență fără fricțiuni de <strong>dezvoltare frontend și backend</strong>"
       }
     },
     "UIDesign": {
-      "title": "UI Design – Designul Interfeței Utilizatorului",
+      "title": "Design de Interfață de Utilizator (UI)",
       "blocks": {
-        "block1": "Crearea unor interfețe intuitive și captivante pentru aplicații mobile și web.",
-        "block2": "Dezvoltarea unor elemente de design unice pentru întărirea identității brandului.",
-        "block3": "Stabilirea unui sistem de design unitar și atractiv.",
-        "block4": "Asigurarea adaptabilității perfecte pe toate dispozitivele și ecranele."
+        "block1": "Creați interfețe prietenoase și atractive pentru <strong>dezvoltarea de aplicații Android</strong>",
+        "block2": "Elemente de design unice care îmbunătățesc identitatea de marcă a <strong>dezvoltării de site-uri web corporative</strong>",
+        "block3": "Stabiliți un sistem de design consistent și atractiv pentru <strong>dezvoltarea de aplicații iOS</strong>",
+        "block4": "Asigurați performanța perfectă pe toate dimensiunile de ecran în <strong>dezvoltarea de aplicații cross-platform</strong>"
       }
     },
     "Branding": {
       "title": "Branding și Identitate",
       "blocks": {
-        "block1": "Crearea de logo-uri și identitate vizuală pentru branduri.",
-        "block2": "Strategia de brand și poziționarea pe piață.",
-        "block3": "Dezvoltarea brand books și ghiduri de stil.",
-        "block4": "Design pentru materiale de marketing (broșuri, cărți de vizită etc.)."
+        "block1": "Design de logo și dezvoltarea identității vizuale pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
+        "block2": "Strategie de brand și poziționare în <strong>dezvoltarea de aplicații mobile</strong>",
+        "block3": "Ghiduri de brand și ghiduri de stil pentru <strong>servicii de dezvoltare de aplicații web</strong>",
+        "block4": "Design de materiale de marketing pentru <strong>dezvoltarea CRM</strong>"
       }
     },
     "Engineering": {
-      "title": "Dezvoltare Software",
-      "text": "Creăm soluții digitale scalabile și performante, utilizând cele mai noi tehnologii și cele mai bune practici din industrie pentru a îmbunătăți eficiența afacerii tale.",
-      "button": "Serviciile noastre de dezvoltare includ:"
+      "title": "Servicii de Inginerie și Dezvoltare Software",
+      "text": "Ne specializăm în soluții digitale scalabile, de înaltă performanță utilizând <strong>dezvoltare frontend și backend</strong> cu cele mai noi tehnologii. Expertiza noastră acoperă <strong>dezvoltarea de aplicații Android</strong>, abordarea <strong>companiei de dezvoltare de aplicații Flutter</strong>, și <strong>dezvoltarea SaaS</strong>.",
+      "button": "Serviciile noastre de inginerie includ:"
     },
     "WebDevelopment": {
       "title": "Dezvoltare Web",
       "blocks": {
-        "block1": "Aplicații web de înaltă performanță utilizând Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS.",
-        "block2": "Soluții server scalabile bazate pe PHP, Python, Ruby, Node.js.",
-        "block3": "Dezvoltare CMS personalizată pentru WordPress și Drupal.",
-        "block4": "Creare platforme eCommerce pentru magazine online scalabile și optimizate pentru vânzări."
+        "block1": "Servicii de <strong>dezvoltare de aplicații web</strong> de înaltă performanță utilizând Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
+        "block2": "<strong>Dezvoltare de site-uri web corporative</strong> scalabile utilizând PHP, Python, Ruby, Node.js",
+        "block3": "Dezvoltare de Sisteme de Management al Conținutului (CMS) pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
+        "block4": "Dezvoltare de Platforme E-Commerce cu <strong>dezvoltare frontend și backend</strong>"
       }
     },
     "MobileAppDevelopment": {
-      "title": "Dezvoltare Aplicații Mobile",
+      "title": "Dezvoltare de Aplicații Mobile",
       "blocks": {
-        "block1": "Aplicații mobile iOS și Android personalizate, dezvoltate în Swift, Kotlin, Java.",
-        "block2": "Aplicații mobile cross-platform utilizând React Native și Flutter pentru iOS și Android.",
-        "block3": "Design UX/UI avansat, prototipuri interactive și sisteme de design personalizate.",
-        "block4": "Testare automată (QA), optimizare performanță și implementare cloud."
+        "block1": "Aplicații personalizate pentru <strong>dezvoltarea de aplicații iOS</strong> și <strong>dezvoltarea de aplicații Android</strong>",
+        "block2": "<strong>Dezvoltare de aplicații cross-platform</strong> scalabile utilizând React Native, Flutter",
+        "block3": "Wireframing și prototipuri interactive pentru soluții de <strong>dezvoltare de aplicații mobile native</strong>",
+        "block4": "QA comprehensiv pentru <strong>dezvoltarea de aplicații mobile</strong> cu deployment bazat pe cloud"
       }
     },
     "CRMDevelopment": {
-      "title": "Dezvoltare CRM și Soluții pentru Întreprinderi",
+      "title": "Dezvoltare CRM și Soluții Enterprise",
       "blocks": {
-        "block1": "Sisteme CRM personalizate pentru automatizarea vânzărilor, suport clienți și optimizarea proceselor de afaceri.",
-        "block2": "CRM scalabile și integrate dezvoltate pe Next.js, React, Angular, Vue.js.",
-        "block3": "Integrare avansată cu Salesforce, HubSpot, Zoho, Microsoft Dynamics, Stripe, Twilio și analitică AI.",
-        "block4": "Modernizare CRM prin implementarea soluțiilor cloud, automatizare și inteligență artificială (AI)."
+        "block1": "Software <strong>dezvoltare CRM</strong> personalizat pentru a îmbunătăți vânzările și fluxurile de lucru de afaceri",
+        "block2": "Construiți aplicații web CRM scalabile cu <strong>servicii de dezvoltare de aplicații web</strong> optimizate",
+        "block3": "Integrare perfectă suportând <strong>dezvoltarea SaaS</strong> cu analiză bazată pe AI",
+        "block4": "Actualizați sistemele CRM cu soluții de <strong>dezvoltare frontend și backend</strong>"
       }
     },
     "ProjectManagement": {
-      "title": "Management de Proiect pentru Soluții Digitale Scalabile",
-      "text": "Serviciile noastre de management de proiect asigură implementarea fără probleme a proiectelor digitale – de la planificare până la lansare și scalare. Aplicăm metodologii Agile, analiză avansată a datelor și instrumente moderne pentru a livra proiecte eficiente, conforme cu obiectivele de afaceri, termenele limită și bugetele stabilite.",
-      "button": "Serviciile noastre de project management includ:"
+      "title": "Management de Proiect pentru Dezvoltare Mobilă și Web",
+      "text": "Serviciile noastre de management de proiect asigură execuția perfectă a <strong>soluțiilor digitale</strong>, de la planificare la implementare. Urmăm metodologii agile pentru <strong>dezvoltarea de aplicații cross-platform</strong>.",
+      "button": "Serviciile noastre de management de proiect includ:"
     },
     "StrategicPlanning": {
-      "title": "Planificare Strategică și Managementul Resurselor",
+      "title": "Planificare Strategică de Proiect și Management de Resurse",
       "blocks": {
-        "block1": "Analiză de afaceri și colectare de cerințe pentru alinierea la obiectivele strategice.",
-        "block2": "Crearea unui roadmap și monitorizarea etapelor cheie (prioritizare funcționalități, gestionarea termenelor).",
-        "block3": "Distribuirea resurselor și echilibrarea sarcinilor pentru maximizarea eficienței echipei.",
-        "block4": "Evaluarea riscurilor și dezvoltarea strategiilor de minimizare pentru stabilitate pe termen lung."
+        "block1": "Colectarea cerințelor pentru obiectivele proiectului de <strong>dezvoltare de aplicații mobile</strong>",
+        "block2": "Urmărirea foii de parcurs a proiectului pentru <strong>servicii de dezvoltare de aplicații web</strong>",
+        "block3": "Alocarea resurselor pentru performanța echipei de <strong>dezvoltare CRM</strong>",
+        "block4": "Evaluarea riscurilor pentru stabilitatea <strong>dezvoltării de site-uri web corporative</strong>"
       }
     },
     "AgileDevelopment": {
-      "title": "Dezvoltare Agile și Îmbunătățire Continuă",
+      "title": "Dezvoltare Agile și Optimizarea Fluxului de Lucru",
       "blocks": {
-        "block1": "Actualizări iteractive și îmbunătățiri bazate pe feedback-ul utilizatorilor.",
-        "block2": "Monitorizare performanță și optimizare (viteză, echilibrare sarcini).",
-        "block3": "Actualizări de securitate și conformitate GDPR (cybersecurity, protecția datelor).",
-        "block4": "Asistență tehnică și remedierea erorilor (debugging, testare, rezolvare bug-uri)."
+        "block1": "Actualizări iterative pentru <strong>dezvoltarea de aplicații cross-platform</strong>",
+        "block2": "Monitorizarea performanței pentru <strong>dezvoltarea de aplicații mobile</strong>",
+        "block3": "Patch-uri de securitate pentru <strong>servicii de dezvoltare de aplicații web</strong>",
+        "block4": "Suport tehnic pentru <strong>dezvoltarea de aplicații iOS și Android</strong>"
       }
     },
     "QualityAssurance": {
-      "title": "Suport și Mentenanță post-lansare",
+      "title": "Asigurarea Calității și Conformitatea Securității",
       "blocks": {
-        "block1": "Actualizare software și gestionare versiuni (optimizare stabilitate și performanță).",
-        "block2": "Monitorizare cloud și optimizare servere pentru uptime maxim.",
-        "block3": "Integrare suport utilizatori (chatbots, helpdesk, AI-driven assistance).",
-        "block4": "Consultanță pentru scalabilitate (strategie de creștere și dezvoltare afacere)."
+        "block1": "Actualizări de sistem pentru <strong>dezvoltarea SaaS</strong>",
+        "block2": "Monitorizarea infrastructurii cloud pentru <strong>dezvoltarea CRM</strong>",
+        "block3": "Integrarea suportului pentru clienți pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
+        "block4": "Consultanță de scalabilitate pentru creșterea <strong>dezvoltării de aplicații mobile native</strong>"
       }
     }
   },
   "projects": {
-    "title": "Proiectele Noastre | Soluții Mobile & Web Inovatoare - Quantica",
-    "description": "Descoperă portofoliul Quantica cu aplicații mobile, soluții CRM și platforme web care contribuie la succesul afacerilor.",    
+    "title": "Proiectele Noastre | Soluții Mobile și Web Inovatoare - Quantica",
+    "description": "Explorați portofoliul Quantica de aplicații mobile, soluții CRM și platforme web care conduc succesul în afaceri.",
     "banner": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Proiectele noastre",
-      "subtitle": " Ideile devin realitate. Explorați proiectele inovatoare pe care le-am implementat cu succes!"
+      "subtitle": "Inovația începe cu o viziune. Explorați proiectele interesante pe care le-am transformat în realitate!"
     },
     "header": {
       "title": "La Quant-Apps",
-      "text": "Ne mândrim cu colaborarea cu un portofoliu divers de clienți, dezvoltând soluții digitale personalizate care stimulează creșterea afacerilor și îmbunătățesc experiența utilizatorilor."
+      "text": "Suntem mândri să colaborăm cu o gamă diversă de clienți, creând <strong>soluții digitale</strong> inovatoare care stimulează creșterea și succesul afacerilor."
     },
     "items": [
       {
-        "title": "Site pentru restaurant",
+        "title": "Site Web Restaurant",
         "image": "/images/pictures/projects1.png",
         "alt": "project1",
         "linkName": "Roka Akor",
         "link": "https://rokaakor.com/",
-        "description": "Am dezvoltat un site modern, adaptabil și intuitiv pentru Roka Akor, optimizat pentru rezervări online și o experiență fluentă a utilizatorilor. Platforma îmbunătățește interacțiunea cu clienții, integrând elemente vizuale de înaltă calitate și un design elegant, adaptat pentru toate dispozitivele.",
-        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+        "description": "Am dezvoltat un <strong>site web corporativ</strong> modern și prietenos pentru Roka Akor, asigurând rezervări online fără probleme, o interfață intuitivă și un design elegant care îmbunătățește implicarea clienților. Platforma integrează vizuale de înaltă calitate, layout-uri responsive și o experiență de dining plăcută pentru vizitatori."
       },
       {
-        "title": "Site pentru companie logistică",
+        "title": "Companie de Logistică",
         "image": "/images/pictures/projects2.png",
         "alt": "project2",
         "linkName": "Acm Movers",
         "link": "https://acmmovers.com/",
-        "description": "Am creat un site logistic complet funcțional pentru ACM Movers, optimizat pentru gestionarea rezervărilor online. Platforma include urmărire în timp real a comenzilor, personalizare a cererilor și o interfață prietenoasă. Soluția noastră îmbunătățește eficiența operațională și accesibilitatea pe toate dispozitivele.",
-        "className": ""
+        "description": "Am proiectat și dezvoltat un <strong>serviciu de dezvoltare de site-uri de comerț electronic</strong> bogat în funcționalități pentru ACM Movers, optimizând sistemul lor de rezervări online. Platforma include cereri de oferte în timp real, urmărirea comenzilor și o experiență perfectă pentru clienți. Soluția noastră îmbunătățește eficiența operațională crescând accesibilitatea utilizatorilor pe toate dispozitivele."
       },
       {
         "title": "Lens AI",
@@ -174,8 +172,7 @@
         "alt": "project3",
         "linkName": "Lens AI",
         "link": "https://apps.apple.com/md/app/lens-ai",
-        "description": "Lens AI este o aplicație mobilă inteligentă bazată pe inteligență artificială (AI) pentru identificarea obiectelor din fotografii. Poți face o poză sau încărca o imagine din galerie, iar algoritmii AI vor găsi informații despre obiectul respectiv pe internet. Află ce este în fotografie, unde îl poți cumpăra și obține date utile despre produse, plante, locuri turistice și multe altele.",
-        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+        "description": "Lens AI este <strong>aplicația iOS</strong> inteligentă pentru a găsi orice. Cu această aplicație, puteți face o fotografie sau selecta una din galeria dvs. și o puteți găsi online. Lens AI utilizează Inteligența Artificială (AI) pentru a căuta pe internet pentru dvs. Puteți afla despre ceea ce vedeți într-o imagine, găsi unde să cumpărați lucruri și multe altele."
       },
       {
         "title": "Taste Ai",
@@ -183,17 +180,15 @@
         "alt": "project4",
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
-        "description": "Taste AI este asistentul tău culinar personal, alimentat de inteligența artificială (AI). Aplicația analizează preferințele tale alimentare și îți oferă rețete personalizate. Folosește Taste AI pentru a primi recomandări culinare, pentru a crea preparate adaptate stilului tău alimentar și pentru a-ți optimiza dieta zilnică.",
-        "className": ""
+        "description": "Întâlniți noul dvs. ajutor de bucătărie, Taste Ai! Această <strong>aplicație dezvoltată de compania de aplicații Flutter</strong> utilizează inteligența artificială (AI) pentru a oferi rețete personalizate preferințelor și nevoilor dvs. unice."
       },
       {
-        "title": "Website Profesional pentru Stomatologie",
+        "title": "Site Web pentru Dentist",
         "image": "/images/pictures/projects5.png",
         "alt": "project5",
         "linkName": "NY Dental Group",
         "link": "https://nydentalgroup.com/",
-        "description": "NY Dental Group este un website modern și intuitiv dezvoltat pentru una dintre cele mai importante clinici stomatologice. Platforma oferă programare online rapidă și ușoară, integrarea securizată a datelor pacienților și recomandări personalizate pentru tratamente, contribuind la îmbunătățirea relației dintre pacienți și clinică.",
-        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+        "description": "Am dezvoltat un site web modern și prietenos cu <strong>servicii de dezvoltare de aplicații web</strong> pentru NY Dental Group, un furnizor de top de servicii de îngrijire dentară. Platforma oferă programări fără probleme, integrare securizată a datelor pacienților și recomandări de tratament personalizate, îmbunătățind angajamentul și satisfacția pacienților."
       },
       {
         "title": "Keyboard AI",
@@ -201,15 +196,14 @@
         "alt": "project6",
         "linkName": "Keyboard AI",
         "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
-        "description": "Keyboard AI este o aplicație bazată pe inteligență artificială care optimizează experiența utilizatorilor în scrierea de mesaje. Funcționalitățile includ corectare stilistică și gramaticală, traducere instantanee și generare de conținut adaptat contextului. Aplicația îmbunătățește claritatea și coerența mesajelor, oferind utilizatorilor o experiență mai eficientă de comunicare.",
-        "className": ""
+        "description": "Prezentăm Keyboard AI - Companionul Dvs. Ultimate pentru Texting! Transformați experiența dvs. de texting cu Keyboard AI, <strong>dezvoltarea de aplicații pentru Android</strong> asistentul AI de scriere care vă susține oricând aveți nevoie să trimiteți un mesaj acum! Eliberați puterea instrumentelor de Inteligență Artificială la îndemâna dvs. și faceți fiecare mesaj unic."
       }
     ],
     "callToAction": {
       "image": "/images/banners/what-clients-say-banner.png",
-      "title": "Ești gata de un nou proiect?",
-      "subtitle": "Hai să creăm împreună soluții digitale unice, personalizate prin dezvoltare și design, adaptate nevoilor afacerii tale.",
-      "buttonText": "Începe proiectul",
+      "title": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
+      "subtitle": "Hai să dăm viață ideilor dvs. cu <strong>dezvoltare frontend și backend</strong> și soluții de design personalizate adaptate nevoilor dvs.",
+      "buttonText": "Începeți Proiectul",
       "buttonIcon": "/images/icons/start_project_logo.svg"
     }
   },
@@ -628,30 +622,30 @@
     },
     "services": {
       "uiux": {
-        "title": "UI/UX Design",
-        "text": "Creăm interfețe vizual atractive și ușor de utilizat, oferind o experiență intuitivă și o navigare fluidă. UI/UX design-ul nostru îmbină estetica modernă cu funcționalitatea practică, maximizând interacțiunea utilizatorilor și eficiența produsului digital."
+        "title": "UI/UX",
+        "text": "Creăm interfețe vizual atractive și ușor de utilizat, care îmbunătățesc experiența utilizatorului, asigurând navigare fluidă și interacțiuni captivante în <strong>dezvoltarea aplicațiilor web</strong> și <strong>dezvoltarea aplicațiilor mobile</strong>. Oferim un design intuitiv și performant, care atrage utilizatorii și încurajează implicarea."
       },
       "mobile": {
-        "title": "Dezvoltare de aplicații mobile pentru iOS/Android",
-        "text": "Construim aplicații mobile de înaltă performanță, optimizate pentru viteză, securitate și scalabilitate. Interfața intuitivă și performanța fiabilă creează o experiență fluidă pentru utilizatori, sprijinind creșterea afacerii tale."
+        "title": "Dezvoltare aplicații iOS și Android",
+        "text": "Dezvoltăm soluții performante pentru <strong>dezvoltare aplicații iOS</strong> și <strong>dezvoltare aplicații Android</strong>, optimizate pentru viteză, securitate și scalabilitate. Asigurăm funcționalitate fără probleme, experiență îmbunătățită pentru utilizatori și performanță robustă. Soluțiile noastre sunt proiectate pentru a gestiona trafic intens, a oferi interacțiuni fluide și a furniza o arhitectură sigură și fiabilă pentru companiile care vizează creșterea pe termen lung."
       },
       "web": {
-        "title": "Dezvoltare de site-uri web",
-        "text": "Realizăm site-uri rapide, optimizate SEO, adaptate tuturor dispozitivelor. Dezvoltarea web responsive asigură o experiență de utilizare fluidă, optimizând rata de conversie și prezența online."
+        "title": "Dezvoltare website-uri",
+        "text": "Creăm website-uri performante, optimizate SEO, proiectate pentru viteză, securitate și implicarea utilizatorilor. Soluțiile noastre de <strong>dezvoltare website corporate</strong> oferă funcționalitate impecabilă pe toate dispozitivele, îmbunătățind experiența utilizatorului și ratele de conversie. De la design personalizat la soluții scalabile, construim website-uri moderne, rapide și sigure, care sprijină creșterea afacerii și vizibilitatea online."
       },
       "crm": {
         "title": "Soluții CRM",
-        "text": "Implementăm CRM-uri personalizate, optimizând procesele de afaceri, relațiile cu clienții și fluxul de lucru. Soluțiile noastre sunt automatizate, sigure și scalabile, pentru maximizarea vânzărilor și eficienței."
+        "text": "Dezvoltăm soluții personalizate de <strong>CRM development</strong> pentru a optimiza operațiunile afacerii, a îmbunătăți relațiile cu clienții și a crește eficiența fluxului de lucru. Sistemele noastre CRM sunt scalabile și sigure, integrându-se perfect cu instrumentele existente, oferind automatizare, informații valoroase și gestionare centralizată pentru a îmbunătăți productivitatea, a optimiza procesele de vânzări și a stimula creșterea afacerii."
       },
       "crossPlatform": {
-        "title": "Dezvoltare Cross-Platform",
-        "text": "Creăm aplicații mobile performante pentru iOS și Android, utilizând tehnologii precum React Native și Flutter. Soluțiile noastre sunt cost-eficiente, scalabile și intuitive, oferind o experiență optimizată utilizatorilor."
+        "title": "Dezvoltare cross-platform",
+        "text": "Suntem specializați în <strong>dezvoltare aplicații cross-platform</strong>, creând aplicații mobile performante care funcționează impecabil pe <strong>iOS</strong> și <strong>Android</strong>. Folosind framework-uri moderne precum React Native și Flutter, livrăm aplicații eficiente din punct de vedere al costurilor, scalabile și ușor de utilizat, cu o experiență apropiată de cea nativă, asigurând o acoperire extinsă a pieței, dezvoltare rapidă și mentenanță simplificată."
       },
       "support": {
-        "title": "Suport și Mentenanță",
-        "text": "Oferim monitorizare și mentenanță continuă, incluzând actualizări de securitate, optimizări de performanță și depanare. Ne asigurăm că aplicațiile tale rămân sigure, actualizate și eficiente."
+        "title": "Suport și mentenanță",
+        "text": "Oferim suport și mentenanță continuă pentru a menține funcționarea optimă a <strong>dezvoltării frontend și backend</strong>, aplicațiilor și website-urilor. Serviciile noastre includ monitorizarea performanței, actualizări de securitate, remedieri de erori și îmbunătățiri ale funcționalităților pentru a asigura performanță optimă, a minimiza timpii de nefuncționare și a îmbunătăți experiența utilizatorilor, permițând afacerii dumneavoastră să rămână sigură, actualizată și scalabilă."
       }
-    },
+    },    
     "reasons": {
       "expert": {
         "title": "Soluții IT de top",
@@ -706,37 +700,37 @@
     "faqs": {
       "services": {
         "question": "Ce servicii oferă Quant-Apps?",
-        "answer": "Quant-Apps se specializează în <strong>dezvoltarea aplicațiilor mobile</strong> pentru iOS, <strong>dezvoltarea aplicațiilor pentru Android</strong>, precum și în dezvoltarea aplicațiilor cross-platform – React Native, CRM-sisteme, UI/UX design și crearea de logo-uri. De asemenea, oferim soluții pentru integrarea completă a aplicațiilor și optimizarea acestora."
+        "answer": "Quant-Apps se specializează în <strong>dezvoltare aplicații mobile</strong> pentru iOS, <strong>dezvoltare aplicații Android</strong>, soluții cross-platform cu React Native, sisteme CRM, design UI/UX și creare de logo-uri. Oferim soluții personalizate, de la concept și design până la implementare completă și optimizare. Expertiza noastră acoperă <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "custom": {
-        "question": "Puteți dezvolta o aplicație personalizată pentru afacerea mea?",
-        "answer": "Da! Colaborăm strâns cu companiile pentru a crea aplicații personalizate pentru iOS/Android, care se potrivesc cu brandul și cu nevoile specifice ale fiecărei afaceri. De la startup-uri mici până la companii mari, dezvoltăm aplicații care te vor ajuta să te diferențiezi pe piața digitală."
+        "question": "Puteți crea o aplicație personalizată pentru afacerea mea?",
+        "answer": "Da! Colaborăm îndeaproape cu companiile pentru a crea soluții pentru iOS, Android și aplicații cross-platform care se aliniază cu brandul și nevoile unice ale dumneavoastră. De la startup-uri la companii mari, dezvoltăm aplicații care vă ajută să ieșiți în evidență. Procesul nostru de dezvoltare include <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "cost": {
-        "question": "Cât costă dezvoltarea unei aplicații mobile?",
-        "answer": "Costurile variază în funcție de complexitatea aplicației și de cerințele acesteia. Oferim o estimare personalizată a costurilor, adaptată la bugetul tău și la cerințele aplicației tale."
+        "question": "Cât costă dezvoltarea unei aplicații?",
+        "answer": "Costul dezvoltării unei aplicații variază în funcție de funcționalități, complexitate și cerințe. Oferim o estimare transparentă și personalizată care se potrivește bugetului și obiectivelor dumneavoastră pentru aplicații iOS, Android, soluții cross-platform și sisteme CRM. Modelul nostru de preț reflectă <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "unique": {
-        "question": "Ce diferențiază Quant-Apps de alte companii?",
-        "answer": "Quant-Apps combină expertiza tehnică cu o viziune inovatoare. Fondatorul nostru are o carieră dedicată dezvoltării aplicațiilor pentru iOS și Android, iar echipa noastră este specializată în crearea de aplicații inovative care respectă cele mai noi standarde tehnologice."
+        "question": "Ce diferențiază Quant-Apps?",
+        "answer": "La Quant-Apps, combinăm creativitatea cu expertiza tehnică. Co-fondatorul nostru, Romas Gutsu, a început cariera ca dezvoltator de aplicații pentru iOS și Android și, treptat, a devenit CEO, conducând compania în crearea de soluții inovatoare. Între timp, Veaceslav Soltan, co-fondatorul nostru, și-a început cariera ca designer grafic și a adus o abordare unică în proiectarea de aplicații vizual atrăgătoare și prietenoase pentru utilizatori pentru iOS, Android și aplicații cross-platform. Această combinație creativă și tehnică se extinde la întregul nostru portofoliu de servicii, inclusiv <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "platforms": {
         "question": "Pentru ce platforme dezvoltați aplicații?",
-        "answer": "Quant-Apps <strong>dezvoltă aplicații</strong> pentru iOS, Android, CRM și oferă soluții cross-platform, cu un accent pe performanță excelentă, securitate și integrare cu ecosistemul Apple și Android."
+        "answer": "Quant-Apps se specializează în dezvoltarea de aplicații mobile pentru iOS, <strong>dezvoltare aplicații Android</strong>, soluții cross-platform folosind React Native, sisteme CRM, design UI/UX și creare de logo-uri. Oferim soluții personalizate, de la concept și design până la implementare completă și optimizare. Quant-Apps dezvoltă aplicații pentru iOS, Android și oferă soluții cross-platform, concentrându-se pe performanță excelentă, securitate și integrare cu ecosistemele Apple și Android. Portofoliul nostru include de asemenea <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "timeline": {
-        "question": "Cât durează dezvoltarea unei aplicații?",
-        "answer": "Timpul de dezvoltare depinde de complexitatea și funcționalitățile aplicației, dar în general variază între 1 și 3 luni. Ne concentrăm pe livrarea unor soluții rapide și eficiente."
+        "question": "Cât timp durează dezvoltarea unei aplicații?",
+        "answer": "Timpul de dezvoltare depinde de complexitatea și funcționalitățile aplicației. De obicei, durează între 1 și 3 luni, incluzând dezvoltarea pentru iOS, Android, soluții cross-platform, sisteme CRM, precum și design și testare. Acest interval este influențat de cerințele de <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "support": {
         "question": "Oferiți suport după lansarea aplicației?",
-        "answer": "Da, oferim servicii de suport și întreținere pentru aplicațiile dezvoltate, inclusiv actualizări și îmbunătățiri continue, pentru a garanta funcționarea optimă a aplicației."
+        "answer": "Da, oferim suport continuu și servicii de mentenanță chiar și după lansarea aplicației. Echipa noastră se asigură că aplicația dumneavoastră rămâne actualizată, sigură și funcționează fără probleme pe măsură ce apar actualizări pentru iOS/Android sau se schimbă nevoile utilizatorilor. Suportul nostru complet acoperă toate aspectele de <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       },
       "start": {
-        "question": "Cum pot începe colaborarea cu Quant-Apps?",
-        "answer": "Începem printr-o discuție gratuită despre ideile tale pentru aplicație. După ce discutăm detaliile și cerințele, vom crea un plan personalizat pentru implementarea ideilor tale în realitate."
+        "question": "Cum încep colaborarea cu Quant-Apps?",
+        "answer": "Începerea este simplă! Contactați-ne pentru o consultație gratuită în care vom discuta ideea, obiectivele și cerințele aplicației dumneavoastră. De acolo, vă vom ghida prin procesul de dezvoltare și vă vom ajuta să vă transformați viziunea în realitate. Începeți călătoria cu expertiza noastră în <strong>dezvoltare aplicații mobile</strong>, <strong>dezvoltare site</strong>, <strong>dezvoltare aplicații iOS</strong>, <strong>dezvoltare aplicații Android</strong>, <strong>servicii dezvoltare aplicații web</strong>, <strong>dezvoltare aplicații cross-platform</strong>, <strong>companie dezvoltare aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, <strong>servicii dezvoltare site-uri e-commerce</strong>, <strong>dezvoltare frontend și backend</strong>, <strong>dezvoltare personalizată de aplicații Android</strong>, <strong>dezvoltare SaaS</strong> și <strong>creare aplicații mobile native</strong>."
       }
-    },
+    },    
     "serviceButton" : "Află mai multe",
     "reviewButton" : "Deschide site-ul"
   },

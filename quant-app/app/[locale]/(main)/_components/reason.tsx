@@ -1,5 +1,6 @@
 import Image from "next/image"
-export default function Reason({ src, title, text, className }: { src: string, title: string, text: string, className?: string }) {
+import { ReactNode } from "react"
+export default function Reason({ src, title, text, className }: { src: string, title: string, text: string | ReactNode, className?: string }) {
     return (
         <div className={`flex flex-col justify-between text-white p-[80px] max-[1150px]:p-[40px] max-[600px]:px-[20px] ${className}`}>
             <div className="flex items-center mb-[40px]">

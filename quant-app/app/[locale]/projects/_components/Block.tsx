@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
+import { ReactNode } from "react"
 
-const Block = ({title, src, alt, linkname, link, text, className }: {title: string, src: string, alt: string, linkname: string, link: string, text: string, className: string}) => {
+const Block = ({title, src, alt, linkname, link, text, className }: {title: string, src: string, alt: string, linkname: string, link: string, text: string | ReactNode, className: string}) => {
   return (
     <div className={`flex flex-col ${className}`}>
         <div className="p-8 border-b-[1px] border-t-[1px] border-[#6A65FF80]">

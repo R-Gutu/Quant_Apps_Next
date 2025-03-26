@@ -4,6 +4,7 @@ import Projects from "@/lib/types/Projects"
 import HeadText from "../_components/HeadText"
 import { getTranslations } from "next-intl/server"
 import type { Metadata } from 'next'
+import { strong } from "@/lib/utils/utils"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("projects");
@@ -24,7 +25,7 @@ const ProjectsPage = async () => {
       alt: t('items.0.alt'),
       linkname: t('items.0.linkName'),
       link: t('items.0.link'),
-      text: t('items.0.description'),
+      text: t.rich('items.0.description', strong),
        "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
@@ -33,7 +34,7 @@ const ProjectsPage = async () => {
       alt: t('items.1.alt'),
       linkname: t('items.1.linkName'),
       link: t('items.1.link'),
-      text: t('items.1.description'),
+      text: t.rich('items.1.description', strong),
       "className": ""
     },
     {
@@ -42,7 +43,7 @@ const ProjectsPage = async () => {
       alt: t('items.2.alt'),
       linkname: t('items.2.linkName'),
       link: t('items.2.link'),
-      text: t('items.2.description'),
+      text: t.rich('items.2.description', strong),
       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
@@ -51,7 +52,7 @@ const ProjectsPage = async () => {
       alt: t('items.3.alt'),
       linkname: t('items.3.linkName'),
       link: t('items.3.link'),
-      text: t('items.3.description'),
+      text: t.rich('items.3.description', strong),
       "className": ""
     },
     {
@@ -60,7 +61,7 @@ const ProjectsPage = async () => {
       alt: t('items.4.alt'),
       linkname: t('items.4.linkName'),
       link: t('items.4.link'),
-      text: t('items.4.description'),
+      text: t.rich('items.4.description', strong),
       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
@@ -69,7 +70,7 @@ const ProjectsPage = async () => {
       alt: t('items.5.alt'),
       linkname: t('items.5.linkName'),
       link: t('items.5.link'),
-      text: t('items.5.description'),
+      text: t.rich('items.5.description', strong),
       "className": ""
     }
   ];
@@ -85,7 +86,7 @@ const ProjectsPage = async () => {
       />
       <HeadText
         title={t('header.title')}
-        text={t('header.text')}
+        text={t.rich('header.text', strong)}
       />
       <div className="grid grid-cols-2 max-small:grid-cols-1">
         {projects.map((item, index) => (
@@ -95,7 +96,7 @@ const ProjectsPage = async () => {
       <Banner
         src={t('callToAction.image')}
         header={t('callToAction.title')}
-        subHeader={t('callToAction.subtitle')}
+        subHeader={t.rich('callToAction.subtitle', strong)}
         button={t('callToAction.buttonText')}
         icon={t('callToAction.buttonIcon')}
       />

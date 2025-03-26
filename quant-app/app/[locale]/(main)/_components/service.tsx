@@ -1,7 +1,8 @@
 import Image from "next/image"
 import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server";
-export default async function Service({ src, title, text, className, ariaLabel }: { src: string, title: string, text: string, className?: string, ariaLabel?: string }) {
+import { ReactNode } from "react";
+export default async function Service({ src, title, text, className, ariaLabel }: { src: string, title: string, text: string | ReactNode, className?: string, ariaLabel?: string }) {
     const t = await getTranslations("home");
     return (
         <div className={`flex flex-col justify-between text-white p-[50px] max-[600px]:p-[20px]  ${className}`}>

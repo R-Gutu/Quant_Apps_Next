@@ -6,6 +6,7 @@ import Service from "@/lib/types/Service";
 import Blur from "@/components/Blur";
 import DescriptionType from "@/lib/types/Description";
 import type { Metadata } from 'next'
+import { strong } from "@/lib/utils/utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("services");
@@ -22,29 +23,29 @@ const Page = async () => {
     {
       header: {
         title: t('Design.title'),
-        text: t('Design.text'),
+        text: t.rich('Design.text', strong),
         button: t('Design.button')
       },
       description: [{
         title: t('UXDesign.title'),
         blocks: [
           {
-            text: t('UXDesign.blocks.block1'),
+            text: t.rich('UXDesign.blocks.block1', strong),
             src: "/images/icons/ux1.svg",
             alt: "ux1"
           },
           {
-            text: t('UXDesign.blocks.block2'),
+            text: t.rich('UXDesign.blocks.block2', strong),
             src: "/images/icons/ux2.svg",
             alt: "ux2"
           },
           {
-            text: t('UXDesign.blocks.block3'),
+            text: t.rich('UXDesign.blocks.block3', strong),
             src: "/images/icons/ux3.svg",
             alt: "ux3"
           },
           {
-            text: t('UXDesign.blocks.block4'),
+            text: t.rich('UXDesign.blocks.block4', strong),
             src: "/images/icons/ux4.svg",
             alt: "ux4"
           },
@@ -55,22 +56,22 @@ const Page = async () => {
         title: t('UIDesign.title'),
         blocks: [
           {
-            text: t('UIDesign.blocks.block1'),
+            text: t.rich('UIDesign.blocks.block1', strong),
             src: "/images/icons/ui1.svg",
             alt: "ui1"
           },
           {
-            text: t('UIDesign.blocks.block2'),
+            text: t.rich('UIDesign.blocks.block2', strong),
             src: "/images/icons/ui2.svg",
             alt: "ui2"
           },
           {
-            text: t('UIDesign.blocks.block3'),
+            text: t.rich('UIDesign.blocks.block3', strong),
             src: "/images/icons/ui3.svg",
             alt: "ui3"
           },
           {
-            text: t('UIDesign.blocks.block4'),
+            text: t.rich('UIDesign.blocks.block4', strong),
             src: "/images/icons/ui4.svg",
             alt: "ui4"
           },
@@ -81,22 +82,22 @@ const Page = async () => {
         title: t('Branding.title'),
         blocks: [
           {
-            text: t('Branding.blocks.block1'),
+            text: t.rich('Branding.blocks.block1', strong),
             src: "/images/icons/branding1.svg",
             alt: "branding1"
           },
           {
-            text: t('Branding.blocks.block2'),
+            text: t.rich('Branding.blocks.block2', strong),
             src: "/images/icons/branding2.svg",
             alt: "branding2"
           },
           {
-            text: t('Branding.blocks.block3'),
+            text: t.rich('Branding.blocks.block3', strong),
             src: "/images/icons/branding3.svg",
             alt: "branding3"
           },
           {
-            text: t('Branding.blocks.block4'),
+            text: t.rich('Branding.blocks.block4', strong),
             src: "/images/icons/branding4.svg",
             alt: "branding4"
           },
@@ -107,29 +108,29 @@ const Page = async () => {
     {
       header: {
         title: t('Engineering.title'),
-        text: t('Engineering.text'),
+        text: t.rich('Engineering.text', strong),
         button: t('Engineering.button')
       },
       description: [{
         title: t('WebDevelopment.title'),
         blocks: [
           {
-            text: t('WebDevelopment.blocks.block1'),
+            text: t.rich('WebDevelopment.blocks.block1', strong),
             src: "/images/icons/webdev1.svg",
             alt: "webdev1"
           },
           {
-            text: t('WebDevelopment.blocks.block2'),
+            text: t.rich('WebDevelopment.blocks.block2', strong),
             src: "/images/icons/webdev2.svg",
             alt: "webdev2"
           },
           {
-            text: t('WebDevelopment.blocks.block3'),
+            text: t.rich('WebDevelopment.blocks.block3', strong),
             src: "/images/icons/webdev3.svg",
             alt: "webdev3"
           },
           {
-            text: t('WebDevelopment.blocks.block4'),
+            text: t.rich('WebDevelopment.blocks.block4', strong),
             src: "/images/icons/webdev4.svg",
             alt: "webdev4"
           },
@@ -140,22 +141,22 @@ const Page = async () => {
         title: t('MobileAppDevelopment.title'),
         blocks: [
           {
-            text: t('MobileAppDevelopment.blocks.block1'),
+            text: t.rich('MobileAppDevelopment.blocks.block1', strong),
             src: "/images/icons/appdev1.svg",
             alt: "appdev1"
           },
           {
-            text: t('MobileAppDevelopment.blocks.block2'),
+            text: t.rich('MobileAppDevelopment.blocks.block2', strong),
             src: "/images/icons/appdev2.svg",
             alt: "appdev2"
           },
           {
-            text: t('MobileAppDevelopment.blocks.block3'),
+            text: t.rich('MobileAppDevelopment.blocks.block3', strong),
             src: "/images/icons/appdev3.svg",
             alt: "appdev3"
           },
           {
-            text: t('MobileAppDevelopment.blocks.block4'),
+            text: t.rich('MobileAppDevelopment.blocks.block4', strong),
             src: "/images/icons/appdev4.svg",
             alt: "appdev4"
           },
@@ -166,22 +167,22 @@ const Page = async () => {
         title: t('CRMDevelopment.title'),
         blocks: [
           {
-            text: t('CRMDevelopment.blocks.block1'),
+            text: t.rich('CRMDevelopment.blocks.block1', strong),
             src: "/images/icons/crmdev1.svg",
             alt: "crmdev1"
           },
           {
-            text: t('CRMDevelopment.blocks.block2'),
+            text: t.rich('CRMDevelopment.blocks.block2', strong),
             src: "/images/icons/crmdev2.svg",
             alt: "crmdev2"
           },
           {
-            text: t('CRMDevelopment.blocks.block3'),
+            text: t.rich('CRMDevelopment.blocks.block3', strong),
             src: "/images/icons/crmdev3.svg",
             alt: "crmdev3"
           },
           {
-            text: t('CRMDevelopment.blocks.block4'),
+            text: t.rich('CRMDevelopment.blocks.block4', strong),
             src: "/images/icons/crmdev4.svg",
             alt: "crmdev4"
           },
@@ -192,29 +193,29 @@ const Page = async () => {
     {
       header: {
         title: t('ProjectManagement.title'),
-        text: t('ProjectManagement.text'),
+        text: t.rich('ProjectManagement.text', strong),
         button: t('ProjectManagement.button')
       },
       description: [{
         title: t('StrategicPlanning.title'),
         blocks: [
           {
-            text: t('StrategicPlanning.blocks.block1'),
+            text: t.rich('StrategicPlanning.blocks.block1', strong),
             src: "/images/icons/strategic1.svg",
             alt: "strategic1"
           },
           {
-            text: t('StrategicPlanning.blocks.block2'),
+            text: t.rich('StrategicPlanning.blocks.block2', strong),
             src: "/images/icons/strategic2.svg",
             alt: "strategic2"
           },
           {
-            text: t('StrategicPlanning.blocks.block3'),
+            text: t.rich('StrategicPlanning.blocks.block3', strong),
             src: "/images/icons/strategic3.svg",
             alt: "strategic3"
           },
           {
-            text: t('StrategicPlanning.blocks.block4'),
+            text: t.rich('StrategicPlanning.blocks.block4', strong),
             src: "/images/icons/strategic4.svg",
             alt: "strategic4"
           },
@@ -225,22 +226,22 @@ const Page = async () => {
         title: t('AgileDevelopment.title'),
         blocks: [
           {
-            text: t('AgileDevelopment.blocks.block1'),
+            text: t.rich('AgileDevelopment.blocks.block1', strong),
             src: "/images/icons/agiledev1.svg",
             alt: "agiledev1"
           },
           {
-            text: t('AgileDevelopment.blocks.block2'),
+            text: t.rich('AgileDevelopment.blocks.block2', strong),
             src: "/images/icons/agiledev2.svg",
             alt: "agiledev2"
           },
           {
-            text: t('AgileDevelopment.blocks.block3'),
+            text: t.rich('AgileDevelopment.blocks.block3', strong),
             src: "/images/icons/agiledev3.svg",
             alt: "agiledev3"
           },
           {
-            text: t('AgileDevelopment.blocks.block4'),
+            text: t.rich('AgileDevelopment.blocks.block4', strong),
             src: "/images/icons/agiledev4.svg",
             alt: "agiledev4"
           },
@@ -251,22 +252,22 @@ const Page = async () => {
         title: t('QualityAssurance.title'),
         blocks: [
           {
-            text: t('QualityAssurance.blocks.block1'),
+            text: t.rich('QualityAssurance.blocks.block1', strong),
             src: "/images/icons/crmdev1.svg",
             alt: "crmdev1"
           },
           {
-            text: t('QualityAssurance.blocks.block2'),
+            text: t.rich('QualityAssurance.blocks.block2', strong),
             src: "/images/icons/crmdev2.svg",
             alt: "crmdev2"
           },
           {
-            text: t('QualityAssurance.blocks.block3'),
+            text: t.rich('QualityAssurance.blocks.block3', strong),
             src: "/images/icons/crmdev3.svg",
             alt: "crmdev3"
           },
           {
-            text: t('QualityAssurance.blocks.block4'),
+            text: t.rich('QualityAssurance.blocks.block4', strong),
             src: "/images/icons/crmdev4.svg",
             alt: "crmdev4"
           },
@@ -283,7 +284,7 @@ const Page = async () => {
         className="mt-[20px] min-[600px]:mt-[60px]"
         src="/images/banners/what-we-offer-banner.png"
         header={t('banner.whatWeOffer.header')}
-        subHeader={t('banner.whatWeOffer.subHeader')}
+        subHeader={t.rich('banner.whatWeOffer.subHeader', strong)}
         priority
       />
         {services.map(({header, description}) => (
@@ -306,7 +307,7 @@ const Page = async () => {
         <Banner
           src="/images/banners/what-clients-say-banner.png"
           header={t('banner.excited.header')}
-          subHeader={t('banner.excited.subHeader')}
+          subHeader={t.rich('banner.excited.subHeader', strong)}
           button={t('banner.excited.button')}
           icon="/images/icons/start_project_logo.svg"
         />

@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
   type Block = {
-    text: string;
+    text: string | ReactNode;
     src: string;
     alt: string;
   };
@@ -12,7 +14,7 @@
 
   type Header = {
     title: string,
-    text: string,
+    text: string | ReactNode,
     button: string
   }
 

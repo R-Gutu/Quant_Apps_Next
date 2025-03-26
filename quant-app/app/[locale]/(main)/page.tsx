@@ -30,7 +30,7 @@ export default async function Page() {
     interface DataType {
         icon: string,
         title: string,
-        text: string,
+        text: string | ReactNode,
         ariaLabel?: string,
         className?: string
     }
@@ -39,7 +39,7 @@ export default async function Page() {
         {
             icon: "/images/icons/brush.svg",
             title: t('services.uiux.title'),
-            text: t('services.uiux.text'),
+            text: t.rich('services.uiux.text', strong),
             ariaLabel: "Learn more about our UI/UX design services for intuitive and engaging user experiences.",
             className: "border-b-[1px] border-r-[1px]"
         },
@@ -47,35 +47,35 @@ export default async function Page() {
             icon: "/images/icons/puzzle.svg",
             title: t('services.mobile.title'),
             ariaLabel: "Learn more about our iOS and Android app development for high-performance, scalable mobile solutions.",
-            text: t('services.mobile.text'),
+            text: t.rich('services.mobile.text', strong),
             className: "border-b-[1px] min-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/dev.svg",
             title: t('services.web.title'),
             ariaLabel: "Learn more about our website development services for fast, secure, and SEO-optimized websites.",
-            text: t('services.web.text'),
+            text: t.rich('services.web.text', strong),
             className: "border-b-[1px] max-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/stats.svg",
             title: t('services.crm.title'),
             ariaLabel: "Learn more about our custom CRM solutions for improving workflow efficiency and customer relationships.",
-            text: t('services.crm.text'),
+            text: t.rich('services.crm.text', strong),
             className: "min-[1150px]:border-r-[1px] max-[1150px]:border-b-[1px]"
         },
         {
             icon: "/images/icons/platforms.svg",
             title: t('services.crossPlatform.title'),
             ariaLabel: "Learn more about our cross-platform development services for scalable mobile apps on iOS and Android.",
-            text: t('services.crossPlatform.text'),
+            text: t.rich('services.crossPlatform.text', strong),
             className: "border-r-[1px]"
         },
         {
             icon: "/images/icons/gear.svg",
             title: t('services.support.title'),
             ariaLabel: "Learn more about our support and maintenance services to keep your applications secure and up-to-date.",
-            text: t('services.support.text'),
+            text: t.rich('services.support.text', strong),
             className: "max-[800px]:!border-0"
         }
     ];
@@ -173,19 +173,19 @@ export default async function Page() {
         {
             number: "02",
             question: t('faqs.custom.question'),
-            answer: t('faqs.custom.answer'),
+            answer: t.rich('faqs.custom.answer', strong),
             className: "border-b-[1px] border-r-[1px]"
         },
         {
             number: "03",
             question: t('faqs.cost.question'),
-            answer: t('faqs.cost.answer'),
+            answer: t.rich('faqs.cost.answer', strong),
             className: "border-b-[1px] border-r-[1px]"
         },
         {
             number: "04",
             question: t('faqs.unique.question'),
-            answer: t('faqs.unique.answer'),
+            answer: t.rich('faqs.unique.answer', strong),
             className: "border-b-[1px] border-r-[1px]"
         }
     ];
@@ -200,19 +200,19 @@ export default async function Page() {
         {
             number: "06",
             question: t('faqs.timeline.question'),
-            answer: t('faqs.timeline.answer'),
+            answer: t.rich('faqs.timeline.answer', strong),
             className: "border-b-[1px] border-l-[1px] translate-x-[-1px]"
         },
         {
             number: "07",
             question: t('faqs.support.question'),
-            answer: t('faqs.support.answer'),
+            answer: t.rich('faqs.support.answer', strong),
             className: "border-b-[1px] border-l-[1px] translate-x-[-1px]"
         },
         {
             number: "08",
             question: t('faqs.start.question'),
-            answer: t('faqs.start.answer'),
+            answer: t.rich('faqs.start.answer', strong),
             className: "border-b-[1px] border-l-[0.5px] translate-x-[-1px] max-[1100px]:!border-0"
         }
     ];

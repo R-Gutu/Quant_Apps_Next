@@ -1,5 +1,6 @@
+import { ReactNode } from "react";
 
-export default function Header({title, text, button}: {title: string, text: string, button: string}) {
+export default function Header({title, text, button}: {title: string, text: string | ReactNode, button: string}) {
   return (
     <div className="flex flex-col gap-10 mt-[90px]">
         <div className="flex flex-col gap-4 pl-10">

@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface DescriptionBlock {
-    text: string;
+    text: string | ReactNode;
     src: string;
     alt: string;
   }

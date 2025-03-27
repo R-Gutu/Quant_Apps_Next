@@ -137,7 +137,7 @@
       }
     }
   },
-  "projects": {
+ "projects": {
     "title": "Our Projects | Innovative Mobile & Web Solutions - Quant apps",
     "description": "Explore Quant apps's portfolio of mobile app development, CRM solutions, and web platforms that drive business success.",
     "banner": {
@@ -147,7 +147,7 @@
     },
     "header": {
       "title": "At Quant-Apps",
-      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative <strong>digital solutions</strong> that drive business growth and success."
+      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative <strong>digital solutions</strong> that drive business growth and success. Our <aboutUs>experienced team</aboutUs> brings creativity and technical expertise to every project we undertake."
     },
     "items": [
       {
@@ -156,7 +156,7 @@
         "alt": "project1",
         "linkName": "Roka Akor",
         "link": "https://rokaakor.com/",
-        "description": "We developed a modern, user-friendly <strong>corporate website development</strong> for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors."
+        "description": "We developed a modern, user-friendly <services>corporate website development</services> for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors. Learn more about our <process>web development methodology</process> that makes projects like this possible."
       },
       {
         "title": "Logistics Company",
@@ -164,7 +164,7 @@
         "alt": "project2",
         "linkName": "Acm Movers",
         "link": "https://acmmovers.com/",
-        "description": "We designed and developed a feature-rich <strong>ecommerce website development services</strong> for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices."
+        "description": "We designed and developed a feature-rich <services>ecommerce website development services</services> for ACM Movers, optimizing their online booking system. The platform includes real-time quote requests, order tracking, and a seamless customer experience. Our solution enhances operational efficiency while improving user accessibility on all devices. Our <aboutUs>dedicated team</aboutUs> ensured every aspect of this logistics solution met the client's high expectations."
       },
       {
         "title": "Lens AI",
@@ -172,7 +172,7 @@
         "alt": "project3",
         "linkName": "Lens AI",
         "link": "https://apps.apple.com/md/app/lens-ai",
-        "description": "Lens AI is your smart <strong>iOS app development</strong> for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more."
+        "description": "Lens AI is your smart <services>iOS app development</services> for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more. See our <process>app development workflow</process> that helps us create intelligent and user-friendly applications."
       },
       {
         "title": "Taste Ai",
@@ -180,7 +180,7 @@
         "alt": "project4",
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
-        "description": "Meet your new kitchen helper, Taste Ai! This <strong>cross platform app development</strong> uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs."
+        "description": "Meet your new kitchen helper, Taste Ai! This <services>cross platform app development</services> uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs. If you're interested in joining our team to work on similar innovative <projects>AI-powered projects</projects>, check out our <careers>current job openings</careers>."
       },
       {
         "title": "Web-site for Dentist",
@@ -188,7 +188,7 @@
         "alt": "project5",
         "linkName": "NY Dental Group",
         "link": "https://nydentalgroup.com/",
-        "description": "We developed a modern and user-friendly website with <strong>web app development services</strong> for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction."
+        "description": "We developed a modern and user-friendly website with <services>web app development services</services> for NY Dental Group, a leading provider of dental care services. The platform features seamless appointment booking, secure patient data integration, and personalized treatment recommendations, enhancing patient engagement and satisfaction. Learn about the <aboutUs>talented designers and developers</aboutUs> who brought this sophisticated healthcare platform to life."
       },
       {
         "title": "Keyboard AI",
@@ -196,13 +196,13 @@
         "alt": "project6",
         "linkName": "Keyboard AI",
         "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
-        "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate <strong>build native mobile app</strong> AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique."
+        "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate <services>build native mobile app</services> AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique. Our <process>quality assurance process</process> ensures that every AI interaction is seamless and reliable."
       }
     ],
     "callToAction": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Excited to work together on your next project?",
-      "subtitle": "Let's bring your ideas to life with <strong>custom android app development</strong> and <strong>flutter app development company</strong> solutions tailored to your needs.",
+      "subtitle": "Let's bring your ideas to life with <services>custom android app development</services> and <services>flutter app development company</services> solutions tailored to your needs. Ready to start your journey? Learn about our <process>project planning approach</process> or explore <careers>career opportunities</careers> with our growing team.",
       "buttonText": "Start Project",
       "buttonIcon": "/images/icons/start_project_logo.svg"
     }
@@ -217,59 +217,59 @@
     },
     "header": {
       "title": "At Quant-Apps",
-      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive <strong>business growth</strong> and success."
+      "text": "We take pride in collaborating with a diverse range of clients, crafting innovative digital solutions that drive <strong>business growth</strong> and success. Our <aboutUs>experienced team</aboutUs> ensures every project receives the attention to detail it deserves."
     },
     "items": [
       {
         "id": "01",
         "title": "Consultation",
-        "text": "We begin by deeply understanding your goals and needs. We listen to your ideas, analyze your business processes, and propose a strategy that will deliver maximum results for your <strong>mobile app development</strong> requirements."
+        "text": "We begin by deeply understanding your goals and needs. We listen to your ideas, analyze your business processes, and propose a strategy that will deliver maximum results for your <services>mobile app development</services> requirements. Check out our <projects>previous successful projects</projects> to see how our consultation process leads to exceptional outcomes."
       },
       {
         "id": "02",
         "title": "Research and Strategy Development",
-        "text": "We conduct thorough research, study the market and competitors to develop an effective strategy tailored to your unique <strong>corporate website development</strong> requirements and objectives."
+        "text": "We conduct thorough research, study the market and competitors to develop an effective strategy tailored to your unique <services>corporate website development</services> requirements and objectives. Our <aboutUs>expert strategists</aboutUs> are skilled at identifying opportunities that give your business a competitive edge."
       },
       {
         "id": "03",
         "title": "Planning and Strategic Management",
-        "text": "We plan every step towards success. We create detailed roadmaps and clearly define key milestones to ensure each phase of the <strong>iOS app development</strong> project is completed on time and within budget."
+        "text": "We plan every step towards success. We create detailed roadmaps and clearly define key milestones to ensure each phase of the <services>iOS app development</services> project is completed on time and within budget. Our <process>project management methodology</process> ensures transparent communication throughout the development lifecycle."
       },
       {
         "id": "04",
         "title": "Branding and Identity Design",
-        "text": "We create a unique visual identity that reflects the essence of your brand. We design logos, color palettes, and other branding elements to make your <strong>android app development</strong> brand easily recognizable and memorable."
+        "text": "We create a unique visual identity that reflects the essence of your brand. We design logos, color palettes, and other branding elements to make your <services>android app development</services> brand easily recognizable and memorable. View our <projects>design portfolio</projects> to see examples of our branding work."
       },
       {
         "id": "05",
         "title": "Wireframes and UI/UX Design",
-        "text": "We design intuitive and attractive interfaces that provide the best user experience. We create wireframes and prototypes that lay the foundation for your future <strong>web app development services</strong> or website."
+        "text": "We design intuitive and attractive interfaces that provide the best user experience. We create wireframes and prototypes that lay the foundation for your future <services>web app development services</services> or website. Our talented designers work closely with our development team to ensure seamless implementation of design concepts."
       },
       {
         "id": "06",
         "title": "Development and Integration",
-        "text": "We develop functional, high-performance solutions that seamlessly integrate with your systems, ensuring smooth operation of <strong>cross platform app development</strong> and services."
+        "text": "We develop functional, high-performance solutions that seamlessly integrate with your systems, ensuring smooth operation of <services>cross platform app development</services> and services. Our developers follow industry best practices and are constantly updating their skills. Interested in joining our development team? Check our <careers>current openings</careers>."
       },
       {
         "id": "07",
         "title": "Testing and Quality Assurance",
-        "text": "Every app and solution undergoes strict testing stages. We check all functional and technical aspects to ensure flawless performance of your <strong>flutter app development company</strong> projects across all devices and platforms."
+        "text": "Every app and solution undergoes strict testing stages. We check all functional and technical aspects to ensure flawless performance of your <services>flutter app development company</services> projects across all devices and platforms. Our <process>quality assurance protocols</process> are designed to catch and fix issues before they reach your users."
       },
       {
         "id": "08",
         "title": "Launch and Deployment",
-        "text": "We carefully prepare your app for launch to ensure smooth operation. After testing, we deploy the <strong>CRM development</strong> solution on the selected platforms and ensure a seamless start."
+        "text": "We carefully prepare your app for launch to ensure smooth operation. After testing, we deploy the <services>CRM development</services> solution on the selected platforms and ensure a seamless start. Learn more about our <aboutUs>team's expertise</aboutUs> in successful launch strategies."
       },
       {
         "id": "09",
         "title": "Maintenance and Optimization",
-        "text": "After the launch, we continue to support and optimize the app, improving its performance, fixing bugs, and adding new features to meet user needs for <strong>ecommerce website development services</strong> and other solutions."
+        "text": "After the launch, we continue to support and optimize the app, improving its performance, fixing bugs, and adding new features to meet user needs for <services>ecommerce website development services</services> and other solutions. View our <projects>long-term partnership success stories</projects> to see how we help businesses grow over time."
       }
     ],
     "callToAction": {
       "image": "/images/banners/what-clients-say-banner.png",
       "title": "Excited to work together on your next project?",
-      "subtitle": "Let's bring your ideas to life with <strong>frontend and backend development</strong> and <strong>custom android app development</strong> solutions tailored to your needs.",
+      "subtitle": "Let's bring your ideas to life with <services>frontend and backend development</services> and <services>custom android app development</services> solutions tailored to your needs. Contact us today to start your <process>development journey</process> with our expert team.",
       "buttonText": "Start Project",
       "buttonIcon": "/images/icons/start_project_logo.svg"
     }
@@ -284,11 +284,11 @@
     },
     "about": {
       "title": "About Quant-Apps",
-      "paragraph1": "At Quant-Apps, we transform bold ideas into high-performance apps and websites. Despite being a young company, our team combines years of experience with cutting-edge technology to deliver <strong>custom android app development</strong> solutions that exceed expectations.",
-      "paragraph2": "We specialize in <strong>mobile app development</strong>, web design, and digital transformation, crafting visually stunning, high-functioning platforms that engage users and drive business growth. Our creative thinkers and technical experts work closely with clients, ensuring a collaborative, tailored approach for each project.",
+      "paragraph1": "At Quant-Apps, we transform bold ideas into high-performance apps and websites. Despite being a young company, our team combines years of experience with cutting-edge technology to deliver <services>custom android app development</services> solutions that exceed expectations.",
+      "paragraph2": "We specialize in <services>mobile app development</services>, web design, and digital transformation, crafting visually stunning, high-functioning platforms that engage users and drive business growth. Our creative thinkers and technical experts work closely with clients, ensuring a collaborative, tailored approach for each project. Explore our <process>development methodology</process> to learn how we bring ideas to life.",
       "paragraph3": "What sets us apart?",
-      "paragraph4": "Seamless communication, deep client engagement, and a commitment to long-term success. We don't just <strong>build native mobile app</strong> solutions—we create lasting digital experiences that help businesses thrive.",
-      "paragraph5": "Let's bring your vision to life with <strong>custom software solutions</strong> that elevate your brand and set you apart in the digital world.",
+      "paragraph4": "Seamless communication, deep client engagement, and a commitment to long-term success. We don't just <services>build native mobile app</services> solutions—we create lasting digital experiences that help businesses thrive. Looking to join our team? Check out our <careers>current job openings</careers> for exciting opportunities.",
+      "paragraph5": "Let's bring your vision to life with <services>custom software solutions</services> that elevate your brand and set you apart in the digital world. View our <projects>portfolio</projects> to see how we've helped other businesses achieve their goals.",
       "image": {
         "src": "/images/pictures/about1.png",
         "alt": "about1"
@@ -304,32 +304,32 @@
         {
           "id": "01",
           "title": "A GOOD IDEA",
-          "text": "From Fiverr freelancer to design expert, mastering vector tracing and beyond for <strong>corporate website development</strong>"
+          "text": "From Fiverr freelancer to design expert, mastering vector tracing and beyond for <services>corporate website development</services>"
         },
         {
           "id": "02",
           "title": "START MOVING",
-          "text": "Added UI/UX and logo design, growing a versatile design portfolio for <strong>iOS app development</strong>"
+          "text": "Added UI/UX and logo design, growing a versatile design portfolio for <services>iOS app development</services>. Our <process>design process</process> began taking shape during this crucial period."
         },
         {
           "id": "03",
           "title": "INCREASE",
-          "text": "Ventured into <strong>android app development</strong> with a grocery app, embracing digital innovation"
+          "text": "Ventured into <services>android app development</services> with a grocery app, embracing digital innovation. This became one of our first notable <projects>success stories</projects>."
         },
         {
           "id": "04",
           "title": "TAKE TIME",
-          "text": "Mastered <strong>web app development services</strong> with innovative projects"
+          "text": "Mastered <services>web app development services</services> with innovative projects. Our growing team began to attract talent, leading to our current <aboutUs>team structure</aboutUs>."
         },
         {
           "id": "05",
           "title": "INNOVATION",
-          "text": "Built projects with advanced tech, shaping Quant-Apps future with <strong>cross platform app development</strong>"
+          "text": "Built projects with advanced tech, shaping Quant-Apps future with <services>cross platform app development</services>. Our unique approach to <process>project management</process> started to take form."
         },
         {
           "id": "06",
           "title": "QUANT-APPS LAUNCH",
-          "text": "Founded Quant-Apps, specializing in innovative <strong>flutter app development company</strong> solutions"
+          "text": "Founded Quant-Apps, specializing in innovative <services>flutter app development company</services> solutions. Since then, we've expanded our team and are always looking for fresh talent – see our <careers>career opportunities</careers>."
         }
       ]
     },
@@ -342,7 +342,7 @@
           "link": "",
           "src": "/images/pictures/roman.png",
           "alt": "roman",
-          "text": "CEO with 7+ years in <strong>CRM development</strong>, app, and website development, creating innovative and scalable solutions."
+          "text": "CEO with 7+ years in <services>CRM development</services>, app, and website development, creating innovative and scalable solutions. Roman oversees our <process>development workflow</process> to ensure quality in every project."
         },
         {
           "name": "Veaceslav Soltan",
@@ -350,7 +350,7 @@
           "link": "",
           "src": "/images/pictures/slavic.png",
           "alt": "vyacheslav",
-          "text": "Experienced graphic designer with over 7 years in UI/UX and motion design, creating impactful and user-friendly <strong>ecommerce website development services</strong>."
+          "text": "Experienced graphic designer with over 7 years in UI/UX and motion design, creating impactful and user-friendly <services>ecommerce website development services</services>. See his work in our <projects>project portfolio</projects>."
         },
         {
           "name": "Vitalie Cernovschi",
@@ -358,7 +358,7 @@
           "link": "",
           "src": "/images/pictures/vitalie.png",
           "alt": "vitalie",
-          "text": "Expert in <strong>frontend and backend development</strong>, specializing in scalable web solutions and performance optimization."
+          "text": "Expert in <services>frontend and backend development</services>, specializing in scalable web solutions and performance optimization. Vitalie is an invaluable member of our <aboutUs>technical team</aboutUs>."
         },
         {
           "name": "Maxim Roenco",
@@ -366,7 +366,7 @@
           "link": "https://www.linkedin.com/in/roencomax/",
           "src": "/images/pictures/maxim.png",
           "alt": "maxim",
-          "text": "Experienced in HTML, CSS, JavaScript, and responsive design. Focused on user-friendly interfaces and <strong>web app development services</strong>."
+          "text": "Experienced in HTML, CSS, JavaScript, and responsive design. Focused on user-friendly interfaces and <services>web app development services</services>. Interested in similar work? Check our <careers>open positions</careers>."
         },
         {
           "name": "Islam Abu Koush",
@@ -374,7 +374,7 @@
           "link": "https://www.linkedin.com/in/islam-abu-koush-a191a2299/",
           "src": "/images/pictures/islam.png",
           "alt": "islam",
-          "text": "Skilled in React, JavaScript, and UI frameworks. Passionate about interactive design and <strong>saas development</strong> optimization."
+          "text": "Skilled in React, JavaScript, and UI frameworks. Passionate about interactive design and <services>saas development</services> optimization. Islam follows our established <process>development standards</process> to deliver exceptional results."
         },
         {
           "name": "Denis Soltan",
@@ -382,7 +382,7 @@
           "link": "https://www.linkedin.com/in/denis-soltan-52a1a2305/",
           "src": "/images/pictures/denis.png",
           "alt": "denis",
-          "text": "A passionate developer with hands-on experience in React and JavaScript. Dedicated to building efficient, responsive, and interactive <strong>web app development services</strong>."
+          "text": "A passionate developer with hands-on experience in React and JavaScript. Dedicated to building efficient, responsive, and interactive <services>web app development services</services>. See his contributions in our latest <projects>web projects</projects>."
         }
       ]
     }
@@ -394,11 +394,11 @@
     },
     "header": {
       "title": "Quant-Apps: Elevating Businesses with Cutting-Edge Digital Solutions",
-      "description": "We specialize in <strong>custom android app development</strong>, mobile apps, and web design, transforming ideas into high-performance digital products. Our expertise in UX/UI, agile development, and <strong>CRM development</strong> ensures seamless, scalable, and results-driven experiences."
+      "description": "We specialize in <services>custom android app development</services>, mobile apps, and web design, transforming ideas into high-performance digital products. Our expertise in UX/UI, agile development, and <services>CRM development</services> ensures seamless, scalable, and results-driven experiences. Learn about our <process>development approach</process> and explore our <projects>past success stories</projects>."
     },
     "welcome": {
       "title": "Welcome to Quant-Apps",
-      "tagline": "Where innovation, technology, and strategy align to drive business success with <strong>mobile app development</strong>."
+      "tagline": "Where innovation, technology, and strategy align to drive business success with <services>mobile app development</services>. Discover more about <aboutUs>who we are</aboutUs> and what drives our passion for excellence."
     },
     "cta": {
       "buttonText": "Start Project"
@@ -413,46 +413,46 @@
     },
     "welcome": {
       "title": "Welcome to Quant-Apps, where innovation drives success!",
-      "description": "At Quant-Apps, we believe that success is built on expertise, collaboration, and a passion for cutting-edge technology. As a leading software development company, we focus on <strong>mobile app development</strong>, <strong>web app development services</strong>, <strong>CRM development</strong>, cloud infrastructure, and AI-powered automation. If you're looking to work on impactful projects that shape the future of digital transformation, we invite you to explore career opportunities with us.",
+      "description": "At Quant-Apps, we believe that success is built on expertise, collaboration, and a passion for cutting-edge technology. As a leading software development company, we focus on <services>mobile app development</services>, <services>web app development services</services>, <services>CRM development</services>, cloud infrastructure, and AI-powered automation. If you're looking to work on impactful <projects>projects that shape the future</projects> of digital transformation, we invite you to explore career opportunities with us.",
       "tagline": "Why Work at Quant-Apps?"
     },
     "careerBlocks": [
       {
         "title": "Work on Cutting-Edge Software Projects: Mobile Apps, CRM, AI & Web Development",
-        "text": "Be part of a team that creates scalable digital solutions, including custom enterprise software, <strong>iOS app development</strong>, AI-powered automation, and high-performance <strong>corporate website development</strong>."
+        "text": "Be part of a team that creates scalable digital solutions, including custom enterprise software, <services>iOS app development</services>, AI-powered automation, and high-performance <services>corporate website development</services>. Learn more about our <aboutUs>team of experts</aboutUs> who deliver excellence in every project."
       },
       {
         "title": "Collaborative Tech Environment – AI, Cloud, and Software Development Experts",
-        "text": "Join a culture of innovation, where AI engineers, cloud developers, and <strong>frontend and backend development</strong> experts collaborate to build the future of digital transformation and enterprise solutions."
+        "text": "Join a culture of innovation, where AI engineers, cloud developers, and <services>frontend and backend development</services> experts collaborate to build the future of digital transformation and enterprise solutions. Our <process>well-defined development process</process> ensures consistent quality and timely delivery."
       },
       {
         "title": "Continuous Learning: Stay Ahead in Web, Mobile, AI, and Cloud Technologies",
-        "text": "Advance your career with access to training programs, mentorship, and industry-leading tech conferences in <strong>android app development</strong>, cloud computing, cybersecurity, AI, and <strong>saas development</strong>."
+        "text": "Advance your career with access to training programs, mentorship, and industry-leading tech conferences in <services>android app development</services>, cloud computing, cybersecurity, AI, and <services>saas development</services>. Check out our <projects>past successful projects</projects> to see the quality of work we deliver."
       },
       {
         "title": "Challenging Software Development Projects – AI, Cloud, CRM",
-        "text": "Solve complex challenges in enterprise software, AI-powered solutions, high-performance cloud infrastructure, <strong>mobile app development</strong>, and automation that drive business success."
+        "text": "Solve complex challenges in enterprise software, AI-powered solutions, high-performance cloud infrastructure, <services>mobile app development</services>, and automation that drive business success. Our <process>streamlined workflow</process> empowers teams to innovate and deliver exceptional results."
       }
     ],
     "currentOpenings": {
       "title": "Current Openings",
-      "description": "We are always on the lookout for talented individuals who are passionate about creating exceptional digital experiences."
+      "description": "We are always on the lookout for talented individuals who are passionate about creating exceptional digital experiences. Join our <aboutUs>diverse and skilled team</aboutUs> to grow professionally while creating innovative solutions."
     },
     "openings": [
       {
         "title": "Design Job Openings",
         "name": "UI/UX Designer",
-        "text": "Join our team as a UI/UX Designer and bring creativity to life by designing visually compelling and user-friendly digital interfaces. Collaborate with cross-functional teams to enhance user experience (UX), layout design, typography, and color theory. Play a key role in shaping intuitive <strong>build native mobile app</strong> solutions that leave a lasting impression."
+        "text": "Join our team as a UI/UX Designer and bring creativity to life by designing visually compelling and user-friendly digital interfaces. Collaborate with cross-functional teams to enhance user experience (UX), layout design, typography, and color theory. Play a key role in shaping intuitive <services>build native mobile app</services> solutions that leave a lasting impression. See how our <process>design process</process> contributes to overall project success."
       },
       {
         "title": "Development Job Openings",
         "name": "Front - End Developer",
-        "text": "We're looking for a Front-End Developer to transform UI/UX wireframes into responsive and interactive web interfaces. Work with HTML, CSS, and JavaScript to develop high-performance, visually appealing websites. Collaborate with designers and backend developers to ensure seamless functionality, scalability, and optimal user experience for <strong>ecommerce website development services</strong>."
+        "text": "We're looking for a Front-End Developer to transform UI/UX wireframes into responsive and interactive web interfaces. Work with HTML, CSS, and JavaScript to develop high-performance, visually appealing websites. Collaborate with designers and backend developers to ensure seamless functionality, scalability, and optimal user experience for <services>ecommerce website development services</services>. Browse our <projects>portfolio of web projects</projects> to see the quality of our work."
       },
       {
         "title": "Management Job Openings",
         "name": "Project Manager",
-        "text": "We are seeking a Project Manager to oversee the planning, execution, and delivery of software development, web, and <strong>cross platform app development</strong> projects. Coordinate cross-functional teams, manage timelines, and ensure seamless collaboration between developers, designers, and stakeholders. Drive project success by optimizing workflows, mitigating risks, and ensuring timely delivery of <strong>flutter app development company</strong> solutions while aligning with business goals."
+        "text": "We are seeking a Project Manager to oversee the planning, execution, and delivery of software development, web, and <services>cross platform app development</services> projects. Coordinate cross-functional teams, manage timelines, and ensure seamless collaboration between developers, designers, and stakeholders. Drive project success by optimizing workflows, mitigating risks, and ensuring timely delivery of <services>flutter app development company</services> solutions while aligning with business goals. Learn more about our <aboutUs>company culture and values</aboutUs> that guide our work."
       }
     ]
   },

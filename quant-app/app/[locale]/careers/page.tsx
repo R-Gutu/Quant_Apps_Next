@@ -98,7 +98,7 @@ const Page = async () => {
             </div>
             <HeadText
                 title={t('currentOpenings.title')}
-                text={t('currentOpenings.description')}
+                text={t.rich('currentOpenings.description', strong)}
             />
             <div className="flex flex-col">
                 {openings.map((item, index) => (

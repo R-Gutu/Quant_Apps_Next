@@ -9,6 +9,9 @@ import Blur from "@/components/Blur";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from 'next'
 import { strong } from "@/lib/utils/utils";
+import * as m from 'motion/react-m'
+import { leftAnimation } from "@/lib/animations/leftAnimation";
+import { rightAnimation } from "@/lib/animations/rightAnimation";
 
 
 
@@ -118,7 +121,12 @@ const Page = async () => {
         subHeader={t('banner.subHeader')}
       />
       <div className="w-full flex gap-[150px] max-medium:gap-[40px] px-[100px] max-mui-md:px-[40px] max-smallest:px-[0px] py-[60px] max-medium:flex-col">
-        <div className="flex flex-col gap-[20px] justify-center">
+        <m.div 
+        variants={leftAnimation}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex flex-col gap-[20px] justify-center">
           <h1 className="font-semibold text-[44px] max-mui-md:text-[34px] max-smallest:text-[24px] max-smallest:text-center text-[#FFFFFF]">
             {t('about.title')}
           </h1>
@@ -129,8 +137,13 @@ const Page = async () => {
             <p className="indent-6">{t.rich('about.paragraph4', strong)}</p>
             <p className="indent-6">{t.rich('about.paragraph5', strong)}</p>
           </div>
-        </div>
-        <div className="flex items-center justify-center">
+        </m.div>
+        <m.div 
+        variants={rightAnimation}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="flex items-center justify-center">
           <Image
             width={1490}
             height={1490}
@@ -138,7 +151,7 @@ const Page = async () => {
             alt={t('about.image.alt')}
             src={t('about.image.src')}
           />
-        </div>
+        </m.div>
       </div>
       <div className="flex flex-col gap-[50px]">
         <h2 className="font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[40px] text-[#FFFFFF]">

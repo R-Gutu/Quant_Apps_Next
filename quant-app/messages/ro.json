@@ -27,113 +27,113 @@
     "AllRightsReserved": "Toate drepturile rezervate."
   },
   "services": {
-    "title": "Dezvoltare Mobilă și Web | Soluții CRM – Quant-Apps",
-    "description": "Aveți nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps construiește soluții scalabile de dezvoltare aplicații iOS, servicii de dezvoltare aplicații web și soluții de dezvoltare CRM.",
+    "title": "Dezvoltare pentru Mobile & Web | Soluții CRM – Quant-Apps",
+    "description": "Aveți nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps construiește aplicații scalabile pentru iOS, servicii de dezvoltare aplicații web și soluții de dezvoltare CRM.",
     "banner": {
       "whatWeOffer": {
         "header": "Ce oferim?",
-        "subHeader": "Dezvoltare personalizată de <strong>aplicații mobile</strong>, <strong>soluții CRM</strong>, infrastructură de server, și <strong>dezvoltare de site-uri web corporative</strong> concepute pentru a îmbunătăți impactul mărcii dvs."
+        "subHeader": "<strong>Dezvoltare personalizată de aplicații mobile</strong>, <strong>soluții CRM</strong>, infrastructură de server și <strong>dezvoltare de site-uri web corporative</strong> concepute pentru a îmbunătăți impactul brandului dumneavoastră."
       },
       "excited": {
-        "header": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
-        "subHeader": "Să dăm viață ideilor dvs. cu soluții personalizate de <strong>dezvoltare de aplicații pentru Android</strong> și <strong>dezvoltare de aplicații cross-platform</strong> adaptate nevoilor dvs.",
+        "header": "Entuziasmați să lucrăm împreună la următorul dumneavoastră proiect?",
+        "subHeader": "Haideți să dăm viață ideilor dumneavoastră cu <strong>soluții personalizate de dezvoltare aplicații Android</strong> și <strong>aplicații cross-platform</strong> adaptate nevoilor dumneavoastră.",
         "button": "Începeți Proiectul"
       }
     },
     "Design": {
       "title": "Design",
-      "text": "La Quant-Apps, echipa noastră de design este dedicată creării de design-uri vizual captivante, concentrate pe utilizator pentru <strong>dezvoltarea de aplicații mobile native</strong> și <strong>dezvoltarea SaaS</strong>. Credem că designul excepțional depășește estetica—este vorba despre livrarea unor experiențe de utilizator intuitive și fără probleme.",
+      "text": "La Quant-Apps, echipa noastră de design este dedicată creării unor design-uri vizual atractive, centrate pe utilizator pentru <strong>aplicații mobile native</strong> și <strong>dezvoltare SaaS</strong>. Credem că designul excepțional depășește estetica—este vorba despre oferirea unor experiențe utilizator fluide și intuitive. Aflați mai multe despre <process>procesul nostru de design</process> și <projects>proiectele noastre anterioare de design</projects>.",
       "button": "Serviciile noastre de design includ:"
     },
     "UXDesign": {
-      "title": "Design de Experiență a Utilizatorului (UX)",
+      "title": "Design Experiență Utilizator (UX)",
       "blocks": {
-        "block1": "Obțineți informații despre comportamentul utilizatorilor pentru a crea <strong>servicii de dezvoltare de aplicații web</strong> intuitive",
-        "block2": "Structurați navigarea fără probleme pentru a îmbunătăți accesibilitatea <strong>dezvoltării de aplicații mobile</strong>",
-        "block3": "Optimizați interacțiunile utilizatorilor prin testare în lumea reală pentru standardele <strong>companiei de dezvoltare de aplicații Flutter</strong>",
-        "block4": "Aliniați obiectivele de afaceri cu nevoile clienților pentru o experiență fără fricțiuni de <strong>dezvoltare frontend și backend</strong>"
+        "block1": "Obțineți informații despre comportamentul utilizatorilor pentru a crea <strong>servicii intuitive de dezvoltare aplicații web</strong>",
+        "block2": "Structurați navigarea fluidă pentru accesibilitate îmbunătățită în <strong>dezvoltarea aplicațiilor mobile</strong>",
+        "block3": "Optimizați interacțiunile utilizatorilor prin testare în lumea reală pentru standardele <strong>companiei de dezvoltare aplicații Flutter</strong>",
+        "block4": "Aliniați obiectivele de afaceri cu nevoile clienților pentru o experiență fără fricțiuni în <strong>dezvoltarea frontend și backend</strong>"
       }
     },
     "UIDesign": {
-      "title": "Design de Interfață de Utilizator (UI)",
+      "title": "Design Interfață Utilizator (UI)",
       "blocks": {
-        "block1": "Creați interfețe prietenoase și atractive pentru <strong>dezvoltarea de aplicații Android</strong>",
-        "block2": "Elemente de design unice care îmbunătățesc identitatea de marcă a <strong>dezvoltării de site-uri web corporative</strong>",
-        "block3": "Stabiliți un sistem de design consistent și atractiv pentru <strong>dezvoltarea de aplicații iOS</strong>",
-        "block4": "Asigurați performanța perfectă pe toate dimensiunile de ecran în <strong>dezvoltarea de aplicații cross-platform</strong>"
+        "block1": "Creați interfețe prietenoase și atractive pentru <strong>dezvoltarea aplicațiilor Android</strong>",
+        "block2": "Elemente de design unice care îmbunătățesc identitatea brandului în <strong>dezvoltarea site-urilor web corporative</strong>",
+        "block3": "Stabiliți un sistem de design consistent și atractiv pentru <strong>dezvoltarea aplicațiilor iOS</strong>",
+        "block4": "Asigurați performanța fluidă pe toate dimensiunile de ecran în <strong>dezvoltarea aplicațiilor cross-platform</strong>"
       }
     },
     "Branding": {
       "title": "Branding și Identitate",
       "blocks": {
-        "block1": "Design de logo și dezvoltarea identității vizuale pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
-        "block2": "Strategie de brand și poziționare în <strong>dezvoltarea de aplicații mobile</strong>",
-        "block3": "Ghiduri de brand și ghiduri de stil pentru <strong>servicii de dezvoltare de aplicații web</strong>",
-        "block4": "Design de materiale de marketing pentru <strong>dezvoltarea CRM</strong>"
+        "block1": "Design Logo și Dezvoltarea Identității Vizuale pentru <strong>servicii de dezvoltare site-uri e-commerce</strong>",
+        "block2": "Strategie și Poziționare Brand în <strong>dezvoltarea aplicațiilor mobile</strong>",
+        "block3": "Ghiduri de Brand și Stiluri pentru <strong>servicii de dezvoltare aplicații web</strong>",
+        "block4": "Design Materiale de Marketing pentru <strong>dezvoltarea CRM</strong>"
       }
     },
     "Engineering": {
-      "title": "Servicii de Inginerie și Dezvoltare Software",
-      "text": "Ne specializăm în soluții digitale scalabile, de înaltă performanță utilizând <strong>dezvoltare frontend și backend</strong> cu cele mai noi tehnologii. Expertiza noastră acoperă <strong>dezvoltarea de aplicații Android</strong>, abordarea <strong>companiei de dezvoltare de aplicații Flutter</strong>, și <strong>dezvoltarea SaaS</strong>.",
+      "title": "Inginerie și Servicii de Dezvoltare Software",
+      "text": "Ne specializăm în soluții digitale scalabile și de înaltă performanță folosind <strong>dezvoltare frontend și backend</strong> cu cele mai recente tehnologii. Expertiza noastră acoperă <strong>dezvoltarea aplicațiilor Android</strong>, abordarea <strong>companiei de dezvoltare aplicații Flutter</strong> și <strong>dezvoltarea SaaS</strong>. Aruncați o privire la <projects>proiectele noastre de inginerie finalizate</projects> pentru a vedea capabilitățile noastre.",
       "button": "Serviciile noastre de inginerie includ:"
     },
     "WebDevelopment": {
       "title": "Dezvoltare Web",
       "blocks": {
-        "block1": "Servicii de <strong>dezvoltare de aplicații web</strong> de înaltă performanță utilizând Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
-        "block2": "<strong>Dezvoltare de site-uri web corporative</strong> scalabile utilizând PHP, Python, Ruby, Node.js",
-        "block3": "Dezvoltare de Sisteme de Management al Conținutului (CMS) pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
-        "block4": "Dezvoltare de Platforme E-Commerce cu <strong>dezvoltare frontend și backend</strong>"
+        "block1": "Performanță ridicată în <strong>servicii de dezvoltare aplicații web</strong> folosind Next.js, React, Vue.js, Angular, Svelte, Tailwind CSS",
+        "block2": "<strong>Dezvoltare scalabilă de site-uri web corporative</strong> folosind PHP, Python, Ruby, Node.js",
+        "block3": "Dezvoltare Sistem de Management al Conținutului (CMS) pentru <strong>servicii de dezvoltare site-uri e-commerce</strong>",
+        "block4": "Dezvoltare Platformă E-Commerce cu <strong>dezvoltare frontend și backend</strong>"
       }
     },
     "MobileAppDevelopment": {
-      "title": "Dezvoltare de Aplicații Mobile",
+      "title": "Dezvoltare Aplicații Mobile",
       "blocks": {
-        "block1": "Aplicații personalizate pentru <strong>dezvoltarea de aplicații iOS</strong> și <strong>dezvoltarea de aplicații Android</strong>",
-        "block2": "<strong>Dezvoltare de aplicații cross-platform</strong> scalabile utilizând React Native, Flutter",
-        "block3": "Wireframing și prototipuri interactive pentru soluții de <strong>dezvoltare de aplicații mobile native</strong>",
-        "block4": "QA comprehensiv pentru <strong>dezvoltarea de aplicații mobile</strong> cu deployment bazat pe cloud"
+        "block1": "Aplicații personalizate pentru <strong>iOS</strong> și <strong>Android</strong>",
+        "block2": "<strong>Dezvoltare scalabilă de aplicații cross-platform</strong> folosind React Native, Flutter",
+        "block3": "Wireframing și prototipuri interactive pentru soluții <strong>aplicații mobile native</strong>",
+        "block4": "QA comprehensiv pentru <strong>dezvoltarea aplicațiilor mobile</strong> cu implementare în cloud"
       }
     },
     "CRMDevelopment": {
       "title": "Dezvoltare CRM și Soluții Enterprise",
       "blocks": {
-        "block1": "Software <strong>dezvoltare CRM</strong> personalizat pentru a îmbunătăți vânzările și fluxurile de lucru de afaceri",
-        "block2": "Construiți aplicații web CRM scalabile cu <strong>servicii de dezvoltare de aplicații web</strong> optimizate",
-        "block3": "Integrare perfectă suportând <strong>dezvoltarea SaaS</strong> cu analiză bazată pe AI",
-        "block4": "Actualizați sistemele CRM cu soluții de <strong>dezvoltare frontend și backend</strong>"
+        "block1": "Software personalizat pentru <strong>dezvoltare CRM</strong> pentru îmbunătățirea vânzărilor și fluxurilor de lucru din afaceri",
+        "block2": "Construirea aplicațiilor web CRM scalabile cu <strong>servicii optimizate de dezvoltare aplicații web</strong>",
+        "block3": "Integrare fără probleme care suportă <strong>dezvoltare SaaS</strong> cu analiză bazată pe AI",
+        "block4": "Actualizarea sistemelor CRM cu soluții de <strong>dezvoltare frontend și backend</strong>"
       }
     },
     "ProjectManagement": {
-      "title": "Management de Proiect pentru Dezvoltare Mobilă și Web",
-      "text": "Serviciile noastre de management de proiect asigură execuția perfectă a <strong>soluțiilor digitale</strong>, de la planificare la implementare. Urmăm metodologii agile pentru <strong>dezvoltarea de aplicații cross-platform</strong>.",
+      "title": "Management de Proiect pentru Dezvoltare Mobile & Web",
+      "text": "<process>Serviciile noastre de management de proiect</process> asigură execuția fără probleme a <strong>soluțiilor digitale</strong>, de la planificare la implementare. Urmărim metodologii agile pentru <strong>dezvoltarea aplicațiilor cross-platform</strong>. <aboutUs>Echipa noastră de manageri de proiect experimentați</aboutUs> lucrează îndeaproape cu clienții pe tot parcursul ciclului de dezvoltare.",
       "button": "Serviciile noastre de management de proiect includ:"
     },
     "StrategicPlanning": {
-      "title": "Planificare Strategică de Proiect și Management de Resurse",
+      "title": "Planificare Strategică de Proiect & Managementul Resurselor",
       "blocks": {
-        "block1": "Colectarea cerințelor pentru obiectivele proiectului de <strong>dezvoltare de aplicații mobile</strong>",
-        "block2": "Urmărirea foii de parcurs a proiectului pentru <strong>servicii de dezvoltare de aplicații web</strong>",
+        "block1": "Colectarea cerințelor pentru obiectivele proiectelor de <strong>dezvoltare aplicații mobile</strong>",
+        "block2": "Urmărirea foii de parcurs a proiectului pentru <strong>servicii de dezvoltare aplicații web</strong>",
         "block3": "Alocarea resurselor pentru performanța echipei de <strong>dezvoltare CRM</strong>",
-        "block4": "Evaluarea riscurilor pentru stabilitatea <strong>dezvoltării de site-uri web corporative</strong>"
+        "block4": "Evaluarea riscurilor pentru stabilitatea <strong>dezvoltării site-urilor web corporative</strong>"
       }
     },
     "AgileDevelopment": {
-      "title": "Dezvoltare Agile și Optimizarea Fluxului de Lucru",
+      "title": "Dezvoltare Agilă & Optimizarea Fluxului de Lucru",
       "blocks": {
-        "block1": "Actualizări iterative pentru <strong>dezvoltarea de aplicații cross-platform</strong>",
-        "block2": "Monitorizarea performanței pentru <strong>dezvoltarea de aplicații mobile</strong>",
-        "block3": "Patch-uri de securitate pentru <strong>servicii de dezvoltare de aplicații web</strong>",
-        "block4": "Suport tehnic pentru <strong>dezvoltarea de aplicații iOS și Android</strong>"
+        "block1": "Actualizări iterative pentru <strong>dezvoltarea aplicațiilor cross-platform</strong>",
+        "block2": "Monitorizarea performanței pentru <strong>dezvoltarea aplicațiilor mobile</strong>",
+        "block3": "Patch-uri de securitate pentru <strong>servicii de dezvoltare aplicații web</strong>",
+        "block4": "Suport tehnic pentru <strong>dezvoltarea aplicațiilor iOS și Android</strong>"
       }
     },
     "QualityAssurance": {
-      "title": "Asigurarea Calității și Conformitatea Securității",
+      "title": "Asigurarea Calității & Conformitate de Securitate",
       "blocks": {
-        "block1": "Actualizări de sistem pentru <strong>dezvoltarea SaaS</strong>",
-        "block2": "Monitorizarea infrastructurii cloud pentru <strong>dezvoltarea CRM</strong>",
-        "block3": "Integrarea suportului pentru clienți pentru <strong>servicii de dezvoltare de site-uri de comerț electronic</strong>",
-        "block4": "Consultanță de scalabilitate pentru creșterea <strong>dezvoltării de aplicații mobile native</strong>"
+        "block1": "Actualizări de sistem pentru <strong>dezvoltare SaaS</strong>",
+        "block2": "Monitorizarea infrastructurii cloud pentru <strong>dezvoltare CRM</strong>",
+        "block3": "Integrarea suportului pentru clienți pentru <strong>servicii de dezvoltare site-uri e-commerce</strong>",
+        "block4": "Consultanță în scalabilitate pentru creșterea <strong>aplicațiilor mobile native</strong>. Interesat să vă alăturați echipei noastre? Verificați <careers>pozițiile noastre disponibile</careers>."
       }
     }
   },
@@ -468,50 +468,50 @@
       "phone": "+373 69 882 331",
       "location": "Republica Moldova"
     },
-  "intro": "Quant-Apps (\"noi\", \"al nostru\" sau \"nouă\") suntem angajați să vă protejăm confidențialitatea. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, dezvăluim și protejăm informațiile dumneavoastră atunci când vizitați site-ul nostru web sau utilizați serviciile noastre. Prin accesarea site-ului nostru web sau a serviciilor, sunteți de acord cu termenii acestei Politici de Confidențialitate. Dacă nu sunteți de acord, vă rugăm să nu utilizați serviciile noastre.",
-  "sections": {
-    "acceptance": {
-      "title": "1. Informațiile pe care le Colectăm",
-      "content": "Colectăm informații personale și nepersonale pentru a furniza și îmbunătăți serviciile noastre. Informații Personale. Acestea includ orice informații pe care le furnizați voluntar, precum: Nume, Adresă de email, Număr de telefon, Informații de facturare, Orice alte informații trimise prin formularele noastre de contact sau canalele de comunicare, Informații Nepersonale. Acestea includ informații colectate automat, precum: Adresă IP, Tip browser, Sistem de operare, Pagini vizualizate și timp petrecut pe site-ul nostru, Informații despre dispozitiv"
+    "intro": "Quant-Apps (\"noi\", \"al nostru\" sau \"nouă\") suntem angajați să vă protejăm confidențialitatea. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, dezvăluim și protejăm informațiile dumneavoastră atunci când vizitați site-ul nostru web sau utilizați serviciile noastre. Prin accesarea site-ului nostru web sau a serviciilor, sunteți de acord cu termenii acestei Politici de Confidențialitate. Dacă nu sunteți de acord, vă rugăm să nu utilizați serviciile noastre.",
+    "sections": {
+      "acceptance": {
+        "title": "1. Informațiile pe care le Colectăm",
+        "content": "Colectăm informații personale și nepersonale pentru a furniza și îmbunătăți serviciile noastre. Informații Personale. Acestea includ orice informații pe care le furnizați voluntar, precum: Nume, Adresă de email, Număr de telefon, Informații de facturare, Orice alte informații trimise prin formularele noastre de contact sau canalele de comunicare, Informații Nepersonale. Acestea includ informații colectate automat, precum: Adresă IP, Tip browser, Sistem de operare, Pagini vizualizate și timp petrecut pe site-ul nostru, Informații despre dispozitiv"
+      },
+      "services": {
+        "title": "2. Cum Utilizăm Informațiile Dumneavoastră",
+        "content": "Utilizăm informațiile colectate în următoarele scopuri: \n1) Furnizarea și gestionarea serviciilor noastre \n2) Comunicarea cu dumneavoastră referitor la întrebări sau proiecte \n3) Procesarea plăților și gestionarea facturării \n4) Îmbunătățirea și personalizarea experienței dumneavoastră \n5) Analiza utilizării site-ului web și optimizarea performanței \n6) Respectarea obligațiilor legale"
+      },
+      "intellectual": {
+        "title": "3. Cum Distribuim Informațiile Dumneavoastră",
+        "content": "Nu vindem sau închidem informațiile dumneavoastră personale către terți. Cu toate acestea, putem distribui informațiile în următoarele circumstanțe: \nFurnizori de Servicii: Către terți de încredere care ne asistă în furnizarea serviciilor, precum procesatori de plăți sau furnizori de găzduire. \nConformitate Legală: Atunci când este cerut de lege sau pentru a ne proteja drepturile și interesele. \nTransferuri de Afaceri: În cazul unei fuziuni, achiziții sau vânzări a tuturor sau unei părți din activele noastre."
+      },
+      "conduct": {
+        "title": "4. Cookie-uri și Tehnologii de Urmărire",
+        "content": "Utilizăm cookie-uri și tehnologii de urmărire similare pentru a vă îmbunătăți experiența. Cookie-urile sunt fișiere mici stocate pe dispozitivul dumneavoastră care ne ajută să vă recunoaștem și să îmbunătățim funcționalitatea site-ului web. Puteți controla cookie-urile prin setările browserului, dar dezactivarea lor poate limita anumite caracteristici ale site-ului nostru web."
+      },
+      "disclaimer": {
+        "title": "5. Securitatea Datelor",
+        "content": "Implementăm măsuri tehnice și organizatorice adecvate pentru a vă proteja informațiile de accesul neautorizat, dezvăluire sau distrugere. Cu toate acestea, nicio transmisie de date pe internet nu este complet sigură, și nu putem garanta o securitate absolută."
+      },
+      "liability": {
+        "title": "6. Drepturile Dumneavoastră",
+        "content": "În funcție de jurisdicția dumneavoastră, puteți avea următoarele drepturi privind informațiile personale: \nAccesarea informațiilor personale și solicitarea unei copii, \nCorectarea sau actualizarea informațiilor incorecte, \nSolicitarea ștergerii informațiilor, \nObiecția la prelucrare sau restricționarea prelucrării informațiilor, \nRetragerea consimțământului acolo unde prelucrarea se bazează pe consimțământul dumneavoastră, \nPentru a vă exercita aceste drepturi, \ncontactați-ne la support@quant-apps.com."
+      },
+      "thirdParty": {
+        "title": "7. Linkuri către Terți",
+        "content": "Site-ul nostru web poate conține linkuri către site-uri web ale terților. Nu suntem responsabili pentru practicile de confidențialitate sau conținutul acestor site-uri externe."
+      },
+      "termination": {
+        "title": "8. Confidențialitatea Copiilor",
+        "content": "Serviciile noastre nu sunt direcționate către persoane sub vârsta de 18 ani. Nu colectăm în mod conștient informații personale de la copii. Dacă credeți că am colectat fără să vrem informații de la un copil, vă rugăm să ne contactați pentru a le șterge."
+      },
+      "governing": {
+        "title": "9. Modificări la Această Politică de Confidențialitate",
+        "content": "Putem actualiza această Politică de Confidențialitate din când în când. Orice modificări vor fi postate pe această pagină cu o dată de intrare în vigoare actualizată. Continuarea utilizării serviciilor noastre după efectuarea modificărilor indică acceptarea politicii actualizate."
+      },
+      "contact": {
+        "title": "10. Contactați-ne",
+        "content": "Pentru orice întrebări sau preocupări legate de această Politică de Confidențialitate, vă rugăm să ne contactați la:\nEmail: support@quant-apps.com\nMoldova, Republica Moldova"
+      }
     },
-    "services": {
-      "title": "2. Cum Utilizăm Informațiile Dumneavoastră",
-      "content": "Utilizăm informațiile colectate în următoarele scopuri: \n1) Furnizarea și gestionarea serviciilor noastre \n2) Comunicarea cu dumneavoastră referitor la întrebări sau proiecte \n3) Procesarea plăților și gestionarea facturării \n4) Îmbunătățirea și personalizarea experienței dumneavoastră \n5) Analiza utilizării site-ului web și optimizarea performanței \n6) Respectarea obligațiilor legale"
-    },
-    "intellectual": {
-      "title": "3. Cum Distribuim Informațiile Dumneavoastră",
-      "content": "Nu vindem sau închidem informațiile dumneavoastră personale către terți. Cu toate acestea, putem distribui informațiile în următoarele circumstanțe: \nFurnizori de Servicii: Către terți de încredere care ne asistă în furnizarea serviciilor, precum procesatori de plăți sau furnizori de găzduire. \nConformitate Legală: Atunci când este cerut de lege sau pentru a ne proteja drepturile și interesele. \nTransferuri de Afaceri: În cazul unei fuziuni, achiziții sau vânzări a tuturor sau unei părți din activele noastre."
-    },
-    "conduct": {
-      "title": "4. Cookie-uri și Tehnologii de Urmărire",
-      "content": "Utilizăm cookie-uri și tehnologii de urmărire similare pentru a vă îmbunătăți experiența. Cookie-urile sunt fișiere mici stocate pe dispozitivul dumneavoastră care ne ajută să vă recunoaștem și să îmbunătățim funcționalitatea site-ului web. Puteți controla cookie-urile prin setările browserului, dar dezactivarea lor poate limita anumite caracteristici ale site-ului nostru web."
-    },
-    "disclaimer": {
-      "title": "5. Securitatea Datelor",
-      "content": "Implementăm măsuri tehnice și organizatorice adecvate pentru a vă proteja informațiile de accesul neautorizat, dezvăluire sau distrugere. Cu toate acestea, nicio transmisie de date pe internet nu este complet sigură, și nu putem garanta o securitate absolută."
-    },
-    "liability": {
-      "title": "6. Drepturile Dumneavoastră",
-      "content": "În funcție de jurisdicția dumneavoastră, puteți avea următoarele drepturi privind informațiile personale: \nAccesarea informațiilor personale și solicitarea unei copii, \nCorectarea sau actualizarea informațiilor incorecte, \nSolicitarea ștergerii informațiilor, \nObiecția la prelucrare sau restricționarea prelucrării informațiilor, \nRetragerea consimțământului acolo unde prelucrarea se bazează pe consimțământul dumneavoastră, \nPentru a vă exercita aceste drepturi, \ncontactați-ne la support@quant-apps.com."
-    },
-    "thirdParty": {
-      "title": "7. Linkuri către Terți",
-      "content": "Site-ul nostru web poate conține linkuri către site-uri web ale terților. Nu suntem responsabili pentru practicile de confidențialitate sau conținutul acestor site-uri externe."
-    },
-    "termination": {
-      "title": "8. Confidențialitatea Copiilor",
-      "content": "Serviciile noastre nu sunt direcționate către persoane sub vârsta de 18 ani. Nu colectăm în mod conștient informații personale de la copii. Dacă credeți că am colectat fără să vrem informații de la un copil, vă rugăm să ne contactați pentru a le șterge."
-    },
-    "governing": {
-      "title": "9. Modificări la Această Politică de Confidențialitate",
-      "content": "Putem actualiza această Politică de Confidențialitate din când în când. Orice modificări vor fi postate pe această pagină cu o dată de intrare în vigoare actualizată. Continuarea utilizării serviciilor noastre după efectuarea modificărilor indică acceptarea politicii actualizate."
-    },
-    "contact": {
-      "title": "10. Contactați-ne",
-      "content": "Pentru orice întrebări sau preocupări legate de această Politică de Confidențialitate, vă rugăm să ne contactați la:\nEmail: support@quant-apps.com\nMoldova, Republica Moldova"
-    }
-  },
-  "outro": "Vă mulțumim pentru încrederea acordată Quant-Apps."
+    "outro": "Vă mulțumim pentru încrederea acordată Quant-Apps."
   },
   "terms-of-use": {
     "title": "Termeni de Utilizare | Informații Legale & Drepturile Utilizatorilor - Quant apps",
@@ -581,160 +581,160 @@
   },
   "home": {
     "title": "Aplicații iOS & Web Personalizate | Design UI/UX - Quant-Apps",
-    "description": "Quant-Apps oferă aplicații mobile, soluții CRM și design UI/UX pentru a crește eficiența afacerii tale.",
+    "description": "Quant-Apps oferă aplicații mobile, soluții CRM și design UI/UX pentru a crește eficiența afacerii dvs. Explorați serviciile noastre complete și aflați mai multe despre echipa noastră.",
     "hero": {
-      "title": "Aplicații web și mobile + soluții CRM pentru dezvoltarea afacerii tale",
+      "title": "Aplicații Web & Mobile + Soluții CRM pentru a Impulsiona Afacerea Dvs.",
       "ipadAlt": "ipad",
-      "watchAlt": "watch video button"
+      "watchAlt": "buton vizionare video"
     },
     "trusted": {
-      "title": "De încredere pentru peste 20 de companii",
+      "title": "De Încredere pentru Peste 20 de Companii",
       "companies": {
-        "rye": "RYE Country Day School logo",
-        "vistage": "Vistage logo",
-        "scriptpro": "ScriptPro logo",
-        "hiiq": "HI-IQ logo",
-        "fordham": "Fordham University logo"
+        "rye": "Logo RYE Country Day School",
+        "vistage": "Logo Vistage",
+        "scriptpro": "Logo ScriptPro",
+        "hiiq": "Logo HI-IQ",
+        "fordham": "Logo Fordham University"
       }
     },
     "sections": {
       "services": {
         "title": "Serviciile Noastre",
-        "subtitle": "Serviciile Noastre"
+        "subtitle": "Aplicații mobile personalizate create pentru a amplifica impactul brandului dvs."
       },
       "reasons": {
-        "title": "De ce să alegi Quant-Apps?",
-        "subtitle": "Descoperă inovația digitală cu echipa noastră de experți. Creăm soluții IT de înaltă performanță, care oferă rezultate maxime, securitate ridicată și o experiență intuitivă pentru utilizatori."
+        "title": "De Ce Să Alegeți Quant-Apps?",
+        "subtitle": "Deblocați excelența digitală cu echipa noastră de experți, creând soluții de înaltă performanță concepute pentru rezultate remarcabile și experiențe de utilizare fără probleme."
       },
       "reviews": {
-        "title": "Ce spun clienții noștri",
-        "subtitle": "La Quant-Apps, dezvoltăm soluții digitale de înaltă calitate care ajută afacerile să crească și să obțină succes. Descoperă părerile clienților noștri mulțumiți!"
+        "title": "Ce Spun Clienții Noștri Despre Noi",
+        "subtitle": "La Quant-Apps, oferim soluții digitale de top care asigură succesul. Ascultați clienții noștri mulțumiți!"
       },
       "faqs": {
-        "title": "Întrebări frecvente",
-        "subtitle": "Ai întrebări? Contactează echipa noastră la support@quant-apps.com"
+        "title": "Întrebări Frecvente",
+        "subtitle": "Mai aveți întrebări? Contactați Echipa noastră prin support@quant-apps.com"
       },
       "cta": {
-        "title": "Ești gata de un nou proiect?",
-        "subtitle": "Hai să creăm împreună soluții digitale unice, personalizate prin dezvoltare și design, adaptate nevoilor afacerii tale.",
-        "button": "Începe proiectul"
+        "title": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
+        "subtitle": "Să dăm viață ideilor dvs. cu soluții personalizate de dezvoltare și design adaptate nevoilor dvs.",
+        "button": "Începeți Proiectul"
       }
     },
     "services": {
       "uiux": {
         "title": "UI/UX",
-        "text": "Creăm interfețe vizual atractive și ușor de utilizat, care îmbunătățesc experiența utilizatorului, asigurând navigare fluidă și interacțiuni captivante în <strong>dezvoltarea aplicațiilor web</strong> și <strong>dezvoltarea aplicațiilor mobile</strong>. Oferim un design intuitiv și performant, care atrage utilizatorii și încurajează implicarea."
+        "text": "Creăm interfețe vizual uimitoare, prietenoase cu utilizatorii, care îmbunătățesc ușurința în utilizare, asigurând navigare fără probleme și experiențe captivante în <strong>servicii de dezvoltare de aplicații web</strong> și <strong>dezvoltare de aplicații mobile</strong>, oferind design-uri intuitive, de înaltă performanță care captivează utilizatorii și stimulează interacțiunea. Verificați <services>serviciile noastre de design UI/UX</services> pentru mai multe detalii."
       },
       "mobile": {
-        "title": "Dezvoltare aplicații iOS și Android",
-        "text": "Dezvoltăm soluții performante pentru <strong>dezvoltare aplicații iOS</strong> și <strong>dezvoltare aplicații Android</strong>, optimizate pentru viteză, securitate și scalabilitate. Asigurăm funcționalitate fără probleme, experiență îmbunătățită pentru utilizatori și performanță robustă. Soluțiile noastre sunt proiectate pentru a gestiona trafic intens, a oferi interacțiuni fluide și a furniza o arhitectură sigură și fiabilă pentru companiile care vizează creșterea pe termen lung."
+        "title": "Dezvoltare Aplicații iOS & Android",
+        "text": "Dezvoltăm soluții de înaltă performanță pentru <strong>dezvoltare de aplicații iOS</strong> și <strong>dezvoltare de aplicații Android</strong> optimizate pentru viteză, securitate și scalabilitate, asigurând funcționalitate fără probleme, experiență de utilizator îmbunătățită și performanță robustă. <services>Serviciile noastre de dezvoltare mobilă</services> sunt concepute pentru a gestiona trafic intens, a oferi interacțiuni fluide și a furniza o arhitectură sigură și fiabilă pentru afacerile care vizează creșterea și succesul pe termen lung."
       },
       "web": {
-        "title": "Dezvoltare website-uri",
-        "text": "Creăm website-uri performante, optimizate SEO, proiectate pentru viteză, securitate și implicarea utilizatorilor. Soluțiile noastre de <strong>dezvoltare website corporate</strong> oferă funcționalitate impecabilă pe toate dispozitivele, îmbunătățind experiența utilizatorului și ratele de conversie. De la design personalizat la soluții scalabile, construim website-uri moderne, rapide și sigure, care sprijină creșterea afacerii și vizibilitatea online."
+        "title": "Dezvoltare Website",
+        "text": "Creăm site-uri web optimizate SEO, de înaltă performanță, concepute pentru viteză, securitate și implicarea utilizatorilor. <strong>Dezvoltarea noastră de site-uri web corporative</strong> responsive asigură funcționalitate fără probleme pe toate dispozitivele, îmbunătățind experiența utilizatorilor și ratele de conversie. De la design-uri personalizate la soluții scalabile, construim site-uri web moderne, rapide și sigure care stimulează creșterea afacerii și vizibilitatea online. Vizualizați <projects>proiectele noastre de website-uri de succes</projects> pentru a vedea expertiza noastră în acțiune."
       },
       "crm": {
         "title": "Soluții CRM",
-        "text": "Dezvoltăm soluții personalizate de <strong>CRM development</strong> pentru a optimiza operațiunile afacerii, a îmbunătăți relațiile cu clienții și a crește eficiența fluxului de lucru. Sistemele noastre CRM sunt scalabile și sigure, integrându-se perfect cu instrumentele existente, oferind automatizare, informații valoroase și gestionare centralizată pentru a îmbunătăți productivitatea, a optimiza procesele de vânzări și a stimula creșterea afacerii."
+        "text": "Dezvoltăm soluții personalizate de <strong>dezvoltare CRM</strong> pentru a eficientiza operațiunile de afaceri, a îmbunătăți relațiile cu clienții și a optimiza eficiența fluxului de lucru. <services>Serviciile noastre CRM</services> se integrează perfect cu instrumentele dvs. existente, oferind automatizare, informații bazate pe date și management centralizat pentru a crește productivitatea, a optimiza procesele de vânzări și a stimula creșterea afacerii."
       },
       "crossPlatform": {
-        "title": "Dezvoltare cross-platform",
-        "text": "Suntem specializați în <strong>dezvoltare aplicații cross-platform</strong>, creând aplicații mobile performante care funcționează impecabil pe <strong>iOS</strong> și <strong>Android</strong>. Folosind framework-uri moderne precum React Native și Flutter, livrăm aplicații eficiente din punct de vedere al costurilor, scalabile și ușor de utilizat, cu o experiență apropiată de cea nativă, asigurând o acoperire extinsă a pieței, dezvoltare rapidă și mentenanță simplificată."
+        "title": "Dezvoltare Cross-Platform",
+        "text": "Ne specializăm în <strong>dezvoltare de aplicații cross-platform</strong>, creând aplicații mobile de înaltă performanță care rulează fără probleme pe <strong>dezvoltare de aplicații iOS</strong> și <strong>dezvoltare de aplicații Android</strong>. Utilizând framework-uri moderne precum React Native și Flutter, oferim aplicații rentabile, scalabile și ușor de utilizat cu o experiență similară cu cea nativă, asigurând o acoperire largă a pieței, dezvoltare mai rapidă și întreținere simplificată. Aflați despre <process>procesul nostru de dezvoltare</process> pentru a înțelege cum construim soluții cross-platform excepționale."
       },
       "support": {
-        "title": "Suport și mentenanță",
-        "text": "Oferim suport și mentenanță continuă pentru a menține funcționarea optimă a <strong>dezvoltării frontend și backend</strong>, aplicațiilor și website-urilor. Serviciile noastre includ monitorizarea performanței, actualizări de securitate, remedieri de erori și îmbunătățiri ale funcționalităților pentru a asigura performanță optimă, a minimiza timpii de nefuncționare și a îmbunătăți experiența utilizatorilor, permițând afacerii dumneavoastră să rămână sigură, actualizată și scalabilă."
+        "title": "Suport & Mentenanță",
+        "text": "Oferim suport și mentenanță continuă pentru a menține <strong>dezvoltarea frontend și backend</strong>, aplicațiile și site-urile dvs. web funcționale fără probleme. <services>Serviciile noastre de suport</services> includ monitorizarea performanței, actualizări de securitate, remedieri de buguri și îmbunătățiri ale funcționalităților pentru a asigura funcționalitate optimă, minimizarea timpului de nefuncționare și îmbunătățirea experienței utilizatorilor, permițând afacerii dvs. să rămână securizată, actualizată și scalabilă."
       }
-    },    
+    },
     "reasons": {
       "expert": {
-        "title": "Soluții IT de top",
-        "text": "Echipa noastră utilizează expertiză avansată și tehnologie de ultimă generație pentru a crea produse digitale moderne. Urmând tendințele actuale și cele mai bune practici, dezvoltăm soluții IT inovatoare, scalabile și sigure, adaptate nevoilor afacerii tale."
+        "title": "Soluții Software Expert",
+        "text": "Profesioniștii noștri calificați valorifică expertiza profundă în industrie pentru a construi produse digitale de ultimă generație. Rămânând în fața tendințelor și celor mai bune practici, oferim soluții inovatoare, scalabile și sigure, adaptate nevoilor afacerii dvs. Întâlniți <aboutUs>echipa noastră de experți</aboutUs> de dezvoltatori și designeri."
       },
       "client": {
-        "title": "Strategie digitală orientată spre client",
-        "text": "Luăm în considerare obiectivele de afaceri ale clienților, adaptând dezvoltarea web și mobilă la strategiile acestora. Printr-o analiză de piață detaliată și o abordare interactivă, creăm soluții IT care îmbunătățesc experiența utilizatorilor, cresc implicarea și maximizează profitabilitatea."
+        "title": "Strategie Digitală Centrată pe Client",
+        "text": "Prioritizăm obiectivele afacerii dvs., personalizând serviciile noastre de dezvoltare web și mobile pentru a se alinia cu viziunea dvs. Prin colaborare strategică și cunoștințe profunde despre piață, creăm soluții centrate pe utilizator care stimulează implicarea și succesul. <process>Abordarea noastră centrată pe client</process> asigură că livrăm exact ceea ce aveți nevoie."
       },
       "results": {
-        "title": "Dezvoltare axată pe rezultate",
-        "text": "Scopul nostru este livrarea unor rezultate măsurabile. Combinăm expertiza tehnică cu soluții creative, dezvoltând aplicații mobile, platforme web și sisteme CRM care îmbunătățesc experiența utilizatorilor, eficiența și creșterea afacerii tale."
+        "title": "Dezvoltare Orientată spre Rezultate",
+        "text": "Misiunea noastră principală este de a oferi rezultate măsurabile. Prin combinarea expertizei tehnice cu rezolvarea creativă a problemelor, dezvoltăm aplicații, site-uri web și sisteme CRM de înaltă performanță care îmbunătățesc experiențele utilizatorilor, cresc eficiența și accelerează creșterea afacerii. Răsfoiți <projects>portofoliul nostru de proiecte de succes</projects> pentru a vedea rezultatele pe care le-am obținut."
       },
       "partnership": {
-        "title": "Parteneriat digital pe termen lung",
-        "text": "Construim relații durabile cu clienții noștri, oferind mentenanță, suport continuu și actualizări constante ale soluțiilor IT. Abordarea noastră garantează securitate, fiabilitate și funcționalitate optimă, ajutând afacerea ta să rămână competitivă și inovatoare."
+        "title": "Parteneriat Digital pe Termen Lung",
+        "text": "Credem în relații de durată cu clienții, oferind suport continuu, mentenanță și actualizări pentru produsele dvs. digitale. Angajamentul nostru asigură funcționalitate fără probleme, securitate și performanță, ajutând afacerea dvs. să rămână competitivă și inovatoare. Sunteți interesat să vă alăturați echipei noastre? Verificați <careers>oportunitățile noastre de carieră</careers>."
       }
     },
     "reviews": {
       "sarah": {
-        "content": "Great! So quick and easy to work with. We are super satisfied so far and will continue to work.",
+        "content": "Minunat! Atât de rapid și ușor de lucrat cu ei. Suntem foarte mulțumiți până acum și vom continua să lucrăm cu <services>serviciile lor de dezvoltare</services>.",
         "name": "Sarah Istwany",
-        "description": "Representing Rye Country Day School",
+        "description": "Reprezentând Rye Country Day School",
         "link": "https://www.ryecountryday.org/"
       },
       "barnabas": {
-        "content": "It was great working. Definitely will be using again, already in the process of placing another order!",
+        "content": "A fost grozav să lucrez cu echipa Quant-Apps. <process>Procesul lor de dezvoltare</process> este eficient și transparent. Cu siguranță voi apela din nou la ei, sunt deja în proces de a plasa o altă comandă!",
         "name": "Barnabas Willis",
-        "description": "Client from Fiverr",
+        "description": "Client de pe Fiverr",
         "link": "https://www.ryecountryday.org/"
       },
       "leslie": {
-        "content": "Very good work looking forward to working together again.",
+        "content": "Muncă foarte bună, aștept cu nerăbdare să lucrez din nou cu ei. <services>Serviciile lor de aplicații mobile</services> au depășit așteptările noastre.",
         "name": "Leslie Alexander",
-        "description": "Client from Fiverr",
+        "description": "Client de pe Fiverr",
         "link": "https://www.ryecountryday.org/"
       },
       "draft": {
-        "content": "10 out of 10 will recommend!",
+        "content": "10 din 10, voi recomanda! <projects>Livrarea proiectului</projects> a fost impecabilă.",
         "name": "Draft Pick Design",
-        "description": "Client from Fiverr",
+        "description": "Client de pe Fiverr",
         "link": "https://www.ryecountryday.org/"
       },
       "more": {
         "text": "Mai multe recenzii pot fi vizualizate pe",
         "fiverr": {
           "link": "https://www.fiverr.com/drimba3?public_mode=true",
-          "alt": "Fiverr logo"
+          "alt": "Logo Fiverr"
         }
       }
     },
-   "faqs": {
+    "faqs": {
       "services": {
         "question": "Ce servicii oferă Quant-Apps?",
-        "answer": "Quant-Apps se specializează în <strong>dezvoltarea de aplicații mobile</strong> pentru iOS, <strong>dezvoltarea de aplicații Android</strong>, soluții <strong>de dezvoltare de aplicații cross-platform</strong> cu React Native, <strong>dezvoltare CRM</strong>, design UI/UX și creare de logo-uri. Oferim soluții personalizate, de la concept și design până la implementare completă și optimizare."
+        "answer": "Quant-Apps se specializează în <strong>dezvoltare de aplicații mobile</strong> pentru iOS, <strong>dezvoltare de aplicații Android</strong>, soluții de <strong>dezvoltare de aplicații cross-platform</strong> cu React Native, <strong>dezvoltare CRM</strong>, design UI/UX și creare de logo-uri. Oferim <services>soluții digitale</services> personalizate, de la concept și design până la implementare completă și optimizare."
       },
       "custom": {
         "question": "Puteți construi o aplicație personalizată pentru afacerea mea?",
-        "answer": "Da! Lucrăm îndeaproape cu afacerile pentru a crea <strong>dezvoltare de aplicații iOS</strong>, <strong>dezvoltare personalizată de aplicații Android</strong> și soluții cross-platform care se aliniază cu brandul și nevoile dvs. unice. De la startup-uri la companii mari, dezvoltăm aplicații care vă ajută să ieșiți în evidență."
+        "answer": "Da! Lucrăm îndeaproape cu afacerile pentru a crea <strong>dezvoltare de aplicații iOS</strong>, <strong>dezvoltare personalizată de aplicații Android</strong> și soluții cross-platform care se aliniază cu brandul și nevoile dvs. unice. De la startup-uri la companii mari, dezvoltăm aplicații care vă ajută să ieșiți în evidență. Vizualizați <projects>proiectele noastre anterioare de aplicații</projects> pentru a vedea exemple ale muncii noastre."
       },
       "cost": {
         "question": "Cât costă dezvoltarea unei aplicații?",
-        "answer": "Costul dezvoltării unei aplicații variază în funcție de caracteristicile, complexitatea și cerințele aplicației. Oferim o estimare transparentă și personalizată care se potrivește bugetului și obiectivelor dvs. pentru <strong>dezvoltarea de aplicații iOS</strong>, aplicații Android, soluții <strong>de dezvoltare de aplicații cross-platform</strong> și sisteme CRM."
+        "answer": "Costul dezvoltării unei aplicații variază în funcție de caracteristicile, complexitatea și cerințele aplicației. Oferim o estimare transparentă și personalizată care se potrivește bugetului și obiectivelor dvs. pentru <strong>dezvoltare de aplicații iOS</strong>, aplicații Android, soluții de <strong>dezvoltare de aplicații cross-platform</strong> și sisteme CRM. <process>Procesul nostru de dezvoltare</process> include planificarea detaliată a costurilor."
       },
       "unique": {
         "question": "Ce diferențiază Quant-Apps?",
-        "answer": "La Quant-Apps, combinăm creativitatea cu expertiza tehnică. Co-fondatorul nostru, Romas Gutsu, și-a început cariera ca dezvoltator de aplicații iOS și Android și a devenit treptat CEO, conducând compania în crearea de <strong>servicii de dezvoltare de aplicații web</strong> inovatoare. Între timp, Veaceslav Soltan, co-fondatorul nostru, și-a început cariera ca designer grafic și a adus o abordare unică în proiectarea de soluții <strong>de dezvoltare de site-uri web corporative</strong> vizual atractive și ușor de utilizat."
+        "answer": "La Quant-Apps, combinăm creativitatea cu expertiza tehnică. Co-fondatorul nostru, Romas Gutsu, și-a început cariera ca dezvoltator de aplicații iOS și Android și treptat a devenit CEO, conducând compania în crearea de <strong>servicii inovatoare de dezvoltare de aplicații web</strong>. Între timp, Veaceslav Soltan, co-fondatorul nostru, și-a început cariera ca designer grafic și a adus o abordare unică în proiectarea de <strong>soluții de dezvoltare de site-uri web corporative</strong> vizual atractive și prietenoase cu utilizatorii. Aflați mai multe <aboutUs>despre echipa noastră</aboutUs> și abordarea noastră."
       },
       "platforms": {
         "question": "Pentru ce platforme dezvoltați?",
-        "answer": "Quant-Apps se specializează în dezvoltarea de aplicații mobile pentru iOS, <strong>dezvoltarea de aplicații Android</strong>, soluții cross-platform utilizând React Native, sisteme CRM, design UI/UX și creare de logo-uri. Oferim <strong>servicii de dezvoltare de site-uri de comerț electronic</strong> personalizate, de la concept și design până la implementare completă și optimizare. Quant-Apps dezvoltă aplicații pentru iOS, Android și oferă soluții <strong>de dezvoltare de aplicații cross-platform</strong> cu accent pe performanță excelentă, securitate și integrare cu ecosistemele Apple și Android."
+        "answer": "Quant-Apps se specializează în dezvoltarea de aplicații mobile pentru iOS, <strong>dezvoltare de aplicații Android</strong>, soluții cross-platform utilizând React Native, sisteme CRM, design UI/UX și creare de logo-uri. Oferim <strong>servicii personalizate de dezvoltare de site-uri web de comerț electronic</strong>, de la concept și design până la implementare completă și optimizare. Quant-Apps dezvoltă aplicații pentru iOS, Android și oferă soluții de <strong>dezvoltare de aplicații cross-platform</strong> cu accent pe performanță excelentă, securitate și integrare cu ecosistemele Apple și Android. Verificați <services>oferta completă de servicii</services>."
       },
       "timeline": {
         "question": "Cât timp durează dezvoltarea unei aplicații?",
-        "answer": "Timpul de dezvoltare depinde de complexitatea și caracteristicile aplicației. De obicei, durează de la 1 la 3 luni, inclusiv dezvoltarea de iOS, Android, soluții <strong>ale companiei de dezvoltare de aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, precum și design și testare."
+        "answer": "Timpul de dezvoltare depinde de complexitatea și caracteristicile aplicației. De obicei, durează de la 1 la 3 luni, inclusiv dezvoltarea de soluții iOS, Android, <strong>companie de dezvoltare de aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, precum și design și testare. <process>Calendarul nostru de dezvoltare</process> este optimizat pentru eficiență fără a compromite calitatea."
       },
       "support": {
         "question": "Oferiți suport după lansarea aplicației?",
-        "answer": "Da, oferim servicii de suport și întreținere continuă chiar și după lansarea aplicației dvs. Echipa noastră se asigură că <strong>aplicația dvs. mobilă nativă construită</strong> rămâne actualizată, securizată și funcționează fără probleme pe măsură ce actualizările iOS/Android sau nevoile utilizatorilor evoluează. Oferim suport comprehensiv pentru <strong>dezvoltare frontend și backend</strong>."
+        "answer": "Da, oferim servicii continue de suport și mentenanță chiar și după lansarea aplicației dvs. Echipa noastră se asigură că <strong>aplicația dvs. nativă</strong> rămâne actualizată, securizată și funcționează fără probleme pe măsură ce actualizările iOS/Android sau nevoile utilizatorilor evoluează. Oferim suport cuprinzător pentru <strong>dezvoltare frontend și backend</strong>. Citiți mai multe despre <services>serviciile noastre de mentenanță</services>."
       },
       "start": {
-        "question": "Cum încep cu Quant-Apps?",
-        "answer": "Începerea este simplă! Contactați-ne pentru o consultație gratuită unde vom discuta ideea dvs. de aplicație, obiectivele și cerințele. De acolo, vă vom ghida prin procesul <strong>de dezvoltare SaaS</strong> și vă vom ajuta să vă aduceți viziunea la viață cu expertiza noastră în <strong>dezvoltarea de aplicații mobile</strong>."
+        "question": "Cum încep colaborarea cu Quant-Apps?",
+        "answer": "Începerea este simplă! Contactați-ne pentru o consultație gratuită în care vom discuta despre ideea dvs. de aplicație, obiective și cerințe. De acolo, vă vom ghida prin procesul de <strong>dezvoltare saas</strong> și vă vom ajuta să dați viață viziunii dvs. cu expertiza noastră în <strong>dezvoltare de aplicații mobile</strong>. De asemenea, căutăm întotdeauna talente care să se alăture echipei noastre - verificați <careers>pozițiile noastre deschise</careers>."
       }
     },
-    "serviceButton" : "Află mai multe",
-    "reviewButton" : "Deschide site-ul"
+    "serviceButton": "Află Mai Multe",
+    "reviewButton": "Deschide Website"
   },
-"contactForm": {
+  "contactForm": {
     "fields": {
       "fullName": "Nume complet",
       "email": "Email",
@@ -747,12 +747,30 @@
       "selectedFiles": "Fișiere selectate:"
     },
     "services": [
-      { "id": "web-dev", "label": "Dezvoltare web" },
-      { "id": "crm-dev", "label": "Dezvoltare CRM" },
-      { "id": "app-dev", "label": "Dezvoltare aplicații mobile" },
-      { "id": "server", "label": "Servere/Backend" },
-      { "id": "ui-ux", "label": "Design UI/UX" },
-      { "id": "others", "label": "Altele" }
+      {
+        "id": "web-dev",
+        "label": "Dezvoltare web"
+      },
+      {
+        "id": "crm-dev",
+        "label": "Dezvoltare CRM"
+      },
+      {
+        "id": "app-dev",
+        "label": "Dezvoltare aplicații mobile"
+      },
+      {
+        "id": "server",
+        "label": "Servere/Backend"
+      },
+      {
+        "id": "ui-ux",
+        "label": "Design UI/UX"
+      },
+      {
+        "id": "others",
+        "label": "Altele"
+      }
     ],
     "placeholders": {
       "input": "Scrieți aici"

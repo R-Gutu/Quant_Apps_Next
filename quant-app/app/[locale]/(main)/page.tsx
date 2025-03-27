@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 import VideoComponent from "./_components/VideoComponent"
 import { strong } from "@/lib/utils/utils"
 import { ReactNode } from "react"
+import { s } from "framer-motion/m"
 
 
 export default async function Page() {
@@ -85,32 +86,32 @@ export default async function Page() {
         {
             icon: "/images/icons/stars.svg",
             title: t('reasons.expert.title'),
-            text: t('reasons.expert.text'),
+            text: t.rich('reasons.expert.text', strong),
             className: "border-b-[1px] border-r-[1px] border-solid border-[#6A65FF1A]"
         },
         {
             icon: "/images/icons/communication.svg",
             title: t('reasons.client.title'),
-            text: t('reasons.client.text'),
+            text: t.rich('reasons.client.text', strong),
             className: "border-b-[1px] border-solid border-[#6A65FF1A]"
         },
         {
             icon: "/images/icons/stats.svg",
             title: t('reasons.results.title'),
-            text: t('reasons.results.text'),
+            text: t.rich('reasons.results.text', strong),
             className: "border-r-[1px] border-solid border-[#6A65FF1A]"
         },
         {
             icon: "/images/icons/case.svg",
             title: t('reasons.partnership.title'),
-            text: t('reasons.partnership.text'),
+            text: t.rich('reasons.partnership.text', strong),
             className: "max-[900px]:!border-0"
         }
     ];
 
 
     interface ReviewsType {
-        content: string,
+        content: ReactNode,
         name: string,
         src: string,
         description: string,
@@ -121,7 +122,7 @@ export default async function Page() {
 
     const reviews: ReviewsType[] = [
         {
-            content: t('reviews.sarah.content'),
+            content: t.rich('reviews.sarah.content', strong),
             name: t('reviews.sarah.name'),
             src: "/images/icons/rye_school.svg",
             description: t('reviews.sarah.description'),
@@ -129,7 +130,7 @@ export default async function Page() {
             className: "border-r-[1px] border-solid border-[#6A65FF1A]"
         },
         {
-            content: t('reviews.barnabas.content'),
+            content: t.rich('reviews.barnabas.content', strong),
             name: t('reviews.barnabas.name'),
             src: "/images/icons/fiverr.svg",
             description: t('reviews.barnabas.description'),
@@ -137,7 +138,7 @@ export default async function Page() {
             link: "https://www.fiverr.com/drimba3?public_mode=true"
         },
         {
-            content: t('reviews.leslie.content'),
+            content: t.rich('reviews.leslie.content', strong),
             name: t('reviews.leslie.name'),
             src: "/images/icons/fiverr.svg",
             description: t('reviews.leslie.description'),
@@ -146,7 +147,7 @@ export default async function Page() {
             className: "border-r-[1px] border-solid border-[#6A65FF1A] min-[1150px]:[&>div]:mb-[100px]"
         },
         {
-            content: t('reviews.draft.content'),
+            content: t.rich('reviews.draft.content', strong),
             name: t('reviews.draft.name'),
             src: "/images/icons/fiverr.svg",
             description: t('reviews.draft.description'),

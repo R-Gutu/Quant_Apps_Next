@@ -1,7 +1,8 @@
 import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server";
 import Image from "next/image"
-export default async function Review({ content, src, name, description, imgHeight=70, className, link }: { content: string, src: string, name: string, description: string, imgHeight?: number, className?: string, link: string }) {
+import { ReactNode } from "react";
+export default async function Review({ content, src, name, description, imgHeight=70, className, link }: { content: ReactNode, src: string, name: string, description: string, imgHeight?: number, className?: string, link: string }) {
     const t = await getTranslations("home");
     
     return (

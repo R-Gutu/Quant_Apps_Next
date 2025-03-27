@@ -42,7 +42,7 @@
     },
     "Design": {
       "title": "Design",
-      "text": "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs for <strong>build native mobile app</strong> and <strong>saas development</strong>. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences.",
+      "text": "At Quant-Apps, our design team is dedicated to crafting visually striking, user-focused designs for <strong>build native mobile app</strong> and <strong>saas development</strong>. We believe that exceptional design goes beyond aesthetics—it's about delivering seamless and intuitive user experiences. Learn more about our <process>design process</process> and <projects>previous design projects</projects>.",
       "button": "Our design services include:"
     },
     "UXDesign": {
@@ -74,7 +74,7 @@
     },
     "Engineering": {
       "title": "Engineering & Software Development Services",
-      "text": "We specialize in scalable, high-performance digital solutions using <strong>frontend and backend development</strong> with the latest technologies. Our expertise spans <strong>android app development</strong>, <strong>flutter app development company</strong> approach, and <strong>saas development</strong>.",
+      "text": "We specialize in scalable, high-performance digital solutions using <strong>frontend and backend development</strong> with the latest technologies. Our expertise spans <strong>android app development</strong>, <strong>flutter app development company</strong> approach, and <strong>saas development</strong>. Take a look at our <projects>completed engineering projects</projects> to see our capabilities.",
       "button": "Our engineering services include:"
     },
     "WebDevelopment": {
@@ -106,7 +106,7 @@
     },
     "ProjectManagement": {
       "title": "Project Management for Mobile & Web Development",
-      "text": "Our project management services ensure seamless execution of <strong>digital solutions</strong>, from planning to deployment. We follow agile methodologies for <strong>cross platform app development</strong>.",
+      "text": "Our <process>project management services</process> ensure seamless execution of <strong>digital solutions</strong>, from planning to deployment. We follow agile methodologies for <strong>cross platform app development</strong>. <aboutUs>Our team of experienced project managers</aboutUs> works closely with clients throughout the development lifecycle.",
       "button": "Our project management services include:"
     },
     "StrategicPlanning": {
@@ -133,7 +133,7 @@
         "block1": "System updates for <strong>saas development</strong>",
         "block2": "Cloud infrastructure monitoring for <strong>CRM development</strong>",
         "block3": "Customer support integration for <strong>ecommerce website development services</strong>",
-        "block4": "Scalability consulting for <strong>build native mobile app</strong> growth"
+        "block4": "Scalability consulting for <strong>build native mobile app</strong> growth. Interested in joining our team? Check out our <careers>current job openings</careers>."
       }
     }
   },
@@ -404,7 +404,7 @@
       "buttonText": "Start Project"
     }
   },
-"careers": {
+  "careers": {
     "title": "Careers at Quant apps | Join Our Tech Team",
     "description": "Looking for an exciting career in mobile and web development? Join Quant apps and work on cutting-edge digital solutions.",
     "banner": {
@@ -581,7 +581,7 @@
   },
   "home": {
     "title": "Custom iOS & Web Apps | UI/UX Design - Quant-Apps",
-    "description": "Quant-Apps delivers mobile apps, CRM solutions, and UI/UX design to boost your business efficiency.",
+    "description": "Quant-Apps delivers mobile apps, CRM solutions, and UI/UX design to boost your business efficiency. Explore our comprehensive services and learn more about our team.",
     "hero": {
       "title": "Web & Mobile Apps + CRM Solutions to Power Your Business",
       "ipadAlt": "ipad",
@@ -623,68 +623,68 @@
     "services": {
       "uiux": {
         "title": "UI/UX",
-        "text": "We craft visually stunning, user-friendly interfaces that enhance usability, ensuring seamless navigation and engaging experiences across <strong>web app development services</strong> and <strong>mobile app development</strong>, delivering intuitive, high-performance designs that captivate users and drive interaction."
+        "text": "We craft visually stunning, user-friendly interfaces that enhance usability, ensuring seamless navigation and engaging experiences across <strong>web app development services</strong> and <strong>mobile app development</strong>, delivering intuitive, high-performance designs that captivate users and drive interaction. Check out our <services>UI/UX design services</services> for more details."
       },
       "mobile": {
         "title": "iOS & Android App Development",
-        "text": "We develop high-performance <strong>iOS app development</strong> and <strong>android app development</strong> solutions optimized for speed, security, and scalability, ensuring seamless functionality, enhanced user experience, and robust performance. Our solutions are designed to handle high traffic, deliver smooth interactions, and provide reliable, secure architecture for businesses aiming for long-term growth and success."
+        "text": "We develop high-performance <strong>iOS app development</strong> and <strong>android app development</strong> solutions optimized for speed, security, and scalability, ensuring seamless functionality, enhanced user experience, and robust performance. Our <services>mobile development services</services> are designed to handle high traffic, deliver smooth interactions, and provide reliable, secure architecture for businesses aiming for long-term growth and success."
       },
       "web": {
         "title": "Website Development",
-        "text": "We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive <strong>corporate website development</strong> ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility."
+        "text": "We create high-performance, SEO-optimized websites designed for speed, security, and user engagement. Our responsive <strong>corporate website development</strong> ensures seamless functionality across all devices, enhancing user experience and conversion rates. From custom designs to scalable solutions, we build modern, fast, and secure websites that drive business growth and online visibility. View our <projects>successful website projects</projects> to see our expertise in action."
       },
       "crm": {
         "title": "CRM Solutions",
-        "text": "We develop custom <strong>CRM development</strong> solutions to streamline business operations, enhance customer relationships, and improve workflow efficiency. Our scalable and secure CRM systems integrate seamlessly with your existing tools, providing automation, data insights, and centralized management to boost productivity, optimize sales processes, and drive business growth."
+        "text": "We develop custom <strong>CRM development</strong> solutions to streamline business operations, enhance customer relationships, and improve workflow efficiency. Our <services>CRM services</services> integrate seamlessly with your existing tools, providing automation, data insights, and centralized management to boost productivity, optimize sales processes, and drive business growth."
       },
       "crossPlatform": {
         "title": "Cross-Platform Development",
-        "text": "We specialize in <strong>cross platform app development</strong>, creating high-performance mobile apps that run seamlessly on <strong>iOS app development</strong> and <strong>android app development</strong>. Using modern frameworks like React Native and Flutter, we deliver cost-effective, scalable, and user-friendly applications with a native-like experience, ensuring broad market reach, faster development, and streamlined maintenance."
+        "text": "We specialize in <strong>cross platform app development</strong>, creating high-performance mobile apps that run seamlessly on <strong>iOS app development</strong> and <strong>android app development</strong>. Using modern frameworks like React Native and Flutter, we deliver cost-effective, scalable, and user-friendly applications with a native-like experience, ensuring broad market reach, faster development, and streamlined maintenance. Learn about our <process>development process</process> to understand how we build exceptional cross-platform solutions."
       },
       "support": {
         "title": "Support & Maintenance",
-        "text": "We provide ongoing support and maintenance to keep your <strong>frontend and backend development</strong>, applications, and websites running smoothly. Our services include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
+        "text": "We provide ongoing support and maintenance to keep your <strong>frontend and backend development</strong>, applications, and websites running smoothly. Our <services>support services</services> include performance monitoring, security updates, bug fixes, and feature enhancements to ensure optimal functionality, minimize downtime, and enhance user experience, allowing your business to stay secure, up-to-date, and scalable."
       }
-    },    
+    },
     "reasons": {
       "expert": {
         "title": "Expert Software Solutions",
-        "text": "Our skilled professionals leverage deep industry expertise to build cutting-edge digital products. Staying ahead with the latest trends and best practices, we deliver innovative, scalable, and secure solutions tailored to your business needs."
+        "text": "Our skilled professionals leverage deep industry expertise to build cutting-edge digital products. Staying ahead with the latest trends and best practices, we deliver innovative, scalable, and secure solutions tailored to your business needs. Meet our <aboutUs>expert team</aboutUs> of developers and designers."
       },
       "client": {
         "title": "Client-Focused Digital Strategy",
-        "text": "We prioritize your business goals, customizing our web and mobile development services to align with your vision. Through strategic collaboration and deep market insights, we create user-centric solutions that drive engagement and success."
+        "text": "We prioritize your business goals, customizing our web and mobile development services to align with your vision. Through strategic collaboration and deep market insights, we create user-centric solutions that drive engagement and success. Our <process>client-focused approach</process> ensures we deliver exactly what you need."
       },
       "results": {
         "title": "Results-Driven Development",
-        "text": "Our core mission is to deliver measurable results. By combining technical expertise with creative problem-solving, we develop high-performance apps, websites, and CRM systems that enhance user experiences, boost efficiency, and accelerate business growth."
+        "text": "Our core mission is to deliver measurable results. By combining technical expertise with creative problem-solving, we develop high-performance apps, websites, and CRM systems that enhance user experiences, boost efficiency, and accelerate business growth. Browse our <projects>portfolio of successful projects</projects> to see the results we've achieved."
       },
       "partnership": {
         "title": "Long-Term Digital Partnership",
-        "text": "We believe in lasting client relationships, providing continuous support, maintenance, and updates for your digital products. Our commitment ensures seamless functionality, security, and performance, helping your business stay competitive and innovative."
+        "text": "We believe in lasting client relationships, providing continuous support, maintenance, and updates for your digital products. Our commitment ensures seamless functionality, security, and performance, helping your business stay competitive and innovative. Interested in joining our team? Check out our <careers>career opportunities</careers>."
       }
     },
     "reviews": {
       "sarah": {
-        "content": "Great! So quick and easy to work with. We are super satisfied so far and will continue to work.",
+        "content": "Great! So quick and easy to work with. We are super satisfied so far and will continue to work with their <services>development services</services>.",
         "name": "Sarah Istwany",
         "description": "Representing Rye Country Day School",
         "link": "https://www.ryecountryday.org/"
       },
       "barnabas": {
-        "content": "It was great working. Definitely will be using again, already in the process of placing another order!",
+        "content": "It was great working with the Quant-Apps team. Their <process>development process</process> is efficient and transparent. Definitely will be using again, already in the process of placing another order!",
         "name": "Barnabas Willis",
         "description": "Client from Fiverr",
         "link": "https://www.ryecountryday.org/"
       },
       "leslie": {
-        "content": "Very good work looking forward to working together again.",
+        "content": "Very good work looking forward to working together again. Their <services>mobile app services</services> exceeded our expectations.",
         "name": "Leslie Alexander",
         "description": "Client from Fiverr",
         "link": "https://www.ryecountryday.org/"
       },
       "draft": {
-        "content": "10 out of 10 will recommend!",
+        "content": "10 out of 10 will recommend! The <projects>project delivery</projects> was flawless.",
         "name": "Draft Pick Design",
         "description": "Client from Fiverr",
         "link": "https://www.ryecountryday.org/"
@@ -697,40 +697,40 @@
         }
       }
     },
-"faqs": {
+    "faqs": {
       "services": {
         "question": "What services does Quant-Apps provide?",
-        "answer": "Quant-Apps specializes in <strong>mobile app development</strong> for iOS, <strong>Android app development</strong>, <strong>cross platform app development</strong> solutions with React Native, <strong>CRM development</strong>, UI/UX design, and logo creation. We offer customized solutions, from concept and design to full deployment and optimization."
+        "answer": "Quant-Apps specializes in <strong>mobile app development</strong> for iOS, <strong>Android app development</strong>, <strong>cross platform app development</strong> solutions with React Native, <strong>CRM development</strong>, UI/UX design, and logo creation. We offer customized <services>digital solutions</services>, from concept and design to full deployment and optimization."
       },
       "custom": {
         "question": "Can you build a custom app for my business?",
-        "answer": "Yes! We work closely with businesses to create <strong>iOS app development</strong>, <strong>custom android app development</strong>, and cross-platform solutions that align with your brand and unique needs. From startups to large companies, we develop apps that help you stand out."
+        "answer": "Yes! We work closely with businesses to create <strong>iOS app development</strong>, <strong>custom android app development</strong>, and cross-platform solutions that align with your brand and unique needs. From startups to large companies, we develop apps that help you stand out. View our <projects>previous app projects</projects> to see examples of our work."
       },
       "cost": {
         "question": "How much does app development cost?",
-        "answer": "The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for <strong>iOS app development</strong>, Android apps, <strong>cross platform app development</strong> solutions, and CRM systems."
+        "answer": "The cost of app development varies depending on the app's features, complexity, and requirements. We provide a transparent and customized estimate that fits your budget and goals for <strong>iOS app development</strong>, Android apps, <strong>cross platform app development</strong> solutions, and CRM systems. Our <process>development process</process> includes detailed cost planning."
       },
       "unique": {
         "question": "What sets Quant-Apps?",
-        "answer": "At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative <strong>web app development services</strong>. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly <strong>corporate website development</strong> solutions."
+        "answer": "At Quant-Apps, we combine creativity with technical expertise. Our co-founder, Romas Gutsu, started his career as an iOS and Android app developer and gradually became the CEO, leading the company in creating innovative <strong>web app development services</strong>. Meanwhile, Veaceslav Soltan, our co-founder, began his career as a graphic designer and brought a unique approach to designing visually attractive and user-friendly <strong>corporate website development</strong> solutions. Learn more <aboutUs>about our team</aboutUs> and our approach."
       },
       "platforms": {
         "question": "What platforms do you develop for?",
-        "answer": "Quant-Apps specializes in developing mobile applications for iOS, <strong>Android app development</strong>, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored <strong>ecommerce website development services</strong>, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides <strong>cross platform app development</strong> solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems."
+        "answer": "Quant-Apps specializes in developing mobile applications for iOS, <strong>Android app development</strong>, cross-platform solutions using React Native, CRM systems, UI/UX design, and logo creation. We offer tailored <strong>ecommerce website development services</strong>, from concept and design to full deployment and optimization. Quant-Apps develops apps for iOS, Android, and provides <strong>cross platform app development</strong> solutions with a focus on excellent performance, security, and integration with the Apple and Android ecosystems. Check out our <services>complete service offerings</services>."
       },
       "timeline": {
         "question": "How long does it take to develop an app?",
-        "answer": "Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, <strong>flutter app development company</strong> solutions, <strong>CRM development</strong>, as well as design and testing."
+        "answer": "Development time depends on the complexity and features of the app. Typically, it takes from 1 to 3 months, including the development of iOS, Android, <strong>flutter app development company</strong> solutions, <strong>CRM development</strong>, as well as design and testing. Our <process>development timeline</process> is optimized for efficiency without compromising quality."
       },
       "support": {
         "question": "Do you offer support after the app is launched?",
-        "answer": "Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your <strong>build native mobile app</strong> stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve. We provide comprehensive <strong>frontend and backend development</strong> support."
+        "answer": "Yes, we offer ongoing support and maintenance services even after your app is launched. Our team ensures that your <strong>build native mobile app</strong> stays updated, secure, and runs smoothly as iOS/Android updates or user needs evolve. We provide comprehensive <strong>frontend and backend development</strong> support. Read more about our <services>maintenance services</services>."
       },
       "start": {
         "question": "How do I get started with Quant-Apps?",
-        "answer": "Getting started is simple! Contact us for a free consultation where we'll discuss your app idea, goals, and requirements. From there, we'll guide you through the <strong>saas development</strong> process and help bring your vision to life with our expertise in <strong>mobile app development</strong>."
+        "answer": "Getting started is simple! Contact us for a free consultation where we'll discuss your app idea, goals, and requirements. From there, we'll guide you through the <strong>saas development</strong> process and help bring your vision to life with our expertise in <strong>mobile app development</strong>. We're also always looking for talent to join our team - check out our <careers>open positions</careers>."
       }
-    }, 
+    },
     "serviceButton": "Learn More",
     "reviewButton": "Open Website"
   },

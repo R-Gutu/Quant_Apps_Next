@@ -8,9 +8,9 @@ export function cn(...inputs: ClassValue[]) {
 
 export const strong = {
   strong: (chunck: ReactNode) => <strong>{chunck}</strong>,
-  services: (chunck: ReactNode) => <Link href={'/services'} className="cursor-pointer">{chunck}</Link>,
-  careers: (chunck: ReactNode) => <Link href={'/careers'} className="cursor-pointer">{chunck}</Link>,
-  aboutUs: (chunck: ReactNode) => <Link href={'/about-us'} className="cursor-pointer">{chunck}</Link>,
-  projects: (chunck: ReactNode) => <Link href={'/projects'} className="cursor-pointer">{chunck}</Link>,
-  process: (chunck: ReactNode) => <Link href={'/process'} className="cursor-pointer">{chunck}</Link>,
+  services: (chunck: ReactNode) => <Link href={'/services'} className="cursor-pointer text-bold">{chunck}</Link>,
+  careers: (chunck: ReactNode) => <Link href={'/careers'} className="cursor-pointer text-bold">{chunck}</Link>,
+  aboutUs: (chunck: ReactNode) => <Link href={'/about-us'} className="cursor-pointer text-bold">{chunck}</Link>,
+  projects: (chunck: ReactNode) => <Link href={'/projects'} className="cursor-pointer text-bold">{chunck}</Link>,
+  process: (chunck: ReactNode) => <Link href={'/process'} className="cursor-pointer text-bold">{chunck}</Link>,
 }

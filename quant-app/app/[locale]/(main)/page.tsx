@@ -22,7 +22,6 @@ export async function generateMetadata(): Promise<Metadata> {
 import VideoComponent from "./_components/VideoComponent"
 import { strong } from "@/lib/utils/utils"
 import { ReactNode } from "react"
-import { s } from "framer-motion/m"
 
 
 export default async function Page() {

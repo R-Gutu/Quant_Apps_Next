@@ -39,9 +39,9 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
           <motion.ul 
             ref={ref as React.RefObject<HTMLUListElement>} 
             className={cn('absolute bg-black', {'translate-y-[-27px]': mobile})}
-            initial={{ opacity: 0, y: mobile ? -10 : 10, height: 0 }}
-            animate={{ opacity: 1, y: 0, height: 'auto' }}
-            exit={{ opacity: 0, y: mobile ? -10 : 10, height: 0 }}
+            initial={{ opacity: 0, y: -26, height: 0 }}
+            animate={{ opacity: 1, y: -26, height: 'auto' }}
+            exit={{ opacity: 0, y: 0, height: 0 }}
             transition={{ duration: 0.2 }}
           >
             {locales.map((locale, index) => (

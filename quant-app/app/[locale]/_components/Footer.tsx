@@ -88,7 +88,7 @@ const Footer = async () => {
             </div>
           </div>
           <div className="w-fit flex items-center justify-center text-[12px] font-normal leading-[14.52px] text-[#e1e1e6] opacity-75 max-mui-md:w-full max-mui-md:mt-10">
-            {`© ${new Date().getFullYear()} Quant-Apps. ${tFooter("AllRightsReserved")}`}
+            {`© ${new Date().getFullYear()} Quant-Applications. ${tFooter("AllRightsReserved")}`}
           </div>
         </div>
       </div>

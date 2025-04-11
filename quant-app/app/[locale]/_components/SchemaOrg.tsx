@@ -9,7 +9,7 @@ const jsonLd = {
         "https://www.facebook.com/profile.php?id=61571073299478",
         "https://www.instagram.com/quantapps_/",
         "https://www.linkedin.com/company/quant-apps",
-        "https://www.tiktok.com/@quantapps",
+        "https://www.tiktok.com/@quantapplications",
         "https://t.me/quantapps",
         "https://wa.me/37369882331"
     ],

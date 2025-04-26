@@ -8,6 +8,9 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { headers } from 'next/headers'
 import { Viewport } from 'next';
 import SchemaOrg from './_components/SchemaOrg';
+import Script from 'next/script'
+import ChatwootWidget from './_components/ChatwootWidget';
+
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -96,12 +99,15 @@ export default async function RootLayout({
       <body
         className="antialiased relative bg-[var(--bg-color)]"
       >
+       
         <SchemaOrg />
         <Providers>
           <AppToolbar />
           {children}
           <Footer />
+          <ChatwootWidget />
         </Providers>
+     
       </body>
       <GoogleAnalytics gaId="G-DK457M1DLQ" />
     </html>

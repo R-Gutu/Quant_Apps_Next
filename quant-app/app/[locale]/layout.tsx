@@ -8,7 +8,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { headers } from 'next/headers'
 import { Viewport } from 'next';
 import SchemaOrg from './_components/SchemaOrg';
-import Script from 'next/script'
 import ChatwootWidget from './_components/ChatwootWidget';
 
 

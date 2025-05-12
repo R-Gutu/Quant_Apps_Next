@@ -37,11 +37,11 @@ export default async function Page() {
 
     const services: DataType[] = [
         {
-            icon: "/images/icons/brush.svg",
-            title: t('services.uiux.title'),
-            text: t.rich('services.uiux.text', strong),
-            ariaLabel: "Learn more about our UI/UX design services for intuitive and engaging user experiences.",
-            className: "border-b-[1px] border-r-[1px]"
+            icon: "/images/icons/dev.svg",
+            title: t('services.web.title'),
+            ariaLabel: "Learn more about our website development services for fast, secure, and SEO-optimized websites.",
+            text: t.rich('services.web.text', strong),
+            className: "border-b-[1px] max-[1150px]:border-r-[1px]"
         },
         {
             icon: "/images/icons/puzzle.svg",
@@ -51,18 +51,18 @@ export default async function Page() {
             className: "border-b-[1px] min-[1150px]:border-r-[1px]"
         },
         {
-            icon: "/images/icons/dev.svg",
-            title: t('services.web.title'),
-            ariaLabel: "Learn more about our website development services for fast, secure, and SEO-optimized websites.",
-            text: t.rich('services.web.text', strong),
-            className: "border-b-[1px] max-[1150px]:border-r-[1px]"
-        },
-        {
             icon: "/images/icons/stats.svg",
             title: t('services.crm.title'),
             ariaLabel: "Learn more about our custom CRM solutions for improving workflow efficiency and customer relationships.",
             text: t.rich('services.crm.text', strong),
             className: "min-[1150px]:border-r-[1px] max-[1150px]:border-b-[1px]"
+        },
+        {
+            icon: "/images/icons/brush.svg",
+            title: t('services.uiux.title'),
+            text: t.rich('services.uiux.text', strong),
+            ariaLabel: "Learn more about our UI/UX design services for intuitive and engaging user experiences.",
+            className: "border-b-[1px] border-r-[1px]"
         },
         {
             icon: "/images/icons/platforms.svg",
@@ -299,14 +299,14 @@ export default async function Page() {
                         />
                     ))}
                 </div>
-                <div className="absolute max-[1150px]:hidden bottom-[30px] right-[80px] flex text-white items-center gap-2">
+                {/* <div className="absolute max-[1150px]:hidden bottom-[30px] right-[80px] flex text-white items-center gap-2">
                     <p className="font-semibold text-[24px]">{t('reviews.more.text')}</p>
                     <Link href={t('reviews.more.fiverr.link')} legacyBehavior>
                         <a target="_blank">
                             <Image src="/images/icons/fiverr_purple.svg" className="btn" width={43} height={43} alt={t('reviews.more.fiverr.alt')} />
                         </a>
                     </Link>
-                </div>
+                </div> */}
             </div>
 
             <Banner

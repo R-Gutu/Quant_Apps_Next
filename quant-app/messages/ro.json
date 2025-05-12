@@ -588,7 +588,7 @@
       "watchAlt": "buton vizionare video"
     },
     "trusted": {
-      "title": "De Încredere pentru Peste 20 de Companii",
+      "title": "20+ companii au ales să lucreze cu noi",
       "companies": {
         "rye": "Logo RYE Country Day School",
         "vistage": "Logo Vistage",
@@ -600,11 +600,11 @@
     "sections": {
       "services": {
         "title": "Serviciile Noastre",
-        "subtitle": "Aplicații mobile personalizate create pentru a amplifica impactul brandului dvs."
+        "subtitle": "Dezvoltăm aplicația mobilă, platforma web sau sisteme CRM care îți pun în valoare brandul și te ajută să-ți crești afacerea."
       },
       "reasons": {
         "title": "De Ce Să Alegeți Quant-Apps?",
-        "subtitle": "Deblocați excelența digitală cu echipa noastră de experți, creând soluții de înaltă performanță concepute pentru rezultate remarcabile și experiențe de utilizare fără probleme."
+        "subtitle": "Pentru că ai nevoie de un partener de încredere care să-ți pună viziunea ta pe online."
       },
       "reviews": {
         "title": "Ce Spun Clienții Noștri Despre Noi",
@@ -622,28 +622,28 @@
     },
     "services": {
       "uiux": {
-        "title": "UI/UX",
-        "text": "Creăm interfețe vizual uimitoare, prietenoase cu utilizatorii, care îmbunătățesc ușurința în utilizare, asigurând navigare fără probleme și experiențe captivante în <strong>servicii de dezvoltare de aplicații web</strong> și <strong>dezvoltare de aplicații mobile</strong>, oferind design-uri intuitive, de înaltă performanță care captivează utilizatorii și stimulează interacțiunea. Verificați <services>serviciile noastre de design UI/UX</services> pentru mai multe detalii."
+        "title": "Design UX/UI",
+        "text": "Design intuitiv, modern și adaptat aplicațiilor tale. Experiență clară pentru utilizatori, funcționalitate fără blocaje."
       },
       "mobile": {
-        "title": "Dezvoltare Aplicații iOS & Android",
-        "text": "Dezvoltăm soluții de înaltă performanță pentru <strong>dezvoltare de aplicații iOS</strong> și <strong>dezvoltare de aplicații Android</strong> optimizate pentru viteză, securitate și scalabilitate, asigurând funcționalitate fără probleme, experiență de utilizator îmbunătățită și performanță robustă. <services>Serviciile noastre de dezvoltare mobilă</services> sunt concepute pentru a gestiona trafic intens, a oferi interacțiuni fluide și a furniza o arhitectură sigură și fiabilă pentru afacerile care vizează creșterea și succesul pe termen lung."
+        "title": "Aplicații mobile pentru iOS și Android",
+        "text": "Construim aplicații rapide, sigure și scalabile, care funcționează impecabil pe orice telefon. Performanță și experiență excelentă pentru utilizatori."
       },
       "web": {
-        "title": "Dezvoltare Website",
-        "text": "Creăm site-uri web optimizate SEO, de înaltă performanță, concepute pentru viteză, securitate și implicarea utilizatorilor. <strong>Dezvoltarea noastră de site-uri web corporative</strong> responsive asigură funcționalitate fără probleme pe toate dispozitivele, îmbunătățind experiența utilizatorilor și ratele de conversie. De la design-uri personalizate la soluții scalabile, construim site-uri web moderne, rapide și sigure care stimulează creșterea afacerii și vizibilitatea online. Vizualizați <projects>proiectele noastre de website-uri de succes</projects> pentru a vedea expertiza noastră în acțiune."
+        "title": "Dezvoltare website personalizat",
+        "text": "Automatizăm procesele și îmbunătățim relațiile cu clienții prin soluții CRM personalizate. Gestionare eficientă, vânzări mai mari."
       },
       "crm": {
         "title": "Soluții CRM",
-        "text": "Dezvoltăm soluții personalizate de <strong>dezvoltare CRM</strong> pentru a eficientiza operațiunile de afaceri, a îmbunătăți relațiile cu clienții și a optimiza eficiența fluxului de lucru. <services>Serviciile noastre CRM</services> se integrează perfect cu instrumentele dvs. existente, oferind automatizare, informații bazate pe date și management centralizat pentru a crește productivitatea, a optimiza procesele de vânzări și a stimula creșterea afacerii."
+        "text": "Automatizăm procesele și îmbunătățim relațiile cu clienții prin soluții CRM personalizate. Gestionare eficientă, vânzări mai mari."
       },
       "crossPlatform": {
-        "title": "Dezvoltare Cross-Platform",
-        "text": "Ne specializăm în <strong>dezvoltare de aplicații cross-platform</strong>, creând aplicații mobile de înaltă performanță care rulează fără probleme pe <strong>dezvoltare de aplicații iOS</strong> și <strong>dezvoltare de aplicații Android</strong>. Utilizând framework-uri moderne precum React Native și Flutter, oferim aplicații rentabile, scalabile și ușor de utilizat cu o experiență similară cu cea nativă, asigurând o acoperire largă a pieței, dezvoltare mai rapidă și întreținere simplificată. Aflați despre <process>procesul nostru de dezvoltare</process> pentru a înțelege cum construim soluții cross-platform excepționale."
+        "title": "Server personalizate",
+        "text": "Configurăm servere și CRM-uri potrivite pentru afacerea ta, care îți optimizează munca zilnică și îți cresc performanța."
       },
       "support": {
         "title": "Suport & Mentenanță",
-        "text": "Oferim suport și mentenanță continuă pentru a menține <strong>dezvoltarea frontend și backend</strong>, aplicațiile și site-urile dvs. web funcționale fără probleme. <services>Serviciile noastre de suport</services> includ monitorizarea performanței, actualizări de securitate, remedieri de buguri și îmbunătățiri ale funcționalităților pentru a asigura funcționalitate optimă, minimizarea timpului de nefuncționare și îmbunătățirea experienței utilizatorilor, permițând afacerii dvs. să rămână securizată, actualizată și scalabilă."
+        "text": "Te ajutăm să-ți menții aplicațiile actualizate, rapide și sigure. Ne ocupăm de mentenanță tehnică continuă și securitate."
       }
     },
     "reasons": {

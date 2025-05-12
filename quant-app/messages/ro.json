@@ -601,10 +601,10 @@
     "sections": {
       "services": {
         "title": "Serviciile Noastre",
-        "subtitle": "Dezvoltăm aplicația mobilă, platforma web sau sisteme CRM care îți pun în valoare brandul și te ajută să-ți crești afacerea."
+        "subtitle": "Dezvoltăm aplicații mobile, site-uri și platforme web sau sisteme CRM care îți pun în valoare brandul și te ajută să-ți crești afacerea."
       },
       "reasons": {
-        "title": "De Ce Să Alegeți Quant-Apps?",
+        "title": "De ce să alegi Quant-Apps?",
         "subtitle": "Pentru că ai nevoie de un partener de încredere care să-ți pună viziunea ta pe online."
       },
       "reviews": {
@@ -612,7 +612,7 @@
         "subtitle": "La Quant-Apps, dezvoltăm soluții digitale de înaltă calitate care ajută afacerile să crească și să obțină și mai mult succes. Descoperă părerile clienților noștri mulțumiți!"
       },
       "faqs": {
-        "title": "Întrebări Frecvente",
+        "title": "Întrebări frecvente",
         "subtitle": "Ai întrebări? Contactează echipa noastră la support@quant-apps.com"
       },
       "cta": {
@@ -643,8 +643,8 @@
         "text": "Configurăm servere și CRM-uri potrivite pentru afacerea ta, care îți optimizează munca zilnică și îți cresc performanța."
       },
       "support": {
-        "title": "Suport & Mentenanță",
-        "text": "Te ajutăm să-ți menții aplicațiile actualizate, rapide și sigure. Ne ocupăm de mentenanță tehnică continuă și securitate."
+        "title": "Suport și mentenanță",
+        "text": "Îți menținem aplicațiile actualizate. Vor fi mereu rapide și sigure. Securitatea datelor tale este o prioritate."
       }
     },
     "reasons": {
@@ -704,7 +704,7 @@
         "answer": "Suntem specializați în dezvoltarea de aplicații web funcționale pe mai multe platforme (cross-platform cu React Native), dezvoltare de aplicații iOS și Android, dezvoltare CRM, design UX/UI și creare de logo-uri. Oferim soluții digitale personalizate, de la concept și design până la implementare completă și optimizare. Quant-Apps se specializează în dezvoltare de aplicații mobile pentru iOS, dezvoltare de aplicații Android, soluții de dezvoltare de aplicații cross-platform cu React Native, dezvoltare CRM, design UI/UX și creare de logo-uri. Oferim soluții digitale personalizate, de la concept și design până la implementare completă și optimizare."
       },
       "custom": {
-        "question": "Puteți construi o aplicație personalizată pentru afacerea mea?",
+        "question": "Puteți dezvolta o aplicație personalizată pentru afacerea mea?",
         "answer": "Da! Realizăm aplicații web și mobile (iOS sau Android). Creăm soluții personalizate atât pentru startup-uri, cât și pentru companii mari! Dezvoltăm aplicații care vă pun afacerea în evidență. Vizualizați proiectele noastre anterioare de aplicații pentru a vedea exemple de aplicații."
       },
       "cost": {

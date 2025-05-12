@@ -6,7 +6,7 @@ import Review from "./_components/review"
 import Accordion from "./_components/accordion"
 import ProjectForm from "@/components/projectForm"
 import Blur from "@/components/Blur"
-import { Link } from "@/i18n/routing"
+// import { Link } from "@/i18n/routing"
 import { getTranslations } from "next-intl/server"
 import type { Metadata } from 'next'
 

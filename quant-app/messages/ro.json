@@ -24,7 +24,8 @@
     "Legal": "Informații juridice",
     "TermsOfUse": "Termeni de utilizare",
     "PrivacyPolicy": "Politica de confidențialitate",
-    "AllRightsReserved": "Toate drepturile rezervate."
+    "AllRightsReserved": "Toate drepturile rezervate.",
+    "StayConnected": "Urmărește-ne:"
   },
   "services": {
     "title": "Dezvoltare pentru Mobile & Web | Soluții CRM – Quant-Apps",
@@ -607,23 +608,23 @@
         "subtitle": "Pentru că ai nevoie de un partener de încredere care să-ți pună viziunea ta pe online."
       },
       "reviews": {
-        "title": "Ce Spun Clienții Noștri Despre Noi",
-        "subtitle": "La Quant-Apps, oferim soluții digitale de top care asigură succesul. Ascultați clienții noștri mulțumiți!"
+        "title": "Ce spun clienții noștri",
+        "subtitle": "La Quant-Apps, dezvoltăm soluții digitale de înaltă calitate care ajută afacerile să crească și să obțină și mai mult succes. Descoperă părerile clienților noștri mulțumiți!"
       },
       "faqs": {
         "title": "Întrebări Frecvente",
-        "subtitle": "Mai aveți întrebări? Contactați Echipa noastră prin support@quant-apps.com"
+        "subtitle": "Ai întrebări? Contactează echipa noastră la support@quant-apps.com"
       },
       "cta": {
-        "title": "Entuziasmați să lucrăm împreună la următorul dvs. proiect?",
-        "subtitle": "Să dăm viață ideilor dvs. cu soluții personalizate de dezvoltare și design adaptate nevoilor dvs.",
-        "button": "Începeți Proiectul"
+        "title": "Ești gata să începem proiectul împreună?",
+        "subtitle": "Hai să creăm împreună soluția digitală de care are nevoie afacerea ta.",
+        "button": "Începe Proiectul"
       }
     },
     "services": {
       "uiux": {
         "title": "Design UX/UI",
-        "text": "Design intuitiv, modern și adaptat aplicațiilor tale. Experiență clară pentru utilizatori, funcționalitate fără blocaje."
+        "text": "Design intuitiv, modern și adaptat afacerii tale. Oferă clienților tăi o experiență plăcută de utilizare."
       },
       "mobile": {
         "title": "Aplicații mobile pentru iOS și Android",
@@ -631,11 +632,11 @@
       },
       "web": {
         "title": "Dezvoltare website personalizat",
-        "text": "Automatizăm procesele și îmbunătățim relațiile cu clienții prin soluții CRM personalizate. Gestionare eficientă, vânzări mai mari."
+        "text": "Creăm site-uri atractive și ușor de folosit, adaptate afacerii tale. Design modern + navigare intuitivă = mai mulți clienți."
       },
       "crm": {
         "title": "Soluții CRM",
-        "text": "Automatizăm procesele și îmbunătățim relațiile cu clienții prin soluții CRM personalizate. Gestionare eficientă, vânzări mai mari."
+        "text": "Cu un CRM personalizat vei avea procesele automatizate pentru a-ți îmbunătăți relația cu clienți. Având o gestionare eficientă, te vei concentra pe ce este important, ca să-ți crești vânzările."
       },
       "crossPlatform": {
         "title": "Server personalizate",
@@ -648,20 +649,20 @@
     },
     "reasons": {
       "expert": {
-        "title": "Soluții Software Expert",
-        "text": "Profesioniștii noștri calificați valorifică expertiza profundă în industrie pentru a construi produse digitale de ultimă generație. Rămânând în fața tendințelor și celor mai bune practici, oferim soluții inovatoare, scalabile și sigure, adaptate nevoilor afacerii dvs. Întâlniți <aboutUs>echipa noastră de experți</aboutUs> de dezvoltatori și designeri."
+        "title": "Soluții IT de top",
+        "text": "Echipa noastră are experiență tehnică vastă și folosește tehnologie de ultimă generație pentru a crea produse digitale moderne. Urmărim tendințele actuale și cele mai bune practici pentru a dezvolta soluții IT inovatoare, scalabile și sigure, adaptate nevoilor afacerii tale."
       },
       "client": {
-        "title": "Strategie Digitală Centrată pe Client",
-        "text": "Prioritizăm obiectivele afacerii dvs., personalizând serviciile noastre de dezvoltare web și mobile pentru a se alinia cu viziunea dvs. Prin colaborare strategică și cunoștințe profunde despre piață, creăm soluții centrate pe utilizator care stimulează implicarea și succesul. <process>Abordarea noastră centrată pe client</process> asigură că livrăm exact ceea ce aveți nevoie."
+        "title": "Strategie digitală orientată spre client",
+        "text": "Luăm în considerare obiectivele afacerii tale, și adaptăm dezvoltarea soluției (web, mobile sau CRM) la strategiile tale. Pentru că analizăm piața până la cel mai mic detaliu, soluțiile noastre IT îmbunătățesc experiența utilizatorului, cresc conversiile și maximizează profitabilitatea."
       },
       "results": {
-        "title": "Dezvoltare Orientată spre Rezultate",
-        "text": "Misiunea noastră principală este de a oferi rezultate măsurabile. Prin combinarea expertizei tehnice cu rezolvarea creativă a problemelor, dezvoltăm aplicații, site-uri web și sisteme CRM de înaltă performanță care îmbunătățesc experiențele utilizatorilor, cresc eficiența și accelerează creșterea afacerii. Răsfoiți <projects>portofoliul nostru de proiecte de succes</projects> pentru a vedea rezultatele pe care le-am obținut."
+        "title": "Dezvoltare axată pe rezultate",
+        "text": "Vei primi soluții palpabile și perfect funcționale, ce se bazează pe rezultate măsurabile. Atunci când expertiza tehnică este combinată cu soluții creative, vom găsi mereu cea mai bună variantă pentru tine și afacerea ta."
       },
       "partnership": {
-        "title": "Parteneriat Digital pe Termen Lung",
-        "text": "Credem în relații de durată cu clienții, oferind suport continuu, mentenanță și actualizări pentru produsele dvs. digitale. Angajamentul nostru asigură funcționalitate fără probleme, securitate și performanță, ajutând afacerea dvs. să rămână competitivă și inovatoare. Sunteți interesat să vă alăturați echipei noastre? Verificați <careers>oportunitățile noastre de carieră</careers>."
+        "title": "Partenerul tău IT pe termen lung",
+        "text": "Construim relații durabile cu clienții noștri, oferind mentenanță, suport continuu și actualizări constante ale soluțiilor IT. Abordarea noastră garantează securitate, fiabilitate și funcționalitate optimă, ajutând afacerea ta să rămână competitivă și inovatoare."
       }
     },
     "reviews": {
@@ -700,35 +701,35 @@
     "faqs": {
       "services": {
         "question": "Ce servicii oferă Quant-Apps?",
-        "answer": "Quant-Apps se specializează în <strong>dezvoltare de aplicații mobile</strong> pentru iOS, <strong>dezvoltare de aplicații Android</strong>, soluții de <strong>dezvoltare de aplicații cross-platform</strong> cu React Native, <strong>dezvoltare CRM</strong>, design UI/UX și creare de logo-uri. Oferim <services>soluții digitale</services> personalizate, de la concept și design până la implementare completă și optimizare."
+        "answer": "Suntem specializați în dezvoltarea de aplicații web funcționale pe mai multe platforme (cross-platform cu React Native), dezvoltare de aplicații iOS și Android, dezvoltare CRM, design UX/UI și creare de logo-uri. Oferim soluții digitale personalizate, de la concept și design până la implementare completă și optimizare. Quant-Apps se specializează în dezvoltare de aplicații mobile pentru iOS, dezvoltare de aplicații Android, soluții de dezvoltare de aplicații cross-platform cu React Native, dezvoltare CRM, design UI/UX și creare de logo-uri. Oferim soluții digitale personalizate, de la concept și design până la implementare completă și optimizare."
       },
       "custom": {
         "question": "Puteți construi o aplicație personalizată pentru afacerea mea?",
-        "answer": "Da! Lucrăm îndeaproape cu afacerile pentru a crea <strong>dezvoltare de aplicații iOS</strong>, <strong>dezvoltare personalizată de aplicații Android</strong> și soluții cross-platform care se aliniază cu brandul și nevoile dvs. unice. De la startup-uri la companii mari, dezvoltăm aplicații care vă ajută să ieșiți în evidență. Vizualizați <projects>proiectele noastre anterioare de aplicații</projects> pentru a vedea exemple ale muncii noastre."
+        "answer": "Da! Realizăm aplicații web și mobile (iOS sau Android). Creăm soluții personalizate atât pentru startup-uri, cât și pentru companii mari! Dezvoltăm aplicații care vă pun afacerea în evidență. Vizualizați proiectele noastre anterioare de aplicații pentru a vedea exemple de aplicații."
       },
       "cost": {
-        "question": "Cât costă dezvoltarea unei aplicații?",
-        "answer": "Costul dezvoltării unei aplicații variază în funcție de caracteristicile, complexitatea și cerințele aplicației. Oferim o estimare transparentă și personalizată care se potrivește bugetului și obiectivelor dvs. pentru <strong>dezvoltare de aplicații iOS</strong>, aplicații Android, soluții de <strong>dezvoltare de aplicații cross-platform</strong> și sisteme CRM. <process>Procesul nostru de dezvoltare</process> include planificarea detaliată a costurilor."
+        "question": "Cât costă dezvoltarea unei aplicații mobile?",
+        "answer": "Costul dezvoltării unei aplicații variază în funcție de caracteristicile, complexitatea și cerințele aplicației. Oferim o estimare transparentă și personalizată care se potrivește bugetului și obiectivelor tale. Indiferent de ce ai nevoie, dezvoltare de aplicații iOS, aplicații Android, soluții de dezvoltare de aplicații cross-platform sau sisteme CRM, vei primi o ofertă de preț înainte să începem. Procesul nostru de dezvoltare include planificarea detaliată a costurilor."
       },
       "unique": {
-        "question": "Ce diferențiază Quant-Apps?",
-        "answer": "La Quant-Apps, combinăm creativitatea cu expertiza tehnică. Co-fondatorul nostru, Romas Gutsu, și-a început cariera ca dezvoltator de aplicații iOS și Android și treptat a devenit CEO, conducând compania în crearea de <strong>servicii inovatoare de dezvoltare de aplicații web</strong>. Între timp, Veaceslav Soltan, co-fondatorul nostru, și-a început cariera ca designer grafic și a adus o abordare unică în proiectarea de <strong>soluții de dezvoltare de site-uri web corporative</strong> vizual atractive și prietenoase cu utilizatorii. Aflați mai multe <aboutUs>despre echipa noastră</aboutUs> și abordarea noastră."
+        "question": "Ce diferențiază Quant-Apps de alte companii?",
+        "answer": "Quant-Apps combină expertiza tehnică cu o viziune inovatoare. Fondatorul nostru are o carieră dedicată dezvoltării aplicațiilor pentru iOS și Android, iar echipa noastră este specializată în crearea de aplicații inovative care respectă cele mai noi standarde tehnologice."
       },
       "platforms": {
-        "question": "Pentru ce platforme dezvoltați?",
-        "answer": "Quant-Apps se specializează în dezvoltarea de aplicații mobile pentru iOS, <strong>dezvoltare de aplicații Android</strong>, soluții cross-platform utilizând React Native, sisteme CRM, design UI/UX și creare de logo-uri. Oferim <strong>servicii personalizate de dezvoltare de site-uri web de comerț electronic</strong>, de la concept și design până la implementare completă și optimizare. Quant-Apps dezvoltă aplicații pentru iOS, Android și oferă soluții de <strong>dezvoltare de aplicații cross-platform</strong> cu accent pe performanță excelentă, securitate și integrare cu ecosistemele Apple și Android. Verificați <services>oferta completă de servicii</services>."
+        "question": "Pentru ce platforme dezvoltați aplicații?",
+        "answer": "Quant-Apps dezvoltă aplicații pentru iOS, Android, CRM și oferă soluții cross-platform, cu un accent pe performanță excelentă, securitate și integrare cu ecosistemul Apple și Android."
       },
       "timeline": {
-        "question": "Cât timp durează dezvoltarea unei aplicații?",
-        "answer": "Timpul de dezvoltare depinde de complexitatea și caracteristicile aplicației. De obicei, durează de la 1 la 3 luni, inclusiv dezvoltarea de soluții iOS, Android, <strong>companie de dezvoltare de aplicații Flutter</strong>, <strong>dezvoltare CRM</strong>, precum și design și testare. <process>Calendarul nostru de dezvoltare</process> este optimizat pentru eficiență fără a compromite calitatea."
+        "question": "Cât durează dezvoltarea unei aplicații?",
+        "answer": "Timpul de dezvoltare depinde de complexitatea și funcționalitățile aplicației, dar în general variază între 1 și 3 luni. Ne concentrăm pe livrarea unor soluții rapide și eficiente."
       },
       "support": {
         "question": "Oferiți suport după lansarea aplicației?",
-        "answer": "Da, oferim servicii continue de suport și mentenanță chiar și după lansarea aplicației dvs. Echipa noastră se asigură că <strong>aplicația dvs. nativă</strong> rămâne actualizată, securizată și funcționează fără probleme pe măsură ce actualizările iOS/Android sau nevoile utilizatorilor evoluează. Oferim suport cuprinzător pentru <strong>dezvoltare frontend și backend</strong>. Citiți mai multe despre <services>serviciile noastre de mentenanță</services>."
+        "answer": "Da, oferim servicii continue de suport și mentenanță chiar și după lansarea aplicației afacerii tale. Echipa noastră se asigură că aplicația ta rămâne actualizată, securizată și funcționează fără probleme pe măsură ce actualizările iOS/Android sau nevoile utilizatorilor evoluează. Oferim suport cuprinzător pentru dezvoltare frontend și backend. Citiți mai multe despre serviciile noastre de mentenanță."
       },
       "start": {
-        "question": "Cum încep colaborarea cu Quant-Apps?",
-        "answer": "Începerea este simplă! Contactați-ne pentru o consultație gratuită în care vom discuta despre ideea dvs. de aplicație, obiective și cerințe. De acolo, vă vom ghida prin procesul de <strong>dezvoltare saas</strong> și vă vom ajuta să dați viață viziunii dvs. cu expertiza noastră în <strong>dezvoltare de aplicații mobile</strong>. De asemenea, căutăm întotdeauna talente care să se alăture echipei noastre - verificați <careers>pozițiile noastre deschise</careers>."
+        "question": "Cum pot începe colaborarea cu Quant-Apps?",
+        "answer": "Începerea este simplă! Contactați-ne pentru o consultație gratuită în care vom discuta atât despre ideea ta de aplicație native, cât și despre obiectivele și cerințele afacerii. De acolo, vă vom ghida prin procesul de dezvoltare SaaS și te vom ajuta să dai viață viziunii tale cu expertiza noastră în dezvoltare de aplicații mobile. De asemenea, căutăm întotdeauna talente care să se alăture echipei noastre - verificați pozițiile noastre deschise."
       }
     },
     "serviceButton": "Află Mai Multe",

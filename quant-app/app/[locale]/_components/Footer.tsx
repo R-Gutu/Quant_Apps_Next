@@ -8,10 +8,10 @@ const Footer = async () => {
   const tFooter = await getTranslations("footer");
 
   const socialLinks: SocialLinksType[] = [
-    { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/images/icons/facebook-logo.svg", alt: "Facebook logo" },
+    // { href: "https://www.facebook.com/profile.php?id=61571073299478", icon: "/images/icons/facebook-logo.svg", alt: "Facebook logo" },
     { href: "https://www.instagram.com/quantapps_/", icon: "/images/icons/instagram-logo.svg", alt: "Instagram logo" },
     { href: "https://www.linkedin.com/company/quant-apps", icon: "/images/icons/linked-in-logo.svg", alt: "LinkedIn logo" },
-    { href: "https://www.tiktok.com/@quantapplications", icon: "/images/icons/tik-tok-logo.svg", alt: "TikTok logo" },
+    // { href: "https://www.tiktok.com/@quantapplications", icon: "/images/icons/tik-tok-logo.svg", alt: "TikTok logo" },
     { href: "https://t.me/quantapps", icon: "/images/icons/telegram-logo.svg", alt: "Telegram logo" },
     { href: "https://wa.me/37369882331", icon: "/images/icons/whats-app-logo.svg", alt: "WhatsApp logo" }
   ];
@@ -36,7 +36,7 @@ const Footer = async () => {
           </div>
 
           <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px] min-w-[300px]">
-            <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">Stay Connected</p>
+            <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">{`${tFooter("StayConnected")}`}</p>
             <div className="flex gap-[20px] max-[600px]:grid max-[600px]:grid-rows-2 max-[600px]:grid-cols-3">
               {socialLinks.map(({ href, icon, alt }) => (
                 <div key={alt} className="btn flex shadow-[0px_4px_8px_0px_#4A5DE533]

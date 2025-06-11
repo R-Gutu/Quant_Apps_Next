@@ -30,7 +30,7 @@ const PricingPage = () => {
 
         {/* Pricing Cards */}
         <div className="grid mui-md:grid-cols-3 max-medium:grid-cols-1 gap-6 max-small:gap-4 max-smallest:gap-3 max-w-6xl mx-auto bg-[#FFFFFF] px-12 max-big:px-8 max-medium:px-6 max-small:px-4 max-smallest:px-3 py-4 max-smallest:py-3 rounded-3xl max-small:rounded-2xl relative animate-fade-in-up animation-delay-600 hover:shadow-2xl transition-all duration-500">
-            <div className="absolute top-[-110px] max-medium:top-[-80px] max-small:top-[-60px] max-smallest:top-[-40px] left-[42%] max-medium:left-1/2 max-medium:transform max-medium:-translate-x-1/2 animate-float">
+            <div className="absolute top-0 left-[50%] -translate-y-1/2 -translate-x-1/2 max-medium:left-1/2 max-medium:transform max-medium:-translate-x-1/2 animate-float">
                 <Image src="/images/elements/pricingbg.svg" alt="Design gratuit" width={100} height={60} className="w-[200px] h-[200px] max-big:w-[160px] max-big:h-[160px] max-medium:w-[120px] max-medium:h-[120px] max-small:w-[80px] max-small:h-[80px] max-smallest:w-[60px] max-smallest:h-[60px]" />
             </div>
           

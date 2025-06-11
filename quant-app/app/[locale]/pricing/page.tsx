@@ -1,0 +1,179 @@
+import { Check } from "lucide-react"
+import ElevatingBusiness from "../_components/ElevatingBusiness"
+import Image from "next/image"
+
+const PricingPage = () => {
+  return (
+    <div className="px-[100px] max-mui-md:px-[40px] max-medium:px-[20px] max-small:px-[16px] max-smallest:px-[12px] font-inter">
+      <div className="min-h-screen flex items-center justify-center p-4 max-small:p-2 max-smallest:p-1">
+      <div className="max-w-6xl w-full">
+        {/* Header */}
+        <div className="text-center mb-20 max-medium:mb-16 max-small:mb-12 max-smallest:mb-8 animate-fade-in-up">
+          <div className="flex items-center justify-center mb-4 max-smallest:mb-2">
+            <Image 
+                src='/images/elements/pricing1.svg'
+                alt='Quant Apps Logo'
+                width={100}
+                height={60}
+                className="animate-bounce-subtle max-small:w-[80px] max-small:h-[48px] max-smallest:w-[60px] max-smallest:h-[36px]"
+            />
+          </div>
+          <h1 className="text-4xl md:text-5xl max-big:text-4xl max-medium:text-3xl max-small:text-2xl max-smallest:text-xl font-bold text-white mb-4 max-smallest:mb-2 animate-fade-in-up animation-delay-200">
+            Pachete Website – Promoție valabilă până pe{' '}
+            <span className="bg-gradient-to-r from-[#5D5FEF] to-[#37B5FF] bg-clip-text text-transparent animate-gradient-x">31 august 2025</span>!
+          </h1>
+          <p className="text-[#E6E6E6] text-lg max-medium:text-base max-small:text-sm max-smallest:text-xs max-w-3xl mx-auto animate-fade-in-up animation-delay-400">
+            Te-ai săturat să plătești lunar pentru WordPress? Îți oferim un site complet, creat de la zero + 
+            design GRATUIT înainte de plată!
+          </p>
+        </div>
+
+        {/* Pricing Cards */}
+        <div className="grid mui-md:grid-cols-3 max-medium:grid-cols-1 gap-6 max-small:gap-4 max-smallest:gap-3 max-w-6xl mx-auto bg-[#FFFFFF] px-12 max-big:px-8 max-medium:px-6 max-small:px-4 max-smallest:px-3 py-4 max-smallest:py-3 rounded-3xl max-small:rounded-2xl relative animate-fade-in-up animation-delay-600 hover:shadow-2xl transition-all duration-500">
+            <div className="absolute top-[-110px] max-medium:top-[-80px] max-small:top-[-60px] max-smallest:top-[-40px] left-[42%] max-medium:left-1/2 max-medium:transform max-medium:-translate-x-1/2 animate-float">
+                <Image src="/images/elements/pricingbg.svg" alt="Design gratuit" width={100} height={60} className="w-[200px] h-[200px] max-big:w-[160px] max-big:h-[160px] max-medium:w-[120px] max-medium:h-[120px] max-small:w-[80px] max-small:h-[80px] max-smallest:w-[60px] max-smallest:h-[60px]" />
+            </div>
+          
+          {/* Basic Plan */}
+          <div className="bg-white rounded-3xl max-small:rounded-2xl p-8 max-big:p-6 max-medium:p-5 max-small:p-4 max-smallest:p-3 hover:shadow-xl hover:scale-105 max-small:hover:scale-102 transition-all duration-300 hover:-translate-y-2 max-small:hover:-translate-y-1 group animate-fade-in-left animation-delay-800">
+            <div className="mb-6 max-small:mb-4 max-smallest:mb-3">
+              <div className="flex items-baseline gap-2 mb-2 max-smallest:mb-1">
+                <span className="text-5xl max-big:text-4xl max-medium:text-3xl max-small:text-2xl max-smallest:text-xl font-bold text-gray-900 group-hover:text-[#836FFF] transition-colors duration-300">€150</span>
+                <span className="text-gray-500 line-through text-lg max-medium:text-base max-small:text-sm max-smallest:text-xs group-hover:text-gray-400 transition-colors duration-300">€280</span>
+              </div>
+              <h3 className="text-2xl max-big:text-xl max-medium:text-lg max-small:text-base max-smallest:text-sm font-bold text-gray-900 mb-2 max-smallest:mb-1 group-hover:text-[#836FFF] transition-colors duration-300">Basic</h3>
+              <p className="text-gray-600 max-medium:text-sm max-small:text-xs max-smallest:text-xs group-hover:text-gray-700 transition-colors duration-300">Perfect pentru afaceri la început de drum</p>
+            </div>
+
+            <div className="space-y-4 max-small:space-y-3 max-smallest:space-y-2 mb-8 max-small:mb-6 max-smallest:mb-4">
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Pagină de prezentare</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Optimizat pentru mobil & desktop</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">1 lună de mentenanță gratuită</span>
+              </div>
+            </div>
+
+            <button className="w-full bg-gradient-to-r from-[#836FFF] to-[#4A5DE5] text-white font-semibold py-4 max-small:py-3 max-smallest:py-2 rounded-[32px] max-small:rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 max-small:hover:scale-102 hover:from-[#9580FF] hover:to-[#5B6EE8] active:scale-95 max-medium:text-sm max-small:text-xs max-smallest:text-xs">
+              Plasează comanda
+            </button>
+          </div>
+
+          {/* Advanced Plan */}
+          <div className="bg-white rounded-3xl max-small:rounded-2xl p-8 max-big:p-6 max-medium:p-5 max-small:p-4 max-smallest:p-3 hover:shadow-xl hover:scale-105 max-small:hover:scale-102 transition-all duration-300 hover:-translate-y-2 max-small:hover:-translate-y-1 group animate-fade-in-up animation-delay-1000">
+            <div className="mb-6 max-small:mb-4 max-smallest:mb-3">
+              <div className="flex items-baseline gap-2 mb-2 max-smallest:mb-1">
+                <span className="text-5xl max-big:text-4xl max-medium:text-3xl max-small:text-2xl max-smallest:text-xl font-bold text-gray-900 group-hover:text-[#836FFF] transition-colors duration-300">€400</span>
+                <span className="text-gray-500 line-through text-lg max-medium:text-base max-small:text-sm max-smallest:text-xs group-hover:text-gray-400 transition-colors duration-300">€700</span>
+              </div>
+              <h3 className="text-2xl max-big:text-xl max-medium:text-lg max-small:text-base max-smallest:text-sm font-bold text-gray-900 mb-2 max-smallest:mb-1 group-hover:text-[#836FFF] transition-colors duration-300">Advanced</h3>
+              <p className="text-gray-600 max-medium:text-sm max-small:text-xs max-smallest:text-xs group-hover:text-gray-700 transition-colors duration-300">Website complet pentru companii în creștere</p>
+            </div>
+
+            <div className="space-y-4 max-small:space-y-3 max-smallest:space-y-2 mb-8 max-small:mb-6 max-smallest:mb-4">
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Website complet – 5 pagini</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Design personalizat</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Codare de la zero</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 flex items-center justify-center">
+                  <Image src="/images/icons/checkmark.svg" alt="SEO Icon" width={16} height={16} className="w-full group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-gray-700 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Formular de contact</span>
+              </div>
+            </div>
+
+            <button className="w-full bg-gradient-to-r from-[#836FFF] to-[#4A5DE5] text-white font-semibold py-4 max-small:py-3 max-smallest:py-2 rounded-[32px] max-small:rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 max-small:hover:scale-102 hover:from-[#9580FF] hover:to-[#5B6EE8] active:scale-95 max-medium:text-sm max-small:text-xs max-smallest:text-xs">
+              Plasează comanda
+            </button>
+          </div>
+
+          {/* Plus Plan - Most Popular */}
+          <div className="bg-gradient-to-r from-[#836FFF] to-[#4A5DE5] -translate-y-12 max-medium:-translate-y-6 max-small:-translate-y-3 max-smallest:-translate-y-2 rounded-3xl max-small:rounded-2xl pt-12 max-medium:pt-8 max-small:pt-6 max-smallest:pt-4 pb-9 max-medium:pb-6 max-small:pb-4 max-smallest:pb-3 px-12 max-big:px-8 max-medium:px-6 max-small:px-4 max-smallest:px-3 relative hover:shadow-2xl hover:scale-105 max-small:hover:scale-102 transition-all duration-300 hover:-translate-y-16 max-medium:hover:-translate-y-8 max-small:hover:-translate-y-4 max-smallest:hover:-translate-y-3 group animate-fade-in-right animation-delay-1200 hover:from-[#9580FF] hover:to-[#5B6EE8]">
+            <div className="absolute top-2 max-small:top-1 left-1/2 transform -translate-x-1/5 max-medium:-translate-x-1/2">
+              <div className="bg-white text-black px-4 max-small:px-3 max-smallest:px-2 py-2 max-small:py-1 max-smallest:py-1 rounded-full text-sm max-small:text-xs max-smallest:text-xs font-bold animate-pulse-subtle group-hover:animate-bounce-subtle">
+                CEL MAI POPULAR
+              </div>
+            </div>
+
+            <div className="mb-6 max-small:mb-4 max-smallest:mb-3">
+              <div className="flex items-baseline gap-2 mb-2 max-smallest:mb-1">
+                <span className="text-5xl max-big:text-4xl max-medium:text-3xl max-small:text-2xl max-smallest:text-xl font-bold text-white group-hover:scale-110 transition-transform duration-300">€900</span>
+                <span className="text-purple-200 line-through text-lg max-medium:text-base max-small:text-sm max-smallest:text-xs">€1500</span>
+              </div>
+              <h3 className="text-2xl max-big:text-xl max-medium:text-lg max-small:text-base max-smallest:text-sm font-bold text-white mb-2 max-smallest:mb-1">Plus</h3>
+              <p className="text-purple-100 max-medium:text-sm max-small:text-xs max-smallest:text-xs">Funcționalități premium pentru afaceri serioase</p>
+            </div>
+
+            <div className="space-y-4 max-small:space-y-3 max-smallest:space-y-2 mb-8 max-small:mb-6 max-smallest:mb-4">
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors duration-200">
+                  <Check className="w-4 h-4 max-small:w-3 max-small:h-3 max-smallest:w-2 max-smallest:h-2 text-white group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-white max-medium:text-sm max-small:text-xs max-smallest:text-xs">Website cu 10+ pagini</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors duration-200">
+                  <Check className="w-4 h-4 max-small:w-3 max-small:h-3 max-smallest:w-2 max-smallest:h-2 text-white group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-white max-medium:text-sm max-small:text-xs max-smallest:text-xs">SEO de bază</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors duration-200">
+                  <Check className="w-4 h-4 max-small:w-3 max-small:h-3 max-smallest:w-2 max-smallest:h-2 text-white group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-white max-medium:text-sm max-small:text-xs max-smallest:text-xs">Integrare plată</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors duration-200">
+                  <Check className="w-4 h-4 max-small:w-3 max-small:h-3 max-smallest:w-2 max-smallest:h-2 text-white group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-white max-medium:text-sm max-small:text-xs max-smallest:text-xs">Lansare completă</span>
+              </div>
+              <div className="flex items-center gap-3 max-small:gap-2 hover:translate-x-2 max-small:hover:translate-x-1 transition-transform duration-200">
+                <div className="w-6 h-6 max-small:w-5 max-small:h-5 max-smallest:w-4 max-smallest:h-4 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors duration-200">
+                  <Check className="w-4 h-4 max-small:w-3 max-small:h-3 max-smallest:w-2 max-smallest:h-2 text-white group-hover:scale-110 transition-transform duration-200" />
+                </div>
+                <span className="text-white max-medium:text-sm max-small:text-xs max-smallest:text-xs">Suport extins</span>
+              </div>
+            </div>
+
+            <button className="w-full bg-white text-black hover:bg-gray-50 font-semibold py-3 max-small:py-2 max-smallest:py-2 px-6 max-small:px-4 max-smallest:px-3 rounded-[32px] max-small:rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 max-small:hover:scale-102 active:scale-95 max-medium:text-sm max-small:text-xs max-smallest:text-xs">
+              Plasează comanda
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <ElevatingBusiness />
+    </div>
+  )
+}
+
+export default PricingPage

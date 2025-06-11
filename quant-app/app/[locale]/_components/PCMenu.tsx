@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils/utils";
 const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Dispatch<React.SetStateAction<boolean>>, setTalkModalOpen: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const t = useTranslations("app-toolbar");
     const pathname = usePathname();
-    const pages = ['services', 'projects', 'process', 'about-us', 'careers']
+    const pages = ['services', 'projects', 'process', 'pricing', 'about-us', 'careers']
 
     return (
         <>

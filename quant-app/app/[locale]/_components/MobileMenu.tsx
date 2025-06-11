@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils/utils";
 const MobileMenu = ({ menuVisible, setMenuVisible }: { menuVisible: boolean, setMenuVisible: React.Dispatch<React.SetStateAction<boolean>> }) => {
   const t = useTranslations("app-toolbar");
   const pathname = usePathname();
-  const pages = ['services', 'projects', 'process', 'about-us', 'careers']
+  const pages = ['services', 'projects', 'process', 'pricing', 'about-us', 'careers']
 
   return (
     <div className={cn('top-0 left-0 h-auto p-[20px] overflow-hidden bg-white fixed z-[10000] rounded-b-[30px] w-full px-[20%] flex flex-col items-center small:hidden', { 'invisible': !menuVisible })}>

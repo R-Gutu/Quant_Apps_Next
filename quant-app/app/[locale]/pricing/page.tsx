@@ -64,7 +64,7 @@ export default function PricingPage() {
               >
                 {plan.featured && (
                   <div className="absolute top-2 max-small:top-1 left-1/2 transform -translate-x-1/5 max-medium:-translate-x-1/2">
-                    <div className="bg-white text-black px-4 max-small:px-3 max-smallest:px-2 py-2 max-small:py-1 max-smallest:py-1 rounded-full text-sm max-small:text-xs max-smallest:text-xs font-bold animate-pulse-subtle group-hover:animate-bounce-subtle">
+                    <div className="bg-white max-smallest:hidden text-black px-4 max-small:px-3 max-smallest:px-2 py-2 max-small:py-1 max-smallest:py-1 rounded-full text-sm max-small:text-xs max-smallest:text-xs font-bold animate-pulse-subtle group-hover:animate-bounce-subtle">
                       {plan.badge}
                     </div>
                   </div>

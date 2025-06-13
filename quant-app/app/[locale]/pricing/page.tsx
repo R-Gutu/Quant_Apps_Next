@@ -3,9 +3,21 @@ import ElevatingBusiness from "../_components/ElevatingBusiness"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
+interface Plan {
+  price: string
+  oldPrice: string
+  heading: string
+  desc: string
+  features: string[]
+  cta: string
+  featured?: boolean
+  badge?: string
+}
+
+
 export default function PricingPage() {
   const t = useTranslations("pricing")
-  const plans = t.raw("cards") as any[]             // type-safety: shape matches JSON above
+  const plans = t.raw("cards") as Plan[]             // type-safety: shape matches JSON above
 
   return (
     <div className="px-[100px] max-mui-md:px-[40px] max-medium:px-[20px] max-small:px-[16px] max-smallest:px-[12px] font-inter">

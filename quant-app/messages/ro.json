@@ -809,5 +809,63 @@
   "formAlert": {
     "success": "Am primit mesajul tău! Echipa noastră îți va răspunde în cel mai scurt timp.",
     "error": "Eroare la trimiterea formularului. Va rugам sa incercati din nou."
-  }
+  },
+  "pricing": {
+  "header": {
+    "dateSpan": "31 august 2025",
+     "title": "Pachete Website – Promoție valabilă până pe <highlight>31 august 2025</highlight>!",
+    "promoDate": "Promoție valabilă până pe",
+    "highlight": "31 august 2025",
+    "subtitle": "Te-ai săturat să plătești lunar pentru WordPress? Îți oferim un site complet, creat de la zero + design GRATUIT înainte de plată!"
+  },
+  "bg": "/images/elements/pricingbgro.svg",
+  "cards": [
+    {
+      "plan": "Basic",
+      "featured": false,
+      "price": "€150",
+      "oldPrice": "€280",
+      "heading": "Basic",
+      "cta": "Plasează comanda",
+      "desc": "Perfect pentru afaceri la început de drum",
+      "features": [
+        "Pagină de prezentare",
+        "Optimizat pentru mobil & desktop",
+        "1 lună de mentenanță gratuită"
+      ]
+    },
+    {
+      "plan": "Advanced",
+      "featured": false,
+      "price": "€400",
+      "oldPrice": "€700",
+      "heading": "Advanced",
+      "cta": "Plasează comanda",
+      "desc": "Website complet pentru companii în creștere",
+      "features": [
+        "Website complet – 5 pagini",
+        "Design personalizat",
+        "Codare de la zero",
+        "Formular de contact"
+      ]
+    },
+        {
+      "plan": "Plus",
+      "featured": true,
+      "badge": "CEL MAI POPULAR",
+      "price": "€900",
+      "oldPrice": "€1500",
+      "heading": "Plus",
+      "cta": "Plasează comanda",
+      "desc": "Funcționalități premium pentru afaceri serioase",
+      "features": [
+        "Website cu 10+ pagini",
+        "SEO de bază",
+        "Integrare plată",
+        "Lansare completă",
+        "Suport extins"
+      ]
+    }
+  ]
+}
 }

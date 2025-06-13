@@ -809,5 +809,63 @@
   "formAlert": {
     "success": "We've received your message! Our team will get back to you shortly.",
     "error": "Failed to submit form. Please try again later."
-  }
+  },
+  "pricing": {
+  "header": {
+    "dateSpan": "August 31st, 2025",
+    "title": "Pachete Website – Promoție valabilă până pe <highlight>31 august 2025</highlight>!",
+    "promoDate": "Promotion valid until",
+    "highlight": "August 31st, 2025",
+    "subtitle": "Tired of paying monthly for WordPress? We’ll build you a complete custom site + FREE design before payment!"
+  },
+  "bg": "/images/elements/pricingbgen.svg",
+  "cards": [
+    {
+      "plan": "Basic",
+      "featured": false,
+      "price": "€150",
+      "oldPrice": "€280",
+      "heading": "Basic",
+      "cta": "Order Now",
+      "desc": "Perfect for startups and new businesses",
+      "features": [
+        "One landing page",
+        "Mobile & desktop optimized",
+        "1 month of free maintenance"
+      ]
+    },
+    {
+      "plan": "Advanced",
+      "featured": false,
+      "price": "€400",
+      "oldPrice": "€700",
+      "heading": "Advanced",
+      "cta": "Order Now",
+      "desc": "Complete website for growing companies",
+      "features": [
+        "Complete site – 5 pages",
+        "Custom design",
+        "Coded from scratch",
+        "Contact form"
+      ]
+    },
+        {
+      "plan": "Plus",
+      "featured": true,
+      "badge": "MOST POPULAR",
+      "price": "€900",
+      "oldPrice": "€1500",
+      "heading": "Plus",
+      "cta": "Order Now",
+      "desc": "Premium features for serious businesses",
+      "features": [
+        "Website with 10+ pages",
+        "Basic SEO",
+        "Payment integration",
+        "Full launch",
+        "Extended support"
+      ]
+    }
+  ]
+}
 }

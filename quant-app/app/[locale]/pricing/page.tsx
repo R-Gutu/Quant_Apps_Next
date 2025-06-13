@@ -1,7 +1,11 @@
+'use client'
 import { Check } from "lucide-react"
 import ElevatingBusiness from "../_components/ElevatingBusiness"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { AnimatePresence } from "framer-motion"
+import TalkModal from "@/components/TalkModal"
+import { useState } from "react"
 
 interface Plan {
   price: string
@@ -18,6 +22,7 @@ interface Plan {
 export default function PricingPage() {
   const t = useTranslations("pricing")
   const plans = t.raw("cards") as Plan[]             // type-safety: shape matches JSON above
+  const [talkModalOpen, setTalkModalOpen] = useState(false)
 
   return (
     <div className="px-[100px] max-mui-md:px-[40px] max-medium:px-[20px] max-small:px-[16px] max-smallest:px-[12px] font-inter">
@@ -102,7 +107,7 @@ export default function PricingPage() {
                     </div>
                   ))}
                 </div>
-                <button className={
+                <button onClick={() => setTalkModalOpen(true)} className={
                   plan.featured
                       ? "w-full bg-white text-black hover:bg-gray-50 font-semibold py-3 max-small:py-2 max-smallest:py-2 px-6 max-small:px-4 max-smallest:px-3 rounded-[32px] max-small:rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 max-small:hover:scale-102 active:scale-95 max-medium:text-sm max-small:text-xs max-smallest:text-xs"
                       : "w-full bg-gradient-to-r from-[#836FFF] to-[#4A5DE5] text-white font-semibold py-4 max-small:py-3 max-smallest:py-2 rounded-[32px] max-small:rounded-2xl transition-all duration-300 hover:shadow-lg hover:scale-105 max-small:hover:scale-102 hover:from-[#9580FF] hover:to-[#5B6EE8] active:scale-95 max-medium:text-sm max-small:text-xs max-smallest:text-xs"
@@ -114,6 +119,9 @@ export default function PricingPage() {
         </div>
       </div>
       </div>
+      <AnimatePresence>
+        {talkModalOpen && <TalkModal isOpen= {talkModalOpen} setIsOpen={setTalkModalOpen}/>}
+     </AnimatePresence>
       <ElevatingBusiness />
     </div>
   )

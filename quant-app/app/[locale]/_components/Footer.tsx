@@ -13,7 +13,7 @@ const Footer = async () => {
     { href: "https://www.linkedin.com/company/quant-apps", icon: "/images/icons/linked-in-logo.svg", alt: "LinkedIn logo" },
     // { href: "https://www.tiktok.com/@quantapplications", icon: "/images/icons/tik-tok-logo.svg", alt: "TikTok logo" },
     { href: "https://t.me/quantapps", icon: "/images/icons/telegram-logo.svg", alt: "Telegram logo" },
-    { href: "https://wa.me/37369882331", icon: "/images/icons/whats-app-logo.svg", alt: "WhatsApp logo" }
+    // { href: "https://wa.me/37369882331", icon: "/images/icons/whats-app-logo.svg", alt: "WhatsApp logo" }
   ];
 
   const pages = ['services', 'projects', 'process', 'about-us', 'careers', 'terms-of-use', 'privacy-policy']

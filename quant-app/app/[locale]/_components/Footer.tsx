@@ -37,7 +37,7 @@ const Footer = async () => {
 
           <div className="flex items-center gap-[10px] border-[1px] border-[#6A65FF1A] rounded-[12px] p-[14px] max-mui-md:flex max-mui-md:flex-col max-mui-md:px-[60px] min-w-[300px]">
             <p className="text-[#E6E6E6] text-[14px] opacity-75 font-inter">{`${tFooter("StayConnected")}`}</p>
-            <div className="flex gap-[20px] max-[600px]:grid max-[600px]:grid-rows-2 max-[600px]:grid-cols-3">
+            <div className="flex gap-[20px] max-[600px]:grid max-[600px]:grid-cols-3">
               {socialLinks.map(({ href, icon, alt }) => (
                 <div key={alt} className="btn flex shadow-[0px_4px_8px_0px_#4A5DE533]
             items-center no-underline border-1 bg-gradient-to-b from-[#6A65FF] to-[#24242400] border-[#6A65FF80] rounded-[8px] h-[64px] w-[64px] p-[20px] !font-inter max-mui-md:w-[58px] max-mui-md:h-[58px]">

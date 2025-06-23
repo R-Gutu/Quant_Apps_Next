@@ -819,6 +819,7 @@
     "subtitle": "Te-ai săturat să plătești lunar pentru WordPress? Îți oferim un site complet, creat de la zero + design GRATUIT înainte de plată!"
   },
   "bg": "/images/elements/pricingbgro.svg",
+    "price": "/images/elements/pricing-ro.svg",
   "cards": [
     {
       "plan": "Basic",

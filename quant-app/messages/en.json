@@ -819,6 +819,7 @@
     "subtitle": "Tired of paying monthly for WordPress? We’ll build you a complete custom site + FREE design before payment!"
   },
   "bg": "/images/elements/pricingbgen.svg",
+    "price": "/images/elements/pricing-en.svg",
   "cards": [
     {
       "plan": "Basic",

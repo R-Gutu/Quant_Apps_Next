@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion"
 import TalkModal from "@/components/TalkModal"
 import { useState } from "react"
 
+
 interface Plan {
   price: string
   oldPrice: string
@@ -31,8 +32,8 @@ export default function PricingPage() {
         {/* Header */}
         <div className="text-center mb-20 max-medium:mb-16 max-small:mb-12 max-smallest:mb-8 animate-fade-in-up">
           <div className="flex items-center justify-center mb-4 max-smallest:mb-2">
-            <Image 
-                src='/images/elements/pricing1.svg'
+            <Image
+                src={t("price")}
                 alt='Quant Apps Logo'
                 width={100}
                 height={60}

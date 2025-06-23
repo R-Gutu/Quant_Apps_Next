@@ -915,6 +915,7 @@
     "subtitle": "Устали платить ежемесячно за WordPress? Мы предложим вам полностью индивидуальный сайт + бесплатный дизайн до оплаты!"
   },
   "bg": "/images/elements/pricingbgru.svg",
+    "price": "/images/elements/pricing-ru.svg",
   "cards": [
     {
       "plan": "Basic",
@@ -935,7 +936,7 @@
       "featured": false,
       "price": "€400",
       "oldPrice": "€700",
-      "heading": "Advanced",
+      "heading": "Продвинутый",
       "cta": "Оформить заказ",
       "desc": "Полный сайт для быстро развивающихся компаний",
       "features": [

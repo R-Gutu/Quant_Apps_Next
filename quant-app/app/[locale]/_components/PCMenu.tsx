@@ -36,6 +36,11 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
                     </ul>
                 </nav>
                 <div className="flex items-center">
+                    {/* Номер телефона - виден только на больших экранах */}
+                    <a href="tel:+37369882331" className="text-white text-[16px] font-medium mr-[20px] hidden big:block">
+                        +373 69 882 331
+                    </a>
+
                     <span className="mr-[33px] hidden small:block"><LanguageSwitcher /></span>
                     <div className="nav-right flex justify-center items-center">
                         <button onClick={() => setTalkModalOpen(true)} className="text-nowrap border-white border-[1px] text-white rounded-[8px] px-[20px] py-[8px] text-[14px] smallest:px-[40px] smallest:text-[18px] flex justify-center items-center font-semibold">

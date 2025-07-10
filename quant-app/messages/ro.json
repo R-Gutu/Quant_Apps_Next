@@ -161,12 +161,28 @@
         "description": "Am dezvoltat un <services>dezvoltare de site-uri web corporative</services> modern și prietenos pentru Roka Akor, asigurând rezervări online fără probleme, o interfață intuitivă și un design elegant care îmbunătățește implicarea clienților. Platforma integrează vizuale de înaltă calitate, layout-uri responsive și o experiență de dining plăcută pentru vizitatori. Aflați mai multe despre <process>metodologia noastră de dezvoltare web</process> care face posibile proiecte ca acesta."
       },
       {
-        "title": "Companie de Logistică",
+        "title": "Perfect Garage",
         "image": "/images/pictures/projects2.png",
         "alt": "project2",
-        "linkName": "Acm Movers",
-        "link": "https://acmmovers.com/",
-        "description": "Am proiectat și dezvoltat <services>servicii de dezvoltare de site-uri de comerț electronic</services> bogate în funcționalități pentru ACM Movers, optimizând sistemul lor de rezervări online. Platforma include cereri de oferte în timp real, urmărirea comenzilor și o experiență perfectă pentru clienți. Soluția noastră îmbunătățește eficiența operațională crescând accesibilitatea utilizatorilor pe toate dispozitivele. <aboutUs>Echipa noastră dedicată</aboutUs> a asigurat că fiecare aspect al acestei soluții de logistică a îndeplinit așteptările înalte ale clientului."
+        "linkName": "Perfect Garage",
+        "link": "https://perfectgarage.md/ru",
+        "description": "Am creat un <services>site modern pentru un service auto</services> — Perfect Garage — cu programări online, estimarea costurilor și navigare intuitivă. Datorită <aboutUs>echipei noastre</aboutUs>, platforma este un instrument eficient pentru atragerea clienților și gestionarea solicitărilor."
+      },
+      {
+        "title": "Aneta Interior",
+        "image": "/images/pictures/projects7.png",
+        "alt": "project3",
+        "linkName": "Aneta Interior",
+        "link": "https://anetainterior.com/en",
+        "description": "Am creat un <services>site elegant pentru studioul de design interior</services> Aneta Interior, punând accent pe conținut vizual și estetică. Website-ul prezintă portofoliul proiectelor, serviciile și filosofia brandului. Datorită <aboutUs>echipei noastre</aboutUs>, platforma este adaptabilă, rafinată și ușor de utilizat."
+      },
+      {
+        "title": "Jurist",
+        "image": "/images/pictures/projects8.png",
+        "alt": "project4",
+        "linkName": "Jurist",
+        "link": "https://juristonline.md/ru",
+        "description": "Am dezvoltat o <services>platformă web pentru servicii juridice</services> — Jurist, unde utilizatorii pot solicita consultații, explora serviciile și contacta rapid avocații. Site-ul este intuitiv, profesionist și ușor de navigat. <aboutUs>Echipa noastră</aboutUs> a asigurat performanță înaltă, adaptabilitate și simplitate în utilizare."
       },
       {
         "title": "Lens AI",
@@ -183,14 +199,6 @@
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
         "description": "Întâlniți noul dvs. ajutor de bucătărie, Taste Ai! Această <services>dezvoltare de aplicații cross-platform</services> utilizează inteligența artificială (AI) pentru a oferi rețete personalizate preferințelor și nevoilor dvs. unice. Dacă sunteți interesat să vă alăturați echipei noastre pentru a lucra la <projects>proiecte inovatoare bazate pe AI</projects> similare, verificați <careers>pozițiile noastre actuale</careers>."
-      },
-      {
-        "title": "Site Web pentru Dentist",
-        "image": "/images/pictures/projects5.png",
-        "alt": "project5",
-        "linkName": "NY Dental Group",
-        "link": "https://nydentalgroup.com/",
-        "description": "Am dezvoltat un site web modern și prietenos cu <services>servicii de dezvoltare de aplicații web</services> pentru NY Dental Group, un furnizor de top de servicii de îngrijire dentară. Platforma oferă programări fără probleme, integrare securizată a datelor pacienților și recomandări de tratament personalizate, îmbunătățind angajamentul și satisfacția pacienților. Aflați despre <aboutUs>designerii și dezvoltatorii talentați</aboutUs> care au dat viață acestei platforme sofisticate de asistență medicală."
       },
       {
         "title": "Keyboard AI",
@@ -340,7 +348,7 @@
       "members": [
         {
           "name": "Roman Gutu",
-          "position": "CEO și Fondator",
+          "position": "CO-Fondator",
           "link": "",
           "src": "/images/pictures/roman.png",
           "alt": "roman",
@@ -348,7 +356,7 @@
         },
         {
           "name": "Veaceslav Soltan",
-          "position": "CO-Fondator",
+          "position": "CEO și Fondator",
           "link": "",
           "src": "/images/pictures/slavic.png",
           "alt": "vyacheslav",

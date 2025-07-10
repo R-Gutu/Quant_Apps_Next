@@ -8,7 +8,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { headers } from 'next/headers'
 import { Viewport } from 'next';
 import SchemaOrg from './_components/SchemaOrg';
-import ChatwootWidget from './_components/ChatwootWidget';
 
 
 const inter = Inter({
@@ -22,6 +21,7 @@ import "./globals.css";
 import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
 import Providers from '@/app/[locale]/Providers';
+import PhoneButton from "@/components/PhoneButton";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -103,8 +103,8 @@ export default async function RootLayout({
         <Providers>
           <AppToolbar />
           {children}
+          <PhoneButton />
           <Footer />
-          <ChatwootWidget />
         </Providers>
      
       </body>

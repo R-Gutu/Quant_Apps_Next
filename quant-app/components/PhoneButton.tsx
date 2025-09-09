@@ -22,7 +22,7 @@ export default function PhoneButton() {
             {open && (
                 <div className="absolute bottom-20 right-0 flex flex-col gap-2 animate-fadeIn">
                     <a
-                        href="tel:+37369882331"
+                        href="tel:+40746626178"
                         className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200"
                     >
                         <Phone size={18} />

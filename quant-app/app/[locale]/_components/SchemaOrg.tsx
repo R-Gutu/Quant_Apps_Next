@@ -231,7 +231,7 @@ const jsonLd = {
             "@type": "ContactPoint",
             "contactType": "customer service",
             "email": "info@quant-apps.com",
-            "telephone": "+37369882331",
+            "telephone": "+40746626178",
             "availableLanguage": ["English", "Romanian", "Russian"]
         }
     ]

@@ -153,9 +153,33 @@
     },
     "items": [
       {
+        "title": "Kung-Fu Devices",
+        "image": "/images/pictures/kungfu.png",
+        "alt": "project1",
+        "linkName": "Kung-Fu Devices",
+        "link": "https://kungfudevice.ro",
+        "description": "Am creat un site web elegant și modern pentru Kungfu Device, un brand specializat în dispozitive electronice de fumat de ultimă generație. Platforma prezintă produsele și designul inovator al companiei, reflectând imaginea sa premium. Cu o navigare fluentă și un aspect minimalist, site-ul oferă utilizatorilor o experiență informativă și rafinată."
+      },
+      {
+        "title": "Shop Design",
+        "image": "/images/pictures/shopdesign.png",
+        "alt": "project2",
+        "linkName": "Shop Design",
+        "link": "https://shopdesign.no/",
+        "description": "Am realizat un site web elegant și versatil pentru Shop Design, un studio de design interior care transformă spațiile în medii inspiratoare. Platforma evidențiază serviciile lor – de la interioare personalizate și consultanță, până la sisteme modulare precum „Plug-in Wall”. Designul reflectă echilibrul dintre estetică, funcționalitate și inovație."
+      },
+      {
+        "title": "Success Moving",
+        "image": "/images/pictures/succesmoving.png",
+        "alt": "project3",
+        "linkName": "Success Moving",
+        "link": "https://rokaakor.com/",
+        "description": "Am dezvoltat un site web profesional pentru Success Moving, o companie specializată în servicii de mutare rezidențiale și comerciale. Platforma prezintă soluțiile lor complete de mutare și curățare, accentuând confortul, fiabilitatea și satisfacția clientului. Designul curat și intuitiv facilitează accesul la informații și cererile de ofertă."
+      },
+      {
         "title": "Site Web Restaurant",
         "image": "/images/pictures/projects1.png",
-        "alt": "project1",
+        "alt": "project4",
         "linkName": "Roka Akor",
         "link": "https://rokaakor.com/",
         "description": "Am dezvoltat un <services>dezvoltare de site-uri web corporative</services> modern și prietenos pentru Roka Akor, asigurând rezervări online fără probleme, o interfață intuitivă și un design elegant care îmbunătățește implicarea clienților. Platforma integrează vizuale de înaltă calitate, layout-uri responsive și o experiență de dining plăcută pentru vizitatori. Aflați mai multe despre <process>metodologia noastră de dezvoltare web</process> care face posibile proiecte ca acesta."
@@ -163,7 +187,7 @@
       {
         "title": "Perfect Garage",
         "image": "/images/pictures/projects2.png",
-        "alt": "project2",
+        "alt": "project5",
         "linkName": "Perfect Garage",
         "link": "https://perfectgarage.md/ru",
         "description": "Am creat un <services>site modern pentru un service auto</services> — Perfect Garage — cu programări online, estimarea costurilor și navigare intuitivă. Datorită <aboutUs>echipei noastre</aboutUs>, platforma este un instrument eficient pentru atragerea clienților și gestionarea solicitărilor."
@@ -171,7 +195,7 @@
       {
         "title": "Aneta Interior",
         "image": "/images/pictures/projects7.png",
-        "alt": "project3",
+        "alt": "project6",
         "linkName": "Aneta Interior",
         "link": "https://anetainterior.com/en",
         "description": "Am creat un <services>site elegant pentru studioul de design interior</services> Aneta Interior, punând accent pe conținut vizual și estetică. Website-ul prezintă portofoliul proiectelor, serviciile și filosofia brandului. Datorită <aboutUs>echipei noastre</aboutUs>, platforma este adaptabilă, rafinată și ușor de utilizat."
@@ -179,7 +203,7 @@
       {
         "title": "Jurist",
         "image": "/images/pictures/projects8.png",
-        "alt": "project4",
+        "alt": "project7",
         "linkName": "Jurist",
         "link": "https://juristonline.md/ru",
         "description": "Am dezvoltat o <services>platformă web pentru servicii juridice</services> — Jurist, unde utilizatorii pot solicita consultații, explora serviciile și contacta rapid avocații. Site-ul este intuitiv, profesionist și ușor de navigat. <aboutUs>Echipa noastră</aboutUs> a asigurat performanță înaltă, adaptabilitate și simplitate în utilizare."
@@ -187,7 +211,7 @@
       {
         "title": "Lens AI",
         "image": "/images/pictures/projects3.png",
-        "alt": "project3",
+        "alt": "project8",
         "linkName": "Lens AI",
         "link": "https://apps.apple.com/md/app/lens-ai",
         "description": "Lens AI este <services>dezvoltarea de aplicații iOS</services> inteligentă pentru a găsi orice. Cu această aplicație, puteți face o fotografie sau selecta una din galeria dvs. și o puteți găsi online. Lens AI utilizează Inteligența Artificială (AI) pentru a căuta pe internet pentru dvs. Puteți afla despre ceea ce vedeți într-o imagine, găsi unde să cumpărați lucruri și multe altele. Vedeți <process>fluxul nostru de dezvoltare a aplicațiilor</process> care ne ajută să creăm aplicații inteligente și ușor de utilizat."
@@ -195,7 +219,7 @@
       {
         "title": "Taste Ai",
         "image": "/images/pictures/projects4.png",
-        "alt": "project4",
+        "alt": "project9",
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
         "description": "Întâlniți noul dvs. ajutor de bucătărie, Taste Ai! Această <services>dezvoltare de aplicații cross-platform</services> utilizează inteligența artificială (AI) pentru a oferi rețete personalizate preferințelor și nevoilor dvs. unice. Dacă sunteți interesat să vă alăturați echipei noastre pentru a lucra la <projects>proiecte inovatoare bazate pe AI</projects> similare, verificați <careers>pozițiile noastre actuale</careers>."
@@ -203,7 +227,7 @@
       {
         "title": "Keyboard AI",
         "image": "/images/pictures/projects6.png",
-        "alt": "project6",
+        "alt": "project10",
         "linkName": "Keyboard AI",
         "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
         "description": "Prezentăm Keyboard AI - Companionul Dvs. Ultimate pentru Texting! Transformați experiența dvs. de texting cu Keyboard AI, <services>dezvoltarea aplicațiilor mobile native</services> asistentul AI de scriere care vă susține oricând aveți nevoie să trimiteți un mesaj acum! Eliberați puterea instrumentelor de Inteligență Artificială la îndemâna dvs. și faceți fiecare mesaj unic. <process>Procesul nostru de asigurare a calității</process> asigură că fiecare interacțiune cu AI este fără probleme și fiabilă."

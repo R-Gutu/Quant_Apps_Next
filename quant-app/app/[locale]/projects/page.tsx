@@ -81,6 +81,33 @@ const ProjectsPage = async () => {
       link: t('items.6.link'),
       text: t.rich('items.6.description', strong),
       className: "small:border-r-[1px] small:border-[#6A65FF80]"
+    },
+    {
+      title: t('items.7.title'),
+      src: t('items.7.image'),
+      alt: t('items.7.alt'),
+      linkname: t('items.7.linkName'),
+      link: t('items.7.link'),
+      text: t.rich('items.7.description', strong),
+      "className": ""
+    },
+    {
+      title: t('items.8.title'),
+      src: t('items.8.image'),
+      alt: t('items.8.alt'),
+      linkname: t('items.8.linkName'),
+      link: t('items.8.link'),
+      text: t.rich('items.8.description', strong),
+      "className": ""
+    },
+    {
+      title: t('items.9.title'),
+      src: t('items.9.image'),
+      alt: t('items.9.alt'),
+      linkname: t('items.9.linkName'),
+      link: t('items.9.link'),
+      text: t.rich('items.9.description', strong),
+      "className": ""
     }
   ];
 

@@ -22,6 +22,7 @@ import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
 import Providers from '@/app/[locale]/Providers';
 import PhoneButton from "@/components/PhoneButton";
+import Script from "next/script";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -95,6 +96,19 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale} className={`${inter.variable}`}>
+      {/* Google Tag (gtag.js) */}
+      <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17593886212"
+      />
+      <Script id="gtag-init">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17593886212');
+          `}
+      </Script>
       <body
         className="antialiased relative bg-[var(--bg-color)]"
       >

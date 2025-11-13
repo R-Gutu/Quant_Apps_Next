@@ -37,8 +37,8 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
                 </nav>
                 <div className="flex items-center">
                     {/* Номер телефона - виден только на больших экранах */}
-                    <a href="tel:+40746626178" className="text-white text-[16px] font-medium mr-[20px] hidden big:block">
-                        +40 746 626 178
+                    <a href="tel:+40756119304" className="text-white text-[16px] font-medium mr-[20px] hidden big:block">
+                        +40 756 119 304
                     </a>
 
                     <span className="mr-[33px] hidden small:block"><LanguageSwitcher /></span>

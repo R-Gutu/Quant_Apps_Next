@@ -75,7 +75,7 @@ const Footer = async () => {
             <div className="max-smallest:w-full">
               <div className="flex items-center justify-center gap-[10px]">
                 <Image width={24} height={24} src='/images/icons/phone.svg' alt="email"/>
-                +40 746 626 178
+                +40 756 119 304
               </div>
               <hr className="border-[#6A65FF1A] border-[1px]" />
             </div>

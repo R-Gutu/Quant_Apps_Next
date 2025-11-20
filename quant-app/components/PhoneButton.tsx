@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Phone } from 'lucide-react';
-import { FaTelegramPlane } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function PhoneButton() {
     const [open, setOpen] = useState(false);
@@ -30,13 +30,13 @@ export default function PhoneButton() {
                     </a>
 
                     <a
-                        href="https://t.me/quantapps"
+                        href="https://wa.me/40756119304"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-sky-400 to-sky-600 text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200"
+                        className="flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-green-400 to-green-600 text-white shadow-md hover:shadow-lg hover:brightness-110 transition-all duration-200"
                     >
-                        <FaTelegramPlane size={18} />
-                        <span className="text-sm font-semibold">Telegram</span>
+                        <FaWhatsapp size={18} />
+                        <span className="text-sm font-semibold">WhatsApp</span>
                     </a>
                 </div>
             )}

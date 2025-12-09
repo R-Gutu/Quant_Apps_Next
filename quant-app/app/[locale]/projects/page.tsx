@@ -26,7 +26,7 @@ const ProjectsPage = async () => {
       linkname: t('items.0.linkName'),
       link: t('items.0.link'),
       text: t.rich('items.0.description', strong),
-       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.1.title'),
@@ -35,7 +35,7 @@ const ProjectsPage = async () => {
       linkname: t('items.1.linkName'),
       link: t('items.1.link'),
       text: t.rich('items.1.description', strong),
-      "className": ""
+       "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.2.title'),
@@ -53,7 +53,7 @@ const ProjectsPage = async () => {
       linkname: t('items.3.linkName'),
       link: t('items.3.link'),
       text: t.rich('items.3.description', strong),
-      "className": ""
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.4.title'),
@@ -71,7 +71,7 @@ const ProjectsPage = async () => {
       linkname: t('items.5.linkName'),
       link: t('items.5.link'),
       text: t.rich('items.5.description', strong),
-      "className": ""
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.6.title'),
@@ -80,7 +80,7 @@ const ProjectsPage = async () => {
       linkname: t('items.6.linkName'),
       link: t('items.6.link'),
       text: t.rich('items.6.description', strong),
-      className: "small:border-r-[1px] small:border-[#6A65FF80]"
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.7.title'),
@@ -89,7 +89,7 @@ const ProjectsPage = async () => {
       linkname: t('items.7.linkName'),
       link: t('items.7.link'),
       text: t.rich('items.7.description', strong),
-      "className": ""
+      className: "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.8.title'),
@@ -98,7 +98,7 @@ const ProjectsPage = async () => {
       linkname: t('items.8.linkName'),
       link: t('items.8.link'),
       text: t.rich('items.8.description', strong),
-      "className": ""
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     },
     {
       title: t('items.9.title'),
@@ -107,7 +107,16 @@ const ProjectsPage = async () => {
       linkname: t('items.9.linkName'),
       link: t('items.9.link'),
       text: t.rich('items.9.description', strong),
-      "className": ""
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
+    },
+    {
+      title: t('items.10.title'),
+      src: t('items.10.image'),
+      alt: t('items.10.alt'),
+      linkname: t('items.10.linkName'),
+      link: t('items.10.link'),
+      text: t.rich('items.10.description', strong),
+      "className": "small:border-r-[1px] small:border-[#6A65FF80]"
     }
   ];
 

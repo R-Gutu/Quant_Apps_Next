@@ -153,9 +153,17 @@
     },
     "items": [
       {
+        "title": "God Eye App",
+        "image": "/images/pictures/god-eye.png",
+        "alt": "project1",
+        "linkName": "God Eye App",
+        "link": "https://apps.apple.com/md/app/god-eye/id6742137629",
+        "description": "GodEye is our project — a next-generation app designed to help users protect their digital identity.\nThe app scans the internet and finds where your face or photos appear across public sources. With the Premium plan, GodEye provides advanced detection features that help you discover if your pictures are being reused or shared without your consent.\n\nOur goal with GodEye is to give everyone the ability to see how their digital presence spreads online and take control over their personal content and privacy."
+      },
+      {
         "title": "Kung-Fu Devices",
         "image": "/images/pictures/kungfu.png",
-        "alt": "project1",
+        "alt": "project2",
         "linkName": "Kung-Fu Devices",
         "link": "https://kungfudevice.ro",
         "description": "We created a sleek and modern website for Kungfu Device, a brand specializing in next-generation electronic smoking devices. The platform presents the company’s product range, highlighting innovation, design, and user experience. With a minimalist layout and smooth navigation, the site effectively communicates the brand’s premium identity and provides customers with clear information about products and technology."
@@ -163,7 +171,7 @@
       {
         "title": "Shop Design",
         "image": "/images/pictures/shopdesign.png",
-        "alt": "project2",
+        "alt": "project3",
         "linkName": "Shop Design",
         "link": "https://shopdesign.no/",
         "description": "We designed a sleek and versatile website for Shop Design, an interior design studio that transforms commercial and residential spaces into inspiring environments. The platform showcases their full scope of services — from bespoke interiors and consultancy, to modular systems like their “Plug-in Wall” — with clarity, style, and visual impact. Thanks to our collaboration, the website reflects Shop Design’s commitment to aesthetics, functionality and innovation, while delivering an intuitive user experience."
@@ -171,7 +179,7 @@
       {
         "title": "Success Moving",
         "image": "/images/pictures/successmoving.png",
-        "alt": "project3",
+        "alt": "project4",
         "linkName": "Success Moving",
         "link": "https://www.success-moving.com/",
         "description": "We developed a professional website for Success Moving, a company specializing in residential and commercial relocation services. The platform highlights their comprehensive moving and clearing solutions, focusing on convenience, reliability, and customer satisfaction. With a clean design and intuitive navigation, the website effectively communicates the brand’s values and makes it easy for clients to request quotes or learn more about available services."
@@ -179,7 +187,7 @@
       {
         "title": "Restaurant Website",
         "image": "/images/pictures/projects1.png",
-        "alt": "project4",
+        "alt": "project5",
         "linkName": "Roka Akor",
         "link": "https://rokaakor.com/",
         "description": "We developed a modern, user-friendly <services>corporate website development</services> for Roka Akor, ensuring seamless online reservations, an intuitive interface, and an elegant design that enhances customer engagement. The platform integrates high-quality visuals, responsive layouts, and a smooth dining experience for visitors. Learn more about our <process>web development methodology</process> that makes projects like this possible."
@@ -187,7 +195,7 @@
       {
         "title": "Perfect Garage",
         "image": "/images/pictures/projects2.png",
-        "alt": "project5",
+        "alt": "project6",
         "linkName": "Perfect Garage",
         "link": "https://perfectgarage.md/ru",
         "description": "We developed a modern <services>website for the auto repair service</services> Perfect Garage, featuring online booking, service cost estimation, and intuitive navigation. Thanks to our <aboutUs>team</aboutUs>, the site is an effective tool for attracting clients and managing requests."
@@ -195,7 +203,7 @@
       {
         "title": "Aneta Interior",
         "image": "/images/pictures/projects7.png",
-        "alt": "project6",
+        "alt": "project7",
         "linkName": "Aneta Interior",
         "link": "https://anetainterior.com/en",
         "description": "We designed a stylish <services>website for the interior design studio</services> Aneta Interior, focusing on visual content and aesthetics. The site showcases the project portfolio, services, and brand philosophy. Thanks to our <aboutUs>team</aboutUs>, the platform is elegant, responsive, and client-friendly."
@@ -203,7 +211,7 @@
       {
         "title": "Jurist",
         "image": "/images/pictures/projects8.png",
-        "alt": "project7",
+        "alt": "project8",
         "linkName": "Jurist",
         "link": "https://juristonline.md/ru",
         "description": "We developed a <services>web platform for legal services</services> — Jurist — where users can request consultations, explore services, and contact lawyers quickly. The site is intuitive, professional, and easy to navigate. Our <aboutUs>team</aboutUs> ensured fast performance, responsiveness, and simplicity."
@@ -211,7 +219,7 @@
       {
         "title": "Lens AI",
         "image": "/images/pictures/projects3.png",
-        "alt": "project8",
+        "alt": "project9",
         "linkName": "Lens AI",
         "link": "https://apps.apple.com/md/app/lens-ai",
         "description": "Lens AI is your smart <services>iOS app development</services> for finding anything. With this app, you can take a photo or pick one from your gallery and find it online. Lens AI uses Artificial Intelligence (AI) to search the internet for you. You can learn about what you see in a picture, find where to buy things, and much more. See our <process>app development workflow</process> that helps us create intelligent and user-friendly applications."
@@ -219,7 +227,7 @@
       {
         "title": "Taste Ai",
         "image": "/images/pictures/projects4.png",
-        "alt": "project9",
+        "alt": "project10",
         "linkName": "Taste Ai",
         "link": "https://apps.apple.com/md/app/taste-ai/id6566183422",
         "description": "Meet your new kitchen helper, Taste Ai! This <services>cross platform app development</services> uses artificial intelligence (AI) to deliver recipes customized to your unique preferences and needs. If you're interested in joining our team to work on similar innovative <projects>AI-powered projects</projects>, check out our <careers>current job openings</careers>."
@@ -227,7 +235,7 @@
       {
         "title": "Keyboard AI",
         "image": "/images/pictures/projects6.png",
-        "alt": "project10",
+        "alt": "project11",
         "linkName": "Keyboard AI",
         "link": "https://apps.apple.com/md/app/keyboard-ai/id6447576804",
         "description": "Introducing Keyboard AI - Your Ultimate Texting Companion! Transform your texting experience with Keyboard AI, the ultimate <services>build native mobile app</services> AI writing assistant that has your back whenever you need to text now! Unleash the power of Artificial Intelligence tools at your fingertips and make every message unique. Our <process>quality assurance process</process> ensures that every AI interaction is seamless and reliable."

@@ -20,7 +20,7 @@
     "framer-motion": "^12.6.0",
     "lucide-react": "^0.460.0",
     "motion": "^12.5.0",
-    "next": "^15.2.3",
+    "next": "15.2.6",
     "next-intl": "^3.26.3",
     "quant-apps": "file:",
     "react": "^18.2.0",

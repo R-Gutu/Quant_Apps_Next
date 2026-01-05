@@ -853,7 +853,7 @@
   "pricing": {
   "header": {
     "dateSpan": "December 31, 2025",
-    "title": "Website Packages – Promotion valid until <highlight>December 31, 2025</highlight>!",
+    "title": "Website Packages",
     "promoDate": "Promotion valid until",
     "highlight": "December 31, 2025",
     "subtitle": "Tired of paying monthly for WordPress? We’ll build you a complete custom site + FREE design before payment!"
@@ -864,8 +864,8 @@
     {
       "plan": "Basic",
       "featured": false,
-      "price": "€150",
-      "oldPrice": "€280",
+      "price": "€150 - €280",
+      "oldPrice": "",
       "heading": "Basic",
       "cta": "Order Now",
       "desc": "Perfect for startups and new businesses",
@@ -878,8 +878,8 @@
     {
       "plan": "Advanced",
       "featured": false,
-      "price": "€400",
-      "oldPrice": "€700",
+      "price": "€400 - €700",
+      "oldPrice": "",
       "heading": "Advanced",
       "cta": "Order Now",
       "desc": "Complete website for growing companies",
@@ -893,9 +893,9 @@
         {
       "plan": "Plus",
       "featured": true,
-      "badge": "MOST POPULAR",
-      "price": "€900",
-      "oldPrice": "€1500",
+      "badge": "",
+      "price": "€900 - €1500",
+      "oldPrice": "",
       "heading": "Plus",
       "cta": "Order Now",
       "desc": "Premium features for serious businesses",

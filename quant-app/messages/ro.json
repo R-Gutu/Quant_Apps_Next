@@ -853,7 +853,7 @@
   "pricing": {
   "header": {
     "dateSpan": "31 decembrie 2025",
-     "title": "Pachete Website – Promoție valabilă până pe <highlight>31 decembrie 2025</highlight>!",
+     "title": "Pachete Website",
     "promoDate": "Promoție valabilă până pe",
     "highlight": "31 decembrie 2025",
     "subtitle": "Te-ai săturat să plătești lunar pentru WordPress? Îți oferim un site complet, creat de la zero + design GRATUIT înainte de plată!"
@@ -864,8 +864,8 @@
     {
       "plan": "Basic",
       "featured": false,
-      "price": "€150",
-      "oldPrice": "€280",
+      "price": "€150 - €280",
+      "oldPrice": "",
       "heading": "Basic",
       "cta": "Plasează comanda",
       "desc": "Perfect pentru afaceri la început de drum",
@@ -878,8 +878,8 @@
     {
       "plan": "Advanced",
       "featured": false,
-      "price": "€400",
-      "oldPrice": "€700",
+      "price": "€400 - €700",
+      "oldPrice": "",
       "heading": "Advanced",
       "cta": "Plasează comanda",
       "desc": "Website complet pentru companii în creștere",
@@ -893,9 +893,9 @@
         {
       "plan": "Plus",
       "featured": true,
-      "badge": "CEL MAI POPULAR",
-      "price": "€900",
-      "oldPrice": "€1500",
+      "badge": "",
+      "price": "€900 - €1500",
+      "oldPrice": "",
       "heading": "Plus",
       "cta": "Plasează comanda",
       "desc": "Funcționalități premium pentru afaceri serioase",

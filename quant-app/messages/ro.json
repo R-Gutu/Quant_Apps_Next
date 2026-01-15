@@ -864,7 +864,7 @@
     {
       "plan": "Basic",
       "featured": false,
-      "price": "€150 - €280",
+      "price": "€280",
       "oldPrice": "",
       "heading": "Basic",
       "cta": "Plasează comanda",
@@ -878,7 +878,7 @@
     {
       "plan": "Advanced",
       "featured": false,
-      "price": "€400 - €700",
+      "price": "€700",
       "oldPrice": "",
       "heading": "Advanced",
       "cta": "Plasează comanda",
@@ -894,7 +894,7 @@
       "plan": "Plus",
       "featured": true,
       "badge": "",
-      "price": "€900 - €1500",
+      "price": "€1500",
       "oldPrice": "",
       "heading": "Plus",
       "cta": "Plasează comanda",

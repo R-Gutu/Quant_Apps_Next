@@ -40,6 +40,9 @@ const PCMenu = ({ setMenuVisible, setTalkModalOpen }: { setMenuVisible: React.Di
                     <a href="tel:+40756119304" className="text-white text-[16px] font-medium mr-[20px] hidden big:block">
                         +40 756 119 304
                     </a>
+                    <a href="tel:+37368099992" className="text-white text-[16px] font-medium mr-[20px] hidden big:block">
+                        +373 680 999 92
+                    </a>
 
                     <span className="mr-[33px] hidden small:block"><LanguageSwitcher /></span>
                     <div className="nav-right flex justify-center items-center">

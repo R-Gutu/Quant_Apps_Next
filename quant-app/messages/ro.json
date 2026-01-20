@@ -400,7 +400,7 @@
           "link": "",
           "src": "/images/pictures/vitalie.png",
           "alt": "vitalie",
-          "text": "Expert în <services>dezvoltare frontend și backend</services>, specializat în soluții web scalabile și optimizare a performanței. Vitalie este un membru neprețuit al <aboutUs>echipei noastre tehnice</aboutUs>."
+          "text": "Expert în <services>dezvoltare frontend și backend</services>, specializat în soluții web scalabile și optimizare a performanței. Vitalie este un membru de neprețuit al <aboutUs>echipei noastre tehnice</aboutUs>."
         },
         {
           "name": "Maxim Roenco",
@@ -625,7 +625,7 @@
     "title": "Dezvoltare Website & Aplicații Mobile | iOS, Android, Web",
     "description": "Construim site-uri web și aplicații mobile personalizate pentru afaceri. Aplicații scalabile pentru iOS/Android și site-uri optimizate SEO. Consultanță gratuită.",
     "hero": {
-      "title": "Dezvoltare Website & Aplicații Mobile | iOS, Android, Web",
+      "title": "Crearea și Dezvoltarea Website & Aplicații Mobile | iOS, Android, Web",
       "ipadAlt": "ipad",
       "watchAlt": "buton vizionare video"
     },

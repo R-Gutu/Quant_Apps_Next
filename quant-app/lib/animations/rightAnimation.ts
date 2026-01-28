@@ -1,18 +1,16 @@
 export const rightAnimation = {
     hidden: {
         opacity: 0,
-        translateX: 200
+        x: 60
     },
     visible: {
         opacity: 1,
-        translateX: 0,
+        x: 0,
         transition: {
             type: "spring",
-            stiffness: 260,
-            damping: 20,
-            duration: 0.6, 
-            ease: "easeOut",
-            delay: 0.1 
+            stiffness: 100,
+            damping: 15,
+            mass: 0.8
         }
     }
 }

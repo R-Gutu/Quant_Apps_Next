@@ -1,8 +1,6 @@
 import Banner from "@/components/banner";
 import Image from "next/image";
-import TeamMember from "./_components/TeamMember";
 import ElevatingBusiness from "../_components/ElevatingBusiness";
-import TeamMemberType from "@/lib/types/MemberType";
 import TimelineBlock from "./_components/TimelineBlock";
 import TimelineType from "@/lib/types/TimelineType";
 import Blur from "@/components/Blur";
@@ -26,57 +24,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const Page = async () => {
   const t = await getTranslations("about");
-
-  const teamMembers: TeamMemberType[] = [
-    {
-      name: t('team.members.1.name'),
-      position: t('team.members.1.position'),
-      link: "https://www.linkedin.com/in/veaceslav-soltan-290072261/",
-      src: t('team.members.1.src'),
-      alt: t('team.members.1.alt'),
-      text: t.rich('team.members.1.text', strong)
-    },
-    {
-      name: t('team.members.0.name'),
-      position: t('team.members.0.position'),
-      link: "https://www.linkedin.com/in/roman-gutu-920693229/",
-      src: t('team.members.0.src'),
-      alt: t('team.members.0.alt'),
-      text: t.rich('team.members.0.text', strong)
-    },
-    {
-      name: t('team.members.2.name'),
-      position: t('team.members.2.position'),
-      link: t('team.members.2.link'),
-      src: t('team.members.2.src'),
-      alt: t('team.members.2.alt'),
-      text: t.rich('team.members.2.text', strong)
-    },
-    {
-      name: t('team.members.3.name'),
-      position: t('team.members.3.position'),
-      link: t('team.members.3.link'),
-      src: t('team.members.3.src'),
-      alt: t('team.members.3.alt'),
-      text: t.rich('team.members.3.text', strong)
-    },
-    {
-      name: t('team.members.4.name'),
-      position: t('team.members.4.position'),
-      link: t('team.members.4.link'),
-      src: t('team.members.4.src'),
-      alt: t('team.members.4.alt'),
-      text: t.rich('team.members.4.text', strong)
-    },
-    {
-      name: t('team.members.5.name'),
-      position: t('team.members.5.position'),
-      link: t('team.members.5.link'),
-      src: t('team.members.5.src'),
-      alt: t('team.members.5.alt'),
-      text: t.rich('team.members.5.text', strong)
-    }
-  ];
 
   const timeline: TimelineType[] = [
     {
@@ -169,20 +116,6 @@ const Page = async () => {
         <div className="mui-md:hidden">
           {timeline.map((item, index) => (
             <TimelineBlock key={index} {...item} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col gap-[50px] px-[40px] py-[50px] max-smallest:px-[0px] max-smallest:py-[30px]">
-        <h2 className="text-center font-semibold text-[64px] max-mui-md:text-[50px] max-smallest:text-[36px] text-[#FFFFFF]">
-          {t('team.title')}
-        </h2>
-        <div className="w-full h-full grid grid-cols-3 grid-rows-2 gap-[50px] 
-    max-medium:grid-cols-2 max-medium:grid-rows-3 
-    max-small:grid-cols-1">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="flex justify-center items-center">
-              <TeamMember {...member} />
-            </div>
           ))}
         </div>
       </div>

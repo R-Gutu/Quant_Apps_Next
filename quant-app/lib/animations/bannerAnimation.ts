@@ -1,18 +1,18 @@
 export const bannerAnimation = {
     hidden: {
         opacity: 0,
-        translateY: -200
+        y: -80,
+        scale: 0.95
     },
     visible: {
         opacity: 1,
-        translateY: 0,
+        y: 0,
+        scale: 1,
         transition: {
             type: "spring",
-            stiffness: 260,
-            damping: 20,
-            duration: 0.6, 
-            ease: "easeOut",
-            delay: 0.1 
+            stiffness: 100,
+            damping: 15,
+            mass: 0.8
         }
     }
 }

@@ -14,15 +14,14 @@ export default function PhoneButton() {
             href: "tel:+37378872958",
             icon: Phone,
             label: "Call",
-            flag: "🇬🇧",
-            extraFlags: "🇷🇺🇲🇩🇺🇦",
+            countryCode: "EN/RU/MD/UA",
             gradient: "from-[#836FFF] to-[#4A5DE5]",
         },
         {
             href: "tel:+40750488145",
             icon: Phone,
             label: "Call",
-            flag: "🇷🇴",
+            countryCode: "RO",
             gradient: "from-[#002B7F] to-[#FCD116]",
         },
         {
@@ -64,17 +63,14 @@ export default function PhoneButton() {
                                 transition={{ delay: index * 0.05 }}
                                 whileHover={{ scale: 1.05, x: -5 }}
                                 whileTap={{ scale: 0.95 }}
-                                className={`flex items-center gap-3 px-5 py-3 rounded-2xl bg-gradient-to-r ${option.gradient} text-white shadow-lg hover:shadow-xl transition-shadow duration-200 min-w-[160px]`}
+                                className={`flex items-center gap-3 px-5 py-3 rounded-2xl bg-gradient-to-r ${option.gradient} text-white shadow-lg hover:shadow-xl transition-shadow duration-200`}
                             >
-                                {option.flag ? (
-                                    <span className="w-[24px] text-[18px] flex-shrink-0">{option.flag}</span>
+                                {option.countryCode ? (
+                                    <span className="text-[12px] font-bold opacity-90 bg-white/20 px-2 py-0.5 rounded">{option.countryCode}</span>
                                 ) : (
                                     <option.icon size={20} className="flex-shrink-0" />
                                 )}
-                                <span className="text-sm font-semibold whitespace-nowrap flex-1">{option.label}</span>
-                                {option.extraFlags && (
-                                    <span className="text-[12px] opacity-80">{option.extraFlags}</span>
-                                )}
+                                <span className="text-sm font-semibold whitespace-nowrap">{option.label}</span>
                             </m.a>
                         ))}
                     </m.div>

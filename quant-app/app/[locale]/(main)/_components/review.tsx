@@ -10,7 +10,7 @@ export default async function Review({ content, src, name, description, imgHeigh
         <div className={`px-[80px] max-[1500px]:px-[40px] max-[600px]:px-[20px] min-[1150px]:pt-[100px] max-[1150px]:py-[50px] flex flex-col justify-between ${className}`}>
             {/* Quote */}
             <div className="relative">
-                <span className="absolute -top-4 -left-4 text-[60px] text-[#6A65FF]/30 font-serif leading-none select-none">"</span>
+                <span className="absolute -top-4 -left-4 text-[60px] text-[#6A65FF]/30 font-serif leading-none select-none">&ldquo;</span>
                 <p className="font-medium italic text-[25px] text-[#6DB9FF] max-[1800px]:text-[20px] max-[600px]:text-[18px] max-[600px]:mb-[24px] leading-relaxed">
                     {content}
                 </p>

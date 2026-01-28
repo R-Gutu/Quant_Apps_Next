@@ -53,10 +53,10 @@ export default function FreeWebsitePromo() {
                         </m.div>
 
                         {/* Desktop layout: side by side */}
-                        <div className="relative z-10 flex flex-col min-[1100px]:flex-row min-[1100px]:items-center min-[1100px]:justify-between gap-[40px] min-[1100px]:gap-[40px] min-[1300px]:gap-[60px]">
+                        <div className="relative z-10 flex flex-col min-[1300px]:flex-row min-[1300px]:items-center min-[1300px]:justify-between gap-[40px] min-[1300px]:gap-[30px] min-[1400px]:gap-[50px]">
                             
                             {/* Left side - Main content */}
-                            <div className="flex flex-col items-center min-[1100px]:items-start text-center min-[1100px]:text-left min-[1100px]:flex-1">
+                            <div className="flex flex-col items-center min-[1300px]:items-start text-center min-[1300px]:text-left min-[1300px]:flex-1 min-[1300px]:max-w-[55%]">
                                 {/* Badge */}
                                 <m.div
                                     initial={{ scale: 0.8, opacity: 0 }}
@@ -79,10 +79,10 @@ export default function FreeWebsitePromo() {
                                     className="relative w-full"
                                 >
                                     {/* Glow behind text */}
-                                    <div className="absolute inset-0 text-[50px] min-[400px]:text-[70px] min-[600px]:text-[90px] min-[900px]:text-[110px] min-[1200px]:text-[130px] font-black leading-none blur-[30px] opacity-50 bg-gradient-to-r from-[#00E676] to-[#69F0AE] bg-clip-text text-transparent select-none">
+                                    <div className="absolute inset-0 text-[50px] min-[400px]:text-[65px] min-[600px]:text-[80px] min-[900px]:text-[95px] min-[1300px]:text-[85px] min-[1500px]:text-[100px] font-black leading-none blur-[30px] opacity-50 bg-gradient-to-r from-[#00E676] to-[#69F0AE] bg-clip-text text-transparent select-none">
                                         {t("free")}
                                     </div>
-                                    <h2 className="relative text-[50px] min-[400px]:text-[70px] min-[600px]:text-[90px] min-[900px]:text-[110px] min-[1200px]:text-[130px] font-black leading-none tracking-tight">
+                                    <h2 className="relative text-[50px] min-[400px]:text-[65px] min-[600px]:text-[80px] min-[900px]:text-[95px] min-[1300px]:text-[85px] min-[1500px]:text-[100px] font-black leading-none tracking-tight">
                                         <span className="bg-gradient-to-br from-[#00E676] via-[#69F0AE] to-[#00E676] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,230,118,0.5)]">
                                             {t("free")}
                                         </span>
@@ -95,7 +95,7 @@ export default function FreeWebsitePromo() {
                                 </h3>
                                 
                                 {/* Subtitle - only on mobile/tablet, on desktop it's in the right column */}
-                                <p className="text-[15px] min-[500px]:text-[16px] text-white/60 max-w-[500px] mt-[12px] min-[1100px]:hidden">
+                                <p className="text-[15px] min-[500px]:text-[16px] text-white/60 max-w-[500px] mt-[12px] min-[1300px]:hidden">
                                     {t("subtitle")}
                                 </p>
 
@@ -104,7 +104,7 @@ export default function FreeWebsitePromo() {
                                     onClick={() => setModalOpen(true)}
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.97 }}
-                                    className="min-[1100px]:hidden group mt-[30px] px-[36px] py-[16px] rounded-[14px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[16px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 flex items-center gap-[10px]"
+                                    className="min-[1300px]:hidden group mt-[30px] px-[36px] py-[16px] rounded-[14px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[16px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 flex items-center gap-[10px]"
                                 >
                                     {t("cta")}
                                     <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -112,14 +112,14 @@ export default function FreeWebsitePromo() {
                             </div>
 
                             {/* Right side - Features & CTA (desktop) */}
-                            <div className="flex flex-col min-[1100px]:max-w-[420px] min-[1300px]:max-w-[480px] min-[1100px]:min-w-[360px]">
+                            <div className="flex flex-col min-[1300px]:max-w-[400px] min-[1400px]:max-w-[440px] min-[1300px]:flex-shrink-0">
                                 {/* Subtitle - desktop only */}
-                                <p className="hidden min-[1100px]:block text-[14px] text-white/60 mb-[20px] leading-relaxed">
+                                <p className="hidden min-[1300px]:block text-[13px] text-white/60 mb-[16px] leading-relaxed">
                                     {t("subtitle")}
                                 </p>
 
                                 {/* Features list */}
-                                <div className="flex flex-col gap-[8px] mb-[20px]">
+                                <div className="flex flex-col gap-[6px] mb-[16px]">
                                     {features.map((feature, index) => (
                                         <m.div
                                             key={index}
@@ -127,12 +127,12 @@ export default function FreeWebsitePromo() {
                                             whileInView={{ opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: 0.15 + index * 0.08 }}
-                                            className="flex items-start gap-[12px] bg-white/[0.03] backdrop-blur-sm rounded-[10px] px-[14px] py-[10px] border border-white/[0.08] hover:border-[#00E676]/30 hover:bg-white/[0.05] transition-all duration-200"
+                                            className="flex items-start gap-[10px] bg-white/[0.03] backdrop-blur-sm rounded-[8px] px-[12px] py-[8px] border border-white/[0.08] hover:border-[#00E676]/30 hover:bg-white/[0.05] transition-all duration-200"
                                         >
-                                        <div className="flex-shrink-0 w-[24px] h-[24px] rounded-full bg-gradient-to-br from-[#00E676] to-[#00C853] flex items-center justify-center shadow-[0_0_15px_rgba(0,230,118,0.4)]">
-                                            <Check size={12} className="text-[#0a1040]" strokeWidth={3} />
+                                        <div className="flex-shrink-0 w-[22px] h-[22px] rounded-full bg-gradient-to-br from-[#00E676] to-[#00C853] flex items-center justify-center shadow-[0_0_15px_rgba(0,230,118,0.4)]">
+                                            <Check size={11} className="text-[#0a1040]" strokeWidth={3} />
                                         </div>
-                                        <span className="text-white/85 text-[13px] min-[500px]:text-[14px] font-medium leading-snug">
+                                        <span className="text-white/85 text-[12px] min-[500px]:text-[13px] font-medium leading-snug">
                                             {feature}
                                         </span>
                                         </m.div>
@@ -144,14 +144,14 @@ export default function FreeWebsitePromo() {
                                     onClick={() => setModalOpen(true)}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="hidden min-[1100px]:flex group w-full justify-center px-[36px] py-[16px] rounded-[14px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[16px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 items-center gap-[10px]"
+                                    className="hidden min-[1300px]:flex group w-full justify-center px-[28px] py-[14px] rounded-[12px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[15px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 items-center gap-[8px]"
                                 >
                                     {t("cta")}
-                                    <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+                                    <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                                 </m.button>
 
                                 {/* Trust note */}
-                                <p className="mt-[14px] text-white/40 text-[11px] text-center min-[1100px]:text-left">
+                                <p className="mt-[12px] text-white/40 text-[10px] text-center min-[1300px]:text-left">
                                     {t("trust")}
                                 </p>
                             </div>

@@ -40,9 +40,9 @@ export default function FreeWebsitePromo() {
                 <div className="relative rounded-[30px] p-[2px] bg-gradient-to-r from-[#00E676] via-[#00C853] to-[#69F0AE]">
                     <div className="relative rounded-[28px] bg-gradient-to-br from-[#0a1040] via-[#0d1654] to-[#0a0f35] p-[30px] min-[700px]:p-[50px] min-[1200px]:p-[60px] overflow-hidden">
                         
-                        {/* Background glow effects */}
-                        <div className="absolute top-[-100px] left-[10%] w-[500px] h-[500px] bg-[#00E676]/10 rounded-full blur-[150px] pointer-events-none" />
-                        <div className="absolute bottom-[-100px] right-[10%] w-[400px] h-[400px] bg-[#836FFF]/15 rounded-full blur-[120px] pointer-events-none" />
+                        {/* Background glow effects - hidden on mobile for performance */}
+                        <div className="hidden min-[768px]:block absolute top-[-100px] left-[10%] w-[400px] h-[400px] bg-[#00E676]/8 rounded-full blur-[80px] pointer-events-none" />
+                        <div className="hidden min-[768px]:block absolute bottom-[-100px] right-[10%] w-[300px] h-[300px] bg-[#836FFF]/10 rounded-full blur-[60px] pointer-events-none" />
                         
                         {/* Sparkle decorations */}
                         <m.div
@@ -86,10 +86,12 @@ export default function FreeWebsitePromo() {
                                     transition={isMobile ? undefined : { delay: 0.1, type: "spring", stiffness: 150 }}
                                     className="relative w-full"
                                 >
-                                    {/* Glow behind text */}
-                                    <div className="absolute inset-0 text-[50px] min-[400px]:text-[65px] min-[600px]:text-[80px] min-[900px]:text-[95px] min-[1300px]:text-[85px] min-[1500px]:text-[100px] font-black leading-none blur-[30px] opacity-50 bg-gradient-to-r from-[#00E676] to-[#69F0AE] bg-clip-text text-transparent select-none">
-                                        {t("free")}
-                                    </div>
+                                    {/* Glow behind text - only on desktop for performance */}
+                                    {!isMobile && (
+                                        <div className="absolute inset-0 text-[50px] min-[400px]:text-[65px] min-[600px]:text-[80px] min-[900px]:text-[95px] min-[1300px]:text-[85px] min-[1500px]:text-[100px] font-black leading-none blur-[20px] opacity-40 bg-gradient-to-r from-[#00E676] to-[#69F0AE] bg-clip-text text-transparent select-none pointer-events-none">
+                                            {t("free")}
+                                        </div>
+                                    )}
                                     <h2 className="relative text-[50px] min-[400px]:text-[65px] min-[600px]:text-[80px] min-[900px]:text-[95px] min-[1300px]:text-[85px] min-[1500px]:text-[100px] font-black leading-none tracking-tight">
                                         <span className="bg-gradient-to-br from-[#00E676] via-[#69F0AE] to-[#00E676] bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,230,118,0.5)]">
                                             {t("free")}
@@ -135,7 +137,7 @@ export default function FreeWebsitePromo() {
                                             whileInView={isMobile ? undefined : { opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
                                             transition={isMobile ? undefined : { delay: 0.15 + index * 0.08 }}
-                                            className="flex items-start gap-[10px] bg-white/[0.03] backdrop-blur-sm rounded-[8px] px-[12px] py-[8px] border border-white/[0.08] hover:border-[#00E676]/30 hover:bg-white/[0.05] transition-all duration-200"
+                                            className="flex items-start gap-[10px] bg-white/[0.05] min-[768px]:backdrop-blur-sm rounded-[8px] px-[12px] py-[8px] border border-white/[0.08] hover:border-[#00E676]/30 hover:bg-white/[0.07] transition-colors duration-200"
                                         >
                                         <div className="flex-shrink-0 w-[22px] h-[22px] rounded-full bg-gradient-to-br from-[#00E676] to-[#00C853] flex items-center justify-center shadow-[0_0_15px_rgba(0,230,118,0.4)]">
                                             <Check size={11} className="text-[#0a1040]" strokeWidth={3} />

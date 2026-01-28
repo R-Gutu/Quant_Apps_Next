@@ -351,35 +351,21 @@ export default async function Page() {
                 icon="/images/icons/start_project_logo.svg"
             />
             <ProjectForm className="py-[100px] px-[20%] max-[1100px]:px-[40px]" />
-            {/* Optimized background glow effects - reduced from 10 to 4 for better performance */}
+            {/* Optimized background glow effects - reduced blur for better performance */}
             <div className="overflow-hidden absolute top-0 left-0 w-full h-full -z-10 pointer-events-none">
                 <Blur
-                    color="radial-gradient(circle, rgba(131, 111, 255, 0.4) 0%, transparent 70%)"
-                    left="-200px"
+                    color="radial-gradient(circle, rgba(131, 111, 255, 0.3) 0%, transparent 70%)"
+                    left="-150px"
                     top="800px"
-                    filter="blur(150px)"
-                    className="w-[600px] h-[600px] max-[900px]:hidden"
+                    filter="blur(60px)"
+                    className="w-[400px] h-[400px] max-[900px]:hidden"
                 />
                 <Blur
-                    color="radial-gradient(circle, rgba(74, 93, 229, 0.35) 0%, transparent 70%)"
-                    right="-200px"
-                    top="2200px"
-                    filter="blur(150px)"
-                    className="w-[600px] h-[600px] max-[900px]:hidden"
-                />
-                <Blur
-                    color="radial-gradient(circle, rgba(131, 111, 255, 0.35) 0%, transparent 70%)"
-                    left="-200px"
-                    top="4000px"
-                    filter="blur(150px)"
-                    className="w-[600px] h-[600px] max-[900px]:hidden"
-                />
-                <Blur
-                    color="radial-gradient(circle, rgba(156, 8, 255, 0.3) 0%, transparent 70%)"
-                    right="-200px"
-                    top="5500px"
-                    filter="blur(150px)"
-                    className="w-[600px] h-[600px] max-[900px]:hidden"
+                    color="radial-gradient(circle, rgba(74, 93, 229, 0.25) 0%, transparent 70%)"
+                    right="-150px"
+                    top="2500px"
+                    filter="blur(60px)"
+                    className="w-[400px] h-[400px] max-[900px]:hidden"
                 />
             </div>
         </div>

@@ -2,7 +2,7 @@
 import * as m from "motion/react-m"
 import { Check, Sparkles, ArrowRight, Zap } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 
 const TalkModal = dynamic(() => import("@/components/TalkModal"))
@@ -10,6 +10,14 @@ const TalkModal = dynamic(() => import("@/components/TalkModal"))
 export default function FreeWebsitePromo() {
     const t = useTranslations("freePromo")
     const [modalOpen, setModalOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(true) // Default to mobile (no animations on SSR)
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768)
+        checkMobile()
+        window.addEventListener('resize', checkMobile)
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
 
     const features = [
         t("features.0"),
@@ -22,8 +30,8 @@ export default function FreeWebsitePromo() {
     return (
         <>
             <m.section
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={isMobile ? false : { opacity: 0, y: 40 }}
+                whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className="w-full mt-[60px] relative overflow-hidden"
@@ -59,8 +67,8 @@ export default function FreeWebsitePromo() {
                             <div className="flex flex-col items-center min-[1300px]:items-start text-center min-[1300px]:text-left min-[1300px]:flex-1 min-[1300px]:max-w-[55%]">
                                 {/* Badge */}
                                 <m.div
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    initial={isMobile ? false : { scale: 0.8, opacity: 0 }}
+                                    whileInView={isMobile ? undefined : { scale: 1, opacity: 1 }}
                                     viewport={{ once: true }}
                                     className="mb-[16px] px-[16px] py-[6px] rounded-full bg-gradient-to-r from-[#00C853]/20 to-[#00E676]/20 border border-[#00E676]/50 inline-flex items-center gap-2"
                                 >
@@ -72,10 +80,10 @@ export default function FreeWebsitePromo() {
 
                                 {/* GIANT FREE heading - responsive for different languages */}
                                 <m.div
-                                    initial={{ scale: 0.8, opacity: 0 }}
-                                    whileInView={{ scale: 1, opacity: 1 }}
+                                    initial={isMobile ? false : { scale: 0.8, opacity: 0 }}
+                                    whileInView={isMobile ? undefined : { scale: 1, opacity: 1 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: 0.1, type: "spring", stiffness: 150 }}
+                                    transition={isMobile ? undefined : { delay: 0.1, type: "spring", stiffness: 150 }}
                                     className="relative w-full"
                                 >
                                     {/* Glow behind text */}
@@ -123,10 +131,10 @@ export default function FreeWebsitePromo() {
                                     {features.map((feature, index) => (
                                         <m.div
                                             key={index}
-                                            initial={{ opacity: 0, x: 20 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
+                                            initial={isMobile ? false : { opacity: 0, x: 20 }}
+                                            whileInView={isMobile ? undefined : { opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ delay: 0.15 + index * 0.08 }}
+                                            transition={isMobile ? undefined : { delay: 0.15 + index * 0.08 }}
                                             className="flex items-start gap-[10px] bg-white/[0.03] backdrop-blur-sm rounded-[8px] px-[12px] py-[8px] border border-white/[0.08] hover:border-[#00E676]/30 hover:bg-white/[0.05] transition-all duration-200"
                                         >
                                         <div className="flex-shrink-0 w-[22px] h-[22px] rounded-full bg-gradient-to-br from-[#00E676] to-[#00C853] flex items-center justify-center shadow-[0_0_15px_rgba(0,230,118,0.4)]">

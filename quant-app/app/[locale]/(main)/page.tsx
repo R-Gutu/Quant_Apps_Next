@@ -20,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 import VideoComponent from "./_components/VideoComponent"
+import FreeWebsitePromo from "./_components/FreeWebsitePromo"
 import { strong } from "@/lib/utils/utils"
 import { ReactNode } from "react"
 
@@ -222,7 +223,11 @@ export default async function Page() {
             <h1 className="font-semibold text-white text-center text-[30px] min-[1000px]:text-[48px] min-[1900px]:text-[68px]">
                 {t('hero.title')}
             </h1>
+            {/* Free Website Promo Block */}
+            <FreeWebsitePromo />
+            
             <VideoComponent ipadAlt={t('hero.ipadAlt')} watchAlt={t('hero.watchAlt')} />
+            
             <div className="w-full py-[40px] max-[1900px]:py-0 bg-[#6A65FF1A] rounded-[35px] mt-[35px] relative">
                 <div className="bg-[#4A6ED1] px-[24px] py-[14px] rounded-[100px] absolute top-[0] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col items-center justify-center text-white text-[18px] max-[1000px]:text-[14px] font-medium text-nowrap">
                     {t('trusted.title')}

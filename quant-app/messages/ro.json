@@ -28,6 +28,21 @@
     "AllRightsReserved": "Toate drepturile rezervate.",
     "StayConnected": "Urmărește-ne:"
   },
+  "freePromo": {
+    "badge": "Ofertă Limitată",
+    "free": "GRATUIT",
+    "title": "Dezvoltare Website",
+    "subtitle": "Creăm website-ul tău profesional complet gratuit. Condițiile de întreținere sunt discutate individual după analizarea nevoilor tale.",
+    "features": [
+      "Design și dezvoltare personalizată",
+      "Layout responsive pentru mobil",
+      "Optimizare SEO inclusă",
+      "Hosting gratuit pentru 1 an",
+      "Asistență pentru achiziția și configurarea domeniului (www.domeniul-tau.com)"
+    ],
+    "cta": "Obține Website-ul Gratuit",
+    "trust": "Fără taxe ascunse • Abordare individuală • 20+ clienți mulțumiți"
+  },
   "services": {
     "title": "Dezvoltare pentru Mobile & Web | Soluții CRM – Quant-Apps",
     "description": "Aveți nevoie de dezvoltare expertă de aplicații mobile? Quant-Apps construiește aplicații scalabile pentru iOS, servicii de dezvoltare aplicații web și soluții de dezvoltare CRM.",

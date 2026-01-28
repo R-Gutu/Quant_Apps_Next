@@ -26,7 +26,22 @@
     "TermsOfUse": "Terms of use",
     "PrivacyPolicy": "Privacy policy",
     "AllRightsReserved": "All rights reserved.",
-      "StayConnected": "Stay Connected:"
+    "StayConnected": "Stay Connected:"
+  },
+  "freePromo": {
+    "badge": "Limited Offer",
+    "free": "FREE",
+    "title": "Website Development",
+    "subtitle": "We create your professional website completely free. Maintenance terms are discussed individually after analyzing your needs.",
+    "features": [
+      "Custom design & development",
+      "Mobile-responsive layout",
+      "SEO optimization included",
+      "Free hosting for 1 year",
+      "Domain setup assistance (www.your-domain.com)"
+    ],
+    "cta": "Get Your Free Website",
+    "trust": "No hidden fees • Individual approach • 20+ happy clients"
   },
   "services": {
     "title": "Mobile & Web Development | CRM Solutions – Quant-Apps",

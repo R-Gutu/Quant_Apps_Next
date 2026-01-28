@@ -1,10 +1,9 @@
 'use client';
 
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Image from 'next/image';
-import { Slider } from '@mui/material';
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Dropzone from "../app/[locale]/(main)/_components/dropzone";
@@ -22,7 +21,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
         name: string;
         email: string;
         message: string;
-        budget: (number | null | undefined)[];
     };
 
     const schema = yup.object().shape({
@@ -30,16 +28,13 @@ export default function ProjectForm({ className, isPopup = false }: { className?
         email: yup.string().email(t('validation.email.invalid')).required(t('validation.email.required')),
         services: yup.array().of(yup.string()).min(1, t('validation.services.minSelect')),
         message: yup.string().required(t('validation.message.required')).min(10, t('validation.message.minLength')),
-        budget: yup.array().of(yup.number().nullable()).required().min(2, t('validation.budget.required')),
     });
-
-    const [budget, setBudget] = useState<number[]>([1000, 5000]);
     const [attachments, setAttachments] = useState<File[]>([]);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const { register, handleSubmit, control, formState: { errors }, setValue, watch } = useForm<ProjectFormData>({
+    const { register, handleSubmit, formState: { errors }, setValue, watch } = useForm<ProjectFormData>({
         resolver: yupResolver(schema),
-        defaultValues: { services: [], budget: [1000, 5000] },
+        defaultValues: { services: [] },
     });
 
     const formRef = useRef<HTMLFormElement>(null);
@@ -61,7 +56,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
 
             const templateParams = {
                 ...data,
-                budget: budget.join(' - '),
                 services: data.services?.join(', '),
                 attachments: uploadedFiles,
             };
@@ -79,7 +73,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                     formRef.current.reset();
                 }
                 setAttachments([]);
-                setBudget([1000, 5000]);
                 setValue("services", []);
             }
 
@@ -122,11 +115,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
         isPopup 
             ? "text-gray-800 border-gray-300 placeholder:text-gray-400 focus:border-[#6A65FF]" 
             : "text-white border-gray-600 placeholder:text-gray-500 focus:border-[#6A65FF]"
-    );
-
-    const descriptionClasses = cn(
-        "font-normal text-[16px] mb-[20px]",
-        isPopup ? "text-gray-500" : "text-gray-400"
     );
 
     return (
@@ -222,37 +210,6 @@ export default function ProjectForm({ className, isPopup = false }: { className?
                         ))}
                     </div>
                     {errors.services && <span className="text-red-500 text-sm">{errors.services.message}</span>}
-                </div>
-
-                {/* Budget */}
-                <div className={cardClasses}>
-                    <label className={labelClasses}>{t('fields.budget')}</label>
-                    <p className={descriptionClasses}>{t('fields.budgetDescription')}</p>
-                    <Controller
-                        name="budget"
-                        control={control}
-                        render={({ field }) => (
-                            <Slider
-                                {...field}
-                                aria-label="Budget slider"
-                                value={budget}
-                                onChange={(_, v) => {
-                                    setBudget(v as number[]);
-                                    field.onChange(v);
-                                }}
-                                valueLabelDisplay="on"
-                                max={15000}
-                                step={100}
-                                valueLabelFormat={(v) => `$${v}`}
-                                sx={{ 
-                                    color: '#6A65FF',
-                                    '& .MuiSlider-valueLabel': {
-                                        backgroundColor: '#6A65FF',
-                                    }
-                                }}
-                            />
-                        )}
-                    />
                 </div>
 
                 {/* Message */}

@@ -11,13 +11,22 @@ export default function PhoneButton() {
 
     const contactOptions = [
         {
-            href: "tel:+40756119304",
+            href: "tel:+37378872958",
             icon: Phone,
             label: "Call",
+            flag: "🇬🇧",
+            extraFlags: "🇷🇺🇲🇩🇺🇦",
             gradient: "from-[#836FFF] to-[#4A5DE5]",
         },
         {
-            href: "https://wa.me/40756119304",
+            href: "tel:+40750488145",
+            icon: Phone,
+            label: "Call",
+            flag: "🇷🇴",
+            gradient: "from-[#002B7F] to-[#FCD116]",
+        },
+        {
+            href: "https://wa.me/37378872958",
             icon: FaWhatsapp,
             label: "WhatsApp",
             gradient: "from-green-400 to-green-600",
@@ -46,7 +55,7 @@ export default function PhoneButton() {
                     >
                         {contactOptions.map((option, index) => (
                             <m.a
-                                key={option.label}
+                                key={`${option.label}-${index}`}
                                 href={option.href}
                                 target={option.external ? "_blank" : undefined}
                                 rel={option.external ? "noopener noreferrer" : undefined}
@@ -55,10 +64,17 @@ export default function PhoneButton() {
                                 transition={{ delay: index * 0.05 }}
                                 whileHover={{ scale: 1.05, x: -5 }}
                                 whileTap={{ scale: 0.95 }}
-                                className={`flex items-center gap-3 px-5 py-3 rounded-2xl bg-gradient-to-r ${option.gradient} text-white shadow-lg hover:shadow-xl transition-shadow duration-200`}
+                                className={`flex items-center gap-3 px-5 py-3 rounded-2xl bg-gradient-to-r ${option.gradient} text-white shadow-lg hover:shadow-xl transition-shadow duration-200 min-w-[160px]`}
                             >
-                                <option.icon size={20} />
-                                <span className="text-sm font-semibold whitespace-nowrap">{option.label}</span>
+                                {option.flag ? (
+                                    <span className="w-[24px] text-[18px] flex-shrink-0">{option.flag}</span>
+                                ) : (
+                                    <option.icon size={20} className="flex-shrink-0" />
+                                )}
+                                <span className="text-sm font-semibold whitespace-nowrap flex-1">{option.label}</span>
+                                {option.extraFlags && (
+                                    <span className="text-[12px] opacity-80">{option.extraFlags}</span>
+                                )}
                             </m.a>
                         ))}
                     </m.div>

@@ -33,7 +33,7 @@ const MobileMenu = ({ menuVisible, setMenuVisible }: { menuVisible: boolean, set
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="top-0 left-0 h-auto p-[20px] overflow-hidden bg-white fixed z-[10000] rounded-b-[30px] w-full px-[20%] flex flex-col items-center small:hidden shadow-2xl"
+            className="top-0 left-0 h-auto p-[20px] overflow-visible bg-white fixed z-[10000] rounded-b-[30px] w-full px-[20%] flex flex-col items-center small:hidden shadow-2xl"
           >
             <Image src={'/images/icons/logo-mobile.svg'} width={237} height={58} alt="Quant apps logo" className="cursor-pointer" />
             <div className="flex justify-between absolute top-[-5px] right-[5%]">

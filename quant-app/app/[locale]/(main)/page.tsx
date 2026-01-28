@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-import VideoComponent from "./_components/VideoComponent"
+// import VideoComponent from "./_components/VideoComponent"
 import FreeWebsitePromo from "./_components/FreeWebsitePromo"
 import { strong } from "@/lib/utils/utils"
 import { ReactNode } from "react"

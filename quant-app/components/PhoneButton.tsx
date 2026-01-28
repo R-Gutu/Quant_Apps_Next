@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Phone, X } from 'lucide-react';
 import { FaWhatsapp, FaTelegram } from 'react-icons/fa';
 import * as m from "motion/react-m";
@@ -8,12 +8,22 @@ import { AnimatePresence } from "motion/react";
 
 export default function PhoneButton() {
     const [open, setOpen] = useState(false);
+    const [isAppleDevice, setIsAppleDevice] = useState(false);
+
+    useEffect(() => {
+        // Check if device is macOS or iOS (supports flag emojis)
+        const ua = navigator.userAgent;
+        const isApple = /Mac|iPhone|iPad|iPod/.test(ua) && !/Windows/.test(ua);
+        setIsAppleDevice(isApple);
+    }, []);
 
     const contactOptions = [
         {
             href: "tel:+37378872958",
             icon: Phone,
             label: "Call",
+            flag: "🇬🇧",
+            extraFlags: "🇷🇺🇲🇩🇺🇦",
             countryCode: "EN/RU/MD/UA",
             gradient: "from-[#836FFF] to-[#4A5DE5]",
         },
@@ -21,6 +31,7 @@ export default function PhoneButton() {
             href: "tel:+40750488145",
             icon: Phone,
             label: "Call",
+            flag: "🇷🇴",
             countryCode: "RO",
             gradient: "from-[#002B7F] to-[#FCD116]",
         },
@@ -65,12 +76,19 @@ export default function PhoneButton() {
                                 whileTap={{ scale: 0.95 }}
                                 className={`flex items-center gap-3 px-5 py-3 rounded-2xl bg-gradient-to-r ${option.gradient} text-white shadow-lg hover:shadow-xl transition-shadow duration-200`}
                             >
-                                {option.countryCode ? (
-                                    <span className="text-[12px] font-bold opacity-90 bg-white/20 px-2 py-0.5 rounded">{option.countryCode}</span>
+                                {option.flag && isAppleDevice ? (
+                                    // Apple devices: show emoji flags
+                                    <span className="text-[18px] flex-shrink-0">{option.flag}</span>
+                                ) : option.countryCode ? (
+                                    // Other devices: show text codes
+                                    <span className="text-[11px] font-bold opacity-90 bg-white/20 px-2 py-0.5 rounded">{option.countryCode}</span>
                                 ) : (
                                     <option.icon size={20} className="flex-shrink-0" />
                                 )}
                                 <span className="text-sm font-semibold whitespace-nowrap">{option.label}</span>
+                                {option.extraFlags && isAppleDevice && (
+                                    <span className="text-[14px] opacity-80">{option.extraFlags}</span>
+                                )}
                             </m.a>
                         ))}
                     </m.div>

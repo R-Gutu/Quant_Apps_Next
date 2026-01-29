@@ -4,6 +4,7 @@ import { Check, Sparkles, ArrowRight, Zap } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
+import { trackButtonClick } from "@/lib/analytics"
 
 const TalkModal = dynamic(() => import("@/components/TalkModal"))
 
@@ -111,7 +112,10 @@ export default function FreeWebsitePromo() {
 
                                 {/* CTA Button - Mobile */}
                                 <m.button
-                                    onClick={() => setModalOpen(true)}
+                                    onClick={() => {
+                                        trackButtonClick('free_promo_cta', 'free_promo_section_mobile');
+                                        setModalOpen(true);
+                                    }}
                                     whileHover={{ scale: 1.03 }}
                                     whileTap={{ scale: 0.97 }}
                                     className="min-[1300px]:hidden group mt-[30px] px-[36px] py-[16px] rounded-[14px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[16px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 flex items-center gap-[10px]"
@@ -151,7 +155,10 @@ export default function FreeWebsitePromo() {
 
                                 {/* CTA Button - Desktop */}
                                 <m.button
-                                    onClick={() => setModalOpen(true)}
+                                    onClick={() => {
+                                        trackButtonClick('free_promo_cta', 'free_promo_section_desktop');
+                                        setModalOpen(true);
+                                    }}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     className="hidden min-[1300px]:flex group w-full justify-center px-[28px] py-[14px] rounded-[12px] bg-gradient-to-r from-[#00E676] to-[#00C853] text-[#0a1040] font-bold text-[15px] shadow-[0_0_40px_rgba(0,230,118,0.4)] hover:shadow-[0_0_60px_rgba(0,230,118,0.6)] transition-shadow duration-300 items-center gap-[8px]"

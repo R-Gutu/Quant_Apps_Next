@@ -5,6 +5,7 @@ import { Phone, X } from 'lucide-react';
 import { FaWhatsapp, FaTelegram } from 'react-icons/fa';
 import * as m from "motion/react-m";
 import { AnimatePresence } from "motion/react";
+import { trackPhoneCall, trackExternalLink, trackButtonClick } from '@/lib/analytics';
 
 export default function PhoneButton() {
     const [open, setOpen] = useState(false);
@@ -16,6 +17,14 @@ export default function PhoneButton() {
         const isApple = /Mac|iPhone|iPad|iPod/.test(ua) && !/Windows/.test(ua);
         setIsAppleDevice(isApple);
     }, []);
+
+    const handleContactClick = (option: typeof contactOptions[0]) => {
+        if (option.external) {
+            trackExternalLink(option.href, option.label);
+        } else {
+            trackPhoneCall(option.href.replace('tel:', ''), 'floating_button');
+        }
+    };
 
     const contactOptions = [
         {
@@ -69,6 +78,7 @@ export default function PhoneButton() {
                                 href={option.href}
                                 target={option.external ? "_blank" : undefined}
                                 rel={option.external ? "noopener noreferrer" : undefined}
+                                onClick={() => handleContactClick(option)}
                                 initial={{ opacity: 0, x: 20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: index * 0.05 }}
@@ -97,7 +107,12 @@ export default function PhoneButton() {
 
             {/* Floating button */}
             <m.button
-                onClick={() => setOpen(!open)}
+                onClick={() => {
+                    setOpen(!open);
+                    if (!open) {
+                        trackButtonClick('contact_fab_open', 'floating_button');
+                    }
+                }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 animate={{ rotate: open ? 135 : 0 }}

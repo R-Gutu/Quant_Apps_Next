@@ -11,8 +11,17 @@ import { useTranslations } from 'next-intl';
 import FormAlert from "./FormAlert";
 import { AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils/utils";
+import { trackFormSubmission, type FormSource } from '@/lib/analytics';
 
-export default function ProjectForm({ className, isPopup = false }: { className?: string, isPopup?: boolean }) {
+export default function ProjectForm({ 
+    className, 
+    isPopup = false,
+    formSource = 'main_page_form' 
+}: { 
+    className?: string, 
+    isPopup?: boolean,
+    formSource?: FormSource 
+}) {
     const t = useTranslations('contactForm');
     const [alertIsOpen, setAlertIsOpen] = useState(false);
 
@@ -68,6 +77,12 @@ export default function ProjectForm({ className, isPopup = false }: { className?
             );
 
             if (response.status === 200) {
+                // Track successful form submission
+                trackFormSubmission(formSource, {
+                    services: data.services,
+                    hasAttachments: attachments.length > 0,
+                });
+                
                 setAlertIsOpen(true);
                 if (formRef.current) {
                     formRef.current.reset();

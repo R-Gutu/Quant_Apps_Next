@@ -63,6 +63,7 @@ const TalkModal = ({ setIsOpen }: { isOpen: boolean, setIsOpen: React.Dispatch<R
                     <ProjectForm 
                         className="px-[10%] max-[1100px]:px-[40px] max-[500px]:px-[20px] pb-[40px]" 
                         isPopup 
+                        formSource="talk_modal"
                     />
                 </div>
             </m.div>

@@ -22,6 +22,7 @@ import Footer from "./_components/Footer";
 import AppToolbar from "./_components/AppToolbar"
 import Providers from '@/app/[locale]/Providers';
 import PhoneButton from "@/components/PhoneButton";
+import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
 
 export const viewport: Viewport = {
@@ -119,10 +120,11 @@ export default async function RootLayout({
           {children}
           <PhoneButton />
           <Footer />
+          <CookieConsent />
         </Providers>
      
       </body>
-      <GoogleAnalytics gaId="G-DK457M1DLQ" />
+      <GoogleAnalytics gaId="G-TH4K1DBJ0K" />
     </html>
   );
 }

@@ -1,4 +1,27 @@
 {
+  "cookies": {
+    "title": "Respectăm confidențialitatea ta",
+    "description": "Folosim cookies pentru a îmbunătăți experiența de navigare, analiza traficului și personalizarea conținutului. Poți personaliza preferințele mai jos.",
+    "customizeSettings": "Personalizează setările cookies",
+    "necessary": {
+      "title": "Cookies esențiale",
+      "description": "Necesare pentru funcționarea de bază a site-ului"
+    },
+    "analytics": {
+      "title": "Cookies de analiză",
+      "description": "Ne ajută să înțelegem cum interacționează vizitatorii cu site-ul"
+    },
+    "marketing": {
+      "title": "Cookies de marketing",
+      "description": "Folosite pentru afișarea de reclame personalizate"
+    },
+    "alwaysOn": "Întotdeauna activ",
+    "acceptAll": "Acceptă toate",
+    "savePreferences": "Salvează preferințele",
+    "rejectAll": "Respinge toate",
+    "privacyNote": "Citește mai multe în",
+    "privacyLink": "Politica de confidențialitate"
+  },
   "video": {
     "notSupported": "Browserul dvs. nu suportă videoclipuri."
   },

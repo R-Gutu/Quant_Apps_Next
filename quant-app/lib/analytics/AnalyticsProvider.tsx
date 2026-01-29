@@ -5,7 +5,6 @@ import {
   initGA, 
   trackVisit, 
   trackPageView, 
-  getConsentSettings,
   type UserData 
 } from './index';
 import { getConsentSettings as getCookieConsent } from '@/components/CookieConsent';

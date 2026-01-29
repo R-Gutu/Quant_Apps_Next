@@ -6,6 +6,7 @@ import * as m from 'motion/react-m';
 import { AnimatePresence } from 'motion/react';
 import { Cookie, X, Shield, ChevronDown, ChevronUp } from 'lucide-react';
 import Cookies from 'js-cookie';
+import Link from 'next/link';
 
 const CONSENT_COOKIE_NAME = 'quant_cookie_consent';
 const CONSENT_EXPIRY_DAYS = 365;
@@ -213,9 +214,9 @@ export default function CookieConsent() {
               {/* Privacy link */}
               <p className="mt-4 text-center text-white/40 text-xs">
                 {t('privacyNote')}{' '}
-                <a href="/privacy-policy" className="text-[#6DB9FF] hover:underline">
+                <Link href="/privacy-policy" className="text-[#6DB9FF] hover:underline">
                   {t('privacyLink')}
-                </a>
+                </Link>
               </p>
             </div>
           </div>

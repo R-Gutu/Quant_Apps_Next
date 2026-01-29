@@ -17,21 +17,6 @@ import {
 export function useTracking() {
   const { isEnabled, userData } = useAnalytics();
 
-  const track = useCallback(
-    <T extends (...args: Parameters<T>) => ReturnType<T>>(
-      trackingFn: T
-    ) => {
-      return (...args: Parameters<T>): ReturnType<T> | undefined => {
-        if (!isEnabled) {
-          console.log('📊 Analytics disabled - event not tracked');
-          return undefined;
-        }
-        return trackingFn(...args);
-      };
-    },
-    [isEnabled]
-  );
-
   return {
     isEnabled,
     userData,
